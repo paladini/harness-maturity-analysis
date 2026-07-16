@@ -114,18 +114,15 @@ ${SITE_CSS}
       never the competence of the company that owns it.</strong>
     </p>
     <div class="meta-strip">
-      <span>harness-score@1.0.0</span><span class="sep">·</span>
-      <span>${scannedCount}/${totalCount} pinned commits scanned</span><span class="sep">·</span>
-      <span>zero LLM calls · zero network at scan time</span><span class="sep">·</span>
-      <span><a href="https://github.com/paladini/harness-maturity-analysis">source on GitHub</a></span>
+      <span>harness-score@1.0.0</span>
+      <span>${scannedCount}/${totalCount} repositories scanned</span>
+      <span>zero LLM calls, zero network at scan time</span>
+      <a href="https://github.com/paladini/harness-maturity-analysis">source on GitHub →</a>
     </div>
   </header>
 
   <section class="leaderboard">
-    <div class="section-head">
-      <h2>The leaderboard</h2>
-      <span class="section-num">01</span>
-    </div>
+    <h2>The leaderboard</h2>
     <p class="section-note">
       Every bar is one pinned commit, scanned once, byte-reproducible. Bar length is total
       score; color is the gated maturity level — they can diverge, and where they do is the
@@ -138,10 +135,7 @@ ${renderLeaderboard(rows)}
   </section>
 
   <section class="heatmap-section">
-    <div class="section-head">
-      <h2>Dimension heatmap</h2>
-      <span class="section-num">02</span>
-    </div>
+    <h2>Dimension heatmap</h2>
     <p class="section-note">Percent earned per dimension. Shade intensity is the same number as the label — never color alone.</p>
     <div class="heatmap-wrap">
       <table class="heatmap">
@@ -188,10 +182,7 @@ ${heatmapBody}
   </section>
 
   <section class="stat-callout">
-    <div class="section-head">
-      <h2>How much of the score is actually "AI harness"?</h2>
-      <span class="section-num">03</span>
-    </div>
+    <h2>How much of the score is actually "AI harness"?</h2>
     <p class="section-note">
       Splitting each report's earned points into AI-specific (Context + Skills + Hooks) versus
       generic engineering hygiene (Sensors + CI + Hygiene): most well-known agent-native tools
@@ -237,95 +228,94 @@ ${heatmapBody}
 
 const SITE_CSS = `
   :root {
-    --bg: #E8ECED; --bg-grid: #C7CDD1; --surface: #F6F7F5; --surface-raised: #FFFFFF;
-    --ink: #181D22; --ink-muted: #4B535C; --ink-faint: #7A828A;
-    --border: #C7CDD1; --border-strong: #9BA4AA;
-    --accent: #B8631E; --accent-ink: #7A3F0F;
-    --l0: #5B6470; --l1: #6E8FB4; --l2: #4E9A8B; --l3: #C99A3D; --l4: #B8631E;
-    --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Noto Serif", ui-serif, serif;
-    --font-body: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Noto Serif", ui-serif, serif;
+    --bg: #EEF0F1; --surface: #FFFFFF; --surface-sunken: #F4F5F6;
+    --ink: #1A1E22; --ink-muted: #545C64; --ink-faint: #848C93;
+    --border: #DBDFE1; --border-strong: #B7BEC2;
+    --accent: #B8631E; --accent-ink: #8A4A16;
+    --l0: #5B6470; --l1: #4E76A8; --l2: #3F8F7C; --l3: #B98526; --l4: #B8631E;
+    --font-display: Georgia, "Iowan Old Style", "Palatino Linotype", "Noto Serif", ui-serif, serif;
+    --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     --font-mono: ui-monospace, "Cascadia Code", "JetBrains Mono", "Fira Code", Consolas, "SF Mono", Menlo, monospace;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #14181C; --bg-grid: #262D33; --surface: #1B2126; --surface-raised: #20272C;
-      --ink: #E7E9E4; --ink-muted: #9AA3A8; --ink-faint: #6B747B;
-      --border: #2E363C; --border-strong: #414C53;
-      --accent: #E08A3C; --accent-ink: #F3B679;
-      --l0: #8C96A3; --l1: #85AAD1; --l2: #63B8A6; --l3: #E6B94C; --l4: #E08A3C;
+      --bg: #16191C; --surface: #1F2327; --surface-sunken: #1A1D20;
+      --ink: #E8EAEC; --ink-muted: #A5ACB2; --ink-faint: #767E85;
+      --border: #30353A; --border-strong: #454C52;
+      --accent: #E0904A; --accent-ink: #F0B37E;
+      --l0: #8C96A3; --l1: #7BA3D4; --l2: #5FBBA3; --l3: #E0B24E; --l4: #E0904A;
     }
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
   body {
-    background:
-      repeating-linear-gradient(0deg, transparent, transparent 27px, var(--bg-grid) 27px, var(--bg-grid) 28px),
-      repeating-linear-gradient(90deg, transparent, transparent 27px, var(--bg-grid) 27px, var(--bg-grid) 28px),
-      var(--bg);
+    background: var(--bg);
     color: var(--ink);
     font-family: var(--font-body);
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
-  .page { max-width: 920px; margin: 0 auto; padding: 56px 28px 80px; }
-  h1, h2, h3 { font-family: var(--font-display); font-weight: 600; text-wrap: balance; margin: 0; }
+  .page { max-width: 900px; margin: 0 auto; padding: 64px 24px 88px; }
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 700; text-wrap: balance; margin: 0; }
   p { margin: 0; }
-  a { color: var(--accent-ink); text-decoration-color: color-mix(in srgb, var(--accent-ink) 40%, transparent); text-underline-offset: 2px; }
+  a { color: var(--accent-ink); text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--accent-ink) 45%, transparent); text-underline-offset: 2px; }
   a:hover { text-decoration-color: var(--accent-ink); }
-  code { font-family: var(--font-mono); background: var(--surface-raised); border: 1px solid var(--border); padding: 1px 5px; font-size: 0.88em; color: var(--ink); }
-  .eyebrow { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.09em; text-transform: uppercase; color: var(--ink-faint); margin: 0 0 14px; }
-  .masthead { padding-bottom: 36px; border-bottom: 1px solid var(--border); }
-  .masthead h1 { font-size: clamp(34px, 5vw, 46px); line-height: 1.08; letter-spacing: -0.01em; }
-  .masthead .lede { margin-top: 18px; max-width: 66ch; font-size: 17px; line-height: 1.6; color: var(--ink-muted); }
+  code { font-family: var(--font-mono); background: var(--surface-sunken); border: 1px solid var(--border); border-radius: 3px; padding: 1px 6px; font-size: 0.86em; color: var(--ink); }
+  .eyebrow { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-faint); margin: 0 0 16px; }
+  .masthead { padding-bottom: 40px; border-bottom: 1px solid var(--border); }
+  .masthead h1 { font-size: clamp(36px, 5.5vw, 50px); line-height: 1.1; letter-spacing: -0.015em; }
+  .masthead .lede { margin-top: 20px; max-width: 62ch; font-size: 18px; line-height: 1.6; color: var(--ink-muted); }
   .masthead .lede strong { color: var(--ink); font-weight: 600; }
-  .meta-strip { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 8px 14px; font-family: var(--font-mono); font-size: 12px; color: var(--ink-faint); }
-  .meta-strip .sep { color: var(--border-strong); }
-  section { padding: 44px 0; border-bottom: 1px solid var(--border); }
-  .section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 22px; flex-wrap: wrap; }
-  .section-head h2 { font-size: 22px; }
-  .section-num { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.09em; color: var(--accent-ink); }
-  .section-note { max-width: 68ch; font-size: 14.5px; line-height: 1.6; color: var(--ink-muted); margin-top: -6px; margin-bottom: 24px; }
-  .board { border: 1px solid var(--border); background: var(--surface); padding: 6px 20px; }
-  .board-row { display: grid; grid-template-columns: 26px 1fr auto; gap: 14px; align-items: center; padding: 11px 0; border-bottom: 1px solid var(--border); }
+  .meta-strip { margin-top: 26px; display: flex; flex-wrap: wrap; align-items: center; row-gap: 8px; font-family: var(--font-mono); font-size: 12.5px; color: var(--ink-faint); }
+  .meta-strip > * { display: inline-flex; align-items: center; }
+  .meta-strip > *:not(:first-child)::before { content: "·"; margin: 0 12px; color: var(--border-strong); }
+  .meta-strip a { color: var(--accent-ink); font-weight: 600; text-decoration: none; }
+  .meta-strip a:hover { text-decoration: underline; }
+  section { padding: 48px 0; border-bottom: 1px solid var(--border); }
+  section > h2 { font-size: 24px; margin-bottom: 10px; }
+  .section-note { max-width: 66ch; font-size: 15px; line-height: 1.6; color: var(--ink-muted); margin-bottom: 26px; }
+  .board { border: 1px solid var(--border); border-radius: 6px; background: var(--surface); padding: 4px 22px; }
+  .board-row { display: grid; grid-template-columns: 28px 1fr auto; gap: 16px; align-items: center; padding: 13px 0; border-bottom: 1px solid var(--border); }
   .board-row:last-child { border-bottom: none; }
-  .board-rank { font-family: var(--font-mono); font-size: 12px; color: var(--ink-faint); text-align: right; font-variant-numeric: tabular-nums; }
-  .board-name-line { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin-bottom: 6px; flex-wrap: wrap; }
+  .board-rank { font-family: var(--font-mono); font-size: 12.5px; color: var(--ink-faint); text-align: right; font-variant-numeric: tabular-nums; }
+  .board-name-line { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin-bottom: 7px; flex-wrap: wrap; }
   .board-name { font-weight: 600; color: var(--ink); text-decoration: none; }
   .board-name:hover { text-decoration: underline; }
-  .board-category { font-size: 11.5px; color: var(--ink-faint); margin-left: 8px; }
-  .board-score { font-family: var(--font-mono); font-size: 12.5px; font-variant-numeric: tabular-nums; color: var(--ink-muted); white-space: nowrap; }
-  .board-bar-track { height: 7px; background: var(--border); }
+  .board-category { font-size: 12px; color: var(--ink-faint); margin-left: 9px; }
+  .board-score { font-family: var(--font-mono); font-size: 13px; font-variant-numeric: tabular-nums; color: var(--ink-muted); white-space: nowrap; }
+  .board-bar-track { height: 8px; border-radius: 4px; background: var(--surface-sunken); overflow: hidden; }
   .board-bar-fill { height: 100%; background: var(--bar-color, var(--l0)); }
-  .stress-tag { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--l3); margin-left: 8px; }
-  .chip { display: inline-flex; align-items: center; gap: 5px; font-family: var(--font-mono); font-size: 11px; font-weight: 600; padding: 3px 8px; border: 1px solid var(--chip-color, var(--l0)); color: var(--chip-color, var(--l0)); background: var(--surface-raised); background: color-mix(in srgb, var(--chip-color, var(--l0)) 12%, var(--surface-raised)); white-space: nowrap; }
+  .stress-tag { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--l3); margin-left: 9px; }
+  .chip { display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: 11.5px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 4px; border: 1px solid var(--chip-color, var(--l0)); color: var(--chip-color, var(--l0)); background: var(--surface-sunken); background: color-mix(in srgb, var(--chip-color, var(--l0)) 12%, var(--surface-sunken)); white-space: nowrap; }
   .chip .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--chip-color, var(--l0)); flex: none; }
   .heatmap-wrap { overflow-x: auto; }
   .heatmap { border-collapse: collapse; font-size: 12px; min-width: 760px; width: 100%; }
   .heatmap th, .heatmap td { padding: 0; }
-  .heatmap thead th { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.02em; color: var(--ink-faint); font-weight: 500; text-align: center; padding: 0 4px 8px; vertical-align: bottom; line-height: 1.2; }
+  .heatmap thead th { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.02em; color: var(--ink-faint); font-weight: 500; text-align: center; padding: 0 4px 10px; vertical-align: bottom; line-height: 1.25; }
   .heatmap thead th:first-child { text-align: left; }
-  .heatmap tbody th { text-align: left; font-weight: 600; padding: 0 10px 0 0; white-space: nowrap; font-size: 12.5px; }
+  .heatmap tbody th { text-align: left; font-weight: 600; padding: 0 12px 0 0; white-space: nowrap; font-size: 13px; }
   .heatmap td { text-align: center; padding: 2px; }
-  .cell { font-family: var(--font-mono); font-variant-numeric: tabular-nums; font-size: 11px; height: 32px; display: flex; align-items: center; justify-content: center; background: var(--surface); background: color-mix(in srgb, var(--accent) var(--v, 0%), var(--surface)); color: var(--ink-muted); border: 1px solid var(--border); }
-  .finding { padding: 40px 0 44px; }
-  .finding-card { border-left: 3px solid var(--l1); background: var(--surface); background: color-mix(in srgb, var(--l1) 7%, var(--surface)); padding: 22px 26px; }
-  .finding-eyebrow { color: var(--l1); margin-bottom: 10px; }
-  .finding h2 { font-size: 20px; margin-bottom: 14px; max-width: 38ch; }
-  .finding p { max-width: 68ch; font-size: 15px; line-height: 1.65; color: var(--ink-muted); }
+  .cell { font-family: var(--font-mono); font-variant-numeric: tabular-nums; font-size: 11px; height: 34px; display: flex; align-items: center; justify-content: center; background: var(--surface-sunken); background: color-mix(in srgb, var(--accent) var(--v, 0%), var(--surface-sunken)); color: var(--ink-muted); border: 1px solid var(--border); }
+  .finding { padding: 44px 0 48px; }
+  .finding-card { border-left: 4px solid var(--l1); border-radius: 0 6px 6px 0; background: var(--surface); background: color-mix(in srgb, var(--l1) 6%, var(--surface)); padding: 26px 28px; }
+  .finding-eyebrow { color: var(--l1); margin-bottom: 12px; }
+  .finding h2 { font-size: 21px; margin-bottom: 16px; max-width: 36ch; }
+  .finding p { max-width: 66ch; font-size: 15.5px; line-height: 1.65; color: var(--ink-muted); }
   .stat-callout .section-note { margin-bottom: 0; }
-  .colophon { padding-top: 44px; border-bottom: none; }
-  .colophon-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; }
-  .colophon h3 { font-size: 14px; font-family: var(--font-mono); letter-spacing: 0.03em; margin-bottom: 10px; }
-  .colophon p, .colophon li { font-size: 13.5px; line-height: 1.6; color: var(--ink-muted); }
+  .colophon { padding-top: 48px; border-bottom: none; }
+  .colophon-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+  .colophon h3 { font-size: 13px; font-family: var(--font-mono); letter-spacing: 0.04em; color: var(--ink-faint); margin-bottom: 12px; }
+  .colophon p, .colophon li { font-size: 14px; line-height: 1.6; color: var(--ink-muted); }
   .colophon ol { margin: 0; padding-left: 0; list-style: none; counter-reset: phase; }
-  .colophon li { counter-increment: phase; position: relative; padding-left: 26px; margin-bottom: 9px; }
-  .colophon li::before { content: "0" counter(phase); position: absolute; left: 0; top: 0; font-family: var(--font-mono); font-size: 11px; color: var(--accent-ink); font-weight: 600; }
+  .colophon li { counter-increment: phase; position: relative; padding-left: 28px; margin-bottom: 10px; }
+  .colophon li::before { content: "0" counter(phase); position: absolute; left: 0; top: 0.1em; font-family: var(--font-mono); font-size: 11px; color: var(--accent-ink); font-weight: 700; }
   .colophon li.done { color: var(--ink); }
   .colophon li.done::before { content: "\\2713"; color: var(--l2); }
-  .repo-link { margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--border); font-family: var(--font-mono); font-size: 12px; color: var(--ink-faint); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+  .repo-link { margin-top: 40px; padding-top: 22px; border-top: 1px solid var(--border); font-family: var(--font-mono); font-size: 12px; color: var(--ink-faint); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px 20px; }
   @media (max-width: 640px) {
-    .page { padding: 36px 18px 60px; }
+    .page { padding: 40px 18px 64px; }
     .colophon-grid { grid-template-columns: 1fr; }
-    .board-row { grid-template-columns: 22px 1fr; }
-    .board-level { grid-column: 2; justify-self: start; margin-top: 6px; }
+    .board-row { grid-template-columns: 20px 1fr; }
+    .board-level { grid-column: 2; justify-self: start; margin-top: 8px; }
   }
 `;
