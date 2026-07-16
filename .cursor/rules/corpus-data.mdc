@@ -1,0 +1,28 @@
+---
+description: Data-integrity rules for the corpus pipeline — generated artifacts, pinning, and the blind-rating protocol.
+globs: corpus/**,results/**,analysis/**
+alwaysApply: false
+---
+
+# Corpus data discipline
+
+This rule loads whenever you're touching the pipeline's data — the same
+discipline the study itself depends on for every number to be defensible.
+
+- **`corpus/reports/*.json` and everything in `results/` are generated, not
+  hand-edited.** They are produced by `corpus/run.mjs` and
+  `corpus/build-results.mjs` respectively. If a number looks wrong, fix the
+  manifest entry or file a critique — never hand-edit the output.
+- **Never change an existing `corpus/manifest.json` entry's `commit` in
+  place.** Add a new entry (or a dated note) instead — every claim in this
+  study traces back to one pinned commit, and silently moving that target
+  breaks that guarantee retroactively.
+- **Write `analysis/ratings/<name>.md` before running the scanner on that
+  repository, not after.** If a report already exists for a repo with no
+  rating file yet, write the rating blind — without opening the report —
+  or the comparison in `analysis/external-validity.md` is circular. See
+  [METHODOLOGY.md](../../METHODOLOGY.md#blind-human-rating-q1-protocol).
+- **`corpus/run.mjs` only clones and reads.** It must never `npm
+  install`/`build`/`test` inside a scanned repository's checkout — that
+  invariant is what makes it safe to point this pipeline at arbitrary
+  third-party repositories.

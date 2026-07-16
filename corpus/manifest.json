@@ -1,0 +1,43 @@
+{
+  "$comment": "Each entry pins a repository to an exact commit for reproducible scanning. toolVersion is the npm spec passed to `npx --yes <toolVersion>`. scanSubpath scans only part of a monorepo when set. isStressCase marks entries chosen because the scanner is expected to score them poorly or surprisingly — see METHODOLOGY.md. Never edit an existing entry's commit in place: add a new entry or a dated note instead.",
+  "schemaVersion": 1,
+  "toolVersion": "harness-score@1.0.0",
+  "entries": [
+    {
+      "name": "harness-score",
+      "category": "control-ceiling",
+      "repoUrl": "https://github.com/paladini/harness-score.git",
+      "commit": "27bb2fa7f9da2e370cfb3d9f15c88b867e23d5c9",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "The scanner scanning itself. Dogfoods L4 on every commit to main — the strongest available ceiling anchor."
+    },
+    {
+      "name": "fakeflix",
+      "category": "harness-engineering-exemplar",
+      "repoUrl": "https://github.com/tech-leads-club/fakeflix.git",
+      "commit": "62dd3cb61bbe6a6e6acbd0f171e0ea1067331445",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Known-good anchor from harness-score's own v0.1.2 real-world test — extensive .cursor/rules, skills, and subagents."
+    },
+    {
+      "name": "execa",
+      "category": "control-non-ai-quality",
+      "repoUrl": "https://github.com/sindresorhus/execa.git",
+      "commit": "5944b2d176c69591d0eb35a383d0c16758060ae8",
+      "scanSubpath": null,
+      "isStressCase": true,
+      "notes": "Excellently engineered library (tests, CI, strict types, lint) with zero AI-harness artifacts. Tests whether strong Sensors/CI/Hygiene alone can be mistaken for harness maturity."
+    },
+    {
+      "name": "octocat-hello-world",
+      "category": "control-floor",
+      "repoUrl": "https://github.com/octocat/Hello-World.git",
+      "commit": "7fd1a60b01f91b314f59955a4e4d4e80d8edf11d",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "GitHub's canonical minimal repository — a README and nothing else. Expected floor: L0."
+    }
+  ]
+}

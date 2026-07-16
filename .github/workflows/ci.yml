@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Test
+        run: npm test
+
+      - name: Verify results/ matches committed corpus/reports/
+        run: |
+          node corpus/build-results.mjs
+          git diff --exit-code -- results/ || {
+            echo "::error::results/ is out of sync with corpus/reports/ — run 'node corpus/build-results.mjs' and commit the diff."
+            exit 1
+          }
