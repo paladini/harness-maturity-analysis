@@ -9,6 +9,7 @@
     "corpus:build": "node corpus/build-results.mjs",
     "site:build": "node corpus/build-site.mjs",
     "corpus": "npm run corpus:run && npm run corpus:build && npm run site:build",
+    "score": "node corpus/score-adhoc.mjs",
     "test": "vitest run",
     "lint": "biome check .",
     "format": "biome check --write .",

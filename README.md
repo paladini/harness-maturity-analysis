@@ -125,10 +125,29 @@ Everything is pinned and versioned — the raw JSON report for every scanned
 repository lives in [`corpus/reports/`](corpus/reports), so any number in
 this study is one click away from the filesystem fact it came from.
 
+## Score any repository, not just the corpus
+
+The corpus is curated and pinned on purpose — but the scanner behind it
+works on anything. [`corpus/score-adhoc.mjs`](corpus/score-adhoc.mjs) scores
+any repo URL or local path with this study's exact pinned `harness-score`
+version, shows the dimension breakdown and the highest-value unmet checks,
+and tells you where it would land among the current corpus — without
+writing anything to `corpus/manifest.json` or `corpus/reports/`:
+
+```bash
+npm run score -- https://github.com/owner/repo   # or a local path: npm run score -- .
+```
+
+Packaged as a Claude Code skill —
+[`score-any-repo`](.claude/skills/score-any-repo/SKILL.md) — for "how does
+X score?" questions asked in an agent session. If a result turns out to be
+corpus-worthy, redo it properly with the `add-corpus-entry` skill instead
+of promoting the ad-hoc output.
+
 ## Repository layout
 
 ```
-corpus/       manifest, runner, raw scan reports (versioned JSON)
+corpus/       manifest, runner, ad-hoc scorer, raw scan reports (versioned JSON)
 results/      generated leaderboard + dimension heatmap
 analysis/     findings.md (Q2, done); ratings/ + external-validity.md (Q1, Phase 2)
 proposals/    4 findings turned into harness-score check-change proposals

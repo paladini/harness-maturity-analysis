@@ -2,83 +2,16 @@
 // Pinned-clone + harness-score scan runner. Zero dependencies, same invariant
 // as harness-score itself: given the same manifest, this produces the same
 // reports, byte for byte (module the machine-local `root` path).
-import { execFileSync } from 'node:child_process';
-import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { pinnedClone, runHarnessScore } from './lib/scan.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 const CACHE_DIR = path.join(ROOT, '.cache', 'repos');
 const REPORTS_DIR = path.join(__dirname, 'reports');
 const MANIFEST_PATH = path.join(__dirname, 'manifest.json');
-
-function sh(file, args, cwd) {
-  return execFileSync(file, args, {
-    cwd,
-    stdio: ['ignore', 'pipe', 'inherit'],
-    encoding: 'utf8',
-  });
-}
-
-/**
- * Runs a command that might resolve to a Windows .cmd/.bat shim (npx does).
- * CreateProcess can't launch those directly — Windows needs cmd.exe to
- * interpret them — but `shell: true` makes Node build a raw command-line
- * string and only concatenate args into it, not escape them (see Node's
- * DEP0190). Routing through `cmd.exe /d /s /c <file> <args...>` instead
- * keeps every argument in execFileSync's normal argv array, so Node's
- * standard per-argument Windows escaping still applies — cmd.exe is a real
- * executable, not a shell string target.
- */
-function shViaShim(file, args, cwd) {
-  if (process.platform === 'win32') {
-    return sh('cmd.exe', ['/d', '/s', '/c', file, ...args], cwd);
-  }
-  return sh(file, args, cwd);
-}
-
-function currentHead(dir) {
-  try {
-    return sh('git', ['rev-parse', 'HEAD'], dir).trim();
-  } catch {
-    return null;
-  }
-}
-
-/**
- * Fetches exactly `commit` into `dest` — never the branch tip. Tries a
- * shallow fetch-by-SHA first (fast; GitHub/GitLab serve this for public
- * repos); falls back to a full clone + checkout for hosts that reject
- * fetching an arbitrary SHA directly.
- */
-function pinnedClone(repoUrl, commit, dest) {
-  if (existsSync(dest)) {
-    if (currentHead(dest) === commit) return { reused: true };
-    rmSync(dest, { recursive: true, force: true });
-  }
-  mkdirSync(dest, { recursive: true });
-  sh('git', ['init', '-q'], dest);
-  sh('git', ['remote', 'add', 'origin', repoUrl], dest);
-  try {
-    sh('git', ['fetch', '--depth', '1', 'origin', commit], dest);
-    sh('git', ['checkout', '-q', 'FETCH_HEAD'], dest);
-  } catch {
-    rmSync(dest, { recursive: true, force: true });
-    sh('git', ['clone', '-q', repoUrl, dest]);
-    sh('git', ['checkout', '-q', commit], dest);
-  }
-  const head = currentHead(dest);
-  if (head !== commit) {
-    throw new Error(`checked out ${head}, expected pinned commit ${commit}`);
-  }
-  return { reused: false };
-}
-
-function runHarnessScore(toolVersion, targetDir) {
-  const out = shViaShim('npx', ['--yes', toolVersion, targetDir, '--json'], ROOT);
-  return JSON.parse(out);
-}
 
 export function parseArgs(argv) {
   const onlyIdx = argv.indexOf('--only');

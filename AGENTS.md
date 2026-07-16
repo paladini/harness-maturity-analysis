@@ -21,6 +21,8 @@ npm run site:build                    # regenerate docs/index.html (the GitHub P
 npm run corpus                        # all three, in order
 node corpus/run.mjs --only <name>     # scan a single manifest entry while iterating
 
+npm run score -- <repo-url-or-path>   # score ANY repo/local path ad-hoc, outside the corpus (see below)
+
 npm test                              # vitest — pure functions in corpus/lib/, parseArgs, manifest.json shape
 npm run lint                          # biome check
 npm run format                        # biome check --write
@@ -63,10 +65,17 @@ instead of just documented.
   (see [harness-score's CONTRIBUTING.md](https://github.com/paladini/harness-score/blob/main/CONTRIBUTING.md#adding-or-changing-a-check))
   — a new or changed check must stay deterministic and filesystem-only,
   exactly like every existing harness-score check.
+- **Ad-hoc scoring never touches the corpus.** `corpus/score-adhoc.mjs`
+  (skill: [`score-any-repo`](.claude/skills/score-any-repo/SKILL.md)) scores
+  any repo or local path with the same pinned `harness-score` version, but
+  writes nothing to `corpus/manifest.json` or `corpus/reports/` — it's for
+  a one-off reading, not a study data point. If a result turns out to be
+  corpus-worthy, redo it properly with `add-corpus-entry` instead of
+  promoting the ad-hoc output.
 
 ## What not to touch
 
-- Never run code *from* a scanned repository. `corpus/run.mjs` clones and
-  reads files only; it must never `npm install`/`build`/`test` inside a
-  scanned repo. That invariant is what makes it safe to point this at
-  arbitrary third-party repositories.
+- Never run code *from* a scanned repository. `corpus/run.mjs` and
+  `corpus/score-adhoc.mjs` clone and read files only; neither may ever `npm
+  install`/`build`/`test` inside a scanned repo. That invariant is what
+  makes it safe to point either at arbitrary third-party repositories.
