@@ -17,7 +17,8 @@ invariant harness-score itself holds).
 ```bash
 npm run corpus:run                    # clone every pinned repo (or reuse cache) + scan -> corpus/reports/*.json
 npm run corpus:build                  # regenerate results/leaderboard.{md,csv} + results/dimension-heatmap.md
-npm run corpus                        # both, in order
+npm run site:build                    # regenerate docs/index.html (the GitHub Pages site)
+npm run corpus                        # all three, in order
 node corpus/run.mjs --only <name>     # scan a single manifest entry while iterating
 
 npm test                              # vitest — pure functions in corpus/lib/, parseArgs, manifest.json shape
@@ -26,9 +27,10 @@ npm run format                        # biome check --write
 ```
 
 CI (`.github/workflows/ci.yml`) runs lint, tests, and a data-integrity check
-that regenerates `results/` from the committed `corpus/reports/*.json` and
-fails the build if it drifts from what's committed — the same "generated,
-not hand-edited" rule below, enforced instead of just documented.
+that regenerates `results/` and `docs/index.html` from the committed
+`corpus/reports/*.json` and fails the build if either drifts from what's
+committed — the same "generated, not hand-edited" rule below, enforced
+instead of just documented.
 
 ## Conventions agents must follow
 
@@ -41,8 +43,13 @@ not hand-edited" rule below, enforced instead of just documented.
   raw, versioned output of `npx harness-score@<pinned> <path> --json`. If a
   number looks wrong, fix the manifest or file a critique — never hand-edit
   a report.
-- **`results/*` are generated, not hand-edited.** Regenerate with
-  `npm run corpus:build` after any change under `corpus/reports/`.
+- **`results/*` and `docs/index.html` are generated, not hand-edited.**
+  Regenerate with `npm run corpus:build` and `npm run site:build` (or just
+  `npm run corpus`, which does both) after any change under
+  `corpus/reports/`. `docs/index.html` is the GitHub Pages site — it's
+  built by `corpus/build-site.mjs` from `corpus/lib/site.mjs`, the same
+  "pure render functions + thin CLI wrapper" shape as
+  `corpus/build-results.mjs` / `corpus/lib/results.mjs`.
 - **Write the blind rating before running the scanner on that repo.** If a
   report already exists for a repository with no rating file yet, write
   `analysis/ratings/<name>.md` without looking at the report first — the

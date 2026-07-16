@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harness Maturity Analysis — 20 repositories scored</title>
+<meta name="description" content="A reproducible study of AI-harness maturity across 20 notable open-source repositories, scored with harness-score.">
+<style>
+
+  :root {
+    --bg: #E8ECED; --bg-grid: #C7CDD1; --surface: #F6F7F5; --surface-raised: #FFFFFF;
+    --ink: #181D22; --ink-muted: #4B535C; --ink-faint: #7A828A;
+    --border: #C7CDD1; --border-strong: #9BA4AA;
+    --accent: #B8631E; --accent-ink: #7A3F0F;
+    --l0: #5B6470; --l1: #6E8FB4; --l2: #4E9A8B; --l3: #C99A3D; --l4: #B8631E;
+    --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Noto Serif", ui-serif, serif;
+    --font-body: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Noto Serif", ui-serif, serif;
+    --font-mono: ui-monospace, "Cascadia Code", "JetBrains Mono", "Fira Code", Consolas, "SF Mono", Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14181C; --bg-grid: #262D33; --surface: #1B2126; --surface-raised: #20272C;
+      --ink: #E7E9E4; --ink-muted: #9AA3A8; --ink-faint: #6B747B;
+      --border: #2E363C; --border-strong: #414C53;
+      --accent: #E08A3C; --accent-ink: #F3B679;
+      --l0: #8C96A3; --l1: #85AAD1; --l2: #63B8A6; --l3: #E6B94C; --l4: #E08A3C;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background:
+      repeating-linear-gradient(0deg, transparent, transparent 27px, var(--bg-grid) 27px, var(--bg-grid) 28px),
+      repeating-linear-gradient(90deg, transparent, transparent 27px, var(--bg-grid) 27px, var(--bg-grid) 28px),
+      var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+  .page { max-width: 920px; margin: 0 auto; padding: 56px 28px 80px; }
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 600; text-wrap: balance; margin: 0; }
+  p { margin: 0; }
+  a { color: var(--accent-ink); text-decoration-color: color-mix(in srgb, var(--accent-ink) 40%, transparent); text-underline-offset: 2px; }
+  a:hover { text-decoration-color: var(--accent-ink); }
+  code { font-family: var(--font-mono); background: var(--surface-raised); border: 1px solid var(--border); padding: 1px 5px; font-size: 0.88em; color: var(--ink); }
+  .eyebrow { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.09em; text-transform: uppercase; color: var(--ink-faint); margin: 0 0 14px; }
+  .masthead { padding-bottom: 36px; border-bottom: 1px solid var(--border); }
+  .masthead h1 { font-size: clamp(34px, 5vw, 46px); line-height: 1.08; letter-spacing: -0.01em; }
+  .masthead .lede { margin-top: 18px; max-width: 66ch; font-size: 17px; line-height: 1.6; color: var(--ink-muted); }
+  .masthead .lede strong { color: var(--ink); font-weight: 600; }
+  .meta-strip { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 8px 14px; font-family: var(--font-mono); font-size: 12px; color: var(--ink-faint); }
+  .meta-strip .sep { color: var(--border-strong); }
+  section { padding: 44px 0; border-bottom: 1px solid var(--border); }
+  .section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 22px; flex-wrap: wrap; }
+  .section-head h2 { font-size: 22px; }
+  .section-num { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.09em; color: var(--accent-ink); }
+  .section-note { max-width: 68ch; font-size: 14.5px; line-height: 1.6; color: var(--ink-muted); margin-top: -6px; margin-bottom: 24px; }
+  .board { border: 1px solid var(--border); background: var(--surface); padding: 6px 20px; }
+  .board-row { display: grid; grid-template-columns: 26px 1fr auto; gap: 14px; align-items: center; padding: 11px 0; border-bottom: 1px solid var(--border); }
+  .board-row:last-child { border-bottom: none; }
+  .board-rank { font-family: var(--font-mono); font-size: 12px; color: var(--ink-faint); text-align: right; font-variant-numeric: tabular-nums; }
+  .board-name-line { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin-bottom: 6px; flex-wrap: wrap; }
+  .board-name { font-weight: 600; color: var(--ink); text-decoration: none; }
+  .board-name:hover { text-decoration: underline; }
+  .board-category { font-size: 11.5px; color: var(--ink-faint); margin-left: 8px; }
+  .board-score { font-family: var(--font-mono); font-size: 12.5px; font-variant-numeric: tabular-nums; color: var(--ink-muted); white-space: nowrap; }
+  .board-bar-track { height: 7px; background: var(--border); }
+  .board-bar-fill { height: 100%; background: var(--bar-color, var(--l0)); }
+  .stress-tag { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--l3); margin-left: 8px; }
+  .chip { display: inline-flex; align-items: center; gap: 5px; font-family: var(--font-mono); font-size: 11px; font-weight: 600; padding: 3px 8px; border: 1px solid var(--chip-color, var(--l0)); color: var(--chip-color, var(--l0)); background: var(--surface-raised); background: color-mix(in srgb, var(--chip-color, var(--l0)) 12%, var(--surface-raised)); white-space: nowrap; }
+  .chip .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--chip-color, var(--l0)); flex: none; }
+  .heatmap-wrap { overflow-x: auto; }
+  .heatmap { border-collapse: collapse; font-size: 12px; min-width: 760px; width: 100%; }
+  .heatmap th, .heatmap td { padding: 0; }
+  .heatmap thead th { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.02em; color: var(--ink-faint); font-weight: 500; text-align: center; padding: 0 4px 8px; vertical-align: bottom; line-height: 1.2; }
+  .heatmap thead th:first-child { text-align: left; }
+  .heatmap tbody th { text-align: left; font-weight: 600; padding: 0 10px 0 0; white-space: nowrap; font-size: 12.5px; }
+  .heatmap td { text-align: center; padding: 2px; }
+  .cell { font-family: var(--font-mono); font-variant-numeric: tabular-nums; font-size: 11px; height: 32px; display: flex; align-items: center; justify-content: center; background: var(--surface); background: color-mix(in srgb, var(--accent) var(--v, 0%), var(--surface)); color: var(--ink-muted); border: 1px solid var(--border); }
+  .finding { padding: 40px 0 44px; }
+  .finding-card { border-left: 3px solid var(--l1); background: var(--surface); background: color-mix(in srgb, var(--l1) 7%, var(--surface)); padding: 22px 26px; }
+  .finding-eyebrow { color: var(--l1); margin-bottom: 10px; }
+  .finding h2 { font-size: 20px; margin-bottom: 14px; max-width: 38ch; }
+  .finding p { max-width: 68ch; font-size: 15px; line-height: 1.65; color: var(--ink-muted); }
+  .stat-callout .section-note { margin-bottom: 0; }
+  .colophon { padding-top: 44px; border-bottom: none; }
+  .colophon-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; }
+  .colophon h3 { font-size: 14px; font-family: var(--font-mono); letter-spacing: 0.03em; margin-bottom: 10px; }
+  .colophon p, .colophon li { font-size: 13.5px; line-height: 1.6; color: var(--ink-muted); }
+  .colophon ol { margin: 0; padding-left: 0; list-style: none; counter-reset: phase; }
+  .colophon li { counter-increment: phase; position: relative; padding-left: 26px; margin-bottom: 9px; }
+  .colophon li::before { content: "0" counter(phase); position: absolute; left: 0; top: 0; font-family: var(--font-mono); font-size: 11px; color: var(--accent-ink); font-weight: 600; }
+  .colophon li.done { color: var(--ink); }
+  .colophon li.done::before { content: "\2713"; color: var(--l2); }
+  .repo-link { margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--border); font-family: var(--font-mono); font-size: 12px; color: var(--ink-faint); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+  @media (max-width: 640px) {
+    .page { padding: 36px 18px 60px; }
+    .colophon-grid { grid-template-columns: 1fr; }
+    .board-row { grid-template-columns: 22px 1fr; }
+    .board-level { grid-column: 2; justify-self: start; margin-top: 6px; }
+  }
+
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="masthead">
+    <p class="eyebrow">harness-maturity-analysis · phase 1 complete</p>
+    <h1>Does the score<br>hold up?</h1>
+    <p class="lede">
+      20 of 21 pinned repositories, one deterministic scanner,
+      one question: when <code>harness-score</code> calls a repository L4 or L0,
+      does it hold up? <strong>A high reading measures a repository's harness —
+      never the competence of the company that owns it.</strong>
+    </p>
+    <div class="meta-strip">
+      <span>harness-score@1.0.0</span><span class="sep">·</span>
+      <span>20/21 pinned commits scanned</span><span class="sep">·</span>
+      <span>zero LLM calls · zero network at scan time</span><span class="sep">·</span>
+      <span><a href="https://github.com/paladini/harness-maturity-analysis">source on GitHub</a></span>
+    </div>
+  </header>
+
+  <section class="leaderboard">
+    <div class="section-head">
+      <h2>The leaderboard</h2>
+      <span class="section-num">01</span>
+    </div>
+    <p class="section-note">
+      Every bar is one pinned commit, scanned once, byte-reproducible. Bar length is total
+      score; color is the gated maturity level — they can diverge, and where they do is the
+      most interesting part of this study. Full raw data:
+      <a href="https://github.com/paladini/harness-maturity-analysis/blob/main/results/leaderboard.csv">leaderboard.csv</a>.
+    </p>
+    <div class="board">
+
+      <div class="board-row">
+        <div class="board-rank">1</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/paladini/harness-score" target="_blank" rel="noopener">paladini/harness-score</a>
+              <span class="board-category">control · ceiling</span></span>
+            <span class="board-score">108/108 · 100%</span>
+          </div>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:100%; --bar-color:var(--l4)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l4)"><span class="dot"></span>L4 Self-correcting</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">2</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/anthropics/anthropic-cookbook" target="_blank" rel="noopener">anthropics/anthropic-cookbook</a>
+              <span class="board-category">AI lab</span></span>
+            <span class="board-score">99/108 · 92%</span>
+          </div>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:92%; --bar-color:var(--l3)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l3)"><span class="dot"></span>L3 Sensing</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">3</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/promptfoo/promptfoo" target="_blank" rel="noopener">promptfoo/promptfoo</a>
+              <span class="board-category">prompt / eval engineering</span></span>
+            <span class="board-score">95/108 · 88%</span>
+          </div>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:88%; --bar-color:var(--l4)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l4)"><span class="dot"></span>L4 Self-correcting</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">4</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/block/goose" target="_blank" rel="noopener">block/goose</a>
+              <span class="board-category">AI-first dev tool</span></span>
+            <span class="board-score">80/108 · 74%</span>
+          </div>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:74%; --bar-color:var(--l3)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l3)"><span class="dot"></span>L3 Sensing</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">5</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/continuedev/continue" target="_blank" rel="noopener">continuedev/continue</a>
+              <span class="board-category">AI-first dev tool</span></span>
+            <span class="board-score">79/108 · 73%</span>
+          </div>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:73%; --bar-color:var(--l3)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l3)"><span class="dot"></span>L3 Sensing</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">6</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/cline/cline" target="_blank" rel="noopener">cline/cline</a>
+              <span class="board-category">AI-first dev tool</span></span>
+            <span class="board-score">78/108 · 72%</span>
+          </div>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:72%; --bar-color:var(--l1)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l1)"><span class="dot"></span>L1 Documented</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">7</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/zed-industries/zed" target="_blank" rel="noopener">zed-industries/zed</a>
+              <span class="board-category">AI-first dev tool</span><span class="stress-tag">stress case</span></span>
+            <span class="board-score">75/108 · 69%</span>
+          </div>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:69%; --bar-color:var(--l3)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l3)"><span class="dot"></span>L3 Sensing</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">8</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/sst/opencode" target="_blank" rel="noopener">sst/opencode</a>
+              <span class="board-category">AI-first dev tool</span></span>
+            <span class="board-score">74/108 · 69%</span>
+          </div>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:69%; --bar-color:var(--l1)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l1)"><span class="dot"></span>L1 Documented</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">9</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/langfuse/langfuse" target="_blank" rel="noopener">langfuse/langfuse</a>
+              <span class="board-category">prompt / eval engineering</span><span class="stress-tag">stress case</span></span>
+            <span class="board-score">73/108 · 68%</span>
+          </div>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:68%; --bar-color:var(--l1)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l1)"><span class="dot"></span>L1 Documented</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">10</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/tech-leads-club/fakeflix" target="_blank" rel="noopener">tech-leads-club/fakeflix</a>
+              <span class="board-category">harness-engineering exemplar</span></span>
+            <span class="board-score">72/108 · 67%</span>
+          </div>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:67%; --bar-color:var(--l1)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l1)"><span class="dot"></span>L1 Documented</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">11</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/All-Hands-AI/OpenHands" target="_blank" rel="noopener">All-Hands-AI/OpenHands</a>
+              <span class="board-category">AI-first dev tool</span></span>
+            <span class="board-score">72/108 · 67%</span>
+          </div>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:67%; --bar-color:var(--l1)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l1)"><span class="dot"></span>L1 Documented</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">12</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/modelcontextprotocol/servers" target="_blank" rel="noopener">modelcontextprotocol/servers</a>
+              <span class="board-category">artifact governance</span></span>
+            <span class="board-score">66/108 · 61%</span>
+          </div>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:61%; --bar-color:var(--l1)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l1)"><span class="dot"></span>L1 Documented</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">13</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/huggingface/smolagents" target="_blank" rel="noopener">huggingface/smolagents</a>
+              <span class="board-category">AI lab</span></span>
+            <span class="board-score">53/108 · 49%</span>
+          </div>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:49%; --bar-color:var(--l0)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l0)"><span class="dot"></span>L0 Unharnessed</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">14</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/stanfordnlp/dspy" target="_blank" rel="noopener">stanfordnlp/dspy</a>
+              <span class="board-category">prompt / eval engineering</span></span>
+            <span class="board-score">52/108 · 48%</span>
+          </div>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:48%; --bar-color:var(--l0)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l0)"><span class="dot"></span>L0 Unharnessed</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">15</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/Aider-AI/aider" target="_blank" rel="noopener">Aider-AI/aider</a>
+              <span class="board-category">AI-first dev tool</span></span>
+            <span class="board-score">46/108 · 43%</span>
+          </div>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:43%; --bar-color:var(--l0)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l0)"><span class="dot"></span>L0 Unharnessed</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">16</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/openai/evals" target="_blank" rel="noopener">openai/evals</a>
+              <span class="board-category">prompt / eval engineering</span></span>
+            <span class="board-score">41/108 · 38%</span>
+          </div>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:38%; --bar-color:var(--l0)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l0)"><span class="dot"></span>L0 Unharnessed</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">17</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/sindresorhus/execa" target="_blank" rel="noopener">sindresorhus/execa</a>
+              <span class="board-category">control · quality w/o AI artifacts</span><span class="stress-tag">stress case</span></span>
+            <span class="board-score">36/108 · 33%</span>
+          </div>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:33%; --bar-color:var(--l0)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l0)"><span class="dot"></span>L0 Unharnessed</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">18</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/PatrickJS/awesome-cursorrules" target="_blank" rel="noopener">PatrickJS/awesome-cursorrules</a>
+              <span class="board-category">artifact governance</span><span class="stress-tag">stress case</span></span>
+            <span class="board-score">36/108 · 33%</span>
+          </div>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:33%; --bar-color:var(--l0)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l0)"><span class="dot"></span>L0 Unharnessed</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">19</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/anthropics/skills" target="_blank" rel="noopener">anthropics/skills</a>
+              <span class="board-category">harness-engineering exemplar</span></span>
+            <span class="board-score">17/108 · 16%</span>
+          </div>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:16%; --bar-color:var(--l0)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l0)"><span class="dot"></span>L0 Unharnessed</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">20</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/octocat/Hello-World" target="_blank" rel="noopener">octocat/Hello-World</a>
+              <span class="board-category">control · floor</span></span>
+            <span class="board-score">14/108 · 13%</span>
+          </div>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:13%; --bar-color:var(--l0)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l0)"><span class="dot"></span>L0 Unharnessed</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="heatmap-section">
+    <div class="section-head">
+      <h2>Dimension heatmap</h2>
+      <span class="section-num">02</span>
+    </div>
+    <p class="section-note">Percent earned per dimension. Shade intensity is the same number as the label — never color alone.</p>
+    <div class="heatmap-wrap">
+      <table class="heatmap">
+        <thead><tr><th></th><th>Context &amp; Guides</th><th>Skills &amp; Commands</th><th>Hooks &amp; Guardrails</th><th>Sensors &amp; Feedback</th><th>CI Feedback</th><th>Hygiene &amp; Safety</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">harness-score</th><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
+          <tr><th scope="row">anthropic-cookbook</th><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:57%">57</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:87%">87</div></td></tr>
+          <tr><th scope="row">promptfoo</th><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:35%">35</div></td><td><div class="cell" style="--v:86%">86</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
+          <tr><th scope="row">goose</th><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:53%">53</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:87%">87</div></td></tr>
+          <tr><th scope="row">continue</th><td><div class="cell" style="--v:65%">65</div></td><td><div class="cell" style="--v:71%">71</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:87%">87</div></td></tr>
+          <tr><th scope="row">cline</th><td><div class="cell" style="--v:40%">40</div></td><td><div class="cell" style="--v:71%">71</div></td><td><div class="cell" style="--v:29%">29</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:87%">87</div></td></tr>
+          <tr><th scope="row">zed</th><td><div class="cell" style="--v:85%">85</div></td><td><div class="cell" style="--v:53%">53</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:78%">78</div></td></tr>
+          <tr><th scope="row">opencode</th><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:87%">87</div></td></tr>
+          <tr><th scope="row">langfuse</th><td><div class="cell" style="--v:75%">75</div></td><td><div class="cell" style="--v:24%">24</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:87%">87</div></td></tr>
+          <tr><th scope="row">fakeflix</th><td><div class="cell" style="--v:45%">45</div></td><td><div class="cell" style="--v:82%">82</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:78%">78</div></td></tr>
+          <tr><th scope="row">openhands</th><td><div class="cell" style="--v:45%">45</div></td><td><div class="cell" style="--v:53%">53</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:87%">87</div></td></tr>
+          <tr><th scope="row">mcp-servers</th><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:60%">60</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
+          <tr><th scope="row">smolagents</th><td><div class="cell" style="--v:30%">30</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:80%">80</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:74%">74</div></td></tr>
+          <tr><th scope="row">dspy</th><td><div class="cell" style="--v:10%">10</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:80%">80</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:87%">87</div></td></tr>
+          <tr><th scope="row">aider</th><td><div class="cell" style="--v:10%">10</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:65%">65</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:74%">74</div></td></tr>
+          <tr><th scope="row">openai-evals</th><td><div class="cell" style="--v:10%">10</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:70%">70</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:61%">61</div></td></tr>
+          <tr><th scope="row">execa</th><td><div class="cell" style="--v:5%">5</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:60%">60</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:52%">52</div></td></tr>
+          <tr><th scope="row">awesome-cursorrules</th><td><div class="cell" style="--v:10%">10</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:30%">30</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:74%">74</div></td></tr>
+          <tr><th scope="row">anthropic-skills</th><td><div class="cell" style="--v:10%">10</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:65%">65</div></td></tr>
+          <tr><th scope="row">octocat-hello-world</th><td><div class="cell" style="--v:5%">5</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:57%">57</div></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="finding">
+    <div class="finding-card">
+      <p class="eyebrow finding-eyebrow">category gap, not a bug</p>
+      <h2>Anthropic's own skills showcase scores identically to an empty repo</h2>
+      <p>
+        <code>anthropic/skills</code> — Anthropic's official showcase of Claude Skills — scores
+        <strong>L0 · 16%</strong>,
+        indistinguishable in kind from <code>octocat/Hello-World</code>. Its skills live at
+        <code>skills/&lt;name&gt;/SKILL.md</code> (repository root) rather than <code>.claude/skills/</code>,
+        because this repository <em>distributes</em> skills rather than using them to develop
+        itself — and the relevant check correctly answers the question it's built to ask
+        ("does this repo have a self-referential skill harness?") with "no." But the model has
+        no vocabulary today for "canonical reference implementation of an artifact type" as
+        distinct from "no harness at all." A <code>.claude-plugin/</code> manifest at root —
+        which this repo has — is a strong, currently-ignored signal.
+      </p>
+    </div>
+  </section>
+
+  <section class="finding">
+    <div class="finding-card" style="border-left-color:var(--accent)">
+      <p class="eyebrow finding-eyebrow" style="color:var(--accent-ink)">confirmed bug, ready to fix</p>
+      <h2><code>HKS-05</code> misses the unbraced <code>$VAR</code> hook-path form</h2>
+      <p>
+        <code>cline</code> registers a real, committed hook —
+        <code>$CLAUDE_PROJECT_DIR/.claude/hooks/claude-code-for-web-setup.sh</code>, no curly
+        braces. The file genuinely exists at exactly that path. The check still reports it
+        missing: its path-resolution regex only strips the <em>braced</em> <code>${VAR}/</code>
+        form. A false negative, costing 2 points cline has legitimately earned — a one-line
+        regex fix, no design discussion needed.
+      </p>
+    </div>
+  </section>
+
+  <section class="stat-callout">
+    <div class="section-head">
+      <h2>How much of the score is actually "AI harness"?</h2>
+      <span class="section-num">03</span>
+    </div>
+    <p class="section-note">
+      Splitting each report's earned points into AI-specific (Context + Skills + Hooks) versus
+      generic engineering hygiene (Sensors + CI + Hygiene): most well-known agent-native tools
+      in this corpus earn the large majority of their points from tests, CI, and lockfiles —
+      dimensions with nothing specifically to do with AI agents. <code>execa</code> sits at just 3% AI-specific share despite scoring 33% overall.
+      Full table and reading in
+      <a href="https://github.com/paladini/harness-maturity-analysis/blob/main/analysis/findings.md#5-aggregate-pattern-how-much-of-the-score-is-actually-ai-harness">analysis/findings.md</a>.
+    </p>
+  </section>
+
+  <footer class="colophon">
+    <div class="colophon-grid">
+      <div>
+        <h3>WHAT THIS DOESN'T CLAIM</h3>
+        <p>
+          Not whether the tests are <em>good</em>, whether the rules are <em>true</em>, or
+          whether the team practices code review. A high reading means the infrastructure for
+          reliable agent work exists. Necessary, not sufficient. Full framing in
+          <a href="https://github.com/paladini/harness-maturity-analysis/blob/main/METHODOLOGY.md">METHODOLOGY.md</a>.
+        </p>
+      </div>
+      <div>
+        <h3>PHASE STATUS</h3>
+        <ol>
+          <li class="done">Pipeline scaffold, validated against 4 anchors</li>
+          <li class="done">Corpus frozen: 20/21 repositories scanned</li>
+          <li>Blind human ratings — needs a rater, not an agent</li>
+          <li class="done">Q2 model-calibration synthesis — 7 findings, 4 proposals</li>
+        </ol>
+      </div>
+    </div>
+    <p class="repo-link">
+      <span>github.com/paladini/harness-maturity-analysis · MIT</span>
+      <span>scores computed by <a href="https://github.com/paladini/harness-score">harness-score</a></span>
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>

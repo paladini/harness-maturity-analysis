@@ -24,10 +24,11 @@ jobs:
       - name: Test
         run: npm test
 
-      - name: Verify results/ matches committed corpus/reports/
+      - name: Verify results/ and docs/ match committed corpus/reports/
         run: |
           node corpus/build-results.mjs
-          git diff --exit-code -- results/ || {
-            echo "::error::results/ is out of sync with corpus/reports/ — run 'node corpus/build-results.mjs' and commit the diff."
+          node corpus/build-site.mjs
+          git diff --exit-code -- results/ docs/ || {
+            echo "::error::results/ or docs/ is out of sync with corpus/reports/ — run 'npm run corpus' and commit the diff."
             exit 1
           }
