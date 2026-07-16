@@ -6,11 +6,12 @@ repositories** — scored deterministically with
 a blind human read of the same repos, and used to find what harness-score's
 maturity model still gets wrong.
 
-> **Status: Phase 0 — pilot.** The measurement pipeline is built and
-> validated against 4 anchor repositories spanning the full L0–L4 range.
-> The full ~20-repository corpus, blind ratings, and findings come next —
-> see [Roadmap](#roadmap). Numbers below are a pipeline smoke test, not a
-> result.
+> **Status: Phase 1 complete.** 20 of 21 pinned repositories scanned (one
+> excluded for a documented platform limitation, not silently dropped —
+> see [`corpus/manifest.json`](corpus/manifest.json)). The model-calibration
+> findings below (Q2) are done; the external-validity half of the study (Q1
+> — do the automated levels agree with a blind human read?) is Phase 2 and
+> needs a human rater — see [Roadmap](#roadmap).
 
 ## Why this exists
 
@@ -32,44 +33,64 @@ full framing, the two research questions this study asks, and the
 blind-rating protocol used to check the scanner against human judgment
 without circularity.
 
-## Pilot results (4 anchors)
+## Corpus results (20 repositories)
 
-Four repositories chosen to span the tool's full output range, used to
-validate the measurement pipeline before scaling to the full corpus. All
-four scanned cleanly on the first pinned run — `harness-score@1.0.0`
-against the exact commits recorded in
-[`corpus/manifest.json`](corpus/manifest.json):
+Every repository below is pinned to an exact commit in
+[`corpus/manifest.json`](corpus/manifest.json) and scanned with
+`harness-score@1.0.0`. A representative spread — full table (all 20, every
+dimension) in [`results/leaderboard.md`](results/leaderboard.md) and
+[`results/dimension-heatmap.md`](results/dimension-heatmap.md):
 
-| Rank | Repository | Role | Level | Score |
-|---|---|---|---|---|
-| 1 | [harness-score](https://github.com/paladini/harness-score) | control · ceiling | **L4** · Self-correcting | 108/108 (100%) |
-| 2 | [fakeflix](https://github.com/tech-leads-club/fakeflix) | harness-engineering exemplar | **L1** · Documented | 72/108 (67%) |
-| 3 | [execa](https://github.com/sindresorhus/execa) | control · quality without AI artifacts | **L0** · Unharnessed | 36/108 (33%) |
-| 4 | [octocat/Hello-World](https://github.com/octocat/Hello-World) | control · floor | **L0** · Unharnessed | 14/108 (13%) |
+| Repository | Category | Level | Score |
+|---|---|---|---|
+| [harness-score](https://github.com/paladini/harness-score) | control · ceiling | **L4** | 108/108 (100%) |
+| [anthropic-cookbook](https://github.com/anthropics/anthropic-cookbook) | AI lab | **L3** | 99/108 (92%) |
+| [promptfoo](https://github.com/promptfoo/promptfoo) | prompt/eval engineering | **L4** | 95/108 (88%) |
+| [fakeflix](https://github.com/tech-leads-club/fakeflix) | harness-engineering exemplar | **L1** | 72/108 (67%) |
+| [execa](https://github.com/sindresorhus/execa) | control · quality w/o AI artifacts | **L0** | 36/108 (33%) |
+| [anthropic-skills](https://github.com/anthropics/skills) | harness-engineering exemplar | **L0** | 17/108 (16%) |
+| [octocat/Hello-World](https://github.com/octocat/Hello-World) | control · floor | **L0** | 14/108 (13%) |
 
-The spread alone validates the instrument: a known-excellent library with
-zero AI-harness artifacts (execa) lands well above the empty floor on
-Sensors/CI/Hygiene alone but can't clear L1 without a context file; the tool
-scanning itself hits the ceiling it's supposed to hit.
+## What the corpus found
 
-**An unprompted first finding.** fakeflix — previously validated in
-harness-score's own v0.1.2 field test as "genuinely excellent" — earns 67%
-of all points but is capped at **L1**, one level below what the raw score
-would suggest. Its own `level.nextLevelGaps` names why: `context ≥ 60%`.
-The Context dimension sits at 45% not because its `AGENTS.md` is weak (79
-non-empty lines, 17 headings — CTX-01/02 pass outright) but because it has
-**zero scoped rule files** — no `.cursor/rules/*.mdc`, no nested
-`AGENTS.md`/`CLAUDE.md` — so CTX-03 through CTX-06 all fail, even as Skills
-& Commands sits at 82% and Sensors & Feedback at 100%. Whether "a single
-excellent root file, no scoped rules" *should* cap a repository at L1
-regardless of everything else is exactly a Q2-shaped question — recorded
-here as a lead for Phase 3, not resolved by it; resolving it properly means
-running the blind-rating protocol on fakeflix in Phase 2, not eyeballing
-one JSON file. Full evidence: [`corpus/reports/fakeflix.json`](corpus/reports/fakeflix.json).
+Full writeup, every claim cited to a check ID and a report file:
+**[analysis/findings.md](analysis/findings.md)**. Two findings worth
+reading even if you read nothing else:
 
-Full breakdown: [`results/leaderboard.md`](results/leaderboard.md) ·
-[`results/dimension-heatmap.md`](results/dimension-heatmap.md) · raw
-reports: [`corpus/reports/`](corpus/reports).
+### fakeflix earns 67% and is capped at L1
+
+Discovered during the Phase 0 pilot, corroborated at scale in Phase 1.
+fakeflix — previously validated in harness-score's own v0.1.2 field test
+as "genuinely excellent" — earns 67% of all points but is capped at **L1**
+because Context & Guides sits at 45%: a substantive root `AGENTS.md` (79
+non-empty lines, 17 headings — passes outright) but **zero scoped rule
+files**, so `CTX-03` through `CTX-06` all fail, even as Skills & Commands
+sits at 82% and Sensors & Feedback at 100%. The same shape — real root
+context file, no scoped rules — turned out to be common in the wider
+corpus, not a one-off. Whether that should cap a repository a full level
+below everything else it earned is a question for Phase 2's blind rating,
+not resolved here. Full evidence: [`corpus/reports/fakeflix.json`](corpus/reports/fakeflix.json).
+
+### Anthropic's own skills showcase scores identically to an empty repo
+
+`anthropic/skills` — Anthropic's official showcase of Claude Skills —
+scores **L0 · 16%**, indistinguishable in kind from `octocat/Hello-World`.
+Its skills live at `skills/<name>/SKILL.md` (repository root) rather than
+`.claude/skills/`, because this repo *distributes* skills rather than
+using them to develop itself — and `SKL-01` correctly answers the question
+it's built to ask ("does this repo have a self-referential skill
+harness?") with "no." But the model has no vocabulary today for "canonical
+reference implementation of an artifact type" as distinct from "no harness
+at all" — a `.claude-plugin/` manifest at root (which this repo has) is a
+strong, currently-ignored signal. Not a bug; a real category gap. Full
+evidence and two more findings in the same vein (a confirmed parser bug in
+`HKS-05`, and hook-config inflation via nested tutorial directories) in
+[analysis/findings.md](analysis/findings.md).
+
+Four of these findings are drafted as concrete proposals against
+harness-score in [`proposals/`](proposals), following harness-score's own
+[check-change process](https://github.com/paladini/harness-score/blob/main/CONTRIBUTING.md#adding-or-changing-a-check) —
+not yet filed as issues there.
 
 ## How it works
 
@@ -86,10 +107,11 @@ reports: [`corpus/reports/`](corpus/reports).
 4. A human blind rating (recorded *before* seeing the tool's score —
    protocol in
    [METHODOLOGY.md](METHODOLOGY.md#blind-human-rating-q1-protocol)) checks
-   whether the automated level agrees with expert judgment.
-5. Disagreements and model gaps get written up in `analysis/` and turned
-   into concrete check-change proposals in `proposals/`, using
-   harness-score's own [check-change process](https://github.com/paladini/harness-score/blob/main/CONTRIBUTING.md#adding-or-changing-a-check).
+   whether the automated level agrees with expert judgment. **Not done
+   yet** — this is the part of the study that needs a human, not an agent.
+5. Disagreements and model gaps get written up in
+   [`analysis/findings.md`](analysis/findings.md) and turned into concrete
+   check-change proposals in [`proposals/`](proposals).
 
 ## Reproduce it yourself
 
@@ -108,8 +130,8 @@ this study is one click away from the filesystem fact it came from.
 ```
 corpus/       manifest, runner, raw scan reports (versioned JSON)
 results/      generated leaderboard + dimension heatmap
-analysis/     blind ratings, per-repo critiques, external-validity synthesis
-proposals/    findings turned into harness-score check-change proposals
+analysis/     findings.md (Q2, done); ratings/ + external-validity.md (Q1, Phase 2)
+proposals/    4 findings turned into harness-score check-change proposals
 METHODOLOGY.md  research questions, corpus design, protocol, limitations
 ```
 
@@ -117,8 +139,8 @@ METHODOLOGY.md  research questions, corpus design, protocol, limitations
 
 A repository studying harness maturity ought to have one. `harness-maturity-analysis`
 scans itself at **L4 · Self-correcting — 96/108 (89%)**: a scoped `.cursor/rules/`
-rule governing the data-integrity discipline below, a skill for the one
-procedure Phase 1 will repeat ~20 times, real gate hooks (deny destructive
+rule governing the data-integrity discipline above, a skill for the one
+procedure Phase 1 repeated 17 times, real gate hooks (deny destructive
 shell commands, deny reading credential-shaped files) and a feedback hook
 (format on edit), a vitest suite for every pure function, and CI that lints,
 tests, and fails the build if `results/` ever drifts from committed reports.
@@ -142,12 +164,18 @@ npm run lint        # biome
 
 - [x] **Phase 0.** Pipeline scaffold, pinned-clone runner, results
       generator, validated against 4 anchor repositories.
-- [ ] **Phase 1.** Freeze the full ~20-repository corpus.
-- [ ] **Phase 2.** Blind human ratings + per-repo critique.
-- [ ] **Phase 3.** Synthesis — `analysis/findings.md`.
-- [ ] **Phase 4.** Proposals filed against
-      [harness-score](https://github.com/paladini/harness-score), findings
-      published.
+- [x] **Phase 1.** Corpus frozen and scanned: 20/21 pinned repositories
+      (1 excluded for a documented Windows checkout limitation, not silently
+      dropped).
+- [ ] **Phase 2.** Blind human ratings + per-repo critique — needs a rater
+      without implementation knowledge of the scanner. Not started.
+- [x] **Phase 3 (Q2 only).** Model-calibration synthesis —
+      [`analysis/findings.md`](analysis/findings.md): 1 confirmed bug, 3
+      model/category gaps, 1 aggregate pattern, 1 honest negative result.
+      **Q1 synthesis (external validity) blocked on Phase 2.**
+- [x] **Phase 4 (partial).** 4 findings drafted as check-change proposals
+      in [`proposals/`](proposals). **Not yet filed as issues against
+      harness-score**, and findings not yet published outside this repo.
 
 ## License
 
