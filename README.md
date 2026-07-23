@@ -1,6 +1,6 @@
 # harness-maturity-analysis
 
-<a href="https://paladini.github.io/harness-score/guide/maturity-model#l4-self-correcting" title="Harness Score — AI coding harness maturity"><img alt="Harness Score L4 (Self-correcting): measures AI-assisted development harness maturity with harness-score" src="https://paladini.github.io/harness-score/maturity/badge-l4.svg" height="20"></a>
+<a href="https://paladini.io/harness-score/guide/maturity-model#l4-%C2%B7-self-correcting" title="Harness Score — AI coding harness maturity"><img alt="Harness Score L4 (Self-correcting): measures AI-assisted development harness maturity with harness-score" src="https://paladini.github.io/harness-score/maturity/badge-l4.svg" height="20"></a>
 **A reproducible study of AI-harness maturity across notable open-source
 repositories** ÔÇö scored deterministically with
 [harness-score](https://github.com/paladini/harness-score), checked against
