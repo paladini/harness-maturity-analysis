@@ -73,6 +73,56 @@ function renderHeatmap(rows) {
   return { head, body };
 }
 
+function historyScore(entry) {
+  if (entry?.status !== 'scored') return esc(entry?.status ?? 'not recorded');
+  return `L${entry.level.index} · ${entry.score.earned}/${entry.score.max} (${entry.score.percent}%)`;
+}
+
+function renderHistoryComparison(manifest, historyRuns) {
+  if (historyRuns.length < 2) return '';
+  const previous = historyRuns.at(-2);
+  const current = historyRuns.at(-1);
+  const body = manifest.entries
+    .map((manifestEntry) => {
+      const before = previous.entries.find((entry) => entry.name === manifestEntry.name);
+      const after = current.entries.find((entry) => entry.name === manifestEntry.name);
+      const delta =
+        before?.status === 'scored' && after?.status === 'scored'
+          ? after.score.percent - before.score.percent
+          : null;
+      const deltaText = delta === null ? '—' : `${delta > 0 ? '+' : ''}${delta} pp`;
+      return `          <tr>
+            <th scope="row">${esc(manifestEntry.name)}</th>
+            <td>${historyScore(before)}</td>
+            <td>${historyScore(after)}</td>
+            <td>${deltaText}</td>
+          </tr>`;
+    })
+    .join('\n');
+
+  return `
+  <section class="history-section">
+    <h2>Same commits, new scoring model</h2>
+    <p class="section-note">
+      This comparison isolates model changes: every repository stays pinned to the same commit.
+      The only changed input is <code>${esc(previous.toolVersion)}</code> →
+      <code>${esc(current.toolVersion)}</code>. The complete, append-only record is in
+      <a href="https://github.com/paladini/harness-maturity-analysis/blob/main/results/score-history.md">score-history.md</a>.
+    </p>
+    <div class="history-wrap">
+      <table class="history-table">
+        <thead>
+          <tr><th>Repository</th><th>${esc(previous.date)}<br>${esc(previous.toolVersion)}</th><th>${esc(current.date)}<br>${esc(current.toolVersion)}</th><th>Change</th></tr>
+        </thead>
+        <tbody>
+${body}
+        </tbody>
+      </table>
+    </div>
+  </section>
+`;
+}
+
 function aiShare(report) {
   const byId = Object.fromEntries(report.dimensions.map((d) => [d.id, d]));
   const aiPts = ['context', 'skills', 'hooks'].reduce((s, id) => s + (byId[id]?.earned ?? 0), 0);
@@ -81,7 +131,7 @@ function aiShare(report) {
   return total === 0 ? 0 : Math.round((100 * aiPts) / total);
 }
 
-export function renderSite(rows, manifest) {
+export function renderSite(rows, manifest, historyRuns = []) {
   const scannedCount = rows.length;
   const totalCount = manifest.entries.length;
   const anthropicSkills = rows.find((r) => r.entry.name === 'anthropic-skills');
@@ -89,12 +139,14 @@ export function renderSite(rows, manifest) {
     .filter((r) => r.report.score.earned > 0)
     .sort((a, b) => aiShare(a.report) - aiShare(b.report))[0];
   const { head: heatmapHead, body: heatmapBody } = renderHeatmap(rows);
+  const historyComparison = renderHistoryComparison(manifest, historyRuns);
 
   return `<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3EH%3C/text%3E%3C/svg%3E">
 <title>Harness Maturity Analysis — ${scannedCount} repositories scored</title>
 <meta name="description" content="A reproducible study of AI-harness maturity across ${scannedCount} notable open-source repositories, scored with harness-score.">
 <style>
@@ -114,7 +166,7 @@ ${SITE_CSS}
       never the competence of the company that owns it.</strong>
     </p>
     <div class="meta-strip">
-      <span>harness-score@1.0.0</span>
+      <span>${esc(manifest.toolVersion)}</span>
       <span>${scannedCount}/${totalCount} repositories scanned</span>
       <span>zero LLM calls, zero network at scan time</span>
       <a href="https://github.com/paladini/harness-maturity-analysis">source on GitHub →</a>
@@ -133,6 +185,8 @@ ${SITE_CSS}
 ${renderLeaderboard(rows)}
     </div>
   </section>
+
+${historyComparison}
 
   <section class="heatmap-section">
     <h2>Dimension heatmap</h2>
@@ -167,16 +221,15 @@ ${heatmapBody}
   </section>
 
   <section class="finding">
-    <div class="finding-card" style="border-left-color:var(--accent)">
-      <p class="eyebrow finding-eyebrow" style="color:var(--accent-ink)">confirmed bug, ready to fix</p>
-      <h2><code>HKS-05</code> misses the unbraced <code>$VAR</code> hook-path form</h2>
+    <div class="finding-card" style="border-left-color:var(--l2)">
+      <p class="eyebrow finding-eyebrow" style="color:var(--l2)">resolved in harness-score 1.5.0</p>
+      <h2><code>HKS-05</code> now recognizes both corpus regressions</h2>
       <p>
-        <code>cline</code> registers a real, committed hook —
-        <code>$CLAUDE_PROJECT_DIR/.claude/hooks/claude-code-for-web-setup.sh</code>, no curly
-        braces. The file genuinely exists at exactly that path. The check still reports it
-        missing: its path-resolution regex only strips the <em>braced</em> <code>\${VAR}/</code>
-        form. A false negative, costing 2 points cline has legitimately earned — a one-line
-        regex fix, no design discussion needed.
+        On the same pinned commits, <code>cline</code> moves from 78 to 80 points and
+        <code>promptfoo</code> moves from 95 to 97. Their <code>HKS-05</code> checks now pass:
+        unbraced environment-variable paths and dependency-managed binaries are both resolved
+        correctly. The original diagnosis remains documented in
+        <a href="https://github.com/paladini/harness-maturity-analysis/blob/main/analysis/findings.md#1-resolved-bug-hks-05-missed-valid-hook-path-forms">analysis/findings.md</a>.
       </p>
     </div>
   </section>
@@ -296,6 +349,12 @@ const SITE_CSS = `
   .heatmap tbody th { text-align: left; font-weight: 600; padding: 0 12px 0 0; white-space: nowrap; font-size: 13px; }
   .heatmap td { text-align: center; padding: 2px; }
   .cell { font-family: var(--font-mono); font-variant-numeric: tabular-nums; font-size: 11px; height: 34px; display: flex; align-items: center; justify-content: center; background: var(--surface-sunken); background: color-mix(in srgb, var(--accent) var(--v, 0%), var(--surface-sunken)); color: var(--ink-muted); border: 1px solid var(--border); }
+  .history-wrap { overflow-x: auto; }
+  .history-table { border-collapse: collapse; min-width: 700px; width: 100%; font-size: 13px; }
+  .history-table th, .history-table td { border-bottom: 1px solid var(--border); padding: 11px 12px; text-align: left; }
+  .history-table thead th { font-family: var(--font-mono); color: var(--ink-faint); font-size: 10.5px; vertical-align: bottom; }
+  .history-table tbody th { font-weight: 600; }
+  .history-table td { font-family: var(--font-mono); color: var(--ink-muted); font-variant-numeric: tabular-nums; }
   .finding { padding: 44px 0 48px; }
   .finding-card { border-left: 4px solid var(--l1); border-radius: 0 6px 6px 0; background: var(--surface); background: color-mix(in srgb, var(--l1) 6%, var(--surface)); padding: 26px 28px; }
   .finding-eyebrow { color: var(--l1); margin-bottom: 12px; }

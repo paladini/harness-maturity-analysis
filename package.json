@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "corpus:run": "node corpus/run.mjs",
+    "corpus:history": "node corpus/record-history.mjs",
     "corpus:build": "node corpus/build-results.mjs",
     "site:build": "node corpus/build-site.mjs",
     "corpus": "npm run corpus:run && npm run corpus:build && npm run site:build",

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { parseLsRemoteSymref } from '../corpus/lib/scan.mjs';
+import { parseLsRemoteSymref, sparseCheckoutPatterns } from '../corpus/lib/scan.mjs';
 import { parseArgs, slugFromUrl } from '../corpus/score-adhoc.mjs';
 
 describe('parseLsRemoteSymref', () => {
@@ -22,6 +22,19 @@ describe('parseLsRemoteSymref', () => {
   it('returns a null sha for output with no HEAD line, rather than throwing', () => {
     expect(parseLsRemoteSymref('').sha).toBeNull();
     expect(parseLsRemoteSymref('some unrelated text\n').sha).toBeNull();
+  });
+});
+
+describe('sparseCheckoutPatterns', () => {
+  it('includes the repository and excludes only normalized configured subtrees', () => {
+    expect(sparseCheckoutPatterns(['examples\\data\\hotel_invoices/'])).toEqual([
+      '/*',
+      '!/examples/data/hotel_invoices/**',
+    ]);
+  });
+
+  it('rejects parent-directory traversal', () => {
+    expect(() => sparseCheckoutPatterns(['../outside'])).toThrow(/invalid checkout exclusion/);
   });
 });
 

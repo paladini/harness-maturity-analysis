@@ -45,7 +45,7 @@ it matters in practice.
 
 ## Corpus selection
 
-~20 repositories, chosen — not randomly sampled — across six groups, plus
+21 repositories, chosen — not randomly sampled — across six groups, plus
 deliberate stress cases picked because the tool is expected to score them
 *badly*, since that's what makes the critique useful:
 
@@ -83,20 +83,24 @@ holds itself to (same input ⇒ same output, forever).
 
 1. **Pin everything.** Each corpus entry records `repoUrl` and an exact
    `commit` SHA. The scanner version is pinned once, in `manifest.json`'s
-   `toolVersion` (currently `harness-score@1.0.0`), and stamped into every
-   report via the tool's own `tool.version` field.
+   `toolVersion` (currently `harness-score@1.5.0`), and stamped into every
+   report via the tool's own `tool.version` field. `runDate` identifies the
+   current version-over-version snapshot.
 2. **Clone at the pinned commit**, never at a moving branch tip —
    [`corpus/run.mjs`](corpus/run.mjs) shallow-fetches the exact SHA,
-   falling back to a full clone when a host won't serve an arbitrary SHA
-   directly.
+   falling back to a full fetch when a host won't serve an arbitrary SHA
+   directly. Checkout skips Git LFS smudging, because large LFS assets are
+   not harness signals. The `openai-cookbook` entry documents one
+   deterministic partial+sparse checkout that omits 773 MB of datasets and
+   image assets, including paths that NTFS cannot represent.
 3. **Scan with `npx harness-score@<pinned> <path> --json`** — no network
    access by the scanner itself, no LLM calls, and no code from the scanned
    repository is ever executed. The raw JSON report is the unit of record.
-4. **Version the raw reports.** [`corpus/reports/*.json`](corpus/reports)
-   is committed as-is. Any claim in this study traces back to the report it
-   came from — no re-scan required to check our work — though re-running
-   `node corpus/run.mjs` should reproduce every byte (modulo the
-   machine-local `root` path).
+4. **Version the raw reports and score history.**
+   [`corpus/reports/*.json`](corpus/reports) stores the current run as-is.
+   Every complete run also writes an append-only compact snapshot under
+   [`corpus/history/`](corpus/history), preserving the date, scanner
+   version, pinned commit, level, and score for each repository.
 5. **Derive, don't hand-edit.** Everything under `results/` is generated
    from `corpus/reports/*.json` by
    [`corpus/build-results.mjs`](corpus/build-results.mjs) — deterministically,
@@ -134,7 +138,9 @@ score.
 - **Snapshot in time.** Every score reflects one pinned commit.
   Repositories actively improve their harnesses (harness-score itself is a
   case study in that); a later visit to the same repository may score
-  differently.
+  differently. The score history in this study holds repository commits
+  fixed across scanner versions, so its deltas measure the model rather
+  than repository evolution.
 - **One human rater.** The blind rating in this first pass comes from a
   single reviewer. It removes the circularity of validating the tool
   against itself, but it is not inter-rater reliability — a documented

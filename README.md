@@ -6,9 +6,8 @@ repositories** — scored deterministically with
 a blind human read of the same repos, and used to find what harness-score's
 maturity model still gets wrong.
 
-> **Status: Phase 1 complete.** 20 of 21 pinned repositories scanned (one
-> excluded for a documented platform limitation, not silently dropped —
-> see [`corpus/manifest.json`](corpus/manifest.json)). The model-calibration
+> **Status: Phase 1 complete.** All 21 pinned repositories were rescanned
+> with `harness-score@1.5.0` on July 25, 2026. The model-calibration
 > findings below (Q2) are done; the external-validity half of the study (Q1
 > — do the automated levels agree with a blind human read?) is Phase 2 and
 > needs a human rater — see [Roadmap](#roadmap).
@@ -33,20 +32,23 @@ full framing, the two research questions this study asks, and the
 blind-rating protocol used to check the scanner against human judgment
 without circularity.
 
-## Corpus results (20 repositories)
+## Corpus results (21 repositories)
 
 Every repository below is pinned to an exact commit in
 [`corpus/manifest.json`](corpus/manifest.json) and scanned with
-`harness-score@1.0.0`. A representative spread — full table (all 20, every
-dimension) in [`results/leaderboard.md`](results/leaderboard.md) and
-[`results/dimension-heatmap.md`](results/dimension-heatmap.md):
+`harness-score@1.5.0`. A representative spread — full table (all 21, every
+dimension) in [`results/leaderboard.md`](results/leaderboard.md),
+[`results/dimension-heatmap.md`](results/dimension-heatmap.md), and the
+version-over-version comparison in
+[`results/score-history.md`](results/score-history.md):
 
 | Repository | Category | Level | Score |
 |---|---|---|---|
 | [harness-score](https://github.com/paladini/harness-score) | control · ceiling | **L4** | 108/108 (100%) |
-| [anthropic-cookbook](https://github.com/anthropics/anthropic-cookbook) | AI lab | **L3** | 99/108 (92%) |
-| [promptfoo](https://github.com/promptfoo/promptfoo) | prompt/eval engineering | **L4** | 95/108 (88%) |
+| [anthropic-cookbook](https://github.com/anthropics/claude-cookbooks) | AI lab | **L3** | 99/108 (92%) |
+| [promptfoo](https://github.com/promptfoo/promptfoo) | prompt/eval engineering | **L4** | 97/108 (90%) |
 | [fakeflix](https://github.com/tech-leads-club/fakeflix) | harness-engineering exemplar | **L1** | 72/108 (67%) |
+| [openai-cookbook](https://github.com/openai/openai-cookbook) | AI lab | **L1** | 58/108 (54%) |
 | [execa](https://github.com/sindresorhus/execa) | control · quality w/o AI artifacts | **L0** | 36/108 (33%) |
 | [anthropic-skills](https://github.com/anthropics/skills) | harness-engineering exemplar | **L0** | 17/108 (16%) |
 | [octocat/Hello-World](https://github.com/octocat/Hello-World) | control · floor | **L0** | 14/108 (13%) |
@@ -83,9 +85,9 @@ harness?") with "no." But the model has no vocabulary today for "canonical
 reference implementation of an artifact type" as distinct from "no harness
 at all" — a `.claude-plugin/` manifest at root (which this repo has) is a
 strong, currently-ignored signal. Not a bug; a real category gap. Full
-evidence and two more findings in the same vein (a confirmed parser bug in
-`HKS-05`, and hook-config inflation via nested tutorial directories) in
-[analysis/findings.md](analysis/findings.md).
+evidence and two more findings in the same vein (a parser bug in `HKS-05`
+that is resolved in 1.5.0, and hook-config inflation via nested tutorial
+directories) in [analysis/findings.md](analysis/findings.md).
 
 Four of these findings are drafted as concrete proposals against
 harness-score in [`proposals/`](proposals), following harness-score's own
@@ -99,11 +101,14 @@ not yet filed as issues there.
 2. [`corpus/run.mjs`](corpus/run.mjs) clones each pinned commit into a
    local, gitignored cache and runs `npx harness-score@<pinned-version>
    --json` against it — no code from the scanned repository is ever
-   executed, and the same commit always produces the same report.
+   executed, Git LFS assets are not smudged, and the same commit always
+   produces the same report.
 3. [`corpus/build-results.mjs`](corpus/build-results.mjs) turns the raw
    reports into `results/leaderboard.{md,csv}` and
    `results/dimension-heatmap.md` — deterministically, no hand-edited
-   tables.
+   tables. A complete run also appends a compact snapshot under
+   [`corpus/history/`](corpus/history), which generates
+   `results/score-history.md`.
 4. A human blind rating (recorded *before* seeing the tool's score —
    protocol in
    [METHODOLOGY.md](METHODOLOGY.md#blind-human-rating-q1-protocol)) checks
@@ -121,9 +126,10 @@ cd harness-maturity-analysis
 npm run corpus
 ```
 
-Everything is pinned and versioned — the raw JSON report for every scanned
-repository lives in [`corpus/reports/`](corpus/reports), so any number in
-this study is one click away from the filesystem fact it came from.
+Everything is pinned and versioned. The current raw JSON report for every
+repository lives in [`corpus/reports/`](corpus/reports), and compact
+append-only run snapshots preserve older scores in
+[`corpus/history/`](corpus/history).
 
 ## Score any repository, not just the corpus
 
@@ -147,8 +153,8 @@ of promoting the ad-hoc output.
 ## Repository layout
 
 ```
-corpus/       manifest, runner, ad-hoc scorer, raw scan reports (versioned JSON)
-results/      generated leaderboard + dimension heatmap
+corpus/       manifest, runner, raw reports, and append-only run history
+results/      generated leaderboard, dimension heatmap, and score history
 analysis/     findings.md (Q2, done); ratings/ + external-validity.md (Q1, Phase 2)
 proposals/    4 findings turned into harness-score check-change proposals
 METHODOLOGY.md  research questions, corpus design, protocol, limitations
@@ -183,16 +189,16 @@ npm run lint        # biome
 
 - [x] **Phase 0.** Pipeline scaffold, pinned-clone runner, results
       generator, validated against 4 anchor repositories.
-- [x] **Phase 1.** Corpus frozen and scanned: 20/21 pinned repositories
-      (1 excluded for a documented Windows checkout limitation, not silently
-      dropped).
+- [x] **Phase 1.** Corpus frozen and rescanned: 21/21 pinned repositories
+      with `harness-score@1.5.0`, including a deterministic sparse checkout
+      for the Windows-incompatible data paths in `openai-cookbook`.
 - [ ] **Phase 2.** Blind human ratings + per-repo critique — needs a rater
       without implementation knowledge of the scanner. Not started.
 - [x] **Phase 3 (Q2 only).** Model-calibration synthesis —
       [`analysis/findings.md`](analysis/findings.md): 1 confirmed bug, 3
       model/category gaps, 1 aggregate pattern, 1 honest negative result.
       **Q1 synthesis (external validity) blocked on Phase 2.**
-- [x] **Phase 4 (partial).** 4 findings drafted as check-change proposals
+- [x] **Phase 4 (partial).** Findings drafted as check-change proposals
       in [`proposals/`](proposals). **Not yet filed as issues against
       harness-score**, and findings not yet published outside this repo.
 
