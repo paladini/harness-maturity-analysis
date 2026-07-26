@@ -2,15 +2,17 @@
 // Pinned-clone + harness-score scan runner. Zero dependencies, same invariant
 // as harness-score itself: given the same manifest, this produces the same
 // reports, byte for byte (module the machine-local `root` path).
-import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { createHistorySnapshot, historyFileName } from './lib/history.mjs';
 import { pinnedClone, runHarnessScore } from './lib/scan.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 const CACHE_DIR = path.join(ROOT, '.cache', 'repos');
 const REPORTS_DIR = path.join(__dirname, 'reports');
+const HISTORY_DIR = path.join(__dirname, 'history');
 const MANIFEST_PATH = path.join(__dirname, 'manifest.json');
 
 export function parseArgs(argv) {
@@ -41,7 +43,9 @@ if (isMain) {
     const dest = path.join(CACHE_DIR, entry.name);
     process.stdout.write(`\n▶ ${entry.name}  (${entry.category})\n`);
     try {
-      const { reused } = pinnedClone(entry.repoUrl, entry.commit, dest);
+      const { reused } = pinnedClone(entry.repoUrl, entry.commit, dest, {
+        checkoutExcludes: entry.checkoutExcludes,
+      });
       process.stdout.write(`  ${reused ? 'cache hit' : 'fetched'} @ ${entry.commit.slice(0, 12)}\n`);
 
       const scanTarget = entry.scanSubpath ? path.join(dest, entry.scanSubpath) : dest;
@@ -60,15 +64,44 @@ if (isMain) {
           `${flags ? ` [${flags}]` : ''}` +
           `${detectedHarnesses.length ? ` — detected: ${detectedHarnesses.join(', ')}` : ''}\n`,
       );
-      summary.push({ name: entry.name, ok: true, level: level.index, percent: score.percent });
+      summary.push({
+        name: entry.name,
+        ok: true,
+        status: 'scored',
+        report,
+        level: level.index,
+        percent: score.percent,
+      });
     } catch (error) {
       process.stdout.write(`  FAILED: ${error.message}\n`);
-      summary.push({ name: entry.name, ok: false, error: String(error.message ?? error) });
+      summary.push({
+        name: entry.name,
+        ok: false,
+        status: 'failed',
+        error: String(error.message ?? error),
+      });
     }
   }
 
   const failed = summary.filter((s) => !s.ok);
   process.stdout.write(`\n${summary.length - failed.length}/${summary.length} scanned successfully.\n`);
+  if (!only && failed.length === 0) {
+    const snapshot = createHistorySnapshot(manifest, new Map(summary.map((result) => [result.name, result])));
+    const snapshotPath = path.join(HISTORY_DIR, historyFileName(snapshot.date, snapshot.toolVersion));
+    mkdirSync(HISTORY_DIR, { recursive: true });
+    const serialized = `${JSON.stringify(snapshot, null, 2)}\n`;
+    if (existsSync(snapshotPath) && readFileSync(snapshotPath, 'utf8') !== serialized) {
+      throw new Error(
+        `history snapshot already exists with different content: ${path.relative(ROOT, snapshotPath)}`,
+      );
+    }
+    if (!existsSync(snapshotPath)) {
+      writeFileSync(snapshotPath, serialized, 'utf8');
+    }
+    process.stdout.write(`History verified: ${path.relative(ROOT, snapshotPath)}\n`);
+  } else if (!only) {
+    process.stdout.write('History not recorded because the full run had failures.\n');
+  }
   if (failed.length > 0) {
     process.stdout.write(`Failed: ${failed.map((f) => f.name).join(', ')}\n`);
     process.exitCode = 1;

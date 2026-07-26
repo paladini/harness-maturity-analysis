@@ -1,7 +1,8 @@
 {
-  "$comment": "Each entry pins a repository to an exact commit for reproducible scanning. toolVersion is the npm spec passed to `npx --yes <toolVersion>`. scanSubpath scans only part of a monorepo when set. isStressCase marks entries chosen because the scanner is expected to score them poorly or surprisingly — see METHODOLOGY.md. Never edit an existing entry's commit in place: add a new entry or a dated note instead.",
-  "schemaVersion": 1,
-  "toolVersion": "harness-score@1.0.0",
+  "$comment": "Each entry pins a repository to an exact commit for reproducible scanning. runDate and toolVersion identify the current historical run. toolVersion is the npm spec passed to `npx --yes <toolVersion>`. scanSubpath scans only part of a monorepo when set. checkoutExcludes omits platform-incompatible, non-harness data from checkout. isStressCase marks entries chosen because the scanner is expected to score them poorly or surprisingly — see METHODOLOGY.md. Never edit an existing entry's commit in place: add a new entry or a dated note instead.",
+  "schemaVersion": 2,
+  "runDate": "2026-07-25",
+  "toolVersion": "harness-score@1.5.0",
   "entries": [
     {
       "name": "harness-score",
@@ -42,11 +43,11 @@
     {
       "name": "anthropic-cookbook",
       "category": "ai-lab",
-      "repoUrl": "https://github.com/anthropics/anthropic-cookbook.git",
+      "repoUrl": "https://github.com/anthropics/claude-cookbooks.git",
       "commit": "67ce644d33e5933f0bcc0b6eb4113df41bbf3a8f",
       "scanSubpath": null,
       "isStressCase": false,
-      "notes": "Anthropic's official cookbook of Claude usage patterns and integration recipes. Tests whether a lab's own example repository carries agent-harness infrastructure or is purely reference code."
+      "notes": "Anthropic's official cookbook of Claude usage patterns and integration recipes. The stable corpus name predates the upstream rename to claude-cookbooks. Tests whether a lab's own example repository carries agent-harness infrastructure or is purely reference code."
     },
     {
       "name": "anthropic-skills",
@@ -63,8 +64,9 @@
       "repoUrl": "https://github.com/openai/openai-cookbook.git",
       "commit": "20793784ac467f06ed67f3e3e9349dc9596894e0",
       "scanSubpath": null,
+      "checkoutExcludes": ["examples/data", "images"],
       "isStressCase": false,
-      "notes": "KNOWN LIMITATION, not yet scanned: checkout fails on Windows — examples/data/hotel_invoices/ contains directory names with a trailing space (e.g. 'extracted_invoice_json /'), which NTFS path-safety (git's core.protectNTFS) rejects. Not a harness-score bug; a git-for-Windows checkout limitation on this specific upstream repo. OpenAI is still represented in the corpus via openai/evals. Revisit from a POSIX host, or with a sparse-checkout excluding that subtree."
+      "notes": "The pinned commit contains trailing-space directory names under examples/data/hotel_invoices/ that Windows cannot check out. The corpus uses a deterministic partial+sparse checkout to omit examples/data/ and images/ (773 MB of non-harness datasets/assets) while preserving all code, tests, configuration, and operational documentation."
     },
     {
       "name": "smolagents",

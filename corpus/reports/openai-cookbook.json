@@ -3,7 +3,7 @@
     "name": "harness-score",
     "version": "1.5.0"
   },
-  "root": "D:\\code\\harness-maturity-analysis\\.cache\\repos\\fakeflix",
+  "root": "D:\\code\\harness-maturity-analysis\\.cache\\repos\\openai-cookbook",
   "truncated": false,
   "scopes": {
     "maturity": [
@@ -15,38 +15,36 @@
   },
   "gate": "maturity",
   "detectedHarnesses": [
-    "antigravity",
-    "codex",
-    "cursor"
+    "codex"
   ],
   "level": {
     "index": 1,
     "name": "Documented",
     "nextLevelGaps": [
-      "context ≥ 60%"
+      "skills ≥ 30% or hooks ≥ 30%"
     ],
     "capped": false
   },
   "score": {
-    "earned": 72,
+    "earned": 58,
     "max": 108,
-    "percent": 67
+    "percent": 54
   },
   "dimensions": [
     {
       "id": "context",
       "title": "Context & Guides",
-      "earned": 9,
+      "earned": 20,
       "max": 20,
-      "percent": 45,
+      "percent": 100,
       "applicable": true
     },
     {
       "id": "skills",
       "title": "Skills & Commands",
-      "earned": 14,
+      "earned": 0,
       "max": 17,
-      "percent": 82,
+      "percent": 0,
       "applicable": true
     },
     {
@@ -60,25 +58,25 @@
     {
       "id": "sensors",
       "title": "Sensors & Feedback",
-      "earned": 20,
+      "earned": 14,
       "max": 20,
-      "percent": 100,
+      "percent": 70,
       "applicable": true
     },
     {
       "id": "ci",
       "title": "CI Feedback",
-      "earned": 11,
+      "earned": 4,
       "max": 14,
-      "percent": 79,
+      "percent": 29,
       "applicable": true
     },
     {
       "id": "hygiene",
       "title": "Hygiene & Safety",
-      "earned": 18,
+      "earned": 20,
       "max": 23,
-      "percent": 78,
+      "percent": 87,
       "applicable": true
     }
   ],
@@ -102,7 +100,7 @@
       "points": 3,
       "earned": 3,
       "passed": true,
-      "evidence": "AGENTS.md: 79 non-empty lines, 17 headings (needs ≥20 lines and ≥2 headings).",
+      "evidence": "AGENTS.md: 31 non-empty lines, 9 headings (needs ≥20 lines and ≥2 headings).",
       "remediation": "Flesh out AGENTS.md: add sections for project overview, build & test commands, architecture, and conventions (aim for 20+ meaningful lines with headings).",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ctx-02",
       "severity": "error"
@@ -112,9 +110,9 @@
       "dimension": "context",
       "title": "Scoped rules in use",
       "points": 4,
-      "earned": 0,
-      "passed": false,
-      "evidence": "No scoped rule files found (.cursor/rules, .windsurf/rules, .clinerules, .continue/rules, .github/instructions, .agents/rules, nested AGENTS.md/CLAUDE.md, …).",
+      "earned": 4,
+      "passed": true,
+      "evidence": "Found 1 rule(s) (codex): examples/agents_sdk/sandboxed-code-migration/migration_agent/AGENTS.md",
       "remediation": "Add at least one scoped rule file for your AI tool (e.g. .cursor/rules/*.mdc, .windsurf/rules/*.md, .clinerules/*.md) or a nested AGENTS.md/CLAUDE.md in a subdirectory, stating the project non-negotiables.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ctx-03",
       "severity": "error"
@@ -124,9 +122,9 @@
       "dimension": "context",
       "title": "Rules have valid frontmatter",
       "points": 3,
-      "earned": 0,
-      "passed": false,
-      "evidence": "No rules found to validate.",
+      "earned": 3,
+      "passed": true,
+      "evidence": "All 1 rule(s) declare usable frontmatter.",
       "remediation": "Give every rule activation metadata in frontmatter (description, globs/trigger/paths/applyTo, or alwaysApply) so the agent knows when to load it.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ctx-04",
       "severity": "error"
@@ -136,9 +134,9 @@
       "dimension": "context",
       "title": "Rules are scoped, not all always-on",
       "points": 2,
-      "earned": 0,
-      "passed": false,
-      "evidence": "No rules found.",
+      "earned": 2,
+      "passed": true,
+      "evidence": "1 rule(s): 1 path-scoped, 0 always-on.",
       "remediation": "Scope rules to paths (globs, trigger glob, paths, applyTo) instead of making everything always-on — blanket rules consume context on every request.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ctx-05",
       "severity": "error"
@@ -148,9 +146,9 @@
       "dimension": "context",
       "title": "No bloated rules (≤500 lines each)",
       "points": 2,
-      "earned": 0,
-      "passed": false,
-      "evidence": "No rules found.",
+      "earned": 2,
+      "passed": true,
+      "evidence": "All 1 rule(s) are ≤500 lines.",
       "remediation": "Split rules longer than 500 lines into focused, scoped rules or move procedural content into a skill — huge rules crowd out task context.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ctx-06",
       "severity": "error"
@@ -184,9 +182,9 @@
       "dimension": "skills",
       "title": "At least one agent skill defined",
       "points": 4,
-      "earned": 4,
-      "passed": true,
-      "evidence": "Found 9 skill(s) (codex): .agents/skills/bench-run/SKILL.md, .agents/skills/confluence-assistant/SKILL.md, .agents/skills/coupling-analysis/SKILL.md, …",
+      "earned": 0,
+      "passed": false,
+      "evidence": "No SKILL.md under .cursor/skills/, .claude/skills/, or .agents/skills/.",
       "remediation": "Create a SKILL.md under your tool skills directory (.cursor/skills/, .claude/skills/, or .agents/skills/) packaging a procedural workflow the agent should follow on demand.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#skl-01",
       "severity": "error"
@@ -196,9 +194,9 @@
       "dimension": "skills",
       "title": "Skills declare name and description",
       "points": 3,
-      "earned": 3,
-      "passed": true,
-      "evidence": "All 9 skill(s) declare name and description.",
+      "earned": 0,
+      "passed": false,
+      "evidence": "No skills found to validate.",
       "remediation": "Add frontmatter with name: and description: to every SKILL.md — the agent decides whether to load a skill from those two fields alone.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#skl-02",
       "severity": "error"
@@ -220,9 +218,9 @@
       "dimension": "skills",
       "title": "Skill descriptions are trigger-worthy",
       "points": 2,
-      "earned": 2,
-      "passed": true,
-      "evidence": "All 9 skill description(s) are ≥40 characters.",
+      "earned": 0,
+      "passed": false,
+      "evidence": "No skills found.",
       "remediation": "Write skill descriptions of 40+ characters that say when to use the skill (\"Use when…\"), not just what it is — vague descriptions never trigger.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#skl-04",
       "severity": "error"
@@ -232,9 +230,9 @@
       "dimension": "skills",
       "title": "Custom subagent defined",
       "points": 3,
-      "earned": 3,
-      "passed": true,
-      "evidence": "Found 4 subagent(s) (cursor): .cursor/agents/bench-baseline-freezer.md, .cursor/agents/bench-evaluator.md, .cursor/agents/bench-implementer.md, …",
+      "earned": 0,
+      "passed": false,
+      "evidence": "No subagent files found (.cursor/agents, .claude/agents, or .opencode/agents).",
       "remediation": "Create a subagent definition (.cursor/agents/, .claude/agents/, or .opencode/agents/) for a purpose-built delegate (planning, review, release…).",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#agt-01",
       "severity": "error"
@@ -244,9 +242,9 @@
       "dimension": "skills",
       "title": "Subagents declare name and description",
       "points": 2,
-      "earned": 2,
-      "passed": true,
-      "evidence": "All 4 subagent(s) declare name and description.",
+      "earned": 0,
+      "passed": false,
+      "evidence": "No subagents found to validate.",
       "remediation": "Add frontmatter with name: and description: to every subagent definition — the parent agent decides whether to delegate from those two fields alone.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#agt-02",
       "severity": "error"
@@ -316,9 +314,9 @@
       "dimension": "sensors",
       "title": "Test runner configured",
       "points": 6,
-      "earned": 6,
-      "passed": true,
-      "evidence": "jest in package.json; jest.config.ts.",
+      "earned": 0,
+      "passed": false,
+      "evidence": "No test runner configuration or test script detected.",
       "remediation": "Wire up a test runner (vitest/jest, pytest, go test, cargo test…) with a standard entry point — tests are the strongest feedback sensor an agent can run on its own work.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#sns-01",
       "severity": "error"
@@ -330,7 +328,7 @@
       "points": 5,
       "earned": 5,
       "passed": true,
-      "evidence": "Found: app/billing-api/eslint.config.mjs, app/monolith/eslint.config.mjs, eslint.config.mjs.",
+      "evidence": "Found: examples/mcp/building-a-supply-chain-copilot-with-agent-sdk-and-databricks-mcp/ui/eslint.config.js, examples/voice_solutions/realtime_translation_guide/livekit-translation-demo/eslint.config.js.",
       "remediation": "Add a linter config (eslint/biome, ruff, golangci-lint, clippy.toml, rubocop…) — linters give the agent instant, deterministic feedback on every edit.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#sns-02",
       "severity": "error"
@@ -342,7 +340,7 @@
       "points": 4,
       "earned": 4,
       "passed": true,
-      "evidence": "app/billing-api/tsconfig.app.json (strict: true).",
+      "evidence": "examples/voice_solutions/one_way_translation_using_realtime_api/tsconfig.json (strict: true).",
       "remediation": "Enable static type checking (tsconfig.json with strict: true, mypy/pyright for Python) — typed code is dramatically more harnessable: the compiler catches agent mistakes for free.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#sns-03",
       "severity": "error"
@@ -354,7 +352,7 @@
       "points": 3,
       "earned": 3,
       "passed": true,
-      "evidence": "prettier configuration; formatter in devDependencies.",
+      "evidence": "prettier configuration.",
       "remediation": "Add an auto-formatter (prettier/biome, black or ruff format, gofmt/rustfmt are built-in) — formatting noise in diffs hides real agent mistakes from review.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#sns-04",
       "severity": "error"
@@ -366,7 +364,7 @@
       "points": 2,
       "earned": 2,
       "passed": true,
-      "evidence": "Found 14 test file(s), e.g. package/content/management/external-rating/external-movie-rating.client.spec.ts.",
+      "evidence": "Found 50 test file(s), e.g. examples/agents_sdk/sandboxed-code-migration/repo_fixtures/case_summary_service/tests/__init__.py.",
       "remediation": "Write at least one real test file — a configured runner with zero tests gives the agent a green light it did not earn.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#sns-05",
       "severity": "error"
@@ -378,7 +376,7 @@
       "points": 4,
       "earned": 4,
       "passed": true,
-      "evidence": "Found: .github/workflows/billing-api-build-deploy.yaml, .github/workflows/create-release.yml, .github/workflows/cursor-fix.yml.",
+      "evidence": "Found: .github/workflows/build-website.yaml, .github/workflows/stale.yaml, .github/workflows/validate-notebooks.yaml.",
       "remediation": "Add a CI workflow (.github/workflows/ci.yml) — CI is the harness sensor that catches what slipped past local checks, on every push.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ci-01",
       "severity": "error"
@@ -388,9 +386,9 @@
       "dimension": "ci",
       "title": "CI runs the test suite",
       "points": 4,
-      "earned": 4,
-      "passed": true,
-      "evidence": "CI invokes tests (\"test\").",
+      "earned": 0,
+      "passed": false,
+      "evidence": "CI configuration does not appear to run tests.",
       "remediation": "Make CI execute the test suite (npm test, pytest, go test…) so no agent-authored change can merge without the sensors firing.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ci-02",
       "severity": "error"
@@ -400,9 +398,9 @@
       "dimension": "ci",
       "title": "CI runs lint / type checks",
       "points": 3,
-      "earned": 3,
-      "passed": true,
-      "evidence": "CI invokes static checks (\"lint\").",
+      "earned": 0,
+      "passed": false,
+      "evidence": "CI configuration does not appear to run lint or type checks.",
       "remediation": "Add lint and typecheck steps to CI — cheap computational sensors belong on every push (\"keep quality left\").",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ci-03",
       "severity": "error"
@@ -450,7 +448,7 @@
       "points": 4,
       "earned": 4,
       "passed": true,
-      "evidence": "3 .env file(s) present but covered by .gitignore.",
+      "evidence": "No real .env files in the tree (templates like .env.example are fine).",
       "remediation": "Remove committed .env files (keep only .env.example) or at minimum ensure .gitignore excludes them — env files in an agent's working tree leak into context and commits.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#hyg-03",
       "severity": "error"
@@ -472,9 +470,9 @@
       "dimension": "hygiene",
       "title": "License present",
       "points": 2,
-      "earned": 0,
-      "passed": false,
-      "evidence": "No LICENSE file at repository root.",
+      "earned": 2,
+      "passed": true,
+      "evidence": "Found LICENSE.",
       "remediation": "Add a LICENSE file — required for open-source distribution and plugin marketplaces.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#hyg-05",
       "severity": "error"
@@ -486,7 +484,7 @@
       "points": 2,
       "earned": 2,
       "passed": true,
-      "evidence": "Scanned 15 harness file(s); no credential signatures.",
+      "evidence": "Scanned 3 harness file(s); no credential signatures.",
       "remediation": "Remove any API keys or tokens from AGENTS.md, rules, and hooks configuration — harness files are loaded into model context on every session.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#hyg-06",
       "severity": "error"
@@ -498,7 +496,7 @@
       "points": 3,
       "earned": 3,
       "passed": true,
-      "evidence": "Found yarn.lock.",
+      "evidence": "No dependency manifest detected (nothing to lock).",
       "remediation": "Commit the lockfile (package-lock.json, uv.lock, Cargo.lock…) — reproducible installs mean the agent's sensors run against the same dependencies everywhere.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#hyg-07",
       "severity": "error"
@@ -521,30 +519,30 @@
       "index": 1,
       "name": "Documented",
       "nextLevelGaps": [
-        "context ≥ 60%"
+        "skills ≥ 30% or hooks ≥ 30%"
       ],
       "capped": false
     },
     "score": {
-      "earned": 72,
+      "earned": 58,
       "max": 108,
-      "percent": 67
+      "percent": 54
     },
     "dimensions": [
       {
         "id": "context",
         "title": "Context & Guides",
-        "earned": 9,
+        "earned": 20,
         "max": 20,
-        "percent": 45,
+        "percent": 100,
         "applicable": true
       },
       {
         "id": "skills",
         "title": "Skills & Commands",
-        "earned": 14,
+        "earned": 0,
         "max": 17,
-        "percent": 82,
+        "percent": 0,
         "applicable": true
       },
       {
@@ -558,25 +556,25 @@
       {
         "id": "sensors",
         "title": "Sensors & Feedback",
-        "earned": 20,
+        "earned": 14,
         "max": 20,
-        "percent": 100,
+        "percent": 70,
         "applicable": true
       },
       {
         "id": "ci",
         "title": "CI Feedback",
-        "earned": 11,
+        "earned": 4,
         "max": 14,
-        "percent": 79,
+        "percent": 29,
         "applicable": true
       },
       {
         "id": "hygiene",
         "title": "Hygiene & Safety",
-        "earned": 18,
+        "earned": 20,
         "max": 23,
-        "percent": 78,
+        "percent": 87,
         "applicable": true
       }
     ],
@@ -600,7 +598,7 @@
         "points": 3,
         "earned": 3,
         "passed": true,
-        "evidence": "AGENTS.md: 79 non-empty lines, 17 headings (needs ≥20 lines and ≥2 headings).",
+        "evidence": "AGENTS.md: 31 non-empty lines, 9 headings (needs ≥20 lines and ≥2 headings).",
         "remediation": "Flesh out AGENTS.md: add sections for project overview, build & test commands, architecture, and conventions (aim for 20+ meaningful lines with headings).",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ctx-02",
         "severity": "error"
@@ -610,9 +608,9 @@
         "dimension": "context",
         "title": "Scoped rules in use",
         "points": 4,
-        "earned": 0,
-        "passed": false,
-        "evidence": "No scoped rule files found (.cursor/rules, .windsurf/rules, .clinerules, .continue/rules, .github/instructions, .agents/rules, nested AGENTS.md/CLAUDE.md, …).",
+        "earned": 4,
+        "passed": true,
+        "evidence": "Found 1 rule(s) (codex): examples/agents_sdk/sandboxed-code-migration/migration_agent/AGENTS.md",
         "remediation": "Add at least one scoped rule file for your AI tool (e.g. .cursor/rules/*.mdc, .windsurf/rules/*.md, .clinerules/*.md) or a nested AGENTS.md/CLAUDE.md in a subdirectory, stating the project non-negotiables.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ctx-03",
         "severity": "error"
@@ -622,9 +620,9 @@
         "dimension": "context",
         "title": "Rules have valid frontmatter",
         "points": 3,
-        "earned": 0,
-        "passed": false,
-        "evidence": "No rules found to validate.",
+        "earned": 3,
+        "passed": true,
+        "evidence": "All 1 rule(s) declare usable frontmatter.",
         "remediation": "Give every rule activation metadata in frontmatter (description, globs/trigger/paths/applyTo, or alwaysApply) so the agent knows when to load it.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ctx-04",
         "severity": "error"
@@ -634,9 +632,9 @@
         "dimension": "context",
         "title": "Rules are scoped, not all always-on",
         "points": 2,
-        "earned": 0,
-        "passed": false,
-        "evidence": "No rules found.",
+        "earned": 2,
+        "passed": true,
+        "evidence": "1 rule(s): 1 path-scoped, 0 always-on.",
         "remediation": "Scope rules to paths (globs, trigger glob, paths, applyTo) instead of making everything always-on — blanket rules consume context on every request.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ctx-05",
         "severity": "error"
@@ -646,9 +644,9 @@
         "dimension": "context",
         "title": "No bloated rules (≤500 lines each)",
         "points": 2,
-        "earned": 0,
-        "passed": false,
-        "evidence": "No rules found.",
+        "earned": 2,
+        "passed": true,
+        "evidence": "All 1 rule(s) are ≤500 lines.",
         "remediation": "Split rules longer than 500 lines into focused, scoped rules or move procedural content into a skill — huge rules crowd out task context.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ctx-06",
         "severity": "error"
@@ -682,9 +680,9 @@
         "dimension": "skills",
         "title": "At least one agent skill defined",
         "points": 4,
-        "earned": 4,
-        "passed": true,
-        "evidence": "Found 9 skill(s) (codex): .agents/skills/bench-run/SKILL.md, .agents/skills/confluence-assistant/SKILL.md, .agents/skills/coupling-analysis/SKILL.md, …",
+        "earned": 0,
+        "passed": false,
+        "evidence": "No SKILL.md under .cursor/skills/, .claude/skills/, or .agents/skills/.",
         "remediation": "Create a SKILL.md under your tool skills directory (.cursor/skills/, .claude/skills/, or .agents/skills/) packaging a procedural workflow the agent should follow on demand.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#skl-01",
         "severity": "error"
@@ -694,9 +692,9 @@
         "dimension": "skills",
         "title": "Skills declare name and description",
         "points": 3,
-        "earned": 3,
-        "passed": true,
-        "evidence": "All 9 skill(s) declare name and description.",
+        "earned": 0,
+        "passed": false,
+        "evidence": "No skills found to validate.",
         "remediation": "Add frontmatter with name: and description: to every SKILL.md — the agent decides whether to load a skill from those two fields alone.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#skl-02",
         "severity": "error"
@@ -718,9 +716,9 @@
         "dimension": "skills",
         "title": "Skill descriptions are trigger-worthy",
         "points": 2,
-        "earned": 2,
-        "passed": true,
-        "evidence": "All 9 skill description(s) are ≥40 characters.",
+        "earned": 0,
+        "passed": false,
+        "evidence": "No skills found.",
         "remediation": "Write skill descriptions of 40+ characters that say when to use the skill (\"Use when…\"), not just what it is — vague descriptions never trigger.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#skl-04",
         "severity": "error"
@@ -730,9 +728,9 @@
         "dimension": "skills",
         "title": "Custom subagent defined",
         "points": 3,
-        "earned": 3,
-        "passed": true,
-        "evidence": "Found 4 subagent(s) (cursor): .cursor/agents/bench-baseline-freezer.md, .cursor/agents/bench-evaluator.md, .cursor/agents/bench-implementer.md, …",
+        "earned": 0,
+        "passed": false,
+        "evidence": "No subagent files found (.cursor/agents, .claude/agents, or .opencode/agents).",
         "remediation": "Create a subagent definition (.cursor/agents/, .claude/agents/, or .opencode/agents/) for a purpose-built delegate (planning, review, release…).",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#agt-01",
         "severity": "error"
@@ -742,9 +740,9 @@
         "dimension": "skills",
         "title": "Subagents declare name and description",
         "points": 2,
-        "earned": 2,
-        "passed": true,
-        "evidence": "All 4 subagent(s) declare name and description.",
+        "earned": 0,
+        "passed": false,
+        "evidence": "No subagents found to validate.",
         "remediation": "Add frontmatter with name: and description: to every subagent definition — the parent agent decides whether to delegate from those two fields alone.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#agt-02",
         "severity": "error"
@@ -814,9 +812,9 @@
         "dimension": "sensors",
         "title": "Test runner configured",
         "points": 6,
-        "earned": 6,
-        "passed": true,
-        "evidence": "jest in package.json; jest.config.ts.",
+        "earned": 0,
+        "passed": false,
+        "evidence": "No test runner configuration or test script detected.",
         "remediation": "Wire up a test runner (vitest/jest, pytest, go test, cargo test…) with a standard entry point — tests are the strongest feedback sensor an agent can run on its own work.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#sns-01",
         "severity": "error"
@@ -828,7 +826,7 @@
         "points": 5,
         "earned": 5,
         "passed": true,
-        "evidence": "Found: app/billing-api/eslint.config.mjs, app/monolith/eslint.config.mjs, eslint.config.mjs.",
+        "evidence": "Found: examples/mcp/building-a-supply-chain-copilot-with-agent-sdk-and-databricks-mcp/ui/eslint.config.js, examples/voice_solutions/realtime_translation_guide/livekit-translation-demo/eslint.config.js.",
         "remediation": "Add a linter config (eslint/biome, ruff, golangci-lint, clippy.toml, rubocop…) — linters give the agent instant, deterministic feedback on every edit.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#sns-02",
         "severity": "error"
@@ -840,7 +838,7 @@
         "points": 4,
         "earned": 4,
         "passed": true,
-        "evidence": "app/billing-api/tsconfig.app.json (strict: true).",
+        "evidence": "examples/voice_solutions/one_way_translation_using_realtime_api/tsconfig.json (strict: true).",
         "remediation": "Enable static type checking (tsconfig.json with strict: true, mypy/pyright for Python) — typed code is dramatically more harnessable: the compiler catches agent mistakes for free.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#sns-03",
         "severity": "error"
@@ -852,7 +850,7 @@
         "points": 3,
         "earned": 3,
         "passed": true,
-        "evidence": "prettier configuration; formatter in devDependencies.",
+        "evidence": "prettier configuration.",
         "remediation": "Add an auto-formatter (prettier/biome, black or ruff format, gofmt/rustfmt are built-in) — formatting noise in diffs hides real agent mistakes from review.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#sns-04",
         "severity": "error"
@@ -864,7 +862,7 @@
         "points": 2,
         "earned": 2,
         "passed": true,
-        "evidence": "Found 14 test file(s), e.g. package/content/management/external-rating/external-movie-rating.client.spec.ts.",
+        "evidence": "Found 50 test file(s), e.g. examples/agents_sdk/sandboxed-code-migration/repo_fixtures/case_summary_service/tests/__init__.py.",
         "remediation": "Write at least one real test file — a configured runner with zero tests gives the agent a green light it did not earn.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#sns-05",
         "severity": "error"
@@ -876,7 +874,7 @@
         "points": 4,
         "earned": 4,
         "passed": true,
-        "evidence": "Found: .github/workflows/billing-api-build-deploy.yaml, .github/workflows/create-release.yml, .github/workflows/cursor-fix.yml.",
+        "evidence": "Found: .github/workflows/build-website.yaml, .github/workflows/stale.yaml, .github/workflows/validate-notebooks.yaml.",
         "remediation": "Add a CI workflow (.github/workflows/ci.yml) — CI is the harness sensor that catches what slipped past local checks, on every push.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ci-01",
         "severity": "error"
@@ -886,9 +884,9 @@
         "dimension": "ci",
         "title": "CI runs the test suite",
         "points": 4,
-        "earned": 4,
-        "passed": true,
-        "evidence": "CI invokes tests (\"test\").",
+        "earned": 0,
+        "passed": false,
+        "evidence": "CI configuration does not appear to run tests.",
         "remediation": "Make CI execute the test suite (npm test, pytest, go test…) so no agent-authored change can merge without the sensors firing.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ci-02",
         "severity": "error"
@@ -898,9 +896,9 @@
         "dimension": "ci",
         "title": "CI runs lint / type checks",
         "points": 3,
-        "earned": 3,
-        "passed": true,
-        "evidence": "CI invokes static checks (\"lint\").",
+        "earned": 0,
+        "passed": false,
+        "evidence": "CI configuration does not appear to run lint or type checks.",
         "remediation": "Add lint and typecheck steps to CI — cheap computational sensors belong on every push (\"keep quality left\").",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ci-03",
         "severity": "error"
@@ -948,7 +946,7 @@
         "points": 4,
         "earned": 4,
         "passed": true,
-        "evidence": "3 .env file(s) present but covered by .gitignore.",
+        "evidence": "No real .env files in the tree (templates like .env.example are fine).",
         "remediation": "Remove committed .env files (keep only .env.example) or at minimum ensure .gitignore excludes them — env files in an agent's working tree leak into context and commits.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#hyg-03",
         "severity": "error"
@@ -970,9 +968,9 @@
         "dimension": "hygiene",
         "title": "License present",
         "points": 2,
-        "earned": 0,
-        "passed": false,
-        "evidence": "No LICENSE file at repository root.",
+        "earned": 2,
+        "passed": true,
+        "evidence": "Found LICENSE.",
         "remediation": "Add a LICENSE file — required for open-source distribution and plugin marketplaces.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#hyg-05",
         "severity": "error"
@@ -984,7 +982,7 @@
         "points": 2,
         "earned": 2,
         "passed": true,
-        "evidence": "Scanned 15 harness file(s); no credential signatures.",
+        "evidence": "Scanned 3 harness file(s); no credential signatures.",
         "remediation": "Remove any API keys or tokens from AGENTS.md, rules, and hooks configuration — harness files are loaded into model context on every session.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#hyg-06",
         "severity": "error"
@@ -996,7 +994,7 @@
         "points": 3,
         "earned": 3,
         "passed": true,
-        "evidence": "Found yarn.lock.",
+        "evidence": "No dependency manifest detected (nothing to lock).",
         "remediation": "Commit the lockfile (package-lock.json, uv.lock, Cargo.lock…) — reproducible installs mean the agent's sensors run against the same dependencies everywhere.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#hyg-07",
         "severity": "error"
@@ -1015,9 +1013,7 @@
       }
     ],
     "detectedHarnesses": [
-      "antigravity",
-      "codex",
-      "cursor"
+      "codex"
     ]
   },
   "preset": {

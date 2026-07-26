@@ -16,7 +16,8 @@ invariant harness-score itself holds).
 
 ```bash
 npm run corpus:run                    # clone every pinned repo (or reuse cache) + scan -> corpus/reports/*.json
-npm run corpus:build                  # regenerate results/leaderboard.{md,csv} + results/dimension-heatmap.md
+npm run corpus:history                # backfill a history snapshot from the current matching reports
+npm run corpus:build                  # regenerate leaderboard, heatmap, and score-history results
 npm run site:build                    # regenerate docs/index.html (the GitHub Pages site)
 npm run corpus                        # all three, in order
 node corpus/run.mjs --only <name>     # scan a single manifest entry while iterating
@@ -45,6 +46,10 @@ instead of just documented.
   raw, versioned output of `npx harness-score@<pinned> <path> --json`. If a
   number looks wrong, fix the manifest or file a critique — never hand-edit
   a report.
+- **`corpus/history/*.json` is append-only run evidence.** A complete
+  `corpus:run` records `runDate`, `toolVersion`, and every repository's
+  result. Never rewrite an older snapshot. Partial `--only` runs do not
+  create historical snapshots.
 - **`results/*` and `docs/index.html` are generated, not hand-edited.**
   Regenerate with `npm run corpus:build` and `npm run site:build` (or just
   `npm run corpus`, which does both) after any change under
@@ -52,6 +57,11 @@ instead of just documented.
   built by `corpus/build-site.mjs` from `corpus/lib/site.mjs`, the same
   "pure render functions + thin CLI wrapper" shape as
   `corpus/build-results.mjs` / `corpus/lib/results.mjs`.
+- **Checkout exceptions must be explicit and signal-preserving.**
+  `checkoutExcludes` may omit only platform-incompatible datasets or assets
+  that cannot affect a harness check. Document the exact scope and reason
+  in the manifest. The runner skips Git LFS smudging and never executes
+  code from a scanned repository.
 - **Write the blind rating before running the scanner on that repo.** If a
   report already exists for a repository with no rating file yet, write
   `analysis/ratings/<name>.md` without looking at the report first — the

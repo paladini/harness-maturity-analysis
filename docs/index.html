@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Harness Maturity Analysis — 20 repositories scored</title>
-<meta name="description" content="A reproducible study of AI-harness maturity across 20 notable open-source repositories, scored with harness-score.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3EH%3C/text%3E%3C/svg%3E">
+<title>Harness Maturity Analysis — 21 repositories scored</title>
+<meta name="description" content="A reproducible study of AI-harness maturity across 21 notable open-source repositories, scored with harness-score.">
 <style>
 
   :root {
@@ -76,6 +77,12 @@
   .heatmap tbody th { text-align: left; font-weight: 600; padding: 0 12px 0 0; white-space: nowrap; font-size: 13px; }
   .heatmap td { text-align: center; padding: 2px; }
   .cell { font-family: var(--font-mono); font-variant-numeric: tabular-nums; font-size: 11px; height: 34px; display: flex; align-items: center; justify-content: center; background: var(--surface-sunken); background: color-mix(in srgb, var(--accent) var(--v, 0%), var(--surface-sunken)); color: var(--ink-muted); border: 1px solid var(--border); }
+  .history-wrap { overflow-x: auto; }
+  .history-table { border-collapse: collapse; min-width: 700px; width: 100%; font-size: 13px; }
+  .history-table th, .history-table td { border-bottom: 1px solid var(--border); padding: 11px 12px; text-align: left; }
+  .history-table thead th { font-family: var(--font-mono); color: var(--ink-faint); font-size: 10.5px; vertical-align: bottom; }
+  .history-table tbody th { font-weight: 600; }
+  .history-table td { font-family: var(--font-mono); color: var(--ink-muted); font-variant-numeric: tabular-nums; }
   .finding { padding: 44px 0 48px; }
   .finding-card { border-left: 4px solid var(--l1); border-radius: 0 6px 6px 0; background: var(--surface); background: color-mix(in srgb, var(--l1) 6%, var(--surface)); padding: 26px 28px; }
   .finding-eyebrow { color: var(--l1); margin-bottom: 12px; }
@@ -108,14 +115,14 @@
     <p class="eyebrow">harness-maturity-analysis · phase 1 complete</p>
     <h1>Does the score<br>hold up?</h1>
     <p class="lede">
-      20 of 21 pinned repositories, one deterministic scanner,
+      21 of 21 pinned repositories, one deterministic scanner,
       one question: when <code>harness-score</code> calls a repository L4 or L0,
       does it hold up? <strong>A high reading measures a repository's harness —
       never the competence of the company that owns it.</strong>
     </p>
     <div class="meta-strip">
-      <span>harness-score@1.0.0</span>
-      <span>20/21 repositories scanned</span>
+      <span>harness-score@1.5.0</span>
+      <span>21/21 repositories scanned</span>
       <span>zero LLM calls, zero network at scan time</span>
       <a href="https://github.com/paladini/harness-maturity-analysis">source on GitHub →</a>
     </div>
@@ -148,7 +155,7 @@
         <div class="board-rank">2</div>
         <div class="board-main">
           <div class="board-name-line">
-            <span><a class="board-name" href="https://github.com/anthropics/anthropic-cookbook" target="_blank" rel="noopener">anthropics/anthropic-cookbook</a>
+            <span><a class="board-name" href="https://github.com/anthropics/claude-cookbooks" target="_blank" rel="noopener">anthropics/claude-cookbooks</a>
               <span class="board-category">AI lab</span></span>
             <span class="board-score">99/108 · 92%</span>
           </div>
@@ -163,9 +170,9 @@
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/promptfoo/promptfoo" target="_blank" rel="noopener">promptfoo/promptfoo</a>
               <span class="board-category">prompt / eval engineering</span></span>
-            <span class="board-score">95/108 · 88%</span>
+            <span class="board-score">97/108 · 90%</span>
           </div>
-          <div class="board-bar-track"><div class="board-bar-fill" style="width:88%; --bar-color:var(--l4)"></div></div>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:90%; --bar-color:var(--l4)"></div></div>
         </div>
         <div class="board-level"><span class="chip" style="--chip-color:var(--l4)"><span class="dot"></span>L4 Self-correcting</span></div>
       </div>
@@ -187,6 +194,19 @@
         <div class="board-rank">5</div>
         <div class="board-main">
           <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/cline/cline" target="_blank" rel="noopener">cline/cline</a>
+              <span class="board-category">AI-first dev tool</span></span>
+            <span class="board-score">80/108 · 74%</span>
+          </div>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:74%; --bar-color:var(--l1)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l1)"><span class="dot"></span>L1 Documented</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">6</div>
+        <div class="board-main">
+          <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/continuedev/continue" target="_blank" rel="noopener">continuedev/continue</a>
               <span class="board-category">AI-first dev tool</span></span>
             <span class="board-score">79/108 · 73%</span>
@@ -194,19 +214,6 @@
           <div class="board-bar-track"><div class="board-bar-fill" style="width:73%; --bar-color:var(--l3)"></div></div>
         </div>
         <div class="board-level"><span class="chip" style="--chip-color:var(--l3)"><span class="dot"></span>L3 Sensing</span></div>
-      </div>
-
-      <div class="board-row">
-        <div class="board-rank">6</div>
-        <div class="board-main">
-          <div class="board-name-line">
-            <span><a class="board-name" href="https://github.com/cline/cline" target="_blank" rel="noopener">cline/cline</a>
-              <span class="board-category">AI-first dev tool</span></span>
-            <span class="board-score">78/108 · 72%</span>
-          </div>
-          <div class="board-bar-track"><div class="board-bar-fill" style="width:72%; --bar-color:var(--l1)"></div></div>
-        </div>
-        <div class="board-level"><span class="chip" style="--chip-color:var(--l1)"><span class="dot"></span>L1 Documented</span></div>
       </div>
 
       <div class="board-row">
@@ -291,6 +298,19 @@
         <div class="board-rank">13</div>
         <div class="board-main">
           <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/openai/openai-cookbook" target="_blank" rel="noopener">openai/openai-cookbook</a>
+              <span class="board-category">AI lab</span></span>
+            <span class="board-score">58/108 · 54%</span>
+          </div>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:54%; --bar-color:var(--l1)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l1)"><span class="dot"></span>L1 Documented</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">14</div>
+        <div class="board-main">
+          <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/huggingface/smolagents" target="_blank" rel="noopener">huggingface/smolagents</a>
               <span class="board-category">AI lab</span></span>
             <span class="board-score">53/108 · 49%</span>
@@ -301,7 +321,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">14</div>
+        <div class="board-rank">15</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/stanfordnlp/dspy" target="_blank" rel="noopener">stanfordnlp/dspy</a>
@@ -314,7 +334,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">15</div>
+        <div class="board-rank">16</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/Aider-AI/aider" target="_blank" rel="noopener">Aider-AI/aider</a>
@@ -327,7 +347,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">16</div>
+        <div class="board-rank">17</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/openai/evals" target="_blank" rel="noopener">openai/evals</a>
@@ -340,7 +360,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">17</div>
+        <div class="board-rank">18</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/sindresorhus/execa" target="_blank" rel="noopener">sindresorhus/execa</a>
@@ -353,7 +373,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">18</div>
+        <div class="board-rank">19</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/PatrickJS/awesome-cursorrules" target="_blank" rel="noopener">PatrickJS/awesome-cursorrules</a>
@@ -366,7 +386,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">19</div>
+        <div class="board-rank">20</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/anthropics/skills" target="_blank" rel="noopener">anthropics/skills</a>
@@ -379,7 +399,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">20</div>
+        <div class="board-rank">21</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/octocat/Hello-World" target="_blank" rel="noopener">octocat/Hello-World</a>
@@ -393,6 +413,153 @@
     </div>
   </section>
 
+
+  <section class="history-section">
+    <h2>Same commits, new scoring model</h2>
+    <p class="section-note">
+      This comparison isolates model changes: every repository stays pinned to the same commit.
+      The only changed input is <code>harness-score@1.0.0</code> →
+      <code>harness-score@1.5.0</code>. The complete, append-only record is in
+      <a href="https://github.com/paladini/harness-maturity-analysis/blob/main/results/score-history.md">score-history.md</a>.
+    </p>
+    <div class="history-wrap">
+      <table class="history-table">
+        <thead>
+          <tr><th>Repository</th><th>2026-07-16<br>harness-score@1.0.0</th><th>2026-07-25<br>harness-score@1.5.0</th><th>Change</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">harness-score</th>
+            <td>L4 · 108/108 (100%)</td>
+            <td>L4 · 108/108 (100%)</td>
+            <td>0 pp</td>
+          </tr>
+          <tr>
+            <th scope="row">fakeflix</th>
+            <td>L1 · 72/108 (67%)</td>
+            <td>L1 · 72/108 (67%)</td>
+            <td>0 pp</td>
+          </tr>
+          <tr>
+            <th scope="row">execa</th>
+            <td>L0 · 36/108 (33%)</td>
+            <td>L0 · 36/108 (33%)</td>
+            <td>0 pp</td>
+          </tr>
+          <tr>
+            <th scope="row">octocat-hello-world</th>
+            <td>L0 · 14/108 (13%)</td>
+            <td>L0 · 14/108 (13%)</td>
+            <td>0 pp</td>
+          </tr>
+          <tr>
+            <th scope="row">anthropic-cookbook</th>
+            <td>L3 · 99/108 (92%)</td>
+            <td>L3 · 99/108 (92%)</td>
+            <td>0 pp</td>
+          </tr>
+          <tr>
+            <th scope="row">anthropic-skills</th>
+            <td>L0 · 17/108 (16%)</td>
+            <td>L0 · 17/108 (16%)</td>
+            <td>0 pp</td>
+          </tr>
+          <tr>
+            <th scope="row">openai-cookbook</th>
+            <td>not-scanned</td>
+            <td>L1 · 58/108 (54%)</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <th scope="row">smolagents</th>
+            <td>L0 · 53/108 (49%)</td>
+            <td>L0 · 53/108 (49%)</td>
+            <td>0 pp</td>
+          </tr>
+          <tr>
+            <th scope="row">continue</th>
+            <td>L3 · 79/108 (73%)</td>
+            <td>L3 · 79/108 (73%)</td>
+            <td>0 pp</td>
+          </tr>
+          <tr>
+            <th scope="row">cline</th>
+            <td>L1 · 78/108 (72%)</td>
+            <td>L1 · 80/108 (74%)</td>
+            <td>+2 pp</td>
+          </tr>
+          <tr>
+            <th scope="row">openhands</th>
+            <td>L1 · 72/108 (67%)</td>
+            <td>L1 · 72/108 (67%)</td>
+            <td>0 pp</td>
+          </tr>
+          <tr>
+            <th scope="row">goose</th>
+            <td>L3 · 80/108 (74%)</td>
+            <td>L3 · 80/108 (74%)</td>
+            <td>0 pp</td>
+          </tr>
+          <tr>
+            <th scope="row">opencode</th>
+            <td>L1 · 74/108 (69%)</td>
+            <td>L1 · 74/108 (69%)</td>
+            <td>0 pp</td>
+          </tr>
+          <tr>
+            <th scope="row">aider</th>
+            <td>L0 · 46/108 (43%)</td>
+            <td>L0 · 46/108 (43%)</td>
+            <td>0 pp</td>
+          </tr>
+          <tr>
+            <th scope="row">zed</th>
+            <td>L3 · 75/108 (69%)</td>
+            <td>L3 · 75/108 (69%)</td>
+            <td>0 pp</td>
+          </tr>
+          <tr>
+            <th scope="row">promptfoo</th>
+            <td>L4 · 95/108 (88%)</td>
+            <td>L4 · 97/108 (90%)</td>
+            <td>+2 pp</td>
+          </tr>
+          <tr>
+            <th scope="row">openai-evals</th>
+            <td>L0 · 41/108 (38%)</td>
+            <td>L0 · 41/108 (38%)</td>
+            <td>0 pp</td>
+          </tr>
+          <tr>
+            <th scope="row">dspy</th>
+            <td>L0 · 52/108 (48%)</td>
+            <td>L0 · 52/108 (48%)</td>
+            <td>0 pp</td>
+          </tr>
+          <tr>
+            <th scope="row">langfuse</th>
+            <td>L1 · 73/108 (68%)</td>
+            <td>L1 · 73/108 (68%)</td>
+            <td>0 pp</td>
+          </tr>
+          <tr>
+            <th scope="row">mcp-servers</th>
+            <td>L1 · 66/108 (61%)</td>
+            <td>L1 · 66/108 (61%)</td>
+            <td>0 pp</td>
+          </tr>
+          <tr>
+            <th scope="row">awesome-cursorrules</th>
+            <td>L0 · 36/108 (33%)</td>
+            <td>L0 · 36/108 (33%)</td>
+            <td>0 pp</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+
   <section class="heatmap-section">
     <h2>Dimension heatmap</h2>
     <p class="section-note">Percent earned per dimension. Shade intensity is the same number as the label — never color alone.</p>
@@ -402,16 +569,17 @@
         <tbody>
           <tr><th scope="row">harness-score</th><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">anthropic-cookbook</th><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:57%">57</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:87%">87</div></td></tr>
-          <tr><th scope="row">promptfoo</th><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:35%">35</div></td><td><div class="cell" style="--v:86%">86</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
+          <tr><th scope="row">promptfoo</th><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:35%">35</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">goose</th><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:53%">53</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:87%">87</div></td></tr>
+          <tr><th scope="row">cline</th><td><div class="cell" style="--v:40%">40</div></td><td><div class="cell" style="--v:71%">71</div></td><td><div class="cell" style="--v:43%">43</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:87%">87</div></td></tr>
           <tr><th scope="row">continue</th><td><div class="cell" style="--v:65%">65</div></td><td><div class="cell" style="--v:71%">71</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:87%">87</div></td></tr>
-          <tr><th scope="row">cline</th><td><div class="cell" style="--v:40%">40</div></td><td><div class="cell" style="--v:71%">71</div></td><td><div class="cell" style="--v:29%">29</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:87%">87</div></td></tr>
           <tr><th scope="row">zed</th><td><div class="cell" style="--v:85%">85</div></td><td><div class="cell" style="--v:53%">53</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:78%">78</div></td></tr>
           <tr><th scope="row">opencode</th><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:87%">87</div></td></tr>
           <tr><th scope="row">langfuse</th><td><div class="cell" style="--v:75%">75</div></td><td><div class="cell" style="--v:24%">24</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:87%">87</div></td></tr>
           <tr><th scope="row">fakeflix</th><td><div class="cell" style="--v:45%">45</div></td><td><div class="cell" style="--v:82%">82</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:78%">78</div></td></tr>
           <tr><th scope="row">openhands</th><td><div class="cell" style="--v:45%">45</div></td><td><div class="cell" style="--v:53%">53</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:87%">87</div></td></tr>
           <tr><th scope="row">mcp-servers</th><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:60%">60</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
+          <tr><th scope="row">openai-cookbook</th><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:70%">70</div></td><td><div class="cell" style="--v:29%">29</div></td><td><div class="cell" style="--v:87%">87</div></td></tr>
           <tr><th scope="row">smolagents</th><td><div class="cell" style="--v:30%">30</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:80%">80</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:74%">74</div></td></tr>
           <tr><th scope="row">dspy</th><td><div class="cell" style="--v:10%">10</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:80%">80</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:87%">87</div></td></tr>
           <tr><th scope="row">aider</th><td><div class="cell" style="--v:10%">10</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:65%">65</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:74%">74</div></td></tr>
@@ -445,16 +613,15 @@
   </section>
 
   <section class="finding">
-    <div class="finding-card" style="border-left-color:var(--accent)">
-      <p class="eyebrow finding-eyebrow" style="color:var(--accent-ink)">confirmed bug, ready to fix</p>
-      <h2><code>HKS-05</code> misses the unbraced <code>$VAR</code> hook-path form</h2>
+    <div class="finding-card" style="border-left-color:var(--l2)">
+      <p class="eyebrow finding-eyebrow" style="color:var(--l2)">resolved in harness-score 1.5.0</p>
+      <h2><code>HKS-05</code> now recognizes both corpus regressions</h2>
       <p>
-        <code>cline</code> registers a real, committed hook —
-        <code>$CLAUDE_PROJECT_DIR/.claude/hooks/claude-code-for-web-setup.sh</code>, no curly
-        braces. The file genuinely exists at exactly that path. The check still reports it
-        missing: its path-resolution regex only strips the <em>braced</em> <code>${VAR}/</code>
-        form. A false negative, costing 2 points cline has legitimately earned — a one-line
-        regex fix, no design discussion needed.
+        On the same pinned commits, <code>cline</code> moves from 78 to 80 points and
+        <code>promptfoo</code> moves from 95 to 97. Their <code>HKS-05</code> checks now pass:
+        unbraced environment-variable paths and dependency-managed binaries are both resolved
+        correctly. The original diagnosis remains documented in
+        <a href="https://github.com/paladini/harness-maturity-analysis/blob/main/analysis/findings.md#1-resolved-bug-hks-05-missed-valid-hook-path-forms">analysis/findings.md</a>.
       </p>
     </div>
   </section>
@@ -486,7 +653,7 @@
         <h3>PHASE STATUS</h3>
         <ol>
           <li class="done">Pipeline scaffold, validated against 4 anchors</li>
-          <li class="done">Corpus frozen: 20/21 repositories scanned</li>
+          <li class="done">Corpus frozen: 21/21 repositories scanned</li>
           <li>Blind human ratings — needs a rater, not an agent</li>
           <li class="done">Q2 model-calibration synthesis — 7 findings, 4 proposals</li>
         </ol>

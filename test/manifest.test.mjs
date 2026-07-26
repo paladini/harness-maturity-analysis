@@ -15,7 +15,8 @@ const NAME_RE = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 
 describe('corpus/manifest.json', () => {
   it('declares a schema version and a pinned tool version', () => {
-    expect(manifest.schemaVersion).toBe(1);
+    expect(manifest.schemaVersion).toBe(2);
+    expect(manifest.runDate).toMatch(/^\d{4}-\d{2}-\d{2}$/);
     expect(manifest.toolVersion).toMatch(/^harness-score@\d+\.\d+\.\d+$/);
   });
 
@@ -43,6 +44,16 @@ describe('corpus/manifest.json', () => {
       expect(entry.notes, `${entry.name}: notes`).toBeTruthy();
       expect(typeof entry.isStressCase).toBe('boolean');
       expect(entry.scanSubpath === null || typeof entry.scanSubpath === 'string').toBe(true);
+      expect(
+        entry.checkoutExcludes === undefined ||
+          (Array.isArray(entry.checkoutExcludes) &&
+            entry.checkoutExcludes.every(
+              (excludedPath) =>
+                typeof excludedPath === 'string' &&
+                excludedPath.length > 0 &&
+                !excludedPath.replaceAll('\\', '/').split('/').includes('..'),
+            )),
+      ).toBe(true);
     }
   });
 });

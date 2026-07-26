@@ -4,11 +4,23 @@
 // EINVAL fix, the shallow-fetch-then-full-clone fallback — exist exactly
 // once.
 import { execFileSync } from 'node:child_process';
-import { existsSync, mkdirSync, rmSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import path from 'node:path';
+import { reportMatchesToolVersion } from './history.mjs';
 
-export function sh(file, args, cwd) {
+const GIT_HTTP_OPTIONS = [
+  '-c',
+  'http.version=HTTP/1.1',
+  '-c',
+  'http.lowSpeedLimit=1',
+  '-c',
+  'http.lowSpeedTime=30',
+];
+
+export function sh(file, args, cwd, { env = {} } = {}) {
   return execFileSync(file, args, {
     cwd,
+    env: { ...process.env, ...env },
     stdio: ['ignore', 'pipe', 'inherit'],
     encoding: 'utf8',
   });
@@ -49,28 +61,79 @@ export function currentHead(dir) {
  * branch/tag requests always re-fetch, which is correct: the branch may
  * have moved since last time).
  */
-export function cloneAtRef(repoUrl, ref, dest) {
+export function sparseCheckoutPatterns(excludes = []) {
+  const patterns = excludes.map((excludedPath) => {
+    const normalized = excludedPath.replaceAll('\\', '/').replace(/^\/+|\/+$/g, '');
+    if (!normalized || normalized.split('/').includes('..')) {
+      throw new Error(`invalid checkout exclusion: ${excludedPath}`);
+    }
+    return `!/${normalized}/**`;
+  });
+  return ['/*', ...patterns];
+}
+
+function checkoutMatches(ref, dest, checkoutExcludes) {
+  if (currentHead(dest) !== ref) return false;
+
+  const sparseCheckoutPath = path.join(dest, '.git', 'info', 'sparse-checkout');
+  if (checkoutExcludes.length > 0) {
+    if (!existsSync(sparseCheckoutPath)) return false;
+    const expected = `${sparseCheckoutPatterns(checkoutExcludes).join('\n')}\n`;
+    if (readFileSync(sparseCheckoutPath, 'utf8') !== expected) return false;
+  } else if (existsSync(sparseCheckoutPath)) {
+    return false;
+  }
+
+  try {
+    sh('git', ['diff-index', '--quiet', 'HEAD', '--'], dest);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+export function cloneAtRef(repoUrl, ref, dest, { checkoutExcludes = [] } = {}) {
   if (existsSync(dest)) {
-    if (currentHead(dest) === ref) return { reused: true, headSha: ref };
+    if (checkoutMatches(ref, dest, checkoutExcludes)) return { reused: true, headSha: ref };
     rmSync(dest, { recursive: true, force: true, maxRetries: 3, retryDelay: 150 });
   }
   mkdirSync(dest, { recursive: true });
   sh('git', ['init', '-q'], dest);
   sh('git', ['remote', 'add', 'origin', repoUrl], dest);
-  try {
-    sh('git', ['fetch', '--depth', '1', 'origin', ref], dest);
-    sh('git', ['checkout', '-q', 'FETCH_HEAD'], dest);
-  } catch {
-    rmSync(dest, { recursive: true, force: true, maxRetries: 3, retryDelay: 150 });
-    sh('git', ['clone', '-q', repoUrl, dest]);
-    sh('git', ['checkout', '-q', ref], dest);
+  if (checkoutExcludes.length > 0) {
+    sh('git', ['config', 'core.sparseCheckout', 'true'], dest);
+    sh('git', ['config', 'core.protectNTFS', 'false'], dest);
+    const sparseCheckoutPath = path.join(dest, '.git', 'info', 'sparse-checkout');
+    writeFileSync(sparseCheckoutPath, `${sparseCheckoutPatterns(checkoutExcludes).join('\n')}\n`, 'utf8');
   }
+  let checkoutTarget = 'FETCH_HEAD';
+  const objectFilter = checkoutExcludes.length > 0 ? ['--filter=blob:none'] : [];
+  try {
+    sh('git', [...GIT_HTTP_OPTIONS, 'fetch', ...objectFilter, '--depth', '1', 'origin', ref], dest);
+  } catch {
+    sh(
+      'git',
+      [
+        ...GIT_HTTP_OPTIONS,
+        'fetch',
+        ...objectFilter,
+        'origin',
+        '+refs/heads/*:refs/remotes/origin/*',
+        '+refs/tags/*:refs/tags/*',
+      ],
+      dest,
+    );
+    checkoutTarget = ref;
+  }
+  sh('git', ['checkout', '-q', checkoutTarget], dest, {
+    env: { GIT_LFS_SKIP_SMUDGE: '1' },
+  });
   return { reused: false, headSha: currentHead(dest) };
 }
 
 /** Strict: throws unless the checked-out HEAD is exactly `commit`. Corpus pipeline only. */
-export function pinnedClone(repoUrl, commit, dest) {
-  const { reused, headSha } = cloneAtRef(repoUrl, commit, dest);
+export function pinnedClone(repoUrl, commit, dest, options) {
+  const { reused, headSha } = cloneAtRef(repoUrl, commit, dest, options);
   if (headSha !== commit) {
     throw new Error(`checked out ${headSha}, expected pinned commit ${commit}`);
   }
@@ -103,7 +166,7 @@ export function parseLsRemoteSymref(output) {
 
 /** Resolves a repo's default branch name and current tip SHA via `git ls-remote`. */
 export function resolveDefaultRef(repoUrl) {
-  const out = sh('git', ['ls-remote', '--symref', repoUrl, 'HEAD'], process.cwd());
+  const out = sh('git', [...GIT_HTTP_OPTIONS, 'ls-remote', '--symref', repoUrl, 'HEAD'], process.cwd());
   const { branch, sha } = parseLsRemoteSymref(out);
   if (!sha) {
     throw new Error(`could not resolve HEAD for ${repoUrl} (private repo, wrong URL, or no network?)`);
@@ -113,5 +176,11 @@ export function resolveDefaultRef(repoUrl) {
 
 export function runHarnessScore(toolVersion, targetDir, extraArgs = []) {
   const out = shViaShim('npx', ['--yes', toolVersion, targetDir, '--json', ...extraArgs], process.cwd());
-  return JSON.parse(out);
+  const report = JSON.parse(out);
+  if (!reportMatchesToolVersion(report, toolVersion)) {
+    throw new Error(
+      `scanner returned ${report?.tool?.name ?? 'unknown'}@${report?.tool?.version ?? 'unknown'}, expected ${toolVersion}`,
+    );
+  }
+  return report;
 }

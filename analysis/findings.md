@@ -17,15 +17,17 @@ a specific check ID and a specific file path in a specific pinned commit
 (all in [`corpus/reports/`](../corpus/reports)), independent of whether that
 repository "deserves" a given level.
 
-Corpus for this pass: 20/21 repositories scanned (`openai-cookbook` excluded
-— see [`corpus/manifest.json`](../corpus/manifest.json)'s note: a Windows
-NTFS path-safety limitation unrelated to harness-score itself).
+Corpus for the current pass: 21/21 repositories scanned with
+`harness-score@1.5.0`. The original findings were recorded against the
+1.0.0 baseline. The July 25, 2026 rescan keeps the same commits pinned and
+records which findings changed in
+[`results/score-history.md`](../results/score-history.md).
 
 ## Summary
 
 | # | Finding | Kind | Confidence |
 |---|---|---|---|
-| 1 | `HKS-05` misses the unbraced `$VAR` hook-path form | Bug | High — reproduced, root-caused, one-line fix |
+| 1 | `HKS-05` missed valid hook-path forms | Resolved bug | High — both corpus regressions pass in 1.5.0 |
 | 2 | Hook-config inflation via nested tutorial/example directories | Model gap | High — confirmed independently in 2 unrelated repos |
 | 3 | Skill/plugin **marketplace** repos score identically to neglected ones | Category gap | High — structurally clear, not a judgment call |
 | 4 | Pre-commit tooling and Hooks & Guardrails measure fully disjoint things | Model gap | Medium-high — real overlap, design choice needed |
@@ -35,7 +37,19 @@ NTFS path-safety limitation unrelated to harness-score itself).
 
 ---
 
-## 1. Bug: `HKS-05` misses the unbraced `$VAR` hook-path form
+## 1. Resolved bug: `HKS-05` missed valid hook-path forms
+
+**Rescan status (1.5.0): resolved.** On the same pinned commits, `HKS-05`
+now passes for both `cline` and `promptfoo`. Each gains 2 points:
+`cline` moves from 78/108 (72%) to 80/108 (74%), and `promptfoo` moves from
+95/108 (88%) to 97/108 (90%). The current reports cite:
+
+> `HKS-05`: `All 1 path-referencing hook command(s) resolve to committed files.`
+
+The evidence is in [`corpus/reports/cline.json`](../corpus/reports/cline.json)
+and [`corpus/reports/promptfoo.json`](../corpus/reports/promptfoo.json).
+The remainder of this section preserves the original 1.0.0 diagnosis that
+led to the fix.
 
 **`packages/cli/src/harness/hooks.ts`, `hookCommandPathsResolve`** strips a
 `${VAR}/` prefix before checking whether a hook command references a
@@ -56,29 +70,29 @@ registers a real, committed hook:
 `$CLAUDE_PROJECT_DIR/.claude/hooks/claude-code-for-web-setup.sh` — no braces.
 The file genuinely exists at exactly that path in the repo (verified by
 hand: `.claude/hooks/claude-code-for-web-setup.sh` is present and
-committed). `HKS-05` still reports it as missing:
+committed). In the 1.0.0 baseline, `HKS-05` reported it as missing:
 
 > `Hook command(s) reference missing files: $CLAUDE_PROJECT_DIR/.claude/hooks/claude-code-for-web-setup.sh`
 
-This is a **false negative** — cline loses 2 points it has legitimately
+This was a **false negative** — cline lost 2 points it had legitimately
 earned, purely from an incomplete regex. Both `$VAR/...` and `${VAR}/...`
 are valid in Claude Code hook commands; the check should strip either form.
-One-line fix, no design discussion needed — candidate for
+The fix required no scoring-model change and was originally proposed in
 `proposals/001-hks-05-unbraced-var.md`.
 
-*Secondary, lower-confidence observation in the same check:* `promptfoo`
-([`corpus/reports/promptfoo.json`](../corpus/reports/promptfoo.json)) fails
+*Secondary observation in the same check:* `promptfoo`
+([`corpus/reports/promptfoo.json`](../corpus/reports/promptfoo.json)) failed
 `HKS-05` on `${CLAUDE_PROJECT_DIR}/node_modules/.bin/block-no-verify` — a
 real npm package binary, populated by `npm install`, not something anyone
 "forgot to commit." Paths under `node_modules/.bin/` (or equivalent
 dependency-manager output dirs) probably shouldn't be held to "commit the
 script" — worth folding into the same proposal as a secondary case, lower
-priority than the `$VAR` fix.
+priority than the `$VAR` fix. This case also passes in 1.5.0.
 
 ## 2. Model gap: hook-config inflation via nested tutorial/example directories
 
-`anthropic-cookbook` scores **57% on Hooks & Guardrails (8/14)** — the
-second-highest Hooks score in the entire corpus after harness-score itself.
+`anthropic-cookbook` scores **57% on Hooks & Guardrails (8/14)** — one of
+the highest Hooks scores in the corpus.
 The evidence:
 
 > `HKS-01`: `skills/.claude/settings.json parses as JSON.`
@@ -194,17 +208,18 @@ the AI-specific share of *earned* points:
 |---|---|---|---|
 | harness-score | L4 | 100% | 47% |
 | anthropic-cookbook | L3 | 92% | 45% |
-| promptfoo | L4 | 88% | 40% |
+| promptfoo | L4 | 90% | 41% |
 | goose | L3 | 74% | 36% |
 | zed | L3 | 69% | 35% |
 | continue | L3 | 73% | 32% |
 | fakeflix | L1 | 67% | 32% |
-| cline | L1 | 72% | 31% |
+| cline | L1 | 74% | 33% |
 | mcp-servers | L1 | 61% | 30% |
 | opencode | L1 | 69% | 27% |
 | langfuse | L1 | 68% | 26% |
 | openhands | L1 | 67% | 25% |
 | anthropic-skills | L0 | 16% | 12% |
+| openai-cookbook | L1 | 54% | 34% |
 | smolagents | L0 | 49% | 11% |
 | awesome-cursorrules | L0 | 33% | 6% |
 | openai-evals | L0 | 38% | 5% |

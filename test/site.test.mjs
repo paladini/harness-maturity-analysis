@@ -62,4 +62,40 @@ describe('renderSite', () => {
     expect(html).toContain('width:42%');
     expect(html).toContain('--v:77%');
   });
+
+  it('renders the latest before-and-after comparison from recorded runs', () => {
+    const entries = [fakeEntry('sample')];
+    const rows = [{ entry: entries[0], report: fakeReport({ percent: 55, level: 2 }) }];
+    const historyRuns = [
+      {
+        date: '2026-07-16',
+        toolVersion: 'harness-score@1.0.0',
+        entries: [
+          {
+            name: 'sample',
+            status: 'scored',
+            level: { index: 1, name: 'Guided' },
+            score: { earned: 40, max: 100, percent: 40 },
+          },
+        ],
+      },
+      {
+        date: '2026-07-25',
+        toolVersion: 'harness-score@1.5.0',
+        entries: [
+          {
+            name: 'sample',
+            status: 'scored',
+            level: { index: 2, name: 'Repeatable' },
+            score: { earned: 55, max: 100, percent: 55 },
+          },
+        ],
+      },
+    ];
+    const manifest = { toolVersion: 'harness-score@1.5.0', entries };
+    const html = renderSite(rows, manifest, historyRuns);
+    expect(html).toContain('Same commits, new scoring model');
+    expect(html).toContain('+15 pp');
+    expect(html).toContain('harness-score@1.5.0');
+  });
 });
