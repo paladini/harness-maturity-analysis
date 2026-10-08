@@ -2,6 +2,14 @@
 
 See [METHODOLOGY.md](../METHODOLOGY.md) for the full protocol.
 
+- [`phase-1c-execution.md`](phase-1c-execution.md) - the 30-repository
+  AI software popularity cohort, source eligibility, canonical identity
+  deduplication, execution evidence and corpus/showcase integration.
+
+- [`phase-1b-execution.md`](phase-1b-execution.md) - the 50-repository
+  showcase expansion, scanner upgrade, selection evidence and checkout
+  integrity. This delivery supplies no blind human ratings.
+
 - [`findings.md`](findings.md) — **done.** Corpus-wide synthesis of Q2: what
   the corpus reveals about gaps in the maturity model itself, grounded in
   check IDs and file evidence, no human judgment required.

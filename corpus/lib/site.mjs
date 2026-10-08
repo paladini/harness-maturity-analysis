@@ -12,6 +12,21 @@ const CATEGORY_LABELS = {
   'harness-engineering-exemplar': 'harness-engineering exemplar',
   'prompt-eval-engineering': 'prompt / eval engineering',
   'artifact-governance': 'artifact governance',
+  'ai-automation': 'AI and automation',
+  'developer-tools': 'developer tools',
+  'cloud-platforms': 'cloud, IaC, platforms',
+  'data-ml-science': 'data, ML, science',
+  'observability-networking': 'observability and networking',
+  security: 'security',
+  'community-applications': 'community applications',
+  'language-framework-controls': 'language, runtime, framework controls',
+  'ai-agent-frameworks': 'AI agent frameworks',
+  'ai-coding-tools': 'AI coding tools',
+  'ai-memory-retrieval': 'AI memory and retrieval',
+  'ai-interfaces': 'AI interfaces',
+  'ai-model-inference': 'AI models and inference',
+  'ai-vision-media': 'AI vision and media',
+  'ai-applications': 'AI applications',
 };
 
 function esc(s) {
@@ -36,15 +51,21 @@ function levelChip(level, levelName) {
 function renderLeaderboardRow(row, rank) {
   const { entry, report } = row;
   const stressTag = entry.isStressCase ? '<span class="stress-tag">stress case</span>' : '';
+  const truncatedTag = report.truncated ? '<span class="stress-tag">truncated scan</span>' : '';
+  const selection = entry.selection;
+  const provenance =
+    selection?.cohort === 'ai-popularity'
+      ? `<p class="board-provenance">AI software cohort: popularity #${esc(selection.popularityRank)} · ${esc(Number(selection.githubStars).toLocaleString('en-US'))} GitHub stars on ${esc(selection.date)}</p>`
+      : '';
   return `
       <div class="board-row">
         <div class="board-rank">${rank}</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="${esc(entry.repoUrl.replace(/\.git$/, ''))}" target="_blank" rel="noopener">${esc(repoLabel(entry.repoUrl))}</a>
-              <span class="board-category">${esc(categoryLabel(entry.category))}</span>${stressTag}</span>
+              <span class="board-category">${esc(categoryLabel(entry.category))}</span>${stressTag}${truncatedTag}</span>
             <span class="board-score">${report.score.earned}/${report.score.max} · ${report.score.percent}%</span>
-          </div>
+          </div>${provenance ? `\n          ${provenance}` : ''}
           <div class="board-bar-track"><div class="board-bar-fill" style="width:${report.score.percent}%; --bar-color:var(--l${report.level.index})"></div></div>
         </div>
         <div class="board-level">${levelChip(report.level.index, report.level.name)}</div>
@@ -82,6 +103,7 @@ function renderHistoryComparison(manifest, historyRuns) {
   if (historyRuns.length < 2) return '';
   const previous = historyRuns.at(-2);
   const current = historyRuns.at(-1);
+  const sameTool = previous.toolVersion === current.toolVersion;
   const body = manifest.entries
     .map((manifestEntry) => {
       const before = previous.entries.find((entry) => entry.name === manifestEntry.name);
@@ -102,11 +124,14 @@ function renderHistoryComparison(manifest, historyRuns) {
 
   return `
   <section class="history-section">
-    <h2>Same commits, new scoring model</h2>
+    <h2>${sameTool ? 'Corpus coverage over time' : 'Same commits, new scoring model'}</h2>
     <p class="section-note">
-      This comparison isolates model changes: every repository stays pinned to the same commit.
-      The only changed input is <code>${esc(previous.toolVersion)}</code> →
-      <code>${esc(current.toolVersion)}</code>. The complete, append-only record is in
+      ${
+        sameTool
+          ? `Both runs use <code>${esc(current.toolVersion)}</code>. Existing entries retain their pinned commits; new entries have no earlier score.`
+          : `Repositories present in both runs keep the same pinned commit, so their deltas measure the change from <code>${esc(previous.toolVersion)}</code> to <code>${esc(current.toolVersion)}</code>. New entries have no earlier score.`
+      }
+      The complete, append-only record is in
       <a href="https://github.com/paladini/harness-maturity-analysis/blob/main/results/score-history.md">score-history.md</a>.
     </p>
     <div class="history-wrap">
@@ -140,6 +165,9 @@ export function renderSite(rows, manifest, historyRuns = []) {
     .sort((a, b) => aiShare(a.report) - aiShare(b.report))[0];
   const { head: heatmapHead, body: heatmapBody } = renderHeatmap(rows);
   const historyComparison = renderHistoryComparison(manifest, historyRuns);
+  const popularityCount = manifest.entries.filter(
+    (entry) => entry.selection?.cohort === 'ai-popularity',
+  ).length;
 
   return `<!doctype html>
 <html lang="en">
@@ -148,7 +176,7 @@ export function renderSite(rows, manifest, historyRuns = []) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3EH%3C/text%3E%3C/svg%3E">
 <title>Harness Maturity Analysis — ${scannedCount} repositories scored</title>
-<meta name="description" content="A reproducible study of AI-harness maturity across ${scannedCount} notable open-source repositories, scored with harness-score.">
+<meta name="description" content="A reproducible showcase of AI-harness maturity across ${scannedCount} public repositories, scored with harness-score.">
 <style>
 ${SITE_CSS}
 </style>
@@ -157,13 +185,15 @@ ${SITE_CSS}
 <div class="page">
 
   <header class="masthead">
-    <p class="eyebrow">harness-maturity-analysis · phase 1 complete</p>
+    <p class="eyebrow">harness-maturity-analysis · phase 1C showcase</p>
     <h1>Does the score<br>hold up?</h1>
     <p class="lede">
       ${scannedCount} of ${totalCount} pinned repositories, one deterministic scanner,
       one question: when <code>harness-score</code> calls a repository L4 or L0,
       does it hold up? <strong>A high reading measures a repository's harness —
       never the competence of the company that owns it.</strong>
+      This collection supplies scanner evidence; independent blind human ratings are still pending.
+      ${popularityCount ? `<span class="cohort-note">Includes ${popularityCount} new AI software projects selected by GitHub stars. <a href="https://github.com/paladini/harness-maturity-analysis/issues/3">Selection and software eligibility</a>.</span>` : ''}
     </p>
     <div class="meta-strip">
       <span>${esc(manifest.toolVersion)}</span>
@@ -176,7 +206,7 @@ ${SITE_CSS}
   <section class="leaderboard">
     <h2>The leaderboard</h2>
     <p class="section-note">
-      Every bar is one pinned commit, scanned once, byte-reproducible. Bar length is total
+      Every bar is one pinned commit scanned with the pinned tool version. Bar length is total
       score; color is the gated maturity level — they can diverge, and where they do is the
       most interesting part of this study. Full raw data:
       <a href="https://github.com/paladini/harness-maturity-analysis/blob/main/results/leaderboard.csv">leaderboard.csv</a>.
@@ -203,19 +233,19 @@ ${heatmapBody}
 
   <section class="finding">
     <div class="finding-card">
-      <p class="eyebrow finding-eyebrow">category gap, not a bug</p>
-      <h2>Anthropic's own skills showcase scores identically to an empty repo</h2>
+      <p class="eyebrow finding-eyebrow">observation from the original 21-repository analysis</p>
+      <h2>Anthropic's skills showcase shares L0 with a minimal repo</h2>
       <p>
         <code>anthropic/skills</code> — Anthropic's official showcase of Claude Skills — scores
         <strong>${anthropicSkills ? `L${anthropicSkills.report.level.index} · ${anthropicSkills.report.score.percent}%` : 'L0 · 16%'}</strong>,
-        indistinguishable in kind from <code>octocat/Hello-World</code>. Its skills live at
+        sharing a maturity level with <code>octocat/Hello-World</code>. Its skills live at
         <code>skills/&lt;name&gt;/SKILL.md</code> (repository root) rather than <code>.claude/skills/</code>,
         because this repository <em>distributes</em> skills rather than using them to develop
         itself — and the relevant check correctly answers the question it's built to ask
-        ("does this repo have a self-referential skill harness?") with "no." But the model has
-        no vocabulary today for "canonical reference implementation of an artifact type" as
-        distinct from "no harness at all." A <code>.claude-plugin/</code> manifest at root —
-        which this repo has — is a strong, currently-ignored signal.
+        ("does this repo have a self-referential skill harness?") with "no." The original
+        1.5.0 analysis identified a category gap for canonical artifact collections, including
+        the root <code>.claude-plugin/</code> manifest. This historical finding has not been
+        revalidated as a model critique for the expanded cohort.
       </p>
     </div>
   </section>
@@ -238,10 +268,9 @@ ${heatmapBody}
     <h2>How much of the score is actually "AI harness"?</h2>
     <p class="section-note">
       Splitting each report's earned points into AI-specific (Context + Skills + Hooks) versus
-      generic engineering hygiene (Sensors + CI + Hygiene): most well-known agent-native tools
-      in this corpus earn the large majority of their points from tests, CI, and lockfiles —
-      dimensions with nothing specifically to do with AI agents. ${lowestAiShare ? `<code>${esc(lowestAiShare.entry.name)}</code> sits at just ${aiShare(lowestAiShare.report)}% AI-specific share despite scoring ${lowestAiShare.report.score.percent}% overall.` : ''}
-      Full table and reading in
+      generic engineering hygiene (Sensors + CI + Hygiene) distinguishes agent artifacts
+      from conventional engineering signals. ${lowestAiShare ? `<code>${esc(lowestAiShare.entry.name)}</code> has ${aiShare(lowestAiShare.report)}% AI-specific share and scores ${lowestAiShare.report.score.percent}% overall.` : ''}
+      The original 21-repository interpretation is in
       <a href="https://github.com/paladini/harness-maturity-analysis/blob/main/analysis/findings.md#5-aggregate-pattern-how-much-of-the-score-is-actually-ai-harness">analysis/findings.md</a>.
     </p>
   </section>
@@ -319,6 +348,7 @@ const SITE_CSS = `
   .masthead h1 { font-size: clamp(36px, 5.5vw, 50px); line-height: 1.1; letter-spacing: -0.015em; }
   .masthead .lede { margin-top: 20px; max-width: 62ch; font-size: 18px; line-height: 1.6; color: var(--ink-muted); }
   .masthead .lede strong { color: var(--ink); font-weight: 600; }
+  .cohort-note { display: block; margin-top: 10px; }
   .meta-strip { margin-top: 26px; display: flex; flex-wrap: wrap; align-items: center; row-gap: 8px; font-family: var(--font-mono); font-size: 12.5px; color: var(--ink-faint); }
   .meta-strip > * { display: inline-flex; align-items: center; }
   .meta-strip > *:not(:first-child)::before { content: "·"; margin: 0 12px; color: var(--border-strong); }
@@ -335,6 +365,7 @@ const SITE_CSS = `
   .board-name { font-weight: 600; color: var(--ink); text-decoration: none; }
   .board-name:hover { text-decoration: underline; }
   .board-category { font-size: 12px; color: var(--ink-faint); margin-left: 9px; }
+  .board-provenance { margin: 0 0 6px; font-size: 11px; line-height: 1.5; color: var(--ink-muted); }
   .board-score { font-family: var(--font-mono); font-size: 13px; font-variant-numeric: tabular-nums; color: var(--ink-muted); white-space: nowrap; }
   .board-bar-track { height: 8px; border-radius: 4px; background: var(--surface-sunken); overflow: hidden; }
   .board-bar-fill { height: 100%; background: var(--bar-color, var(--l0)); }

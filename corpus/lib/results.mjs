@@ -37,7 +37,11 @@ export function renderLeaderboardMarkdown(rows, manifest, skipped) {
     '|---|---|---|---|---|---|---|',
   ];
   rows.forEach(({ entry, report }, i) => {
-    const flags = [report.truncated ? 'truncated' : null, entry.isStressCase ? 'stress case' : null]
+    const flags = [
+      report.truncated ? 'truncated' : null,
+      entry.isStressCase ? 'stress case' : null,
+      entry.selection?.cohort === 'ai-popularity' ? `AI popularity #${entry.selection.popularityRank}` : null,
+    ]
       .filter(Boolean)
       .join(', ');
     lines.push(
@@ -51,7 +55,7 @@ export function renderLeaderboardMarkdown(rows, manifest, skipped) {
 
 export function renderLeaderboardCsv(rows) {
   const lines = [
-    'rank,name,category,repoUrl,commit,level,levelName,earned,max,percent,truncated,isStressCase,detectedHarnesses',
+    'rank,name,category,repoUrl,commit,level,levelName,earned,max,percent,truncated,isStressCase,detectedHarnesses,selectionCohort,selectionDate,githubStars,popularityRank',
   ];
   rows.forEach(({ entry, report }, i) => {
     lines.push(
@@ -69,6 +73,10 @@ export function renderLeaderboardCsv(rows) {
         report.truncated,
         entry.isStressCase,
         `"${report.detectedHarnesses.join(';')}"`,
+        entry.selection?.cohort ?? '',
+        entry.selection?.date ?? '',
+        entry.selection?.githubStars ?? '',
+        entry.selection?.popularityRank ?? '',
       ].join(','),
     );
   });

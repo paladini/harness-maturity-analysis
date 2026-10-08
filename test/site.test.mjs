@@ -98,4 +98,30 @@ describe('renderSite', () => {
     expect(html).toContain('+15 pp');
     expect(html).toContain('harness-score@1.5.0');
   });
+
+  it('identifies a same-version coverage expansion and labels popularity as source metadata', () => {
+    const entry = fakeEntry('new-ai', {
+      selection: { cohort: 'ai-popularity', date: '2026-10-08', githubStars: 92063, popularityRank: 30 },
+    });
+    const report = fakeReport({ percent: 70, level: 1 });
+    const runs = [
+      { date: '2026-10-07', toolVersion: 'harness-score@1.8.1', entries: [] },
+      {
+        date: '2026-10-08',
+        toolVersion: 'harness-score@1.8.1',
+        entries: [{ name: entry.name, status: 'scored', ...report }],
+      },
+    ];
+    const html = renderSite(
+      [{ entry, report }],
+      { toolVersion: 'harness-score@1.8.1', entries: [entry] },
+      runs,
+    );
+    expect(html).toContain('Corpus coverage over time');
+    expect(html).not.toContain('Same commits, new scoring model');
+    expect(html).toContain('not recorded');
+    expect(html).toContain('popularity #30');
+    expect(html).toContain('92,063 GitHub stars on 2026-10-08');
+    expect(html).toContain('70/100');
+  });
 });

@@ -1,7 +1,16 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.5.4/schema.json",
   "files": {
-    "includes": ["**", "!corpus/reports", "!results", "!docs", "!.cache", "!package-lock.json"]
+    "includes": [
+      "**",
+      "!corpus/reports",
+      "!corpus/checkout-audit-*.json",
+      "!corpus/popularity-search-*.json",
+      "!results",
+      "!docs",
+      "!.cache",
+      "!package-lock.json"
+    ]
   },
   "formatter": {
     "enabled": true,

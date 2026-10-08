@@ -1,0 +1,518 @@
+{
+  "date": "2026-10-08",
+  "note": "Derived by reading each pinned Git tree and checking the worktree index. Submodules are not initialized, LFS smudging is disabled, and Git long-path support preserves deep paths. No repository code was executed.",
+  "entries": [
+    {
+      "name": "openclaw",
+      "commit": "c42bd6eae5e856b5265c737e70086a71d014f08e",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 52515,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 6,
+      "codeEvidence": {
+        "path": "src/entry.ts",
+        "blobSha": "eef80e9045bcf73b3071d24a5e6e1d009e28d526",
+        "size": 15762,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "ecc",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 4212,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "src/llm/cli/selector.py",
+        "blobSha": "3430bb2d560d856b0dd60fa37c509765b80dde11",
+        "size": 5765,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "hermes-agent",
+      "commit": "38880bd2f1e90dbc9a1aeec03af62539ee64719a",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 17946,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "run_agent.py",
+        "blobSha": "4e615e54f8ca5b8b2f8e12b95875486aa8bbd4b5",
+        "size": 87031,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "deepseek-harness",
+      "commit": "5badb15009ae1756c3afe0ae0cef1faafc290ccc",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 14208,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 14,
+      "codeEvidence": {
+        "path": "apps/cli/src/bin.ts",
+        "blobSha": "1ae0c4a59182c3ebe7dd38fcc17292e185332cdc",
+        "size": 2800,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "firecrawl",
+      "commit": "8a0e91b00081c28929261a452d8914f2dc000a19",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 2065,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "apps/api/src/index.ts",
+        "blobSha": "31969064e93ed68c9474185fb055bc0b3eb216da",
+        "size": 9496,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "autogpt",
+      "commit": "ca259ccc21e1ff50357084d5f90cd8bfc6b544e8",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 8384,
+      "longPathCount": 4,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 5,
+      "codeEvidence": {
+        "path": "autogpt_platform/backend/backend/app.py",
+        "blobSha": "e545a23931b389c0d1e8ce2243c601a18b20254b",
+        "size": 2343,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "prompts-chat",
+      "commit": "7d3f248962d1dca209d59e033524bcb86c2b26b8",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 1574,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "src/app/page.tsx",
+        "blobSha": "6fe73cae1c8218646516d116bd825d56940b174c",
+        "size": 32413,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "transformers",
+      "commit": "ab138d34c7e4d4291657e2b9a2df9be5107e0af2",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 6632,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 4,
+      "codeEvidence": {
+        "path": "src/transformers/modeling_utils.py",
+        "blobSha": "1de78cec46c43b549e4dba23b14f040acc70a6a1",
+        "size": 270870,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "stable-diffusion-webui",
+      "commit": "82a973c04367123ae98bd9abdf80d9eda9b910e2",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 315,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "webui.py",
+        "blobSha": "2c417168aa6058bdf9ef8a67db009525a8405665",
+        "size": 5413,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "langflow",
+      "commit": "504c02fc47e76087b82b0e7cbe4186e9cdd916d4",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 10396,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "src/backend/base/langflow/main.py",
+        "blobSha": "bee71fbe05c32d38d1a10cf133d6290c87160843",
+        "size": 63481,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "open-webui",
+      "commit": "8bd8b4fac5e059578ac0c74b3c18d11139f88b7d",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 5065,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "backend/open_webui/main.py",
+        "blobSha": "e7c2915130e834fa970c75cdddf77c0d4035e5de",
+        "size": 122848,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "cc-switch",
+      "commit": "2db86e94da13365caae55bb08d09295e31500d21",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 1493,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "src-tauri/src/lib.rs",
+        "blobSha": "19d4ad4a44ea2827ccabacb6db6284d3542c166b",
+        "size": 112126,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "spec-kit",
+      "commit": "fa4b81dad128e7130f85e67bb4af52f8a96e0f45",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 898,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "src/specify_cli/__init__.py",
+        "blobSha": "de09603b4f0e2f03e499416abd7b307f45c3a8eb",
+        "size": 18478,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "comfyui",
+      "commit": "58b176f0c8427b1e3b1e0174ded3a7794641388b",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 1272,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "main.py",
+        "blobSha": "fb5b512a1e19a5eabcb2bcdabb959cd36ae272a4",
+        "size": 26672,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "llama-cpp",
+      "commit": "fc9ce6b9d52a8504edcb262abc92737c2289f96c",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 3703,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "tools/cli/cli.cpp",
+        "blobSha": "92c86614f8208e7e6dc526d707b0f8421148f729",
+        "size": 1791,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "money-printer-turbo",
+      "commit": "9887b459e754ee073c056d988499b91136af9662",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 334,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "main.py",
+        "blobSha": "af7de2cc7c23a37effdd5b4912e5edab984a42b4",
+        "size": 566,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "codex",
+      "commit": "9b738582b13c2cdbeff54af0afd04c50c3e7ba09",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 9067,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 1,
+      "codeEvidence": {
+        "path": "codex-rs/cli/src/main.rs",
+        "blobSha": "8d062a23979eb6df4725af30b93269210229c240",
+        "size": 178985,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "graphify",
+      "commit": "6478eb71237c86ee5fb6a35c702835e987ca445d",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 985,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "graphify/cli.py",
+        "blobSha": "d6d7e917b3adc42e5fa8ce2cbddcc548ebec5a6c",
+        "size": 248336,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "browser-use",
+      "commit": "c75e8476e26d18b7617643bc2ae082fae8eae431",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 538,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [
+        ".gitattributes"
+      ],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "browser_use/agent/service.py",
+        "blobSha": "783889764deec00f4622279a0e14db5bff08c028",
+        "size": 164119,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "pi-agent",
+      "commit": "ce950d78f424dcaf9f5d6a03ce80ab141130eb1d",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 1947,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "packages/coding-agent/src/main.ts",
+        "blobSha": "0710ed9e6c17a77e50f37349bd0f118b0f512894",
+        "size": 35403,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "caveman",
+      "commit": "2e08b9177c07bb7249a8a2d1a6758e5db281d002",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 1651,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "proxy/cmd/caveman-proxy/main.go",
+        "blobSha": "3cb064588b093d63c607f5b07a67bd6170ff900d",
+        "size": 43120,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "trading-agents",
+      "commit": "1394a3f72aa4393e1a98f51b382434c4b4c2d972",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 208,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "tradingagents/graph/trading_graph.py",
+        "blobSha": "a265ff88fa0145b0de4a11e5e0a013c378bdd50a",
+        "size": 23956,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "whisper",
+      "commit": "86098128c0b4f24f0e2aa2994de830614b474227",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 45,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "whisper/transcribe.py",
+        "blobSha": "56b29fbc888dd607c464ca90c427cf633b24f147",
+        "size": 30375,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "gemini-cli",
+      "commit": "44d764ee579610bf73c43107f5e0422cd92588b9",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 3027,
+      "longPathCount": 7,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 1,
+      "codeEvidence": {
+        "path": "packages/cli/src/gemini.tsx",
+        "blobSha": "a14a8b8dd99b501efceab5bcaa5794ed5176eb82",
+        "size": 35736,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "deepseek-v3",
+      "commit": "9b4e9788e4a3a731f7567338ed15d3ec549ce03b",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 20,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "inference/model.py",
+        "blobSha": "886849975d3b146bfb84f8ea5fdff265c210fcec",
+        "size": 32831,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "claude-mem",
+      "commit": "71ddd11735d6dc38a6356fe376921fc216f2aa38",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 2216,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 7,
+      "codeEvidence": {
+        "path": "src/services/worker-service.ts",
+        "blobSha": "90099b0d6fc6b00b762245b066fa1711798aea65",
+        "size": 93863,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "autoresearch",
+      "commit": "228791fb499afffb54b46200aca536f79142f117",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 10,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "train.py",
+        "blobSha": "2e743974c7f06b54311643b314712303fbb26e65",
+        "size": 26230,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "deep-live-cam",
+      "commit": "24c32239078bc4c6c0914f4cbe6ee2938682d92e",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 74,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "modules/processors/frame/face_swapper.py",
+        "blobSha": "e25a14e68b6d56b246fd40458de5f4b199c3bc0d",
+        "size": 73444,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "agent-reach",
+      "commit": "94f06c1969dfc1834001269d79d3ad0972d9dee6",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 121,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "agent_reach/cli.py",
+        "blobSha": "358b21823558731944619c33d769e6b5ee5f5920",
+        "size": 89749,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "odysseus",
+      "commit": "a8c147b238db01dbd00b57774ed8b453f1e43971",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 2478,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "app.py",
+        "blobSha": "5215966fb196ee470f9aa50d83f0ba5baa9015e4",
+        "size": 59810,
+        "status": "verified"
+      }
+    }
+  ]
+}
