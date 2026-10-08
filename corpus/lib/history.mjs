@@ -105,7 +105,7 @@ export function renderScoreHistoryMarkdown(runs, manifestEntries) {
   const lines = [
     '# Score history',
     '',
-    '_Each column rescans the same pinned repository commit. Changes therefore measure the scoring model, not repository evolution._',
+    '_Entries present in multiple runs keep the same pinned repository commit. Their deltas measure scoring-model changes. New entries have no earlier score._',
     '',
     `| Repository | ${headings.join(' | ')} | Latest change |`,
     `|---|${orderedRuns.map(() => '---').join('|')}|---|`,

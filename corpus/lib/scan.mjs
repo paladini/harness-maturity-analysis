@@ -72,6 +72,31 @@ export function sparseCheckoutPatterns(excludes = []) {
   return ['/*', ...patterns];
 }
 
+export function worktreeMatchesHead(dest) {
+  try {
+    sh('git', ['diff-index', '--quiet', 'HEAD', '--'], dest);
+    return true;
+  } catch {
+    // A committed CRLF blob with a `text eol=crlf` attribute can appear
+    // dirty because Git's clean filter produces LF. Accept only files whose
+    // unfiltered bytes still match the pinned tree; missing files fail here.
+    try {
+      const changed = sh('git', ['diff-index', '--name-only', '-z', 'HEAD', '--'], dest)
+        .split('\0')
+        .filter(Boolean);
+      for (const file of changed) {
+        if (!existsSync(path.join(dest, file))) return false;
+        const expected = sh('git', ['rev-parse', `HEAD:${file}`], dest).trim();
+        const actual = sh('git', ['hash-object', '--no-filters', '--', file], dest).trim();
+        if (actual !== expected) return false;
+      }
+      return changed.length > 0;
+    } catch {
+      return false;
+    }
+  }
+}
+
 function checkoutMatches(ref, dest, checkoutExcludes) {
   if (currentHead(dest) !== ref) return false;
 
@@ -84,12 +109,7 @@ function checkoutMatches(ref, dest, checkoutExcludes) {
     return false;
   }
 
-  try {
-    sh('git', ['diff-index', '--quiet', 'HEAD', '--'], dest);
-    return true;
-  } catch {
-    return false;
-  }
+  return worktreeMatchesHead(dest);
 }
 
 export function cloneAtRef(repoUrl, ref, dest, { checkoutExcludes = [] } = {}) {
@@ -99,6 +119,9 @@ export function cloneAtRef(repoUrl, ref, dest, { checkoutExcludes = [] } = {}) {
   }
   mkdirSync(dest, { recursive: true });
   sh('git', ['init', '-q'], dest);
+  // Git for Windows otherwise rejects deeply nested fixture paths even when
+  // NTFS can represent them. Keep the full tree rather than dropping signals.
+  sh('git', ['config', 'core.longpaths', 'true'], dest);
   sh('git', ['remote', 'add', 'origin', repoUrl], dest);
   if (checkoutExcludes.length > 0) {
     sh('git', ['config', 'core.sparseCheckout', 'true'], dest);
@@ -128,6 +151,11 @@ export function cloneAtRef(repoUrl, ref, dest, { checkoutExcludes = [] } = {}) {
   sh('git', ['checkout', '-q', checkoutTarget], dest, {
     env: { GIT_LFS_SKIP_SMUDGE: '1' },
   });
+  // Git can report path creation errors yet return success from checkout.
+  // A missing tracked file would silently change the scanner input.
+  if (!worktreeMatchesHead(dest)) {
+    throw new Error(`checkout is incomplete or modified: ${dest}`);
+  }
   return { reused: false, headSha: currentHead(dest) };
 }
 

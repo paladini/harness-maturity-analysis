@@ -6,7 +6,7 @@ An AI coding agent's reliability depends on the **harness** wrapped around
 it — context files, rules, skills, hooks, sensors, and guardrails — not on
 which lab built the underlying model, and not on how prominent the company
 behind a repository is. This study asks two separate questions about a
-curated set of notable open-source repositories:
+curated set of notable public repositories:
 
 - **Q1 — External validity.** Does [harness-score](https://github.com/paladini/harness-score)'s
   automated maturity level (L0–L4) agree with a blind human read of the same
@@ -30,10 +30,12 @@ harnesses*, never the teams or companies that own them.
 
 ## What harness-score measures — and what it doesn't
 
-harness-score is a deterministic, filesystem-only scanner: 36 checks across
-6 dimensions (Context & Guides, Skills & Commands, Hooks & Guardrails,
-Sensors & Feedback, CI Feedback, Hygiene & Safety), 108 points, gating into
-5 maturity levels. Every check is a filesystem fact — a file exists, parses,
+harness-score is a deterministic, filesystem-only scanner across six
+dimensions (Context & Guides, Skills & Commands, Hooks & Guardrails,
+Sensors & Feedback, CI Feedback, Hygiene & Safety), gating into five
+maturity levels. The applicable maximum can vary by repository and scanner
+version, so compare scores only within a versioned report. Every check is a
+filesystem fact — a file exists, parses,
 matches a pattern — never a judgment call, never a network request. Full
 definition: [the Maturity Model](https://paladini.github.io/harness-score/guide/maturity-model).
 
@@ -45,9 +47,9 @@ it matters in practice.
 
 ## Corpus selection
 
-21 repositories, chosen — not randomly sampled — across six groups, plus
-deliberate stress cases picked because the tool is expected to score them
-*badly*, since that's what makes the critique useful:
+The original 21 repositories were chosen — not randomly sampled — across six
+groups, plus deliberate stress cases picked because the tool was expected to
+score them surprisingly, making critique useful:
 
 1. **AI labs / model companies**
 2. **AI-first / agent-native developer tools**
@@ -56,6 +58,16 @@ deliberate stress cases picked because the tool is expected to score them
 5. **Artifact governance** (skills, hooks, MCP registries/collections)
 6. **Controls** — harness-score itself (ceiling), a well-run non-AI library
    (engineering quality without AI artifacts), a minimal repository (floor)
+
+Phase 1B adds 50 public repositories across eight strata: AI and automation,
+developer tools, cloud/IaC/platforms, data/ML/science, observability and
+networking, security, community applications, and language/runtime/framework
+controls. The [selection ledger](corpus/selection-2026-10-07.json) records the
+five preregistered waves, default branches, immutable SHAs, GitHub license
+metadata and approximate sizes. Some GitHub license identifiers are
+`NOASSERTION`; inclusion here makes no legal claim about their licenses.
+The 71-repository collection is a showcase and topology stress sample, not a
+statistical sample or a completed external-validity study.
 
 Stress cases folded into the corpus on purpose:
 
@@ -83,7 +95,7 @@ holds itself to (same input ⇒ same output, forever).
 
 1. **Pin everything.** Each corpus entry records `repoUrl` and an exact
    `commit` SHA. The scanner version is pinned once, in `manifest.json`'s
-   `toolVersion` (currently `harness-score@1.5.0`), and stamped into every
+   `toolVersion` (currently `harness-score@1.8.1`), and stamped into every
    report via the tool's own `tool.version` field. `runDate` identifies the
    current version-over-version snapshot.
 2. **Clone at the pinned commit**, never at a moving branch tip —
@@ -123,13 +135,17 @@ recorded **before** looking at the tool's output:
    which specific check(s) produced a false positive or false negative,
    with file-level evidence.
 
-`analysis/external-validity.md` synthesizes agreement and disagreement
-across the corpus once every entry has both a human rating and a tool
-score.
+Phase 1B adds scanner reports for showcase coverage without collecting blind
+human ratings. Its reports are not Q1 agreement evidence. Independent raters
+can apply this protocol to a future, report-free sample; results must not be
+called blind if a rater has already seen the scanner output.
+
+`analysis/external-validity.md` can synthesize agreement and disagreement
+only once a valid blind-rating cohort exists.
 
 ## Limitations
 
-- **N≈20 is qualitative, not statistical.** This corpus is curated for
+- **N=71 is qualitative, not statistical.** This corpus is curated for
   depth and stress-testing, not sampled for statistical power. It can
   surface real gaps and support strong qualitative findings; it cannot
   responsibly justify moving a numeric threshold (e.g. "sensors ≥ 60%") by
@@ -141,10 +157,9 @@ score.
   differently. The score history in this study holds repository commits
   fixed across scanner versions, so its deltas measure the model rather
   than repository evolution.
-- **One human rater.** The blind rating in this first pass comes from a
-  single reviewer. It removes the circularity of validating the tool
-  against itself, but it is not inter-rater reliability — a documented
-  limitation, not a hidden one.
+- **No independent human validation yet.** The current corpus supplies
+  scanner reports. It has no blind-rating cohort or inter-rater agreement
+  measurements, so Q1 remains open.
 - **Deterministic-scanner ceiling.** Every limitation harness-score
   declares about itself applies here too; this study cannot exceed what a
   filesystem scan can honestly claim.

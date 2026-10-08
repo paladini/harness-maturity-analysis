@@ -1,17 +1,18 @@
 # harness-maturity-analysis
 
 <a href="https://paladini.io/harness-score/guide/maturity-model#l4-%C2%B7-self-correcting" title="Harness Score — AI coding harness maturity"><img alt="Harness Score L4 (Self-correcting): measures AI-assisted development harness maturity with harness-score" src="https://paladini.github.io/harness-score/maturity/badge-l4.svg" height="20"></a>
-**A reproducible study of AI-harness maturity across notable open-source
+**A reproducible study of AI-harness maturity across notable public
 repositories** — scored deterministically with
 [harness-score](https://github.com/paladini/harness-score), checked against
 a blind human read of the same repos, and used to find what harness-score's
 maturity model still gets wrong.
 
-> **Status: Phase 1 complete.** All 21 pinned repositories were rescanned
-> with `harness-score@1.5.0` on July 25, 2026. The model-calibration
-> findings below (Q2) are done; the external-validity half of the study (Q1
-> — do the automated levels agree with a blind human read?) is Phase 2 and
-> needs a human rater — see [Roadmap](#roadmap).
+> **Status: Phase 1B showcase expansion.** The corpus now includes 71 pinned
+> repositories: the original 21 and 50 stratified additions from
+> [issue #2](https://github.com/paladini/harness-maturity-analysis/issues/2).
+> The current scanner pin is `harness-score@1.8.1`. The Q2 findings below
+> describe the original 21-repository analysis; Q1 still needs independent
+> blind human ratings.
 
 ## Why this exists
 
@@ -33,30 +34,26 @@ full framing, the two research questions this study asks, and the
 blind-rating protocol used to check the scanner against human judgment
 without circularity.
 
-## Corpus results (21 repositories)
+## Corpus results
 
-Every repository below is pinned to an exact commit in
-[`corpus/manifest.json`](corpus/manifest.json) and scanned with
-`harness-score@1.5.0`. A representative spread — full table (all 21, every
-dimension) in [`results/leaderboard.md`](results/leaderboard.md),
-[`results/dimension-heatmap.md`](results/dimension-heatmap.md), and the
-version-over-version comparison in
-[`results/score-history.md`](results/score-history.md):
+Every repository is pinned to an exact commit in
+[`corpus/manifest.json`](corpus/manifest.json). The
+[Phase 1B selection ledger](corpus/selection-2026-10-07.json) records the
+new repositories' default branches, SHAs, categories, provenance, size and
+research waves. The generated
+[`results/leaderboard.md`](results/leaderboard.md) contains the current
+scores for all 71 repositories; see also the
+[`results/dimension-heatmap.md`](results/dimension-heatmap.md),
+[`results/leaderboard.csv`](results/leaderboard.csv), and
+[`results/score-history.md`](results/score-history.md).
 
-| Repository | Category | Level | Score |
-|---|---|---|---|
-| [harness-score](https://github.com/paladini/harness-score) | control · ceiling | **L4** | 108/108 (100%) |
-| [anthropic-cookbook](https://github.com/anthropics/claude-cookbooks) | AI lab | **L3** | 99/108 (92%) |
-| [promptfoo](https://github.com/promptfoo/promptfoo) | prompt/eval engineering | **L4** | 97/108 (90%) |
-| [fakeflix](https://github.com/tech-leads-club/fakeflix) | harness-engineering exemplar | **L1** | 72/108 (67%) |
-| [openai-cookbook](https://github.com/openai/openai-cookbook) | AI lab | **L1** | 58/108 (54%) |
-| [execa](https://github.com/sindresorhus/execa) | control · quality w/o AI artifacts | **L0** | 36/108 (33%) |
-| [anthropic-skills](https://github.com/anthropics/skills) | harness-engineering exemplar | **L0** | 17/108 (16%) |
-| [octocat/Hello-World](https://github.com/octocat/Hello-World) | control · floor | **L0** | 14/108 (13%) |
+The collection is a repository-local harness showcase. It does not rank the
+organizations behind the projects, and this expansion has no blind human
+ratings. Historical 1.5.0 scores remain in the append-only history.
 
 ## What the corpus found
 
-Full writeup, every claim cited to a check ID and a report file:
+The original 21-repository Q2 writeup, with check IDs and file evidence, is
 **[analysis/findings.md](analysis/findings.md)**. Two findings worth
 reading even if you read nothing else:
 
@@ -74,10 +71,10 @@ corpus, not a one-off. Whether that should cap a repository a full level
 below everything else it earned is a question for Phase 2's blind rating,
 not resolved here. Full evidence: [`corpus/reports/fakeflix.json`](corpus/reports/fakeflix.json).
 
-### Anthropic's own skills showcase scores identically to an empty repo
+### Anthropic's skills showcase receives the same L0 level as a minimal repo
 
 `anthropic/skills` — Anthropic's official showcase of Claude Skills —
-scores **L0 · 16%**, indistinguishable in kind from `octocat/Hello-World`.
+scores **L0 · 16%**, sharing a maturity level with `octocat/Hello-World`.
 Its skills live at `skills/<name>/SKILL.md` (repository root) rather than
 `.claude/skills/`, because this repo *distributes* skills rather than
 using them to develop itself — and `SKL-01` correctly answers the question
@@ -112,9 +109,9 @@ not yet filed as issues there.
    `results/score-history.md`.
 4. A human blind rating (recorded *before* seeing the tool's score —
    protocol in
-   [METHODOLOGY.md](METHODOLOGY.md#blind-human-rating-q1-protocol)) checks
-   whether the automated level agrees with expert judgment. **Not done
-   yet** — this is the part of the study that needs a human, not an agent.
+   [METHODOLOGY.md](METHODOLOGY.md#blind-human-rating-q1-protocol)) can check
+   whether the automated level agrees with expert judgment. **Not part of
+   this showcase expansion** — it needs independent human raters.
 5. Disagreements and model gaps get written up in
    [`analysis/findings.md`](analysis/findings.md) and turned into concrete
    check-change proposals in [`proposals/`](proposals).
@@ -164,7 +161,8 @@ METHODOLOGY.md  research questions, corpus design, protocol, limitations
 ## This repo dogfoods itself
 
 A repository studying harness maturity ought to have one. `harness-maturity-analysis`
-scans itself at **L4 · Self-correcting — 96/108 (89%)**: a scoped `.cursor/rules/`
+scanned itself at **L4 · Self-correcting — 96/108 (89%)** in the original
+baseline: a scoped `.cursor/rules/`
 rule governing the data-integrity discipline above, a skill for the one
 procedure Phase 1 repeated 17 times, real gate hooks (deny destructive
 shell commands, deny reading credential-shaped files) and a feedback hook
@@ -193,6 +191,9 @@ npm run lint        # biome
 - [x] **Phase 1.** Corpus frozen and rescanned: 21/21 pinned repositories
       with `harness-score@1.5.0`, including a deterministic sparse checkout
       for the Windows-incompatible data paths in `openai-cookbook`.
+- [x] **Phase 1B.** Added 50 preregistered repositories across eight strata,
+      pinned their commits, and rescanned all 71 with `harness-score@1.8.1`
+      for the showcase. This expansion does not supply Q1 ratings.
 - [ ] **Phase 2.** Blind human ratings + per-repo critique — needs a rater
       without implementation knowledge of the scanner. Not started.
 - [x] **Phase 3 (Q2 only).** Model-calibration synthesis —
