@@ -20,6 +20,13 @@ const CATEGORY_LABELS = {
   security: 'security',
   'community-applications': 'community applications',
   'language-framework-controls': 'language, runtime, framework controls',
+  'ai-agent-frameworks': 'AI agent frameworks',
+  'ai-coding-tools': 'AI coding tools',
+  'ai-memory-retrieval': 'AI memory and retrieval',
+  'ai-interfaces': 'AI interfaces',
+  'ai-model-inference': 'AI models and inference',
+  'ai-vision-media': 'AI vision and media',
+  'ai-applications': 'AI applications',
 };
 
 function esc(s) {
@@ -45,6 +52,11 @@ function renderLeaderboardRow(row, rank) {
   const { entry, report } = row;
   const stressTag = entry.isStressCase ? '<span class="stress-tag">stress case</span>' : '';
   const truncatedTag = report.truncated ? '<span class="stress-tag">truncated scan</span>' : '';
+  const selection = entry.selection;
+  const provenance =
+    selection?.cohort === 'ai-popularity'
+      ? `<p class="board-provenance">AI software cohort: popularity #${esc(selection.popularityRank)} · ${esc(Number(selection.githubStars).toLocaleString('en-US'))} GitHub stars on ${esc(selection.date)}</p>`
+      : '';
   return `
       <div class="board-row">
         <div class="board-rank">${rank}</div>
@@ -53,7 +65,7 @@ function renderLeaderboardRow(row, rank) {
             <span><a class="board-name" href="${esc(entry.repoUrl.replace(/\.git$/, ''))}" target="_blank" rel="noopener">${esc(repoLabel(entry.repoUrl))}</a>
               <span class="board-category">${esc(categoryLabel(entry.category))}</span>${stressTag}${truncatedTag}</span>
             <span class="board-score">${report.score.earned}/${report.score.max} · ${report.score.percent}%</span>
-          </div>
+          </div>${provenance ? `\n          ${provenance}` : ''}
           <div class="board-bar-track"><div class="board-bar-fill" style="width:${report.score.percent}%; --bar-color:var(--l${report.level.index})"></div></div>
         </div>
         <div class="board-level">${levelChip(report.level.index, report.level.name)}</div>
@@ -91,6 +103,7 @@ function renderHistoryComparison(manifest, historyRuns) {
   if (historyRuns.length < 2) return '';
   const previous = historyRuns.at(-2);
   const current = historyRuns.at(-1);
+  const sameTool = previous.toolVersion === current.toolVersion;
   const body = manifest.entries
     .map((manifestEntry) => {
       const before = previous.entries.find((entry) => entry.name === manifestEntry.name);
@@ -111,11 +124,13 @@ function renderHistoryComparison(manifest, historyRuns) {
 
   return `
   <section class="history-section">
-    <h2>Same commits, new scoring model</h2>
+    <h2>${sameTool ? 'Corpus coverage over time' : 'Same commits, new scoring model'}</h2>
     <p class="section-note">
-      Repositories present in both runs keep the same pinned commit, so their deltas measure
-      the change from <code>${esc(previous.toolVersion)}</code> to
-      <code>${esc(current.toolVersion)}</code>. New entries have no earlier score.
+      ${
+        sameTool
+          ? `Both runs use <code>${esc(current.toolVersion)}</code>. Existing entries retain their pinned commits; new entries have no earlier score.`
+          : `Repositories present in both runs keep the same pinned commit, so their deltas measure the change from <code>${esc(previous.toolVersion)}</code> to <code>${esc(current.toolVersion)}</code>. New entries have no earlier score.`
+      }
       The complete, append-only record is in
       <a href="https://github.com/paladini/harness-maturity-analysis/blob/main/results/score-history.md">score-history.md</a>.
     </p>
@@ -150,6 +165,9 @@ export function renderSite(rows, manifest, historyRuns = []) {
     .sort((a, b) => aiShare(a.report) - aiShare(b.report))[0];
   const { head: heatmapHead, body: heatmapBody } = renderHeatmap(rows);
   const historyComparison = renderHistoryComparison(manifest, historyRuns);
+  const popularityCount = manifest.entries.filter(
+    (entry) => entry.selection?.cohort === 'ai-popularity',
+  ).length;
 
   return `<!doctype html>
 <html lang="en">
@@ -167,7 +185,7 @@ ${SITE_CSS}
 <div class="page">
 
   <header class="masthead">
-    <p class="eyebrow">harness-maturity-analysis · phase 1B showcase</p>
+    <p class="eyebrow">harness-maturity-analysis · phase 1C showcase</p>
     <h1>Does the score<br>hold up?</h1>
     <p class="lede">
       ${scannedCount} of ${totalCount} pinned repositories, one deterministic scanner,
@@ -175,6 +193,7 @@ ${SITE_CSS}
       does it hold up? <strong>A high reading measures a repository's harness —
       never the competence of the company that owns it.</strong>
       This collection supplies scanner evidence; independent blind human ratings are still pending.
+      ${popularityCount ? `<span class="cohort-note">Includes ${popularityCount} new AI software projects selected by GitHub stars. <a href="https://github.com/paladini/harness-maturity-analysis/issues/3">Selection and software eligibility</a>.</span>` : ''}
     </p>
     <div class="meta-strip">
       <span>${esc(manifest.toolVersion)}</span>
@@ -329,6 +348,7 @@ const SITE_CSS = `
   .masthead h1 { font-size: clamp(36px, 5.5vw, 50px); line-height: 1.1; letter-spacing: -0.015em; }
   .masthead .lede { margin-top: 20px; max-width: 62ch; font-size: 18px; line-height: 1.6; color: var(--ink-muted); }
   .masthead .lede strong { color: var(--ink); font-weight: 600; }
+  .cohort-note { display: block; margin-top: 10px; }
   .meta-strip { margin-top: 26px; display: flex; flex-wrap: wrap; align-items: center; row-gap: 8px; font-family: var(--font-mono); font-size: 12.5px; color: var(--ink-faint); }
   .meta-strip > * { display: inline-flex; align-items: center; }
   .meta-strip > *:not(:first-child)::before { content: "·"; margin: 0 12px; color: var(--border-strong); }
@@ -345,6 +365,7 @@ const SITE_CSS = `
   .board-name { font-weight: 600; color: var(--ink); text-decoration: none; }
   .board-name:hover { text-decoration: underline; }
   .board-category { font-size: 12px; color: var(--ink-faint); margin-left: 9px; }
+  .board-provenance { margin: 0 0 6px; font-size: 11px; line-height: 1.5; color: var(--ink-muted); }
   .board-score { font-family: var(--font-mono); font-size: 13px; font-variant-numeric: tabular-nums; color: var(--ink-muted); white-space: nowrap; }
   .board-bar-track { height: 8px; border-radius: 4px; background: var(--surface-sunken); overflow: hidden; }
   .board-bar-fill { height: 100%; background: var(--bar-color, var(--l0)); }

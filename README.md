@@ -7,9 +7,11 @@ repositories** — scored deterministically with
 a blind human read of the same repos, and used to find what harness-score's
 maturity model still gets wrong.
 
-> **Status: Phase 1B showcase expansion.** The corpus now includes 71 pinned
-> repositories: the original 21 and 50 stratified additions from
-> [issue #2](https://github.com/paladini/harness-maturity-analysis/issues/2).
+> **Status: Phase 1C showcase expansion.** The corpus now includes 101 pinned
+> repositories: the original 21, 50 stratified additions from
+> [issue #2](https://github.com/paladini/harness-maturity-analysis/issues/2),
+> and 30 new AI software projects selected by GitHub popularity in
+> [issue #3](https://github.com/paladini/harness-maturity-analysis/issues/3).
 > The current scanner pin is `harness-score@1.8.1`. The Q2 findings below
 > describe the original 21-repository analysis; Q1 still needs independent
 > blind human ratings.
@@ -39,10 +41,12 @@ without circularity.
 Every repository is pinned to an exact commit in
 [`corpus/manifest.json`](corpus/manifest.json). The
 [Phase 1B selection ledger](corpus/selection-2026-10-07.json) records the
-new repositories' default branches, SHAs, categories, provenance, size and
-research waves. The generated
+50 repositories' default branches, SHAs, categories, provenance, size and
+research waves. The [Phase 1C selection](corpus/selection-2026-10-08-ai-popularity.json)
+records the 30 software candidates, observed stars, executable-source evidence,
+canonical GitHub IDs and higher-ranked exclusions. The generated
 [`results/leaderboard.md`](results/leaderboard.md) contains the current
-scores for all 71 repositories; see also the
+scores for all 101 repositories; see also the
 [`results/dimension-heatmap.md`](results/dimension-heatmap.md),
 [`results/leaderboard.csv`](results/leaderboard.csv), and
 [`results/score-history.md`](results/score-history.md).
@@ -50,6 +54,27 @@ scores for all 71 repositories; see also the
 The collection is a repository-local harness showcase. It does not rank the
 organizations behind the projects, and this expansion has no blind human
 ratings. Historical 1.5.0 scores remain in the append-only history.
+
+The AI software cohort is selected by descending GitHub stars within the
+[recorded search universe](corpus/popularity-search-2026-10-08.json), after
+excluding the existing corpus, instructional-only projects and general
+software whose AI support is incidental. It is not a universal ranking of
+every repository on GitHub. Stars are frozen at the selection date and are
+displayed separately from harness maturity. The CSV appends
+`selectionCohort`, `selectionDate`, `githubStars` and `popularityRank` to its
+existing columns; older entries without that selection metadata have blank
+cells in those columns.
+
+To collect a future discovery snapshot with the authenticated GitHub CLI:
+
+```bash
+npm run corpus:discover-ai -- --date YYYY-MM-DD --out .cache/new-ai-search.json
+```
+
+This discovers candidates only. Review actual software source, resolve exact
+SHAs and admit entries through the corpus workflow. Existing discovery
+snapshots are never overwritten. See
+[Phase 1C execution](analysis/phase-1c-execution.md) for the completed protocol.
 
 ## What the corpus found
 
@@ -194,6 +219,9 @@ npm run lint        # biome
 - [x] **Phase 1B.** Added 50 preregistered repositories across eight strata,
       pinned their commits, and rescanned all 71 with `harness-score@1.8.1`
       for the showcase. This expansion does not supply Q1 ratings.
+- [x] **Phase 1C.** Added 30 previously unmeasured AI software repositories
+      by recorded GitHub popularity, verified implementation-file evidence,
+      and integrated the 101-entry corpus and showcase with 1.8.1.
 - [ ] **Phase 2.** Blind human ratings + per-repo critique — needs a rater
       without implementation knowledge of the scanner. Not started.
 - [x] **Phase 3 (Q2 only).** Model-calibration synthesis —

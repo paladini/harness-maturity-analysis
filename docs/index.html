@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3EH%3C/text%3E%3C/svg%3E">
-<title>Harness Maturity Analysis — 71 repositories scored</title>
-<meta name="description" content="A reproducible showcase of AI-harness maturity across 71 public repositories, scored with harness-score.">
+<title>Harness Maturity Analysis — 101 repositories scored</title>
+<meta name="description" content="A reproducible showcase of AI-harness maturity across 101 public repositories, scored with harness-score.">
 <style>
 
   :root {
@@ -47,6 +47,7 @@
   .masthead h1 { font-size: clamp(36px, 5.5vw, 50px); line-height: 1.1; letter-spacing: -0.015em; }
   .masthead .lede { margin-top: 20px; max-width: 62ch; font-size: 18px; line-height: 1.6; color: var(--ink-muted); }
   .masthead .lede strong { color: var(--ink); font-weight: 600; }
+  .cohort-note { display: block; margin-top: 10px; }
   .meta-strip { margin-top: 26px; display: flex; flex-wrap: wrap; align-items: center; row-gap: 8px; font-family: var(--font-mono); font-size: 12.5px; color: var(--ink-faint); }
   .meta-strip > * { display: inline-flex; align-items: center; }
   .meta-strip > *:not(:first-child)::before { content: "·"; margin: 0 12px; color: var(--border-strong); }
@@ -63,6 +64,7 @@
   .board-name { font-weight: 600; color: var(--ink); text-decoration: none; }
   .board-name:hover { text-decoration: underline; }
   .board-category { font-size: 12px; color: var(--ink-faint); margin-left: 9px; }
+  .board-provenance { margin: 0 0 6px; font-size: 11px; line-height: 1.5; color: var(--ink-muted); }
   .board-score { font-family: var(--font-mono); font-size: 13px; font-variant-numeric: tabular-nums; color: var(--ink-muted); white-space: nowrap; }
   .board-bar-track { height: 8px; border-radius: 4px; background: var(--surface-sunken); overflow: hidden; }
   .board-bar-fill { height: 100%; background: var(--bar-color, var(--l0)); }
@@ -112,18 +114,19 @@
 <div class="page">
 
   <header class="masthead">
-    <p class="eyebrow">harness-maturity-analysis · phase 1B showcase</p>
+    <p class="eyebrow">harness-maturity-analysis · phase 1C showcase</p>
     <h1>Does the score<br>hold up?</h1>
     <p class="lede">
-      71 of 71 pinned repositories, one deterministic scanner,
+      101 of 101 pinned repositories, one deterministic scanner,
       one question: when <code>harness-score</code> calls a repository L4 or L0,
       does it hold up? <strong>A high reading measures a repository's harness —
       never the competence of the company that owns it.</strong>
       This collection supplies scanner evidence; independent blind human ratings are still pending.
+      <span class="cohort-note">Includes 30 new AI software projects selected by GitHub stars. <a href="https://github.com/paladini/harness-maturity-analysis/issues/3">Selection and software eligibility</a>.</span>
     </p>
     <div class="meta-strip">
       <span>harness-score@1.8.1</span>
-      <span>71/71 repositories scanned</span>
+      <span>101/101 repositories scanned</span>
       <span>zero LLM calls, zero network at scan time</span>
       <a href="https://github.com/paladini/harness-maturity-analysis">source on GitHub →</a>
     </div>
@@ -156,6 +159,20 @@
         <div class="board-rank">2</div>
         <div class="board-main">
           <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener">affaan-m/ECC</a>
+              <span class="board-category">AI coding tools</span></span>
+            <span class="board-score">105/108 · 97%</span>
+          </div>
+          <p class="board-provenance">AI software cohort: popularity #2 · 275,335 GitHub stars on 2026-10-08</p>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:97%; --bar-color:var(--l4)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l4)"><span class="dot"></span>L4 Self-correcting</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">3</div>
+        <div class="board-main">
+          <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/anthropics/claude-cookbooks" target="_blank" rel="noopener">anthropics/claude-cookbooks</a>
               <span class="board-category">AI lab</span></span>
             <span class="board-score">99/105 · 94%</span>
@@ -166,7 +183,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">3</div>
+        <div class="board-rank">4</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/promptfoo/promptfoo" target="_blank" rel="noopener">promptfoo/promptfoo</a>
@@ -179,7 +196,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">4</div>
+        <div class="board-rank">5</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/n8n-io/n8n" target="_blank" rel="noopener">n8n-io/n8n</a>
@@ -192,7 +209,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">5</div>
+        <div class="board-rank">6</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/langgenius/dify" target="_blank" rel="noopener">langgenius/dify</a>
@@ -205,7 +222,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">6</div>
+        <div class="board-rank">7</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/dagster-io/dagster" target="_blank" rel="noopener">dagster-io/dagster</a>
@@ -218,7 +235,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">7</div>
+        <div class="board-rank">8</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/vercel/next.js" target="_blank" rel="noopener">vercel/next.js</a>
@@ -231,7 +248,21 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">8</div>
+        <div class="board-rank">9</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/openclaw/openclaw" target="_blank" rel="noopener">openclaw/openclaw</a>
+              <span class="board-category">AI agent frameworks</span><span class="stress-tag">stress case</span></span>
+            <span class="board-score">83/105 · 79%</span>
+          </div>
+          <p class="board-provenance">AI software cohort: popularity #1 · 391,646 GitHub stars on 2026-10-08</p>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:79%; --bar-color:var(--l3)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l3)"><span class="dot"></span>L3 Sensing</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">10</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/cline/cline" target="_blank" rel="noopener">cline/cline</a>
@@ -244,7 +275,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">9</div>
+        <div class="board-rank">11</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/apache/airflow" target="_blank" rel="noopener">apache/airflow</a>
@@ -257,7 +288,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">10</div>
+        <div class="board-rank">12</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/facebook/react" target="_blank" rel="noopener">facebook/react</a>
@@ -270,7 +301,21 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">11</div>
+        <div class="board-rank">13</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/Significant-Gravitas/AutoGPT" target="_blank" rel="noopener">Significant-Gravitas/AutoGPT</a>
+              <span class="board-category">AI agent frameworks</span></span>
+            <span class="board-score">81/105 · 77%</span>
+          </div>
+          <p class="board-provenance">AI software cohort: popularity #6 · 187,701 GitHub stars on 2026-10-08</p>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:77%; --bar-color:var(--l3)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l3)"><span class="dot"></span>L3 Sensing</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">14</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/block/goose" target="_blank" rel="noopener">block/goose</a>
@@ -283,7 +328,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">12</div>
+        <div class="board-rank">15</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/pydantic/pydantic-ai" target="_blank" rel="noopener">pydantic/pydantic-ai</a>
@@ -296,7 +341,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">13</div>
+        <div class="board-rank">16</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/vllm-project/vllm" target="_blank" rel="noopener">vllm-project/vllm</a>
@@ -309,7 +354,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">14</div>
+        <div class="board-rank">17</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/pulumi/pulumi" target="_blank" rel="noopener">pulumi/pulumi</a>
@@ -322,7 +367,21 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">15</div>
+        <div class="board-rank">18</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/JuliusBrussee/caveman" target="_blank" rel="noopener">JuliusBrussee/caveman</a>
+              <span class="board-category">AI coding tools</span></span>
+            <span class="board-score">80/105 · 76%</span>
+          </div>
+          <p class="board-provenance">AI software cohort: popularity #21 · 110,529 GitHub stars on 2026-10-08</p>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:76%; --bar-color:var(--l3)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l3)"><span class="dot"></span>L3 Sensing</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">19</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/continuedev/continue" target="_blank" rel="noopener">continuedev/continue</a>
@@ -335,7 +394,21 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">16</div>
+        <div class="board-rank">20</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/langflow-ai/langflow" target="_blank" rel="noopener">langflow-ai/langflow</a>
+              <span class="board-category">AI agent frameworks</span><span class="stress-tag">stress case</span></span>
+            <span class="board-score">78/105 · 74%</span>
+          </div>
+          <p class="board-provenance">AI software cohort: popularity #10 · 155,593 GitHub stars on 2026-10-08</p>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:74%; --bar-color:var(--l1)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l1)"><span class="dot"></span>L1 Documented</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">21</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/pytorch/pytorch" target="_blank" rel="noopener">pytorch/pytorch</a>
@@ -348,7 +421,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">17</div>
+        <div class="board-rank">22</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/home-assistant/core" target="_blank" rel="noopener">home-assistant/core</a>
@@ -361,7 +434,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">18</div>
+        <div class="board-rank">23</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/zed-industries/zed" target="_blank" rel="noopener">zed-industries/zed</a>
@@ -374,7 +447,21 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">19</div>
+        <div class="board-rank">24</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/deepseek-ai/deepseek-harness" target="_blank" rel="noopener">deepseek-ai/deepseek-harness</a>
+              <span class="board-category">AI agent frameworks</span></span>
+            <span class="board-score">75/105 · 71%</span>
+          </div>
+          <p class="board-provenance">AI software cohort: popularity #4 · 245,783 GitHub stars on 2026-10-08</p>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:71%; --bar-color:var(--l1)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l1)"><span class="dot"></span>L1 Documented</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">25</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/grafana/grafana" target="_blank" rel="noopener">grafana/grafana</a>
@@ -387,7 +474,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">20</div>
+        <div class="board-rank">26</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/tech-leads-club/fakeflix" target="_blank" rel="noopener">tech-leads-club/fakeflix</a>
@@ -400,7 +487,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">21</div>
+        <div class="board-rank">27</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/sst/opencode" target="_blank" rel="noopener">sst/opencode</a>
@@ -413,7 +500,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">22</div>
+        <div class="board-rank">28</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/langfuse/langfuse" target="_blank" rel="noopener">langfuse/langfuse</a>
@@ -426,7 +513,21 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">23</div>
+        <div class="board-rank">29</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/google-gemini/gemini-cli" target="_blank" rel="noopener">google-gemini/gemini-cli</a>
+              <span class="board-category">AI coding tools</span></span>
+            <span class="board-score">74/105 · 70%</span>
+          </div>
+          <p class="board-provenance">AI software cohort: popularity #24 · 107,253 GitHub stars on 2026-10-08</p>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:70%; --bar-color:var(--l1)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l1)"><span class="dot"></span>L1 Documented</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">30</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/All-Hands-AI/OpenHands" target="_blank" rel="noopener">All-Hands-AI/OpenHands</a>
@@ -439,7 +540,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">24</div>
+        <div class="board-rank">31</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/microsoft/playwright" target="_blank" rel="noopener">microsoft/playwright</a>
@@ -452,7 +553,21 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">25</div>
+        <div class="board-rank">32</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/NousResearch/hermes-agent" target="_blank" rel="noopener">NousResearch/hermes-agent</a>
+              <span class="board-category">AI agent frameworks</span><span class="stress-tag">stress case</span></span>
+            <span class="board-score">71/105 · 68%</span>
+          </div>
+          <p class="board-provenance">AI software cohort: popularity #3 · 252,155 GitHub stars on 2026-10-08</p>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:68%; --bar-color:var(--l1)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l1)"><span class="dot"></span>L1 Documented</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">33</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/dbt-labs/dbt" target="_blank" rel="noopener">dbt-labs/dbt</a>
@@ -465,7 +580,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">26</div>
+        <div class="board-rank">34</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/denoland/deno" target="_blank" rel="noopener">denoland/deno</a>
@@ -478,7 +593,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">27</div>
+        <div class="board-rank">35</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/rust-lang/rust" target="_blank" rel="noopener">rust-lang/rust</a>
@@ -491,7 +606,21 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">28</div>
+        <div class="board-rank">36</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/thedotmack/claude-mem" target="_blank" rel="noopener">thedotmack/claude-mem</a>
+              <span class="board-category">AI memory and retrieval</span></span>
+            <span class="board-score">71/108 · 66%</span>
+          </div>
+          <p class="board-provenance">AI software cohort: popularity #26 · 98,185 GitHub stars on 2026-10-08</p>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:66%; --bar-color:var(--l1)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l1)"><span class="dot"></span>L1 Documented</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">37</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/mattermost/mattermost" target="_blank" rel="noopener">mattermost/mattermost</a>
@@ -504,7 +633,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">29</div>
+        <div class="board-rank">38</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/microsoft/vscode" target="_blank" rel="noopener">microsoft/vscode</a>
@@ -517,7 +646,21 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">30</div>
+        <div class="board-rank">39</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/huggingface/transformers" target="_blank" rel="noopener">huggingface/transformers</a>
+              <span class="board-category">AI models and inference</span></span>
+            <span class="board-score">65/105 · 62%</span>
+          </div>
+          <p class="board-provenance">AI software cohort: popularity #8 · 167,059 GitHub stars on 2026-10-08</p>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:62%; --bar-color:var(--l1)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l1)"><span class="dot"></span>L1 Documented</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">40</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/openai/openai-cookbook" target="_blank" rel="noopener">openai/openai-cookbook</a>
@@ -530,7 +673,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">31</div>
+        <div class="board-rank">41</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/modelcontextprotocol/servers" target="_blank" rel="noopener">modelcontextprotocol/servers</a>
@@ -543,7 +686,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">32</div>
+        <div class="board-rank">42</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/biomejs/biome" target="_blank" rel="noopener">biomejs/biome</a>
@@ -556,7 +699,49 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">33</div>
+        <div class="board-rank">43</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/openai/codex" target="_blank" rel="noopener">openai/codex</a>
+              <span class="board-category">AI coding tools</span></span>
+            <span class="board-score">64/105 · 61%</span>
+          </div>
+          <p class="board-provenance">AI software cohort: popularity #17 · 128,374 GitHub stars on 2026-10-08</p>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:61%; --bar-color:var(--l1)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l1)"><span class="dot"></span>L1 Documented</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">44</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/ggml-org/llama.cpp" target="_blank" rel="noopener">ggml-org/llama.cpp</a>
+              <span class="board-category">AI models and inference</span></span>
+            <span class="board-score">63/105 · 60%</span>
+          </div>
+          <p class="board-provenance">AI software cohort: popularity #15 · 130,692 GitHub stars on 2026-10-08</p>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:60%; --bar-color:var(--l1)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l1)"><span class="dot"></span>L1 Documented</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">45</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/earendil-works/pi" target="_blank" rel="noopener">earendil-works/pi</a>
+              <span class="board-category">AI coding tools</span></span>
+            <span class="board-score">63/105 · 60%</span>
+          </div>
+          <p class="board-provenance">AI software cohort: popularity #20 · 113,478 GitHub stars on 2026-10-08</p>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:60%; --bar-color:var(--l1)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l1)"><span class="dot"></span>L1 Documented</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">46</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/trufflesecurity/trufflehog" target="_blank" rel="noopener">trufflesecurity/trufflehog</a>
@@ -569,7 +754,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">34</div>
+        <div class="board-rank">47</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/argoproj/argo-cd" target="_blank" rel="noopener">argoproj/argo-cd</a>
@@ -582,7 +767,21 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">35</div>
+        <div class="board-rank">48</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/browser-use/browser-use" target="_blank" rel="noopener">browser-use/browser-use</a>
+              <span class="board-category">AI agent frameworks</span></span>
+            <span class="board-score">60/105 · 57%</span>
+          </div>
+          <p class="board-provenance">AI software cohort: popularity #19 · 117,486 GitHub stars on 2026-10-08</p>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:57%; --bar-color:var(--l1)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l1)"><span class="dot"></span>L1 Documented</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">49</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/keycloak/keycloak" target="_blank" rel="noopener">keycloak/keycloak</a>
@@ -595,7 +794,35 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">36</div>
+        <div class="board-rank">50</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/firecrawl/firecrawl" target="_blank" rel="noopener">firecrawl/firecrawl</a>
+              <span class="board-category">AI memory and retrieval</span></span>
+            <span class="board-score">60/105 · 57%</span>
+          </div>
+          <p class="board-provenance">AI software cohort: popularity #5 · 189,747 GitHub stars on 2026-10-08</p>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:57%; --bar-color:var(--l0)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l0)"><span class="dot"></span>L0 Unharnessed</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">51</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/f/prompts.chat" target="_blank" rel="noopener">f/prompts.chat</a>
+              <span class="board-category">AI interfaces</span></span>
+            <span class="board-score">60/108 · 56%</span>
+          </div>
+          <p class="board-provenance">AI software cohort: popularity #7 · 172,385 GitHub stars on 2026-10-08</p>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:56%; --bar-color:var(--l1)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l1)"><span class="dot"></span>L1 Documented</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">52</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/element-hq/element-web" target="_blank" rel="noopener">element-hq/element-web</a>
@@ -608,7 +835,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">37</div>
+        <div class="board-rank">53</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/eslint/eslint" target="_blank" rel="noopener">eslint/eslint</a>
@@ -621,7 +848,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">38</div>
+        <div class="board-rank">54</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/helm/helm" target="_blank" rel="noopener">helm/helm</a>
@@ -634,7 +861,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">39</div>
+        <div class="board-rank">55</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/pandas-dev/pandas" target="_blank" rel="noopener">pandas-dev/pandas</a>
@@ -647,7 +874,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">40</div>
+        <div class="board-rank">56</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/open-telemetry/opentelemetry-collector" target="_blank" rel="noopener">open-telemetry/opentelemetry-collector</a>
@@ -660,7 +887,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">41</div>
+        <div class="board-rank">57</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/elastic/elasticsearch" target="_blank" rel="noopener">elastic/elasticsearch</a>
@@ -673,7 +900,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">42</div>
+        <div class="board-rank">58</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/ollama/ollama" target="_blank" rel="noopener">ollama/ollama</a>
@@ -686,7 +913,21 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">43</div>
+        <div class="board-rank">59</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/Graphify-Labs/graphify" target="_blank" rel="noopener">Graphify-Labs/graphify</a>
+              <span class="board-category">AI memory and retrieval</span></span>
+            <span class="board-score">57/105 · 54%</span>
+          </div>
+          <p class="board-provenance">AI software cohort: popularity #18 · 124,880 GitHub stars on 2026-10-08</p>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:54%; --bar-color:var(--l0)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l0)"><span class="dot"></span>L0 Unharnessed</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">60</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/langchain-ai/langchain" target="_blank" rel="noopener">langchain-ai/langchain</a>
@@ -699,7 +940,35 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">44</div>
+        <div class="board-rank">61</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/github/spec-kit" target="_blank" rel="noopener">github/spec-kit</a>
+              <span class="board-category">AI coding tools</span></span>
+            <span class="board-score">56/105 · 53%</span>
+          </div>
+          <p class="board-provenance">AI software cohort: popularity #13 · 140,650 GitHub stars on 2026-10-08</p>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:53%; --bar-color:var(--l1)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l1)"><span class="dot"></span>L1 Documented</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">62</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/open-webui/open-webui" target="_blank" rel="noopener">open-webui/open-webui</a>
+              <span class="board-category">AI interfaces</span></span>
+            <span class="board-score">56/105 · 53%</span>
+          </div>
+          <p class="board-provenance">AI software cohort: popularity #11 · 154,229 GitHub stars on 2026-10-08</p>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:53%; --bar-color:var(--l0)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l0)"><span class="dot"></span>L0 Unharnessed</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">63</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/tensorflow/tensorflow" target="_blank" rel="noopener">tensorflow/tensorflow</a>
@@ -712,7 +981,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">45</div>
+        <div class="board-rank">64</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/opentofu/opentofu" target="_blank" rel="noopener">opentofu/opentofu</a>
@@ -725,7 +994,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">46</div>
+        <div class="board-rank">65</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/prometheus/prometheus" target="_blank" rel="noopener">prometheus/prometheus</a>
@@ -738,7 +1007,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">47</div>
+        <div class="board-rank">66</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/semgrep/semgrep" target="_blank" rel="noopener">semgrep/semgrep</a>
@@ -751,7 +1020,21 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">48</div>
+        <div class="board-rank">67</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/Comfy-Org/ComfyUI" target="_blank" rel="noopener">Comfy-Org/ComfyUI</a>
+              <span class="board-category">AI vision and media</span></span>
+            <span class="board-score">53/105 · 50%</span>
+          </div>
+          <p class="board-provenance">AI software cohort: popularity #14 · 136,625 GitHub stars on 2026-10-08</p>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:50%; --bar-color:var(--l1)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l1)"><span class="dot"></span>L1 Documented</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">68</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/huggingface/smolagents" target="_blank" rel="noopener">huggingface/smolagents</a>
@@ -764,7 +1047,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">49</div>
+        <div class="board-rank">69</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/stanfordnlp/dspy" target="_blank" rel="noopener">stanfordnlp/dspy</a>
@@ -777,7 +1060,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">50</div>
+        <div class="board-rank">70</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/crossplane/crossplane" target="_blank" rel="noopener">crossplane/crossplane</a>
@@ -790,7 +1073,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">51</div>
+        <div class="board-rank">71</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/scikit-learn/scikit-learn" target="_blank" rel="noopener">scikit-learn/scikit-learn</a>
@@ -803,7 +1086,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">52</div>
+        <div class="board-rank">72</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/cilium/cilium" target="_blank" rel="noopener">cilium/cilium</a>
@@ -816,7 +1099,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">53</div>
+        <div class="board-rank">73</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/nodejs/node" target="_blank" rel="noopener">nodejs/node</a>
@@ -829,7 +1112,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">54</div>
+        <div class="board-rank">74</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/ossf/scorecard" target="_blank" rel="noopener">ossf/scorecard</a>
@@ -842,7 +1125,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">55</div>
+        <div class="board-rank">75</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/aquasecurity/trivy" target="_blank" rel="noopener">aquasecurity/trivy</a>
@@ -855,7 +1138,21 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">56</div>
+        <div class="board-rank">76</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/TauricResearch/TradingAgents" target="_blank" rel="noopener">TauricResearch/TradingAgents</a>
+              <span class="board-category">AI applications</span></span>
+            <span class="board-score">49/105 · 47%</span>
+          </div>
+          <p class="board-provenance">AI software cohort: popularity #22 · 110,249 GitHub stars on 2026-10-08</p>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:47%; --bar-color:var(--l0)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l0)"><span class="dot"></span>L0 Unharnessed</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">77</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/ansible/ansible" target="_blank" rel="noopener">ansible/ansible</a>
@@ -868,7 +1165,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">57</div>
+        <div class="board-rank">78</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/jitsi/jitsi-meet" target="_blank" rel="noopener">jitsi/jitsi-meet</a>
@@ -881,7 +1178,21 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">58</div>
+        <div class="board-rank">79</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/farion1231/cc-switch" target="_blank" rel="noopener">farion1231/cc-switch</a>
+              <span class="board-category">AI coding tools</span></span>
+            <span class="board-score">48/105 · 46%</span>
+          </div>
+          <p class="board-provenance">AI software cohort: popularity #12 · 141,488 GitHub stars on 2026-10-08</p>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:46%; --bar-color:var(--l0)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l0)"><span class="dot"></span>L0 Unharnessed</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">80</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/Aider-AI/aider" target="_blank" rel="noopener">Aider-AI/aider</a>
@@ -894,7 +1205,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">59</div>
+        <div class="board-rank">81</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/vitejs/vite" target="_blank" rel="noopener">vitejs/vite</a>
@@ -907,7 +1218,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">60</div>
+        <div class="board-rank">82</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/immich-app/immich" target="_blank" rel="noopener">immich-app/immich</a>
@@ -920,7 +1231,21 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">61</div>
+        <div class="board-rank">83</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/AUTOMATIC1111/stable-diffusion-webui" target="_blank" rel="noopener">AUTOMATIC1111/stable-diffusion-webui</a>
+              <span class="board-category">AI vision and media</span></span>
+            <span class="board-score">46/105 · 44%</span>
+          </div>
+          <p class="board-provenance">AI software cohort: popularity #9 · 165,215 GitHub stars on 2026-10-08</p>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:44%; --bar-color:var(--l0)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l0)"><span class="dot"></span>L0 Unharnessed</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">84</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/hashicorp/terraform" target="_blank" rel="noopener">hashicorp/terraform</a>
@@ -933,7 +1258,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">62</div>
+        <div class="board-rank">85</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/kubernetes/kubernetes" target="_blank" rel="noopener">kubernetes/kubernetes</a>
@@ -946,7 +1271,21 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">63</div>
+        <div class="board-rank">86</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/harry0703/MoneyPrinterTurbo" target="_blank" rel="noopener">harry0703/MoneyPrinterTurbo</a>
+              <span class="board-category">AI vision and media</span></span>
+            <span class="board-score">43/105 · 41%</span>
+          </div>
+          <p class="board-provenance">AI software cohort: popularity #16 · 129,362 GitHub stars on 2026-10-08</p>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:41%; --bar-color:var(--l0)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l0)"><span class="dot"></span>L0 Unharnessed</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">87</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/openai/evals" target="_blank" rel="noopener">openai/evals</a>
@@ -959,7 +1298,49 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">64</div>
+        <div class="board-rank">88</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/Panniantong/Agent-Reach" target="_blank" rel="noopener">Panniantong/Agent-Reach</a>
+              <span class="board-category">AI memory and retrieval</span></span>
+            <span class="board-score">41/105 · 39%</span>
+          </div>
+          <p class="board-provenance">AI software cohort: popularity #29 · 93,937 GitHub stars on 2026-10-08</p>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:39%; --bar-color:var(--l0)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l0)"><span class="dot"></span>L0 Unharnessed</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">89</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/odysseus-dev/odysseus" target="_blank" rel="noopener">odysseus-dev/odysseus</a>
+              <span class="board-category">AI interfaces</span></span>
+            <span class="board-score">41/105 · 39%</span>
+          </div>
+          <p class="board-provenance">AI software cohort: popularity #30 · 92,063 GitHub stars on 2026-10-08</p>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:39%; --bar-color:var(--l0)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l0)"><span class="dot"></span>L0 Unharnessed</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">90</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/openai/whisper" target="_blank" rel="noopener">openai/whisper</a>
+              <span class="board-category">AI models and inference</span></span>
+            <span class="board-score">40/105 · 38%</span>
+          </div>
+          <p class="board-provenance">AI software cohort: popularity #23 · 110,149 GitHub stars on 2026-10-08</p>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:38%; --bar-color:var(--l0)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l0)"><span class="dot"></span>L0 Unharnessed</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">91</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/microsoft/autogen" target="_blank" rel="noopener">microsoft/autogen</a>
@@ -972,7 +1353,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">65</div>
+        <div class="board-rank">92</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/neovim/neovim" target="_blank" rel="noopener">neovim/neovim</a>
@@ -985,7 +1366,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">66</div>
+        <div class="board-rank">93</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/istio/istio" target="_blank" rel="noopener">istio/istio</a>
@@ -998,7 +1379,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">67</div>
+        <div class="board-rank">94</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/golang/go" target="_blank" rel="noopener">golang/go</a>
@@ -1011,7 +1392,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">68</div>
+        <div class="board-rank">95</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/sindresorhus/execa" target="_blank" rel="noopener">sindresorhus/execa</a>
@@ -1024,7 +1405,7 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">69</div>
+        <div class="board-rank">96</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/PatrickJS/awesome-cursorrules" target="_blank" rel="noopener">PatrickJS/awesome-cursorrules</a>
@@ -1037,7 +1418,35 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">70</div>
+        <div class="board-rank">97</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/hacksider/Deep-Live-Cam" target="_blank" rel="noopener">hacksider/Deep-Live-Cam</a>
+              <span class="board-category">AI vision and media</span></span>
+            <span class="board-score">36/105 · 34%</span>
+          </div>
+          <p class="board-provenance">AI software cohort: popularity #28 · 96,945 GitHub stars on 2026-10-08</p>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:34%; --bar-color:var(--l0)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l0)"><span class="dot"></span>L0 Unharnessed</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">98</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/deepseek-ai/DeepSeek-V3" target="_blank" rel="noopener">deepseek-ai/DeepSeek-V3</a>
+              <span class="board-category">AI models and inference</span></span>
+            <span class="board-score">24/105 · 23%</span>
+          </div>
+          <p class="board-provenance">AI software cohort: popularity #25 · 104,512 GitHub stars on 2026-10-08</p>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:23%; --bar-color:var(--l0)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l0)"><span class="dot"></span>L0 Unharnessed</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">99</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/anthropics/skills" target="_blank" rel="noopener">anthropics/skills</a>
@@ -1050,7 +1459,21 @@
       </div>
 
       <div class="board-row">
-        <div class="board-rank">71</div>
+        <div class="board-rank">100</div>
+        <div class="board-main">
+          <div class="board-name-line">
+            <span><a class="board-name" href="https://github.com/karpathy/autoresearch" target="_blank" rel="noopener">karpathy/autoresearch</a>
+              <span class="board-category">AI models and inference</span></span>
+            <span class="board-score">17/105 · 16%</span>
+          </div>
+          <p class="board-provenance">AI software cohort: popularity #27 · 97,520 GitHub stars on 2026-10-08</p>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:16%; --bar-color:var(--l0)"></div></div>
+        </div>
+        <div class="board-level"><span class="chip" style="--chip-color:var(--l0)"><span class="dot"></span>L0 Unharnessed</span></div>
+      </div>
+
+      <div class="board-row">
+        <div class="board-rank">101</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="https://github.com/octocat/Hello-World" target="_blank" rel="noopener">octocat/Hello-World</a>
@@ -1066,18 +1489,16 @@
 
 
   <section class="history-section">
-    <h2>Same commits, new scoring model</h2>
+    <h2>Corpus coverage over time</h2>
     <p class="section-note">
-      Repositories present in both runs keep the same pinned commit, so their deltas measure
-      the change from <code>harness-score@1.5.0</code> to
-      <code>harness-score@1.8.1</code>. New entries have no earlier score.
+      Both runs use <code>harness-score@1.8.1</code>. Existing entries retain their pinned commits; new entries have no earlier score.
       The complete, append-only record is in
       <a href="https://github.com/paladini/harness-maturity-analysis/blob/main/results/score-history.md">score-history.md</a>.
     </p>
     <div class="history-wrap">
       <table class="history-table">
         <thead>
-          <tr><th>Repository</th><th>2026-07-25<br>harness-score@1.5.0</th><th>2026-10-07<br>harness-score@1.8.1</th><th>Change</th></tr>
+          <tr><th>Repository</th><th>2026-10-07<br>harness-score@1.8.1</th><th>2026-10-08<br>harness-score@1.8.1</th><th>Change</th></tr>
         </thead>
         <tbody>
           <tr>
@@ -1088,87 +1509,87 @@
           </tr>
           <tr>
             <th scope="row">fakeflix</th>
-            <td>L1 · 72/108 (67%)</td>
             <td>L1 · 72/103 (70%)</td>
-            <td>+3 pp</td>
+            <td>L1 · 72/103 (70%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">execa</th>
-            <td>L0 · 36/108 (33%)</td>
             <td>L0 · 36/105 (34%)</td>
-            <td>+1 pp</td>
+            <td>L0 · 36/105 (34%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">octocat-hello-world</th>
-            <td>L0 · 14/108 (13%)</td>
+            <td>L0 · 14/105 (13%)</td>
             <td>L0 · 14/105 (13%)</td>
             <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">anthropic-cookbook</th>
-            <td>L3 · 99/108 (92%)</td>
             <td>L3 · 99/105 (94%)</td>
-            <td>+2 pp</td>
+            <td>L3 · 99/105 (94%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">anthropic-skills</th>
-            <td>L0 · 17/108 (16%)</td>
+            <td>L0 · 17/105 (16%)</td>
             <td>L0 · 17/105 (16%)</td>
             <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">openai-cookbook</th>
-            <td>L1 · 58/108 (54%)</td>
             <td>L1 · 64/105 (61%)</td>
-            <td>+7 pp</td>
+            <td>L1 · 64/105 (61%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">smolagents</th>
-            <td>L0 · 53/108 (49%)</td>
             <td>L0 · 53/105 (50%)</td>
-            <td>+1 pp</td>
+            <td>L0 · 53/105 (50%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">continue</th>
-            <td>L3 · 79/108 (73%)</td>
             <td>L3 · 79/105 (75%)</td>
-            <td>+2 pp</td>
+            <td>L3 · 79/105 (75%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">cline</th>
-            <td>L1 · 80/108 (74%)</td>
             <td>L1 · 82/105 (78%)</td>
-            <td>+4 pp</td>
+            <td>L1 · 82/105 (78%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">openhands</th>
-            <td>L1 · 72/108 (67%)</td>
             <td>L1 · 72/105 (69%)</td>
-            <td>+2 pp</td>
+            <td>L1 · 72/105 (69%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">goose</th>
-            <td>L3 · 80/108 (74%)</td>
             <td>L3 · 80/105 (76%)</td>
-            <td>+2 pp</td>
+            <td>L3 · 80/105 (76%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">opencode</th>
-            <td>L1 · 74/108 (69%)</td>
             <td>L1 · 74/105 (70%)</td>
-            <td>+1 pp</td>
+            <td>L1 · 74/105 (70%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">aider</th>
-            <td>L0 · 46/108 (43%)</td>
             <td>L0 · 46/105 (44%)</td>
-            <td>+1 pp</td>
+            <td>L0 · 46/105 (44%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">zed</th>
-            <td>L3 · 75/108 (69%)</td>
             <td>L3 · 75/105 (71%)</td>
-            <td>+2 pp</td>
+            <td>L3 · 75/105 (71%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">promptfoo</th>
@@ -1178,21 +1599,21 @@
           </tr>
           <tr>
             <th scope="row">openai-evals</th>
-            <td>L0 · 41/108 (38%)</td>
             <td>L0 · 41/105 (39%)</td>
-            <td>+1 pp</td>
+            <td>L0 · 41/105 (39%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">dspy</th>
-            <td>L0 · 52/108 (48%)</td>
             <td>L0 · 52/105 (50%)</td>
-            <td>+2 pp</td>
+            <td>L0 · 52/105 (50%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">langfuse</th>
-            <td>L1 · 73/108 (68%)</td>
             <td>L1 · 73/105 (70%)</td>
-            <td>+2 pp</td>
+            <td>L1 · 73/105 (70%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">mcp-servers</th>
@@ -1202,308 +1623,488 @@
           </tr>
           <tr>
             <th scope="row">awesome-cursorrules</th>
-            <td>L0 · 36/108 (33%)</td>
             <td>L0 · 36/105 (34%)</td>
-            <td>+1 pp</td>
+            <td>L0 · 36/105 (34%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">langchain</th>
-            <td>not recorded</td>
             <td>L1 · 57/108 (53%)</td>
-            <td>—</td>
+            <td>L1 · 57/108 (53%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">autogen</th>
-            <td>not recorded</td>
             <td>L0 · 39/105 (37%)</td>
-            <td>—</td>
+            <td>L0 · 39/105 (37%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">pydantic-ai</th>
-            <td>not recorded</td>
             <td>L3 · 80/105 (76%)</td>
-            <td>—</td>
+            <td>L3 · 80/105 (76%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">dify</th>
-            <td>not recorded</td>
             <td>L4 · 86/105 (82%)</td>
-            <td>—</td>
+            <td>L4 · 86/105 (82%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">ollama</th>
-            <td>not recorded</td>
             <td>L0 · 57/105 (54%)</td>
-            <td>—</td>
+            <td>L0 · 57/105 (54%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">vllm</th>
-            <td>not recorded</td>
             <td>L3 · 80/105 (76%)</td>
-            <td>—</td>
+            <td>L3 · 80/105 (76%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">n8n</th>
-            <td>not recorded</td>
             <td>L4 · 93/105 (89%)</td>
-            <td>—</td>
+            <td>L4 · 93/105 (89%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">vscode</th>
-            <td>not recorded</td>
             <td>L3 · 68/108 (63%)</td>
-            <td>—</td>
+            <td>L3 · 68/108 (63%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">neovim</th>
-            <td>not recorded</td>
             <td>L0 · 39/105 (37%)</td>
-            <td>—</td>
+            <td>L0 · 39/105 (37%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">deno</th>
-            <td>not recorded</td>
             <td>L1 · 69/105 (66%)</td>
-            <td>—</td>
+            <td>L1 · 69/105 (66%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">biome</th>
-            <td>not recorded</td>
             <td>L1 · 64/105 (61%)</td>
-            <td>—</td>
+            <td>L1 · 64/105 (61%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">eslint</th>
-            <td>not recorded</td>
             <td>L1 · 57/105 (54%)</td>
-            <td>—</td>
+            <td>L1 · 57/105 (54%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">playwright</th>
-            <td>not recorded</td>
             <td>L1 · 74/108 (69%)</td>
-            <td>—</td>
+            <td>L1 · 74/108 (69%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">vite</th>
-            <td>not recorded</td>
             <td>L0 · 46/105 (44%)</td>
-            <td>—</td>
+            <td>L0 · 46/105 (44%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">kubernetes</th>
-            <td>not recorded</td>
             <td>L1 · 44/105 (42%)</td>
-            <td>—</td>
+            <td>L1 · 44/105 (42%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">terraform</th>
-            <td>not recorded</td>
             <td>L0 · 45/105 (43%)</td>
-            <td>—</td>
+            <td>L0 · 45/105 (43%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">opentofu</th>
-            <td>not recorded</td>
             <td>L0 · 54/105 (51%)</td>
-            <td>—</td>
+            <td>L0 · 54/105 (51%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">pulumi</th>
-            <td>not recorded</td>
             <td>L3 · 80/105 (76%)</td>
-            <td>—</td>
+            <td>L3 · 80/105 (76%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">ansible</th>
-            <td>not recorded</td>
             <td>L1 · 48/105 (46%)</td>
-            <td>—</td>
+            <td>L1 · 48/105 (46%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">argo-cd</th>
-            <td>not recorded</td>
             <td>L1 · 60/105 (57%)</td>
-            <td>—</td>
+            <td>L1 · 60/105 (57%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">helm</th>
-            <td>not recorded</td>
             <td>L1 · 57/105 (54%)</td>
-            <td>—</td>
+            <td>L1 · 57/105 (54%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">crossplane</th>
-            <td>not recorded</td>
             <td>L0 · 53/105 (50%)</td>
-            <td>—</td>
+            <td>L0 · 53/105 (50%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">pandas</th>
-            <td>not recorded</td>
             <td>L1 · 57/105 (54%)</td>
-            <td>—</td>
+            <td>L1 · 57/105 (54%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">scikit-learn</th>
-            <td>not recorded</td>
             <td>L0 · 52/105 (50%)</td>
-            <td>—</td>
+            <td>L0 · 52/105 (50%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">pytorch</th>
-            <td>not recorded</td>
             <td>L3 · 77/105 (73%)</td>
-            <td>—</td>
+            <td>L3 · 77/105 (73%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">tensorflow</th>
-            <td>not recorded</td>
             <td>L1 · 54/105 (51%)</td>
-            <td>—</td>
+            <td>L1 · 54/105 (51%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">airflow</th>
-            <td>not recorded</td>
             <td>L3 · 81/105 (77%)</td>
-            <td>—</td>
+            <td>L3 · 81/105 (77%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">dbt</th>
-            <td>not recorded</td>
             <td>L3 · 70/105 (67%)</td>
-            <td>—</td>
+            <td>L3 · 70/105 (67%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">dagster</th>
-            <td>not recorded</td>
             <td>L3 · 86/108 (80%)</td>
-            <td>—</td>
+            <td>L3 · 86/108 (80%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">prometheus</th>
-            <td>not recorded</td>
             <td>L1 · 53/105 (50%)</td>
-            <td>—</td>
+            <td>L1 · 53/105 (50%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">grafana</th>
-            <td>not recorded</td>
             <td>L3 · 74/105 (70%)</td>
-            <td>—</td>
+            <td>L3 · 74/105 (70%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">opentelemetry-collector</th>
-            <td>not recorded</td>
             <td>L1 · 57/105 (54%)</td>
-            <td>—</td>
+            <td>L1 · 57/105 (54%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">cilium</th>
-            <td>not recorded</td>
             <td>L0 · 52/105 (50%)</td>
-            <td>—</td>
+            <td>L0 · 52/105 (50%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">istio</th>
-            <td>not recorded</td>
             <td>L0 · 39/105 (37%)</td>
-            <td>—</td>
+            <td>L0 · 39/105 (37%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">elasticsearch</th>
-            <td>not recorded</td>
             <td>L1 · 57/105 (54%)</td>
-            <td>—</td>
+            <td>L1 · 57/105 (54%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">scorecard</th>
-            <td>not recorded</td>
             <td>L0 · 50/105 (48%)</td>
-            <td>—</td>
+            <td>L0 · 50/105 (48%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">trufflehog</th>
-            <td>not recorded</td>
             <td>L0 · 63/105 (60%)</td>
-            <td>—</td>
+            <td>L0 · 63/105 (60%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">trivy</th>
-            <td>not recorded</td>
             <td>L0 · 50/105 (48%)</td>
-            <td>—</td>
+            <td>L0 · 50/105 (48%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">semgrep</th>
-            <td>not recorded</td>
             <td>L1 · 52/105 (50%)</td>
-            <td>—</td>
+            <td>L1 · 52/105 (50%)</td>
+            <td>0 pp</td>
           </tr>
           <tr>
             <th scope="row">keycloak</th>
+            <td>L0 · 60/105 (57%)</td>
+            <td>L0 · 60/105 (57%)</td>
+            <td>0 pp</td>
+          </tr>
+          <tr>
+            <th scope="row">home-assistant-core</th>
+            <td>L1 · 76/105 (72%)</td>
+            <td>L1 · 76/105 (72%)</td>
+            <td>0 pp</td>
+          </tr>
+          <tr>
+            <th scope="row">immich</th>
+            <td>L0 · 46/105 (44%)</td>
+            <td>L0 · 46/105 (44%)</td>
+            <td>0 pp</td>
+          </tr>
+          <tr>
+            <th scope="row">mattermost</th>
+            <td>L1 · 68/105 (65%)</td>
+            <td>L1 · 68/105 (65%)</td>
+            <td>0 pp</td>
+          </tr>
+          <tr>
+            <th scope="row">element-web</th>
+            <td>L1 · 58/105 (55%)</td>
+            <td>L1 · 58/105 (55%)</td>
+            <td>0 pp</td>
+          </tr>
+          <tr>
+            <th scope="row">jitsi-meet</th>
+            <td>L1 · 48/105 (46%)</td>
+            <td>L1 · 48/105 (46%)</td>
+            <td>0 pp</td>
+          </tr>
+          <tr>
+            <th scope="row">rust</th>
+            <td>L1 · 69/105 (66%)</td>
+            <td>L1 · 69/105 (66%)</td>
+            <td>0 pp</td>
+          </tr>
+          <tr>
+            <th scope="row">go</th>
+            <td>L1 · 38/105 (36%)</td>
+            <td>L1 · 38/105 (36%)</td>
+            <td>0 pp</td>
+          </tr>
+          <tr>
+            <th scope="row">nodejs</th>
+            <td>L1 · 50/105 (48%)</td>
+            <td>L1 · 50/105 (48%)</td>
+            <td>0 pp</td>
+          </tr>
+          <tr>
+            <th scope="row">react</th>
+            <td>L3 · 81/105 (77%)</td>
+            <td>L3 · 81/105 (77%)</td>
+            <td>0 pp</td>
+          </tr>
+          <tr>
+            <th scope="row">nextjs</th>
+            <td>L3 · 83/105 (79%)</td>
+            <td>L3 · 83/105 (79%)</td>
+            <td>0 pp</td>
+          </tr>
+          <tr>
+            <th scope="row">openclaw</th>
+            <td>not recorded</td>
+            <td>L3 · 83/105 (79%)</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <th scope="row">ecc</th>
+            <td>not recorded</td>
+            <td>L4 · 105/108 (97%)</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <th scope="row">hermes-agent</th>
+            <td>not recorded</td>
+            <td>L1 · 71/105 (68%)</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <th scope="row">deepseek-harness</th>
+            <td>not recorded</td>
+            <td>L1 · 75/105 (71%)</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <th scope="row">firecrawl</th>
             <td>not recorded</td>
             <td>L0 · 60/105 (57%)</td>
             <td>—</td>
           </tr>
           <tr>
-            <th scope="row">home-assistant-core</th>
-            <td>not recorded</td>
-            <td>L1 · 76/105 (72%)</td>
-            <td>—</td>
-          </tr>
-          <tr>
-            <th scope="row">immich</th>
-            <td>not recorded</td>
-            <td>L0 · 46/105 (44%)</td>
-            <td>—</td>
-          </tr>
-          <tr>
-            <th scope="row">mattermost</th>
-            <td>not recorded</td>
-            <td>L1 · 68/105 (65%)</td>
-            <td>—</td>
-          </tr>
-          <tr>
-            <th scope="row">element-web</th>
-            <td>not recorded</td>
-            <td>L1 · 58/105 (55%)</td>
-            <td>—</td>
-          </tr>
-          <tr>
-            <th scope="row">jitsi-meet</th>
-            <td>not recorded</td>
-            <td>L1 · 48/105 (46%)</td>
-            <td>—</td>
-          </tr>
-          <tr>
-            <th scope="row">rust</th>
-            <td>not recorded</td>
-            <td>L1 · 69/105 (66%)</td>
-            <td>—</td>
-          </tr>
-          <tr>
-            <th scope="row">go</th>
-            <td>not recorded</td>
-            <td>L1 · 38/105 (36%)</td>
-            <td>—</td>
-          </tr>
-          <tr>
-            <th scope="row">nodejs</th>
-            <td>not recorded</td>
-            <td>L1 · 50/105 (48%)</td>
-            <td>—</td>
-          </tr>
-          <tr>
-            <th scope="row">react</th>
+            <th scope="row">autogpt</th>
             <td>not recorded</td>
             <td>L3 · 81/105 (77%)</td>
             <td>—</td>
           </tr>
           <tr>
-            <th scope="row">nextjs</th>
+            <th scope="row">prompts-chat</th>
             <td>not recorded</td>
-            <td>L3 · 83/105 (79%)</td>
+            <td>L1 · 60/108 (56%)</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <th scope="row">transformers</th>
+            <td>not recorded</td>
+            <td>L1 · 65/105 (62%)</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <th scope="row">stable-diffusion-webui</th>
+            <td>not recorded</td>
+            <td>L0 · 46/105 (44%)</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <th scope="row">langflow</th>
+            <td>not recorded</td>
+            <td>L1 · 78/105 (74%)</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <th scope="row">open-webui</th>
+            <td>not recorded</td>
+            <td>L0 · 56/105 (53%)</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <th scope="row">cc-switch</th>
+            <td>not recorded</td>
+            <td>L0 · 48/105 (46%)</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <th scope="row">spec-kit</th>
+            <td>not recorded</td>
+            <td>L1 · 56/105 (53%)</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <th scope="row">comfyui</th>
+            <td>not recorded</td>
+            <td>L1 · 53/105 (50%)</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <th scope="row">llama-cpp</th>
+            <td>not recorded</td>
+            <td>L1 · 63/105 (60%)</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <th scope="row">money-printer-turbo</th>
+            <td>not recorded</td>
+            <td>L0 · 43/105 (41%)</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <th scope="row">codex</th>
+            <td>not recorded</td>
+            <td>L1 · 64/105 (61%)</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <th scope="row">graphify</th>
+            <td>not recorded</td>
+            <td>L0 · 57/105 (54%)</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <th scope="row">browser-use</th>
+            <td>not recorded</td>
+            <td>L1 · 60/105 (57%)</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <th scope="row">pi-agent</th>
+            <td>not recorded</td>
+            <td>L1 · 63/105 (60%)</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <th scope="row">caveman</th>
+            <td>not recorded</td>
+            <td>L3 · 80/105 (76%)</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <th scope="row">trading-agents</th>
+            <td>not recorded</td>
+            <td>L0 · 49/105 (47%)</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <th scope="row">whisper</th>
+            <td>not recorded</td>
+            <td>L0 · 40/105 (38%)</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <th scope="row">gemini-cli</th>
+            <td>not recorded</td>
+            <td>L1 · 74/105 (70%)</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <th scope="row">deepseek-v3</th>
+            <td>not recorded</td>
+            <td>L0 · 24/105 (23%)</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <th scope="row">claude-mem</th>
+            <td>not recorded</td>
+            <td>L1 · 71/108 (66%)</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <th scope="row">autoresearch</th>
+            <td>not recorded</td>
+            <td>L0 · 17/105 (16%)</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <th scope="row">deep-live-cam</th>
+            <td>not recorded</td>
+            <td>L0 · 36/105 (34%)</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <th scope="row">agent-reach</th>
+            <td>not recorded</td>
+            <td>L0 · 41/105 (39%)</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <th scope="row">odysseus</th>
+            <td>not recorded</td>
+            <td>L0 · 41/105 (39%)</td>
             <td>—</td>
           </tr>
         </tbody>
@@ -1520,40 +2121,56 @@
         <thead><tr><th></th><th>Context &amp; Guides</th><th>Skills &amp; Commands</th><th>Hooks &amp; Guardrails</th><th>Sensors &amp; Feedback</th><th>CI Feedback</th><th>Hygiene &amp; Safety</th></tr></thead>
         <tbody>
           <tr><th scope="row">harness-score</th><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
+          <tr><th scope="row">ecc</th><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">anthropic-cookbook</th><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:57%">57</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">promptfoo</th><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:35%">35</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">n8n</th><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:53%">53</div></td><td><div class="cell" style="--v:71%">71</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">dify</th><td><div class="cell" style="--v:85%">85</div></td><td><div class="cell" style="--v:53%">53</div></td><td><div class="cell" style="--v:86%">86</div></td><td><div class="cell" style="--v:85%">85</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">dagster</th><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:71%">71</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:87%">87</div></td></tr>
           <tr><th scope="row">nextjs</th><td><div class="cell" style="--v:95%">95</div></td><td><div class="cell" style="--v:71%">71</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:90%">90</div></td></tr>
+          <tr><th scope="row">openclaw</th><td><div class="cell" style="--v:85%">85</div></td><td><div class="cell" style="--v:53%">53</div></td><td><div class="cell" style="--v:43%">43</div></td><td><div class="cell" style="--v:85%">85</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">cline</th><td><div class="cell" style="--v:40%">40</div></td><td><div class="cell" style="--v:71%">71</div></td><td><div class="cell" style="--v:57%">57</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">airflow</th><td><div class="cell" style="--v:90%">90</div></td><td><div class="cell" style="--v:53%">53</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">react</th><td><div class="cell" style="--v:85%">85</div></td><td><div class="cell" style="--v:82%">82</div></td><td><div class="cell" style="--v:43%">43</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:65%">65</div></td></tr>
+          <tr><th scope="row">autogpt</th><td><div class="cell" style="--v:90%">90</div></td><td><div class="cell" style="--v:53%">53</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">goose</th><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:53%">53</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">pydantic-ai</th><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:35%">35</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">vllm</th><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:53%">53</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:85%">85</div></td></tr>
           <tr><th scope="row">pulumi</th><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:53%">53</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
+          <tr><th scope="row">caveman</th><td><div class="cell" style="--v:85%">85</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:75%">75</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">continue</th><td><div class="cell" style="--v:65%">65</div></td><td><div class="cell" style="--v:71%">71</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
+          <tr><th scope="row">langflow</th><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:24%">24</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">pytorch</th><td><div class="cell" style="--v:85%">85</div></td><td><div class="cell" style="--v:53%">53</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">home-assistant-core</th><td><div class="cell" style="--v:40%">40</div></td><td><div class="cell" style="--v:82%">82</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">zed</th><td><div class="cell" style="--v:85%">85</div></td><td><div class="cell" style="--v:53%">53</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:90%">90</div></td></tr>
+          <tr><th scope="row">deepseek-harness</th><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:24%">24</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:85%">85</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">grafana</th><td><div class="cell" style="--v:90%">90</div></td><td><div class="cell" style="--v:53%">53</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:65%">65</div></td></tr>
           <tr><th scope="row">fakeflix</th><td><div class="cell" style="--v:45%">45</div></td><td><div class="cell" style="--v:82%">82</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">opencode</th><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">langfuse</th><td><div class="cell" style="--v:75%">75</div></td><td><div class="cell" style="--v:24%">24</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
+          <tr><th scope="row">gemini-cli</th><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">openhands</th><td><div class="cell" style="--v:45%">45</div></td><td><div class="cell" style="--v:53%">53</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">playwright</th><td><div class="cell" style="--v:45%">45</div></td><td><div class="cell" style="--v:82%">82</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:85%">85</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
+          <tr><th scope="row">hermes-agent</th><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">dbt</th><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:53%">53</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:50%">50</div></td></tr>
           <tr><th scope="row">deno</th><td><div class="cell" style="--v:45%">45</div></td><td><div class="cell" style="--v:53%">53</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">rust</th><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:90%">90</div></td></tr>
+          <tr><th scope="row">claude-mem</th><td><div class="cell" style="--v:85%">85</div></td><td><div class="cell" style="--v:18%">18</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:87%">87</div></td></tr>
           <tr><th scope="row">mattermost</th><td><div class="cell" style="--v:85%">85</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">vscode</th><td><div class="cell" style="--v:60%">60</div></td><td><div class="cell" style="--v:53%">53</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:85%">85</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:70%">70</div></td></tr>
+          <tr><th scope="row">transformers</th><td><div class="cell" style="--v:85%">85</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:85%">85</div></td></tr>
           <tr><th scope="row">openai-cookbook</th><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:29%">29</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">mcp-servers</th><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:60%">60</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">biome</th><td><div class="cell" style="--v:45%">45</div></td><td><div class="cell" style="--v:53%">53</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:75%">75</div></td></tr>
+          <tr><th scope="row">codex</th><td><div class="cell" style="--v:65%">65</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
+          <tr><th scope="row">llama-cpp</th><td><div class="cell" style="--v:45%">45</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
+          <tr><th scope="row">pi-agent</th><td><div class="cell" style="--v:45%">45</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">trufflehog</th><td><div class="cell" style="--v:10%">10</div></td><td><div class="cell" style="--v:53%">53</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:90%">90</div></td></tr>
           <tr><th scope="row">argo-cd</th><td><div class="cell" style="--v:45%">45</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
+          <tr><th scope="row">browser-use</th><td><div class="cell" style="--v:45%">45</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:85%">85</div></td></tr>
           <tr><th scope="row">keycloak</th><td><div class="cell" style="--v:30%">30</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
+          <tr><th scope="row">firecrawl</th><td><div class="cell" style="--v:30%">30</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
+          <tr><th scope="row">prompts-chat</th><td><div class="cell" style="--v:45%">45</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:85%">85</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">element-web</th><td><div class="cell" style="--v:45%">45</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:85%">85</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:90%">90</div></td></tr>
           <tr><th scope="row">eslint</th><td><div class="cell" style="--v:45%">45</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:70%">70</div></td></tr>
           <tr><th scope="row">helm</th><td><div class="cell" style="--v:45%">45</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:85%">85</div></td></tr>
@@ -1561,11 +2178,15 @@
           <tr><th scope="row">opentelemetry-collector</th><td><div class="cell" style="--v:45%">45</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:85%">85</div></td></tr>
           <tr><th scope="row">elasticsearch</th><td><div class="cell" style="--v:95%">95</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:85%">85</div></td><td><div class="cell" style="--v:57%">57</div></td><td><div class="cell" style="--v:65%">65</div></td></tr>
           <tr><th scope="row">ollama</th><td><div class="cell" style="--v:30%">30</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
+          <tr><th scope="row">graphify</th><td><div class="cell" style="--v:30%">30</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:85%">85</div></td></tr>
           <tr><th scope="row">langchain</th><td><div class="cell" style="--v:45%">45</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:55%">55</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
+          <tr><th scope="row">spec-kit</th><td><div class="cell" style="--v:45%">45</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:80%">80</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:85%">85</div></td></tr>
+          <tr><th scope="row">open-webui</th><td><div class="cell" style="--v:10%">10</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">tensorflow</th><td><div class="cell" style="--v:65%">65</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:65%">65</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:85%">85</div></td></tr>
           <tr><th scope="row">opentofu</th><td><div class="cell" style="--v:30%">30</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:85%">85</div></td></tr>
           <tr><th scope="row">prometheus</th><td><div class="cell" style="--v:45%">45</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:65%">65</div></td></tr>
           <tr><th scope="row">semgrep</th><td><div class="cell" style="--v:45%">45</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:60%">60</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:85%">85</div></td></tr>
+          <tr><th scope="row">comfyui</th><td><div class="cell" style="--v:45%">45</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:80%">80</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:85%">85</div></td></tr>
           <tr><th scope="row">smolagents</th><td><div class="cell" style="--v:30%">30</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:80%">80</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:85%">85</div></td></tr>
           <tr><th scope="row">dspy</th><td><div class="cell" style="--v:10%">10</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:80%">80</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">crossplane</th><td><div class="cell" style="--v:10%">10</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
@@ -1574,21 +2195,31 @@
           <tr><th scope="row">nodejs</th><td><div class="cell" style="--v:45%">45</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:50%">50</div></td></tr>
           <tr><th scope="row">scorecard</th><td><div class="cell" style="--v:10%">10</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:85%">85</div></td></tr>
           <tr><th scope="row">trivy</th><td><div class="cell" style="--v:10%">10</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:85%">85</div></td></tr>
+          <tr><th scope="row">trading-agents</th><td><div class="cell" style="--v:10%">10</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:80%">80</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">ansible</th><td><div class="cell" style="--v:45%">45</div></td><td><div class="cell" style="--v:53%">53</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:10%">10</div></td><td><div class="cell" style="--v:57%">57</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">jitsi-meet</th><td><div class="cell" style="--v:45%">45</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:55%">55</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:85%">85</div></td></tr>
+          <tr><th scope="row">cc-switch</th><td><div class="cell" style="--v:10%">10</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:75%">75</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">aider</th><td><div class="cell" style="--v:10%">10</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:65%">65</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:85%">85</div></td></tr>
           <tr><th scope="row">vite</th><td><div class="cell" style="--v:10%">10</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:85%">85</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:65%">65</div></td></tr>
           <tr><th scope="row">immich</th><td><div class="cell" style="--v:10%">10</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:65%">65</div></td></tr>
+          <tr><th scope="row">stable-diffusion-webui</th><td><div class="cell" style="--v:10%">10</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:80%">80</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:85%">85</div></td></tr>
           <tr><th scope="row">terraform</th><td><div class="cell" style="--v:10%">10</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:75%">75</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:85%">85</div></td></tr>
           <tr><th scope="row">kubernetes</th><td><div class="cell" style="--v:45%">45</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:75%">75</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
+          <tr><th scope="row">money-printer-turbo</th><td><div class="cell" style="--v:10%">10</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:50%">50</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">openai-evals</th><td><div class="cell" style="--v:10%">10</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:70%">70</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:70%">70</div></td></tr>
+          <tr><th scope="row">agent-reach</th><td><div class="cell" style="--v:10%">10</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:70%">70</div></td><td><div class="cell" style="--v:57%">57</div></td><td><div class="cell" style="--v:85%">85</div></td></tr>
+          <tr><th scope="row">odysseus</th><td><div class="cell" style="--v:10%">10</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:40%">40</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
+          <tr><th scope="row">whisper</th><td><div class="cell" style="--v:10%">10</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:50%">50</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:85%">85</div></td></tr>
           <tr><th scope="row">autogen</th><td><div class="cell" style="--v:10%">10</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:30%">30</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">neovim</th><td><div class="cell" style="--v:30%">30</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:10%">10</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:100%">100</div></td></tr>
           <tr><th scope="row">istio</th><td><div class="cell" style="--v:10%">10</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:100%">100</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:85%">85</div></td></tr>
           <tr><th scope="row">go</th><td><div class="cell" style="--v:65%">65</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:40%">40</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:85%">85</div></td></tr>
           <tr><th scope="row">execa</th><td><div class="cell" style="--v:5%">5</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:60%">60</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:60%">60</div></td></tr>
           <tr><th scope="row">awesome-cursorrules</th><td><div class="cell" style="--v:10%">10</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:30%">30</div></td><td><div class="cell" style="--v:79%">79</div></td><td><div class="cell" style="--v:85%">85</div></td></tr>
+          <tr><th scope="row">deep-live-cam</th><td><div class="cell" style="--v:10%">10</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:50%">50</div></td><td><div class="cell" style="--v:50%">50</div></td><td><div class="cell" style="--v:85%">85</div></td></tr>
+          <tr><th scope="row">deepseek-v3</th><td><div class="cell" style="--v:10%">10</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:29%">29</div></td><td><div class="cell" style="--v:90%">90</div></td></tr>
           <tr><th scope="row">anthropic-skills</th><td><div class="cell" style="--v:10%">10</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:75%">75</div></td></tr>
+          <tr><th scope="row">autoresearch</th><td><div class="cell" style="--v:10%">10</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:75%">75</div></td></tr>
           <tr><th scope="row">octocat-hello-world</th><td><div class="cell" style="--v:5%">5</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:0%">0</div></td><td><div class="cell" style="--v:65%">65</div></td></tr>
         </tbody>
       </table>
@@ -1654,7 +2285,7 @@
         <h3>PHASE STATUS</h3>
         <ol>
           <li class="done">Pipeline scaffold, validated against 4 anchors</li>
-          <li class="done">Corpus frozen: 71/71 repositories scanned</li>
+          <li class="done">Corpus frozen: 101/101 repositories scanned</li>
           <li>Blind human ratings — needs a rater, not an agent</li>
           <li class="done">Q2 model-calibration synthesis — 7 findings, 4 proposals</li>
         </ol>

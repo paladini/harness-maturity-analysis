@@ -61,6 +61,16 @@ for (const candidate of selection.candidates) {
         ),
     )
     .map((item) => item.path);
+  let codeEvidence;
+  if (candidate.codeEvidence) {
+    const { path: file, blobSha, size } = candidate.codeEvidence;
+    const actualBlob = run(cwd, ['rev-parse', `HEAD:${file}`]).trim();
+    const actualSize = Number(run(cwd, ['cat-file', '-s', actualBlob]).trim());
+    if (actualBlob !== blobSha || actualSize !== size) {
+      throw new Error(`Implementation evidence mismatch: ${candidate.name}/${file}`);
+    }
+    codeEvidence = { path: file, blobSha: actualBlob, size: actualSize, status: 'verified' };
+  }
   audit.entries.push({
     name: candidate.name,
     commit: head,
@@ -71,6 +81,7 @@ for (const candidate of selection.candidates) {
     lfsAttributeFiles,
     submodulePaths: tree.filter((item) => item.mode === '160000').map((item) => item.path),
     symlinkCount: tree.filter((item) => item.mode === '120000').length,
+    ...(codeEvidence ? { codeEvidence } : {}),
   });
   process.stdout.write(
     `${audit.entries.length}/${selection.candidates.length} ${candidate.name}: complete\n`,

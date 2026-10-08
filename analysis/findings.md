@@ -1,7 +1,7 @@
 # Findings — Phase 1
 
-> Historical analysis of the original cohort. Phase 1B expands the current
-> raw reports to 71 repositories under `harness-score@1.8.1`; the claims below
+> Historical analysis of the original cohort. The later showcase expansions
+> bring the current reports to 101 repositories under `harness-score@1.8.1`; the claims below
 > have not been revalidated against that run. The
 > [1.5.0 report baseline](https://github.com/paladini/harness-maturity-analysis/tree/8cbacd293dbd7fd4bfcc4506557423ae40a710b1/corpus/reports)
 > preserves the report evidence used by this document.

@@ -5,6 +5,7 @@
       "**",
       "!corpus/reports",
       "!corpus/checkout-audit-*.json",
+      "!corpus/popularity-search-*.json",
       "!results",
       "!docs",
       "!.cache",

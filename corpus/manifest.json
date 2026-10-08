@@ -1,7 +1,7 @@
 {
   "$comment": "Each entry pins a repository to an exact commit for reproducible scanning. runDate and toolVersion identify the current historical run. toolVersion is the npm spec passed to `npx --yes <toolVersion>`. scanSubpath scans only part of a monorepo when set. checkoutExcludes omits platform-incompatible, non-harness data from checkout. isStressCase marks entries chosen because the scanner is expected to score them poorly or surprisingly — see METHODOLOGY.md. Never edit an existing entry's commit in place: add a new entry or a dated note instead.",
   "schemaVersion": 2,
-  "runDate": "2026-10-07",
+  "runDate": "2026-10-08",
   "toolVersion": "harness-score@1.8.1",
   "entries": [
     {
@@ -643,6 +643,486 @@
       "scanSubpath": null,
       "isStressCase": true,
       "notes": "vercel/next.js adds the language-framework-controls stratum in Phase 1B wave 5. Control group for mature engineering practices that may not include an AI-agent harness. Deliberate large-repository or topology stress case; scan the whole tree."
+    },
+    {
+      "name": "openclaw",
+      "category": "ai-agent-frameworks",
+      "repoUrl": "https://github.com/openclaw/openclaw.git",
+      "commit": "c42bd6eae5e856b5265c737e70086a71d014f08e",
+      "scanSubpath": null,
+      "isStressCase": true,
+      "notes": "Phase 1C popularity cohort: Personal AI agent platform with tools and messaging integrations. Selection rank 1, 391646 GitHub stars on 2026-10-08. Scanned as a whole repository; AI product code is not itself evidence of a repository-local agent harness.",
+      "selection": {
+        "cohort": "ai-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 1103012935,
+        "githubStars": 391646,
+        "popularityRank": 1
+      }
+    },
+    {
+      "name": "ecc",
+      "category": "ai-coding-tools",
+      "repoUrl": "https://github.com/affaan-m/ECC.git",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Phase 1C popularity cohort: Agent harness runtime, executable CLIs, memory MCP server and provider abstraction library. Selection rank 2, 275335 GitHub stars on 2026-10-08. Scanned as a whole repository; AI product code is not itself evidence of a repository-local agent harness.",
+      "selection": {
+        "cohort": "ai-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 1136590548,
+        "githubStars": 275335,
+        "popularityRank": 2
+      }
+    },
+    {
+      "name": "hermes-agent",
+      "category": "ai-agent-frameworks",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent.git",
+      "commit": "38880bd2f1e90dbc9a1aeec03af62539ee64719a",
+      "scanSubpath": null,
+      "isStressCase": true,
+      "notes": "Phase 1C popularity cohort: Autonomous agent runtime with persistent memory and tool execution. Selection rank 3, 252155 GitHub stars on 2026-10-08. Scanned as a whole repository; AI product code is not itself evidence of a repository-local agent harness.",
+      "selection": {
+        "cohort": "ai-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 1024554267,
+        "githubStars": 252155,
+        "popularityRank": 3
+      }
+    },
+    {
+      "name": "deepseek-harness",
+      "category": "ai-agent-frameworks",
+      "repoUrl": "https://github.com/deepseek-ai/deepseek-harness.git",
+      "commit": "5badb15009ae1756c3afe0ae0cef1faafc290ccc",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Phase 1C popularity cohort: Plugin-based agent harness with CLI and web application. Selection rank 4, 245783 GitHub stars on 2026-10-08. Scanned as a whole repository; AI product code is not itself evidence of a repository-local agent harness.",
+      "selection": {
+        "cohort": "ai-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 1333065091,
+        "githubStars": 245783,
+        "popularityRank": 4
+      }
+    },
+    {
+      "name": "firecrawl",
+      "category": "ai-memory-retrieval",
+      "repoUrl": "https://github.com/firecrawl/firecrawl.git",
+      "commit": "8a0e91b00081c28929261a452d8914f2dc000a19",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Phase 1C popularity cohort: Web crawling and extraction API for AI agents and retrieval pipelines. Selection rank 5, 189747 GitHub stars on 2026-10-08. Scanned as a whole repository; AI product code is not itself evidence of a repository-local agent harness.",
+      "selection": {
+        "cohort": "ai-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 787076358,
+        "githubStars": 189747,
+        "popularityRank": 5
+      }
+    },
+    {
+      "name": "autogpt",
+      "category": "ai-agent-frameworks",
+      "repoUrl": "https://github.com/Significant-Gravitas/AutoGPT.git",
+      "commit": "ca259ccc21e1ff50357084d5f90cd8bfc6b544e8",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Phase 1C popularity cohort: Agent platform and workflow automation engine. Selection rank 6, 187701 GitHub stars on 2026-10-08. Scanned as a whole repository; AI product code is not itself evidence of a repository-local agent harness.",
+      "selection": {
+        "cohort": "ai-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 614765452,
+        "githubStars": 187701,
+        "popularityRank": 6
+      }
+    },
+    {
+      "name": "prompts-chat",
+      "category": "ai-interfaces",
+      "repoUrl": "https://github.com/f/prompts.chat.git",
+      "commit": "7d3f248962d1dca209d59e033524bcb86c2b26b8",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Phase 1C popularity cohort: Self-hostable prompt-management web application with application and database source, beyond its historical prompt collection. Selection rank 7, 172385 GitHub stars on 2026-10-08. Scanned as a whole repository; AI product code is not itself evidence of a repository-local agent harness.",
+      "selection": {
+        "cohort": "ai-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 574523116,
+        "githubStars": 172385,
+        "popularityRank": 7
+      }
+    },
+    {
+      "name": "transformers",
+      "category": "ai-model-inference",
+      "repoUrl": "https://github.com/huggingface/transformers.git",
+      "commit": "ab138d34c7e4d4291657e2b9a2df9be5107e0af2",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Phase 1C popularity cohort: Model implementation library for inference and training across text, vision and audio. Selection rank 8, 167059 GitHub stars on 2026-10-08. Scanned as a whole repository; AI product code is not itself evidence of a repository-local agent harness.",
+      "selection": {
+        "cohort": "ai-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 155220641,
+        "githubStars": 167059,
+        "popularityRank": 8
+      }
+    },
+    {
+      "name": "stable-diffusion-webui",
+      "category": "ai-vision-media",
+      "repoUrl": "https://github.com/AUTOMATIC1111/stable-diffusion-webui.git",
+      "commit": "82a973c04367123ae98bd9abdf80d9eda9b910e2",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Phase 1C popularity cohort: Stable Diffusion image-generation web application. Selection rank 9, 165215 GitHub stars on 2026-10-08. Scanned as a whole repository; AI product code is not itself evidence of a repository-local agent harness.",
+      "selection": {
+        "cohort": "ai-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 527591471,
+        "githubStars": 165215,
+        "popularityRank": 9
+      }
+    },
+    {
+      "name": "langflow",
+      "category": "ai-agent-frameworks",
+      "repoUrl": "https://github.com/langflow-ai/langflow.git",
+      "commit": "504c02fc47e76087b82b0e7cbe4186e9cdd916d4",
+      "scanSubpath": null,
+      "isStressCase": true,
+      "notes": "Phase 1C popularity cohort: Visual builder and backend runtime for AI agents and workflows. Selection rank 10, 155593 GitHub stars on 2026-10-08. Scanned as a whole repository; AI product code is not itself evidence of a repository-local agent harness.",
+      "selection": {
+        "cohort": "ai-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 599320067,
+        "githubStars": 155593,
+        "popularityRank": 10
+      }
+    },
+    {
+      "name": "open-webui",
+      "category": "ai-interfaces",
+      "repoUrl": "https://github.com/open-webui/open-webui.git",
+      "commit": "8bd8b4fac5e059578ac0c74b3c18d11139f88b7d",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Phase 1C popularity cohort: Self-hosted chat and model interaction application. Selection rank 11, 154229 GitHub stars on 2026-10-08. Scanned as a whole repository; AI product code is not itself evidence of a repository-local agent harness.",
+      "selection": {
+        "cohort": "ai-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 701547123,
+        "githubStars": 154229,
+        "popularityRank": 11
+      }
+    },
+    {
+      "name": "cc-switch",
+      "category": "ai-coding-tools",
+      "repoUrl": "https://github.com/farion1231/cc-switch.git",
+      "commit": "2db86e94da13365caae55bb08d09295e31500d21",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Phase 1C popularity cohort: Desktop manager for AI coding-agent providers, configuration and runtime integrations. Selection rank 12, 141488 GitHub stars on 2026-10-08. Scanned as a whole repository; AI product code is not itself evidence of a repository-local agent harness.",
+      "selection": {
+        "cohort": "ai-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 1031912724,
+        "githubStars": 141488,
+        "popularityRank": 12
+      }
+    },
+    {
+      "name": "spec-kit",
+      "category": "ai-coding-tools",
+      "repoUrl": "https://github.com/github/spec-kit.git",
+      "commit": "fa4b81dad128e7130f85e67bb4af52f8a96e0f45",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Phase 1C popularity cohort: Executable Specify CLI for configuring and operating AI coding-agent workflows. Selection rank 13, 140650 GitHub stars on 2026-10-08. Scanned as a whole repository; AI product code is not itself evidence of a repository-local agent harness.",
+      "selection": {
+        "cohort": "ai-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 1042367133,
+        "githubStars": 140650,
+        "popularityRank": 13
+      }
+    },
+    {
+      "name": "comfyui",
+      "category": "ai-vision-media",
+      "repoUrl": "https://github.com/Comfy-Org/ComfyUI.git",
+      "commit": "58b176f0c8427b1e3b1e0174ded3a7794641388b",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Phase 1C popularity cohort: Node-based generation UI and local diffusion inference backend. Selection rank 14, 136625 GitHub stars on 2026-10-08. Scanned as a whole repository; AI product code is not itself evidence of a repository-local agent harness.",
+      "selection": {
+        "cohort": "ai-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 589831718,
+        "githubStars": 136625,
+        "popularityRank": 14
+      }
+    },
+    {
+      "name": "llama-cpp",
+      "category": "ai-model-inference",
+      "repoUrl": "https://github.com/ggml-org/llama.cpp.git",
+      "commit": "fc9ce6b9d52a8504edcb262abc92737c2289f96c",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Phase 1C popularity cohort: C and C++ implementation of LLM inference and serving. Selection rank 15, 130692 GitHub stars on 2026-10-08. Scanned as a whole repository; AI product code is not itself evidence of a repository-local agent harness.",
+      "selection": {
+        "cohort": "ai-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 612354784,
+        "githubStars": 130692,
+        "popularityRank": 15
+      }
+    },
+    {
+      "name": "money-printer-turbo",
+      "category": "ai-vision-media",
+      "repoUrl": "https://github.com/harry0703/MoneyPrinterTurbo.git",
+      "commit": "9887b459e754ee073c056d988499b91136af9662",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Phase 1C popularity cohort: AI-assisted video generation application and automation pipeline. Selection rank 16, 129362 GitHub stars on 2026-10-08. Scanned as a whole repository; AI product code is not itself evidence of a repository-local agent harness.",
+      "selection": {
+        "cohort": "ai-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 770153867,
+        "githubStars": 129362,
+        "popularityRank": 16
+      }
+    },
+    {
+      "name": "codex",
+      "category": "ai-coding-tools",
+      "repoUrl": "https://github.com/openai/codex.git",
+      "commit": "9b738582b13c2cdbeff54af0afd04c50c3e7ba09",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Phase 1C popularity cohort: Open-source coding-agent CLI and runtime. Selection rank 17, 128374 GitHub stars on 2026-10-08. Scanned as a whole repository; AI product code is not itself evidence of a repository-local agent harness.",
+      "selection": {
+        "cohort": "ai-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 965415649,
+        "githubStars": 128374,
+        "popularityRank": 17
+      }
+    },
+    {
+      "name": "graphify",
+      "category": "ai-memory-retrieval",
+      "repoUrl": "https://github.com/Graphify-Labs/graphify.git",
+      "commit": "6478eb71237c86ee5fb6a35c702835e987ca445d",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Phase 1C popularity cohort: Knowledge-graph parser, CLI and retrieval tooling for AI coding assistants. Selection rank 18, 124880 GitHub stars on 2026-10-08. Scanned as a whole repository; AI product code is not itself evidence of a repository-local agent harness.",
+      "selection": {
+        "cohort": "ai-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 1200597263,
+        "githubStars": 124880,
+        "popularityRank": 18
+      }
+    },
+    {
+      "name": "browser-use",
+      "category": "ai-agent-frameworks",
+      "repoUrl": "https://github.com/browser-use/browser-use.git",
+      "commit": "c75e8476e26d18b7617643bc2ae082fae8eae431",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Phase 1C popularity cohort: Browser automation and agent runtime library. Selection rank 19, 117486 GitHub stars on 2026-10-08. Scanned as a whole repository; AI product code is not itself evidence of a repository-local agent harness.",
+      "selection": {
+        "cohort": "ai-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 881458615,
+        "githubStars": 117486,
+        "popularityRank": 19
+      }
+    },
+    {
+      "name": "pi-agent",
+      "category": "ai-coding-tools",
+      "repoUrl": "https://github.com/earendil-works/pi.git",
+      "commit": "ce950d78f424dcaf9f5d6a03ce80ab141130eb1d",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Phase 1C popularity cohort: LLM API, agent loop, terminal interface and coding-agent CLI toolkit. Selection rank 20, 113478 GitHub stars on 2026-10-08. Scanned as a whole repository; AI product code is not itself evidence of a repository-local agent harness.",
+      "selection": {
+        "cohort": "ai-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 1035029907,
+        "githubStars": 113478,
+        "popularityRank": 20
+      }
+    },
+    {
+      "name": "caveman",
+      "category": "ai-coding-tools",
+      "repoUrl": "https://github.com/JuliusBrussee/caveman.git",
+      "commit": "2e08b9177c07bb7249a8a2d1a6758e5db281d002",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Phase 1C popularity cohort: Executable token-compression proxy and agent tooling, beyond its companion textual skill. Selection rank 21, 110529 GitHub stars on 2026-10-08. Scanned as a whole repository; AI product code is not itself evidence of a repository-local agent harness.",
+      "selection": {
+        "cohort": "ai-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 1201173969,
+        "githubStars": 110529,
+        "popularityRank": 21
+      }
+    },
+    {
+      "name": "trading-agents",
+      "category": "ai-applications",
+      "repoUrl": "https://github.com/TauricResearch/TradingAgents.git",
+      "commit": "1394a3f72aa4393e1a98f51b382434c4b4c2d972",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Phase 1C popularity cohort: Multi-agent LLM research and financial-analysis software framework. Selection rank 22, 110249 GitHub stars on 2026-10-08. Scanned as a whole repository; AI product code is not itself evidence of a repository-local agent harness.",
+      "selection": {
+        "cohort": "ai-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 909213664,
+        "githubStars": 110249,
+        "popularityRank": 22
+      }
+    },
+    {
+      "name": "whisper",
+      "category": "ai-model-inference",
+      "repoUrl": "https://github.com/openai/whisper.git",
+      "commit": "86098128c0b4f24f0e2aa2994de830614b474227",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Phase 1C popularity cohort: Speech-recognition model implementation and transcription CLI. Selection rank 23, 110149 GitHub stars on 2026-10-08. Scanned as a whole repository; AI product code is not itself evidence of a repository-local agent harness.",
+      "selection": {
+        "cohort": "ai-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 537603333,
+        "githubStars": 110149,
+        "popularityRank": 23
+      }
+    },
+    {
+      "name": "gemini-cli",
+      "category": "ai-coding-tools",
+      "repoUrl": "https://github.com/google-gemini/gemini-cli.git",
+      "commit": "44d764ee579610bf73c43107f5e0422cd92588b9",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Phase 1C popularity cohort: Terminal coding agent and Gemini tool runtime. Selection rank 24, 107253 GitHub stars on 2026-10-08. Scanned as a whole repository; AI product code is not itself evidence of a repository-local agent harness.",
+      "selection": {
+        "cohort": "ai-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 968197216,
+        "githubStars": 107253,
+        "popularityRank": 24
+      }
+    },
+    {
+      "name": "deepseek-v3",
+      "category": "ai-model-inference",
+      "repoUrl": "https://github.com/deepseek-ai/DeepSeek-V3.git",
+      "commit": "9b4e9788e4a3a731f7567338ed15d3ec549ce03b",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Phase 1C popularity cohort: Model and inference implementation, rather than a documentation-only model announcement. Selection rank 25, 104512 GitHub stars on 2026-10-08. Scanned as a whole repository; AI product code is not itself evidence of a repository-local agent harness.",
+      "selection": {
+        "cohort": "ai-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 908531752,
+        "githubStars": 104512,
+        "popularityRank": 25
+      }
+    },
+    {
+      "name": "claude-mem",
+      "category": "ai-memory-retrieval",
+      "repoUrl": "https://github.com/thedotmack/claude-mem.git",
+      "commit": "71ddd11735d6dc38a6356fe376921fc216f2aa38",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Phase 1C popularity cohort: Persistent agent-memory capture, compression and retrieval services. Selection rank 26, 98185 GitHub stars on 2026-10-08. Scanned as a whole repository; AI product code is not itself evidence of a repository-local agent harness.",
+      "selection": {
+        "cohort": "ai-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 1048065319,
+        "githubStars": 98185,
+        "popularityRank": 26
+      }
+    },
+    {
+      "name": "autoresearch",
+      "category": "ai-model-inference",
+      "repoUrl": "https://github.com/karpathy/autoresearch.git",
+      "commit": "228791fb499afffb54b46200aca536f79142f117",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Phase 1C popularity cohort: Executable LLM training and evaluation setup for autonomous research experiments. Selection rank 27, 97520 GitHub stars on 2026-10-08. Scanned as a whole repository; AI product code is not itself evidence of a repository-local agent harness.",
+      "selection": {
+        "cohort": "ai-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 1174820787,
+        "githubStars": 97520,
+        "popularityRank": 27
+      }
+    },
+    {
+      "name": "deep-live-cam",
+      "category": "ai-vision-media",
+      "repoUrl": "https://github.com/hacksider/Deep-Live-Cam.git",
+      "commit": "24c32239078bc4c6c0914f4cbe6ee2938682d92e",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Phase 1C popularity cohort: Real-time face-swap and video-processing application. Selection rank 28, 96945 GitHub stars on 2026-10-08. Scanned as a whole repository; AI product code is not itself evidence of a repository-local agent harness.",
+      "selection": {
+        "cohort": "ai-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 695864515,
+        "githubStars": 96945,
+        "popularityRank": 28
+      }
+    },
+    {
+      "name": "agent-reach",
+      "category": "ai-memory-retrieval",
+      "repoUrl": "https://github.com/Panniantong/Agent-Reach.git",
+      "commit": "94f06c1969dfc1834001269d79d3ad0972d9dee6",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Phase 1C popularity cohort: CLI and adapters that provide web and platform data to AI agents. Selection rank 29, 93937 GitHub stars on 2026-10-08. Scanned as a whole repository; AI product code is not itself evidence of a repository-local agent harness.",
+      "selection": {
+        "cohort": "ai-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 1165277268,
+        "githubStars": 93937,
+        "popularityRank": 29
+      }
+    },
+    {
+      "name": "odysseus",
+      "category": "ai-interfaces",
+      "repoUrl": "https://github.com/odysseus-dev/odysseus.git",
+      "commit": "a8c147b238db01dbd00b57774ed8b453f1e43971",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Phase 1C popularity cohort: Self-hosted AI workspace with model, agent and research application services. Selection rank 30, 92063 GitHub stars on 2026-10-08. Scanned as a whole repository; AI product code is not itself evidence of a repository-local agent harness.",
+      "selection": {
+        "cohort": "ai-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 1255180606,
+        "githubStars": 92063,
+        "popularityRank": 30
+      }
     }
   ]
 }

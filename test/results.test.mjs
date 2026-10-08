@@ -74,9 +74,22 @@ describe('renderLeaderboardCsv', () => {
     const lines = csv.trim().split('\n');
     expect(lines).toHaveLength(2);
     expect(lines[0]).toBe(
-      'rank,name,category,repoUrl,commit,level,levelName,earned,max,percent,truncated,isStressCase,detectedHarnesses',
+      'rank,name,category,repoUrl,commit,level,levelName,earned,max,percent,truncated,isStressCase,detectedHarnesses,selectionCohort,selectionDate,githubStars,popularityRank',
     );
     expect(lines[1]).toContain('"cursor;claude-code"');
+    expect(lines[1]).toMatch(/,,,,\s*$/);
+  });
+
+  it('keeps popularity rank and observed stars separate from the harness rank and score', () => {
+    const entry = fakeEntry('popular', {
+      selection: { cohort: 'ai-popularity', date: '2026-10-08', githubStars: 92063, popularityRank: 30 },
+    });
+    const lines = renderLeaderboardCsv([{ entry, report: fakeReport({ percent: 70, level: 1 }) }])
+      .trim()
+      .split('\n');
+    expect(lines[1]).toMatch(/^1,popular,/);
+    expect(lines[1]).toContain(',70,100,70,');
+    expect(lines[1]).toMatch(/,ai-popularity,2026-10-08,92063,30$/);
   });
 });
 

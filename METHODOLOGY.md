@@ -66,8 +66,23 @@ controls. The [selection ledger](corpus/selection-2026-10-07.json) records the
 five preregistered waves, default branches, immutable SHAs, GitHub license
 metadata and approximate sizes. Some GitHub license identifiers are
 `NOASSERTION`; inclusion here makes no legal claim about their licenses.
-The 71-repository collection is a showcase and topology stress sample, not a
-statistical sample or a completed external-validity study.
+Phase 1C adds 30 new AI software repositories selected by descending GitHub
+stars within a [frozen discovery snapshot](corpus/popularity-search-2026-10-08.json).
+Canonical repository IDs deduplicate the 71-entry baseline, including renames.
+The [selection ledger](corpus/selection-2026-10-08-ai-popularity.json) records
+software purpose, immutable commits, verified implementation blobs, star counts
+and every higher-ranked exclusion. Pure guides, courses, awesome-lists,
+instructional skill packs and documentation-only product/model announcements
+are excluded. Mixed repositories qualify when they contain their own executable
+application, engine, CLI or reusable library; an installer or bootstrap for
+external instructions alone does not qualify.
+
+The 101-repository collection is a showcase and topology stress sample, not a
+statistical sample or a completed external-validity study. Popularity selects
+coverage; it does not determine the automated maturity score. The cohort is
+the top eligible new software in the recorded search universe, with no claim
+that GitHub topic labels perfectly identify every AI repository. All capped
+search pages extend below the 30th eligible candidate's star count.
 
 Stress cases folded into the corpus on purpose:
 
@@ -145,7 +160,7 @@ only once a valid blind-rating cohort exists.
 
 ## Limitations
 
-- **N=71 is qualitative, not statistical.** This corpus is curated for
+- **N=101 is qualitative, not statistical.** This corpus is curated for
   depth and stress-testing, not sampled for statistical power. It can
   surface real gaps and support strong qualitative findings; it cannot
   responsibly justify moving a numeric threshold (e.g. "sensors ≥ 60%") by
