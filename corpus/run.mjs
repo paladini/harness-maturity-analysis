@@ -2,10 +2,10 @@
 // Pinned-clone + harness-score scan runner. Zero dependencies, same invariant
 // as harness-score itself: given the same manifest, this produces the same
 // reports, byte for byte (module the machine-local `root` path).
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { createHistorySnapshot, historyFileName } from './lib/history.mjs';
+import { createHistorySnapshot, writeHistorySnapshot } from './lib/history.mjs';
 import { pinnedClone, runHarnessScore } from './lib/scan.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -87,17 +87,7 @@ if (isMain) {
   process.stdout.write(`\n${summary.length - failed.length}/${summary.length} scanned successfully.\n`);
   if (!only && failed.length === 0) {
     const snapshot = createHistorySnapshot(manifest, new Map(summary.map((result) => [result.name, result])));
-    const snapshotPath = path.join(HISTORY_DIR, historyFileName(snapshot.date, snapshot.toolVersion));
-    mkdirSync(HISTORY_DIR, { recursive: true });
-    const serialized = `${JSON.stringify(snapshot, null, 2)}\n`;
-    if (existsSync(snapshotPath) && readFileSync(snapshotPath, 'utf8') !== serialized) {
-      throw new Error(
-        `history snapshot already exists with different content: ${path.relative(ROOT, snapshotPath)}`,
-      );
-    }
-    if (!existsSync(snapshotPath)) {
-      writeFileSync(snapshotPath, serialized, 'utf8');
-    }
+    const snapshotPath = writeHistorySnapshot(HISTORY_DIR, snapshot);
     process.stdout.write(`History verified: ${path.relative(ROOT, snapshotPath)}\n`);
   } else if (!only) {
     process.stdout.write('History not recorded because the full run had failures.\n');

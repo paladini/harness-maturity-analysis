@@ -9,10 +9,14 @@ const selection = JSON.parse(readFileSync(selectionPath, 'utf8'));
 if (!/^\d{4}-\d{2}-\d{2}$/.test(selection.selectionDate)) {
   throw new Error('Selection date must use YYYY-MM-DD');
 }
+if (selection.runId !== undefined && !/^[a-z0-9]+(-[a-z0-9]+)*$/.test(selection.runId)) {
+  throw new Error('Selection runId must be a lowercase slug');
+}
 const run = (cwd, args) =>
   execFileSync('git', args, { cwd, encoding: 'utf8', windowsHide: true, maxBuffer: 32 * 1024 * 1024 });
 const audit = {
   date: selection.selectionDate,
+  ...(selection.runId ? { runId: selection.runId } : {}),
   note: 'Derived by reading each pinned Git tree and checking the worktree index. Submodules are not initialized, LFS smudging is disabled, and Git long-path support preserves deep paths. No repository code was executed.',
   entries: [],
 };
@@ -87,5 +91,11 @@ for (const candidate of selection.candidates) {
     `${audit.entries.length}/${selection.candidates.length} ${candidate.name}: complete\n`,
   );
 }
-writeFileSync(`corpus/checkout-audit-${selection.selectionDate}.json`, `${JSON.stringify(audit, null, 2)}\n`);
+const output = `corpus/checkout-audit-${selection.selectionDate}${selection.runId ? `-${selection.runId}` : ''}.json`;
+const serialized = `${JSON.stringify(audit, null, 2)}\n`;
+try {
+  writeFileSync(output, serialized, { encoding: 'utf8', flag: 'wx' });
+} catch (error) {
+  if (error.code !== 'EEXIST' || readFileSync(output, 'utf8') !== serialized) throw error;
+}
 process.stdout.write(`Audited ${audit.entries.length} complete pinned checkouts\n`);

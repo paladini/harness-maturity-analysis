@@ -1,0 +1,456 @@
+{
+  "date": "2026-10-08",
+  "runId": "crypto-popularity",
+  "note": "Derived by reading each pinned Git tree and checking the worktree index. Submodules are not initialized, LFS smudging is disabled, and Git long-path support preserves deep paths. No repository code was executed.",
+  "entries": [
+    {
+      "name": "bitcoin",
+      "commit": "acdb32693417c1b6596edfbdd19ab793c010d34f",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 3057,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "src/validation.cpp",
+        "blobSha": "9d1e1e35635453e6a28b32c0ca8f8efc5d835672",
+        "size": 313182,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "union",
+      "commit": "031785bb6dc6b957c624e62bc64c184409c97d7b",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 4439,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [
+        ".gitattributes",
+        "ceremony/.gitattributes",
+        "docs/.gitattributes",
+        "site/.gitattributes"
+      ],
+      "submodulePaths": [],
+      "symlinkCount": 1,
+      "codeEvidence": {
+        "path": "11-cometbls/client_state.go",
+        "blobSha": "853920554bd3c674601f8bc87ae1557c4ee55d28",
+        "size": 11586,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "fuel-core",
+      "commit": "251c8059cc072c780f6e1e2900d8771c8eb99403",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 1011,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "crates/fuel-core/src/service.rs",
+        "blobSha": "230764aac914cd51fd309b610064d6a91836690c",
+        "size": 21518,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "freqtrade",
+      "commit": "a9a917649ff8e283cff9c37504863b02da88615a",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 781,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 1,
+      "codeEvidence": {
+        "path": "freqtrade/freqtradebot.py",
+        "blobSha": "9cdb78530fac801302202fce5d839003c72e9da2",
+        "size": 122138,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "go-ethereum",
+      "commit": "466c37e3329b119a222b5a275f696da697f6103b",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 2409,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [
+        "tests/evm-benchmarks",
+        "tests/testdata"
+      ],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "accounts/abi/abi.go",
+        "blobSha": "f75278c8b1013b8f8c6f24c8f65d2eb3c7359dec",
+        "size": 10805,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "ccxt",
+      "commit": "f0aca06eb7482f083bed8406fadfcc0c05e45b1c",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 9928,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 19,
+      "codeEvidence": {
+        "path": "ts/src/binance.ts",
+        "blobSha": "eb50a05589cb240c24af41eb75363279e5f7af80",
+        "size": 847383,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "anoma",
+      "commit": "5bcbf8487a331a20748299ed4fd4d62027f0ffa8",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 156,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "lib/node/transaction/mempool/mempool.ex",
+        "blobSha": "0693279804783db4767a6016fa8d1af84dfd70ed",
+        "size": 17510,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "linera-protocol",
+      "commit": "672d97bb2fce3127db351069df72f1d225d8f263",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 1620,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [
+        "linera-bridge/src/solidity/lib/forge-std",
+        "linera-bridge/src/solidity/lib/openzeppelin-contracts"
+      ],
+      "symlinkCount": 28,
+      "codeEvidence": {
+        "path": "linera-base/src/crypto/ed25519.rs",
+        "blobSha": "8b343d35eec79698056df2d2bf130456701fb804",
+        "size": 15755,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "shardeum",
+      "commit": "0c454caf067f7b896569eabdd5f47cb8b61738b3",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 404,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "src/index.ts",
+        "blobSha": "a4acd47d708fdbdec5b4171b8fb46cffdc5201f0",
+        "size": 401509,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "hey",
+      "commit": "44dee0c1223b9202699915fd3e92e670fd8e34e6",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 684,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "src/components/Composer/NewPublication.tsx",
+        "blobSha": "aa5133db04c8a155211a73261a3488e56ccf4196",
+        "size": 10090,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "openzeppelin-contracts",
+      "commit": "cd3284fde41f1c56d19078f580a0aed751cf11d2",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 968,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [
+        "lib/erc4626-tests",
+        "lib/forge-std",
+        "lib/halmos-cheatcodes"
+      ],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "contracts/access/AccessControl.sol",
+        "blobSha": "e5137ad2c053e5291b987e88c3410de8e3be21d8",
+        "size": 7035,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "solidity",
+      "commit": "37e27efdba13d47695f9a579df49129d6504ed53",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 11731,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [
+        "deps/fmtlib",
+        "deps/fuzztest",
+        "deps/nlohmann-json",
+        "deps/range-v3",
+        "test/ethdebugSchemaTests/ethdebug-format"
+      ],
+      "symlinkCount": 5,
+      "codeEvidence": {
+        "path": "libevmasm/Assembly.cpp",
+        "blobSha": "60cddc4ba11ee6c6d2f60c2c98a231b3d202e638",
+        "size": 45951,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "fhevm",
+      "commit": "11b29f7b6b86fa8c1621eb4ec00c0b6a072f5675",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 5038,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [
+        "coprocessor/fhevm-engine/fhevm-keys/.gitattributes",
+        "coprocessor/fhevm-engine/tfhe-worker/.gitattributes"
+      ],
+      "submodulePaths": [],
+      "symlinkCount": 6,
+      "codeEvidence": {
+        "path": "library-solidity/lib/FHE.sol",
+        "blobSha": "23845dac99fe5de376f497d4918f8ace005a4cdd",
+        "size": 309747,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "hummingbot",
+      "commit": "9af100d6822da7d2d0291a906c730ef172284ee2",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 1892,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "bin/hummingbot.py",
+        "blobSha": "abc5702d5001aaec697ee349f39fbaeb7e153e99",
+        "size": 4079,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "web3-js",
+      "commit": "bf1691765bd9d4b0f7a4479e915207707d69226d",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 1649,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 206,
+      "codeEvidence": {
+        "path": "packages/web3-core/src/web3_request_manager.ts",
+        "blobSha": "21783229a5fdf299f57b0cc5b77d1d18a9ecea29",
+        "size": 15016,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "subquery",
+      "commit": "51e2a2c985c3c869510a36e8c37a3b3557af4a3c",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 1156,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "packages/cli/src/commands/init.ts",
+        "blobSha": "09e632b4f91a6b17b28e264687cb73d0f03b9f75",
+        "size": 8442,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "hyperledger-fabric",
+      "commit": "1f06f620a21dbd7089dca01fd54b0fbbc5798d5a",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 6401,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "core/chaincode/chaincode_support.go",
+        "blobSha": "f1ee893b70f46bd06d52ce247ac77249e0cae033",
+        "size": 12853,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "diem",
+      "commit": "fc4714a8ea273b6efe8b13dbce72ea60aad9a16c",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 7595,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 3,
+      "codeEvidence": {
+        "path": "consensus/src/consensus_provider.rs",
+        "blobSha": "aa82c499683d88c8a1c9a42802e68f7d7ffbb96f",
+        "size": 3039,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "sismo-badges",
+      "commit": "09206e396ca2342a88f7eaa897d55783f019f759",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 474,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "contracts/attesters/hydra-s1/HydraS1AccountboundAttester.sol",
+        "blobSha": "5538b8822edd4040a9bea6d1fd23aa40db95c8f1",
+        "size": 14671,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "dogecoin",
+      "commit": "47a303a449999314abcf83bd1fc7e77dd4540fcd",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 1594,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "src/validation.cpp",
+        "blobSha": "97d4ff56ac29b9b6c46d947c5ed80778826d4497",
+        "size": 198933,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "solana",
+      "commit": "7700cb3128c1f19820de67b81aa45d18f73d2ac0",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 2192,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 26,
+      "codeEvidence": {
+        "path": "account-decoder/src/lib.rs",
+        "blobSha": "65b60ad5cfc0db0c9c04222e480f059ee52ec215",
+        "size": 8883,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "truffle",
+      "commit": "5b5312dbd5ffe2d5ec575e078ff09d98eb1b45c2",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 2282,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "packages/contract/lib/contract/index.js",
+        "blobSha": "34e4f8484f65651432dfe8d85e92f0d0cd51a141",
+        "size": 4743,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "metamask-extension",
+      "commit": "a284fe9f478fb717712350ce0d1fedb58a1a6c10",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 10653,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "app/scripts/metamask-controller.js",
+        "blobSha": "816a1a02c647ab77180eabc77f43967a2278a93c",
+        "size": 263381,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "quip-miner",
+      "commit": "d58a7c79826c22b9bc071850a8f3bb453dd186b5",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 103,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "crates/quip-coordinator/src/chain/extrinsic.rs",
+        "blobSha": "cf044e67d78f7899e506417372834a0e98f1ba1f",
+        "size": 26416,
+        "status": "verified"
+      }
+    },
+    {
+      "name": "quip-ethereum-sdk",
+      "commit": "355f888cdffb643f6acdd50241fc44a93b37e230",
+      "checkoutStatus": "complete",
+      "trackedTreeEntries": 29,
+      "longPathCount": 0,
+      "ntfsInvalidPaths": [],
+      "lfsAttributeFiles": [],
+      "submodulePaths": [],
+      "symlinkCount": 0,
+      "codeEvidence": {
+        "path": "contracts/QuipWallet.sol",
+        "blobSha": "e25bdb8d59d79d85c9a0a7d086bab24f7fc302df",
+        "size": 5191,
+        "status": "verified"
+      }
+    }
+  ]
+}

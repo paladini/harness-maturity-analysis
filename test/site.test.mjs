@@ -32,6 +32,20 @@ function fakeEntry(name, overrides = {}) {
 }
 
 describe('renderSite', () => {
+  it('labels crypto popularity independently of maturity and the AI cohort', () => {
+    const entry = fakeEntry('crypto', {
+      category: 'crypto-protocols',
+      selection: { cohort: 'crypto-popularity', date: '2026-10-08', githubStars: 90328, popularityRank: 1 },
+    });
+    const html = renderSite([{ entry, report: fakeReport({ percent: 25, level: 0 }) }], {
+      toolVersion: 'harness-score@1.8.1',
+      entries: [entry],
+    });
+    expect(html).toContain('Crypto software cohort: popularity #1');
+    expect(html).toContain('90,328 GitHub stars');
+    expect(html).toContain('25/100');
+    expect(html).not.toContain('AI software cohort');
+  });
   it('produces a well-formed document with a matching title and repo count', () => {
     const entries = [fakeEntry('one'), fakeEntry('two')];
     const rows = [
