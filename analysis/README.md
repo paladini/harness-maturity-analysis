@@ -2,6 +2,10 @@
 
 See [METHODOLOGY.md](../METHODOLOGY.md) for the full protocol.
 
+- [Phase 1E execution and media editing analysis](phase-1e-execution.md)
+  covers the 25 media editing projects added to the 151-entry corpus. It
+  supplies reproducible scan evidence without blind human ratings.
+
 - [Phase 1D execution and crypto analysis](phase-1d-execution.md) covers the
   25 cryptocurrency projects added to the 126-entry showcase corpus. It supplies
   scanner evidence and software-source provenance without blind human ratings.

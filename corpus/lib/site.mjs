@@ -62,7 +62,9 @@ function renderLeaderboardRow(row, rank) {
   const truncatedTag = report.truncated ? '<span class="stress-tag">truncated scan</span>' : '';
   const selection = entry.selection;
   const archiveTag = selection?.archived ? '<span class="stress-tag">archived snapshot</span>' : '';
-  const provenance = ['ai-popularity', 'crypto-popularity', 'media-editing-popularity'].includes(selection?.cohort)
+  const provenance = ['ai-popularity', 'crypto-popularity', 'media-editing-popularity'].includes(
+    selection?.cohort,
+  )
     ? `<p class="board-provenance">${
         selection.cohort === 'crypto-popularity'
           ? `Crypto software cohort: popularity #${esc(selection.popularityRank)} · `
@@ -185,6 +187,9 @@ export function renderSite(rows, manifest, historyRuns = []) {
   const cryptoCount = manifest.entries.filter(
     (entry) => entry.selection?.cohort === 'crypto-popularity',
   ).length;
+  const mediaEditingCount = manifest.entries.filter(
+    (entry) => entry.selection?.cohort === 'media-editing-popularity',
+  ).length;
 
   return `<!doctype html>
 <html lang="en">
@@ -202,7 +207,7 @@ ${SITE_CSS}
 <div class="page">
 
   <header class="masthead">
-    <p class="eyebrow">harness-maturity-analysis · phase 1D showcase</p>
+    <p class="eyebrow">harness-maturity-analysis · phase 1E showcase</p>
     <h1>Does the score<br>hold up?</h1>
     <p class="lede">
       ${scannedCount} of ${totalCount} pinned repositories, one deterministic scanner,
@@ -212,6 +217,7 @@ ${SITE_CSS}
       This collection supplies scanner evidence; independent blind human ratings are still pending.
       ${popularityCount ? `<span class="cohort-note">Includes ${popularityCount} new AI software projects selected by GitHub stars. <a href="https://github.com/paladini/harness-maturity-analysis/issues/3">Selection and software eligibility</a>.</span>` : ''}
       ${cryptoCount ? `<span class="cohort-note">Includes ${cryptoCount} cryptocurrency software projects selected by accumulated GitHub stars. <a href="https://github.com/paladini/harness-maturity-analysis/issues/5">Crypto selection and software eligibility</a>.</span>` : ''}
+      ${mediaEditingCount ? `<span class="cohort-note">Media editing cohort selection: ${mediaEditingCount} projects from a recorded bounded GitHub search union. <a href="https://github.com/paladini/harness-maturity-analysis/issues/7">Selection and source evidence</a>.</span>` : ''}
     </p>
     <div class="meta-strip">
       <span>${esc(manifest.toolVersion)}</span>

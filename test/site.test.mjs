@@ -61,6 +61,10 @@ describe('renderSite', () => {
       entries: [entry],
     });
     expect(html).toContain('Media editing software cohort: 44,406 GitHub stars on 2026-10-09');
+    expect(html).toContain(
+      'Media editing cohort selection: 1 projects from a recorded bounded GitHub search union',
+    );
+    expect(html).toContain('issues/7');
     expect(html).toContain('media editing');
     expect(html).not.toContain('popularity #');
   });
