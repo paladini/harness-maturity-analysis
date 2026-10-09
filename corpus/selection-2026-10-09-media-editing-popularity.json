@@ -14,7 +14,7 @@
   "searchTimestamp": "2026-10-09T18:17:35.471308+00:00",
   "cutoffStars": 1326,
   "searchUnionBoundaryRequirement": "All capped queries returned 100 items and each minimum recorded star count is below the admission cutoff; GitHub incomplete_results was false for all eight queries. This supports the cutoff only within the bounded union.",
-  "analysisIssue": null,
+  "analysisIssue": "https://github.com/paladini/harness-maturity-analysis/issues/7",
   "blindRatings": false,
   "candidates": [
     {

@@ -46,6 +46,24 @@ describe('renderSite', () => {
     expect(html).toContain('25/100');
     expect(html).not.toContain('AI software cohort');
   });
+  it('labels the media editing cohort with observed stars without implying a global rank', () => {
+    const entry = fakeEntry('lossless-cut', {
+      category: 'media-editing',
+      selection: {
+        cohort: 'media-editing-popularity',
+        date: '2026-10-09',
+        githubStars: 44406,
+        selectionMode: 'popular',
+      },
+    });
+    const html = renderSite([{ entry, report: fakeReport({ percent: 44, level: 1 }) }], {
+      toolVersion: 'harness-score@1.8.1',
+      entries: [entry],
+    });
+    expect(html).toContain('Media editing software cohort: 44,406 GitHub stars on 2026-10-09');
+    expect(html).toContain('media editing');
+    expect(html).not.toContain('popularity #');
+  });
   it('produces a well-formed document with a matching title and repo count', () => {
     const entries = [fakeEntry('one'), fakeEntry('two')];
     const rows = [

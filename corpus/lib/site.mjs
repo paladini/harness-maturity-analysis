@@ -34,6 +34,7 @@ const CATEGORY_LABELS = {
   'crypto-developer-tools': 'blockchain developer tools',
   'crypto-onchain-apps': 'on-chain applications',
   'crypto-mining': 'cryptocurrency mining software',
+  'media-editing': 'media editing',
 };
 
 function esc(s) {
@@ -61,8 +62,14 @@ function renderLeaderboardRow(row, rank) {
   const truncatedTag = report.truncated ? '<span class="stress-tag">truncated scan</span>' : '';
   const selection = entry.selection;
   const archiveTag = selection?.archived ? '<span class="stress-tag">archived snapshot</span>' : '';
-  const provenance = ['ai-popularity', 'crypto-popularity'].includes(selection?.cohort)
-    ? `<p class="board-provenance">${selection.cohort === 'crypto-popularity' ? 'Crypto software' : 'AI software'} cohort: popularity #${esc(selection.popularityRank)} · ${esc(Number(selection.githubStars).toLocaleString('en-US'))} GitHub stars on ${esc(selection.date)}</p>`
+  const provenance = ['ai-popularity', 'crypto-popularity', 'media-editing-popularity'].includes(selection?.cohort)
+    ? `<p class="board-provenance">${
+        selection.cohort === 'crypto-popularity'
+          ? `Crypto software cohort: popularity #${esc(selection.popularityRank)} · `
+          : selection.cohort === 'ai-popularity'
+            ? `AI software cohort: popularity #${esc(selection.popularityRank)} · `
+            : 'Media editing software cohort: '
+      }${esc(Number(selection.githubStars).toLocaleString('en-US'))} GitHub stars on ${esc(selection.date)}</p>`
     : '';
   return `
       <div class="board-row">
