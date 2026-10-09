@@ -88,7 +88,20 @@ Stars observed on the selection date approximate accumulated popularity,
 not historical peak stars. Cryptocurrency protocols, wallets, contracts and
 trading tools remain distinct categories within this repository-local study.
 
-The 126-repository collection is a showcase and topology stress sample, not a
+Phase 1E adds 25 media editing software projects selected from a recorded
+bounded union of GitHub searches on video, audio, image, vector graphics and
+animation tools. The [search snapshot](corpus/popularity-search-2026-10-09-media-editing.json)
+and [selection ledger](corpus/selection-2026-10-09-media-editing-popularity.json)
+preserve query counts, canonical repository IDs, observed stars, exact commits,
+implementation-file evidence and higher-ranked exclusions. The bounded union
+had 645 unique repositories; several searches reached GitHub's 100-result cap,
+so this cohort is not a claim about GitHub's universal top 25. Canonical IDs
+deduplicate the 126-entry baseline. Stars are selection metadata, not a score
+input or a historical peak. The [execution report](analysis/phase-1e-execution.md)
+contains scanner outcomes and limitations. This remains a showcase expansion
+without blind human ratings.
+
+The 151-repository collection is a showcase and topology stress sample, not a
 statistical sample or a completed external-validity study. Popularity selects
 coverage; it does not determine the automated maturity score. The cohort is
 the top eligible new software in the recorded search universe, with no claim

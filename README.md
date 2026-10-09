@@ -7,13 +7,15 @@ repositories** — scored deterministically with
 a blind human read of the same repos, and used to find what harness-score's
 maturity model still gets wrong.
 
-> **Status: Phase 1D showcase expansion.** The corpus now includes 126 pinned
+> **Status: Phase 1E showcase expansion.** The corpus now includes 151 pinned
 > repositories: the original 21, 50 stratified additions from
 > [issue #2](https://github.com/paladini/harness-maturity-analysis/issues/2),
 > and 30 new AI software projects selected by GitHub popularity in
 > [issue #3](https://github.com/paladini/harness-maturity-analysis/issues/3),
-> plus 25 cryptocurrency software projects from
-> [issue #5](https://github.com/paladini/harness-maturity-analysis/issues/5).
+> 25 cryptocurrency software projects from
+> [issue #5](https://github.com/paladini/harness-maturity-analysis/issues/5),
+> and 25 media editing projects selected from a recorded GitHub search union
+> in [issue #7](https://github.com/paladini/harness-maturity-analysis/issues/7).
 > The current scanner pin is `harness-score@1.8.1`. The Q2 findings below
 > describe the original 21-repository analysis; Q1 still needs independent
 > blind human ratings.
@@ -46,9 +48,13 @@ Every repository is pinned to an exact commit in
 50 repositories' default branches, SHAs, categories, provenance, size and
 research waves. The [Phase 1C selection](corpus/selection-2026-10-08-ai-popularity.json)
 records the 30 software candidates, observed stars, executable-source evidence,
-canonical GitHub IDs and higher-ranked exclusions. The generated
+canonical GitHub IDs and higher-ranked exclusions.
+The [Phase 1E media editing selection](corpus/selection-2026-10-09-media-editing-popularity.json)
+records the 25 selected repositories, observed stars, pinned commits, source
+evidence and higher-ranked exclusions. Its discovery snapshot is
+[here](corpus/popularity-search-2026-10-09-media-editing.json). The generated
 [`results/leaderboard.md`](results/leaderboard.md) contains the current
-scores for all 126 repositories; see also the
+scores for all 151 repositories; see also the
 [`results/dimension-heatmap.md`](results/dimension-heatmap.md),
 [`results/leaderboard.csv`](results/leaderboard.csv), and
 [`results/score-history.md`](results/score-history.md).
@@ -67,6 +73,12 @@ The [crypto execution and analysis](analysis/phase-1d-execution.md) records the
 25 reports, applicable maxima, levels and limitations. This assesses harness
 artifacts, not token value, trading performance or blockchain security.
 
+The [Phase 1E execution and analysis](analysis/phase-1e-execution.md) records
+the media editing cohort's bounded search scope, pinned scan outcomes and
+limitations. GitHub stars are source metadata observed at selection time, not
+a global rank or part of the harness score. This scanner-only expansion adds
+no blind human ratings.
+
 The AI software cohort is selected by descending GitHub stars within the
 [recorded search universe](corpus/popularity-search-2026-10-08.json), after
 excluding the existing corpus, instructional-only projects and general
@@ -78,8 +90,9 @@ existing columns; older entries without that selection metadata have blank
 cells in those columns.
 
 Multiple complete runs on the same day use an optional `manifest.runId`.
-The current `crypto-popularity` run appends its own history identity while
-preserving the earlier 101-entry snapshot from the same date and scanner.
+Each popularity cohort has its own `manifest.runId` history identity. The
+media editing run appends a 151-entry same-day snapshot and preserves all
+earlier history files.
 
 To collect a future discovery snapshot with the authenticated GitHub CLI:
 

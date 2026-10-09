@@ -1,7 +1,7 @@
 {
   "$comment": "Each entry pins a repository to an exact commit for reproducible scanning. runDate and toolVersion identify the current historical run. toolVersion is the npm spec passed to `npx --yes <toolVersion>`. scanSubpath scans only part of a monorepo when set. checkoutExcludes omits platform-incompatible, non-harness data from checkout. isStressCase marks entries chosen because the scanner is expected to score them poorly or surprisingly — see METHODOLOGY.md. Never edit an existing entry's commit in place: add a new entry or a dated note instead.",
   "schemaVersion": 2,
-  "runDate": "2026-10-08",
+  "runDate": "2026-10-09",
   "toolVersion": "harness-score@1.8.1",
   "entries": [
     {
@@ -1548,7 +1548,432 @@
         "popularityRank": 25,
         "archived": false
       }
+    },
+    {
+      "name": "lossless-cut",
+      "category": "media-editing",
+      "repoUrl": "https://github.com/mifi/lossless-cut.git",
+      "commit": "70f2663a7a7c995903701acd2f616d057f4fdc2f",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "The swiss army knife of lossless video/audio editing Media editing popularity cohort: 44406 accumulated GitHub stars observed on 2026-10-09; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-09-media-editing-popularity.json.",
+      "selection": {
+        "cohort": "media-editing-popularity",
+        "date": "2026-10-09",
+        "githubRepositoryId": 72343657,
+        "githubStars": 44406,
+        "selectionMode": "popular",
+        "archived": false
+      }
+    },
+    {
+      "name": "photocraft",
+      "category": "media-editing",
+      "repoUrl": "https://github.com/storytold/photocraft.git",
+      "commit": "9f23d652627cce69471b9b64859a7290940e8c6c",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "An open-source, clean-room reimplementation of Adobe Photoshop in pure Rust Media editing popularity cohort: 33546 accumulated GitHub stars observed on 2026-10-09; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-09-media-editing-popularity.json.",
+      "selection": {
+        "cohort": "media-editing-popularity",
+        "date": "2026-10-09",
+        "githubRepositoryId": 1398080271,
+        "githubStars": 33546,
+        "selectionMode": "popular",
+        "archived": false
+      }
+    },
+    {
+      "name": "graphite",
+      "category": "media-editing",
+      "repoUrl": "https://github.com/GraphiteEditor/Graphite.git",
+      "commit": "377ba8f00c369a635d7ee2d1c637fa0799983436",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Community-built comprehensive 2D content creation appplication for graphic design, digital art, and interactive real-time motion graphics powered by a node-based procedural graphics engine Media editing popularity cohort: 27514 accumulated GitHub stars observed on 2026-10-09; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-09-media-editing-popularity.json.",
+      "selection": {
+        "cohort": "media-editing-popularity",
+        "date": "2026-10-09",
+        "githubRepositoryId": 258967860,
+        "githubStars": 27514,
+        "selectionMode": "popular",
+        "archived": false
+      }
+    },
+    {
+      "name": "shotcut",
+      "category": "media-editing",
+      "repoUrl": "https://github.com/mltframework/shotcut.git",
+      "commit": "895ee392b6e0381353fbdc48b6889da9d3ad5c27",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "cross-platform (Qt), open-source (GPLv3) video editor Media editing popularity cohort: 15375 accumulated GitHub stars observed on 2026-10-09; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-09-media-editing-popularity.json.",
+      "selection": {
+        "cohort": "media-editing-popularity",
+        "date": "2026-10-09",
+        "githubRepositoryId": 4118776,
+        "githubStars": 15375,
+        "selectionMode": "popular",
+        "archived": false
+      }
+    },
+    {
+      "name": "imagetoolbox",
+      "category": "media-editing",
+      "repoUrl": "https://github.com/T8RIN/ImageToolbox.git",
+      "commit": "f547954b9eb8a6953bd71cfb2fb0185ff2ad5641",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "🖼️ Image Toolbox is a powerful app for advanced image manipulation. It offers dozens of features, from basic tools like crop and draw to filters, OCR, and a wide range of image processing options Media editing popularity cohort: 14918 accumulated GitHub stars observed on 2026-10-09; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-09-media-editing-popularity.json.",
+      "selection": {
+        "cohort": "media-editing-popularity",
+        "date": "2026-10-09",
+        "githubRepositoryId": 478710402,
+        "githubStars": 14918,
+        "selectionMode": "popular",
+        "archived": false
+      }
+    },
+    {
+      "name": "palmier-pro",
+      "category": "media-editing",
+      "repoUrl": "https://github.com/palmier-io/palmier-pro.git",
+      "commit": "c948160b8fc304a3b2a86bf4492329cfedf0230f",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "macOS video editor built for AI Media editing popularity cohort: 14535 accumulated GitHub stars observed on 2026-10-09; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-09-media-editing-popularity.json.",
+      "selection": {
+        "cohort": "media-editing-popularity",
+        "date": "2026-10-09",
+        "githubRepositoryId": 1203468533,
+        "githubStars": 14535,
+        "selectionMode": "popular",
+        "archived": false
+      }
+    },
+    {
+      "name": "olive",
+      "category": "media-editing",
+      "repoUrl": "https://github.com/olive-editor/olive.git",
+      "commit": "7e0e94abf6610026aebb9ddce8564c39522fac6e",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Free open-source non-linear video editor Media editing popularity cohort: 9132 accumulated GitHub stars observed on 2026-10-09; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-09-media-editing-popularity.json.",
+      "selection": {
+        "cohort": "media-editing-popularity",
+        "date": "2026-10-09",
+        "githubRepositoryId": 115342681,
+        "githubStars": 9132,
+        "selectionMode": "popular",
+        "archived": false
+      }
+    },
+    {
+      "name": "vue-fabric-editor",
+      "category": "media-editing",
+      "repoUrl": "https://github.com/ikuaitu/vue-fabric-editor.git",
+      "commit": "b3bdcfb0bd6d8f98e7483cf561ac03ba56c0d889",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "快图设计-基于fabric.js和Vue的开源图片编辑器，可自定义字体、素材、设计模板。fabric.js and Vue based image editor, can customize fonts, materials, design templates. Media editing popularity cohort: 7992 accumulated GitHub stars observed on 2026-10-09; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-09-media-editing-popularity.json.",
+      "selection": {
+        "cohort": "media-editing-popularity",
+        "date": "2026-10-09",
+        "githubRepositoryId": 532317770,
+        "githubStars": 7992,
+        "selectionMode": "popular",
+        "archived": false
+      }
+    },
+    {
+      "name": "jspaint",
+      "category": "media-editing",
+      "repoUrl": "https://github.com/1j01/jspaint.git",
+      "commit": "53be67ab8c47cc0d2168899e7481bc04839c4c81",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "🎨 Classic MS Paint, ＲＥＶＩＶＥＤ + ✨Extras Media editing popularity cohort: 7889 accumulated GitHub stars observed on 2026-10-09; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-09-media-editing-popularity.json.",
+      "selection": {
+        "cohort": "media-editing-popularity",
+        "date": "2026-10-09",
+        "githubRepositoryId": 16602433,
+        "githubStars": 7889,
+        "selectionMode": "popular",
+        "archived": false
+      }
+    },
+    {
+      "name": "filmcraft",
+      "category": "media-editing",
+      "repoUrl": "https://github.com/storytold/filmcraft.git",
+      "commit": "7b6c134472287db4367fca80bcb498240ba36567",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "An open-source, clean-room reimplementation of Adobe Premiere Pro built in pure Rust. Media editing popularity cohort: 6680 accumulated GitHub stars observed on 2026-10-09; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-09-media-editing-popularity.json.",
+      "selection": {
+        "cohort": "media-editing-popularity",
+        "date": "2026-10-09",
+        "githubRepositoryId": 1398091865,
+        "githubStars": 6680,
+        "selectionMode": "popular",
+        "archived": false
+      }
+    },
+    {
+      "name": "editly",
+      "category": "media-editing",
+      "repoUrl": "https://github.com/mifi/editly.git",
+      "commit": "dc46674052eacd15ef6e0f563a58eb378b3804ad",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Slick, declarative command line video editing & API Media editing popularity cohort: 5522 accumulated GitHub stars observed on 2026-10-09; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-09-media-editing-popularity.json.",
+      "selection": {
+        "cohort": "media-editing-popularity",
+        "date": "2026-10-09",
+        "githubRepositoryId": 255940939,
+        "githubStars": 5522,
+        "selectionMode": "popular",
+        "archived": false
+      }
+    },
+    {
+      "name": "concat",
+      "category": "media-editing",
+      "repoUrl": "https://github.com/jub0t/concat.git",
+      "commit": "948b6db90448b2f0cda865f38a614d18353ff557",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Beta: The truly free, and open-source cross-platform CapCut replacement (supports MCPs). Media editing popularity cohort: 4398 accumulated GitHub stars observed on 2026-10-09; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-09-media-editing-popularity.json.",
+      "selection": {
+        "cohort": "media-editing-popularity",
+        "date": "2026-10-09",
+        "githubRepositoryId": 1346499044,
+        "githubStars": 4398,
+        "selectionMode": "popular",
+        "archived": false
+      }
+    },
+    {
+      "name": "pinta",
+      "category": "media-editing",
+      "repoUrl": "https://github.com/PintaProject/Pinta.git",
+      "commit": "c50533f226c2d8e09fbd8a2120eee72ee0bbb16e",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Simple GTK Paint Program Media editing popularity cohort: 4079 accumulated GitHub stars observed on 2026-10-09; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-09-media-editing-popularity.json.",
+      "selection": {
+        "cohort": "media-editing-popularity",
+        "date": "2026-10-09",
+        "githubRepositoryId": 2358713,
+        "githubStars": 4079,
+        "selectionMode": "popular",
+        "archived": false
+      }
+    },
+    {
+      "name": "clypra",
+      "category": "media-editing",
+      "repoUrl": "https://github.com/AIEraDev/Clypra.git",
+      "commit": "4790cde09ee01acdd167cee68e889fde6cdf42ed",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "A hardware-accelerated video editor built on Rust, Tauri v2, and React 19. Sub-10ms frame decoding, GPU-native rendering, and a frame-accurate timeline — all free and open source under MIT. Media editing popularity cohort: 3311 accumulated GitHub stars observed on 2026-10-09; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-09-media-editing-popularity.json.",
+      "selection": {
+        "cohort": "media-editing-popularity",
+        "date": "2026-10-09",
+        "githubRepositoryId": 1221671194,
+        "githubStars": 3311,
+        "selectionMode": "popular",
+        "archived": false
+      }
+    },
+    {
+      "name": "better-shot",
+      "category": "media-editing",
+      "repoUrl": "https://github.com/KartikLabhshetwar/better-shot.git",
+      "commit": "72422118f871496f16f8d800470ae750d85dbfda",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Screenshot, screen recording, and video editor for macOS. Native SwiftUI app with capture deck, 75+ customizable shortcuts, URL scheme automation, and self-hosted cloud sharing. Open-source alternative to CleanShot X and Loom. Media editing popularity cohort: 2375 accumulated GitHub stars observed on 2026-10-09; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-09-media-editing-popularity.json.",
+      "selection": {
+        "cohort": "media-editing-popularity",
+        "date": "2026-10-09",
+        "githubRepositoryId": 1132082476,
+        "githubStars": 2375,
+        "selectionMode": "popular",
+        "archived": false
+      }
+    },
+    {
+      "name": "photodemon",
+      "category": "media-editing",
+      "repoUrl": "https://github.com/tannerhelland/PhotoDemon.git",
+      "commit": "8357ce499191bf12b84091b936aa9424ac35022f",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "A free portable photo editor focused on pro-grade features, high performance, and maximum usability. Media editing popularity cohort: 2373 accumulated GitHub stars observed on 2026-10-09; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-09-media-editing-popularity.json.",
+      "selection": {
+        "cohort": "media-editing-popularity",
+        "date": "2026-10-09",
+        "githubRepositoryId": 4917029,
+        "githubStars": 2373,
+        "selectionMode": "popular",
+        "archived": false
+      }
+    },
+    {
+      "name": "videoeditor",
+      "category": "media-editing",
+      "repoUrl": "https://github.com/trykimu/videoeditor.git",
+      "commit": "6a30d43c5d2c381940478d89e4c712f40fd85146",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Your Creative Copilot for Video Editing Media editing popularity cohort: 2245 accumulated GitHub stars observed on 2026-10-09; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-09-media-editing-popularity.json.",
+      "selection": {
+        "cohort": "media-editing-popularity",
+        "date": "2026-10-09",
+        "githubRepositoryId": 988575614,
+        "githubStars": 2245,
+        "selectionMode": "popular",
+        "archived": false
+      }
+    },
+    {
+      "name": "freecut",
+      "category": "media-editing",
+      "repoUrl": "https://github.com/walterlow/freecut.git",
+      "commit": "4d62e8082c5eb387a96275bcbd323d28f6e41a62",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "FreeCut is a professional-grade video editor that runs entirely in your browser. Professional video editing, zero installation. Create stunning videos with multi-track editing, keyframe animations, real-time preview, and high-quality exports. Media editing popularity cohort: 2239 accumulated GitHub stars observed on 2026-10-09; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-09-media-editing-popularity.json.",
+      "selection": {
+        "cohort": "media-editing-popularity",
+        "date": "2026-10-09",
+        "githubRepositoryId": 1097654343,
+        "githubStars": 2239,
+        "selectionMode": "popular",
+        "archived": false
+      }
+    },
+    {
+      "name": "openchatcut",
+      "category": "media-editing",
+      "repoUrl": "https://github.com/0xsline/OpenChatCut.git",
+      "commit": "2e6f4a29b784200cfb32b859b16f2561592bc3e8",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Open-source, local-first conversational AI video editor with a professional multi-track timeline, Agent Skills, MCP integration, and Remotion rendering. Media editing popularity cohort: 2222 accumulated GitHub stars observed on 2026-10-09; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-09-media-editing-popularity.json.",
+      "selection": {
+        "cohort": "media-editing-popularity",
+        "date": "2026-10-09",
+        "githubRepositoryId": 1301135370,
+        "githubStars": 2222,
+        "selectionMode": "popular",
+        "archived": false
+      }
+    },
+    {
+      "name": "visomaster",
+      "category": "media-editing",
+      "repoUrl": "https://github.com/visomaster/VisoMaster.git",
+      "commit": "18b5398b35cb7ebaa5f0f28d9025763da29b74c6",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Powerful & Easy-to-Use Video Face Swapping and Editing Software Media editing popularity cohort: 2092 accumulated GitHub stars observed on 2026-10-09; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-09-media-editing-popularity.json.",
+      "selection": {
+        "cohort": "media-editing-popularity",
+        "date": "2026-10-09",
+        "githubRepositoryId": 922828830,
+        "githubStars": 2092,
+        "selectionMode": "popular",
+        "archived": false
+      }
+    },
+    {
+      "name": "vidcutter",
+      "category": "media-editing",
+      "repoUrl": "https://github.com/ozmartian/vidcutter.git",
+      "commit": "db6818f11bbb4d5598dfc5ceeddf7f81c7078499",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "A modern yet simple multi-platform video cutter and joiner. Media editing popularity cohort: 1992 accumulated GitHub stars observed on 2026-10-09; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-09-media-editing-popularity.json.",
+      "selection": {
+        "cohort": "media-editing-popularity",
+        "date": "2026-10-09",
+        "githubRepositoryId": 67065438,
+        "githubStars": 1992,
+        "selectionMode": "popular",
+        "archived": false
+      }
+    },
+    {
+      "name": "milton",
+      "category": "media-editing",
+      "repoUrl": "https://github.com/serge-rgb/milton.git",
+      "commit": "768c0351fd7a221ec047fe91c85830f544a76661",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "An infinite-canvas paint program Media editing popularity cohort: 1890 accumulated GitHub stars observed on 2026-10-09; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-09-media-editing-popularity.json.",
+      "selection": {
+        "cohort": "media-editing-popularity",
+        "date": "2026-10-09",
+        "githubRepositoryId": 32909108,
+        "githubStars": 1890,
+        "selectionMode": "popular",
+        "archived": false
+      }
+    },
+    {
+      "name": "react-video-editor",
+      "category": "media-editing",
+      "repoUrl": "https://github.com/openvideodev/react-video-editor.git",
+      "commit": "9a8c5296da4b258f66dfb7ad73de96be62478bca",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Online react video editor using remotion. Capcut and canva clone. Media editing popularity cohort: 1805 accumulated GitHub stars observed on 2026-10-09; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-09-media-editing-popularity.json.",
+      "selection": {
+        "cohort": "media-editing-popularity",
+        "date": "2026-10-09",
+        "githubRepositoryId": 837284478,
+        "githubStars": 1805,
+        "selectionMode": "popular",
+        "archived": false
+      }
+    },
+    {
+      "name": "ffmpeg-webcli",
+      "category": "media-editing",
+      "repoUrl": "https://github.com/tejaswigowda/ffmpeg-webCLI.git",
+      "commit": "b86f7826b4ebb279284125a13d08e6930a99edd1",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "A browser-based video editor powered by ffmpeg.wasm. No uploads, no servers -- all processing happens locally in your browser using WebAssembly. Media editing popularity cohort: 1456 accumulated GitHub stars observed on 2026-10-09; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-09-media-editing-popularity.json.",
+      "selection": {
+        "cohort": "media-editing-popularity",
+        "date": "2026-10-09",
+        "githubRepositoryId": 1254696756,
+        "githubStars": 1456,
+        "selectionMode": "popular",
+        "archived": false
+      }
+    },
+    {
+      "name": "android-video-editor",
+      "category": "media-editing",
+      "repoUrl": "https://github.com/LLhon/Android-Video-Editor.git",
+      "commit": "63d47268f624aaf2119e9376e5f261f69d2b34e0",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "一款Android视频编辑项目，功能有视频拍摄，视频裁剪，视频滤镜，视频压缩 Media editing popularity cohort: 1326 accumulated GitHub stars observed on 2026-10-09; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-09-media-editing-popularity.json.",
+      "selection": {
+        "cohort": "media-editing-popularity",
+        "date": "2026-10-09",
+        "githubRepositoryId": 145684382,
+        "githubStars": 1326,
+        "selectionMode": "popular",
+        "archived": false
+      }
     }
   ],
-  "runId": "crypto-popularity"
+  "runId": "media-editing-popularity"
 }

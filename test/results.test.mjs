@@ -91,6 +91,18 @@ describe('renderLeaderboardCsv', () => {
     expect(lines[1]).toContain(',70,100,70,');
     expect(lines[1]).toMatch(/,ai-popularity,2026-10-08,92063,30$/);
   });
+  it('labels the media editing cohort without inventing a cross-query popularity rank', () => {
+    const entry = fakeEntry('lossless-cut', {
+      selection: { cohort: 'media-editing-popularity', date: '2026-10-09', githubStars: 44406 },
+    });
+    const md = renderLeaderboardMarkdown(
+      [{ entry, report: fakeReport({ percent: 70, level: 1 }) }],
+      { toolVersion: 'harness-score@1.8.1', entries: [entry] },
+      [],
+    );
+    expect(md).toContain('Media editing cohort');
+    expect(md).not.toContain('Media editing cohort #');
+  });
 });
 
 describe('renderLeaderboardMarkdown', () => {

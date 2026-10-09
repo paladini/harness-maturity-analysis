@@ -1,0 +1,877 @@
+{
+  "schemaVersion": 1,
+  "round": "media-editing-popularity",
+  "selectionDate": "2026-10-09",
+  "baseline": {
+    "commit": "45fcd4f85f9b4142752a8a1fd7623fb2a803a606",
+    "entryCount": 126,
+    "scannerVersion": "harness-score@1.8.1"
+  },
+  "targetCount": 25,
+  "expectedEntryCount": 151,
+  "runId": "media-editing-popularity",
+  "searchSnapshot": "corpus/popularity-search-2026-10-09-media-editing.json",
+  "searchTimestamp": "2026-10-09T18:17:35.471308+00:00",
+  "cutoffStars": 1326,
+  "searchUnionBoundaryRequirement": "All capped queries returned 100 items and each minimum recorded star count is below the admission cutoff; GitHub incomplete_results was false for all eight queries. This supports the cutoff only within the bounded union.",
+  "analysisIssue": "https://github.com/paladini/harness-maturity-analysis/issues/7",
+  "blindRatings": false,
+  "candidates": [
+    {
+      "name": "lossless-cut",
+      "repoUrl": "https://github.com/mifi/lossless-cut.git",
+      "canonicalRepository": "mifi/lossless-cut",
+      "githubRepositoryId": 72343657,
+      "defaultBranch": "master",
+      "commit": "70f2663a7a7c995903701acd2f616d057f4fdc2f",
+      "category": "media-editing",
+      "purpose": "The swiss army knife of lossless video/audio editing",
+      "license": "GPL-2.0",
+      "licenseName": "GPL-2.0",
+      "sizeKiB": 30295,
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-09-30T22:09:42Z",
+      "selectionMode": "popular",
+      "observedStars": 44406,
+      "rankWithinBoundedSearchUnion": 1,
+      "README": {
+        "path": "README.md",
+        "url": "https://github.com/mifi/lossless-cut/blob/70f2663a7a7c995903701acd2f616d057f4fdc2f/README.md"
+      },
+      "implementation": {
+        "path": "src/renderer/src/Timeline.tsx",
+        "blobSha": "2fab89856a1e7bfdee5c2475dabbf7ee0ac0d58b",
+        "url": "https://github.com/mifi/lossless-cut/blob/70f2663a7a7c995903701acd2f616d057f4fdc2f/src/renderer/src/Timeline.tsx",
+        "lineCount": 466
+      },
+      "checkoutPlan": "full root; no scanSubpath or checkoutExcludes"
+    },
+    {
+      "name": "photocraft",
+      "repoUrl": "https://github.com/storytold/photocraft.git",
+      "canonicalRepository": "storytold/photocraft",
+      "githubRepositoryId": 1398080271,
+      "defaultBranch": "main",
+      "commit": "9f23d652627cce69471b9b64859a7290940e8c6c",
+      "category": "media-editing",
+      "purpose": "An open-source, clean-room reimplementation of Adobe Photoshop in pure Rust",
+      "license": "Apache-2.0",
+      "licenseName": "Apache-2.0",
+      "sizeKiB": 24128,
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-09T18:12:50Z",
+      "selectionMode": "popular",
+      "observedStars": 33546,
+      "rankWithinBoundedSearchUnion": 2,
+      "README": {
+        "path": "README.md",
+        "url": "https://github.com/storytold/photocraft/blob/9f23d652627cce69471b9b64859a7290940e8c6c/README.md"
+      },
+      "implementation": {
+        "path": "crates/engine/src/image_cmds.rs",
+        "blobSha": "077512047b8e8c636c8b6977d49e563d4d3e6940",
+        "url": "https://github.com/storytold/photocraft/blob/9f23d652627cce69471b9b64859a7290940e8c6c/crates/engine/src/image_cmds.rs",
+        "lineCount": 1012
+      },
+      "checkoutPlan": "full root; no scanSubpath or checkoutExcludes"
+    },
+    {
+      "name": "graphite",
+      "repoUrl": "https://github.com/GraphiteEditor/Graphite.git",
+      "canonicalRepository": "GraphiteEditor/Graphite",
+      "githubRepositoryId": 258967860,
+      "defaultBranch": "master",
+      "commit": "377ba8f00c369a635d7ee2d1c637fa0799983436",
+      "category": "media-editing",
+      "purpose": "Community-built comprehensive 2D content creation appplication for graphic design, digital art, and interactive real-time motion graphics powered by a node-based procedural graphics engine",
+      "license": "Apache-2.0",
+      "licenseName": "Apache-2.0",
+      "sizeKiB": 56233,
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-09T17:35:43Z",
+      "selectionMode": "popular",
+      "observedStars": 27514,
+      "rankWithinBoundedSearchUnion": 3,
+      "README": {
+        "path": "README.md",
+        "url": "https://github.com/GraphiteEditor/Graphite/blob/377ba8f00c369a635d7ee2d1c637fa0799983436/README.md"
+      },
+      "implementation": {
+        "path": "editor/src/messages/dialog/export_dialog/export_dialog_message_handler.rs",
+        "blobSha": "849524484dfeee5a647a40d0da2f1df6d8b5badf",
+        "url": "https://github.com/GraphiteEditor/Graphite/blob/377ba8f00c369a635d7ee2d1c637fa0799983436/editor/src/messages/dialog/export_dialog/export_dialog_message_handler.rs",
+        "lineCount": 188
+      },
+      "checkoutPlan": "full root; no scanSubpath or checkoutExcludes"
+    },
+    {
+      "name": "shotcut",
+      "repoUrl": "https://github.com/mltframework/shotcut.git",
+      "canonicalRepository": "mltframework/shotcut",
+      "githubRepositoryId": 4118776,
+      "defaultBranch": "master",
+      "commit": "895ee392b6e0381353fbdc48b6889da9d3ad5c27",
+      "category": "media-editing",
+      "purpose": "cross-platform (Qt), open-source (GPLv3) video editor",
+      "license": "GPL-3.0",
+      "licenseName": "GPL-3.0",
+      "sizeKiB": 162015,
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-06T19:36:06Z",
+      "selectionMode": "popular",
+      "observedStars": 15375,
+      "rankWithinBoundedSearchUnion": 4,
+      "README": {
+        "path": "README.md",
+        "url": "https://github.com/mltframework/shotcut/blob/895ee392b6e0381353fbdc48b6889da9d3ad5c27/README.md"
+      },
+      "implementation": {
+        "path": "src/qml/views/timeline/Timeline.js",
+        "blobSha": "e860992faea097e1bf8a8d763cf7f566f9d07c56",
+        "url": "https://github.com/mltframework/shotcut/blob/895ee392b6e0381353fbdc48b6889da9d3ad5c27/src/qml/views/timeline/Timeline.js",
+        "lineCount": 257
+      },
+      "checkoutPlan": "full root; no scanSubpath or checkoutExcludes"
+    },
+    {
+      "name": "imagetoolbox",
+      "repoUrl": "https://github.com/T8RIN/ImageToolbox.git",
+      "canonicalRepository": "T8RIN/ImageToolbox",
+      "githubRepositoryId": 478710402,
+      "defaultBranch": "master",
+      "commit": "f547954b9eb8a6953bd71cfb2fb0185ff2ad5641",
+      "category": "media-editing",
+      "purpose": "🖼️ Image Toolbox is a powerful app for advanced image manipulation. It offers dozens of features, from basic tools like crop and draw to filters, OCR, and a wide range of image processing options",
+      "license": "Apache-2.0",
+      "licenseName": "Apache-2.0",
+      "sizeKiB": 491298,
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-07T15:57:27Z",
+      "selectionMode": "popular",
+      "observedStars": 14918,
+      "rankWithinBoundedSearchUnion": 5,
+      "README": {
+        "path": "README.md",
+        "url": "https://github.com/T8RIN/ImageToolbox/blob/f547954b9eb8a6953bd71cfb2fb0185ff2ad5641/README.md"
+      },
+      "implementation": {
+        "path": "feature/filters/src/main/java/com/t8rin/imagetoolbox/feature/filters/data/model/DreamPaintingFilter.kt",
+        "blobSha": "130860053176ab643390253dadc1eefb8d904428",
+        "url": "https://github.com/T8RIN/ImageToolbox/blob/f547954b9eb8a6953bd71cfb2fb0185ff2ad5641/feature/filters/src/main/java/com/t8rin/imagetoolbox/feature/filters/data/model/DreamPaintingFilter.kt",
+        "lineCount": 51
+      },
+      "checkoutPlan": "full root; no scanSubpath or checkoutExcludes"
+    },
+    {
+      "name": "palmier-pro",
+      "repoUrl": "https://github.com/palmier-io/palmier-pro.git",
+      "canonicalRepository": "palmier-io/palmier-pro",
+      "githubRepositoryId": 1203468533,
+      "defaultBranch": "main",
+      "commit": "c948160b8fc304a3b2a86bf4492329cfedf0230f",
+      "category": "media-editing",
+      "purpose": "macOS video editor built for AI",
+      "license": "GPL-3.0",
+      "licenseName": "GPL-3.0",
+      "sizeKiB": 27486,
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-05T06:09:38Z",
+      "selectionMode": "popular",
+      "observedStars": 14535,
+      "rankWithinBoundedSearchUnion": 6,
+      "README": {
+        "path": "README.md",
+        "url": "https://github.com/palmier-io/palmier-pro/blob/c948160b8fc304a3b2a86bf4492329cfedf0230f/README.md"
+      },
+      "implementation": {
+        "path": "Sources/PalmierPro/Timeline/ClipRenderer.swift",
+        "blobSha": "20e11194dec500153b1ee92877df4a798f925509",
+        "url": "https://github.com/palmier-io/palmier-pro/blob/c948160b8fc304a3b2a86bf4492329cfedf0230f/Sources/PalmierPro/Timeline/ClipRenderer.swift",
+        "lineCount": 936
+      },
+      "checkoutPlan": "full root; no scanSubpath or checkoutExcludes"
+    },
+    {
+      "name": "olive",
+      "repoUrl": "https://github.com/olive-editor/olive.git",
+      "canonicalRepository": "olive-editor/olive",
+      "githubRepositoryId": 115342681,
+      "defaultBranch": "master",
+      "commit": "7e0e94abf6610026aebb9ddce8564c39522fac6e",
+      "category": "media-editing",
+      "purpose": "Free open-source non-linear video editor",
+      "license": "GPL-3.0",
+      "licenseName": "GPL-3.0",
+      "sizeKiB": 30609,
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2024-12-05T10:34:17Z",
+      "selectionMode": "popular",
+      "observedStars": 9132,
+      "rankWithinBoundedSearchUnion": 7,
+      "README": {
+        "path": "README.md",
+        "url": "https://github.com/olive-editor/olive/blob/7e0e94abf6610026aebb9ddce8564c39522fac6e/README.md"
+      },
+      "implementation": {
+        "path": "app/codec/encoder.cpp",
+        "blobSha": "810cdcd1bb145033db006035f76368b47dcda00a",
+        "url": "https://github.com/olive-editor/olive/blob/7e0e94abf6610026aebb9ddce8564c39522fac6e/app/codec/encoder.cpp",
+        "lineCount": 513
+      },
+      "checkoutPlan": "full root; no scanSubpath or checkoutExcludes"
+    },
+    {
+      "name": "vue-fabric-editor",
+      "repoUrl": "https://github.com/ikuaitu/vue-fabric-editor.git",
+      "canonicalRepository": "ikuaitu/vue-fabric-editor",
+      "githubRepositoryId": 532317770,
+      "defaultBranch": "main",
+      "commit": "b3bdcfb0bd6d8f98e7483cf561ac03ba56c0d889",
+      "category": "media-editing",
+      "purpose": "快图设计-基于fabric.js和Vue的开源图片编辑器，可自定义字体、素材、设计模板。fabric.js and Vue based image editor, can customize fonts, materials, design templates.",
+      "license": "MIT",
+      "licenseName": "MIT",
+      "sizeKiB": 201489,
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-07-21T09:03:00Z",
+      "selectionMode": "popular",
+      "observedStars": 7992,
+      "rankWithinBoundedSearchUnion": 8,
+      "README": {
+        "path": "README-en.md",
+        "url": "https://github.com/ikuaitu/vue-fabric-editor/blob/b3bdcfb0bd6d8f98e7483cf561ac03ba56c0d889/README-en.md"
+      },
+      "implementation": {
+        "path": "packages/core/Editor.ts",
+        "blobSha": "20a80e7a11eeac37bb56c8a68d69bc10419fbe3b",
+        "url": "https://github.com/ikuaitu/vue-fabric-editor/blob/b3bdcfb0bd6d8f98e7483cf561ac03ba56c0d889/packages/core/Editor.ts",
+        "lineCount": 198
+      },
+      "checkoutPlan": "full root; no scanSubpath or checkoutExcludes"
+    },
+    {
+      "name": "jspaint",
+      "repoUrl": "https://github.com/1j01/jspaint.git",
+      "canonicalRepository": "1j01/jspaint",
+      "githubRepositoryId": 16602433,
+      "defaultBranch": "master",
+      "commit": "53be67ab8c47cc0d2168899e7481bc04839c4c81",
+      "category": "media-editing",
+      "purpose": "🎨 Classic MS Paint, ＲＥＶＩＶＥＤ + ✨Extras",
+      "license": "MIT",
+      "licenseName": "MIT",
+      "sizeKiB": 36131,
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-07-19T22:44:20Z",
+      "selectionMode": "popular",
+      "observedStars": 7889,
+      "rankWithinBoundedSearchUnion": 9,
+      "README": {
+        "path": "README.md",
+        "url": "https://github.com/1j01/jspaint/blob/53be67ab8c47cc0d2168899e7481bc04839c4c81/README.md"
+      },
+      "implementation": {
+        "path": "src/image-manipulation.js",
+        "blobSha": "717535daa1d51d371e2e536c8e7b3830c05249a5",
+        "url": "https://github.com/1j01/jspaint/blob/53be67ab8c47cc0d2168899e7481bc04839c4c81/src/image-manipulation.js",
+        "lineCount": 1741
+      },
+      "checkoutPlan": "full root; no scanSubpath or checkoutExcludes"
+    },
+    {
+      "name": "filmcraft",
+      "repoUrl": "https://github.com/storytold/filmcraft.git",
+      "canonicalRepository": "storytold/filmcraft",
+      "githubRepositoryId": 1398091865,
+      "defaultBranch": "main",
+      "commit": "7b6c134472287db4367fca80bcb498240ba36567",
+      "category": "media-editing",
+      "purpose": "An open-source, clean-room reimplementation of Adobe Premiere Pro built in pure Rust.",
+      "license": "Apache-2.0",
+      "licenseName": "Apache-2.0",
+      "sizeKiB": 22144,
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-09T15:02:47Z",
+      "selectionMode": "popular",
+      "observedStars": 6680,
+      "rankWithinBoundedSearchUnion": 12,
+      "README": {
+        "path": "README.md",
+        "url": "https://github.com/storytold/filmcraft/blob/7b6c134472287db4367fca80bcb498240ba36567/README.md"
+      },
+      "implementation": {
+        "path": "crates/render/src/graphic_clip.rs",
+        "blobSha": "70df605b71c70372a5c34733ff2f20b865c9f4b1",
+        "url": "https://github.com/storytold/filmcraft/blob/7b6c134472287db4367fca80bcb498240ba36567/crates/render/src/graphic_clip.rs",
+        "lineCount": 762
+      },
+      "checkoutPlan": "full root; no scanSubpath or checkoutExcludes"
+    },
+    {
+      "name": "editly",
+      "repoUrl": "https://github.com/mifi/editly.git",
+      "canonicalRepository": "mifi/editly",
+      "githubRepositoryId": 255940939,
+      "defaultBranch": "master",
+      "commit": "dc46674052eacd15ef6e0f563a58eb378b3804ad",
+      "category": "media-editing",
+      "purpose": "Slick, declarative command line video editing & API",
+      "license": "MIT",
+      "licenseName": "MIT",
+      "sizeKiB": 729,
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2025-05-12T07:03:44Z",
+      "selectionMode": "popular",
+      "observedStars": 5522,
+      "rankWithinBoundedSearchUnion": 13,
+      "README": {
+        "path": "README.md",
+        "url": "https://github.com/mifi/editly/blob/dc46674052eacd15ef6e0f563a58eb378b3804ad/README.md"
+      },
+      "implementation": {
+        "path": "src/cli.ts",
+        "blobSha": "41db0639f67cbd46112acecfa0ab2192dc0f556e",
+        "url": "https://github.com/mifi/editly/blob/dc46674052eacd15ef6e0f563a58eb378b3804ad/src/cli.ts",
+        "lineCount": 173
+      },
+      "checkoutPlan": "full root; no scanSubpath or checkoutExcludes"
+    },
+    {
+      "name": "concat",
+      "repoUrl": "https://github.com/jub0t/concat.git",
+      "canonicalRepository": "jub0t/concat",
+      "githubRepositoryId": 1346499044,
+      "defaultBranch": "main",
+      "commit": "948b6db90448b2f0cda865f38a614d18353ff557",
+      "category": "media-editing",
+      "purpose": "Beta: The truly free, and open-source cross-platform CapCut replacement (supports MCPs).",
+      "license": "AGPL-3.0",
+      "licenseName": "AGPL-3.0",
+      "sizeKiB": 54215,
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-09T17:07:16Z",
+      "selectionMode": "popular",
+      "observedStars": 4398,
+      "rankWithinBoundedSearchUnion": 15,
+      "README": {
+        "path": "README.md",
+        "url": "https://github.com/jub0t/concat/blob/948b6db90448b2f0cda865f38a614d18353ff557/README.md"
+      },
+      "implementation": {
+        "path": "src/crates/concat-project/src/commands/clips.rs",
+        "blobSha": "dd75582b8190efecc340fdd0ad36ea5ca4a678d7",
+        "url": "https://github.com/jub0t/concat/blob/948b6db90448b2f0cda865f38a614d18353ff557/src/crates/concat-project/src/commands/clips.rs",
+        "lineCount": 854
+      },
+      "checkoutPlan": "full root; no scanSubpath or checkoutExcludes"
+    },
+    {
+      "name": "pinta",
+      "repoUrl": "https://github.com/PintaProject/Pinta.git",
+      "canonicalRepository": "PintaProject/Pinta",
+      "githubRepositoryId": 2358713,
+      "defaultBranch": "master",
+      "commit": "c50533f226c2d8e09fbd8a2120eee72ee0bbb16e",
+      "category": "media-editing",
+      "purpose": "Simple GTK Paint Program",
+      "license": "MIT",
+      "licenseName": "MIT",
+      "sizeKiB": 61819,
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-08T13:57:08Z",
+      "selectionMode": "popular",
+      "observedStars": 4079,
+      "rankWithinBoundedSearchUnion": 16,
+      "README": {
+        "path": "readme.md",
+        "url": "https://github.com/PintaProject/Pinta/blob/c50533f226c2d8e09fbd8a2120eee72ee0bbb16e/readme.md"
+      },
+      "implementation": {
+        "path": "Pinta/Actions/Image/ResizeImageAction.cs",
+        "blobSha": "d83da1fa72814ed9282905f708ae8bd8e265c8b7",
+        "url": "https://github.com/PintaProject/Pinta/blob/c50533f226c2d8e09fbd8a2120eee72ee0bbb16e/Pinta/Actions/Image/ResizeImageAction.cs",
+        "lineCount": 81
+      },
+      "checkoutPlan": "full root; no scanSubpath or checkoutExcludes"
+    },
+    {
+      "name": "clypra",
+      "repoUrl": "https://github.com/AIEraDev/Clypra.git",
+      "canonicalRepository": "AIEraDev/Clypra",
+      "githubRepositoryId": 1221671194,
+      "defaultBranch": "master",
+      "commit": "4790cde09ee01acdd167cee68e889fde6cdf42ed",
+      "category": "media-editing",
+      "purpose": "A hardware-accelerated video editor built on Rust, Tauri v2, and React 19. Sub-10ms frame decoding, GPU-native rendering, and a frame-accurate timeline — all free and open source under MIT.",
+      "license": "MIT",
+      "licenseName": "MIT",
+      "sizeKiB": 44571,
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-08T18:24:53Z",
+      "selectionMode": "popular",
+      "observedStars": 3311,
+      "rankWithinBoundedSearchUnion": 18,
+      "README": {
+        "path": "README.md",
+        "url": "https://github.com/AIEraDev/Clypra/blob/4790cde09ee01acdd167cee68e889fde6cdf42ed/README.md"
+      },
+      "implementation": {
+        "path": "src-tauri/src/engine/timeline/commands.rs",
+        "blobSha": "eb53186c8029d6854199b16250373fb63f4da5bd",
+        "url": "https://github.com/AIEraDev/Clypra/blob/4790cde09ee01acdd167cee68e889fde6cdf42ed/src-tauri/src/engine/timeline/commands.rs",
+        "lineCount": 256
+      },
+      "checkoutPlan": "full root; no scanSubpath or checkoutExcludes"
+    },
+    {
+      "name": "better-shot",
+      "repoUrl": "https://github.com/KartikLabhshetwar/better-shot.git",
+      "canonicalRepository": "KartikLabhshetwar/better-shot",
+      "githubRepositoryId": 1132082476,
+      "defaultBranch": "main",
+      "commit": "72422118f871496f16f8d800470ae750d85dbfda",
+      "category": "media-editing",
+      "purpose": "Screenshot, screen recording, and video editor for macOS. Native SwiftUI app with capture deck, 75+ customizable shortcuts, URL scheme automation, and self-hosted cloud sharing. Open-source alternative to CleanShot X and Loom.",
+      "license": "NOASSERTION",
+      "licenseName": "NOASSERTION",
+      "sizeKiB": 207160,
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-09T06:16:12Z",
+      "selectionMode": "popular",
+      "observedStars": 2375,
+      "rankWithinBoundedSearchUnion": 24,
+      "README": {
+        "path": "README.md",
+        "url": "https://github.com/KartikLabhshetwar/better-shot/blob/72422118f871496f16f8d800470ae750d85dbfda/README.md"
+      },
+      "implementation": {
+        "path": "Sources/BetterShot/AnnoEditor.swift",
+        "blobSha": "e9e9a360bb2c25761b834f3752211349bbbe8feb",
+        "url": "https://github.com/KartikLabhshetwar/better-shot/blob/72422118f871496f16f8d800470ae750d85dbfda/Sources/BetterShot/AnnoEditor.swift",
+        "lineCount": 394
+      },
+      "checkoutPlan": "full root; no scanSubpath or checkoutExcludes"
+    },
+    {
+      "name": "photodemon",
+      "repoUrl": "https://github.com/tannerhelland/PhotoDemon.git",
+      "canonicalRepository": "tannerhelland/PhotoDemon",
+      "githubRepositoryId": 4917029,
+      "defaultBranch": "main",
+      "commit": "8357ce499191bf12b84091b936aa9424ac35022f",
+      "category": "media-editing",
+      "purpose": "A free portable photo editor focused on pro-grade features, high performance, and maximum usability.",
+      "license": "NOASSERTION",
+      "licenseName": "NOASSERTION",
+      "sizeKiB": 219317,
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-08-18T17:17:58Z",
+      "selectionMode": "popular",
+      "observedStars": 2373,
+      "rankWithinBoundedSearchUnion": 25,
+      "README": {
+        "path": "README.md",
+        "url": "https://github.com/tannerhelland/PhotoDemon/blob/8357ce499191bf12b84091b936aa9424ac35022f/README.md"
+      },
+      "implementation": {
+        "path": "Classes/pdPaintbrush.cls",
+        "blobSha": "20f3eea4198bdc5e24bda76ef224567d3a80b913",
+        "url": "https://github.com/tannerhelland/PhotoDemon/blob/8357ce499191bf12b84091b936aa9424ac35022f/Classes/pdPaintbrush.cls",
+        "lineCount": 451
+      },
+      "checkoutPlan": "full root; no scanSubpath or checkoutExcludes"
+    },
+    {
+      "name": "videoeditor",
+      "repoUrl": "https://github.com/trykimu/videoeditor.git",
+      "canonicalRepository": "trykimu/videoeditor",
+      "githubRepositoryId": 988575614,
+      "defaultBranch": "main",
+      "commit": "6a30d43c5d2c381940478d89e4c712f40fd85146",
+      "category": "media-editing",
+      "purpose": "Your Creative Copilot for Video Editing",
+      "license": "NOASSERTION",
+      "licenseName": "NOASSERTION",
+      "sizeKiB": 45472,
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-09-10T16:04:40Z",
+      "selectionMode": "popular",
+      "observedStars": 2245,
+      "rankWithinBoundedSearchUnion": 26,
+      "README": {
+        "path": "README.md",
+        "url": "https://github.com/trykimu/videoeditor/blob/6a30d43c5d2c381940478d89e4c712f40fd85146/README.md"
+      },
+      "implementation": {
+        "path": "app/components/timeline/TimelineTracks.tsx",
+        "blobSha": "104d1180e2d0d2d5840874db57d0b34ac5355aea",
+        "url": "https://github.com/trykimu/videoeditor/blob/6a30d43c5d2c381940478d89e4c712f40fd85146/app/components/timeline/TimelineTracks.tsx",
+        "lineCount": 321
+      },
+      "checkoutPlan": "full root; no scanSubpath or checkoutExcludes"
+    },
+    {
+      "name": "freecut",
+      "repoUrl": "https://github.com/walterlow/freecut.git",
+      "canonicalRepository": "walterlow/freecut",
+      "githubRepositoryId": 1097654343,
+      "defaultBranch": "main",
+      "commit": "4d62e8082c5eb387a96275bcbd323d28f6e41a62",
+      "category": "media-editing",
+      "purpose": "FreeCut is a professional-grade video editor that runs entirely in your browser. Professional video editing, zero installation. Create stunning videos with multi-track editing, keyframe animations, real-time preview, and high-quality exports.",
+      "license": "MIT",
+      "licenseName": "MIT",
+      "sizeKiB": 31801,
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-09-29T15:24:04Z",
+      "selectionMode": "popular",
+      "observedStars": 2239,
+      "rankWithinBoundedSearchUnion": 27,
+      "README": {
+        "path": "README.md",
+        "url": "https://github.com/walterlow/freecut/blob/4d62e8082c5eb387a96275bcbd323d28f6e41a62/README.md"
+      },
+      "implementation": {
+        "path": "src/features/editor/components/compose-workspace/compositing-timeline.tsx",
+        "blobSha": "8d9aebe1b5b50f185a033917aa4c74e18bd87d94",
+        "url": "https://github.com/walterlow/freecut/blob/4d62e8082c5eb387a96275bcbd323d28f6e41a62/src/features/editor/components/compose-workspace/compositing-timeline.tsx",
+        "lineCount": 7067
+      },
+      "checkoutPlan": "full root; no scanSubpath or checkoutExcludes"
+    },
+    {
+      "name": "openchatcut",
+      "repoUrl": "https://github.com/0xsline/OpenChatCut.git",
+      "canonicalRepository": "0xsline/OpenChatCut",
+      "githubRepositoryId": 1301135370,
+      "defaultBranch": "main",
+      "commit": "2e6f4a29b784200cfb32b859b16f2561592bc3e8",
+      "category": "media-editing",
+      "purpose": "Open-source, local-first conversational AI video editor with a professional multi-track timeline, Agent Skills, MCP integration, and Remotion rendering.",
+      "license": "AGPL-3.0",
+      "licenseName": "AGPL-3.0",
+      "sizeKiB": 122114,
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-07T06:36:29Z",
+      "selectionMode": "popular",
+      "observedStars": 2222,
+      "rankWithinBoundedSearchUnion": 28,
+      "README": {
+        "path": "README.md",
+        "url": "https://github.com/0xsline/OpenChatCut/blob/2e6f4a29b784200cfb32b859b16f2561592bc3e8/README.md"
+      },
+      "implementation": {
+        "path": "src/components/timeline/ClipMediaLayers.tsx",
+        "blobSha": "2812a6665a190fe8c8104bff63a62d6835b88cfa",
+        "url": "https://github.com/0xsline/OpenChatCut/blob/2e6f4a29b784200cfb32b859b16f2561592bc3e8/src/components/timeline/ClipMediaLayers.tsx",
+        "lineCount": 101
+      },
+      "checkoutPlan": "full root; no scanSubpath or checkoutExcludes"
+    },
+    {
+      "name": "visomaster",
+      "repoUrl": "https://github.com/visomaster/VisoMaster.git",
+      "canonicalRepository": "visomaster/VisoMaster",
+      "githubRepositoryId": 922828830,
+      "defaultBranch": "main",
+      "commit": "18b5398b35cb7ebaa5f0f28d9025763da29b74c6",
+      "category": "media-editing",
+      "purpose": "Powerful & Easy-to-Use Video Face Swapping and Editing Software",
+      "license": "GPL-3.0",
+      "licenseName": "GPL-3.0",
+      "sizeKiB": 30075,
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2025-03-11T10:15:12Z",
+      "selectionMode": "popular",
+      "observedStars": 2092,
+      "rankWithinBoundedSearchUnion": 29,
+      "README": {
+        "path": "README.md",
+        "url": "https://github.com/visomaster/VisoMaster/blob/18b5398b35cb7ebaa5f0f28d9025763da29b74c6/README.md"
+      },
+      "implementation": {
+        "path": "app/processors/video_processor.py",
+        "blobSha": "9d4174daeb538b71a12cced7b2f09329d5d76329",
+        "url": "https://github.com/visomaster/VisoMaster/blob/18b5398b35cb7ebaa5f0f28d9025763da29b74c6/app/processors/video_processor.py",
+        "lineCount": 444
+      },
+      "checkoutPlan": "full root; no scanSubpath or checkoutExcludes"
+    },
+    {
+      "name": "vidcutter",
+      "repoUrl": "https://github.com/ozmartian/vidcutter.git",
+      "canonicalRepository": "ozmartian/vidcutter",
+      "githubRepositoryId": 67065438,
+      "defaultBranch": "master",
+      "commit": "db6818f11bbb4d5598dfc5ceeddf7f81c7078499",
+      "category": "media-editing",
+      "purpose": "A modern yet simple multi-platform video cutter and joiner.",
+      "license": "GPL-3.0",
+      "licenseName": "GPL-3.0",
+      "sizeKiB": 162004,
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2025-04-24T10:12:36Z",
+      "selectionMode": "popular",
+      "observedStars": 1992,
+      "rankWithinBoundedSearchUnion": 30,
+      "README": {
+        "path": "README.md",
+        "url": "https://github.com/ozmartian/vidcutter/blob/db6818f11bbb4d5598dfc5ceeddf7f81c7078499/README.md"
+      },
+      "implementation": {
+        "path": "vidcutter/videocutter.py",
+        "blobSha": "42a203c1e531e64786f98e5f1b1e44a86f3a7277",
+        "url": "https://github.com/ozmartian/vidcutter/blob/db6818f11bbb4d5598dfc5ceeddf7f81c7078499/vidcutter/videocutter.py",
+        "lineCount": 1708
+      },
+      "checkoutPlan": "full root; no scanSubpath or checkoutExcludes"
+    },
+    {
+      "name": "milton",
+      "repoUrl": "https://github.com/serge-rgb/milton.git",
+      "canonicalRepository": "serge-rgb/milton",
+      "githubRepositoryId": 32909108,
+      "defaultBranch": "master",
+      "commit": "768c0351fd7a221ec047fe91c85830f544a76661",
+      "category": "media-editing",
+      "purpose": "An infinite-canvas paint program",
+      "license": "GPL-3.0",
+      "licenseName": "GPL-3.0",
+      "sizeKiB": 28227,
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2023-06-04T06:10:30Z",
+      "selectionMode": "popular",
+      "observedStars": 1890,
+      "rankWithinBoundedSearchUnion": 31,
+      "README": {
+        "path": "README.md",
+        "url": "https://github.com/serge-rgb/milton/blob/768c0351fd7a221ec047fe91c85830f544a76661/README.md"
+      },
+      "implementation": {
+        "path": "src/canvas.cc",
+        "blobSha": "27f5a14a8a6521888d94e562432c1a0fa3ab9345",
+        "url": "https://github.com/serge-rgb/milton/blob/768c0351fd7a221ec047fe91c85830f544a76661/src/canvas.cc",
+        "lineCount": 253
+      },
+      "checkoutPlan": "full root; no scanSubpath or checkoutExcludes"
+    },
+    {
+      "name": "react-video-editor",
+      "repoUrl": "https://github.com/openvideodev/react-video-editor.git",
+      "canonicalRepository": "openvideodev/react-video-editor",
+      "githubRepositoryId": 837284478,
+      "defaultBranch": "main",
+      "commit": "9a8c5296da4b258f66dfb7ad73de96be62478bca",
+      "category": "media-editing",
+      "purpose": "Online react video editor using remotion. Capcut and canva clone.",
+      "license": "NOASSERTION",
+      "licenseName": "NOASSERTION",
+      "sizeKiB": 9990,
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-06-30T04:39:39Z",
+      "selectionMode": "popular",
+      "observedStars": 1805,
+      "rankWithinBoundedSearchUnion": 33,
+      "README": {
+        "path": "README.md",
+        "url": "https://github.com/openvideodev/react-video-editor/blob/9a8c5296da4b258f66dfb7ad73de96be62478bca/README.md"
+      },
+      "implementation": {
+        "path": "src/components/editor/editor.tsx",
+        "blobSha": "3e9100b0cb592d35c07b576e9324d0f125a95bce",
+        "url": "https://github.com/openvideodev/react-video-editor/blob/9a8c5296da4b258f66dfb7ad73de96be62478bca/src/components/editor/editor.tsx",
+        "lineCount": 111
+      },
+      "checkoutPlan": "full root; no scanSubpath or checkoutExcludes"
+    },
+    {
+      "name": "ffmpeg-webcli",
+      "repoUrl": "https://github.com/tejaswigowda/ffmpeg-webCLI.git",
+      "canonicalRepository": "tejaswigowda/ffmpeg-webCLI",
+      "githubRepositoryId": 1254696756,
+      "defaultBranch": "main",
+      "commit": "b86f7826b4ebb279284125a13d08e6930a99edd1",
+      "category": "media-editing",
+      "purpose": "A browser-based video editor powered by ffmpeg.wasm. No uploads, no servers -- all processing happens locally in your browser using WebAssembly.",
+      "license": "GPL-3.0",
+      "licenseName": "GPL-3.0",
+      "sizeKiB": 106628,
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-09-06T17:55:19Z",
+      "selectionMode": "popular",
+      "observedStars": 1456,
+      "rankWithinBoundedSearchUnion": 35,
+      "README": {
+        "path": "README.md",
+        "url": "https://github.com/tejaswigowda/ffmpeg-webCLI/blob/b86f7826b4ebb279284125a13d08e6930a99edd1/README.md"
+      },
+      "implementation": {
+        "path": "docs/index.html",
+        "blobSha": "efce272416d97d4227dab002069e0f6e1f42f87c",
+        "url": "https://github.com/tejaswigowda/ffmpeg-webCLI/blob/b86f7826b4ebb279284125a13d08e6930a99edd1/docs/index.html",
+        "lineCount": 5548
+      },
+      "checkoutPlan": "full root; no scanSubpath or checkoutExcludes"
+    },
+    {
+      "name": "android-video-editor",
+      "repoUrl": "https://github.com/LLhon/Android-Video-Editor.git",
+      "canonicalRepository": "LLhon/Android-Video-Editor",
+      "githubRepositoryId": 145684382,
+      "defaultBranch": "master",
+      "commit": "63d47268f624aaf2119e9376e5f261f69d2b34e0",
+      "category": "media-editing",
+      "purpose": "一款Android视频编辑项目，功能有视频拍摄，视频裁剪，视频滤镜，视频压缩",
+      "license": "NOASSERTION",
+      "licenseName": "Other",
+      "sizeKiB": 2616,
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2019-04-12T06:39:37Z",
+      "selectionMode": "popular",
+      "observedStars": 1326,
+      "rankWithinBoundedSearchUnion": 36,
+      "README": {
+        "path": "README.md",
+        "url": "https://github.com/LLhon/Android-Video-Editor/blob/63d47268f624aaf2119e9376e5f261f69d2b34e0/README.md"
+      },
+      "implementation": {
+        "path": "app/src/main/java/com/marvhong/videoeditor/ui/activity/TrimVideoActivity.java",
+        "blobSha": "1905d08b49f7c45357754b21a6c3a8aa7dd9f6d1",
+        "url": "https://github.com/LLhon/Android-Video-Editor/blob/63d47268f624aaf2119e9376e5f261f69d2b34e0/app/src/main/java/com/marvhong/videoeditor/ui/activity/TrimVideoActivity.java",
+        "lineCount": 851
+      },
+      "checkoutPlan": "full root; no scanSubpath or checkoutExcludes"
+    }
+  ],
+  "higherRankedExclusions": [
+    {
+      "githubRepositoryId": 57261731,
+      "repository": "nhn/tui.image-editor",
+      "stars": 7674,
+      "rankWithinBoundedSearchUnion": 10,
+      "reason": "Editor SDK/component library, not a standalone end-user editor."
+    },
+    {
+      "githubRepositoryId": 414027423,
+      "repository": "xushengfeng/eSearch",
+      "stars": 7293,
+      "rankWithinBoundedSearchUnion": 11,
+      "reason": "Screenshot, OCR, translation and search utility; editing is incidental, not its primary purpose."
+    },
+    {
+      "githubRepositoryId": 118602757,
+      "repository": "burhanrashid52/PhotoEditor",
+      "stars": 4523,
+      "rankWithinBoundedSearchUnion": 14,
+      "reason": "Image-editing component library embedded in other applications."
+    },
+    {
+      "githubRepositoryId": 1181567753,
+      "repository": "getopenscreen/openscreen",
+      "stars": 3840,
+      "rankWithinBoundedSearchUnion": 17,
+      "reason": "Screen recording/demo capture without a primary media editing workflow."
+    },
+    {
+      "githubRepositoryId": 12585625,
+      "repository": "nomacs/nomacs",
+      "stars": 3221,
+      "rankWithinBoundedSearchUnion": 19,
+      "reason": "Image viewer; editing is not a primary feature."
+    },
+    {
+      "githubRepositoryId": 307274978,
+      "repository": "tnfe/FFCreator",
+      "stars": 3163,
+      "rankWithinBoundedSearchUnion": 20,
+      "reason": "Video-generation library/API rather than an end-user editor."
+    },
+    {
+      "githubRepositoryId": 1195367387,
+      "repository": "snapotter-hq/SnapOtter",
+      "stars": 2795,
+      "rankWithinBoundedSearchUnion": 21,
+      "reason": "General file processing service, not focused media editing."
+    },
+    {
+      "githubRepositoryId": 1154538857,
+      "repository": "CristianOlivera1/openvid",
+      "stars": 2714,
+      "rankWithinBoundedSearchUnion": 22,
+      "reason": "Demo and 3D mockup creator, not a media editor."
+    },
+    {
+      "githubRepositoryId": 92356177,
+      "repository": "yangjie10930/EpMedia",
+      "stars": 2509,
+      "rankWithinBoundedSearchUnion": 23,
+      "reason": "Video-processing SDK/framework, not a standalone editor."
+    },
+    {
+      "githubRepositoryId": 55375779,
+      "repository": "gridsound/daw",
+      "stars": 1879,
+      "rankWithinBoundedSearchUnion": 32,
+      "reason": "Pinned tree has a .gitmodules pointer and loader shell only; the DAW implementation is outside the root checkout and this runner does not fetch submodules."
+    },
+    {
+      "githubRepositoryId": 14065064,
+      "repository": "MattKetmo/darkroomjs",
+      "stars": 1463,
+      "rankWithinBoundedSearchUnion": 34,
+      "reason": "Embeddable JavaScript image-editor library, not a standalone end-user editor."
+    }
+  ],
+  "canonicalIdAudit": {
+    "baselineCount": 126,
+    "baselineUniqueCanonicalIds": 126,
+    "baselineRenamedAliases": [
+      {
+        "name": "All-Hands-AI/OpenHands",
+        "id": 771302083,
+        "canonical": "OpenHands/OpenHands"
+      },
+      {
+        "name": "block/goose",
+        "id": 846698999,
+        "canonical": "aaif-goose/goose"
+      },
+      {
+        "name": "sst/opencode",
+        "id": 975734319,
+        "canonical": "anomalyco/opencode"
+      },
+      {
+        "name": "facebook/react",
+        "id": 10270250,
+        "canonical": "react/react"
+      }
+    ],
+    "selectedIdsOverlapBaseline": []
+  }
+}
