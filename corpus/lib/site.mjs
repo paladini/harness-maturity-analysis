@@ -27,6 +27,13 @@ const CATEGORY_LABELS = {
   'ai-model-inference': 'AI models and inference',
   'ai-vision-media': 'AI vision and media',
   'ai-applications': 'AI applications',
+  'crypto-wallets': 'cryptocurrency wallets',
+  'crypto-trading': 'cryptocurrency trading software',
+  'crypto-protocols': 'cryptocurrency protocols',
+  'crypto-smart-contracts': 'smart contracts',
+  'crypto-developer-tools': 'blockchain developer tools',
+  'crypto-onchain-apps': 'on-chain applications',
+  'crypto-mining': 'cryptocurrency mining software',
 };
 
 function esc(s) {
@@ -53,17 +60,17 @@ function renderLeaderboardRow(row, rank) {
   const stressTag = entry.isStressCase ? '<span class="stress-tag">stress case</span>' : '';
   const truncatedTag = report.truncated ? '<span class="stress-tag">truncated scan</span>' : '';
   const selection = entry.selection;
-  const provenance =
-    selection?.cohort === 'ai-popularity'
-      ? `<p class="board-provenance">AI software cohort: popularity #${esc(selection.popularityRank)} · ${esc(Number(selection.githubStars).toLocaleString('en-US'))} GitHub stars on ${esc(selection.date)}</p>`
-      : '';
+  const archiveTag = selection?.archived ? '<span class="stress-tag">archived snapshot</span>' : '';
+  const provenance = ['ai-popularity', 'crypto-popularity'].includes(selection?.cohort)
+    ? `<p class="board-provenance">${selection.cohort === 'crypto-popularity' ? 'Crypto software' : 'AI software'} cohort: popularity #${esc(selection.popularityRank)} · ${esc(Number(selection.githubStars).toLocaleString('en-US'))} GitHub stars on ${esc(selection.date)}</p>`
+    : '';
   return `
       <div class="board-row">
         <div class="board-rank">${rank}</div>
         <div class="board-main">
           <div class="board-name-line">
             <span><a class="board-name" href="${esc(entry.repoUrl.replace(/\.git$/, ''))}" target="_blank" rel="noopener">${esc(repoLabel(entry.repoUrl))}</a>
-              <span class="board-category">${esc(categoryLabel(entry.category))}</span>${stressTag}${truncatedTag}</span>
+              <span class="board-category">${esc(categoryLabel(entry.category))}</span>${stressTag}${truncatedTag}${archiveTag}</span>
             <span class="board-score">${report.score.earned}/${report.score.max} · ${report.score.percent}%</span>
           </div>${provenance ? `\n          ${provenance}` : ''}
           <div class="board-bar-track"><div class="board-bar-fill" style="width:${report.score.percent}%; --bar-color:var(--l${report.level.index})"></div></div>
@@ -137,7 +144,7 @@ function renderHistoryComparison(manifest, historyRuns) {
     <div class="history-wrap">
       <table class="history-table">
         <thead>
-          <tr><th>Repository</th><th>${esc(previous.date)}<br>${esc(previous.toolVersion)}</th><th>${esc(current.date)}<br>${esc(current.toolVersion)}</th><th>Change</th></tr>
+          <tr><th>Repository</th><th>${esc(previous.date)}<br>${esc(previous.toolVersion)}${previous.runId ? `<br>${esc(previous.runId)}` : ''}</th><th>${esc(current.date)}<br>${esc(current.toolVersion)}${current.runId ? `<br>${esc(current.runId)}` : ''}</th><th>Change</th></tr>
         </thead>
         <tbody>
 ${body}
@@ -168,6 +175,9 @@ export function renderSite(rows, manifest, historyRuns = []) {
   const popularityCount = manifest.entries.filter(
     (entry) => entry.selection?.cohort === 'ai-popularity',
   ).length;
+  const cryptoCount = manifest.entries.filter(
+    (entry) => entry.selection?.cohort === 'crypto-popularity',
+  ).length;
 
   return `<!doctype html>
 <html lang="en">
@@ -185,7 +195,7 @@ ${SITE_CSS}
 <div class="page">
 
   <header class="masthead">
-    <p class="eyebrow">harness-maturity-analysis · phase 1C showcase</p>
+    <p class="eyebrow">harness-maturity-analysis · phase 1D showcase</p>
     <h1>Does the score<br>hold up?</h1>
     <p class="lede">
       ${scannedCount} of ${totalCount} pinned repositories, one deterministic scanner,
@@ -194,6 +204,7 @@ ${SITE_CSS}
       never the competence of the company that owns it.</strong>
       This collection supplies scanner evidence; independent blind human ratings are still pending.
       ${popularityCount ? `<span class="cohort-note">Includes ${popularityCount} new AI software projects selected by GitHub stars. <a href="https://github.com/paladini/harness-maturity-analysis/issues/3">Selection and software eligibility</a>.</span>` : ''}
+      ${cryptoCount ? `<span class="cohort-note">Includes ${cryptoCount} cryptocurrency software projects selected by accumulated GitHub stars. <a href="https://github.com/paladini/harness-maturity-analysis/issues/5">Crypto selection and software eligibility</a>.</span>` : ''}
     </p>
     <div class="meta-strip">
       <span>${esc(manifest.toolVersion)}</span>

@@ -1123,6 +1123,432 @@
         "githubStars": 92063,
         "popularityRank": 30
       }
+    },
+    {
+      "name": "bitcoin",
+      "category": "crypto-protocols",
+      "repoUrl": "https://github.com/bitcoin/bitcoin.git",
+      "commit": "acdb32693417c1b6596edfbdd19ab793c010d34f",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Bitcoin full node and consensus-validation implementation. Crypto popularity cohort: 90328 accumulated stars observed on 2026-10-08; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-08-crypto-popularity.json.",
+      "selection": {
+        "cohort": "crypto-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 1181927,
+        "githubStars": 90328,
+        "popularityRank": 1,
+        "archived": false
+      }
+    },
+    {
+      "name": "union",
+      "category": "crypto-protocols",
+      "repoUrl": "https://github.com/unionlabs/union.git",
+      "commit": "031785bb6dc6b957c624e62bc64c184409c97d7b",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Zero-knowledge bridging protocol for interoperable blockchains and decentralized finance. Crypto popularity cohort: 73757 accumulated stars observed on 2026-10-08; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-08-crypto-popularity.json.",
+      "selection": {
+        "cohort": "crypto-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 641656392,
+        "githubStars": 73757,
+        "popularityRank": 2,
+        "archived": false
+      }
+    },
+    {
+      "name": "fuel-core",
+      "category": "crypto-protocols",
+      "repoUrl": "https://github.com/FuelLabs/fuel-core.git",
+      "commit": "251c8059cc072c780f6e1e2900d8771c8eb99403",
+      "scanSubpath": null,
+      "isStressCase": true,
+      "notes": "Rust full node implementation of the Fuel blockchain protocol. Crypto popularity cohort: 56807 accumulated stars observed on 2026-10-08; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-08-crypto-popularity.json.",
+      "selection": {
+        "cohort": "crypto-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 290882787,
+        "githubStars": 56807,
+        "popularityRank": 3,
+        "archived": false
+      }
+    },
+    {
+      "name": "freqtrade",
+      "category": "crypto-trading",
+      "repoUrl": "https://github.com/freqtrade/freqtrade.git",
+      "commit": "a9a917649ff8e283cff9c37504863b02da88615a",
+      "scanSubpath": null,
+      "isStressCase": true,
+      "notes": "Cryptocurrency trading bot with exchange integration and strategy execution. Crypto popularity cohort: 55147 accumulated stars observed on 2026-10-08; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-08-crypto-popularity.json.",
+      "selection": {
+        "cohort": "crypto-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 91629816,
+        "githubStars": 55147,
+        "popularityRank": 4,
+        "archived": false
+      }
+    },
+    {
+      "name": "go-ethereum",
+      "category": "crypto-protocols",
+      "repoUrl": "https://github.com/ethereum/go-ethereum.git",
+      "commit": "466c37e3329b119a222b5a275f696da697f6103b",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Ethereum execution client and protocol implementation in Go. Crypto popularity cohort: 51390 accumulated stars observed on 2026-10-08; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-08-crypto-popularity.json.",
+      "selection": {
+        "cohort": "crypto-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 15452919,
+        "githubStars": 51390,
+        "popularityRank": 5,
+        "archived": false
+      }
+    },
+    {
+      "name": "ccxt",
+      "category": "crypto-trading",
+      "repoUrl": "https://github.com/ccxt/ccxt.git",
+      "commit": "f0aca06eb7482f083bed8406fadfcc0c05e45b1c",
+      "scanSubpath": null,
+      "isStressCase": true,
+      "notes": "Unified cryptocurrency exchange trading API library. Crypto popularity cohort: 44287 accumulated stars observed on 2026-10-08; not archived at selection. The complete authoritative report was read on a separate Ubuntu 24.04 filesystem because Windows Defender quarantined a tracked fixture; no paths were excluded and no target code executed. See scan-environment-2026-10-08-ccxt.json and the supplemental CCXT Linux audit. Pinned source evidence and exclusions in selection-2026-10-08-crypto-popularity.json.",
+      "selection": {
+        "cohort": "crypto-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 91253698,
+        "githubStars": 44287,
+        "popularityRank": 6,
+        "archived": false
+      }
+    },
+    {
+      "name": "anoma",
+      "category": "crypto-protocols",
+      "repoUrl": "https://github.com/anoma/anoma.git",
+      "commit": "5bcbf8487a331a20748299ed4fd4d62027f0ffa8",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Intent-centric distributed blockchain protocol reference implementation. Crypto popularity cohort: 33571 accumulated stars observed on 2026-10-08; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-08-crypto-popularity.json.",
+      "selection": {
+        "cohort": "crypto-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 335243209,
+        "githubStars": 33571,
+        "popularityRank": 7,
+        "archived": false
+      }
+    },
+    {
+      "name": "linera-protocol",
+      "category": "crypto-protocols",
+      "repoUrl": "https://github.com/linera-io/linera-protocol.git",
+      "commit": "672d97bb2fce3127db351069df72f1d225d8f263",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Microchain-based blockchain protocol implementation. Crypto popularity cohort: 32081 accumulated stars observed on 2026-10-08; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-08-crypto-popularity.json.",
+      "selection": {
+        "cohort": "crypto-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 439772085,
+        "githubStars": 32081,
+        "popularityRank": 8,
+        "archived": false
+      }
+    },
+    {
+      "name": "shardeum",
+      "category": "crypto-protocols",
+      "repoUrl": "https://github.com/shardeum/shardeum.git",
+      "commit": "0c454caf067f7b896569eabdd5f47cb8b61738b3",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "EVM blockchain with autoscaling and dynamic state sharding. Crypto popularity cohort: 31194 accumulated stars observed on 2026-10-08; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-08-crypto-popularity.json.",
+      "selection": {
+        "cohort": "crypto-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 787637064,
+        "githubStars": 31194,
+        "popularityRank": 9,
+        "archived": false
+      }
+    },
+    {
+      "name": "hey",
+      "category": "crypto-onchain-apps",
+      "repoUrl": "https://github.com/slymnoyann/hey.xyz.git",
+      "commit": "44dee0c1223b9202699915fd3e92e670fd8e34e6",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Decentralized social application built on Lens blockchain protocol. Its README explicitly describes the last public source snapshot before May 15, 2026; this pin does not represent later production code, despite GitHub archived=false. Crypto popularity cohort: 29349 accumulated stars observed on 2026-10-08. Pinned source evidence and exclusions in selection-2026-10-08-crypto-popularity.json.",
+      "selection": {
+        "cohort": "crypto-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 471728341,
+        "githubStars": 29349,
+        "popularityRank": 10,
+        "archived": false
+      }
+    },
+    {
+      "name": "openzeppelin-contracts",
+      "category": "crypto-smart-contracts",
+      "repoUrl": "https://github.com/OpenZeppelin/openzeppelin-contracts.git",
+      "commit": "cd3284fde41f1c56d19078f580a0aed751cf11d2",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Reusable Ethereum smart contract development and access-control library. Crypto popularity cohort: 27268 accumulated stars observed on 2026-10-08; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-08-crypto-popularity.json.",
+      "selection": {
+        "cohort": "crypto-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 64700934,
+        "githubStars": 27268,
+        "popularityRank": 11,
+        "archived": false
+      }
+    },
+    {
+      "name": "solidity",
+      "category": "crypto-developer-tools",
+      "repoUrl": "https://github.com/argotorg/solidity.git",
+      "commit": "37e27efdba13d47695f9a579df49129d6504ed53",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Solidity smart contract language compiler and EVM assembly implementation. Crypto popularity cohort: 25748 accumulated stars observed on 2026-10-08; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-08-crypto-popularity.json.",
+      "selection": {
+        "cohort": "crypto-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 40892817,
+        "githubStars": 25748,
+        "popularityRank": 12,
+        "archived": false
+      }
+    },
+    {
+      "name": "fhevm",
+      "category": "crypto-smart-contracts",
+      "repoUrl": "https://github.com/zama-ai/fhevm.git",
+      "commit": "11b29f7b6b86fa8c1621eb4ec00c0b6a072f5675",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Fully homomorphic encryption framework for blockchain applications and smart contracts. Crypto popularity cohort: 24786 accumulated stars observed on 2026-10-08; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-08-crypto-popularity.json.",
+      "selection": {
+        "cohort": "crypto-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 976568879,
+        "githubStars": 24786,
+        "popularityRank": 13,
+        "archived": false
+      }
+    },
+    {
+      "name": "hummingbot",
+      "category": "crypto-trading",
+      "repoUrl": "https://github.com/hummingbot/hummingbot.git",
+      "commit": "9af100d6822da7d2d0291a906c730ef172284ee2",
+      "scanSubpath": null,
+      "isStressCase": true,
+      "notes": "Cryptocurrency market-making and automated trading application. Crypto popularity cohort: 20346 accumulated stars observed on 2026-10-08; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-08-crypto-popularity.json.",
+      "selection": {
+        "cohort": "crypto-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 179163124,
+        "githubStars": 20346,
+        "popularityRank": 14,
+        "archived": false
+      }
+    },
+    {
+      "name": "web3-js",
+      "category": "crypto-developer-tools",
+      "repoUrl": "https://github.com/web3/web3.js.git",
+      "commit": "bf1691765bd9d4b0f7a4479e915207707d69226d",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "TypeScript Ethereum JSON-RPC client and utility libraries. Crypto popularity cohort: 19910 accumulated stars observed on 2026-10-08; archived implementation. Pinned source evidence and exclusions in selection-2026-10-08-crypto-popularity.json.",
+      "selection": {
+        "cohort": "crypto-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 24655114,
+        "githubStars": 19910,
+        "popularityRank": 15,
+        "archived": true
+      }
+    },
+    {
+      "name": "subquery",
+      "category": "crypto-developer-tools",
+      "repoUrl": "https://github.com/subquery/subql.git",
+      "commit": "51e2a2c985c3c869510a36e8c37a3b3557af4a3c",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Data-indexing framework for blockchain and web3 applications. Crypto popularity cohort: 18732 accumulated stars observed on 2026-10-08; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-08-crypto-popularity.json.",
+      "selection": {
+        "cohort": "crypto-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 321530801,
+        "githubStars": 18732,
+        "popularityRank": 16,
+        "archived": false
+      }
+    },
+    {
+      "name": "hyperledger-fabric",
+      "category": "crypto-protocols",
+      "repoUrl": "https://github.com/hyperledger/fabric.git",
+      "commit": "1f06f620a21dbd7089dca01fd54b0fbbc5798d5a",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Permissioned blockchain framework with smart contract execution. Crypto popularity cohort: 16736 accumulated stars observed on 2026-10-08; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-08-crypto-popularity.json.",
+      "selection": {
+        "cohort": "crypto-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 66573241,
+        "githubStars": 16736,
+        "popularityRank": 17,
+        "archived": false
+      }
+    },
+    {
+      "name": "diem",
+      "category": "crypto-protocols",
+      "repoUrl": "https://github.com/diem/diem.git",
+      "commit": "fc4714a8ea273b6efe8b13dbce72ea60aad9a16c",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Blockchain infrastructure for the Diem digital-currency network. Crypto popularity cohort: 16660 accumulated stars observed on 2026-10-08; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-08-crypto-popularity.json.",
+      "selection": {
+        "cohort": "crypto-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 179164257,
+        "githubStars": 16660,
+        "popularityRank": 18,
+        "archived": false
+      }
+    },
+    {
+      "name": "sismo-badges",
+      "category": "crypto-smart-contracts",
+      "repoUrl": "https://github.com/sismo-core/sismo-badges.git",
+      "commit": "09206e396ca2342a88f7eaa897d55783f019f759",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "On-chain privacy-oriented attestation and badge-minting smart contracts. Crypto popularity cohort: 15869 accumulated stars observed on 2026-10-08; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-08-crypto-popularity.json.",
+      "selection": {
+        "cohort": "crypto-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 504215082,
+        "githubStars": 15869,
+        "popularityRank": 19,
+        "archived": false
+      }
+    },
+    {
+      "name": "dogecoin",
+      "category": "crypto-protocols",
+      "repoUrl": "https://github.com/dogecoin/dogecoin.git",
+      "commit": "47a303a449999314abcf83bd1fc7e77dd4540fcd",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Dogecoin cryptocurrency full node and consensus implementation. Crypto popularity cohort: 15233 accumulated stars observed on 2026-10-08; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-08-crypto-popularity.json.",
+      "selection": {
+        "cohort": "crypto-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 14981376,
+        "githubStars": 15233,
+        "popularityRank": 20,
+        "archived": false
+      }
+    },
+    {
+      "name": "solana",
+      "category": "crypto-protocols",
+      "repoUrl": "https://github.com/solana-labs/solana.git",
+      "commit": "7700cb3128c1f19820de67b81aa45d18f73d2ac0",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Solana blockchain validator, runtime and node implementation. Crypto popularity cohort: 14942 accumulated stars observed on 2026-10-08; archived implementation. Pinned source evidence and exclusions in selection-2026-10-08-crypto-popularity.json.",
+      "selection": {
+        "cohort": "crypto-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 121470383,
+        "githubStars": 14942,
+        "popularityRank": 21,
+        "archived": true
+      }
+    },
+    {
+      "name": "truffle",
+      "category": "crypto-developer-tools",
+      "repoUrl": "https://github.com/ConsenSys-archive/truffle.git",
+      "commit": "5b5312dbd5ffe2d5ec575e078ff09d98eb1b45c2",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Ethereum smart contract development and deployment framework. Crypto popularity cohort: 13905 accumulated stars observed on 2026-10-08; archived implementation. Pinned source evidence and exclusions in selection-2026-10-08-crypto-popularity.json.",
+      "selection": {
+        "cohort": "crypto-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 38267641,
+        "githubStars": 13905,
+        "popularityRank": 22,
+        "archived": true
+      }
+    },
+    {
+      "name": "metamask-extension",
+      "category": "crypto-wallets",
+      "repoUrl": "https://github.com/MetaMask/metamask-extension.git",
+      "commit": "a284fe9f478fb717712350ce0d1fedb58a1a6c10",
+      "scanSubpath": null,
+      "isStressCase": true,
+      "notes": "Ethereum and web3 browser wallet application. Crypto popularity cohort: 13224 accumulated stars observed on 2026-10-08; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-08-crypto-popularity.json.",
+      "selection": {
+        "cohort": "crypto-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 42009758,
+        "githubStars": 13224,
+        "popularityRank": 23,
+        "archived": false
+      }
+    },
+    {
+      "name": "quip-miner",
+      "category": "crypto-mining",
+      "repoUrl": "https://github.com/QuipNetwork/quip-miner.git",
+      "commit": "d58a7c79826c22b9bc071850a8f3bb453dd186b5",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Mining coordinator and chain integration for the Quip Substrate blockchain. Crypto popularity cohort: 11592 accumulated stars observed on 2026-10-08; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-08-crypto-popularity.json.",
+      "selection": {
+        "cohort": "crypto-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 1135449996,
+        "githubStars": 11592,
+        "popularityRank": 24,
+        "archived": false
+      }
+    },
+    {
+      "name": "quip-ethereum-sdk",
+      "category": "crypto-smart-contracts",
+      "repoUrl": "https://github.com/QuipNetwork/ethereum-sdk.git",
+      "commit": "355f888cdffb643f6acdd50241fc44a93b37e230",
+      "scanSubpath": null,
+      "isStressCase": false,
+      "notes": "Smart contracts and TypeScript SDK for the Quip Network EVM ecosystem. Crypto popularity cohort: 11337 accumulated stars observed on 2026-10-08; not archived at selection. Pinned source evidence and exclusions in selection-2026-10-08-crypto-popularity.json.",
+      "selection": {
+        "cohort": "crypto-popularity",
+        "date": "2026-10-08",
+        "githubRepositoryId": 967181602,
+        "githubStars": 11337,
+        "popularityRank": 25,
+        "archived": false
+      }
     }
-  ]
+  ],
+  "runId": "crypto-popularity"
 }

@@ -14,7 +14,7 @@ const historyRuns = readdirSync(historyDir)
 
 describe('committed corpus history', () => {
   it('gives every run a unique identity and valid entry records', () => {
-    const identities = historyRuns.map((run) => `${run.date}:${run.toolVersion}`);
+    const identities = historyRuns.map((run) => historyFileName(run.date, run.toolVersion, run.runId));
     expect(new Set(identities).size).toBe(identities.length);
 
     for (const run of historyRuns) {
@@ -34,7 +34,10 @@ describe('committed corpus history', () => {
   });
 
   it('has a complete snapshot for the current manifest run', () => {
-    const currentPath = path.join(historyDir, historyFileName(manifest.runDate, manifest.toolVersion));
+    const currentPath = path.join(
+      historyDir,
+      historyFileName(manifest.runDate, manifest.toolVersion, manifest.runId),
+    );
     expect(existsSync(currentPath)).toBe(true);
     const current = JSON.parse(readFileSync(currentPath, 'utf8'));
     expect(current.entries.map((entry) => entry.name)).toEqual(manifest.entries.map((entry) => entry.name));

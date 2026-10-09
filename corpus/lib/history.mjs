@@ -1,5 +1,9 @@
+import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import path from 'node:path';
+
 const TOOL_VERSION_RE = /^harness-score@(\d+\.\d+\.\d+)$/;
 const RUN_DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
+const RUN_ID_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 export function toolSemver(toolVersion) {
   return TOOL_VERSION_RE.exec(toolVersion)?.[1] ?? null;
@@ -10,12 +14,35 @@ export function reportMatchesToolVersion(report, toolVersion) {
   return report?.tool?.name === 'harness-score' && report.tool.version === version;
 }
 
-export function historyFileName(runDate, toolVersion) {
+export function historyFileName(runDate, toolVersion, runId) {
   const version = toolSemver(toolVersion);
   if (!RUN_DATE_RE.test(runDate) || !version) {
     throw new Error(`invalid history identity: ${runDate}, ${toolVersion}`);
   }
-  return `${runDate}-harness-score-${version}.json`;
+  if (runId !== undefined && (typeof runId !== 'string' || runId.length > 64 || !RUN_ID_RE.test(runId))) {
+    throw new Error('manifest.runId must be a lowercase slug of 1-64 characters');
+  }
+  return `${runDate}-harness-score-${version}${runId === undefined ? '' : `-${runId}`}.json`;
+}
+
+// Exclusive creation preserves previous evidence even when two writers race.
+// An identical rerun verifies the snapshot without touching its bytes or mtime.
+export function writeHistorySnapshot(historyDir, snapshot) {
+  const outputPath = path.join(
+    historyDir,
+    historyFileName(snapshot.date, snapshot.toolVersion, snapshot.runId),
+  );
+  const serialized = `${JSON.stringify(snapshot, null, 2)}\n`;
+  mkdirSync(historyDir, { recursive: true });
+  try {
+    writeFileSync(outputPath, serialized, { encoding: 'utf8', flag: 'wx' });
+  } catch (error) {
+    if (error.code !== 'EEXIST') throw error;
+    if (readFileSync(outputPath, 'utf8') !== serialized) {
+      throw new Error(`history snapshot already exists with different content: ${outputPath}`);
+    }
+  }
+  return outputPath;
 }
 
 export function createHistorySnapshot(manifest, resultsByName) {
@@ -25,11 +52,13 @@ export function createHistorySnapshot(manifest, resultsByName) {
   if (!toolSemver(manifest.toolVersion)) {
     throw new Error('manifest.toolVersion must pin harness-score@X.Y.Z');
   }
+  historyFileName(manifest.runDate, manifest.toolVersion, manifest.runId);
 
   return {
     schemaVersion: 1,
     date: manifest.runDate,
     toolVersion: manifest.toolVersion,
+    ...(manifest.runId === undefined ? {} : { runId: manifest.runId }),
     entries: manifest.entries.map((entry) => {
       const result = resultsByName.get(entry.name);
       const identity = {
@@ -64,7 +93,12 @@ export function createHistorySnapshot(manifest, resultsByName) {
 }
 
 export function sortHistoryRuns(runs) {
-  return [...runs].sort((a, b) => a.date.localeCompare(b.date) || a.toolVersion.localeCompare(b.toolVersion));
+  return [...runs].sort(
+    (a, b) =>
+      a.date.localeCompare(b.date) ||
+      a.toolVersion.localeCompare(b.toolVersion) ||
+      (a.runId ?? '').localeCompare(b.runId ?? ''),
+  );
 }
 
 function formatDate(date) {
@@ -101,11 +135,13 @@ function latestDelta(entries) {
 
 export function renderScoreHistoryMarkdown(runs, manifestEntries) {
   const orderedRuns = sortHistoryRuns(runs);
-  const headings = orderedRuns.map((run) => `${formatDate(run.date)}<br>\`${run.toolVersion}\``);
+  const headings = orderedRuns.map(
+    (run) => `${formatDate(run.date)}<br>\`${run.toolVersion}\`${run.runId ? `<br>\`${run.runId}\`` : ''}`,
+  );
   const lines = [
     '# Score history',
     '',
-    '_Entries present in multiple runs keep the same pinned repository commit. Their deltas measure scoring-model changes. New entries have no earlier score._',
+    '_Entries present in multiple runs keep the same pinned repository commit. Deltas across scanner versions measure scoring-model changes. Same-version runs record corpus coverage. New entries have no earlier score._',
     '',
     `| Repository | ${headings.join(' | ')} | Latest change |`,
     `|---|${orderedRuns.map(() => '---').join('|')}|---|`,

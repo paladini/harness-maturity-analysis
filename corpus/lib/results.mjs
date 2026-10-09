@@ -41,6 +41,9 @@ export function renderLeaderboardMarkdown(rows, manifest, skipped) {
       report.truncated ? 'truncated' : null,
       entry.isStressCase ? 'stress case' : null,
       entry.selection?.cohort === 'ai-popularity' ? `AI popularity #${entry.selection.popularityRank}` : null,
+      entry.selection?.cohort === 'crypto-popularity'
+        ? `Crypto popularity #${entry.selection.popularityRank}`
+        : null,
     ]
       .filter(Boolean)
       .join(', ');

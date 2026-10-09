@@ -77,7 +77,18 @@ are excluded. Mixed repositories qualify when they contain their own executable
 application, engine, CLI or reusable library; an installer or bootstrap for
 external instructions alone does not qualify.
 
-The 101-repository collection is a showcase and topology stress sample, not a
+Phase 1D adds 25 cryptocurrency software repositories by accumulated stars
+in the [frozen crypto search universe](corpus/popularity-search-2026-10-08-crypto.json).
+Public, non-fork software includes archived implementations for the lifetime
+popularity request, with status recorded. Canonical IDs deduplicate the
+101-entry baseline. The [selection ledger](corpus/selection-2026-10-08-crypto-popularity.json)
+records real software purpose, exact source blobs, immutable commits and all
+higher-ranked exclusions. Instructional collections and guides are excluded.
+Stars observed on the selection date approximate accumulated popularity,
+not historical peak stars. Cryptocurrency protocols, wallets, contracts and
+trading tools remain distinct categories within this repository-local study.
+
+The 126-repository collection is a showcase and topology stress sample, not a
 statistical sample or a completed external-validity study. Popularity selects
 coverage; it does not determine the automated maturity score. The cohort is
 the top eligible new software in the recorded search universe, with no claim
@@ -112,7 +123,10 @@ holds itself to (same input ⇒ same output, forever).
    `commit` SHA. The scanner version is pinned once, in `manifest.json`'s
    `toolVersion` (currently `harness-score@1.8.1`), and stamped into every
    report via the tool's own `tool.version` field. `runDate` identifies the
-   current version-over-version snapshot.
+   current snapshot date. Optional `runId` names separate complete cohorts on
+   that same date/version; `crypto-popularity` preserves the earlier 101-entry
+   snapshot rather than rewriting it. Same-version additions measure coverage,
+   not a scoring-model change.
 2. **Clone at the pinned commit**, never at a moving branch tip —
    [`corpus/run.mjs`](corpus/run.mjs) shallow-fetches the exact SHA,
    falling back to a full fetch when a host won't serve an arbitrary SHA
