@@ -45,6 +45,9 @@ export function renderLeaderboardMarkdown(rows, manifest, skipped) {
         ? `Crypto popularity #${entry.selection.popularityRank}`
         : null,
       entry.selection?.cohort === 'media-editing-popularity' ? 'Media editing cohort' : null,
+      entry.selection?.cohort === 'game-ai-popularity'
+        ? `Video game AI popularity #${entry.selection.popularityRank}`
+        : null,
     ]
       .filter(Boolean)
       .join(', ');

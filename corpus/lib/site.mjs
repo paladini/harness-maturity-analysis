@@ -35,6 +35,7 @@ const CATEGORY_LABELS = {
   'crypto-onchain-apps': 'on-chain applications',
   'crypto-mining': 'cryptocurrency mining software',
   'media-editing': 'media editing',
+  'video-game-ai': 'video game AI',
 };
 
 function esc(s) {
@@ -62,15 +63,20 @@ function renderLeaderboardRow(row, rank) {
   const truncatedTag = report.truncated ? '<span class="stress-tag">truncated scan</span>' : '';
   const selection = entry.selection;
   const archiveTag = selection?.archived ? '<span class="stress-tag">archived snapshot</span>' : '';
-  const provenance = ['ai-popularity', 'crypto-popularity', 'media-editing-popularity'].includes(
-    selection?.cohort,
-  )
+  const provenance = [
+    'ai-popularity',
+    'crypto-popularity',
+    'media-editing-popularity',
+    'game-ai-popularity',
+  ].includes(selection?.cohort)
     ? `<p class="board-provenance">${
         selection.cohort === 'crypto-popularity'
           ? `Crypto software cohort: popularity #${esc(selection.popularityRank)} · `
           : selection.cohort === 'ai-popularity'
             ? `AI software cohort: popularity #${esc(selection.popularityRank)} · `
-            : 'Media editing software cohort: '
+            : selection.cohort === 'game-ai-popularity'
+              ? `Video game AI software cohort: popularity #${esc(selection.popularityRank)} · `
+              : 'Media editing software cohort: '
       }${esc(Number(selection.githubStars).toLocaleString('en-US'))} GitHub stars on ${esc(selection.date)}</p>`
     : '';
   return `
@@ -190,6 +196,9 @@ export function renderSite(rows, manifest, historyRuns = []) {
   const mediaEditingCount = manifest.entries.filter(
     (entry) => entry.selection?.cohort === 'media-editing-popularity',
   ).length;
+  const gameAiCount = manifest.entries.filter(
+    (entry) => entry.selection?.cohort === 'game-ai-popularity',
+  ).length;
 
   return `<!doctype html>
 <html lang="en">
@@ -218,6 +227,7 @@ ${SITE_CSS}
       ${popularityCount ? `<span class="cohort-note">Includes ${popularityCount} new AI software projects selected by GitHub stars. <a href="https://github.com/paladini/harness-maturity-analysis/issues/3">Selection and software eligibility</a>.</span>` : ''}
       ${cryptoCount ? `<span class="cohort-note">Includes ${cryptoCount} cryptocurrency software projects selected by accumulated GitHub stars. <a href="https://github.com/paladini/harness-maturity-analysis/issues/5">Crypto selection and software eligibility</a>.</span>` : ''}
       ${mediaEditingCount ? `<span class="cohort-note">Media editing cohort selection: ${mediaEditingCount} projects from a recorded bounded GitHub search union. <a href="https://github.com/paladini/harness-maturity-analysis/issues/7">Selection and source evidence</a>.</span>` : ''}
+      ${gameAiCount ? `<span class="cohort-note">Includes ${gameAiCount} video game AI and AI-assisted game development projects selected by stars within a bounded search union. <a href="https://github.com/paladini/harness-maturity-analysis/issues/11">Selection and source evidence</a>.</span>` : ''}
     </p>
     <div class="meta-strip">
       <span>${esc(manifest.toolVersion)}</span>
