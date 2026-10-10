@@ -1,0 +1,569 @@
+{
+  "removed": [
+    {
+      "name": "ai-engineering-from-scratch",
+      "canonicalSlug": "rohitg00/ai-engineering-from-scratch",
+      "stars": 66202,
+      "reason": "tutorial-first educational repository; not an AI software product"
+    },
+    {
+      "name": "ai-agent-book",
+      "canonicalSlug": "bojieli/ai-agent-book",
+      "stars": 53186,
+      "reason": "book and chapter examples; excluded by the reference-only rule"
+    },
+    {
+      "name": "ai-engineering-hub",
+      "canonicalSlug": "patchy631/ai-engineering-hub",
+      "stars": 38271,
+      "reason": "tutorial collection rather than a software product"
+    },
+    {
+      "name": "d2l-en",
+      "canonicalSlug": "d2l-ai/d2l-en",
+      "stars": 29799,
+      "reason": "interactive textbook/course repository"
+    },
+    {
+      "name": "cs249r-book",
+      "canonicalSlug": "harvard-edge/cs249r_book",
+      "stars": 28921,
+      "reason": "textbook/reference repository"
+    },
+    {
+      "name": "genai-agents",
+      "canonicalSlug": "NirDiamant/GenAI_Agents",
+      "stars": 24506,
+      "reason": "tutorial collection rather than a software product"
+    },
+    {
+      "name": "ml-engineering",
+      "canonicalSlug": "stas00/ml-engineering",
+      "stars": 19433,
+      "reason": "open book and reference materials"
+    },
+    {
+      "name": "ml-nlp",
+      "canonicalSlug": "NLP-LOVE/ML-NLP",
+      "stars": 17831,
+      "reason": "interview preparation/reference notes"
+    },
+    {
+      "name": "python-machine-learning-book",
+      "canonicalSlug": "rasbt/python-machine-learning-book",
+      "stars": 12657,
+      "reason": "book companion and code reference"
+    },
+    {
+      "name": "llmsurvey",
+      "canonicalSlug": "RUCAIBox/LLMSurvey",
+      "stars": 12226,
+      "reason": "survey paper repository"
+    },
+    {
+      "name": "all-in-rag",
+      "canonicalSlug": "datawhalechina/all-in-rag",
+      "stars": 11876,
+      "reason": "guide/course content rather than a standalone software product"
+    },
+    {
+      "name": "reinforcement-learning-with-tensorflow",
+      "canonicalSlug": "MorvanZhou/Reinforcement-learning-with-tensorflow",
+      "stars": 9521,
+      "reason": "tutorial and course repository"
+    },
+    {
+      "name": "machine-learning-examples",
+      "canonicalSlug": "lazyprogrammer/machine_learning_examples",
+      "stars": 8928,
+      "reason": "tutorial and example collection"
+    },
+    {
+      "name": "machine-learning-collection",
+      "canonicalSlug": "aladdinpersson/Machine-Learning-Collection",
+      "stars": 8493,
+      "reason": "learning resource collection"
+    },
+    {
+      "name": "python-small-examples",
+      "canonicalSlug": "jackzhenguo/python-small-examples",
+      "stars": 8125,
+      "reason": "general-purpose Python examples; AI is incidental"
+    },
+    {
+      "name": "deeplearning",
+      "canonicalSlug": "MingchaoZhu/DeepLearning",
+      "stars": 7796,
+      "reason": "textbook companion and reference examples"
+    },
+    {
+      "name": "claude-code-book",
+      "canonicalSlug": "lintsinghua/claude-code-book",
+      "stars": 4292,
+      "reason": "book/reference repository"
+    },
+    {
+      "name": "hands-on-ai-engineering",
+      "canonicalSlug": "Sumanth077/Hands-On-AI-Engineering",
+      "stars": 3951,
+      "reason": "curated learning project collection"
+    }
+  ],
+  "replacements": [
+    {
+      "name": "worldmonitor",
+      "category": "ai-applications",
+      "repoUrl": "https://github.com/koala73/worldmonitor.git",
+      "commit": "d49477575bb0e6282cb03080f792989136818ee7",
+      "defaultBranch": "main",
+      "githubRepositoryId": 1130564872,
+      "canonicalSlug": "koala73/worldmonitor",
+      "githubProvenance": "https://github.com/koala73/worldmonitor",
+      "githubStars": 88141,
+      "popularityRank": 0,
+      "selectionMode": "popular",
+      "license": "AGPL-3.0",
+      "sizeKiB": 255061,
+      "archived": false,
+      "purpose": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+      "codeEvidence": {
+        "path": ".agents/skills/verify-worldmonitor/scripts/drive.mjs",
+        "blobSha": "5e5e4aa791127f22a389d564b5d9bf90afb2113e",
+        "size": 6624
+      },
+      "readmeEvidence": "https://github.com/koala73/worldmonitor/blob/d49477575bb0e6282cb03080f792989136818ee7/README.md",
+      "checkoutPlan": "Full repository root; LFS smudging disabled; submodules uninitialized; preserve native symlinks.",
+      "matchedQueries": ["topic:ai stars:>100"]
+    },
+    {
+      "name": "openmontage",
+      "category": "ai-coding-tools",
+      "repoUrl": "https://github.com/calesthio/OpenMontage.git",
+      "commit": "9327439db69021ab4b0e2776729bf3b58fdb5a87",
+      "defaultBranch": "main",
+      "githubRepositoryId": 1195360525,
+      "canonicalSlug": "calesthio/OpenMontage",
+      "githubProvenance": "https://github.com/calesthio/OpenMontage",
+      "githubStars": 65840,
+      "popularityRank": 0,
+      "selectionMode": "popular",
+      "license": "AGPL-3.0",
+      "sizeKiB": 77018,
+      "archived": false,
+      "purpose": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
+      "codeEvidence": {
+        "path": ".agents/skills/beautiful-mermaid/scripts/create-html.ts",
+        "blobSha": "3491002cb6b93f308053d9a94efdd0aab296efb6",
+        "size": 4339
+      },
+      "readmeEvidence": "https://github.com/calesthio/OpenMontage/blob/9327439db69021ab4b0e2776729bf3b58fdb5a87/README.md",
+      "checkoutPlan": "Full repository root; LFS smudging disabled; submodules uninitialized; preserve native symlinks.",
+      "matchedQueries": ["topic:ai stars:>100"]
+    },
+    {
+      "name": "chat2db",
+      "category": "ai-model-inference",
+      "repoUrl": "https://github.com/OtterMind/Chat2DB.git",
+      "commit": "ea3a5c68ca290199dc86726706eb3006495ca34f",
+      "defaultBranch": "main",
+      "githubRepositoryId": 656227652,
+      "canonicalSlug": "OtterMind/Chat2DB",
+      "githubProvenance": "https://github.com/OtterMind/Chat2DB",
+      "githubStars": 28305,
+      "popularityRank": 0,
+      "selectionMode": "popular",
+      "license": "NOASSERTION",
+      "sizeKiB": 59185,
+      "archived": false,
+      "purpose": "Chat2DB is a free, cross-platform, local-first database client and SQL workspace for developers, DBAs, analysts, and data teams. Connect to 40+ databases, manage data, edit and run SQL, and use your own AI model to generate, explain, and optimize queries. Available on desktop, web, Docker, and CLI, with MCP support.",
+      "codeEvidence": {
+        "path": "chat2db-community-client/.eslintrc.js",
+        "blobSha": "da0cece8c1f99b4e867627f9064ce348f396745d",
+        "size": 6814
+      },
+      "readmeEvidence": "https://github.com/OtterMind/Chat2DB/blob/ea3a5c68ca290199dc86726706eb3006495ca34f/README.md",
+      "checkoutPlan": "Full repository root; LFS smudging disabled; submodules uninitialized; preserve native symlinks.",
+      "matchedQueries": ["topic:ai stars:>100", "topic:llm stars:>100"]
+    },
+    {
+      "name": "kilocode",
+      "category": "ai-coding-tools",
+      "repoUrl": "https://github.com/Kilo-Org/kilocode.git",
+      "commit": "fb7e96eda5409517a05948b9efaf01c53997bf6e",
+      "defaultBranch": "main",
+      "githubRepositoryId": 946087422,
+      "canonicalSlug": "Kilo-Org/kilocode",
+      "githubProvenance": "https://github.com/Kilo-Org/kilocode",
+      "githubStars": 27537,
+      "popularityRank": 0,
+      "selectionMode": "popular",
+      "license": "MIT",
+      "sizeKiB": 696375,
+      "archived": false,
+      "purpose": "Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent.",
+      "codeEvidence": {
+        "path": ".kilo/skills/jetbrains-cli-pin/script/clean.ts",
+        "blobSha": "a58ddcc532a3bdfd05b630bcb1b65c72253abb86",
+        "size": 1227
+      },
+      "readmeEvidence": "https://github.com/Kilo-Org/kilocode/blob/fb7e96eda5409517a05948b9efaf01c53997bf6e/README.md",
+      "checkoutPlan": "Full repository root; LFS smudging disabled; submodules uninitialized; preserve native symlinks.",
+      "matchedQueries": ["topic:ai stars:>100"]
+    },
+    {
+      "name": "stagehand",
+      "category": "ai-applications",
+      "repoUrl": "https://github.com/browserbase/stagehand.git",
+      "commit": "1fc884992b68a0196ea5c6e96cc29924b0922ef4",
+      "defaultBranch": "main",
+      "githubRepositoryId": 776908852,
+      "canonicalSlug": "browserbase/stagehand",
+      "githubProvenance": "https://github.com/browserbase/stagehand",
+      "githubStars": 25594,
+      "popularityRank": 0,
+      "selectionMode": "popular",
+      "license": "MIT",
+      "sizeKiB": 187186,
+      "archived": false,
+      "purpose": "The SDK to extract data and interact with any site on the web. Get started with Claude Code, Codex, Eve, Mastra, and more.",
+      "codeEvidence": {
+        "path": "oxlint.config.ts",
+        "blobSha": "0d273e5c3808ad1a79ab3f36eda90aefe01a313c",
+        "size": 922
+      },
+      "readmeEvidence": "https://github.com/browserbase/stagehand/blob/1fc884992b68a0196ea5c6e96cc29924b0922ef4/README.md",
+      "checkoutPlan": "Full repository root; LFS smudging disabled; submodules uninitialized; preserve native symlinks.",
+      "matchedQueries": ["topic:ai stars:>100"]
+    },
+    {
+      "name": "qbot",
+      "category": "ai-applications",
+      "repoUrl": "https://github.com/UFund-Me/Qbot.git",
+      "commit": "f0425ae4ae8bd02b79656b8f7039f4cd6874095e",
+      "defaultBranch": "main",
+      "githubRepositoryId": 569509049,
+      "canonicalSlug": "UFund-Me/Qbot",
+      "githubProvenance": "https://github.com/UFund-Me/Qbot",
+      "githubStars": 18581,
+      "popularityRank": 0,
+      "selectionMode": "popular",
+      "license": "MIT",
+      "sizeKiB": 380245,
+      "archived": false,
+      "purpose": "[🔥updating ...] AI 自动量化交易机器人(完全本地部署) AI-powered Quantitative Investment Research Platform. 📃 online docs: https://ufund-me.github.io/Qbot ✨ :news: qbot-mini: https://github.com/Charmve/iQuant",
+      "codeEvidence": {
+        "path": "env_setup.sh",
+        "blobSha": "8b1df3dadaae67430815a901caa6f0a0737d46b6",
+        "size": 3342
+      },
+      "readmeEvidence": "https://github.com/UFund-Me/Qbot/blob/f0425ae4ae8bd02b79656b8f7039f4cd6874095e/README.md",
+      "checkoutPlan": "Full repository root; LFS smudging disabled; submodules uninitialized; preserve native symlinks.",
+      "matchedQueries": ["topic:machine-learning stars:>500"]
+    },
+    {
+      "name": "unstructured",
+      "category": "ai-model-inference",
+      "repoUrl": "https://github.com/Unstructured-IO/unstructured.git",
+      "commit": "e2f22b38b995858c870dade7cbf6fcf06a9c801c",
+      "defaultBranch": "main",
+      "githubRepositoryId": 541798154,
+      "canonicalSlug": "Unstructured-IO/unstructured",
+      "githubProvenance": "https://github.com/Unstructured-IO/unstructured",
+      "githubStars": 15555,
+      "popularityRank": 0,
+      "selectionMode": "popular",
+      "license": "Apache-2.0",
+      "sizeKiB": 237789,
+      "archived": false,
+      "purpose": "Convert documents to structured data effortlessly. Unstructured is open-source ETL solution for transforming complex documents into clean, structured formats for language models. Visit our website to learn more about our enterprise grade Platform product for production grade workflows, partitioning, enrichments, chunking and embedding.",
+      "codeEvidence": {
+        "path": "conftest.py",
+        "blobSha": "073b13e6466554b8c0fdee0c70e240849a28d343",
+        "size": 163
+      },
+      "readmeEvidence": "https://github.com/Unstructured-IO/unstructured/blob/e2f22b38b995858c870dade7cbf6fcf06a9c801c/README.md",
+      "checkoutPlan": "Full repository root; LFS smudging disabled; submodules uninitialized; preserve native symlinks.",
+      "matchedQueries": ["topic:llm stars:>100", "topic:machine-learning stars:>500"]
+    },
+    {
+      "name": "insforge",
+      "category": "ai-coding-tools",
+      "repoUrl": "https://github.com/InsForge/InsForge.git",
+      "commit": "2ec64b6734e331119979a88883336fce6e30b9ba",
+      "defaultBranch": "main",
+      "githubRepositoryId": 1028159967,
+      "canonicalSlug": "InsForge/InsForge",
+      "githubProvenance": "https://github.com/InsForge/InsForge",
+      "githubStars": 13070,
+      "popularityRank": 0,
+      "selectionMode": "popular",
+      "license": "Apache-2.0",
+      "sizeKiB": 153515,
+      "archived": false,
+      "purpose": "The all-in-one, open-source backend platform for agentic coding. InsForge gives your coding agent database, auth, storage, compute, hosting, and AI gateway to ship full-stack apps end-to-end.",
+      "codeEvidence": {
+        "path": "backend/scripts/check-migration-duplicates.js",
+        "blobSha": "518447c66773ca4e6652e0b749690ec58da57be0",
+        "size": 3318
+      },
+      "readmeEvidence": "https://github.com/InsForge/InsForge/blob/2ec64b6734e331119979a88883336fce6e30b9ba/README.md",
+      "checkoutPlan": "Full repository root; LFS smudging disabled; submodules uninitialized; preserve native symlinks.",
+      "matchedQueries": ["topic:ai stars:>100"]
+    },
+    {
+      "name": "note-gen",
+      "category": "ai-model-inference",
+      "repoUrl": "https://github.com/codexu/note-gen.git",
+      "commit": "a4d912f853d1ed502b057059a6bbbc23b47e784a",
+      "defaultBranch": "dev",
+      "githubRepositoryId": 838659679,
+      "canonicalSlug": "codexu/note-gen",
+      "githubProvenance": "https://github.com/codexu/note-gen",
+      "githubStars": 12878,
+      "popularityRank": 0,
+      "selectionMode": "popular",
+      "license": "GPL-3.0",
+      "sizeKiB": 21860,
+      "archived": false,
+      "purpose": "Capture first. Organize later. A local-first Markdown app that turns scattered records into clear notes with AI.",
+      "codeEvidence": {
+        "path": "next.config.ts",
+        "blobSha": "0b2983656a88e013ffae1bbfc8ea43f6a2be5592",
+        "size": 1045
+      },
+      "readmeEvidence": "https://github.com/codexu/note-gen/blob/a4d912f853d1ed502b057059a6bbbc23b47e784a/README.md",
+      "checkoutPlan": "Full repository root; LFS smudging disabled; submodules uninitialized; preserve native symlinks.",
+      "matchedQueries": ["topic:llm stars:>100"]
+    },
+    {
+      "name": "fastapi-mcp",
+      "category": "ai-model-inference",
+      "repoUrl": "https://github.com/tadata-org/fastapi_mcp.git",
+      "commit": "e5cad13cabfc725bbcb047e526816d887d96da62",
+      "defaultBranch": "main",
+      "githubRepositoryId": 944976593,
+      "canonicalSlug": "tadata-org/fastapi_mcp",
+      "githubProvenance": "https://github.com/tadata-org/fastapi_mcp",
+      "githubStars": 12018,
+      "popularityRank": 0,
+      "selectionMode": "popular",
+      "license": "MIT",
+      "sizeKiB": 423,
+      "archived": false,
+      "purpose": "Expose your FastAPI endpoints as Model Context Protocol (MCP) tools, with Auth!",
+      "codeEvidence": {
+        "path": "fastapi_mcp/__init__.py",
+        "blobSha": "f7487126db1db3d739856cb6fdae0912f496ed74",
+        "size": 501
+      },
+      "readmeEvidence": "https://github.com/tadata-org/fastapi_mcp/blob/e5cad13cabfc725bbcb047e526816d887d96da62/README.md",
+      "checkoutPlan": "Full repository root; LFS smudging disabled; submodules uninitialized; preserve native symlinks.",
+      "matchedQueries": ["topic:ai stars:>100", "topic:llm stars:>100"]
+    },
+    {
+      "name": "memos",
+      "category": "ai-model-inference",
+      "repoUrl": "https://github.com/MemTensor/MemOS.git",
+      "commit": "a7367d07e55db61099f7b4e2c1108bc5831a24f3",
+      "defaultBranch": "main",
+      "githubRepositoryId": 1014729376,
+      "canonicalSlug": "MemTensor/MemOS",
+      "githubProvenance": "https://github.com/MemTensor/MemOS",
+      "githubStars": 11770,
+      "popularityRank": 0,
+      "selectionMode": "popular",
+      "license": "Apache-2.0",
+      "sizeKiB": 73968,
+      "archived": false,
+      "purpose": "Self-evolving memory OS for LLM & AI Agents: ultra-persistent memory, hybrid-retrieval, and cross-task skill reuse, with 35.24% token savings and DeepSeek Harness support.",
+      "codeEvidence": {
+        "path": "apps/MemOS-Cloud-OpenClaw-Plugin/index.js",
+        "blobSha": "72f7edb53cdcc6052d2f19b289995e80d9e1e4be",
+        "size": 32988
+      },
+      "readmeEvidence": "https://github.com/MemTensor/MemOS/blob/a7367d07e55db61099f7b4e2c1108bc5831a24f3/README.md",
+      "checkoutPlan": "Full repository root; LFS smudging disabled; submodules uninitialized; preserve native symlinks.",
+      "matchedQueries": ["topic:ai stars:>100", "topic:llm stars:>100"]
+    },
+    {
+      "name": "holaos",
+      "category": "ai-agent-frameworks",
+      "repoUrl": "https://github.com/holaboss-ai/holaOS.git",
+      "commit": "4684714ee133794cdbb86630e42b7d93447fb2e2",
+      "defaultBranch": "main",
+      "githubRepositoryId": 1188521544,
+      "canonicalSlug": "holaboss-ai/holaOS",
+      "githubProvenance": "https://github.com/holaboss-ai/holaOS",
+      "githubStars": 11447,
+      "popularityRank": 0,
+      "selectionMode": "popular",
+      "license": "NOASSERTION",
+      "sizeKiB": 30170,
+      "archived": false,
+      "purpose": "Open-source agentic workspace enterprises can make their own. Connect the systems you already run — 100+ integrations, MCP, chat tools, apps, browser, local files — with shared memory. Any agent (Claude Code, Codex), any model, or BYOK. Set up in clicks, not months. Local-first: your data never leaves your machines.",
+      "codeEvidence": {
+        "path": "apps/desktop/e2e/browser-workspace-isolation.test.mjs",
+        "blobSha": "4a64f8a0531303148066dfbb3bb79b1352a71d52",
+        "size": 13170
+      },
+      "readmeEvidence": "https://github.com/holaboss-ai/holaOS/blob/4684714ee133794cdbb86630e42b7d93447fb2e2/README.md",
+      "checkoutPlan": "Full repository root; LFS smudging disabled; submodules uninitialized; preserve native symlinks.",
+      "matchedQueries": [
+        "topic:ai stars:>100",
+        "topic:artificial-intelligence stars:>100",
+        "topic:llm stars:>100",
+        "topic:ai-agent stars:>100"
+      ]
+    },
+    {
+      "name": "petals",
+      "category": "ai-model-inference",
+      "repoUrl": "https://github.com/bigscience-workshop/petals.git",
+      "commit": "22afba627a7eb4fcfe9418c49472c6a51334b8ac",
+      "defaultBranch": "main",
+      "githubRepositoryId": 502482803,
+      "canonicalSlug": "bigscience-workshop/petals",
+      "githubProvenance": "https://github.com/bigscience-workshop/petals",
+      "githubStars": 10616,
+      "popularityRank": 0,
+      "selectionMode": "popular",
+      "license": "MIT",
+      "sizeKiB": 4256,
+      "archived": false,
+      "purpose": "🌸 Run LLMs at home, BitTorrent-style. Fine-tuning and inference up to 10x faster than offloading",
+      "codeEvidence": {
+        "path": "src/petals/__init__.py",
+        "blobSha": "283a4ea4b59c60ab12a45127f959a2ceda4ffb7b",
+        "size": 1062
+      },
+      "readmeEvidence": "https://github.com/bigscience-workshop/petals/blob/22afba627a7eb4fcfe9418c49472c6a51334b8ac/README.md",
+      "checkoutPlan": "Full repository root; LFS smudging disabled; submodules uninitialized; preserve native symlinks.",
+      "matchedQueries": ["topic:machine-learning stars:>500"]
+    },
+    {
+      "name": "machinelearning",
+      "category": "ai-applications",
+      "repoUrl": "https://github.com/dotnet/machinelearning.git",
+      "commit": "68b8ee6a451c3e1eaac95982bf01c0c4436fd390",
+      "defaultBranch": "main",
+      "githubRepositoryId": 132021166,
+      "canonicalSlug": "dotnet/machinelearning",
+      "githubProvenance": "https://github.com/dotnet/machinelearning",
+      "githubStars": 9354,
+      "popularityRank": 0,
+      "selectionMode": "popular",
+      "license": "MIT",
+      "sizeKiB": 102501,
+      "archived": false,
+      "purpose": "ML.NET is an open source and cross-platform machine learning framework for .NET.",
+      "codeEvidence": {
+        "path": "build.sh",
+        "blobSha": "87cb508fc7fc3ffde970edd34782980de2097527",
+        "size": 512
+      },
+      "readmeEvidence": "https://github.com/dotnet/machinelearning/blob/68b8ee6a451c3e1eaac95982bf01c0c4436fd390/README.md",
+      "checkoutPlan": "Full repository root; LFS smudging disabled; submodules uninitialized; preserve native symlinks.",
+      "matchedQueries": ["topic:machine-learning stars:>500"]
+    },
+    {
+      "name": "genoffice",
+      "category": "ai-agent-frameworks",
+      "repoUrl": "https://github.com/genspark-ai/genoffice.git",
+      "commit": "1ca5e9adfc1807a158db19741eff825dba9ab757",
+      "defaultBranch": "main",
+      "githubRepositoryId": 1318187016,
+      "canonicalSlug": "genspark-ai/genoffice",
+      "githubProvenance": "https://github.com/genspark-ai/genoffice",
+      "githubStars": 9109,
+      "popularityRank": 0,
+      "selectionMode": "popular",
+      "license": "Apache-2.0",
+      "sizeKiB": 63335,
+      "archived": false,
+      "purpose": "Free, open-source AI Office suite: Docs, Sheets, Slides, PDF, Markdown and HTML editors with a built-in AI agent, plus a `genoffice` CLI and agent skill so Claude Code, Codex and Cursor can create and edit real .docx/.xlsx/.pptx files locally. Bring your own key. macOS, Windows & Linux.",
+      "codeEvidence": {
+        "path": "apps/html/electron.vite.config.ts",
+        "blobSha": "69e0190fed068ceed0fc46fefaf7c3ce82c7832c",
+        "size": 640
+      },
+      "readmeEvidence": "https://github.com/genspark-ai/genoffice/blob/1ca5e9adfc1807a158db19741eff825dba9ab757/README.md",
+      "checkoutPlan": "Full repository root; LFS smudging disabled; submodules uninitialized; preserve native symlinks.",
+      "matchedQueries": ["topic:ai-agent stars:>100"]
+    },
+    {
+      "name": "interpret",
+      "category": "ai-applications",
+      "repoUrl": "https://github.com/interpretml/interpret.git",
+      "commit": "452a6b8b25c798c7eae0e5a4aa8bb29334a36aa0",
+      "defaultBranch": "main",
+      "githubRepositoryId": 184704903,
+      "canonicalSlug": "interpretml/interpret",
+      "githubProvenance": "https://github.com/interpretml/interpret",
+      "githubStars": 6955,
+      "popularityRank": 0,
+      "selectionMode": "popular",
+      "license": "MIT",
+      "sizeKiB": 16515,
+      "archived": false,
+      "purpose": "Fit interpretable models. Explain blackbox machine learning.",
+      "codeEvidence": {
+        "path": "R/src/interpret_R.cpp",
+        "blobSha": "c0fd4c6f06145d09778f09cbdc0f0483d44d67b0",
+        "size": 41154
+      },
+      "readmeEvidence": "https://github.com/interpretml/interpret/blob/452a6b8b25c798c7eae0e5a4aa8bb29334a36aa0/README.md",
+      "checkoutPlan": "Full repository root; LFS smudging disabled; submodules uninitialized; preserve native symlinks.",
+      "matchedQueries": ["topic:artificial-intelligence stars:>100"]
+    },
+    {
+      "name": "aci",
+      "category": "ai-coding-tools",
+      "repoUrl": "https://github.com/aipotheosis-labs/aci.git",
+      "commit": "3e4a82fa5fd22f1165af2b39fa3de2b0f031242e",
+      "defaultBranch": "main",
+      "githubRepositoryId": 859956307,
+      "canonicalSlug": "aipotheosis-labs/aci",
+      "githubProvenance": "https://github.com/aipotheosis-labs/aci",
+      "githubStars": 4907,
+      "popularityRank": 0,
+      "selectionMode": "popular",
+      "license": "Apache-2.0",
+      "sizeKiB": 20937,
+      "archived": false,
+      "purpose": "ACI.dev is the open source tool-calling platform that hooks up 600+ tools into any agentic IDE or custom AI agent through direct function calling or a unified MCP server. The birthplace of VibeOps.",
+      "codeEvidence": {
+        "path": "backend/aci/alembic/env.py",
+        "blobSha": "06304d47ec109fe25422f825de6abe8df3968733",
+        "size": 3026
+      },
+      "readmeEvidence": "https://github.com/aipotheosis-labs/aci/blob/3e4a82fa5fd22f1165af2b39fa3de2b0f031242e/README.md",
+      "checkoutPlan": "Full repository root; LFS smudging disabled; submodules uninitialized; preserve native symlinks.",
+      "matchedQueries": ["AI IDE in:name,description stars:>100"]
+    },
+    {
+      "name": "nixtla",
+      "category": "ai-model-inference",
+      "repoUrl": "https://github.com/Nixtla/nixtla.git",
+      "commit": "d6d3d27ab799747c5663de429ac4bb138602238e",
+      "defaultBranch": "main",
+      "githubRepositoryId": 409653223,
+      "canonicalSlug": "Nixtla/nixtla",
+      "githubProvenance": "https://github.com/Nixtla/nixtla",
+      "githubStars": 4020,
+      "popularityRank": 0,
+      "selectionMode": "popular",
+      "license": "NOASSERTION",
+      "sizeKiB": 309399,
+      "archived": false,
+      "purpose": "TimeGPT-2.1: production ready pre-trained Time Series Foundation Model for forecasting and anomaly detection. Generative pretrained transformer for time series trained on over 100B data points. It's capable of accurately predicting various domains such as retail, electricity, finance, and IoT with just a few lines of code 🚀.",
+      "codeEvidence": {
+        "path": "action_files/comment_file.py",
+        "blobSha": "b77a780ac9796c4e9d60782b5c024c2d0f0f908a",
+        "size": 1398
+      },
+      "readmeEvidence": "https://github.com/Nixtla/nixtla/blob/d6d3d27ab799747c5663de429ac4bb138602238e/README.md",
+      "checkoutPlan": "Full repository root; LFS smudging disabled; submodules uninitialized; preserve native symlinks.",
+      "matchedQueries": ["topic:artificial-intelligence stars:>100"]
+    }
+  ]
+}
