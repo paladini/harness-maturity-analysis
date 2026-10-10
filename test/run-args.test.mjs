@@ -17,4 +17,12 @@ describe('parseArgs', () => {
   it('treats a trailing --only with no value as no filter', () => {
     expect(parseArgs(['--only']).only).toBeNull();
   });
+
+  it('enables cache pruning only as an explicit option', () => {
+    expect(parseArgs(['--only', 'a,b', '--prune-cache'])).toEqual({
+      only: new Set(['a', 'b']),
+      pruneCache: true,
+    });
+    expect(parseArgs([]).pruneCache).toBe(false);
+  });
 });

@@ -68,6 +68,26 @@ describe('renderSite', () => {
     expect(html).toContain('media editing');
     expect(html).not.toContain('popularity #');
   });
+  it('labels the broad GitHub software cohort as popularity metadata', () => {
+    const entry = fakeEntry('popular-software', {
+      category: 'github-top-software',
+      selection: {
+        cohort: 'github-top-software-popularity',
+        date: '2026-10-10',
+        githubStars: 25503,
+        popularityRank: 1000,
+      },
+    });
+    const html = renderSite([{ entry, report: fakeReport({ percent: 42, level: 1 }) }], {
+      toolVersion: 'harness-score@1.8.1',
+      entries: [entry],
+    });
+    expect(html).toContain('GitHub software cohort: popularity #1000');
+    expect(html).toContain('25,503 GitHub stars on 2026-10-10');
+    expect(html).toContain('GitHub top software');
+    expect(html).toContain('issues/15');
+    expect(html).toContain('Popularity is selection metadata, not maturity');
+  });
   it('produces a well-formed document with a matching title and repo count', () => {
     const entries = [fakeEntry('one'), fakeEntry('two')];
     const rows = [
