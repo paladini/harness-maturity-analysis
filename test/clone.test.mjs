@@ -2,13 +2,25 @@ import { execFileSync } from 'node:child_process';
 import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
-import { afterEach, describe, expect, it } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 import { pinnedClone } from '../corpus/lib/scan.mjs';
 
 const tempRoots = [];
+const inheritedGitEnvironment = new Map();
 const git = (cwd, args) => execFileSync('git', args, { cwd, encoding: 'utf8', windowsHide: true }).trim();
 
+beforeEach(() => {
+  for (const name of Object.keys(process.env)) {
+    if (name.startsWith('GIT_')) {
+      inheritedGitEnvironment.set(name, process.env[name]);
+      delete process.env[name];
+    }
+  }
+});
+
 afterEach(() => {
+  for (const [name, value] of inheritedGitEnvironment) process.env[name] = value;
+  inheritedGitEnvironment.clear();
   for (const root of tempRoots.splice(0)) {
     if (!path.resolve(root).startsWith(path.join(tmpdir(), 'harness-clone-'))) {
       throw new Error(`Refusing to clean an unexpected test directory: ${root}`);

@@ -101,12 +101,41 @@ input or a historical peak. The [execution report](analysis/phase-1e-execution.m
 contains scanner outcomes and limitations. This remains a showcase expansion
 without blind human ratings.
 
-The 151-repository collection is a showcase and topology stress sample, not a
+The original 151-repository collection is a showcase and topology stress sample, not a
 statistical sample or a completed external-validity study. Popularity selects
 coverage; it does not determine the automated maturity score. The cohort is
 the top eligible new software in the recorded search universe, with no claim
 that GitHub topic labels perfectly identify every AI repository. All capped
 search pages extend below the 30th eligible candidate's star count.
+
+Phase 1F adds 500 AI software projects selected from eight GitHub searches
+covering AI, artificial intelligence, LLMs, agents, generative AI, coding
+assistants, machine learning, and AI IDEs. The [discovery snapshot](corpus/popularity-search-2026-10-09-ai-500.json)
+preserves 2,015 returned records across the query pages and 1,689 unique
+canonical repository IDs. The [selection ledger](corpus/selection-2026-10-09-ai-500.json)
+records the 500 admitted projects, observed stars, numeric IDs, immutable
+default-branch commits, software purpose, README and implementation-blob
+evidence, archive state, and rejected candidates. The selected range was
+159,604 to 3,613 stars in this bounded search universe after the final
+eligibility review. That review removed 18 learning-only books, surveys,
+interview notes, tutorial collections, and reference repositories and replaced
+them with pinned AI software candidates. The replacement list and evidence are
+recorded in the selection ledger. The 300-result query
+windows, topic coverage, and GitHub Search semantics limit the universe; this
+is not a claim of a universal GitHub top 500. Canonical IDs deduplicate the
+151-entry baseline and Showcase projects. AI/LLM/agent work was already an
+explored topic; this expansion was explicitly requested. General-purpose
+projects with incidental AI mentions, guides, courses, skill packs, and
+reference-only repositories are excluded. Popularity is selection metadata,
+not a score input. The cohort is scanner-only and makes no blind-rating or
+external-validity claim.
+
+The completed cohort has 500 reports at `harness-score@1.8.1`, all pinned to
+the selected commits, with no truncated reports. The [Phase 1F execution
+report](analysis/phase-1f-execution.md) summarizes the score and level
+distribution, checkout audit, and one Windows checkout exception handled on
+Linux without omitting tracked files. No scanned repository code was run,
+installed, built, or tested.
 
 Stress cases folded into the corpus on purpose:
 
