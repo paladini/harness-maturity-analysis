@@ -493,7 +493,7 @@
   "minimumObservedStars": 6,
   "maximumObservedStars": 3573,
   "scannerVersion": "harness-score@1.8.1",
-  "analysisIssueUrl": null,
+  "analysisIssueUrl": "https://github.com/paladini/harness-maturity-analysis/issues/11",
   "showcaseIssueUrl": null,
   "discoverySnapshot": "corpus/popularity-search-2026-10-10-extended-game-ai-500.json",
   "searchUniverse": {
@@ -19931,9 +19931,21 @@
           }
         ],
         "reason": "implementation blob has no game or AI evidence"
+      },
+      {
+        "githubRepositoryId": 461768724,
+        "canonicalSlug": "shreyasharma04/HealthChatbot",
+        "observedStars": 130,
+        "rankWithinSearchUnion": 81,
+        "reason": "Scope correction after README review: this is a healthcare chatbot and does not implement a videogame or game-development AI tool; incidental use of \"gaming\" caused a false positive."
       }
     ],
-    "lowerPopularityPoolNotExaminedAfterCutoff": 1010
+    "lowerPopularityPoolNotExaminedAfterCutoff": 1009,
+    "scopeCorrection": {
+      "removedFalsePositive": "shreyasharma04/HealthChatbot",
+      "replacement": "unxsist/godot-ai-chat",
+      "replacementReason": "The pinned README documents an AI agent embedded in the Godot game editor; the pinned implementation contains an LLM tool-calling agent loop, including game execution and debugging tools."
+    }
   },
   "selected": [
     {
@@ -24351,60 +24363,12 @@
       }
     },
     {
-      "name": "game-ai-shreyasharma04-healthchatbot",
-      "canonicalSlug": "shreyasharma04/HealthChatbot",
-      "githubRepositoryId": 461768724,
-      "repoUrl": "https://github.com/shreyasharma04/HealthChatbot.git",
-      "selectionMode": "popular",
-      "popularityRank": 81,
-      "observedStars": 130,
-      "observedStarsCapture": [
-        {
-          "query": "AI game bot in:name,description stars:>0",
-          "page": 1,
-          "rank": 8,
-          "capturedAt": null
-        }
-      ],
-      "archived": false,
-      "disabled": false,
-      "fork": false,
-      "language": "Python",
-      "license": null,
-      "createdAt": "2022-02-21T08:27:25Z",
-      "pushedAt": "2022-02-21T08:29:12Z",
-      "defaultBranch": "main",
-      "commit": "0acaa60003e2fb895f5449043c71ad71055f93d2",
-      "purpose": "🤖 HealthCare ChatBot Major -1 (4th year - 7th semester)  Health Care Chat-Bot is a Healthcare Domain Chatbot to simulate the predictions of a General Physician.  ChatBot can be described as software that can chat with people using artificial intelligence. These software are used to perform tasks such as quickly responding to users, informing them, helping to purchase products and providing better service to customers. We have made a healthcare based chatbot.  The three main areas where chatbots",
-      "readmeEvidence": {
-        "path": "README.md",
-        "blobSha": "7e9dca7edf9b438c6fb912d1a23c8403be1426bd",
-        "url": "https://github.com/shreyasharma04/HealthChatbot/blob/0acaa60003e2fb895f5449043c71ad71055f93d2/README.md",
-        "inspectedBytes": 4363
-      },
-      "implementationEvidence": {
-        "path": "QuestionDiagonosisTkinter.py",
-        "blobSha": "1b4359aa0de2af939a1dc0b233738333b74206a0",
-        "size": 16500,
-        "url": "https://github.com/shreyasharma04/HealthChatbot/blob/0acaa60003e2fb895f5449043c71ad71055f93d2/QuestionDiagonosisTkinter.py",
-        "inspectedBytes": 16500,
-        "signals": [
-          "level",
-          "level",
-          "level",
-          "level",
-          "level",
-          "bot"
-        ]
-      }
-    },
-    {
       "name": "game-ai-karlapalem-uc-berkeley-ai-pacman-project",
       "canonicalSlug": "karlapalem/UC-Berkeley-AI-Pacman-Project",
       "githubRepositoryId": 54612520,
       "repoUrl": "https://github.com/karlapalem/UC-Berkeley-AI-Pacman-Project.git",
       "selectionMode": "popular",
-      "popularityRank": 82,
+      "popularityRank": 81,
       "observedStars": 129,
       "observedStarsCapture": [
         {
@@ -24458,7 +24422,7 @@
       "githubRepositoryId": 150580220,
       "repoUrl": "https://github.com/duducheng/2048-api.git",
       "selectionMode": "popular",
-      "popularityRank": 83,
+      "popularityRank": 82,
       "observedStars": 127,
       "observedStarsCapture": [
         {
@@ -24512,7 +24476,7 @@
       "githubRepositoryId": 299243028,
       "repoUrl": "https://github.com/OwlTing/AI_basketball_games_video_editor.git",
       "selectionMode": "popular",
-      "popularityRank": 84,
+      "popularityRank": 83,
       "observedStars": 126,
       "observedStarsCapture": [
         {
@@ -24556,7 +24520,7 @@
       "githubRepositoryId": 1007065032,
       "repoUrl": "https://github.com/rouges78/GameStringer.git",
       "selectionMode": "popular",
-      "popularityRank": 85,
+      "popularityRank": 84,
       "observedStars": 125,
       "observedStarsCapture": [
         {
@@ -24622,7 +24586,7 @@
       "githubRepositoryId": 345918798,
       "repoUrl": "https://github.com/bytewife/agentcraft.git",
       "selectionMode": "popular",
-      "popularityRank": 86,
+      "popularityRank": 85,
       "observedStars": 123,
       "observedStarsCapture": [
         {
@@ -24676,7 +24640,7 @@
       "githubRepositoryId": 683592245,
       "repoUrl": "https://github.com/AkiKurisu/Next-Gen-Dialogue.git",
       "selectionMode": "popular",
-      "popularityRank": 87,
+      "popularityRank": 86,
       "observedStars": 118,
       "observedStarsCapture": [
         {
@@ -24722,7 +24686,7 @@
       "githubRepositoryId": 1121391555,
       "repoUrl": "https://github.com/IvanMurzak/Unity-AI-Animation.git",
       "selectionMode": "popular",
-      "popularityRank": 88,
+      "popularityRank": 87,
       "observedStars": 115,
       "observedStarsCapture": [
         {
@@ -24767,7 +24731,7 @@
       "githubRepositoryId": 91208535,
       "repoUrl": "https://github.com/Donut-Studios/Unity3D-AI-and-Procedural-Generation-Framework.git",
       "selectionMode": "popular",
-      "popularityRank": 89,
+      "popularityRank": 88,
       "observedStars": 111,
       "observedStarsCapture": [
         {
@@ -24827,7 +24791,7 @@
       "githubRepositoryId": 1226085740,
       "repoUrl": "https://github.com/shixiangxi0/Cobweb.git",
       "selectionMode": "popular",
-      "popularityRank": 90,
+      "popularityRank": 89,
       "observedStars": 111,
       "observedStarsCapture": [
         {
@@ -24875,7 +24839,7 @@
       "githubRepositoryId": 226460308,
       "repoUrl": "https://github.com/Unity-Technologies/ai-planner-samples.git",
       "selectionMode": "popular",
-      "popularityRank": 91,
+      "popularityRank": 90,
       "observedStars": 111,
       "observedStarsCapture": [
         {
@@ -24929,7 +24893,7 @@
       "githubRepositoryId": 71202434,
       "repoUrl": "https://github.com/no5ix/flock-ai-ue4-plugin.git",
       "selectionMode": "popular",
-      "popularityRank": 92,
+      "popularityRank": 91,
       "observedStars": 105,
       "observedStarsCapture": [
         {
@@ -24983,7 +24947,7 @@
       "githubRepositoryId": 918230683,
       "repoUrl": "https://github.com/moeru-ai/airi-factorio.git",
       "selectionMode": "popular",
-      "popularityRank": 93,
+      "popularityRank": 92,
       "observedStars": 102,
       "observedStarsCapture": [
         {
@@ -25024,7 +24988,7 @@
       "githubRepositoryId": 1168003248,
       "repoUrl": "https://github.com/Codeturion/unreal-api-mcp.git",
       "selectionMode": "popular",
-      "popularityRank": 94,
+      "popularityRank": 93,
       "observedStars": 96,
       "observedStarsCapture": [
         {
@@ -25075,7 +25039,7 @@
       "githubRepositoryId": 781889307,
       "repoUrl": "https://github.com/AkiKurisu/UniChat.git",
       "selectionMode": "popular",
-      "popularityRank": 95,
+      "popularityRank": 94,
       "observedStars": 94,
       "observedStarsCapture": [
         {
@@ -25119,7 +25083,7 @@
       "githubRepositoryId": 1276737247,
       "repoUrl": "https://github.com/KnightQuals/df-ue4-mcp_server.git",
       "selectionMode": "popular",
-      "popularityRank": 96,
+      "popularityRank": 95,
       "observedStars": 94,
       "observedStarsCapture": [
         {
@@ -25173,7 +25137,7 @@
       "githubRepositoryId": 124700596,
       "repoUrl": "https://github.com/blanyal/alpha-zero.git",
       "selectionMode": "popular",
-      "popularityRank": 97,
+      "popularityRank": 96,
       "observedStars": 93,
       "observedStarsCapture": [
         {
@@ -25227,7 +25191,7 @@
       "githubRepositoryId": 90807861,
       "repoUrl": "https://github.com/in-op/GameAI.git",
       "selectionMode": "popular",
-      "popularityRank": 98,
+      "popularityRank": 97,
       "observedStars": 93,
       "observedStarsCapture": [
         {
@@ -25271,7 +25235,7 @@
       "githubRepositoryId": 1231951255,
       "repoUrl": "https://github.com/Heerozh/PromptUGUI.git",
       "selectionMode": "popular",
-      "popularityRank": 99,
+      "popularityRank": 98,
       "observedStars": 91,
       "observedStarsCapture": [
         {
@@ -25325,7 +25289,7 @@
       "githubRepositoryId": 1229642522,
       "repoUrl": "https://github.com/wangdiandao/godot-devtool.git",
       "selectionMode": "popular",
-      "popularityRank": 100,
+      "popularityRank": 99,
       "observedStars": 90,
       "observedStarsCapture": [
         {
@@ -25376,7 +25340,7 @@
       "githubRepositoryId": 4284320,
       "repoUrl": "https://github.com/aigamedev/resistance.git",
       "selectionMode": "popular",
-      "popularityRank": 101,
+      "popularityRank": 100,
       "observedStars": 89,
       "observedStarsCapture": [
         {
@@ -25430,7 +25394,7 @@
       "githubRepositoryId": 249430981,
       "repoUrl": "https://github.com/FelipeMarcelino/2048-Gym.git",
       "selectionMode": "popular",
-      "popularityRank": 102,
+      "popularityRank": 101,
       "observedStars": 88,
       "observedStarsCapture": [
         {
@@ -25484,7 +25448,7 @@
       "githubRepositoryId": 914725648,
       "repoUrl": "https://github.com/KingJiongEN/DegentCivil.git",
       "selectionMode": "popular",
-      "popularityRank": 103,
+      "popularityRank": 102,
       "observedStars": 88,
       "observedStarsCapture": [
         {
@@ -25529,7 +25493,7 @@
       "githubRepositoryId": 42825578,
       "repoUrl": "https://github.com/AdamStelmaszczyk/gtsa.git",
       "selectionMode": "popular",
-      "popularityRank": 104,
+      "popularityRank": 103,
       "observedStars": 87,
       "observedStarsCapture": [
         {
@@ -25583,7 +25547,7 @@
       "githubRepositoryId": 583313528,
       "repoUrl": "https://github.com/Earewien/godot-yet-another-behavior-tree.git",
       "selectionMode": "popular",
-      "popularityRank": 105,
+      "popularityRank": 104,
       "observedStars": 85,
       "observedStarsCapture": [
         {
@@ -25630,7 +25594,7 @@
       "githubRepositoryId": 204368409,
       "repoUrl": "https://github.com/gilzamir18/AI4U.git",
       "selectionMode": "popular",
-      "popularityRank": 106,
+      "popularityRank": 105,
       "observedStars": 85,
       "observedStarsCapture": [
         {
@@ -25684,7 +25648,7 @@
       "githubRepositoryId": 972322347,
       "repoUrl": "https://github.com/marcelontime/spriteforge.git",
       "selectionMode": "popular",
-      "popularityRank": 107,
+      "popularityRank": 106,
       "observedStars": 82,
       "observedStarsCapture": [
         {
@@ -25727,7 +25691,7 @@
       "githubRepositoryId": 1169706695,
       "repoUrl": "https://github.com/youichi-uda/unity-mcp-pro-plugin.git",
       "selectionMode": "popular",
-      "popularityRank": 108,
+      "popularityRank": 107,
       "observedStars": 82,
       "observedStarsCapture": [
         {
@@ -25785,7 +25749,7 @@
       "githubRepositoryId": 384168068,
       "repoUrl": "https://github.com/ZYunfeii/DRL4SnakeGame.git",
       "selectionMode": "popular",
-      "popularityRank": 109,
+      "popularityRank": 108,
       "observedStars": 82,
       "observedStarsCapture": [
         {
@@ -25839,7 +25803,7 @@
       "githubRepositoryId": 1134614009,
       "repoUrl": "https://github.com/KilledByAPixel/LittleJS-AI.git",
       "selectionMode": "popular",
-      "popularityRank": 110,
+      "popularityRank": 109,
       "observedStars": 81,
       "observedStarsCapture": [
         {
@@ -25893,7 +25857,7 @@
       "githubRepositoryId": 487355126,
       "repoUrl": "https://github.com/baponkar/zombie-ai.git",
       "selectionMode": "popular",
-      "popularityRank": 111,
+      "popularityRank": 110,
       "observedStars": 80,
       "observedStarsCapture": [
         {
@@ -25950,7 +25914,7 @@
       "githubRepositoryId": 1109950791,
       "repoUrl": "https://github.com/0xhackerfren/frida-game-hacking-mcp.git",
       "selectionMode": "popular",
-      "popularityRank": 112,
+      "popularityRank": 111,
       "observedStars": 78,
       "observedStarsCapture": [
         {
@@ -26004,7 +25968,7 @@
       "githubRepositoryId": 1176234836,
       "repoUrl": "https://github.com/hayowei/aisandboxgame.git",
       "selectionMode": "popular",
-      "popularityRank": 113,
+      "popularityRank": 112,
       "observedStars": 78,
       "observedStarsCapture": [
         {
@@ -26051,7 +26015,7 @@
       "githubRepositoryId": 1373184607,
       "repoUrl": "https://github.com/kikoncuo/jevfire.git",
       "selectionMode": "popular",
-      "popularityRank": 114,
+      "popularityRank": 113,
       "observedStars": 75,
       "observedStarsCapture": [
         {
@@ -26105,7 +26069,7 @@
       "githubRepositoryId": 1157874854,
       "repoUrl": "https://github.com/mirno-ehf/ue5-mcp.git",
       "selectionMode": "popular",
-      "popularityRank": 115,
+      "popularityRank": 114,
       "observedStars": 75,
       "observedStarsCapture": [
         {
@@ -26159,7 +26123,7 @@
       "githubRepositoryId": 1219119800,
       "repoUrl": "https://github.com/Bravin2000/3D-modeling-2027.git",
       "selectionMode": "popular",
-      "popularityRank": 116,
+      "popularityRank": 115,
       "observedStars": 73,
       "observedStarsCapture": [
         {
@@ -26203,7 +26167,7 @@
       "githubRepositoryId": 1108652269,
       "repoUrl": "https://github.com/HaxxorCialtion/SimpleTool.git",
       "selectionMode": "popular",
-      "popularityRank": 117,
+      "popularityRank": 116,
       "observedStars": 73,
       "observedStarsCapture": [
         {
@@ -26248,7 +26212,7 @@
       "githubRepositoryId": 627252911,
       "repoUrl": "https://github.com/iree-gd/iree.gd.git",
       "selectionMode": "popular",
-      "popularityRank": 118,
+      "popularityRank": 117,
       "observedStars": 73,
       "observedStarsCapture": [
         {
@@ -26296,7 +26260,7 @@
       "githubRepositoryId": 1039531357,
       "repoUrl": "https://github.com/Fantety/FrameForge.git",
       "selectionMode": "popular",
-      "popularityRank": 119,
+      "popularityRank": 118,
       "observedStars": 71,
       "observedStarsCapture": [
         {
@@ -26344,7 +26308,7 @@
       "githubRepositoryId": 214206049,
       "repoUrl": "https://github.com/masouduut94/MCTS-agent-python.git",
       "selectionMode": "popular",
-      "popularityRank": 120,
+      "popularityRank": 119,
       "observedStars": 71,
       "observedStarsCapture": [
         {
@@ -26398,7 +26362,7 @@
       "githubRepositoryId": 6678013,
       "repoUrl": "https://github.com/asweigart/zombiedice.git",
       "selectionMode": "popular",
-      "popularityRank": 121,
+      "popularityRank": 120,
       "observedStars": 70,
       "observedStarsCapture": [
         {
@@ -26448,7 +26412,7 @@
       "githubRepositoryId": 774565527,
       "repoUrl": "https://github.com/sedthh/BeatLearning.git",
       "selectionMode": "popular",
-      "popularityRank": 122,
+      "popularityRank": 121,
       "observedStars": 70,
       "observedStarsCapture": [
         {
@@ -26498,7 +26462,7 @@
       "githubRepositoryId": 506661683,
       "repoUrl": "https://github.com/stratosphereips/NetSecGame.git",
       "selectionMode": "popular",
-      "popularityRank": 123,
+      "popularityRank": 122,
       "observedStars": 70,
       "observedStarsCapture": [
         {
@@ -26558,7 +26522,7 @@
       "githubRepositoryId": 1188602158,
       "repoUrl": "https://github.com/pirua-game/ai_game_base_analysis_cli_mcp_tool.git",
       "selectionMode": "popular",
-      "popularityRank": 124,
+      "popularityRank": 123,
       "observedStars": 69,
       "observedStarsCapture": [
         {
@@ -26628,7 +26592,7 @@
       "githubRepositoryId": 1166090340,
       "repoUrl": "https://github.com/Codeturion/unity-api-mcp.git",
       "selectionMode": "popular",
-      "popularityRank": 125,
+      "popularityRank": 124,
       "observedStars": 67,
       "observedStarsCapture": [
         {
@@ -26688,7 +26652,7 @@
       "githubRepositoryId": 140462835,
       "repoUrl": "https://github.com/rubenvereecken/py-vgdl.git",
       "selectionMode": "popular",
-      "popularityRank": 126,
+      "popularityRank": 125,
       "observedStars": 67,
       "observedStarsCapture": [
         {
@@ -26742,7 +26706,7 @@
       "githubRepositoryId": 1308651022,
       "repoUrl": "https://github.com/ACUHKUMELBA/cascade-ai-agent.git",
       "selectionMode": "popular",
-      "popularityRank": 127,
+      "popularityRank": 126,
       "observedStars": 66,
       "observedStarsCapture": [
         {
@@ -26791,7 +26755,7 @@
       "githubRepositoryId": 1264162018,
       "repoUrl": "https://github.com/1deaaa/spark-arc-studio.git",
       "selectionMode": "popular",
-      "popularityRank": 128,
+      "popularityRank": 127,
       "observedStars": 65,
       "observedStarsCapture": [
         {
@@ -26840,7 +26804,7 @@
       "githubRepositoryId": 125387713,
       "repoUrl": "https://github.com/bernhardrieder/PCGML-Game-Mechanics.git",
       "selectionMode": "popular",
-      "popularityRank": 129,
+      "popularityRank": 128,
       "observedStars": 63,
       "observedStarsCapture": [
         {
@@ -26894,7 +26858,7 @@
       "githubRepositoryId": 1248336086,
       "repoUrl": "https://github.com/merlinhu1/codex-game-studio.git",
       "selectionMode": "popular",
-      "popularityRank": 130,
+      "popularityRank": 129,
       "observedStars": 63,
       "observedStarsCapture": [
         {
@@ -26948,7 +26912,7 @@
       "githubRepositoryId": 1141195772,
       "repoUrl": "https://github.com/Natfii/ue5-mcp-bridge.git",
       "selectionMode": "popular",
-      "popularityRank": 131,
+      "popularityRank": 130,
       "observedStars": 63,
       "observedStarsCapture": [
         {
@@ -27008,7 +26972,7 @@
       "githubRepositoryId": 476984461,
       "repoUrl": "https://github.com/inspirai/wilderness-scavenger.git",
       "selectionMode": "popular",
-      "popularityRank": 132,
+      "popularityRank": 131,
       "observedStars": 62,
       "observedStarsCapture": [
         {
@@ -27062,7 +27026,7 @@
       "githubRepositoryId": 321986835,
       "repoUrl": "https://github.com/TotalAI/TotalAI.git",
       "selectionMode": "popular",
-      "popularityRank": 133,
+      "popularityRank": 132,
       "observedStars": 62,
       "observedStarsCapture": [
         {
@@ -27116,7 +27080,7 @@
       "githubRepositoryId": 777533709,
       "repoUrl": "https://github.com/AkiKurisu/Real-Agents.git",
       "selectionMode": "popular",
-      "popularityRank": 134,
+      "popularityRank": 133,
       "observedStars": 60,
       "observedStarsCapture": [
         {
@@ -27170,7 +27134,7 @@
       "githubRepositoryId": 1303942681,
       "repoUrl": "https://github.com/asssaver97/DeviLudo.git",
       "selectionMode": "popular",
-      "popularityRank": 135,
+      "popularityRank": 134,
       "observedStars": 58,
       "observedStarsCapture": [
         {
@@ -27222,7 +27186,7 @@
       "githubRepositoryId": 169972128,
       "repoUrl": "https://github.com/SestoAle/DeepCrawl.git",
       "selectionMode": "popular",
-      "popularityRank": 136,
+      "popularityRank": 135,
       "observedStars": 56,
       "observedStarsCapture": [
         {
@@ -27276,7 +27240,7 @@
       "githubRepositoryId": 1190560481,
       "repoUrl": "https://github.com/ackness/covel.git",
       "selectionMode": "popular",
-      "popularityRank": 137,
+      "popularityRank": 136,
       "observedStars": 55,
       "observedStarsCapture": [
         {
@@ -27330,7 +27294,7 @@
       "githubRepositoryId": 1280470902,
       "repoUrl": "https://github.com/chasmlol/chasm.git",
       "selectionMode": "popular",
-      "popularityRank": 138,
+      "popularityRank": 137,
       "observedStars": 55,
       "observedStarsCapture": [
         {
@@ -27390,7 +27354,7 @@
       "githubRepositoryId": 1112929084,
       "repoUrl": "https://github.com/IvanMurzak/Unity-AI-ProBuilder.git",
       "selectionMode": "popular",
-      "popularityRank": 139,
+      "popularityRank": 138,
       "observedStars": 55,
       "observedStarsCapture": [
         {
@@ -27444,7 +27408,7 @@
       "githubRepositoryId": 210596613,
       "repoUrl": "https://github.com/ApmeM/BrainAI.git",
       "selectionMode": "popular",
-      "popularityRank": 140,
+      "popularityRank": 139,
       "observedStars": 54,
       "observedStarsCapture": [
         {
@@ -27498,7 +27462,7 @@
       "githubRepositoryId": 174384724,
       "repoUrl": "https://github.com/Hsankesara/Draughts-AI.git",
       "selectionMode": "popular",
-      "popularityRank": 141,
+      "popularityRank": 140,
       "observedStars": 54,
       "observedStarsCapture": [
         {
@@ -27552,7 +27516,7 @@
       "githubRepositoryId": 1135408526,
       "repoUrl": "https://github.com/IvanMurzak/Unity-AI-ParticleSystem.git",
       "selectionMode": "popular",
-      "popularityRank": 142,
+      "popularityRank": 141,
       "observedStars": 54,
       "observedStarsCapture": [
         {
@@ -27606,7 +27570,7 @@
       "githubRepositoryId": 1191015719,
       "repoUrl": "https://github.com/spardanviro/Godot_AI.git",
       "selectionMode": "popular",
-      "popularityRank": 143,
+      "popularityRank": 142,
       "observedStars": 54,
       "observedStarsCapture": [
         {
@@ -27666,7 +27630,7 @@
       "githubRepositoryId": 1031427073,
       "repoUrl": "https://github.com/danieloquelis/Unity-QuestConversationalAI.git",
       "selectionMode": "popular",
-      "popularityRank": 144,
+      "popularityRank": 143,
       "observedStars": 53,
       "observedStarsCapture": [
         {
@@ -27712,7 +27676,7 @@
       "githubRepositoryId": 923452288,
       "repoUrl": "https://github.com/Nitasurin/Mortal-Policy.git",
       "selectionMode": "popular",
-      "popularityRank": 145,
+      "popularityRank": 144,
       "observedStars": 53,
       "observedStarsCapture": [
         {
@@ -27766,7 +27730,7 @@
       "githubRepositoryId": 105256476,
       "repoUrl": "https://github.com/ducandu/MaRLEnE.git",
       "selectionMode": "popular",
-      "popularityRank": 146,
+      "popularityRank": 145,
       "observedStars": 52,
       "observedStarsCapture": [
         {
@@ -27814,7 +27778,7 @@
       "githubRepositoryId": 1315379931,
       "repoUrl": "https://github.com/EricSun0218/OpenGameAgent.git",
       "selectionMode": "popular",
-      "popularityRank": 147,
+      "popularityRank": 146,
       "observedStars": 52,
       "observedStarsCapture": [
         {
@@ -27904,7 +27868,7 @@
       "githubRepositoryId": 451963728,
       "repoUrl": "https://github.com/eldinor/yuka-babylonjs-examples.git",
       "selectionMode": "popular",
-      "popularityRank": 148,
+      "popularityRank": 147,
       "observedStars": 51,
       "observedStarsCapture": [
         {
@@ -27964,7 +27928,7 @@
       "githubRepositoryId": 1072001868,
       "repoUrl": "https://github.com/ALH477/Oligarchy.git",
       "selectionMode": "popular",
-      "popularityRank": 149,
+      "popularityRank": 148,
       "observedStars": 50,
       "observedStarsCapture": [
         {
@@ -28009,7 +27973,7 @@
       "githubRepositoryId": 1083203211,
       "repoUrl": "https://github.com/leslieo2/LieGraph.git",
       "selectionMode": "popular",
-      "popularityRank": 150,
+      "popularityRank": 149,
       "observedStars": 50,
       "observedStarsCapture": [
         {
@@ -28063,7 +28027,7 @@
       "githubRepositoryId": 438679332,
       "repoUrl": "https://github.com/bic4907/Overcooked-AI.git",
       "selectionMode": "popular",
-      "popularityRank": 151,
+      "popularityRank": 150,
       "observedStars": 48,
       "observedStarsCapture": [
         {
@@ -28113,7 +28077,7 @@
       "githubRepositoryId": 281739361,
       "repoUrl": "https://github.com/demircancelebi/tafl.git",
       "selectionMode": "popular",
-      "popularityRank": 152,
+      "popularityRank": 151,
       "observedStars": 48,
       "observedStarsCapture": [
         {
@@ -28173,7 +28137,7 @@
       "githubRepositoryId": 283294414,
       "repoUrl": "https://github.com/henniedeharder/snake.git",
       "selectionMode": "popular",
-      "popularityRank": 153,
+      "popularityRank": 152,
       "observedStars": 47,
       "observedStarsCapture": [
         {
@@ -28223,7 +28187,7 @@
       "githubRepositoryId": 145251363,
       "repoUrl": "https://github.com/filipmlynarski/splendor-ai.git",
       "selectionMode": "popular",
-      "popularityRank": 154,
+      "popularityRank": 153,
       "observedStars": 46,
       "observedStarsCapture": [
         {
@@ -28277,7 +28241,7 @@
       "githubRepositoryId": 1087284693,
       "repoUrl": "https://github.com/geqo-godot/geqo.git",
       "selectionMode": "popular",
-      "popularityRank": 155,
+      "popularityRank": 154,
       "observedStars": 46,
       "observedStarsCapture": [
         {
@@ -28337,7 +28301,7 @@
       "githubRepositoryId": 888890514,
       "repoUrl": "https://github.com/lukehollis/rl-llm-urban-simulations.git",
       "selectionMode": "popular",
-      "popularityRank": 156,
+      "popularityRank": 155,
       "observedStars": 46,
       "observedStarsCapture": [
         {
@@ -28386,7 +28350,7 @@
       "githubRepositoryId": 1294114499,
       "repoUrl": "https://github.com/asallay/godot-llm.git",
       "selectionMode": "popular",
-      "popularityRank": 157,
+      "popularityRank": 156,
       "observedStars": 45,
       "observedStarsCapture": [
         {
@@ -28438,7 +28402,7 @@
       "githubRepositoryId": 493124854,
       "repoUrl": "https://github.com/Genius-Society/SnakeAI.git",
       "selectionMode": "popular",
-      "popularityRank": 158,
+      "popularityRank": 157,
       "observedStars": 45,
       "observedStarsCapture": [
         {
@@ -28492,7 +28456,7 @@
       "githubRepositoryId": 1264881333,
       "repoUrl": "https://github.com/IvanMurzak/Unreal-MCP.git",
       "selectionMode": "popular",
-      "popularityRank": 159,
+      "popularityRank": 158,
       "observedStars": 45,
       "observedStarsCapture": [
         {
@@ -28558,7 +28522,7 @@
       "githubRepositoryId": 939253053,
       "repoUrl": "https://github.com/jmurth1234/ClaudePlayer.git",
       "selectionMode": "popular",
-      "popularityRank": 160,
+      "popularityRank": 159,
       "observedStars": 45,
       "observedStarsCapture": [
         {
@@ -28612,7 +28576,7 @@
       "githubRepositoryId": 361017951,
       "repoUrl": "https://github.com/friedforfun/ContextSteering.git",
       "selectionMode": "popular",
-      "popularityRank": 161,
+      "popularityRank": 160,
       "observedStars": 44,
       "observedStarsCapture": [
         {
@@ -28666,7 +28630,7 @@
       "githubRepositoryId": 223647264,
       "repoUrl": "https://github.com/tobiasemrich/SchafkopfRL.git",
       "selectionMode": "popular",
-      "popularityRank": 162,
+      "popularityRank": 161,
       "observedStars": 43,
       "observedStarsCapture": [
         {
@@ -28720,7 +28684,7 @@
       "githubRepositoryId": 602008557,
       "repoUrl": "https://github.com/juliankappler/lunar-lander.git",
       "selectionMode": "popular",
-      "popularityRank": 163,
+      "popularityRank": 162,
       "observedStars": 42,
       "observedStarsCapture": [
         {
@@ -28774,7 +28738,7 @@
       "githubRepositoryId": 127391009,
       "repoUrl": "https://github.com/goelp14/RockPaperScissors.git",
       "selectionMode": "popular",
-      "popularityRank": 164,
+      "popularityRank": 163,
       "observedStars": 41,
       "observedStarsCapture": [
         {
@@ -28828,7 +28792,7 @@
       "githubRepositoryId": 80985527,
       "repoUrl": "https://github.com/inoryy/csb-ai-starter.git",
       "selectionMode": "popular",
-      "popularityRank": 165,
+      "popularityRank": 164,
       "observedStars": 41,
       "observedStarsCapture": [
         {
@@ -28882,7 +28846,7 @@
       "githubRepositoryId": 78046673,
       "repoUrl": "https://github.com/llSourcell/OpenAI_Game_Bot_Live_stream.git",
       "selectionMode": "popular",
-      "popularityRank": 166,
+      "popularityRank": 165,
       "observedStars": 41,
       "observedStarsCapture": [
         {
@@ -28928,7 +28892,7 @@
       "githubRepositoryId": 190862050,
       "repoUrl": "https://github.com/pawel-kieliszczyk/snake-reinforcement-learning.git",
       "selectionMode": "popular",
-      "popularityRank": 167,
+      "popularityRank": 166,
       "observedStars": 41,
       "observedStarsCapture": [
         {
@@ -28982,7 +28946,7 @@
       "githubRepositoryId": 1082316583,
       "repoUrl": "https://github.com/statico/godot-roguelike-example.git",
       "selectionMode": "popular",
-      "popularityRank": 168,
+      "popularityRank": 167,
       "observedStars": 41,
       "observedStarsCapture": [
         {
@@ -29036,7 +29000,7 @@
       "githubRepositoryId": 738318054,
       "repoUrl": "https://github.com/Sterberino/open-behavior-trees.git",
       "selectionMode": "popular",
-      "popularityRank": 169,
+      "popularityRank": 168,
       "observedStars": 41,
       "observedStarsCapture": [
         {
@@ -29102,7 +29066,7 @@
       "githubRepositoryId": 1171680203,
       "repoUrl": "https://github.com/praydog/re-engine-mcp.git",
       "selectionMode": "popular",
-      "popularityRank": 170,
+      "popularityRank": 169,
       "observedStars": 40,
       "observedStarsCapture": [
         {
@@ -29156,7 +29120,7 @@
       "githubRepositoryId": 474912174,
       "repoUrl": "https://github.com/DevOelgaard/Utility-Ai-Creator-For-Unity.git",
       "selectionMode": "popular",
-      "popularityRank": 171,
+      "popularityRank": 170,
       "observedStars": 39,
       "observedStarsCapture": [
         {
@@ -29210,7 +29174,7 @@
       "githubRepositoryId": 1053682328,
       "repoUrl": "https://github.com/pardeike/RimBridgeServer.git",
       "selectionMode": "popular",
-      "popularityRank": 172,
+      "popularityRank": 171,
       "observedStars": 39,
       "observedStarsCapture": [
         {
@@ -29264,7 +29228,7 @@
       "githubRepositoryId": 1273876922,
       "repoUrl": "https://github.com/beckettlab/beckett-godot-mcp.git",
       "selectionMode": "popular",
-      "popularityRank": 173,
+      "popularityRank": 172,
       "observedStars": 38,
       "observedStarsCapture": [
         {
@@ -29330,7 +29294,7 @@
       "githubRepositoryId": 1317611495,
       "repoUrl": "https://github.com/Exonfang/gdllm-godot-agentic-harness.git",
       "selectionMode": "popular",
-      "popularityRank": 174,
+      "popularityRank": 173,
       "observedStars": 38,
       "observedStarsCapture": [
         {
@@ -29390,7 +29354,7 @@
       "githubRepositoryId": 162392214,
       "repoUrl": "https://github.com/SinanGncgl/Deep-Q-Network-AtariBreakoutGame.git",
       "selectionMode": "popular",
-      "popularityRank": 175,
+      "popularityRank": 174,
       "observedStars": 38,
       "observedStarsCapture": [
         {
@@ -29440,7 +29404,7 @@
       "githubRepositoryId": 1025098771,
       "repoUrl": "https://github.com/hbl917070/DrawingSpells.git",
       "selectionMode": "popular",
-      "popularityRank": 176,
+      "popularityRank": 175,
       "observedStars": 37,
       "observedStarsCapture": [
         {
@@ -29487,7 +29451,7 @@
       "githubRepositoryId": 953684001,
       "repoUrl": "https://github.com/RisticDjordje/BlockBlast-Game-AI-Agent.git",
       "selectionMode": "popular",
-      "popularityRank": 177,
+      "popularityRank": 176,
       "observedStars": 37,
       "observedStarsCapture": [
         {
@@ -29541,7 +29505,7 @@
       "githubRepositoryId": 1263376372,
       "repoUrl": "https://github.com/brandlll-lee/SolersEngine.git",
       "selectionMode": "popular",
-      "popularityRank": 178,
+      "popularityRank": 177,
       "observedStars": 36,
       "observedStarsCapture": [
         {
@@ -29601,7 +29565,7 @@
       "githubRepositoryId": 100186817,
       "repoUrl": "https://github.com/daugaard/q-learning-simple-game.git",
       "selectionMode": "popular",
-      "popularityRank": 179,
+      "popularityRank": 178,
       "observedStars": 36,
       "observedStarsCapture": [
         {
@@ -29651,7 +29615,7 @@
       "githubRepositoryId": 1160056250,
       "repoUrl": "https://github.com/fredarts/gamedev_ai.git",
       "selectionMode": "popular",
-      "popularityRank": 180,
+      "popularityRank": 179,
       "observedStars": 36,
       "observedStarsCapture": [
         {
@@ -29705,7 +29669,7 @@
       "githubRepositoryId": 1132024536,
       "repoUrl": "https://github.com/lastbattle/WzImg-MCP-Server.git",
       "selectionMode": "popular",
-      "popularityRank": 181,
+      "popularityRank": 180,
       "observedStars": 36,
       "observedStarsCapture": [
         {
@@ -29752,7 +29716,7 @@
       "githubRepositoryId": 126235935,
       "repoUrl": "https://github.com/MystikalPooka/Unity-Visual-Behavior-Tree.git",
       "selectionMode": "popular",
-      "popularityRank": 182,
+      "popularityRank": 181,
       "observedStars": 36,
       "observedStarsCapture": [
         {
@@ -29803,7 +29767,7 @@
       "githubRepositoryId": 1160742282,
       "repoUrl": "https://github.com/n24q02m/better-godot-mcp.git",
       "selectionMode": "popular",
-      "popularityRank": 183,
+      "popularityRank": 182,
       "observedStars": 36,
       "observedStarsCapture": [
         {
@@ -29857,7 +29821,7 @@
       "githubRepositoryId": 881089473,
       "repoUrl": "https://github.com/neocortex-link/neocortex-unity-sdk.git",
       "selectionMode": "popular",
-      "popularityRank": 184,
+      "popularityRank": 183,
       "observedStars": 36,
       "observedStarsCapture": [
         {
@@ -29917,7 +29881,7 @@
       "githubRepositoryId": 583262098,
       "repoUrl": "https://github.com/sopermanspace/Unity_OpenAI.git",
       "selectionMode": "popular",
-      "popularityRank": 185,
+      "popularityRank": 184,
       "observedStars": 36,
       "observedStarsCapture": [
         {
@@ -29977,7 +29941,7 @@
       "githubRepositoryId": 1352517967,
       "repoUrl": "https://github.com/coffeemug/squidgpt.git",
       "selectionMode": "popular",
-      "popularityRank": 186,
+      "popularityRank": 185,
       "observedStars": 35,
       "observedStarsCapture": [
         {
@@ -30031,7 +29995,7 @@
       "githubRepositoryId": 567879667,
       "repoUrl": "https://github.com/novaia/ntg-unity.git",
       "selectionMode": "popular",
-      "popularityRank": 187,
+      "popularityRank": 186,
       "observedStars": 35,
       "observedStarsCapture": [
         {
@@ -30100,7 +30064,7 @@
       "githubRepositoryId": 372318178,
       "repoUrl": "https://github.com/OneManMonkeySquad/SimpleAI.git",
       "selectionMode": "popular",
-      "popularityRank": 188,
+      "popularityRank": 187,
       "observedStars": 35,
       "observedStarsCapture": [
         {
@@ -30154,7 +30118,7 @@
       "githubRepositoryId": 655694297,
       "repoUrl": "https://github.com/sopermanspace/Enemy.git",
       "selectionMode": "popular",
-      "popularityRank": 189,
+      "popularityRank": 188,
       "observedStars": 35,
       "observedStarsCapture": [
         {
@@ -30214,7 +30178,7 @@
       "githubRepositoryId": 1301693327,
       "repoUrl": "https://github.com/7etsuo/anvil.git",
       "selectionMode": "popular",
-      "popularityRank": 190,
+      "popularityRank": 189,
       "observedStars": 34,
       "observedStarsCapture": [
         {
@@ -30268,7 +30232,7 @@
       "githubRepositoryId": 880043685,
       "repoUrl": "https://github.com/chrisizeful/Operations.git",
       "selectionMode": "popular",
-      "popularityRank": 191,
+      "popularityRank": 190,
       "observedStars": 34,
       "observedStarsCapture": [
         {
@@ -30311,7 +30275,7 @@
       "githubRepositoryId": 333038764,
       "repoUrl": "https://github.com/DarshanMaradiya/Unity-3D-AI-Chess.git",
       "selectionMode": "popular",
-      "popularityRank": 192,
+      "popularityRank": 191,
       "observedStars": 34,
       "observedStarsCapture": [
         {
@@ -30365,7 +30329,7 @@
       "githubRepositoryId": 698244475,
       "repoUrl": "https://github.com/Poly186-AI-DAO/AutoGen-Snake-Game.git",
       "selectionMode": "popular",
-      "popularityRank": 193,
+      "popularityRank": 192,
       "observedStars": 34,
       "observedStarsCapture": [
         {
@@ -30425,7 +30389,7 @@
       "githubRepositoryId": 1198460742,
       "repoUrl": "https://github.com/youichi-uda/aseprite-mcp-pro.git",
       "selectionMode": "popular",
-      "popularityRank": 194,
+      "popularityRank": 193,
       "observedStars": 34,
       "observedStarsCapture": [
         {
@@ -30479,7 +30443,7 @@
       "githubRepositoryId": 381015891,
       "repoUrl": "https://github.com/fuxi-asyncflow/asyncflow.git",
       "selectionMode": "popular",
-      "popularityRank": 195,
+      "popularityRank": 194,
       "observedStars": 33,
       "observedStarsCapture": [
         {
@@ -30533,7 +30497,7 @@
       "githubRepositoryId": 388742809,
       "repoUrl": "https://github.com/georgbuechner/dissonance.git",
       "selectionMode": "popular",
-      "popularityRank": 196,
+      "popularityRank": 195,
       "observedStars": 33,
       "observedStarsCapture": [
         {
@@ -30587,7 +30551,7 @@
       "githubRepositoryId": 1125201097,
       "repoUrl": "https://github.com/ifree/MCPTheSpire.git",
       "selectionMode": "popular",
-      "popularityRank": 197,
+      "popularityRank": 196,
       "observedStars": 33,
       "observedStarsCapture": [
         {
@@ -30641,7 +30605,7 @@
       "githubRepositoryId": 186370287,
       "repoUrl": "https://github.com/Ludeme/LudiiExampleAI.git",
       "selectionMode": "popular",
-      "popularityRank": 198,
+      "popularityRank": 197,
       "observedStars": 32,
       "observedStarsCapture": [
         {
@@ -30695,7 +30659,7 @@
       "githubRepositoryId": 1049108437,
       "repoUrl": "https://github.com/mattwilliamson/comfyui-ai-gamedev.git",
       "selectionMode": "popular",
-      "popularityRank": 199,
+      "popularityRank": 198,
       "observedStars": 32,
       "observedStarsCapture": [
         {
@@ -30749,7 +30713,7 @@
       "githubRepositoryId": 152792479,
       "repoUrl": "https://github.com/shagunm1210/Playing-Breakout-with-A3C-algorithim.git",
       "selectionMode": "popular",
-      "popularityRank": 200,
+      "popularityRank": 199,
       "observedStars": 32,
       "observedStarsCapture": [
         {
@@ -30803,7 +30767,7 @@
       "githubRepositoryId": 1028941183,
       "repoUrl": "https://github.com/chrisreddington/turn-based-game-mcp.git",
       "selectionMode": "popular",
-      "popularityRank": 201,
+      "popularityRank": 200,
       "observedStars": 31,
       "observedStarsCapture": [
         {
@@ -30854,7 +30818,7 @@
       "githubRepositoryId": 1200423244,
       "repoUrl": "https://github.com/PiscesGameDev/UniAI.git",
       "selectionMode": "popular",
-      "popularityRank": 202,
+      "popularityRank": 201,
       "observedStars": 31,
       "observedStarsCapture": [
         {
@@ -30906,7 +30870,7 @@
       "githubRepositoryId": 1168474221,
       "repoUrl": "https://github.com/yami-inc/ai-death-game.git",
       "selectionMode": "popular",
-      "popularityRank": 203,
+      "popularityRank": 202,
       "observedStars": 31,
       "observedStarsCapture": [
         {
@@ -30960,7 +30924,7 @@
       "githubRepositoryId": 1246802646,
       "repoUrl": "https://github.com/18597990650-lab/Multi-agent-game.git",
       "selectionMode": "popular",
-      "popularityRank": 204,
+      "popularityRank": 203,
       "observedStars": 30,
       "observedStarsCapture": [
         {
@@ -31014,7 +30978,7 @@
       "githubRepositoryId": 300260851,
       "repoUrl": "https://github.com/ClarityCoders/ChromeDino.git",
       "selectionMode": "popular",
-      "popularityRank": 205,
+      "popularityRank": 204,
       "observedStars": 30,
       "observedStarsCapture": [
         {
@@ -31059,7 +31023,7 @@
       "githubRepositoryId": 880738831,
       "repoUrl": "https://github.com/grovegs/BehaviourTree.git",
       "selectionMode": "popular",
-      "popularityRank": 206,
+      "popularityRank": 205,
       "observedStars": 30,
       "observedStarsCapture": [
         {
@@ -31113,7 +31077,7 @@
       "githubRepositoryId": 330611245,
       "repoUrl": "https://github.com/Zhuagenborn/Chase-AI.git",
       "selectionMode": "popular",
-      "popularityRank": 207,
+      "popularityRank": 206,
       "observedStars": 30,
       "observedStarsCapture": [
         {
@@ -31167,7 +31131,7 @@
       "githubRepositoryId": 1324566398,
       "repoUrl": "https://github.com/AetherRadar/operation-steel-tide.git",
       "selectionMode": "popular",
-      "popularityRank": 208,
+      "popularityRank": 207,
       "observedStars": 29,
       "observedStarsCapture": [
         {
@@ -31221,7 +31185,7 @@
       "githubRepositoryId": 1307425320,
       "repoUrl": "https://github.com/lxsolutions/studio-foundation.git",
       "selectionMode": "popular",
-      "popularityRank": 209,
+      "popularityRank": 208,
       "observedStars": 29,
       "observedStarsCapture": [
         {
@@ -31281,7 +31245,7 @@
       "githubRepositoryId": 905503850,
       "repoUrl": "https://github.com/viralmind-ai/viralmind-agents.git",
       "selectionMode": "popular",
-      "popularityRank": 210,
+      "popularityRank": 209,
       "observedStars": 29,
       "observedStarsCapture": [
         {
@@ -31325,7 +31289,7 @@
       "githubRepositoryId": 781630643,
       "repoUrl": "https://github.com/vojay-dev/gemini-movie-detectives-api.git",
       "selectionMode": "popular",
-      "popularityRank": 211,
+      "popularityRank": 210,
       "observedStars": 29,
       "observedStarsCapture": [
         {
@@ -31370,7 +31334,7 @@
       "githubRepositoryId": 431349304,
       "repoUrl": "https://github.com/wolo-research/bulldog.git",
       "selectionMode": "popular",
-      "popularityRank": 212,
+      "popularityRank": 211,
       "observedStars": 29,
       "observedStarsCapture": [
         {
@@ -31424,7 +31388,7 @@
       "githubRepositoryId": 162488740,
       "repoUrl": "https://github.com/acatai/Strategy-Card-Game-AI-Competition.git",
       "selectionMode": "popular",
-      "popularityRank": 213,
+      "popularityRank": 212,
       "observedStars": 28,
       "observedStarsCapture": [
         {
@@ -31478,7 +31442,7 @@
       "githubRepositoryId": 1018884220,
       "repoUrl": "https://github.com/Drlinglong/Remis.git",
       "selectionMode": "popular",
-      "popularityRank": 214,
+      "popularityRank": 213,
       "observedStars": 28,
       "observedStarsCapture": [
         {
@@ -31532,7 +31496,7 @@
       "githubRepositoryId": 1309804498,
       "repoUrl": "https://github.com/Fromlan/X-agent.git",
       "selectionMode": "popular",
-      "popularityRank": 215,
+      "popularityRank": 214,
       "observedStars": 28,
       "observedStarsCapture": [
         {
@@ -31586,7 +31550,7 @@
       "githubRepositoryId": 910268584,
       "repoUrl": "https://github.com/SimonLucas/planet-wars-rts.git",
       "selectionMode": "popular",
-      "popularityRank": 216,
+      "popularityRank": 215,
       "observedStars": 28,
       "observedStarsCapture": [
         {
@@ -31640,7 +31604,7 @@
       "githubRepositoryId": 354076697,
       "repoUrl": "https://github.com/UG-SEP/Tic-Tac-Toe-AI-Intergrated.git",
       "selectionMode": "popular",
-      "popularityRank": 217,
+      "popularityRank": 216,
       "observedStars": 28,
       "observedStarsCapture": [
         {
@@ -31687,7 +31651,7 @@
       "githubRepositoryId": 865316347,
       "repoUrl": "https://github.com/Widiskel/sight-ai-bot.git",
       "selectionMode": "popular",
-      "popularityRank": 218,
+      "popularityRank": 217,
       "observedStars": 28,
       "observedStarsCapture": [
         {
@@ -31731,7 +31695,7 @@
       "githubRepositoryId": 1261075496,
       "repoUrl": "https://github.com/wormholeportal/Makone.git",
       "selectionMode": "popular",
-      "popularityRank": 219,
+      "popularityRank": 218,
       "observedStars": 28,
       "observedStarsCapture": [
         {
@@ -31774,7 +31738,7 @@
       "githubRepositoryId": 53926669,
       "repoUrl": "https://github.com/andysalerno/reversi_ai.git",
       "selectionMode": "popular",
-      "popularityRank": 220,
+      "popularityRank": 219,
       "observedStars": 27,
       "observedStarsCapture": [
         {
@@ -31819,7 +31783,7 @@
       "githubRepositoryId": 188290514,
       "repoUrl": "https://github.com/arpansahoo/ReactJS-Chess.git",
       "selectionMode": "popular",
-      "popularityRank": 221,
+      "popularityRank": 220,
       "observedStars": 27,
       "observedStarsCapture": [
         {
@@ -31873,7 +31837,7 @@
       "githubRepositoryId": 675741893,
       "repoUrl": "https://github.com/ChernyakKonstantin/godot_gym_api.git",
       "selectionMode": "popular",
-      "popularityRank": 222,
+      "popularityRank": 221,
       "observedStars": 27,
       "observedStarsCapture": [
         {
@@ -31914,7 +31878,7 @@
       "githubRepositoryId": 1192708960,
       "repoUrl": "https://github.com/dashidhy/DanLM.git",
       "selectionMode": "popular",
-      "popularityRank": 223,
+      "popularityRank": 222,
       "observedStars": 27,
       "observedStarsCapture": [
         {
@@ -31968,7 +31932,7 @@
       "githubRepositoryId": 431292849,
       "repoUrl": "https://github.com/mgagvani/Xbox-Game-AI.git",
       "selectionMode": "popular",
-      "popularityRank": 224,
+      "popularityRank": 223,
       "observedStars": 27,
       "observedStarsCapture": [
         {
@@ -32012,7 +31976,7 @@
       "githubRepositoryId": 892900197,
       "repoUrl": "https://github.com/mpoapostolis/vxlverse.git",
       "selectionMode": "popular",
-      "popularityRank": 225,
+      "popularityRank": 224,
       "observedStars": 27,
       "observedStarsCapture": [
         {
@@ -32066,7 +32030,7 @@
       "githubRepositoryId": 1316054408,
       "repoUrl": "https://github.com/renew-engine/renew.git",
       "selectionMode": "popular",
-      "popularityRank": 226,
+      "popularityRank": 225,
       "observedStars": 27,
       "observedStarsCapture": [
         {
@@ -32111,7 +32075,7 @@
       "githubRepositoryId": 1032153981,
       "repoUrl": "https://github.com/scrdest/Cranium.git",
       "selectionMode": "popular",
-      "popularityRank": 227,
+      "popularityRank": 226,
       "observedStars": 27,
       "observedStarsCapture": [
         {
@@ -32154,7 +32118,7 @@
       "githubRepositoryId": 1303299294,
       "repoUrl": "https://github.com/adventuresincausality/game-development-constitution.git",
       "selectionMode": "popular",
-      "popularityRank": 228,
+      "popularityRank": 227,
       "observedStars": 26,
       "observedStarsCapture": [
         {
@@ -32208,7 +32172,7 @@
       "githubRepositoryId": 1326194383,
       "repoUrl": "https://github.com/ggg123124/vrchat-assistant.git",
       "selectionMode": "popular",
-      "popularityRank": 229,
+      "popularityRank": 228,
       "observedStars": 26,
       "observedStarsCapture": [
         {
@@ -32262,7 +32226,7 @@
       "githubRepositoryId": 1264165303,
       "repoUrl": "https://github.com/hec-ovi/gamentic.git",
       "selectionMode": "popular",
-      "popularityRank": 230,
+      "popularityRank": 229,
       "observedStars": 26,
       "observedStarsCapture": [
         {
@@ -32316,7 +32280,7 @@
       "githubRepositoryId": 229997367,
       "repoUrl": "https://github.com/altin/abalone-ai.git",
       "selectionMode": "popular",
-      "popularityRank": 231,
+      "popularityRank": 230,
       "observedStars": 25,
       "observedStarsCapture": [
         {
@@ -32370,7 +32334,7 @@
       "githubRepositoryId": 1283968843,
       "repoUrl": "https://github.com/Asti-Z/ai-game-framework.git",
       "selectionMode": "popular",
-      "popularityRank": 232,
+      "popularityRank": 231,
       "observedStars": 25,
       "observedStarsCapture": [
         {
@@ -32424,7 +32388,7 @@
       "githubRepositoryId": 991869157,
       "repoUrl": "https://github.com/Fantety/next-engine.git",
       "selectionMode": "popular",
-      "popularityRank": 233,
+      "popularityRank": 232,
       "observedStars": 25,
       "observedStarsCapture": [
         {
@@ -32478,7 +32442,7 @@
       "githubRepositoryId": 1292688393,
       "repoUrl": "https://github.com/GenieEngine/GenieEngine.git",
       "selectionMode": "popular",
-      "popularityRank": 234,
+      "popularityRank": 233,
       "observedStars": 25,
       "observedStarsCapture": [
         {
@@ -32532,7 +32496,7 @@
       "githubRepositoryId": 686246937,
       "repoUrl": "https://github.com/ZorPastaman/UtilityAI.git",
       "selectionMode": "popular",
-      "popularityRank": 235,
+      "popularityRank": 234,
       "observedStars": 25,
       "observedStarsCapture": [
         {
@@ -32583,7 +32547,7 @@
       "githubRepositoryId": 51099712,
       "repoUrl": "https://github.com/albertpumarola/QLearning-NAO_plays_Agario.git",
       "selectionMode": "popular",
-      "popularityRank": 236,
+      "popularityRank": 235,
       "observedStars": 24,
       "observedStarsCapture": [
         {
@@ -32637,7 +32601,7 @@
       "githubRepositoryId": 34968619,
       "repoUrl": "https://github.com/Devking/HeartsAI.git",
       "selectionMode": "popular",
-      "popularityRank": 237,
+      "popularityRank": 236,
       "observedStars": 24,
       "observedStarsCapture": [
         {
@@ -32691,7 +32655,7 @@
       "githubRepositoryId": 1234697322,
       "repoUrl": "https://github.com/DotHarness/dotcraft-unity.git",
       "selectionMode": "popular",
-      "popularityRank": 238,
+      "popularityRank": 237,
       "observedStars": 24,
       "observedStarsCapture": [
         {
@@ -32745,7 +32709,7 @@
       "githubRepositoryId": 1020732985,
       "repoUrl": "https://github.com/FareedKhan-dev/ai-gaming-agent.git",
       "selectionMode": "popular",
-      "popularityRank": 239,
+      "popularityRank": 238,
       "observedStars": 24,
       "observedStarsCapture": [
         {
@@ -32799,7 +32763,7 @@
       "githubRepositoryId": 573973166,
       "repoUrl": "https://github.com/bryanat/Reinforcement-Learning-Unity-3D-Packing.git",
       "selectionMode": "popular",
-      "popularityRank": 240,
+      "popularityRank": 239,
       "observedStars": 23,
       "observedStarsCapture": [
         {
@@ -32853,7 +32817,7 @@
       "githubRepositoryId": 255955348,
       "repoUrl": "https://github.com/craighaber/AI-for-Snake-Game.git",
       "selectionMode": "popular",
-      "popularityRank": 241,
+      "popularityRank": 240,
       "observedStars": 23,
       "observedStarsCapture": [
         {
@@ -32907,7 +32871,7 @@
       "githubRepositoryId": 882672087,
       "repoUrl": "https://github.com/dmitrybaltin/FunctionalBT.git",
       "selectionMode": "popular",
-      "popularityRank": 242,
+      "popularityRank": 241,
       "observedStars": 23,
       "observedStarsCapture": [
         {
@@ -32950,7 +32914,7 @@
       "githubRepositoryId": 632396388,
       "repoUrl": "https://github.com/amjadmajid/deep-reinforcement-learning-games-from-scratch.git",
       "selectionMode": "popular",
-      "popularityRank": 243,
+      "popularityRank": 242,
       "observedStars": 22,
       "observedStarsCapture": [
         {
@@ -33000,7 +32964,7 @@
       "githubRepositoryId": 1387780353,
       "repoUrl": "https://github.com/codebase/amiga-game-kit.git",
       "selectionMode": "popular",
-      "popularityRank": 244,
+      "popularityRank": 243,
       "observedStars": 22,
       "observedStarsCapture": [
         {
@@ -33055,7 +33019,7 @@
       "githubRepositoryId": 1111090367,
       "repoUrl": "https://github.com/IvanMurzak/Unity-AI-Tools-Template.git",
       "selectionMode": "popular",
-      "popularityRank": 245,
+      "popularityRank": 244,
       "observedStars": 22,
       "observedStarsCapture": [
         {
@@ -33109,7 +33073,7 @@
       "githubRepositoryId": 183289601,
       "repoUrl": "https://github.com/lxucs/go-game-easy.git",
       "selectionMode": "popular",
-      "popularityRank": 246,
+      "popularityRank": 245,
       "observedStars": 22,
       "observedStarsCapture": [
         {
@@ -33158,7 +33122,7 @@
       "githubRepositoryId": 329375651,
       "repoUrl": "https://github.com/SamarpanCoder2002/Tic-Tac-Toe-AI.git",
       "selectionMode": "popular",
-      "popularityRank": 247,
+      "popularityRank": 246,
       "observedStars": 22,
       "observedStarsCapture": [
         {
@@ -33212,7 +33176,7 @@
       "githubRepositoryId": 160977746,
       "repoUrl": "https://github.com/alsora/deep-briscola.git",
       "selectionMode": "popular",
-      "popularityRank": 248,
+      "popularityRank": 247,
       "observedStars": 21,
       "observedStarsCapture": [
         {
@@ -33266,7 +33230,7 @@
       "githubRepositoryId": 407032599,
       "repoUrl": "https://github.com/guansanghai/KoiKoi-AI.git",
       "selectionMode": "popular",
-      "popularityRank": 249,
+      "popularityRank": 248,
       "observedStars": 21,
       "observedStarsCapture": [
         {
@@ -33320,7 +33284,7 @@
       "githubRepositoryId": 760104404,
       "repoUrl": "https://github.com/hiper2d/werewolf-ai-party-game.git",
       "selectionMode": "popular",
-      "popularityRank": 250,
+      "popularityRank": 249,
       "observedStars": 21,
       "observedStarsCapture": [
         {
@@ -33374,7 +33338,7 @@
       "githubRepositoryId": 746596299,
       "repoUrl": "https://github.com/JackBekket/Hellper.git",
       "selectionMode": "popular",
-      "popularityRank": 251,
+      "popularityRank": 250,
       "observedStars": 21,
       "observedStarsCapture": [
         {
@@ -33428,7 +33392,7 @@
       "githubRepositoryId": 309358165,
       "repoUrl": "https://github.com/RainingComputers/NES-Punchout-AI.git",
       "selectionMode": "popular",
-      "popularityRank": 252,
+      "popularityRank": 251,
       "observedStars": 21,
       "observedStarsCapture": [
         {
@@ -33482,7 +33446,7 @@
       "githubRepositoryId": 901884464,
       "repoUrl": "https://github.com/ruslanmv/ai-gameplay-bot.git",
       "selectionMode": "popular",
-      "popularityRank": 253,
+      "popularityRank": 252,
       "observedStars": 21,
       "observedStarsCapture": [
         {
@@ -33542,7 +33506,7 @@
       "githubRepositoryId": 1182571670,
       "repoUrl": "https://github.com/sonpiaz/4x-game-agent.git",
       "selectionMode": "popular",
-      "popularityRank": 254,
+      "popularityRank": 253,
       "observedStars": 21,
       "observedStarsCapture": [
         {
@@ -33597,7 +33561,7 @@
       "githubRepositoryId": 302892469,
       "repoUrl": "https://github.com/ZorPastaman/Behavior-Tree.git",
       "selectionMode": "popular",
-      "popularityRank": 255,
+      "popularityRank": 254,
       "observedStars": 21,
       "observedStarsCapture": [
         {
@@ -33657,7 +33621,7 @@
       "githubRepositoryId": 1311492346,
       "repoUrl": "https://github.com/arsalan-anwari/2009scape-wiki-api.git",
       "selectionMode": "popular",
-      "popularityRank": 256,
+      "popularityRank": 255,
       "observedStars": 20,
       "observedStarsCapture": [
         {
@@ -33705,7 +33669,7 @@
       "githubRepositoryId": 283302480,
       "repoUrl": "https://github.com/benzyx/DomRL.git",
       "selectionMode": "popular",
-      "popularityRank": 257,
+      "popularityRank": 256,
       "observedStars": 20,
       "observedStarsCapture": [
         {
@@ -33759,7 +33723,7 @@
       "githubRepositoryId": 1269972053,
       "repoUrl": "https://github.com/ddc-111/agentGame.git",
       "selectionMode": "popular",
-      "popularityRank": 258,
+      "popularityRank": 257,
       "observedStars": 20,
       "observedStarsCapture": [
         {
@@ -33813,7 +33777,7 @@
       "githubRepositoryId": 1049398904,
       "repoUrl": "https://github.com/guyroyse/agents-n-arbiters.git",
       "selectionMode": "popular",
-      "popularityRank": 259,
+      "popularityRank": 258,
       "observedStars": 20,
       "observedStarsCapture": [
         {
@@ -33856,7 +33820,7 @@
       "githubRepositoryId": 1302744897,
       "repoUrl": "https://github.com/itzik123/ClashRoyaleAi.git",
       "selectionMode": "popular",
-      "popularityRank": 260,
+      "popularityRank": 259,
       "observedStars": 20,
       "observedStarsCapture": [
         {
@@ -33916,7 +33880,7 @@
       "githubRepositoryId": 1368585286,
       "repoUrl": "https://github.com/LISK819129/OpenNPC.git",
       "selectionMode": "popular",
-      "popularityRank": 261,
+      "popularityRank": 260,
       "observedStars": 20,
       "observedStarsCapture": [
         {
@@ -33960,7 +33924,7 @@
       "githubRepositoryId": 298935740,
       "repoUrl": "https://github.com/XiaoxiaoGuo/rcdqn.git",
       "selectionMode": "popular",
-      "popularityRank": 262,
+      "popularityRank": 261,
       "observedStars": 20,
       "observedStarsCapture": [
         {
@@ -34009,7 +33973,7 @@
       "githubRepositoryId": 807317695,
       "repoUrl": "https://github.com/aymenfurter/Self-Determining-AI-Agents.git",
       "selectionMode": "popular",
-      "popularityRank": 263,
+      "popularityRank": 262,
       "observedStars": 19,
       "observedStarsCapture": [
         {
@@ -34062,7 +34026,7 @@
       "githubRepositoryId": 668055405,
       "repoUrl": "https://github.com/edwarddn/dinosaur-edward-game.git",
       "selectionMode": "popular",
-      "popularityRank": 264,
+      "popularityRank": 263,
       "observedStars": 19,
       "observedStarsCapture": [
         {
@@ -34112,7 +34076,7 @@
       "githubRepositoryId": 1153926092,
       "repoUrl": "https://github.com/jonradoff/chessmata.git",
       "selectionMode": "popular",
-      "popularityRank": 265,
+      "popularityRank": 264,
       "observedStars": 19,
       "observedStarsCapture": [
         {
@@ -34166,7 +34130,7 @@
       "githubRepositoryId": 669830692,
       "repoUrl": "https://github.com/lucasBertola/Connect-4-Gym-env-Reinforcement-learning.git",
       "selectionMode": "popular",
-      "popularityRank": 266,
+      "popularityRank": 265,
       "observedStars": 19,
       "observedStarsCapture": [
         {
@@ -34220,7 +34184,7 @@
       "githubRepositoryId": 1115178461,
       "repoUrl": "https://github.com/Signal-Loop/UnityCodeMCPServer.git",
       "selectionMode": "popular",
-      "popularityRank": 267,
+      "popularityRank": 266,
       "observedStars": 19,
       "observedStarsCapture": [
         {
@@ -34274,7 +34238,7 @@
       "githubRepositoryId": 1136709450,
       "repoUrl": "https://github.com/xqbjs/AvalonGame.git",
       "selectionMode": "popular",
-      "popularityRank": 268,
+      "popularityRank": 267,
       "observedStars": 19,
       "observedStarsCapture": [
         {
@@ -34328,7 +34292,7 @@
       "githubRepositoryId": 46149413,
       "repoUrl": "https://github.com/alexsosn/AssociationBot.git",
       "selectionMode": "popular",
-      "popularityRank": 269,
+      "popularityRank": 268,
       "observedStars": 18,
       "observedStarsCapture": [
         {
@@ -34375,7 +34339,7 @@
       "githubRepositoryId": 732743741,
       "repoUrl": "https://github.com/danukarangith/Connect-4-Games.git",
       "selectionMode": "popular",
-      "popularityRank": 270,
+      "popularityRank": 269,
       "observedStars": 18,
       "observedStarsCapture": [
         {
@@ -34429,7 +34393,7 @@
       "githubRepositoryId": 90481738,
       "repoUrl": "https://github.com/matgrioni/euchre-bot.git",
       "selectionMode": "popular",
-      "popularityRank": 271,
+      "popularityRank": 270,
       "observedStars": 18,
       "observedStarsCapture": [
         {
@@ -34483,7 +34447,7 @@
       "githubRepositoryId": 76787874,
       "repoUrl": "https://github.com/cirosantilli/rl-game-2d-grid.git",
       "selectionMode": "popular",
-      "popularityRank": 272,
+      "popularityRank": 271,
       "observedStars": 17,
       "observedStarsCapture": [
         {
@@ -34543,7 +34507,7 @@
       "githubRepositoryId": 1166639453,
       "repoUrl": "https://github.com/game4automation/io.realvirtual.mcp.git",
       "selectionMode": "popular",
-      "popularityRank": 273,
+      "popularityRank": 272,
       "observedStars": 17,
       "observedStarsCapture": [
         {
@@ -34597,7 +34561,7 @@
       "githubRepositoryId": 60810991,
       "repoUrl": "https://github.com/jpypi/othello-rl.git",
       "selectionMode": "popular",
-      "popularityRank": 274,
+      "popularityRank": 273,
       "observedStars": 17,
       "observedStarsCapture": [
         {
@@ -34645,7 +34609,7 @@
       "githubRepositoryId": 1039990294,
       "repoUrl": "https://github.com/NhanPhamThanh-IT/Wumpus-World-Game.git",
       "selectionMode": "popular",
-      "popularityRank": 275,
+      "popularityRank": 274,
       "observedStars": 17,
       "observedStarsCapture": [
         {
@@ -34699,7 +34663,7 @@
       "githubRepositoryId": 291563061,
       "repoUrl": "https://github.com/swift4rl/ai-baselines.git",
       "selectionMode": "popular",
-      "popularityRank": 276,
+      "popularityRank": 275,
       "observedStars": 17,
       "observedStarsCapture": [
         {
@@ -34742,7 +34706,7 @@
       "githubRepositoryId": 1152595324,
       "repoUrl": "https://github.com/TomLeeLive/openclaw-godot-plugin.git",
       "selectionMode": "popular",
-      "popularityRank": 277,
+      "popularityRank": 276,
       "observedStars": 17,
       "observedStarsCapture": [
         {
@@ -34796,7 +34760,7 @@
       "githubRepositoryId": 293260143,
       "repoUrl": "https://github.com/xander100891/super-mario-bros-v0.git",
       "selectionMode": "popular",
-      "popularityRank": 278,
+      "popularityRank": 277,
       "observedStars": 17,
       "observedStarsCapture": [
         {
@@ -34839,7 +34803,7 @@
       "githubRepositoryId": 314068445,
       "repoUrl": "https://github.com/arman-aminian/risk-game-ai-agent.git",
       "selectionMode": "popular",
-      "popularityRank": 279,
+      "popularityRank": 278,
       "observedStars": 16,
       "observedStarsCapture": [
         {
@@ -34893,7 +34857,7 @@
       "githubRepositoryId": 1099105207,
       "repoUrl": "https://github.com/DirtybitGames/unityctl.git",
       "selectionMode": "popular",
-      "popularityRank": 280,
+      "popularityRank": 279,
       "observedStars": 16,
       "observedStarsCapture": [
         {
@@ -34947,7 +34911,7 @@
       "githubRepositoryId": 858912887,
       "repoUrl": "https://github.com/DissonantVoid/DVs-Behavior-Tree.git",
       "selectionMode": "popular",
-      "popularityRank": 281,
+      "popularityRank": 280,
       "observedStars": 16,
       "observedStarsCapture": [
         {
@@ -34991,7 +34955,7 @@
       "githubRepositoryId": 1290446705,
       "repoUrl": "https://github.com/djmango/openfront-ai.git",
       "selectionMode": "popular",
-      "popularityRank": 282,
+      "popularityRank": 281,
       "observedStars": 16,
       "observedStarsCapture": [
         {
@@ -35051,7 +35015,7 @@
       "githubRepositoryId": 1317459110,
       "repoUrl": "https://github.com/frabcd/codex-ai-game-studio.git",
       "selectionMode": "popular",
-      "popularityRank": 283,
+      "popularityRank": 282,
       "observedStars": 16,
       "observedStarsCapture": [
         {
@@ -35092,7 +35056,7 @@
       "githubRepositoryId": 599453740,
       "repoUrl": "https://github.com/jianzhnie/RLZero.git",
       "selectionMode": "popular",
-      "popularityRank": 284,
+      "popularityRank": 283,
       "observedStars": 16,
       "observedStarsCapture": [
         {
@@ -35146,7 +35110,7 @@
       "githubRepositoryId": 146695646,
       "repoUrl": "https://github.com/lkwilson/Conways-Game-Of-Life-AI.git",
       "selectionMode": "popular",
-      "popularityRank": 285,
+      "popularityRank": 284,
       "observedStars": 16,
       "observedStarsCapture": [
         {
@@ -35189,7 +35153,7 @@
       "githubRepositoryId": 951729841,
       "repoUrl": "https://github.com/lvshrd/factorio-agent.git",
       "selectionMode": "popular",
-      "popularityRank": 286,
+      "popularityRank": 285,
       "observedStars": 16,
       "observedStarsCapture": [
         {
@@ -35243,7 +35207,7 @@
       "githubRepositoryId": 928537738,
       "repoUrl": "https://github.com/muzafferkadir/snake-learn-to-play.git",
       "selectionMode": "popular",
-      "popularityRank": 287,
+      "popularityRank": 286,
       "observedStars": 16,
       "observedStarsCapture": [
         {
@@ -35303,7 +35267,7 @@
       "githubRepositoryId": 253041339,
       "repoUrl": "https://github.com/nedeljkovignjevic/checkers-game.git",
       "selectionMode": "popular",
-      "popularityRank": 288,
+      "popularityRank": 287,
       "observedStars": 16,
       "observedStarsCapture": [
         {
@@ -35349,7 +35313,7 @@
       "githubRepositoryId": 1186557480,
       "repoUrl": "https://github.com/Zandereins/schliff.git",
       "selectionMode": "popular",
-      "popularityRank": 289,
+      "popularityRank": 288,
       "observedStars": 16,
       "observedStarsCapture": [
         {
@@ -35395,7 +35359,7 @@
       "githubRepositoryId": 665706446,
       "repoUrl": "https://github.com/alessianigretti/ai_toolset.git",
       "selectionMode": "popular",
-      "popularityRank": 290,
+      "popularityRank": 289,
       "observedStars": 15,
       "observedStarsCapture": [
         {
@@ -35444,7 +35408,7 @@
       "githubRepositoryId": 1270527799,
       "repoUrl": "https://github.com/AlexeyPerov/Unity-Open-MCP.git",
       "selectionMode": "popular",
-      "popularityRank": 291,
+      "popularityRank": 290,
       "observedStars": 15,
       "observedStarsCapture": [
         {
@@ -35498,7 +35462,7 @@
       "githubRepositoryId": 1228538366,
       "repoUrl": "https://github.com/alii13/open-mercy.git",
       "selectionMode": "popular",
-      "popularityRank": 292,
+      "popularityRank": 291,
       "observedStars": 15,
       "observedStarsCapture": [
         {
@@ -35541,7 +35505,7 @@
       "githubRepositoryId": 95488438,
       "repoUrl": "https://github.com/anmoljagetia/OReillyAI-Gamebots.git",
       "selectionMode": "popular",
-      "popularityRank": 293,
+      "popularityRank": 292,
       "observedStars": 15,
       "observedStarsCapture": [
         {
@@ -35587,7 +35551,7 @@
       "githubRepositoryId": 533489136,
       "repoUrl": "https://github.com/CursedPrograms/ConfederateAI.git",
       "selectionMode": "popular",
-      "popularityRank": 294,
+      "popularityRank": 293,
       "observedStars": 15,
       "observedStarsCapture": [
         {
@@ -35638,7 +35602,7 @@
       "githubRepositoryId": 1247472716,
       "repoUrl": "https://github.com/GrigoriusPompeus/python-chess-engine.git",
       "selectionMode": "popular",
-      "popularityRank": 295,
+      "popularityRank": 294,
       "observedStars": 15,
       "observedStarsCapture": [
         {
@@ -35692,7 +35656,7 @@
       "githubRepositoryId": 1011570582,
       "repoUrl": "https://github.com/infinitesm/AimAware.git",
       "selectionMode": "popular",
-      "popularityRank": 296,
+      "popularityRank": 295,
       "observedStars": 15,
       "observedStarsCapture": [
         {
@@ -35738,7 +35702,7 @@
       "githubRepositoryId": 1031418287,
       "repoUrl": "https://github.com/keegan-carey/nightMiner.git",
       "selectionMode": "popular",
-      "popularityRank": 297,
+      "popularityRank": 296,
       "observedStars": 15,
       "observedStarsCapture": [
         {
@@ -35792,7 +35756,7 @@
       "githubRepositoryId": 1074381650,
       "repoUrl": "https://github.com/kogazz/stardew-llm-agent.git",
       "selectionMode": "popular",
-      "popularityRank": 298,
+      "popularityRank": 297,
       "observedStars": 15,
       "observedStarsCapture": [
         {
@@ -35846,7 +35810,7 @@
       "githubRepositoryId": 1027375954,
       "repoUrl": "https://github.com/mickey/godot-ai-context-generator.git",
       "selectionMode": "popular",
-      "popularityRank": 299,
+      "popularityRank": 298,
       "observedStars": 15,
       "observedStarsCapture": [
         {
@@ -35900,7 +35864,7 @@
       "githubRepositoryId": 361108335,
       "repoUrl": "https://github.com/MShepelin/RealTimeMAPF.git",
       "selectionMode": "popular",
-      "popularityRank": 300,
+      "popularityRank": 299,
       "observedStars": 15,
       "observedStarsCapture": [
         {
@@ -35954,7 +35918,7 @@
       "githubRepositoryId": 191373684,
       "repoUrl": "https://github.com/sushantPatrikar/flappybirdAI.git",
       "selectionMode": "popular",
-      "popularityRank": 301,
+      "popularityRank": 300,
       "observedStars": 15,
       "observedStarsCapture": [
         {
@@ -36008,7 +35972,7 @@
       "githubRepositoryId": 1296273774,
       "repoUrl": "https://github.com/teklabsdigital/x2-method.git",
       "selectionMode": "popular",
-      "popularityRank": 302,
+      "popularityRank": 301,
       "observedStars": 15,
       "observedStarsCapture": [
         {
@@ -36055,7 +36019,7 @@
       "githubRepositoryId": 1140249312,
       "repoUrl": "https://github.com/UndergroundAI-DM/MultiBot.git",
       "selectionMode": "popular",
-      "popularityRank": 303,
+      "popularityRank": 302,
       "observedStars": 15,
       "observedStarsCapture": [
         {
@@ -36109,7 +36073,7 @@
       "githubRepositoryId": 1247866311,
       "repoUrl": "https://github.com/zaroziri1/mimo-game-design-engine.git",
       "selectionMode": "popular",
-      "popularityRank": 304,
+      "popularityRank": 303,
       "observedStars": 15,
       "observedStarsCapture": [
         {
@@ -36163,7 +36127,7 @@
       "githubRepositoryId": 1289182307,
       "repoUrl": "https://github.com/ZSLTChenXiYin/GameAgentEngine.git",
       "selectionMode": "popular",
-      "popularityRank": 305,
+      "popularityRank": 304,
       "observedStars": 15,
       "observedStarsCapture": [
         {
@@ -36217,7 +36181,7 @@
       "githubRepositoryId": 892832694,
       "repoUrl": "https://github.com/Anroshka/snake-ai.git",
       "selectionMode": "popular",
-      "popularityRank": 306,
+      "popularityRank": 305,
       "observedStars": 14,
       "observedStarsCapture": [
         {
@@ -36271,7 +36235,7 @@
       "githubRepositoryId": 198490366,
       "repoUrl": "https://github.com/DataSenseiAryan/T-RexDinoRunner-GAME-AI-BOT.git",
       "selectionMode": "popular",
-      "popularityRank": 307,
+      "popularityRank": 306,
       "observedStars": 14,
       "observedStarsCapture": [
         {
@@ -36325,7 +36289,7 @@
       "githubRepositoryId": 69247278,
       "repoUrl": "https://github.com/DennisSoemers/MaastCTS2.git",
       "selectionMode": "popular",
-      "popularityRank": 308,
+      "popularityRank": 307,
       "observedStars": 14,
       "observedStarsCapture": [
         {
@@ -36385,7 +36349,7 @@
       "githubRepositoryId": 1101893010,
       "repoUrl": "https://github.com/guinhx/MistreevousSharp.git",
       "selectionMode": "popular",
-      "popularityRank": 309,
+      "popularityRank": 308,
       "observedStars": 14,
       "observedStarsCapture": [
         {
@@ -36435,7 +36399,7 @@
       "githubRepositoryId": 140051885,
       "repoUrl": "https://github.com/HectorPulido/unity-ml-lab.git",
       "selectionMode": "popular",
-      "popularityRank": 310,
+      "popularityRank": 309,
       "observedStars": 14,
       "observedStarsCapture": [
         {
@@ -36481,7 +36445,7 @@
       "githubRepositoryId": 24407913,
       "repoUrl": "https://github.com/MarkusThill/Connect-Four.git",
       "selectionMode": "popular",
-      "popularityRank": 311,
+      "popularityRank": 310,
       "observedStars": 14,
       "observedStarsCapture": [
         {
@@ -36535,7 +36499,7 @@
       "githubRepositoryId": 319575044,
       "repoUrl": "https://github.com/S1Lazza/NavmeshGeneration.git",
       "selectionMode": "popular",
-      "popularityRank": 312,
+      "popularityRank": 311,
       "observedStars": 14,
       "observedStarsCapture": [
         {
@@ -36589,7 +36553,7 @@
       "githubRepositoryId": 1065271982,
       "repoUrl": "https://github.com/tooichitake/gymnasium-mario.git",
       "selectionMode": "popular",
-      "popularityRank": 313,
+      "popularityRank": 312,
       "observedStars": 14,
       "observedStarsCapture": [
         {
@@ -36632,7 +36596,7 @@
       "githubRepositoryId": 1017123572,
       "repoUrl": "https://github.com/TranHuuDat2004/Caro-Board.git",
       "selectionMode": "popular",
-      "popularityRank": 314,
+      "popularityRank": 313,
       "observedStars": 14,
       "observedStarsCapture": [
         {
@@ -36686,7 +36650,7 @@
       "githubRepositoryId": 129344694,
       "repoUrl": "https://github.com/ykaitao/the-elements-of-reinforcement-learning.git",
       "selectionMode": "popular",
-      "popularityRank": 315,
+      "popularityRank": 314,
       "observedStars": 14,
       "observedStarsCapture": [
         {
@@ -36727,7 +36691,7 @@
       "githubRepositoryId": 649432996,
       "repoUrl": "https://github.com/aome510/chrome-dino-game-rl.git",
       "selectionMode": "popular",
-      "popularityRank": 316,
+      "popularityRank": 315,
       "observedStars": 13,
       "observedStarsCapture": [
         {
@@ -36781,7 +36745,7 @@
       "githubRepositoryId": 1246931616,
       "repoUrl": "https://github.com/Attol8/balatro-ai.git",
       "selectionMode": "popular",
-      "popularityRank": 317,
+      "popularityRank": 316,
       "observedStars": 13,
       "observedStarsCapture": [
         {
@@ -36841,7 +36805,7 @@
       "githubRepositoryId": 886579318,
       "repoUrl": "https://github.com/build-on-aws/amazon-bedrock-adventure-game.git",
       "selectionMode": "popular",
-      "popularityRank": 318,
+      "popularityRank": 317,
       "observedStars": 13,
       "observedStarsCapture": [
         {
@@ -36895,7 +36859,7 @@
       "githubRepositoryId": 1091153780,
       "repoUrl": "https://github.com/cognitae-ai/Cognitae.git",
       "selectionMode": "popular",
-      "popularityRank": 319,
+      "popularityRank": 318,
       "observedStars": 13,
       "observedStarsCapture": [
         {
@@ -36949,7 +36913,7 @@
       "githubRepositoryId": 115161603,
       "repoUrl": "https://github.com/foszor/AIPlayerState.git",
       "selectionMode": "popular",
-      "popularityRank": 320,
+      "popularityRank": 319,
       "observedStars": 13,
       "observedStarsCapture": [
         {
@@ -36996,7 +36960,7 @@
       "githubRepositoryId": 972010996,
       "repoUrl": "https://github.com/haktan313/StateTreeTest.git",
       "selectionMode": "popular",
-      "popularityRank": 321,
+      "popularityRank": 320,
       "observedStars": 13,
       "observedStarsCapture": [
         {
@@ -37041,7 +37005,7 @@
       "githubRepositoryId": 788642918,
       "repoUrl": "https://github.com/KieranCoppins/Post-Navigation-System.git",
       "selectionMode": "popular",
-      "popularityRank": 322,
+      "popularityRank": 321,
       "observedStars": 13,
       "observedStarsCapture": [
         {
@@ -37107,7 +37071,7 @@
       "githubRepositoryId": 991420892,
       "repoUrl": "https://github.com/legalaspro/unity_multiagent_rl.git",
       "selectionMode": "popular",
-      "popularityRank": 323,
+      "popularityRank": 322,
       "observedStars": 13,
       "observedStarsCapture": [
         {
@@ -37167,7 +37131,7 @@
       "githubRepositoryId": 1169690942,
       "repoUrl": "https://github.com/loomle/loomle.git",
       "selectionMode": "popular",
-      "popularityRank": 324,
+      "popularityRank": 323,
       "observedStars": 13,
       "observedStarsCapture": [
         {
@@ -37221,7 +37185,7 @@
       "githubRepositoryId": 221014992,
       "repoUrl": "https://github.com/masouduut94/MCTS-agent-cythonized.git",
       "selectionMode": "popular",
-      "popularityRank": 325,
+      "popularityRank": 324,
       "observedStars": 13,
       "observedStarsCapture": [
         {
@@ -37275,7 +37239,7 @@
       "githubRepositoryId": 1303778409,
       "repoUrl": "https://github.com/masteryee-labs/Open-Godot-MCP.git",
       "selectionMode": "popular",
-      "popularityRank": 326,
+      "popularityRank": 325,
       "observedStars": 13,
       "observedStarsCapture": [
         {
@@ -37335,7 +37299,7 @@
       "githubRepositoryId": 151930101,
       "repoUrl": "https://github.com/mattiadg/BoardGames.git",
       "selectionMode": "popular",
-      "popularityRank": 327,
+      "popularityRank": 326,
       "observedStars": 13,
       "observedStarsCapture": [
         {
@@ -37382,7 +37346,7 @@
       "githubRepositoryId": 269589094,
       "repoUrl": "https://github.com/mgsweet/Azul-MCTS-AI.git",
       "selectionMode": "popular",
-      "popularityRank": 328,
+      "popularityRank": 327,
       "observedStars": 13,
       "observedStarsCapture": [
         {
@@ -37436,7 +37400,7 @@
       "githubRepositoryId": 121905525,
       "repoUrl": "https://github.com/mmuppidi/DQN-Atari-Pong.git",
       "selectionMode": "popular",
-      "popularityRank": 329,
+      "popularityRank": 328,
       "observedStars": 13,
       "observedStarsCapture": [
         {
@@ -37479,7 +37443,7 @@
       "githubRepositoryId": 1194744558,
       "repoUrl": "https://github.com/rollacode/playnite-bridge.git",
       "selectionMode": "popular",
-      "popularityRank": 330,
+      "popularityRank": 329,
       "observedStars": 13,
       "observedStarsCapture": [
         {
@@ -37533,7 +37497,7 @@
       "githubRepositoryId": 1196653119,
       "repoUrl": "https://github.com/rudra496/worldsim-ai.git",
       "selectionMode": "popular",
-      "popularityRank": 331,
+      "popularityRank": 330,
       "observedStars": 13,
       "observedStarsCapture": [
         {
@@ -37588,7 +37552,7 @@
       "githubRepositoryId": 13715159,
       "repoUrl": "https://github.com/thephoeron/quantum-python-game-engine.git",
       "selectionMode": "popular",
-      "popularityRank": 332,
+      "popularityRank": 331,
       "observedStars": 13,
       "observedStarsCapture": [
         {
@@ -37642,7 +37606,7 @@
       "githubRepositoryId": 106892095,
       "repoUrl": "https://github.com/vwxyzjn/SC2AI.git",
       "selectionMode": "popular",
-      "popularityRank": 333,
+      "popularityRank": 332,
       "observedStars": 13,
       "observedStarsCapture": [
         {
@@ -37696,7 +37660,7 @@
       "githubRepositoryId": 955298789,
       "repoUrl": "https://github.com/aira-list/FAIRGAME.git",
       "selectionMode": "popular",
-      "popularityRank": 334,
+      "popularityRank": 333,
       "observedStars": 12,
       "observedStarsCapture": [
         {
@@ -37750,7 +37714,7 @@
       "githubRepositoryId": 1190651511,
       "repoUrl": "https://github.com/cft0808/yiju.git",
       "selectionMode": "popular",
-      "popularityRank": 335,
+      "popularityRank": 334,
       "observedStars": 12,
       "observedStarsCapture": [
         {
@@ -37804,7 +37768,7 @@
       "githubRepositoryId": 853789240,
       "repoUrl": "https://github.com/dspencej/UnscriptedAdventures.git",
       "selectionMode": "popular",
-      "popularityRank": 336,
+      "popularityRank": 335,
       "observedStars": 12,
       "observedStarsCapture": [
         {
@@ -37858,7 +37822,7 @@
       "githubRepositoryId": 827868387,
       "repoUrl": "https://github.com/ganjiro/OfflineMania.git",
       "selectionMode": "popular",
-      "popularityRank": 337,
+      "popularityRank": 336,
       "observedStars": 12,
       "observedStarsCapture": [
         {
@@ -37907,7 +37871,7 @@
       "githubRepositoryId": 1258773748,
       "repoUrl": "https://github.com/IvanMurzak/Unity-AI-Cinemachine.git",
       "selectionMode": "popular",
-      "popularityRank": 338,
+      "popularityRank": 337,
       "observedStars": 12,
       "observedStarsCapture": [
         {
@@ -37961,7 +37925,7 @@
       "githubRepositoryId": 1167268493,
       "repoUrl": "https://github.com/joshsymonds/savecraft.gg.git",
       "selectionMode": "popular",
-      "popularityRank": 339,
+      "popularityRank": 338,
       "observedStars": 12,
       "observedStarsCapture": [
         {
@@ -38015,7 +37979,7 @@
       "githubRepositoryId": 282102564,
       "repoUrl": "https://github.com/rasca0027/Mahjong4RL.git",
       "selectionMode": "popular",
-      "popularityRank": 340,
+      "popularityRank": 339,
       "observedStars": 12,
       "observedStarsCapture": [
         {
@@ -38069,7 +38033,7 @@
       "githubRepositoryId": 914429806,
       "repoUrl": "https://github.com/skindhu/AI-GAME-RULE-EXTRACTOR.git",
       "selectionMode": "popular",
-      "popularityRank": 341,
+      "popularityRank": 340,
       "observedStars": 12,
       "observedStarsCapture": [
         {
@@ -38123,7 +38087,7 @@
       "githubRepositoryId": 494121943,
       "repoUrl": "https://github.com/tboulet/AI-Agents-for-Games.git",
       "selectionMode": "popular",
-      "popularityRank": 342,
+      "popularityRank": 341,
       "observedStars": 12,
       "observedStarsCapture": [
         {
@@ -38177,7 +38141,7 @@
       "githubRepositoryId": 1290101211,
       "repoUrl": "https://github.com/alex-jordan547/renforge-mcp.git",
       "selectionMode": "popular",
-      "popularityRank": 343,
+      "popularityRank": 342,
       "observedStars": 11,
       "observedStarsCapture": [
         {
@@ -38237,7 +38201,7 @@
       "githubRepositoryId": 333578232,
       "repoUrl": "https://github.com/alfischer33/rps-ai.git",
       "selectionMode": "popular",
-      "popularityRank": 344,
+      "popularityRank": 343,
       "observedStars": 11,
       "observedStarsCapture": [
         {
@@ -38291,7 +38255,7 @@
       "githubRepositoryId": 342092046,
       "repoUrl": "https://github.com/Alkennedy1998/City-Building-AI-Senior-Design-2021.git",
       "selectionMode": "popular",
-      "popularityRank": 345,
+      "popularityRank": 344,
       "observedStars": 11,
       "observedStarsCapture": [
         {
@@ -38345,7 +38309,7 @@
       "githubRepositoryId": 870369843,
       "repoUrl": "https://github.com/Brainydaps/TicTacToeAI.git",
       "selectionMode": "popular",
-      "popularityRank": 346,
+      "popularityRank": 345,
       "observedStars": 11,
       "observedStarsCapture": [
         {
@@ -38405,7 +38369,7 @@
       "githubRepositoryId": 1169884232,
       "repoUrl": "https://github.com/breslavsky/openclaw-pixel-world.git",
       "selectionMode": "popular",
-      "popularityRank": 347,
+      "popularityRank": 346,
       "observedStars": 11,
       "observedStarsCapture": [
         {
@@ -38459,7 +38423,7 @@
       "githubRepositoryId": 210284601,
       "repoUrl": "https://github.com/dav0dea/uno-bot.git",
       "selectionMode": "popular",
-      "popularityRank": 348,
+      "popularityRank": 347,
       "observedStars": 11,
       "observedStarsCapture": [
         {
@@ -38513,7 +38477,7 @@
       "githubRepositoryId": 1194636394,
       "repoUrl": "https://github.com/GoldenHooded/Unika.git",
       "selectionMode": "popular",
-      "popularityRank": 349,
+      "popularityRank": 348,
       "observedStars": 11,
       "observedStarsCapture": [
         {
@@ -38573,7 +38537,7 @@
       "githubRepositoryId": 1023745095,
       "repoUrl": "https://github.com/hackerzhuli/unity_code_mcp.git",
       "selectionMode": "popular",
-      "popularityRank": 350,
+      "popularityRank": 349,
       "observedStars": 11,
       "observedStarsCapture": [
         {
@@ -38627,7 +38591,7 @@
       "githubRepositoryId": 671634659,
       "repoUrl": "https://github.com/HenBOMB/Polyfish.git",
       "selectionMode": "popular",
-      "popularityRank": 351,
+      "popularityRank": 350,
       "observedStars": 11,
       "observedStarsCapture": [
         {
@@ -38681,7 +38645,7 @@
       "githubRepositoryId": 71341568,
       "repoUrl": "https://github.com/Honkl/general-ai.git",
       "selectionMode": "popular",
-      "popularityRank": 352,
+      "popularityRank": 351,
       "observedStars": 11,
       "observedStarsCapture": [
         {
@@ -38726,7 +38690,7 @@
       "githubRepositoryId": 107229973,
       "repoUrl": "https://github.com/James-QiuHaoran/Othello.git",
       "selectionMode": "popular",
-      "popularityRank": 353,
+      "popularityRank": 352,
       "observedStars": 11,
       "observedStarsCapture": [
         {
@@ -38780,7 +38744,7 @@
       "githubRepositoryId": 173012763,
       "repoUrl": "https://github.com/KyleAnthonyShepherd/Overwatch-AimBot.git",
       "selectionMode": "popular",
-      "popularityRank": 354,
+      "popularityRank": 353,
       "observedStars": 11,
       "observedStarsCapture": [
         {
@@ -38825,7 +38789,7 @@
       "githubRepositoryId": 1112935103,
       "repoUrl": "https://github.com/lschiweck/LLM-NPC-Agents.git",
       "selectionMode": "popular",
-      "popularityRank": 355,
+      "popularityRank": 354,
       "observedStars": 11,
       "observedStarsCapture": [
         {
@@ -38891,7 +38855,7 @@
       "githubRepositoryId": 327250769,
       "repoUrl": "https://github.com/MauriceJohannssen/BehaviorTrees.git",
       "selectionMode": "popular",
-      "popularityRank": 356,
+      "popularityRank": 355,
       "observedStars": 11,
       "observedStarsCapture": [
         {
@@ -38935,7 +38899,7 @@
       "githubRepositoryId": 514621045,
       "repoUrl": "https://github.com/MikeTkachuk/Brawl-Stars-AI.git",
       "selectionMode": "popular",
-      "popularityRank": 357,
+      "popularityRank": 356,
       "observedStars": 11,
       "observedStarsCapture": [
         {
@@ -38989,7 +38953,7 @@
       "githubRepositoryId": 1072472187,
       "repoUrl": "https://github.com/shayarnett/love2d-mcp.git",
       "selectionMode": "popular",
-      "popularityRank": 358,
+      "popularityRank": 357,
       "observedStars": 11,
       "observedStarsCapture": [
         {
@@ -39033,7 +38997,7 @@
       "githubRepositoryId": 113406312,
       "repoUrl": "https://github.com/ShiqinHuo/IQ-Step_board_game.git",
       "selectionMode": "popular",
-      "popularityRank": 359,
+      "popularityRank": 358,
       "observedStars": 11,
       "observedStarsCapture": [
         {
@@ -39087,7 +39051,7 @@
       "githubRepositoryId": 62276843,
       "repoUrl": "https://github.com/ss2cp/AI-TicketToRide.git",
       "selectionMode": "popular",
-      "popularityRank": 360,
+      "popularityRank": 359,
       "observedStars": 11,
       "observedStarsCapture": [
         {
@@ -39141,7 +39105,7 @@
       "githubRepositoryId": 163624548,
       "repoUrl": "https://github.com/voaneves/snake-on-pygame.git",
       "selectionMode": "popular",
-      "popularityRank": 361,
+      "popularityRank": 360,
       "observedStars": 11,
       "observedStarsCapture": [
         {
@@ -39195,7 +39159,7 @@
       "githubRepositoryId": 1185186958,
       "repoUrl": "https://github.com/wanghong5233/Pulse.git",
       "selectionMode": "popular",
-      "popularityRank": 362,
+      "popularityRank": 361,
       "observedStars": 11,
       "observedStarsCapture": [
         {
@@ -39244,7 +39208,7 @@
       "githubRepositoryId": 255567857,
       "repoUrl": "https://github.com/Aaron-Martinez/Poker-bot.git",
       "selectionMode": "popular",
-      "popularityRank": 363,
+      "popularityRank": 362,
       "observedStars": 10,
       "observedStarsCapture": [
         {
@@ -39298,7 +39262,7 @@
       "githubRepositoryId": 874940627,
       "repoUrl": "https://github.com/aimaster-dev/NautilusChess.git",
       "selectionMode": "popular",
-      "popularityRank": 364,
+      "popularityRank": 363,
       "observedStars": 10,
       "observedStarsCapture": [
         {
@@ -39352,7 +39316,7 @@
       "githubRepositoryId": 982623235,
       "repoUrl": "https://github.com/andredisa/chess_AI_agents.git",
       "selectionMode": "popular",
-      "popularityRank": 365,
+      "popularityRank": 364,
       "observedStars": 10,
       "observedStarsCapture": [
         {
@@ -39405,7 +39369,7 @@
       "githubRepositoryId": 1087534342,
       "repoUrl": "https://github.com/chungs10/dnd-ai.git",
       "selectionMode": "popular",
-      "popularityRank": 366,
+      "popularityRank": 365,
       "observedStars": 10,
       "observedStarsCapture": [
         {
@@ -39459,7 +39423,7 @@
       "githubRepositoryId": 1286894077,
       "repoUrl": "https://github.com/DJ-Huang/PCG-AI.git",
       "selectionMode": "popular",
-      "popularityRank": 367,
+      "popularityRank": 366,
       "observedStars": 10,
       "observedStarsCapture": [
         {
@@ -39516,7 +39480,7 @@
       "githubRepositoryId": 1026709234,
       "repoUrl": "https://github.com/dmitrybaltin/UnitaskFBT.git",
       "selectionMode": "popular",
-      "popularityRank": 368,
+      "popularityRank": 367,
       "observedStars": 10,
       "observedStarsCapture": [
         {
@@ -39566,7 +39530,7 @@
       "githubRepositoryId": 226419148,
       "repoUrl": "https://github.com/FairBear/AgentTrainer.git",
       "selectionMode": "popular",
-      "popularityRank": 369,
+      "popularityRank": 368,
       "observedStars": 10,
       "observedStarsCapture": [
         {
@@ -39620,7 +39584,7 @@
       "githubRepositoryId": 1267626970,
       "repoUrl": "https://github.com/Fulviuus/defold-mcp.git",
       "selectionMode": "popular",
-      "popularityRank": 370,
+      "popularityRank": 369,
       "observedStars": 10,
       "observedStarsCapture": [
         {
@@ -39668,7 +39632,7 @@
       "githubRepositoryId": 1035306014,
       "repoUrl": "https://github.com/Jimmyu2foru18/SF6-AI-Bot.git",
       "selectionMode": "popular",
-      "popularityRank": 371,
+      "popularityRank": 370,
       "observedStars": 10,
       "observedStarsCapture": [
         {
@@ -39722,7 +39686,7 @@
       "githubRepositoryId": 277765453,
       "repoUrl": "https://github.com/kaiyoo/AI-agent-Azul-Game-Competition.git",
       "selectionMode": "popular",
-      "popularityRank": 372,
+      "popularityRank": 371,
       "observedStars": 10,
       "observedStarsCapture": [
         {
@@ -39776,7 +39740,7 @@
       "githubRepositoryId": 932577823,
       "repoUrl": "https://github.com/kedar49/Snake-Apple.git",
       "selectionMode": "popular",
-      "popularityRank": 373,
+      "popularityRank": 372,
       "observedStars": 10,
       "observedStarsCapture": [
         {
@@ -39830,7 +39794,7 @@
       "githubRepositoryId": 1225879258,
       "repoUrl": "https://github.com/KennethanCeyer/build-game-with-ai.git",
       "selectionMode": "popular",
-      "popularityRank": 374,
+      "popularityRank": 373,
       "observedStars": 10,
       "observedStarsCapture": [
         {
@@ -39884,7 +39848,7 @@
       "githubRepositoryId": 1178664319,
       "repoUrl": "https://github.com/Kevin-Liu-01/Minecraft-Agent.git",
       "selectionMode": "popular",
-      "popularityRank": 375,
+      "popularityRank": 374,
       "observedStars": 10,
       "observedStarsCapture": [
         {
@@ -39938,7 +39902,7 @@
       "githubRepositoryId": 1374569409,
       "repoUrl": "https://github.com/komorra/Eugeniusz.git",
       "selectionMode": "popular",
-      "popularityRank": 376,
+      "popularityRank": 375,
       "observedStars": 10,
       "observedStarsCapture": [
         {
@@ -39990,7 +39954,7 @@
       "githubRepositoryId": 119433494,
       "repoUrl": "https://github.com/marcosfede/Reinforcement-Landing.git",
       "selectionMode": "popular",
-      "popularityRank": 377,
+      "popularityRank": 376,
       "observedStars": 10,
       "observedStarsCapture": [
         {
@@ -40046,7 +40010,7 @@
       "githubRepositoryId": 1309136956,
       "repoUrl": "https://github.com/microsoft/medusa.git",
       "selectionMode": "popular",
-      "popularityRank": 378,
+      "popularityRank": 377,
       "observedStars": 10,
       "observedStarsCapture": [
         {
@@ -40090,7 +40054,7 @@
       "githubRepositoryId": 107317812,
       "repoUrl": "https://github.com/mmalahe/upb.git",
       "selectionMode": "popular",
-      "popularityRank": 379,
+      "popularityRank": 378,
       "observedStars": 10,
       "observedStarsCapture": [
         {
@@ -40144,7 +40108,7 @@
       "githubRepositoryId": 813696872,
       "repoUrl": "https://github.com/roger-creus/blokus-ai.git",
       "selectionMode": "popular",
-      "popularityRank": 380,
+      "popularityRank": 379,
       "observedStars": 10,
       "observedStarsCapture": [
         {
@@ -40198,7 +40162,7 @@
       "githubRepositoryId": 1317701447,
       "repoUrl": "https://github.com/rounakagrawal7/GridSetup.git",
       "selectionMode": "popular",
-      "popularityRank": 381,
+      "popularityRank": 380,
       "observedStars": 10,
       "observedStarsCapture": [
         {
@@ -40252,7 +40216,7 @@
       "githubRepositoryId": 188152513,
       "repoUrl": "https://github.com/SaiTingHu/HTFrameworkAI.git",
       "selectionMode": "popular",
-      "popularityRank": 382,
+      "popularityRank": 381,
       "observedStars": 10,
       "observedStarsCapture": [
         {
@@ -40306,7 +40270,7 @@
       "githubRepositoryId": 109858219,
       "repoUrl": "https://github.com/schiebermc/Game_AI.git",
       "selectionMode": "popular",
-      "popularityRank": 383,
+      "popularityRank": 382,
       "observedStars": 10,
       "observedStarsCapture": [
         {
@@ -40360,7 +40324,7 @@
       "githubRepositoryId": 141622466,
       "repoUrl": "https://github.com/SparshaSaha/Self-Playing-AI-Bot-using-Evolutionary-Algorithms.git",
       "selectionMode": "popular",
-      "popularityRank": 384,
+      "popularityRank": 383,
       "observedStars": 10,
       "observedStarsCapture": [
         {
@@ -40420,7 +40384,7 @@
       "githubRepositoryId": 1155790569,
       "repoUrl": "https://github.com/Tristan578/project-forge.git",
       "selectionMode": "popular",
-      "popularityRank": 385,
+      "popularityRank": 384,
       "observedStars": 10,
       "observedStarsCapture": [
         {
@@ -40474,7 +40438,7 @@
       "githubRepositoryId": 138372045,
       "repoUrl": "https://github.com/ttinies/sc2gameLobby.git",
       "selectionMode": "popular",
-      "popularityRank": 386,
+      "popularityRank": 385,
       "observedStars": 10,
       "observedStarsCapture": [
         {
@@ -40528,7 +40492,7 @@
       "githubRepositoryId": 799380070,
       "repoUrl": "https://github.com/VaradhKaushik/AI-Character-Forge.git",
       "selectionMode": "popular",
-      "popularityRank": 387,
+      "popularityRank": 386,
       "observedStars": 10,
       "observedStarsCapture": [
         {
@@ -40574,7 +40538,7 @@
       "githubRepositoryId": 127041446,
       "repoUrl": "https://github.com/VarunRaval48/checkers-AI.git",
       "selectionMode": "popular",
-      "popularityRank": 388,
+      "popularityRank": 387,
       "observedStars": 10,
       "observedStarsCapture": [
         {
@@ -40628,7 +40592,7 @@
       "githubRepositoryId": 1295547894,
       "repoUrl": "https://github.com/witnesstodark/tron-exonix.git",
       "selectionMode": "popular",
-      "popularityRank": 389,
+      "popularityRank": 388,
       "observedStars": 10,
       "observedStarsCapture": [
         {
@@ -40682,7 +40646,7 @@
       "githubRepositoryId": 1241456596,
       "repoUrl": "https://github.com/xingwu-maker/-.git",
       "selectionMode": "popular",
-      "popularityRank": 390,
+      "popularityRank": 389,
       "observedStars": 10,
       "observedStarsCapture": [
         {
@@ -40736,7 +40700,7 @@
       "githubRepositoryId": 316355248,
       "repoUrl": "https://github.com/baballev/qsu.git",
       "selectionMode": "popular",
-      "popularityRank": 391,
+      "popularityRank": 390,
       "observedStars": 9,
       "observedStarsCapture": [
         {
@@ -40790,7 +40754,7 @@
       "githubRepositoryId": 981514220,
       "repoUrl": "https://github.com/Cipher4Key/trading-bot.git",
       "selectionMode": "popular",
-      "popularityRank": 392,
+      "popularityRank": 391,
       "observedStars": 9,
       "observedStarsCapture": [
         {
@@ -40833,7 +40797,7 @@
       "githubRepositoryId": 144161728,
       "repoUrl": "https://github.com/cstorm125/santorini.git",
       "selectionMode": "popular",
-      "popularityRank": 393,
+      "popularityRank": 392,
       "observedStars": 9,
       "observedStarsCapture": [
         {
@@ -40877,7 +40841,7 @@
       "githubRepositoryId": 963621345,
       "repoUrl": "https://github.com/dylanelu/geometry-dash-ai.git",
       "selectionMode": "popular",
-      "popularityRank": 394,
+      "popularityRank": 393,
       "observedStars": 9,
       "observedStarsCapture": [
         {
@@ -40924,7 +40888,7 @@
       "githubRepositoryId": 1142101545,
       "repoUrl": "https://github.com/emeryporter/UnityMCP.git",
       "selectionMode": "popular",
-      "popularityRank": 395,
+      "popularityRank": 394,
       "observedStars": 9,
       "observedStarsCapture": [
         {
@@ -40978,7 +40942,7 @@
       "githubRepositoryId": 1206791014,
       "repoUrl": "https://github.com/FunplayAI/Funplay.git",
       "selectionMode": "popular",
-      "popularityRank": 396,
+      "popularityRank": 395,
       "observedStars": 9,
       "observedStarsCapture": [
         {
@@ -41044,7 +41008,7 @@
       "githubRepositoryId": 700045938,
       "repoUrl": "https://github.com/gdsc-ipsacademy/Connect-Four-Game.git",
       "selectionMode": "popular",
-      "popularityRank": 397,
+      "popularityRank": 396,
       "observedStars": 9,
       "observedStarsCapture": [
         {
@@ -41098,7 +41062,7 @@
       "githubRepositoryId": 1334087856,
       "repoUrl": "https://github.com/hellosky983/dsh-mc-agent.git",
       "selectionMode": "popular",
-      "popularityRank": 398,
+      "popularityRank": 397,
       "observedStars": 9,
       "observedStarsCapture": [
         {
@@ -41152,7 +41116,7 @@
       "githubRepositoryId": 677452311,
       "repoUrl": "https://github.com/hiper2d/mafia-gpt.git",
       "selectionMode": "popular",
-      "popularityRank": 399,
+      "popularityRank": 398,
       "observedStars": 9,
       "observedStarsCapture": [
         {
@@ -41206,7 +41170,7 @@
       "githubRepositoryId": 3164370,
       "repoUrl": "https://github.com/keeffEoghan/Lumens.git",
       "selectionMode": "popular",
-      "popularityRank": 400,
+      "popularityRank": 399,
       "observedStars": 9,
       "observedStarsCapture": [
         {
@@ -41260,7 +41224,7 @@
       "githubRepositoryId": 477634921,
       "repoUrl": "https://github.com/likemango/DQN-mario-xiaoyao.git",
       "selectionMode": "popular",
-      "popularityRank": 401,
+      "popularityRank": 400,
       "observedStars": 9,
       "observedStarsCapture": [
         {
@@ -41301,7 +41265,7 @@
       "githubRepositoryId": 751233478,
       "repoUrl": "https://github.com/MagicXuanTung/AIM_BOT.git",
       "selectionMode": "popular",
-      "popularityRank": 402,
+      "popularityRank": 401,
       "observedStars": 9,
       "observedStarsCapture": [
         {
@@ -41345,7 +41309,7 @@
       "githubRepositoryId": 286764856,
       "repoUrl": "https://github.com/mingi-sid/ataxx-ai.git",
       "selectionMode": "popular",
-      "popularityRank": 403,
+      "popularityRank": 402,
       "observedStars": 9,
       "observedStarsCapture": [
         {
@@ -41399,7 +41363,7 @@
       "githubRepositoryId": 97892485,
       "repoUrl": "https://github.com/mryellow/maze_explorer.git",
       "selectionMode": "popular",
-      "popularityRank": 404,
+      "popularityRank": 403,
       "observedStars": 9,
       "observedStarsCapture": [
         {
@@ -41453,7 +41417,7 @@
       "githubRepositoryId": 1007991678,
       "repoUrl": "https://github.com/OctavianTocan/blueprint-documentation-generator-plugin-for-ue5.git",
       "selectionMode": "popular",
-      "popularityRank": 405,
+      "popularityRank": 404,
       "observedStars": 9,
       "observedStarsCapture": [
         {
@@ -41498,7 +41462,7 @@
       "githubRepositoryId": 104690311,
       "repoUrl": "https://github.com/pedro15/MoonBehavior.git",
       "selectionMode": "popular",
-      "popularityRank": 406,
+      "popularityRank": 405,
       "observedStars": 9,
       "observedStarsCapture": [
         {
@@ -41552,7 +41516,7 @@
       "githubRepositoryId": 1107776539,
       "repoUrl": "https://github.com/Pomilon/MC-CIV.git",
       "selectionMode": "popular",
-      "popularityRank": 407,
+      "popularityRank": 406,
       "observedStars": 9,
       "observedStarsCapture": [
         {
@@ -41606,7 +41570,7 @@
       "githubRepositoryId": 1334480672,
       "repoUrl": "https://github.com/qimidandapigu/dsh-xiaotangyuan-game.git",
       "selectionMode": "popular",
-      "popularityRank": 408,
+      "popularityRank": 407,
       "observedStars": 9,
       "observedStarsCapture": [
         {
@@ -41659,7 +41623,7 @@
       "githubRepositoryId": 78143756,
       "repoUrl": "https://github.com/rmcqueen/game-of-the-amazons-ai.git",
       "selectionMode": "popular",
-      "popularityRank": 409,
+      "popularityRank": 408,
       "observedStars": 9,
       "observedStarsCapture": [
         {
@@ -41713,7 +41677,7 @@
       "githubRepositoryId": 1381629363,
       "repoUrl": "https://github.com/rugbedbugg/Sleight-of-Hand.git",
       "selectionMode": "popular",
-      "popularityRank": 410,
+      "popularityRank": 409,
       "observedStars": 9,
       "observedStarsCapture": [
         {
@@ -41767,7 +41731,7 @@
       "githubRepositoryId": 167564106,
       "repoUrl": "https://github.com/shamiul94/Chain-Reaction-Game-AI-Bot.git",
       "selectionMode": "popular",
-      "popularityRank": 411,
+      "popularityRank": 410,
       "observedStars": 9,
       "observedStarsCapture": [
         {
@@ -41821,7 +41785,7 @@
       "githubRepositoryId": 872348788,
       "repoUrl": "https://github.com/somekg/SnakeGameAi.git",
       "selectionMode": "popular",
-      "popularityRank": 412,
+      "popularityRank": 411,
       "observedStars": 9,
       "observedStarsCapture": [
         {
@@ -41875,7 +41839,7 @@
       "githubRepositoryId": 144782627,
       "repoUrl": "https://github.com/Supermaxman/SerpentSuperAIsaacGameAgentPlugin.git",
       "selectionMode": "popular",
-      "popularityRank": 413,
+      "popularityRank": 412,
       "observedStars": 9,
       "observedStarsCapture": [
         {
@@ -41927,7 +41891,7 @@
       "githubRepositoryId": 981761601,
       "repoUrl": "https://github.com/Thunder3Strike/trading-bot.git",
       "selectionMode": "popular",
-      "popularityRank": 414,
+      "popularityRank": 413,
       "observedStars": 9,
       "observedStarsCapture": [
         {
@@ -41970,7 +41934,7 @@
       "githubRepositoryId": 1355671357,
       "repoUrl": "https://github.com/top777/AI-Game-From-Story.git",
       "selectionMode": "popular",
-      "popularityRank": 415,
+      "popularityRank": 414,
       "observedStars": 9,
       "observedStarsCapture": [
         {
@@ -42024,7 +41988,7 @@
       "githubRepositoryId": 257316464,
       "repoUrl": "https://github.com/vivekthota16/Project-Collaboration-and-Competition-Udacity-Deep-Reinforcement-Learning.git",
       "selectionMode": "popular",
-      "popularityRank": 416,
+      "popularityRank": 415,
       "observedStars": 9,
       "observedStarsCapture": [
         {
@@ -42078,7 +42042,7 @@
       "githubRepositoryId": 693201882,
       "repoUrl": "https://github.com/andresolerc/AI_Growth_Pack.git",
       "selectionMode": "popular",
-      "popularityRank": 417,
+      "popularityRank": 416,
       "observedStars": 8,
       "observedStarsCapture": [
         {
@@ -42121,7 +42085,7 @@
       "githubRepositoryId": 762940954,
       "repoUrl": "https://github.com/DeanAviv/unity-turn-base-toolkit.git",
       "selectionMode": "popular",
-      "popularityRank": 418,
+      "popularityRank": 417,
       "observedStars": 8,
       "observedStarsCapture": [
         {
@@ -42175,7 +42139,7 @@
       "githubRepositoryId": 981526227,
       "repoUrl": "https://github.com/Desert9Dune/crypto-trading-bot.git",
       "selectionMode": "popular",
-      "popularityRank": 419,
+      "popularityRank": 418,
       "observedStars": 8,
       "observedStarsCapture": [
         {
@@ -42218,7 +42182,7 @@
       "githubRepositoryId": 835769576,
       "repoUrl": "https://github.com/EjbejaranosAI/AI4VJ.git",
       "selectionMode": "popular",
-      "popularityRank": 420,
+      "popularityRank": 419,
       "observedStars": 8,
       "observedStarsCapture": [
         {
@@ -42261,7 +42225,7 @@
       "githubRepositoryId": 248115997,
       "repoUrl": "https://github.com/Fool-Yang/AlphaSnake-Zero.git",
       "selectionMode": "popular",
-      "popularityRank": 421,
+      "popularityRank": 420,
       "observedStars": 8,
       "observedStarsCapture": [
         {
@@ -42305,7 +42269,7 @@
       "githubRepositoryId": 981526257,
       "repoUrl": "https://github.com/Function7Flow/crypto-trading-bot.git",
       "selectionMode": "popular",
-      "popularityRank": 422,
+      "popularityRank": 421,
       "observedStars": 8,
       "observedStarsCapture": [
         {
@@ -42348,7 +42312,7 @@
       "githubRepositoryId": 337181339,
       "repoUrl": "https://github.com/gimhema/RLFighter.git",
       "selectionMode": "popular",
-      "popularityRank": 423,
+      "popularityRank": 422,
       "observedStars": 8,
       "observedStarsCapture": [
         {
@@ -42402,7 +42366,7 @@
       "githubRepositoryId": 91370038,
       "repoUrl": "https://github.com/han-gyeol/Genetic-Algorithm-Snake.git",
       "selectionMode": "popular",
-      "popularityRank": 424,
+      "popularityRank": 423,
       "observedStars": 8,
       "observedStarsCapture": [
         {
@@ -42456,7 +42420,7 @@
       "githubRepositoryId": 1207259545,
       "repoUrl": "https://github.com/hjl2004-10/Agent-Worlds.git",
       "selectionMode": "popular",
-      "popularityRank": 425,
+      "popularityRank": 424,
       "observedStars": 8,
       "observedStarsCapture": [
         {
@@ -42510,7 +42474,7 @@
       "githubRepositoryId": 164900648,
       "repoUrl": "https://github.com/Hsankesara/Menace.git",
       "selectionMode": "popular",
-      "popularityRank": 426,
+      "popularityRank": 425,
       "observedStars": 8,
       "observedStarsCapture": [
         {
@@ -42564,7 +42528,7 @@
       "githubRepositoryId": 1121426991,
       "repoUrl": "https://github.com/JaidenT46/genebrawl-public.git",
       "selectionMode": "popular",
-      "popularityRank": 427,
+      "popularityRank": 426,
       "observedStars": 8,
       "observedStarsCapture": [
         {
@@ -42618,7 +42582,7 @@
       "githubRepositoryId": 347887372,
       "repoUrl": "https://github.com/Kacper-Pietkun/splix.io-multiplayer-AI.git",
       "selectionMode": "popular",
-      "popularityRank": 428,
+      "popularityRank": 427,
       "observedStars": 8,
       "observedStarsCapture": [
         {
@@ -42672,7 +42636,7 @@
       "githubRepositoryId": 1042455013,
       "repoUrl": "https://github.com/kangnam7654/Game-NPC-with-LLM.git",
       "selectionMode": "popular",
-      "popularityRank": 429,
+      "popularityRank": 428,
       "observedStars": 8,
       "observedStarsCapture": [
         {
@@ -42726,7 +42690,7 @@
       "githubRepositoryId": 382896042,
       "repoUrl": "https://github.com/kilian-kier/Dino-Game-AI.git",
       "selectionMode": "popular",
-      "popularityRank": 430,
+      "popularityRank": 429,
       "observedStars": 8,
       "observedStarsCapture": [
         {
@@ -42780,7 +42744,7 @@
       "githubRepositoryId": 93517302,
       "repoUrl": "https://github.com/Kuax-Meat/Snake-Reinforcement-Deep-Q-Learning.git",
       "selectionMode": "popular",
-      "popularityRank": 431,
+      "popularityRank": 430,
       "observedStars": 8,
       "observedStarsCapture": [
         {
@@ -42834,7 +42798,7 @@
       "githubRepositoryId": 1153793870,
       "repoUrl": "https://github.com/likeslines-maker/GameAI.Net.git",
       "selectionMode": "popular",
-      "popularityRank": 432,
+      "popularityRank": 431,
       "observedStars": 8,
       "observedStarsCapture": [
         {
@@ -42888,7 +42852,7 @@
       "githubRepositoryId": 1169220125,
       "repoUrl": "https://github.com/Mathis-14/Hackathon-Mistral-Distral.git",
       "selectionMode": "popular",
-      "popularityRank": 433,
+      "popularityRank": 432,
       "observedStars": 8,
       "observedStarsCapture": [
         {
@@ -42941,7 +42905,7 @@
       "githubRepositoryId": 1019303086,
       "repoUrl": "https://github.com/Nepcoder-coder/tictactoe-tgbot.git",
       "selectionMode": "popular",
-      "popularityRank": 434,
+      "popularityRank": 433,
       "observedStars": 8,
       "observedStarsCapture": [
         {
@@ -42995,7 +42959,7 @@
       "githubRepositoryId": 717153447,
       "repoUrl": "https://github.com/parissashahabi/Game-Playing-Intelligent-Agent.git",
       "selectionMode": "popular",
-      "popularityRank": 435,
+      "popularityRank": 434,
       "observedStars": 8,
       "observedStarsCapture": [
         {
@@ -43049,7 +43013,7 @@
       "githubRepositoryId": 864244069,
       "repoUrl": "https://github.com/sanjaysah101/RetroAI-Quest.git",
       "selectionMode": "popular",
-      "popularityRank": 436,
+      "popularityRank": 435,
       "observedStars": 8,
       "observedStarsCapture": [
         {
@@ -43103,7 +43067,7 @@
       "githubRepositoryId": 981520490,
       "repoUrl": "https://github.com/Shadow6Veil/trading-bot-github.git",
       "selectionMode": "popular",
-      "popularityRank": 437,
+      "popularityRank": 436,
       "observedStars": 8,
       "observedStarsCapture": [
         {
@@ -43146,7 +43110,7 @@
       "githubRepositoryId": 852468027,
       "repoUrl": "https://github.com/ShiJbey/minerva.git",
       "selectionMode": "popular",
-      "popularityRank": 438,
+      "popularityRank": 437,
       "observedStars": 8,
       "observedStarsCapture": [
         {
@@ -43200,7 +43164,7 @@
       "githubRepositoryId": 448165333,
       "repoUrl": "https://github.com/threnjen/Monte_Carlo_Game_AI_Engine.git",
       "selectionMode": "popular",
-      "popularityRank": 439,
+      "popularityRank": 438,
       "observedStars": 8,
       "observedStarsCapture": [
         {
@@ -43254,7 +43218,7 @@
       "githubRepositoryId": 1244520771,
       "repoUrl": "https://github.com/voodoofox/unreal-mcp.git",
       "selectionMode": "popular",
-      "popularityRank": 440,
+      "popularityRank": 439,
       "observedStars": 8,
       "observedStarsCapture": [
         {
@@ -43308,7 +43272,7 @@
       "githubRepositoryId": 1255210405,
       "repoUrl": "https://github.com/welkin03/guandan-ai.git",
       "selectionMode": "popular",
-      "popularityRank": 441,
+      "popularityRank": 440,
       "observedStars": 8,
       "observedStarsCapture": [
         {
@@ -43354,7 +43318,7 @@
       "githubRepositoryId": 534694339,
       "repoUrl": "https://github.com/1391819/MA-seek.git",
       "selectionMode": "popular",
-      "popularityRank": 442,
+      "popularityRank": 441,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -43408,7 +43372,7 @@
       "githubRepositoryId": 1168886717,
       "repoUrl": "https://github.com/aivrar/ai-character-engine.git",
       "selectionMode": "popular",
-      "popularityRank": 443,
+      "popularityRank": 442,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -43468,7 +43432,7 @@
       "githubRepositoryId": 719020065,
       "repoUrl": "https://github.com/Alberto-00/Super-Mario-Bros-AI.git",
       "selectionMode": "popular",
-      "popularityRank": 444,
+      "popularityRank": 443,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -43512,7 +43476,7 @@
       "githubRepositoryId": 965458552,
       "repoUrl": "https://github.com/AmirAbdollahi/pingpong-2d.git",
       "selectionMode": "popular",
-      "popularityRank": 445,
+      "popularityRank": 444,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -43566,7 +43530,7 @@
       "githubRepositoryId": 243996619,
       "repoUrl": "https://github.com/ashwinpn/Advanced-Python.git",
       "selectionMode": "popular",
-      "popularityRank": 446,
+      "popularityRank": 445,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -43620,7 +43584,7 @@
       "githubRepositoryId": 26567223,
       "repoUrl": "https://github.com/Avantol13/Conversational-AI-Engine-for-Video-Games.git",
       "selectionMode": "popular",
-      "popularityRank": 447,
+      "popularityRank": 446,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -43674,7 +43638,7 @@
       "githubRepositoryId": 74830184,
       "repoUrl": "https://github.com/Avikalp7/TicTacToe-Reinforcement-Learning.git",
       "selectionMode": "popular",
-      "popularityRank": 448,
+      "popularityRank": 447,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -43724,7 +43688,7 @@
       "githubRepositoryId": 124317649,
       "repoUrl": "https://github.com/brenomfviana/pope.git",
       "selectionMode": "popular",
-      "popularityRank": 449,
+      "popularityRank": 448,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -43775,7 +43739,7 @@
       "githubRepositoryId": 1386217509,
       "repoUrl": "https://github.com/bttf/ogremcp.git",
       "selectionMode": "popular",
-      "popularityRank": 450,
+      "popularityRank": 449,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -43829,7 +43793,7 @@
       "githubRepositoryId": 1136808195,
       "repoUrl": "https://github.com/CombinEC-R/Pixel-Perfect-Aligner.git",
       "selectionMode": "popular",
-      "popularityRank": 451,
+      "popularityRank": 450,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -43883,7 +43847,7 @@
       "githubRepositoryId": 587633874,
       "repoUrl": "https://github.com/DanialKama/TurretAI.git",
       "selectionMode": "popular",
-      "popularityRank": 452,
+      "popularityRank": 451,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -43926,7 +43890,7 @@
       "githubRepositoryId": 624510184,
       "repoUrl": "https://github.com/DonaFidele/Puissance4.git",
       "selectionMode": "popular",
-      "popularityRank": 453,
+      "popularityRank": 452,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -43979,7 +43943,7 @@
       "githubRepositoryId": 1353444777,
       "repoUrl": "https://github.com/EmirErtorer/backgammon.koplugin.git",
       "selectionMode": "popular",
-      "popularityRank": 454,
+      "popularityRank": 453,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -44030,7 +43994,7 @@
       "githubRepositoryId": 151847630,
       "repoUrl": "https://github.com/epsylon/PyAISnake.git",
       "selectionMode": "popular",
-      "popularityRank": 455,
+      "popularityRank": 454,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -44084,7 +44048,7 @@
       "githubRepositoryId": 271611376,
       "repoUrl": "https://github.com/erickmbugua/Snake-Game-with-AI-Agent.git",
       "selectionMode": "popular",
-      "popularityRank": 456,
+      "popularityRank": 455,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -44138,7 +44102,7 @@
       "githubRepositoryId": 1164825481,
       "repoUrl": "https://github.com/hackerass31-design/Autonomix.git",
       "selectionMode": "popular",
-      "popularityRank": 457,
+      "popularityRank": 456,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -44192,7 +44156,7 @@
       "githubRepositoryId": 644465931,
       "repoUrl": "https://github.com/HCID274/Unity-FPS-Video-Games.git",
       "selectionMode": "popular",
-      "popularityRank": 458,
+      "popularityRank": 457,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -44258,7 +44222,7 @@
       "githubRepositoryId": 651556556,
       "repoUrl": "https://github.com/jaimin001/ai-game-reinforcement-learning.git",
       "selectionMode": "popular",
-      "popularityRank": 459,
+      "popularityRank": 458,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -44312,7 +44276,7 @@
       "githubRepositoryId": 576274483,
       "repoUrl": "https://github.com/JavierOlmedo/AirlineManager4Bot.git",
       "selectionMode": "popular",
-      "popularityRank": 460,
+      "popularityRank": 459,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -44366,7 +44330,7 @@
       "githubRepositoryId": 606251842,
       "repoUrl": "https://github.com/julienkay/com.doji.neutron.git",
       "selectionMode": "popular",
-      "popularityRank": 461,
+      "popularityRank": 460,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -44422,7 +44386,7 @@
       "githubRepositoryId": 1144164644,
       "repoUrl": "https://github.com/leestott/FoundryLocal-LearningAdventure.git",
       "selectionMode": "popular",
-      "popularityRank": 462,
+      "popularityRank": 461,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -44476,7 +44440,7 @@
       "githubRepositoryId": 443826845,
       "repoUrl": "https://github.com/MacdonaldRobinson/godot-3d-ai.git",
       "selectionMode": "popular",
-      "popularityRank": 463,
+      "popularityRank": 462,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -44519,7 +44483,7 @@
       "githubRepositoryId": 195281813,
       "repoUrl": "https://github.com/Mallos/Mallos.Ai.git",
       "selectionMode": "popular",
-      "popularityRank": 464,
+      "popularityRank": 463,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -44564,7 +44528,7 @@
       "githubRepositoryId": 831068603,
       "repoUrl": "https://github.com/mfazrinizar/Yamble-AI-Game.git",
       "selectionMode": "popular",
-      "popularityRank": 465,
+      "popularityRank": 464,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -44608,7 +44572,7 @@
       "githubRepositoryId": 795574762,
       "repoUrl": "https://github.com/mpewsey/ManiaMap.Godot.git",
       "selectionMode": "popular",
-      "popularityRank": 466,
+      "popularityRank": 465,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -44657,7 +44621,7 @@
       "githubRepositoryId": 1167221346,
       "repoUrl": "https://github.com/niravdd/ArtSmoker.git",
       "selectionMode": "popular",
-      "popularityRank": 467,
+      "popularityRank": 466,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -44711,7 +44675,7 @@
       "githubRepositoryId": 1188982903,
       "repoUrl": "https://github.com/NoblerWorks-HQ/minecraft-agentic.git",
       "selectionMode": "popular",
-      "popularityRank": 468,
+      "popularityRank": 467,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -44756,7 +44720,7 @@
       "githubRepositoryId": 363316461,
       "repoUrl": "https://github.com/phanindra-max/noOX-AI.git",
       "selectionMode": "popular",
-      "popularityRank": 469,
+      "popularityRank": 468,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -44810,7 +44774,7 @@
       "githubRepositoryId": 1126952211,
       "repoUrl": "https://github.com/PranavMishra17/SoulEngine.git",
       "selectionMode": "popular",
-      "popularityRank": 470,
+      "popularityRank": 469,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -44864,7 +44828,7 @@
       "githubRepositoryId": 1092772029,
       "repoUrl": "https://github.com/Prompt-or-Die-Labs/hyper-forge.git",
       "selectionMode": "popular",
-      "popularityRank": 471,
+      "popularityRank": 470,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -44922,7 +44886,7 @@
       "githubRepositoryId": 1305850284,
       "repoUrl": "https://github.com/SakuyaCN/GodotX.git",
       "selectionMode": "popular",
-      "popularityRank": 472,
+      "popularityRank": 471,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -44976,7 +44940,7 @@
       "githubRepositoryId": 429259079,
       "repoUrl": "https://github.com/SmartMaatt/machine-learning-rpg-enemy.git",
       "selectionMode": "popular",
-      "popularityRank": 473,
+      "popularityRank": 472,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -45022,7 +44986,7 @@
       "githubRepositoryId": 261026031,
       "repoUrl": "https://github.com/SurabhiAmit/Soccer4Robots_Multi_agent_game.git",
       "selectionMode": "popular",
-      "popularityRank": 474,
+      "popularityRank": 473,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -45076,7 +45040,7 @@
       "githubRepositoryId": 168917509,
       "repoUrl": "https://github.com/syntaxterrorr/Monopoly_Bot.git",
       "selectionMode": "popular",
-      "popularityRank": 475,
+      "popularityRank": 474,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -45130,7 +45094,7 @@
       "githubRepositoryId": 932648306,
       "repoUrl": "https://github.com/TeeAiFind/JavaScript-Triangular-Arb-Bot-DEX-V4-TeeAiFind.git",
       "selectionMode": "popular",
-      "popularityRank": 476,
+      "popularityRank": 475,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -45183,7 +45147,7 @@
       "githubRepositoryId": 1222631423,
       "repoUrl": "https://github.com/TonyBlaze1313/Radia-Ludo-Game.git",
       "selectionMode": "popular",
-      "popularityRank": 477,
+      "popularityRank": 476,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -45237,7 +45201,7 @@
       "githubRepositoryId": 758989,
       "repoUrl": "https://github.com/tosos/SanityEngine.git",
       "selectionMode": "popular",
-      "popularityRank": 478,
+      "popularityRank": 477,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -45291,7 +45255,7 @@
       "githubRepositoryId": 586169918,
       "repoUrl": "https://github.com/tzwm/botbotbotbot.git",
       "selectionMode": "popular",
-      "popularityRank": 479,
+      "popularityRank": 478,
       "observedStars": 7,
       "observedStarsCapture": [
         {
@@ -45334,7 +45298,7 @@
       "githubRepositoryId": 182516098,
       "repoUrl": "https://github.com/aashutoshrathi/downasaur-bot.git",
       "selectionMode": "popular",
-      "popularityRank": 480,
+      "popularityRank": 479,
       "observedStars": 6,
       "observedStarsCapture": [
         {
@@ -45388,7 +45352,7 @@
       "githubRepositoryId": 1179980298,
       "repoUrl": "https://github.com/bartolomeo3000/SigmaQuoridor.git",
       "selectionMode": "popular",
-      "popularityRank": 481,
+      "popularityRank": 480,
       "observedStars": 6,
       "observedStarsCapture": [
         {
@@ -45442,7 +45406,7 @@
       "githubRepositoryId": 571839102,
       "repoUrl": "https://github.com/billhu0/AI-Aircraft-Warfare.git",
       "selectionMode": "popular",
-      "popularityRank": 482,
+      "popularityRank": 481,
       "observedStars": 6,
       "observedStarsCapture": [
         {
@@ -45496,7 +45460,7 @@
       "githubRepositoryId": 1267549393,
       "repoUrl": "https://github.com/crony-io/2d-assets-mcp.git",
       "selectionMode": "popular",
-      "popularityRank": 483,
+      "popularityRank": 482,
       "observedStars": 6,
       "observedStarsCapture": [
         {
@@ -45540,7 +45504,7 @@
       "githubRepositoryId": 1164872995,
       "repoUrl": "https://github.com/drgost1/robloxstudio-mcp.git",
       "selectionMode": "popular",
-      "popularityRank": 484,
+      "popularityRank": 483,
       "observedStars": 6,
       "observedStarsCapture": [
         {
@@ -45594,7 +45558,7 @@
       "githubRepositoryId": 773242108,
       "repoUrl": "https://github.com/g023/Godot-LLM-API-AI-Chat.git",
       "selectionMode": "popular",
-      "popularityRank": 485,
+      "popularityRank": 484,
       "observedStars": 6,
       "observedStarsCapture": [
         {
@@ -45654,7 +45618,7 @@
       "githubRepositoryId": 1335107678,
       "repoUrl": "https://github.com/glt258/game-ai-agent.git",
       "selectionMode": "popular",
-      "popularityRank": 486,
+      "popularityRank": 485,
       "observedStars": 6,
       "observedStarsCapture": [
         {
@@ -45708,7 +45672,7 @@
       "githubRepositoryId": 64350031,
       "repoUrl": "https://github.com/Grandzam/Chess-Evolved-AI-And-Bot.git",
       "selectionMode": "popular",
-      "popularityRank": 487,
+      "popularityRank": 486,
       "observedStars": 6,
       "observedStarsCapture": [
         {
@@ -45762,7 +45726,7 @@
       "githubRepositoryId": 117121297,
       "repoUrl": "https://github.com/jaehunro/boardgame-rl.git",
       "selectionMode": "popular",
-      "popularityRank": 488,
+      "popularityRank": 487,
       "observedStars": 6,
       "observedStarsCapture": [
         {
@@ -45816,7 +45780,7 @@
       "githubRepositoryId": 94122984,
       "repoUrl": "https://github.com/jfsohn/texas-holdem-AI.git",
       "selectionMode": "popular",
-      "popularityRank": 489,
+      "popularityRank": 488,
       "observedStars": 6,
       "observedStarsCapture": [
         {
@@ -45870,7 +45834,7 @@
       "githubRepositoryId": 739021116,
       "repoUrl": "https://github.com/keithgw/wingspan.git",
       "selectionMode": "popular",
-      "popularityRank": 490,
+      "popularityRank": 489,
       "observedStars": 6,
       "observedStarsCapture": [
         {
@@ -45924,7 +45888,7 @@
       "githubRepositoryId": 576384106,
       "repoUrl": "https://github.com/LetteraUnica/BriscolaBot.git",
       "selectionMode": "popular",
-      "popularityRank": 491,
+      "popularityRank": 490,
       "observedStars": 6,
       "observedStarsCapture": [
         {
@@ -45978,7 +45942,7 @@
       "githubRepositoryId": 221012660,
       "repoUrl": "https://github.com/luckymouse0/Snake-RL.git",
       "selectionMode": "popular",
-      "popularityRank": 492,
+      "popularityRank": 491,
       "observedStars": 6,
       "observedStarsCapture": [
         {
@@ -46038,7 +46002,7 @@
       "githubRepositoryId": 834461269,
       "repoUrl": "https://github.com/mohamedkhayat/DQN_Snake.git",
       "selectionMode": "popular",
-      "popularityRank": 493,
+      "popularityRank": 492,
       "observedStars": 6,
       "observedStarsCapture": [
         {
@@ -46092,7 +46056,7 @@
       "githubRepositoryId": 497731797,
       "repoUrl": "https://github.com/MShepelin/RealTimeMAPF2.git",
       "selectionMode": "popular",
-      "popularityRank": 494,
+      "popularityRank": 493,
       "observedStars": 6,
       "observedStarsCapture": [
         {
@@ -46146,7 +46110,7 @@
       "githubRepositoryId": 1327757745,
       "repoUrl": "https://github.com/N0zoM1z0/th06-headless.git",
       "selectionMode": "popular",
-      "popularityRank": 495,
+      "popularityRank": 494,
       "observedStars": 6,
       "observedStarsCapture": [
         {
@@ -46200,7 +46164,7 @@
       "githubRepositoryId": 1108989985,
       "repoUrl": "https://github.com/niubideren111/Texas-Holdem-AI-System.git",
       "selectionMode": "popular",
-      "popularityRank": 496,
+      "popularityRank": 495,
       "observedStars": 6,
       "observedStarsCapture": [
         {
@@ -46243,7 +46207,7 @@
       "githubRepositoryId": 509328694,
       "repoUrl": "https://github.com/Qazalbash/Checkers-with-AI.git",
       "selectionMode": "popular",
-      "popularityRank": 497,
+      "popularityRank": 496,
       "observedStars": 6,
       "observedStarsCapture": [
         {
@@ -46296,7 +46260,7 @@
       "githubRepositoryId": 882624043,
       "repoUrl": "https://github.com/redxking/ThroneAndLibertyBot.git",
       "selectionMode": "popular",
-      "popularityRank": 498,
+      "popularityRank": 497,
       "observedStars": 6,
       "observedStarsCapture": [
         {
@@ -46344,7 +46308,7 @@
       "githubRepositoryId": 880002926,
       "repoUrl": "https://github.com/retrooper/deadzone.git",
       "selectionMode": "popular",
-      "popularityRank": 499,
+      "popularityRank": 498,
       "observedStars": 6,
       "observedStarsCapture": [
         {
@@ -46398,7 +46362,7 @@
       "githubRepositoryId": 1161385155,
       "repoUrl": "https://github.com/sa-aris/aithena.git",
       "selectionMode": "popular",
-      "popularityRank": 500,
+      "popularityRank": 499,
       "observedStars": 6,
       "observedStarsCapture": [
         {
@@ -46445,6 +46409,59 @@
           "game"
         ]
       }
+    },
+    {
+      "name": "game-ai-unxsist-godot-ai-chat",
+      "canonicalSlug": "unxsist/godot-ai-chat",
+      "githubRepositoryId": 1314637333,
+      "repoUrl": "https://github.com/unxsist/godot-ai-chat.git",
+      "selectionMode": "popular",
+      "popularityRank": 500,
+      "observedStars": 6,
+      "observedStarsCapture": [
+        {
+          "query": "topic:godot topic:ai stars:>0",
+          "page": 1,
+          "rank": 60,
+          "capturedAt": "2026-10-10T03:37:50.361Z"
+        },
+        {
+          "query": "topic:godot topic:llm stars:>=5",
+          "page": 1,
+          "rank": 17,
+          "capturedAt": "2026-10-10T03:37:50.361Z"
+        }
+      ],
+      "archived": false,
+      "disabled": false,
+      "fork": false,
+      "language": "GDScript",
+      "license": "MIT",
+      "createdAt": "2026-07-28T06:44:21Z",
+      "pushedAt": "2026-07-29T08:03:55Z",
+      "defaultBranch": "main",
+      "commit": "5e6bebea16b5641efa5b68ec924e7ed6054da71b",
+      "purpose": "AI coding agent inside the Godot editor — a Copilot/Claude-style chat dock that reads, writes, and debugs your project. 15+ LLM providers, inline diffs, runtime error capture.",
+      "readmeEvidence": {
+        "path": "README.md",
+        "blobSha": "51588aa6451271e2a0773358b4800b57dc06d1d7",
+        "url": "https://github.com/unxsist/godot-ai-chat/blob/5e6bebea16b5641efa5b68ec924e7ed6054da71b/README.md",
+        "inspectedBytes": 6505
+      },
+      "implementationEvidence": {
+        "path": "addons/ai_copilot/core/agent_loop.gd",
+        "blobSha": "3791be0952c372eddc0fc20dc162b97440a6e094",
+        "size": 6527,
+        "url": "https://github.com/unxsist/godot-ai-chat/blob/5e6bebea16b5641efa5b68ec924e7ed6054da71b/addons/ai_copilot/core/agent_loop.gd",
+        "inspectedBytes": 6527,
+        "signals": [
+          "agent",
+          "tool",
+          "game",
+          "approve",
+          "run"
+        ]
+      }
     }
   ],
   "scanPlan": {
@@ -46457,7 +46474,7 @@
     "history": "Create one complete Oct 10 coverage snapshot after all 500 raw reports are generated; retain existing snapshots and report files."
   },
   "issueAndDelivery": {
-    "issueUrl": null,
+    "issueUrl": "https://github.com/paladini/harness-maturity-analysis/issues/11",
     "pullRequestUrl": null,
     "reviewedHead": null,
     "mergeCommit": null,

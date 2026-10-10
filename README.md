@@ -7,7 +7,7 @@ repositories** — scored deterministically with
 a blind human read of the same repos, and used to find what harness-score's
 maturity model still gets wrong.
 
-> **Status: Phase 1F AI software expansion.** The corpus now includes 651 pinned
+> **Status: Phase 1G video game AI expansion.** The corpus now includes 1,151 pinned
 > repositories: the original 21, 50 stratified additions from
 > [issue #2](https://github.com/paladini/harness-maturity-analysis/issues/2),
 > and 30 new AI software projects selected by GitHub popularity in
@@ -17,7 +17,9 @@ maturity model still gets wrong.
 > and 25 media editing projects selected from a recorded GitHub search union
 > in [issue #7](https://github.com/paladini/harness-maturity-analysis/issues/7),
 > plus 500 AI software repositories selected from a bounded GitHub search union
-> in [issue #9](https://github.com/paladini/harness-maturity-analysis/issues/9).
+> in [issue #9](https://github.com/paladini/harness-maturity-analysis/issues/9),
+> and 500 video game AI projects from expanded bounded GitHub searches in
+> [issue #11](https://github.com/paladini/harness-maturity-analysis/issues/11).
 > The current scanner pin is `harness-score@1.8.1`. The Q2 findings below
 > describe the original 21-repository analysis; Q1 still needs independent
 > blind human ratings.
@@ -56,7 +58,7 @@ records the 25 selected repositories, observed stars, pinned commits, source
 evidence and higher-ranked exclusions. Its discovery snapshot is
 [here](corpus/popularity-search-2026-10-09-media-editing.json). The generated
 [`results/leaderboard.md`](results/leaderboard.md) contains the current
-scores for all 651 repositories; see also the
+scores for all 1,151 repositories after this round completes; see also the
 [`results/dimension-heatmap.md`](results/dimension-heatmap.md),
 [`results/leaderboard.csv`](results/leaderboard.csv), and
 [`results/score-history.md`](results/score-history.md).
@@ -68,6 +70,15 @@ discovery snapshot is [here](corpus/popularity-search-2026-10-09-ai-500.json).
 An eligibility review replaced 18 books, tutorials, surveys, and reference
 collections with pinned AI software. The [Phase 1F execution report](analysis/phase-1f-execution.md)
 records the final score distribution and checkout audit.
+
+The [Phase 1G video game AI selection](corpus/selection-game-ai-popularity-500-2026-10-10.json)
+records 500 newly pinned games and game-development tools using AI, plus canonical
+GitHub IDs, observed stars, immutable commits, pinned README and implementation
+evidence, and screened exclusions. Its 24-query bounded discovery snapshot is
+[here](corpus/popularity-search-2026-10-10-extended-game-ai-500.json). The request
+covers both games created with AI and AI used in games or game development. The
+minimum selection threshold is six stars; this is not a global GitHub ranking.
+This scanner-only cohort has no blind human ratings.
 
 The collection is a repository-local harness showcase. It does not rank the
 organizations behind the projects, and this expansion has no blind human
