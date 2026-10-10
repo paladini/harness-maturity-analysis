@@ -29,6 +29,7 @@ _Percent earned per dimension, `harness-score@1.8.1`._
 | cube | 100% | 71% | 0% | 100% | 100% | 100% |
 | inbox-zero | 100% | 71% | 0% | 100% | 100% | 100% |
 | activepieces | 85% | 82% | 0% | 100% | 100% | 100% |
+| game-ai-mrcalderon3d-everything-game-dev-code | 100% | 35% | 100% | 75% | 57% | 100% |
 | dagster | 100% | 71% | 0% | 100% | 100% | 87% |
 | nextjs | 95% | 71% | 0% | 100% | 100% | 90% |
 | openclaw | 85% | 53% | 43% | 85% | 100% | 100% |
@@ -71,6 +72,7 @@ _Percent earned per dimension, `harness-score@1.8.1`._
 | mastra | 85% | 41% | 0% | 100% | 100% | 100% |
 | browseros | 65% | 71% | 0% | 100% | 100% | 100% |
 | potpie | 65% | 71% | 0% | 100% | 100% | 100% |
+| game-ai-idocohen560-claude-unity-game-studio | 65% | 100% | 86% | 30% | 79% | 100% |
 | memos | 100% | 29% | 0% | 100% | 100% | 100% |
 | langflow | 100% | 24% | 0% | 100% | 100% | 100% |
 | feast | 100% | 24% | 0% | 100% | 100% | 100% |
@@ -80,6 +82,7 @@ _Percent earned per dimension, `harness-score@1.8.1`._
 | omi | 90% | 18% | 29% | 100% | 100% | 87% |
 | rtk | 80% | 82% | 0% | 75% | 79% | 100% |
 | deepagents | 100% | 53% | 0% | 60% | 100% | 100% |
+| game-ai-summerengine-summer | 100% | 18% | 86% | 60% | 79% | 87% |
 | home-assistant-core | 40% | 82% | 0% | 100% | 100% | 100% |
 | zed | 85% | 53% | 0% | 100% | 79% | 90% |
 | cherry-studio | 75% | 53% | 0% | 85% | 100% | 100% |
@@ -148,6 +151,8 @@ _Percent earned per dimension, `harness-score@1.8.1`._
 | openscience | 100% | 0% | 0% | 75% | 100% | 100% |
 | game-ai-hatayama-unity-cli-loop | 45% | 53% | 0% | 85% | 100% | 100% |
 | ray | 95% | 71% | 0% | 100% | 50% | 50% |
+| game-ai-donchitos-claude-code-game-studios | 100% | 82% | 100% | 0% | 0% | 100% |
+| game-ai-coralgame-claude-code-game-studios | 100% | 82% | 100% | 0% | 0% | 100% |
 | mattermost | 85% | 0% | 0% | 100% | 79% | 100% |
 | openzeppelin-contracts | 45% | 53% | 0% | 80% | 100% | 100% |
 | langbot | 100% | 0% | 0% | 100% | 100% | 70% |
@@ -155,6 +160,7 @@ _Percent earned per dimension, `harness-score@1.8.1`._
 | fiftyone | 85% | 0% | 0% | 100% | 100% | 85% |
 | intentkit | 85% | 0% | 0% | 100% | 79% | 100% |
 | acontext | 90% | 0% | 0% | 100% | 79% | 91% |
+| game-ai-xeldaralz-everything-claude-unity | 90% | 47% | 100% | 10% | 57% | 85% |
 | fhevm | 65% | 0% | 0% | 100% | 100% | 100% |
 | docling | 45% | 24% | 0% | 100% | 100% | 100% |
 | qm | 45% | 24% | 0% | 100% | 100% | 100% |
@@ -192,6 +198,7 @@ _Percent earned per dimension, `harness-score@1.8.1`._
 | rd-agent | 65% | 0% | 0% | 100% | 79% | 100% |
 | tvm | 45% | 24% | 0% | 100% | 100% | 85% |
 | maka | 65% | 0% | 0% | 100% | 100% | 85% |
+| game-ai-ivanmurzak-unity-mcp | 85% | 53% | 0% | 30% | 79% | 100% |
 | llama-cpp | 45% | 0% | 0% | 100% | 100% | 100% |
 | pi-agent | 45% | 0% | 0% | 100% | 100% | 100% |
 | subquery | 45% | 0% | 0% | 100% | 100% | 100% |
@@ -351,6 +358,8 @@ _Percent earned per dimension, `harness-score@1.8.1`._
 | game-ai-dy-2026-gamedesignos | 100% | 0% | 0% | 50% | 57% | 70% |
 | game-ai-ivanmurzak-godot-mcp | 45% | 0% | 0% | 60% | 79% | 100% |
 | game-ai-1deaaa-spark-arc-studio | 45% | 0% | 0% | 60% | 79% | 100% |
+| game-ai-yakoub-ai-phaser4-gamedev | 45% | 100% | 86% | 0% | 0% | 75% |
+| game-ai-vl4dt-godot-skills | 45% | 0% | 57% | 30% | 79% | 87% |
 | smolagents | 30% | 0% | 0% | 80% | 100% | 85% |
 | dspy | 10% | 0% | 0% | 80% | 100% | 100% |
 | crossplane | 10% | 0% | 0% | 100% | 79% | 100% |
@@ -423,6 +432,7 @@ _Percent earned per dimension, `harness-score@1.8.1`._
 | game-ai-shinkuan-akagi | 10% | 0% | 0% | 100% | 79% | 85% |
 | game-ai-npc-worldwide-incognide | 10% | 0% | 0% | 85% | 79% | 100% |
 | game-ai-renew-engine-renew | 10% | 0% | 0% | 100% | 79% | 85% |
+| game-ai-bgrenat-godot-game-dev-studio | 85% | 53% | 0% | 10% | 29% | 85% |
 | 12-factor-agents | 100% | 0% | 0% | 60% | 0% | 85% |
 | vibe-coding-cn | 100% | 0% | 0% | 10% | 50% | 100% |
 | ekko-studio | 45% | 0% | 0% | 60% | 57% | 100% |
@@ -447,6 +457,7 @@ _Percent earned per dimension, `harness-score@1.8.1`._
 | jitsi-meet | 45% | 0% | 0% | 55% | 79% | 85% |
 | game-ai-leslieo2-liegraph | 45% | 0% | 0% | 40% | 79% | 100% |
 | game-ai-codebase-amiga-game-kit | 100% | 0% | 0% | 10% | 57% | 87% |
+| game-ai-zenstory-ai-novel-to-game | 45% | 53% | 0% | 10% | 79% | 85% |
 | cc-switch | 10% | 0% | 0% | 75% | 79% | 100% |
 | graphite | 10% | 0% | 0% | 100% | 79% | 75% |
 | langchain4j | 10% | 0% | 0% | 75% | 79% | 100% |
@@ -473,6 +484,8 @@ _Percent earned per dimension, `harness-score@1.8.1`._
 | game-ai-ivanmurzak-unreal-mcp | 45% | 0% | 0% | 30% | 79% | 100% |
 | game-ai-fromlan-x-agent | 45% | 0% | 0% | 60% | 79% | 70% |
 | game-ai-henbomb-polyfish | 45% | 0% | 0% | 30% | 79% | 100% |
+| game-ai-flameskydexive-legends-of-heroes | 100% | 0% | 0% | 20% | 29% | 87% |
+| game-ai-nether403-spritegamegen | 45% | 0% | 0% | 30% | 79% | 100% |
 | aider | 10% | 0% | 0% | 65% | 100% | 85% |
 | vite | 10% | 0% | 0% | 85% | 100% | 65% |
 | immich | 10% | 0% | 0% | 100% | 79% | 65% |
@@ -548,6 +561,7 @@ _Percent earned per dimension, `harness-score@1.8.1`._
 | game-ai-alh477-oligarchy | 45% | 0% | 0% | 10% | 79% | 87% |
 | game-ai-pardeike-rimbridgeserver | 45% | 0% | 0% | 20% | 79% | 85% |
 | game-ai-leestott-foundrylocal-learningadventure | 45% | 0% | 0% | 40% | 29% | 100% |
+| game-ai-majidmanzarpour-threejs-game-skills | 45% | 0% | 0% | 60% | 0% | 100% |
 | openai-evals | 10% | 0% | 0% | 70% | 79% | 70% |
 | agent-reach | 10% | 0% | 0% | 70% | 57% | 85% |
 | odysseus | 10% | 0% | 0% | 40% | 79% | 100% |
@@ -563,6 +577,7 @@ _Percent earned per dimension, `harness-score@1.8.1`._
 | machinelearning | 65% | 0% | 0% | 30% | 29% | 85% |
 | game-ai-mirno-ehf-ue5-mcp | 45% | 0% | 0% | 60% | 0% | 87% |
 | game-ai-bartolomeo3000-sigmaquoridor | 45% | 53% | 0% | 10% | 0% | 100% |
+| game-ai-tugoukezhang-workbuddy-skills | 65% | 0% | 0% | 60% | 0% | 75% |
 | whisper | 10% | 0% | 0% | 50% | 79% | 85% |
 | jspaint | 10% | 0% | 0% | 85% | 29% | 85% |
 | langchain-chatchat | 10% | 0% | 0% | 50% | 79% | 85% |
@@ -573,6 +588,7 @@ _Percent earned per dimension, `harness-score@1.8.1`._
 | easy-dataset | 45% | 0% | 0% | 15% | 50% | 100% |
 | open-dots | 65% | 0% | 0% | 55% | 0% | 75% |
 | game-ai-grovegs-behaviourtree | 45% | 0% | 0% | 30% | 50% | 85% |
+| game-ai-besty0728-unity-skills | 45% | 18% | 0% | 10% | 57% | 85% |
 | autogen | 10% | 0% | 0% | 30% | 79% | 100% |
 | neovim | 30% | 0% | 0% | 10% | 79% | 100% |
 | istio | 10% | 0% | 0% | 100% | 0% | 85% |
@@ -641,6 +657,7 @@ _Percent earned per dimension, `harness-score@1.8.1`._
 | cursor-talk-to-figma-mcp | 45% | 0% | 0% | 20% | 0% | 100% |
 | game-ai-mattwilliamson-comfyui-ai-gamedev | 45% | 0% | 0% | 40% | 0% | 90% |
 | game-ai-hjl2004-10-agent-worlds | 45% | 0% | 0% | 30% | 0% | 100% |
+| game-ai-indiesoftby-defold-agent-config | 45% | 53% | 0% | 0% | 0% | 85% |
 | crawl4ai | 10% | 18% | 0% | 10% | 57% | 100% |
 | kong | 10% | 0% | 0% | 10% | 79% | 100% |
 | pageindex | 10% | 18% | 0% | 10% | 57% | 100% |
@@ -691,6 +708,7 @@ _Percent earned per dimension, `harness-score@1.8.1`._
 | pocketflow | 65% | 0% | 0% | 10% | 0% | 85% |
 | game-ai-djmango-openfront-ai | 50% | 0% | 0% | 30% | 0% | 75% |
 | game-ai-rollacode-playnite-bridge | 45% | 0% | 0% | 30% | 0% | 85% |
+| game-ai-niqibiao-unity-cli-skill | 45% | 0% | 0% | 10% | 29% | 85% |
 | anoma | 10% | 0% | 0% | 10% | 79% | 85% |
 | solidity | 10% | 0% | 0% | 10% | 79% | 85% |
 | dogecoin | 10% | 0% | 0% | 10% | 79% | 85% |
@@ -761,6 +779,7 @@ _Percent earned per dimension, `harness-score@1.8.1`._
 | game-ai-guyroyse-agents-n-arbiters | 10% | 0% | 0% | 35% | 0% | 100% |
 | game-ai-sakuyacn-godotx | 10% | 0% | 0% | 60% | 0% | 75% |
 | game-ai-n0zom1z0-th06-headless | 10% | 0% | 0% | 0% | 71% | 85% |
+| game-ai-kavithma-thushal-connect-four-assignment | 10% | 0% | 0% | 50% | 0% | 85% |
 | hivisionidphotos | 10% | 0% | 0% | 10% | 29% | 100% |
 | llmware | 10% | 0% | 0% | 10% | 50% | 85% |
 | video-subtitle-remover | 10% | 0% | 0% | 10% | 29% | 100% |
@@ -806,6 +825,7 @@ _Percent earned per dimension, `harness-score@1.8.1`._
 | game-ai-lisk819129-opennpc | 10% | 0% | 0% | 10% | 29% | 85% |
 | game-ai-matgrioni-euchre-bot | 10% | 0% | 0% | 40% | 0% | 75% |
 | game-ai-guinhx-mistreevoussharp | 10% | 0% | 0% | 20% | 29% | 75% |
+| game-ai-thedivergentai-gd-agentic-skills | 10% | 0% | 0% | 10% | 29% | 85% |
 | deepseek-v3 | 10% | 0% | 0% | 0% | 29% | 90% |
 | chatgpt | 10% | 0% | 0% | 35% | 0% | 75% |
 | self-llm | 10% | 0% | 0% | 10% | 0% | 100% |
@@ -890,6 +910,7 @@ _Percent earned per dimension, `harness-score@1.8.1`._
 | game-ai-epsylon-pyaisnake | 10% | 0% | 0% | 25% | 0% | 75% |
 | game-ai-phanindra-max-noox-ai | 10% | 0% | 0% | 0% | 0% | 100% |
 | game-ai-retrooper-deadzone | 10% | 0% | 0% | 0% | 0% | 100% |
+| game-ai-ybuild-ai-ai-game-art-pipeline-skill | 10% | 0% | 0% | 0% | 0% | 100% |
 | milton | 10% | 0% | 0% | 10% | 0% | 85% |
 | ffmpeg-webcli | 10% | 0% | 0% | 0% | 29% | 75% |
 | caffe | 10% | 0% | 0% | 10% | 0% | 85% |
@@ -917,6 +938,7 @@ _Percent earned per dimension, `harness-score@1.8.1`._
 | game-ai-niravdd-artsmoker | 10% | 0% | 0% | 10% | 0% | 85% |
 | game-ai-jaehunro-boardgame-rl | 10% | 0% | 0% | 10% | 0% | 85% |
 | game-ai-letteraunica-briscolabot | 10% | 0% | 0% | 10% | 0% | 85% |
+| game-ai-the-pocket-pocketflow-tutorial-danganronpa-simulator | 5% | 0% | 0% | 0% | 0% | 100% |
 | cnn-explainer | 10% | 0% | 0% | 0% | 29% | 70% |
 | game-ai-natfii-unrealclaude | 10% | 0% | 0% | 0% | 0% | 78% |
 | game-ai-anklebreaker-studio-unity-mcp-plugin | 10% | 0% | 0% | 0% | 29% | 70% |
@@ -932,6 +954,8 @@ _Percent earned per dimension, `harness-score@1.8.1`._
 | game-ai-mingi-sid-ataxx-ai | 10% | 0% | 0% | 0% | 0% | 90% |
 | game-ai-kacper-pietkun-splix-io-multiplayer-ai | 10% | 0% | 0% | 0% | 0% | 90% |
 | game-ai-billhu0-ai-aircraft-warfare | 10% | 0% | 0% | 0% | 0% | 90% |
+| game-ai-egorfedorov-slot-casino-game-developer-skills-for-stake-engine | 10% | 0% | 0% | 0% | 0% | 90% |
+| game-ai-alphaparkinc-genpark-interactive-game-development-tutor-skill | 10% | 0% | 0% | 0% | 0% | 90% |
 | visomaster | 10% | 0% | 0% | 0% | 0% | 85% |
 | minimind | 10% | 0% | 0% | 0% | 0% | 85% |
 | mockingbird | 10% | 0% | 0% | 0% | 0% | 85% |
@@ -1019,6 +1043,13 @@ _Percent earned per dimension, `harness-score@1.8.1`._
 | game-ai-luckymouse0-snake-rl | 10% | 0% | 0% | 0% | 0% | 85% |
 | game-ai-mshepelin-realtimemapf2 | 10% | 0% | 0% | 0% | 0% | 85% |
 | game-ai-redxking-throneandlibertybot | 10% | 0% | 0% | 10% | 0% | 75% |
+| game-ai-gary149-h3-game-sprites | 10% | 0% | 0% | 0% | 0% | 85% |
+| game-ai-unrealcourse-05-testinggrounds | 10% | 0% | 0% | 0% | 0% | 85% |
+| game-ai-ozanzeng-blender-lpm-skill | 10% | 0% | 0% | 0% | 0% | 85% |
+| game-ai-enricd-geoguessr-ai-bot | 5% | 0% | 0% | 0% | 0% | 90% |
+| game-ai-ervareza-agent-skill-pixel-art | 10% | 0% | 0% | 0% | 0% | 85% |
+| game-ai-yuan-manx-innovator | 10% | 0% | 0% | 10% | 0% | 75% |
+| game-ai-robertcorponoi-unreal-zombie-ai | 10% | 0% | 0% | 0% | 0% | 85% |
 | tensor2tensor | 10% | 0% | 0% | 10% | 0% | 70% |
 | tflearn | 10% | 0% | 0% | 10% | 0% | 70% |
 | bertviz | 10% | 0% | 0% | 10% | 0% | 70% |
@@ -1104,6 +1135,7 @@ _Percent earned per dimension, `harness-score@1.8.1`._
 | game-ai-game4automation-io-realvirtual-mcp | 10% | 0% | 0% | 0% | 0% | 70% |
 | game-ai-lkwilson-conways-game-of-life-ai | 10% | 0% | 0% | 10% | 0% | 60% |
 | game-ai-voaneves-snake-on-pygame | 10% | 0% | 0% | 0% | 0% | 70% |
+| game-ai-nanshaws-libgdxtutorial | 5% | 0% | 0% | 10% | 0% | 65% |
 | chatglm2-6b | 10% | 0% | 0% | 0% | 0% | 65% |
 | aidlearning-framework | 10% | 0% | 0% | 0% | 0% | 65% |
 | game-ai-code-bullet-worldshardestgameai | 10% | 0% | 0% | 0% | 0% | 65% |
@@ -1143,6 +1175,8 @@ _Percent earned per dimension, `harness-score@1.8.1`._
 | game-ai-grandzam-chess-evolved-ai-and-bot | 10% | 0% | 0% | 0% | 0% | 65% |
 | game-ai-jfsohn-texas-holdem-ai | 10% | 0% | 0% | 0% | 0% | 65% |
 | game-ai-qazalbash-checkers-with-ai | 10% | 0% | 0% | 0% | 0% | 65% |
+| game-ai-unrealcourse-04-battletank | 10% | 0% | 0% | 0% | 0% | 65% |
+| game-ai-llsourcell-ai-for-video-games-demo | 10% | 0% | 0% | 0% | 0% | 65% |
 | octocat-hello-world | 5% | 0% | 0% | 0% | 0% | 65% |
 | game-ai-natmlx-natml-unity | 10% | 0% | 0% | 0% | 0% | 60% |
 | game-ai-youichi-uda-unity-mcp-pro-plugin | 10% | 0% | 0% | 0% | 0% | 60% |
@@ -1154,4 +1188,5 @@ _Percent earned per dimension, `harness-score@1.8.1`._
 | game-ai-ganjiro-offlinemania | 5% | 0% | 0% | 0% | 0% | 65% |
 | game-ai-mmalahe-upb | 10% | 0% | 0% | 0% | 0% | 60% |
 | game-ai-jaimin001-ai-game-reinforcement-learning | 5% | 0% | 0% | 0% | 0% | 65% |
+| game-ai-tianyiq-doudizhu-mcts | 5% | 0% | 0% | 0% | 0% | 65% |
 | game-ai-akikurisu-next-gen-dialogue | 10% | 0% | 0% | 0% | 0% | 50% |
