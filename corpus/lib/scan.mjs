@@ -77,9 +77,16 @@ export function worktreeMatchesHead(dest) {
     sh('git', ['diff-index', '--quiet', 'HEAD', '--'], dest);
     return true;
   } catch {
-    // A committed CRLF blob with a `text eol=crlf` attribute can appear
-    // dirty because Git's clean filter produces LF. Accept only files whose
-    // unfiltered bytes still match the pinned tree; missing files fail here.
+    // Windows may check out an LF blob as CRLF when the repository declares
+    // text eol=crlf. Accept that line-ending conversion while still letting
+    // Git reject missing files and every other content change.
+    try {
+      sh('git', ['diff-index', '--quiet', '--ignore-cr-at-eol', 'HEAD', '--'], dest);
+      return true;
+    } catch {
+      // Some repositories commit CRLF bytes directly. Accept only files whose
+      // unfiltered bytes still match the pinned tree; missing files fail here.
+    }
     try {
       const changed = sh('git', ['diff-index', '--name-only', '-z', 'HEAD', '--'], dest)
         .split('\0')

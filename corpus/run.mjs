@@ -2,7 +2,7 @@
 // Pinned-clone + harness-score scan runner. Zero dependencies, same invariant
 // as harness-score itself: given the same manifest, this produces the same
 // reports, byte for byte (module the machine-local `root` path).
-import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHistorySnapshot, writeHistorySnapshot } from './lib/history.mjs';
@@ -18,7 +18,7 @@ const MANIFEST_PATH = path.join(__dirname, 'manifest.json');
 export function parseArgs(argv) {
   const onlyIdx = argv.indexOf('--only');
   const only = onlyIdx >= 0 && argv[onlyIdx + 1] ? new Set(argv[onlyIdx + 1].split(',')) : null;
-  return { only };
+  return { only, pruneCache: argv.includes('--prune-cache') };
 }
 
 // Guards the script body so vitest can import parseArgs (and, in principle,
@@ -26,12 +26,16 @@ export function parseArgs(argv) {
 const isMain = path.resolve(fileURLToPath(import.meta.url)) === path.resolve(process.argv[1] ?? '');
 
 if (isMain) {
-  const { only } = parseArgs(process.argv.slice(2));
+  const { only, pruneCache } = parseArgs(process.argv.slice(2));
   const manifest = JSON.parse(readFileSync(MANIFEST_PATH, 'utf8'));
   const entries = only ? manifest.entries.filter((e) => only.has(e.name)) : manifest.entries;
 
   if (entries.length === 0) {
     process.stderr.write('No matching manifest entries — check --only against corpus/manifest.json names.\n');
+    process.exit(2);
+  }
+  if (pruneCache && !only) {
+    process.stderr.write('--prune-cache requires --only so it cannot remove the full-run cache.\n');
     process.exit(2);
   }
 
@@ -72,6 +76,23 @@ if (isMain) {
         level: level.index,
         percent: score.percent,
       });
+      if (pruneCache && !reused) {
+        const cacheRoot = path.resolve(CACHE_DIR);
+        const resolvedDest = path.resolve(dest);
+        const relative = path.relative(cacheRoot, resolvedDest);
+        if (
+          !relative ||
+          relative === '.' ||
+          relative.startsWith(`..${path.sep}`) ||
+          path.isAbsolute(relative) ||
+          path.dirname(resolvedDest) !== cacheRoot ||
+          path.basename(resolvedDest) !== entry.name
+        ) {
+          throw new Error(`refusing to prune a path outside this repository cache: ${resolvedDest}`);
+        }
+        rmSync(resolvedDest, { recursive: true, force: true, maxRetries: 3, retryDelay: 150 });
+        process.stdout.write('  temporary checkout removed from this corpus cache\n');
+      }
     } catch (error) {
       process.stdout.write(`  FAILED: ${error.message}\n`);
       summary.push({

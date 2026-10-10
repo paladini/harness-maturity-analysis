@@ -103,6 +103,23 @@ describe('renderLeaderboardCsv', () => {
     expect(md).toContain('Media editing cohort');
     expect(md).not.toContain('Media editing cohort #');
   });
+  it('labels the broad GitHub popularity cohort separately from the harness rank', () => {
+    const entry = fakeEntry('popular-software', {
+      selection: {
+        cohort: 'github-top-software-popularity',
+        date: '2026-10-10',
+        githubStars: 25503,
+        popularityRank: 1000,
+      },
+    });
+    const md = renderLeaderboardMarkdown(
+      [{ entry, report: fakeReport({ percent: 70, level: 1 }) }],
+      { toolVersion: 'harness-score@1.8.1', entries: [entry] },
+      [],
+    );
+    expect(md).toContain('GitHub software popularity #1000');
+    expect(md).toContain('70/100 (70%)');
+  });
 });
 
 describe('renderLeaderboardMarkdown', () => {
