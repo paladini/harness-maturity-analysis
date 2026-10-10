@@ -78,7 +78,8 @@ evidence, and screened exclusions. Its 24-query bounded discovery snapshot is
 [here](corpus/popularity-search-2026-10-10-extended-game-ai-500.json). The request
 covers both games created with AI and AI used in games or game development. The
 minimum selection threshold is six stars; this is not a global GitHub ranking.
-This scanner-only cohort has no blind human ratings.
+This scanner-only cohort has no blind human ratings. The [Phase 1G execution report](analysis/phase-1g-execution.md)
+records its score distribution, checkout audit, and limitations.
 
 The collection is a repository-local harness showcase. It does not rank the
 organizations behind the projects, and this expansion has no blind human

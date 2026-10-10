@@ -64,10 +64,7 @@
       "repoUrl": "https://github.com/openai/openai-cookbook.git",
       "commit": "20793784ac467f06ed67f3e3e9349dc9596894e0",
       "scanSubpath": null,
-      "checkoutExcludes": [
-        "examples/data",
-        "images"
-      ],
+      "checkoutExcludes": ["examples/data", "images"],
       "isStressCase": false,
       "notes": "The pinned commit contains trailing-space directory names under examples/data/hotel_invoices/ that Windows cannot check out. The corpus uses a deterministic partial+sparse checkout to omit examples/data/ and images/ (773 MB of non-harness datasets/assets) while preserving all code, tests, configuration, and operational documentation."
     },

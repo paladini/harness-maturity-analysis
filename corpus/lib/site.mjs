@@ -63,9 +63,12 @@ function renderLeaderboardRow(row, rank) {
   const truncatedTag = report.truncated ? '<span class="stress-tag">truncated scan</span>' : '';
   const selection = entry.selection;
   const archiveTag = selection?.archived ? '<span class="stress-tag">archived snapshot</span>' : '';
-  const provenance = ['ai-popularity', 'crypto-popularity', 'media-editing-popularity', 'game-ai-popularity'].includes(
-    selection?.cohort,
-  )
+  const provenance = [
+    'ai-popularity',
+    'crypto-popularity',
+    'media-editing-popularity',
+    'game-ai-popularity',
+  ].includes(selection?.cohort)
     ? `<p class="board-provenance">${
         selection.cohort === 'crypto-popularity'
           ? `Crypto software cohort: popularity #${esc(selection.popularityRank)} · `
