@@ -93,8 +93,8 @@ function renderLeaderboardRow(row, rank) {
                 : selection.cohort === 'agent-ecosystem-popularity'
                   ? `Agent ecosystem (${esc(categoryLabel(selection.focusCategory))}): popularity #${esc(selection.popularityRank)} · `
                   : selection.cohort === 'ai-ide-adoption'
-                  ? `AI coding-assistant adoption cohort: ${esc(selection.selectionMode === 'popular' ? `popularity #${esc(selection.popularityRank)}` : 'seeded zero-star sample')} - `
-                  : 'Media editing software cohort: '
+                    ? `AI coding-assistant adoption cohort: ${esc(selection.selectionMode === 'popular' ? `popularity #${esc(selection.popularityRank)}` : 'seeded zero-star sample')} - `
+                    : 'Media editing software cohort: '
       }${esc(Number(selection.githubStars).toLocaleString('en-US'))} GitHub stars on ${esc(selection.date)}</p>`
     : '';
   return `

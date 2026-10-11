@@ -43,7 +43,7 @@ records the 25 selected repositories, observed stars, pinned commits, source
 evidence and higher-ranked exclusions. Its discovery snapshot is
 [here](corpus/popularity-search-2026-10-09-media-editing.json). The generated
 [`results/leaderboard.md`](results/leaderboard.md) contains the current
-scores for all 3,186 repositories after this round completes; see also the
+scores for all 3,186 repositories; see also the
 [`results/dimension-heatmap.md`](results/dimension-heatmap.md),
 [`results/leaderboard.csv`](results/leaderboard.csv), and
 [`results/score-history.md`](results/score-history.md).
@@ -66,7 +66,7 @@ minimum selection threshold is six stars; this is not a global GitHub ranking.
 This scanner-only cohort has no blind human ratings. The [Phase 1G execution report](analysis/phase-1g-execution.md)
 records its score distribution, checkout audit, and limitations.
 
-The Phase 1H [AI coding-assistant adoption selection](corpus/selection-2026-10-11-ai-ide-adoption-500.json) adds 500 repositories with explicit AI coding-agent or IDE guidance files, unique GitHub IDs, pinned commits, and README plus implementation-file evidence. The cohort includes 378 eligible positive-star repositories and a seeded random sample of 122 eligible zero-star repositories from the bounded search union. Its [discovery snapshot](corpus/popularity-search-2026-10-11-ai-ide-adoption.json) records query coverage, candidate exclusions, and the selection seed. These files document coding-agent workflow context; they do not prove that a named editor was installed. The cohort is scanner-only and has no blind human ratings.
+The Phase 1H [AI coding-assistant adoption selection](corpus/selection-2026-10-11-ai-ide-adoption-500.json) adds 500 repositories with explicit AI coding-agent or IDE guidance files, unique GitHub IDs, pinned commits, and README plus implementation-file evidence. The cohort includes 378 eligible positive-star repositories and a seeded random sample of 122 eligible zero-star repositories from the bounded search union. Its [discovery snapshot](corpus/popularity-search-2026-10-11-ai-ide-adoption.json) records query coverage, candidate exclusions, and the selection seed. These files document coding-agent workflow context; they do not prove that a named editor was installed. The cohort is scanner-only and has no blind human ratings. The [Phase 1H execution report](analysis/phase-1h-execution.md) records score levels, detected harnesses, Windows checkout handling, and limitations.
 
 The collection is a repository-local harness showcase. It does not rank the
 organizations behind the projects, and this expansion has no blind human
