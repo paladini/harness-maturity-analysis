@@ -51,6 +51,9 @@ export function renderLeaderboardMarkdown(rows, manifest, skipped) {
       entry.selection?.cohort === 'github-top-software-popularity'
         ? `GitHub software popularity #${entry.selection.popularityRank}`
         : null,
+      entry.selection?.cohort === 'agent-ecosystem-popularity'
+        ? `Agent ecosystem popularity #${entry.selection.popularityRank}`
+        : null,
     ]
       .filter(Boolean)
       .join(', ');
