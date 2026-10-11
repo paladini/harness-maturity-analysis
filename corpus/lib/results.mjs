@@ -54,6 +54,11 @@ export function renderLeaderboardMarkdown(rows, manifest, skipped) {
       entry.selection?.cohort === 'agent-ecosystem-popularity'
         ? `Agent ecosystem popularity #${entry.selection.popularityRank}`
         : null,
+      entry.selection?.cohort === 'ai-ide-adoption'
+        ? entry.selection.selectionMode === 'popular'
+          ? `AI coding-assistant adoption popularity #${entry.selection.popularityRank}`
+          : 'AI coding-assistant adoption (seeded zero-star sample)'
+        : null,
     ]
       .filter(Boolean)
       .join(', ');

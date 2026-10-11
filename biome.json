@@ -4,6 +4,7 @@
     "includes": [
       "**",
       "!corpus/reports",
+      "!corpus/.cache",
       "!corpus/checkout-audit-*.json",
       "!corpus/popularity-search-*.json",
       "!results",

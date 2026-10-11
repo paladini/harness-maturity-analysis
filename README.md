@@ -7,22 +7,7 @@ repositories** — scored deterministically with
 a blind human read of the same repos, and used to find what harness-score's
 maturity model still gets wrong.
 
-> **Status: Phase 1G video game AI expansion.** The corpus now includes 1,151 pinned
-> repositories: the original 21, 50 stratified additions from
-> [issue #2](https://github.com/paladini/harness-maturity-analysis/issues/2),
-> and 30 new AI software projects selected by GitHub popularity in
-> [issue #3](https://github.com/paladini/harness-maturity-analysis/issues/3),
-> 25 cryptocurrency software projects from
-> [issue #5](https://github.com/paladini/harness-maturity-analysis/issues/5),
-> and 25 media editing projects selected from a recorded GitHub search union
-> in [issue #7](https://github.com/paladini/harness-maturity-analysis/issues/7),
-> plus 500 AI software repositories selected from a bounded GitHub search union
-> in [issue #9](https://github.com/paladini/harness-maturity-analysis/issues/9),
-> and 500 video game AI projects from expanded bounded GitHub searches in
-> [issue #11](https://github.com/paladini/harness-maturity-analysis/issues/11).
-> The current scanner pin is `harness-score@1.8.1`. The Q2 findings below
-> describe the original 21-repository analysis; Q1 still needs independent
-> blind human ratings.
+> **Status: Phase 1H AI coding-assistant adoption expansion.** The corpus contains 3,186 pinned repositories: 2,686 prior entries and 500 new repositories selected from bounded GitHub code searches for AI coding-agent and IDE instruction files. The new cohort uses harness-score@1.8.1; popularity and the zero-star sample are selection metadata, not score inputs. See [issue #20](https://github.com/paladini/harness-maturity-analysis/issues/20) for the selection evidence and delivery.
 
 ## Why this exists
 
@@ -58,7 +43,7 @@ records the 25 selected repositories, observed stars, pinned commits, source
 evidence and higher-ranked exclusions. Its discovery snapshot is
 [here](corpus/popularity-search-2026-10-09-media-editing.json). The generated
 [`results/leaderboard.md`](results/leaderboard.md) contains the current
-scores for all 1,151 repositories after this round completes; see also the
+scores for all 3,186 repositories; see also the
 [`results/dimension-heatmap.md`](results/dimension-heatmap.md),
 [`results/leaderboard.csv`](results/leaderboard.csv), and
 [`results/score-history.md`](results/score-history.md).
@@ -80,6 +65,8 @@ covers both games created with AI and AI used in games or game development. The
 minimum selection threshold is six stars; this is not a global GitHub ranking.
 This scanner-only cohort has no blind human ratings. The [Phase 1G execution report](analysis/phase-1g-execution.md)
 records its score distribution, checkout audit, and limitations.
+
+The Phase 1H [AI coding-assistant adoption selection](corpus/selection-2026-10-11-ai-ide-adoption-500.json) adds 500 repositories with explicit AI coding-agent or IDE guidance files, unique GitHub IDs, pinned commits, and README plus implementation-file evidence. The cohort includes 378 eligible positive-star repositories and a seeded random sample of 122 eligible zero-star repositories from the bounded search union. Its [discovery snapshot](corpus/popularity-search-2026-10-11-ai-ide-adoption.json) records query coverage, candidate exclusions, and the selection seed. These files document coding-agent workflow context; they do not prove that a named editor was installed. The cohort is scanner-only and has no blind human ratings. The [Phase 1H execution report](analysis/phase-1h-execution.md) records score levels, detected harnesses, Windows checkout handling, and limitations.
 
 The collection is a repository-local harness showcase. It does not rank the
 organizations behind the projects, and this expansion has no blind human
