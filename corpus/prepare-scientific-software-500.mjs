@@ -21,8 +21,45 @@ const selectionDate = new Intl.DateTimeFormat('en-CA', {
   day: '2-digit',
 }).format(new Date());
 const TARGET = 500;
+const resumeSelection = process.env.RESUME_SELECTION === '1';
 const SEED = 1760233997;
 const runId = 'scientific-software-random-500';
+const relevanceExclusions = new Map([
+  ['nicufarmache/lovelace-big-slider-card', 'Home Assistant UI card, not scientific software'],
+  ['cambridgeengineering/partia-computing-michaelmas', 'university course exercises'],
+  ['artem-sedykh/mini-climate-card', 'Home Assistant UI card, not scientific software'],
+  ['kartoffeltoby/better-thermostat', 'Home Assistant thermostat integration'],
+  ['neonscience/neon-data-skills', 'self-paced data literacy tutorials'],
+  ['lo-th/phy', 'physics game engine, not research software'],
+  ['thewand3rer/universe', 'space-themed game development library'],
+  ['anyayayplus/chemistry-note', 'high-school chemistry notes'],
+  ['rickyfont94/climate-cluster-card', 'Home Assistant HVAC UI card'],
+  ['tidyomics/tidyomicsblog-archive', 'blog archive'],
+  ['tidyomics/tidyomicsblog-archive', 'blog archive'],
+  ['make-all/tuya-local', 'Home Assistant smart-home integrations'],
+  ['geoscixyz/computation', 'geophysics course tutorials and notebooks'],
+  [
+    'zencefilefendi/diyanet-offline-namaz-vakitleri-hesaplama',
+    'prayer-time calculator, not scientific software',
+  ],
+  ['coskuncay/flutter-weather-forecast', 'consumer weather forecast widget'],
+  ['costrouc/mse-machinelearning-notebooks', 'introductory course notebooks'],
+  ['mmarquez76/astrologyclock', 'astrology display application'],
+  ['gh-x-st/aeronautical-engineering-imperial', 'university study materials'],
+  ['raghurama123/numqm-basic', 'undergraduate physics mini-course'],
+  ['stuntrally/stuntrally3', 'racing game'],
+  ['leouieda/python-hawaii-2017', 'Python workshop materials'],
+  ['geoscixyz/geosci-labs', 'applied geophysics teaching labs'],
+  ['h4de5/home-assistant-toshiba-ac', 'Home Assistant appliance integration'],
+  ['bm1549/home-assistant-frigidaire', 'Home Assistant appliance integration'],
+  ['enzod86/tuya-smart-ir-ac', 'Home Assistant appliance integration'],
+  ['tailuge/billiards', 'browser billiards game'],
+  ['kroitor/gjk.c', 'generic collision-detection algorithm for games'],
+  ['harfang3d/harfang3d', 'general-purpose 3D game engine'],
+  ['jaechang-hits/sciagent-skills', 'AI agent prompt and skill collection'],
+  ['ialbert/biostar-central', 'community Q&A website, not scientific analysis software'],
+  ['nishant-pathak/mathview', 'general-purpose formula rendering app'],
+]);
 const baselineCommit = 'ce37e4151bb9ea7349da5afa17b4d393dfbc8fd1';
 const showcaseBaselineCommit = '686edb4345d20f296b839a0e5789bd71d41847d5';
 const shortlist = [
@@ -187,9 +224,39 @@ function rankImplementation(path) {
       : 20;
   return sourceRoot + extRank;
 }
-const work = eligible.map((candidate, index) => ({ candidate, sampleRank: index + 1 }));
-const audited = new Map();
-const reasons = [];
+const previousLedger = resumeSelection
+  ? JSON.parse(
+      readFileSync(
+        new URL('./selection-2026-10-11-scientific-software-random-500.json', import.meta.url),
+        'utf8',
+      ),
+    )
+  : null;
+const selectionReplacements = new Map([
+  ['tailuge/billiards', 'browser billiards game'],
+  ['kroitor/gjk.c', 'generic collision-detection algorithm for games'],
+  ['harfang3d/harfang3d', 'general-purpose 3D game engine'],
+  ['jaechang-hits/sciagent-skills', 'AI agent prompt and skill collection'],
+  ['ialbert/biostar-central', 'community Q&A website, not scientific analysis software'],
+  ['nishant-pathak/mathview', 'general-purpose formula rendering app'],
+]);
+const previousLastRank = previousLedger?.selected.at(-1)?.sampleRank ?? 0;
+const retained = (previousLedger?.selected ?? []).filter(
+  (row) => !selectionReplacements.has(row.canonicalSlug.toLowerCase().replaceAll('_', '-')),
+);
+const explicitRejections = (previousLedger?.selected ?? [])
+  .filter((row) => selectionReplacements.has(row.canonicalSlug.toLowerCase().replaceAll('_', '-')))
+  .map((row) => ({
+    sampleRank: row.sampleRank,
+    canonicalId: row.canonicalId,
+    canonicalSlug: row.canonicalSlug,
+    reason: selectionReplacements.get(row.canonicalSlug.toLowerCase().replaceAll('_', '-')),
+  }));
+const work = eligible
+  .map((candidate, index) => ({ candidate, sampleRank: index + 1 }))
+  .filter((item) => !resumeSelection || item.sampleRank > previousLastRank);
+const audited = new Map(retained.map((row) => [row.sampleRank, row]));
+const reasons = [...(previousLedger?.postPinRejections ?? []), ...explicitRejections];
 let next = 0;
 let completed = 0;
 async function worker() {
@@ -197,6 +264,13 @@ async function worker() {
     const item = work[next++];
     try {
       const candidate = item.candidate;
+      const relevanceExclusion = relevanceExclusions.get(
+        candidate.fullName.toLowerCase().replaceAll('_', '-'),
+      );
+      if (relevanceExclusion) throw new Error(relevanceExclusion);
+      if (candidate.fullName.toLowerCase() === 'gh-x-st/aeronautical-engineering-imperial') {
+        throw new Error('pinned README identifies study materials rather than a software implementation');
+      }
       const pin = await gitHead(candidate.cloneUrl);
       const slug = alias(candidate.fullName);
       const treeResult = await api(`/repos/${slug}/git/trees/${pin.sha}?recursive=1`);
@@ -412,7 +486,8 @@ const ledger = {
   postPinRejections: reasons,
   selected: chosen,
   discoveryPath: 'corpus/popularity-search-2026-10-11-scientific-software.json',
-  analysisIssueUrl: null,
+  analysisIssueNumber: 22,
+  analysisIssueUrl: 'https://github.com/paladini/harness-maturity-analysis/issues/22',
   analysisPrUrl: null,
   showcaseIssueUrl: null,
   showcasePrUrl: null,
@@ -429,7 +504,11 @@ const table = chosen
   )
   .join('\n');
 const issue = `## Objective\n\nAdd exactly 500 new public scientific-software repositories selected by reproducible random sampling from a bounded GitHub search union. Scanner evidence only; no blind ratings or external-validity claims. Requested by Fernando Paladini.\n\n## Selection and baseline\n\n- Analysis baseline: \`${baselineCommit}\`, ${manifest.entries.length} entries; Showcase baseline: \`${showcaseBaselineCommit}\`, ${showcase.length} repository-version records across ${new Set(showcase.map((project) => alias(project.repo))).size} repositories.\n- Scanner: \`${manifest.toolVersion}\`.\n- Category draw: seed 20261011, shortlist ${shortlist.join(', ')}, selected scientific computing and bioinformatics.\n- Discovery: ${discovery.searches.length} bounded GraphQL topic searches across ${discovery.topics.length} scientific topics; ${discovery.rawReturnedRecords} returned records and ${discovery.uniqueCanonicalIds} unique canonical IDs. Results are a bounded search union, not a global ranking.\n- Random sample: xorshift32 Fisher-Yates seed ${SEED} over ${eligible.length} eligible new candidates; stars are recorded provenance and do not affect Harness Score or sample order.\n- Every selected project is public, non-fork software. Pins and README/implementation blob evidence were verified against the selected commit; no repository code is executed.\n- Full discovery, exclusions, reproducible candidate order, exact pins, README and implementation blob evidence: [selection ledger](https://github.com/paladini/harness-maturity-analysis/blob/BRANCH/corpus/selection-2026-10-11-scientific-software-random-500.json) and [discovery snapshot](https://github.com/paladini/harness-maturity-analysis/blob/BRANCH/corpus/popularity-search-2026-10-11-scientific-software.json).\n\n## Selected projects\n\n| Repository | GitHub ID | Stars | Exact commit | Pinned README → implementation |\n|---|---:|---:|---|---|\n${table}\n\n## Acceptance\n\n- [ ] Freeze exactly 500 new canonical identities and pins before scanning.\n- [ ] Add 500 matching \`${manifest.toolVersion}\` reports and one append-only complete history snapshot.\n- [ ] Regenerate results and site; validate preserved baseline pins/reports/history.\n- [ ] Review diff and CI on the exact PR head; merge after green checks.\n- [ ] Import from immutable merged Analysis commit; preserve Showcase community entries and prior snapshots.\n- [ ] Merge Showcase PR and verify public counts, entries, and deployment.\n\n## Progress log\n\n- ${selectionDate}: Category drawn and discovery snapshot captured. Selection is random within the documented eligible pool; not a popularity ranking. No scans have started.\n`;
-writeFileSync(new URL('./issue-scientific-software-random-500.md', import.meta.url), issue, 'utf8');
+writeFileSync(
+  new URL('./issue-scientific-software-random-500.md', import.meta.url),
+  issue.replaceAll('BRANCH', 'codex/scientific-software-random-500-2026-10-11'),
+  'utf8',
+);
 console.log(
   JSON.stringify(
     {
