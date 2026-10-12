@@ -32051,8 +32051,9 @@
     }
   ],
   "discoveryPath": "corpus/popularity-search-2026-10-11-scientific-software.json",
-  "analysisIssueUrl": null,
+  "analysisIssueUrl": "https://github.com/paladini/harness-maturity-analysis/issues/22",
   "analysisPrUrl": null,
   "showcaseIssueUrl": null,
-  "showcasePrUrl": null
+  "showcasePrUrl": null,
+  "analysisIssueNumber": 22
 }
