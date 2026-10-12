@@ -32278,7 +32278,7 @@
   "discoveryPath": "corpus/popularity-search-2026-10-11-scientific-software.json",
   "analysisIssueNumber": 22,
   "analysisIssueUrl": "https://github.com/paladini/harness-maturity-analysis/issues/22",
-  "analysisPrUrl": null,
+  "analysisPrUrl": "https://github.com/paladini/harness-maturity-analysis/pull/23",
   "showcaseIssueUrl": null,
   "showcasePrUrl": null
 }

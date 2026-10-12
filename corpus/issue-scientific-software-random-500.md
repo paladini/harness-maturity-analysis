@@ -531,3 +531,4 @@ Add exactly 500 new public scientific-software repositories selected by reproduc
 - 2026-10-12: Category drawn and discovery snapshot captured. Selection is random within the documented eligible pool; not a popularity ranking.
 - 2026-10-12: Re-audited pinned README and implementation evidence. Replaced 25 out-of-scope repositories with the next eligible IDs in the original frozen shuffle; the final list contains 500 distinct IDs and exact pins through sample rank 552.
 - 2026-10-12: All 500 pinned repositories scanned successfully at `harness-score@1.8.1`. The complete append-only history snapshot was recorded, and results and the GitHub Pages site were regenerated.
+- 2026-10-12: Analysis PR [#23](https://github.com/paladini/harness-maturity-analysis/pull/23) opened; CI and review are pending.
