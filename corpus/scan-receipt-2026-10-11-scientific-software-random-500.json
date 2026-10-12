@@ -1,0 +1,4518 @@
+{
+  "schemaVersion": 1,
+  "cohort": "scientific-software-random-500",
+  "runDate": "2026-10-12",
+  "toolVersion": "harness-score@1.8.1",
+  "startedAt": "2026-10-12T14:43:17.300Z",
+  "finishedAt": "2026-10-12T14:43:17.439Z",
+  "strategy": "0 disjoint runner processes for reports missing at start; 0-repository maximum per process. Pinned clones are read only; repository code is never executed.",
+  "groups": [],
+  "reports": [
+    {
+      "name": "deeptools-hicexplorer",
+      "present": true,
+      "sha256": "f927a21d32916c0b09772a97b299fe2a6ad9a919d1fdb0b89a96e6e038b5c700",
+      "toolVersion": "1.8.1",
+      "commit": "c2ad8630c48e04f0ce4229d75d4b1766df79317c",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "chemfiles-chemfiles",
+      "present": true,
+      "sha256": "979de9a5448215a239fe9281d524f55f9d04d8e89949ecf3591451e46b091470",
+      "toolVersion": "1.8.1",
+      "commit": "582e6da1ce7c3f8f20dda751549d2c31cfabb555",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "galaxyproject-galaxy",
+      "present": true,
+      "sha256": "bc5f34bcc5c04019b940434633e7dc652d85cffba051881e71311c6153979e27",
+      "toolVersion": "1.8.1",
+      "commit": "5042659037d73cde7d63c94b94e8a2cbeeb6534c",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "saeyslab-harpy",
+      "present": true,
+      "sha256": "458519b069ce0682d938a65c2156f163f1fcbe4e0c646d54cd052dfce255dab8",
+      "toolVersion": "1.8.1",
+      "commit": "6299266c645614f5eeb9987c13e5432bd08f8c78",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "rwpenney-spfpm",
+      "present": true,
+      "sha256": "6f663d1f517cdb6020756045b2d7864ecb948a8918fd8f23e7cb4575410beebe",
+      "toolVersion": "1.8.1",
+      "commit": "0dafda435a94a50852979754c595829e5cee2a1f",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "uw-hydro-vic",
+      "present": true,
+      "sha256": "ff3d4767c6ab825194660567572e7d5a3e95d45b69d02422d6cea3e785410f24",
+      "toolVersion": "1.8.1",
+      "commit": "8f6cc0661bdc67c4f6caabdd4dcd0b8782517435",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "juliaocean-aibecs-jl",
+      "present": true,
+      "sha256": "2aaad74bc1c7ed6772da70d12d90639bced0945b940c78c0df47289e457f4623",
+      "toolVersion": "1.8.1",
+      "commit": "f747c7411da967973857e05c84bf41643cd425fa",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "lgrcia-prairie",
+      "present": true,
+      "sha256": "165a629f54846d52e735428b299312dd1538c652ef43928b8d71060a2120f676",
+      "toolVersion": "1.8.1",
+      "commit": "8e92c86814db4d19c4b9c2f454a0ca1c8d78ab9b",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "analysiscenter-pydens",
+      "present": true,
+      "sha256": "95d24179446d6dca254f62455d9b106a081ad274671d043e5e6a81ec2ed91bfb",
+      "toolVersion": "1.8.1",
+      "commit": "748175c4e77d407a5dc593d2f104ce6edddc3126",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "cosmonium-cosmonium",
+      "present": true,
+      "sha256": "d188071739282619af189539ab0fa0401b4dce09f029f96dcd8e32dd6f6c305e",
+      "toolVersion": "1.8.1",
+      "commit": "c59f6f3e7389b2ef328ded6ae640ce8cc5c94a7b",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "cfgnunes-numerical-methods-matlab",
+      "present": true,
+      "sha256": "7f4839cffab45e5b21b27dd7bec96803f06781e34cb4d674e7bbb8863e83fa22",
+      "toolVersion": "1.8.1",
+      "commit": "39a5357e988ab127569ea9822a5af4a5f8698c00",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "climate-vision-climatevision",
+      "present": true,
+      "sha256": "938746dacab1f46f41c42d693193edd469b4440442f10cad3d590c338c15bb82",
+      "toolVersion": "1.8.1",
+      "commit": "aab970869e8950374a8620e413e46516fd6fa578",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "laurentrdc-crystals",
+      "present": true,
+      "sha256": "15b4c6faaf3153ecac521c52c3a1112292ae8cde16db035a333e0aaf09d59104",
+      "toolVersion": "1.8.1",
+      "commit": "67e0a07e3944b1e08a44a805f1bd42425f0c1923",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "openmole-openmole",
+      "present": true,
+      "sha256": "2e49a733f24c9e1fa3c4622477fee6ec5f1ec54eaf083fb1c846435863453cb3",
+      "toolVersion": "1.8.1",
+      "commit": "afcb0a43118b5434b44b768a391f5635fdc58a3a",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "hupo-psi-proforma",
+      "present": true,
+      "sha256": "53f0bf6f1eefb3f0a46423e78105b985313f9dcad4a0e4ab8c1c89bc5f5cd537",
+      "toolVersion": "1.8.1",
+      "commit": "ccda3cbb1acddba7e7f36cb03abf5e9f5f880bb2",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "tio-ikim-cellvit",
+      "present": true,
+      "sha256": "7b88e4940e3732a818ff82ad68b3d45cf41b400dd431a1b80ad71f3cc9a10192",
+      "toolVersion": "1.8.1",
+      "commit": "05097e18e3d194a65121042f631b5753069f5ee3",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "uthpalaherath-convertspei",
+      "present": true,
+      "sha256": "321ae4b19402c367306525d34c3137994b330b0f98df47f79afbe666abe11b77",
+      "toolVersion": "1.8.1",
+      "commit": "04a42c8a8a95b13ab317e271a0320e01b5927f06",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "ncbi-amr",
+      "present": true,
+      "sha256": "4330b0f3575171532b0a605f47ca00b16624861d91ccee71b0671ca0fa952d80",
+      "toolVersion": "1.8.1",
+      "commit": "9f0987075f2787ba0566a73e172c340aff63f8af",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "pjazdzyk-hvac-engine",
+      "present": true,
+      "sha256": "96f062231226be4a27fe4355cd51cd47b3acd713fd33eef3ad0360f98b7688c3",
+      "toolVersion": "1.8.1",
+      "commit": "eabd8443e39d47ac4046c1f15a8857dec010c5e9",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "cafferychen777-mllmcelltype",
+      "present": true,
+      "sha256": "8e8b521f223ab1090026b64f57b44db6aa3f811f43460e34eef2e1193c5166de",
+      "toolVersion": "1.8.1",
+      "commit": "26bda564459257a47dd75f8ed321ad81cb306bca",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "frankkramer-lab-miscnn",
+      "present": true,
+      "sha256": "b4dbd7941f9bec99f5fb2b095458a61058daadd07e5cdf1d1e1688412a2564ce",
+      "toolVersion": "1.8.1",
+      "commit": "d715af62839b7577e61a6a2ce7fc5ff4a21bcc58",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "juliaphysics-periodictable-jl",
+      "present": true,
+      "sha256": "46b8822d5393ae6539d773daf303e127911fd5f57e47e81262799576204ea416",
+      "toolVersion": "1.8.1",
+      "commit": "d46e68c3baa19edde03a3a30f34ab857e74fa226",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "feztool-team-fezrs",
+      "present": true,
+      "sha256": "3f09a697795aeb22645aa39b13b59986a9af50374eaf564260b9e6603460e398",
+      "toolVersion": "1.8.1",
+      "commit": "ed3069016e8b029e067d6a412c035c9a45c3c4f0",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "eccc-cccs-climate-data-extraction-tool",
+      "present": true,
+      "sha256": "289b47a2594f64dc93f56af87f38748e7ff5a44ea90342a3f702782cf03ede3e",
+      "toolVersion": "1.8.1",
+      "commit": "315f568442c3486fbb85282ae90f6e385dade5fc",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "epam-cloud-pipeline",
+      "present": true,
+      "sha256": "989e44585cd3b46e9a1af6e765ef60943d3eb190820a82d86c14685e9a2126c5",
+      "toolVersion": "1.8.1",
+      "commit": "a31b6d0281441a15e5c8d45b011b8e9a6fcdea9d",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "alexander-g-inbd",
+      "present": true,
+      "sha256": "f5646cad037260c7f490fdb220da4eae934a0c411b39898806f87e3042ee8ce1",
+      "toolVersion": "1.8.1",
+      "commit": "5dd52cb6684476108af393fd5a61e8165c0ef91b",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "erikhartman-bopep",
+      "present": true,
+      "sha256": "33656e79fdbd41dd43e70847d4c587b21478aa27e6a740d5d35f6769936a0cc5",
+      "toolVersion": "1.8.1",
+      "commit": "28bd148042d27b362c91884820eef6276a1a4354",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "ivandorte-eo-notebooks-apps",
+      "present": true,
+      "sha256": "eee2b706eb691ca0b9c8380eb8c843e3c02f4a34d2a0359023d3d13b86e810c1",
+      "toolVersion": "1.8.1",
+      "commit": "52a315ae12feec77fff497c86ef32c50a1bf8b31",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "black0017-medicalzoopytorch",
+      "present": true,
+      "sha256": "8a9bdf2938f58c2e0b01361595744e8adc82905d7f204ebcb1c394ee09ce2f48",
+      "toolVersion": "1.8.1",
+      "commit": "8f40dab689841d7ff0e36aa5e583a1a1509fac3d",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "krober10nd-cyclone-viewer",
+      "present": true,
+      "sha256": "3658df25d39b672d34addb47119454c5f846f532fb4f3e1de5b7d1d1c41dd002",
+      "toolVersion": "1.8.1",
+      "commit": "421211c2271bbbc5efe19b36d3dcb31fb70d3f77",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "ecojulia-spatialecology-jl",
+      "present": true,
+      "sha256": "279b6f9d8647c24b835ce9fc5a1160030051abbcc8a1c1f5c48fc377b0f6f469",
+      "toolVersion": "1.8.1",
+      "commit": "4062053a7a54865190b518a46f33545532bf3bb4",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "rusteomics-mzcore",
+      "present": true,
+      "sha256": "6b2604087b83e2b53ac32ade7b1f2797f2d21b02276cd3367dc5b70536e48fd1",
+      "toolVersion": "1.8.1",
+      "commit": "85302c6b505d17f066e3666b4c37ab6253a15201",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "brazil-data-cube-sits-docker",
+      "present": true,
+      "sha256": "fdbba099ca62bf1bd8a1c543bff9a43ec6723791592f29bd517451e06fd6acb9",
+      "toolVersion": "1.8.1",
+      "commit": "d0a419536b60448e0be7ad763c3311c8ce4f794b",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "matthewfilipovich-torchoptics",
+      "present": true,
+      "sha256": "9f7345a5d857d13b66045616cb4f54b1765c26e7db51beff0dfea138c5c6941d",
+      "toolVersion": "1.8.1",
+      "commit": "34fe9c40f874e53db225e703c5580befe8c523b5",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "brazil-data-cube-wlts-py",
+      "present": true,
+      "sha256": "b6a579cf4b36620799a32616a274f7ea094aac679592a47f4b1f312fbc9d13fe",
+      "toolVersion": "1.8.1",
+      "commit": "ad7f46d7710950ef126040635a600a780400e371",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "plotly-dash-bio",
+      "present": true,
+      "sha256": "179571f1c1e8cb6bb220bc0bd706f2d082301c9e18cc2e934042ac3aad7fc933",
+      "toolVersion": "1.8.1",
+      "commit": "bf937b4579a2cdac51e1a19d12d52ab8a66997a6",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "theislab-trvae",
+      "present": true,
+      "sha256": "50a8729696ec6a692b69a21038aa5cf1b9b86c71731b1a904f05d6de54547853",
+      "toolVersion": "1.8.1",
+      "commit": "6fd87fcd1fc47a6b93579dcb7caac0d1e85ed10e",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "markmbaum-libode",
+      "present": true,
+      "sha256": "2a714bdbdfc2e79f59889c47f12a58001217a8a33435d14011f22c07f7facad5",
+      "toolVersion": "1.8.1",
+      "commit": "2d8ac5b687f5eac789670eba171b23c88ecbb4e5",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "runchuan-bu-bioclaw",
+      "present": true,
+      "sha256": "a6a09696bbf67f18d4841a88d66dc18b62932a8f63605ccf0fdfb5c03b75c3e0",
+      "toolVersion": "1.8.1",
+      "commit": "50a7d9b1dfa536cfe7e047d63be1de368b47a814",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "uw-hydro-metsim",
+      "present": true,
+      "sha256": "2c63ff8d4518d2977b361d6146317a9cadb05af252b3147fc66e43a4cf012955",
+      "toolVersion": "1.8.1",
+      "commit": "a4b4c52ce310c80dfd4d5f37c98e1fdbb9e4a676",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "sdtaylor-pyphenology",
+      "present": true,
+      "sha256": "f8c4ca3998f9d79ed80fc25bd8f0233eb2d6e6a5674ab354f593c1752bfb2273",
+      "toolVersion": "1.8.1",
+      "commit": "d82af2f669364e84be4bf9325a4f4e064d8d3816",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "mikejohnson51-hydrodata",
+      "present": true,
+      "sha256": "4d0077318056fbe6178f9c3f8b8ed78009be2e7357929a7a1811e82b505a42bb",
+      "toolVersion": "1.8.1",
+      "commit": "6b7f08656d7299bca3a544652cb69ae064049d41",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "taoge946-academic-figure-patterns",
+      "present": true,
+      "sha256": "0a311d34ce4e4cb734bb8b4cc7c904dfd2c2fa88edaf4c81048e1e24a86e4de2",
+      "toolVersion": "1.8.1",
+      "commit": "cdb6b7c9a97ebd120c3b6f4f4ca76c295b41dfdf",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "deskog-rduinoscope",
+      "present": true,
+      "sha256": "29e3e1d4eea8fe1773c74eca36f46d8949588445762ee12897eb65eb62ed8c02",
+      "toolVersion": "1.8.1",
+      "commit": "93bfaac5e67dbbbc72453d907d2f564e8e360624",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "a-r-j-graphein",
+      "present": true,
+      "sha256": "4cefb7fc27add83a98bf3307eaa5dabef37601d9bad5e2e660e4fd73253d8efb",
+      "toolVersion": "1.8.1",
+      "commit": "8e82c8a323a21f1d14fc88bccdeed0a36bef777f",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "dootmaan-mt-unet",
+      "present": true,
+      "sha256": "cc07cd9d34b853e4960834b55b6445f154d8e6182be357fb3d4000deee9d82f8",
+      "toolVersion": "1.8.1",
+      "commit": "fd3707b2a1b62f9524c681115d8870953f813789",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "clima-climaland-jl",
+      "present": true,
+      "sha256": "45cb0a0748c4a06b2a16f5692db6c2f91324032fb407df618064a48cc96884ab",
+      "toolVersion": "1.8.1",
+      "commit": "4027e75930bb9394a2f5eb51851efcb95f4a4cbd",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "levimcclenny-sa-pinns",
+      "present": true,
+      "sha256": "02669325fa2444dc9e4684cf7157170b8fe73536f061c6b06294ae9c6e72ef56",
+      "toolVersion": "1.8.1",
+      "commit": "30b5927b3b9f414f99d406c05299f129894f4f6d",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "mrtkp9993-cpp-examples",
+      "present": true,
+      "sha256": "5e17b732a379674f2bc531fce0cf1c96f67d7ec2a0a67272514e0aeaa156152b",
+      "toolVersion": "1.8.1",
+      "commit": "2e1a3c796ec3558789c20e71f53ca734bd611c94",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "pyahmed-pycorn",
+      "present": true,
+      "sha256": "3a8de44867ea3f41dd4487c12a8e18219420d050ce356b9cee4d9b09850e7f92",
+      "toolVersion": "1.8.1",
+      "commit": "d7747b6eaff818f07b5f41e950b65eb716ba4e0f",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "levuvietphong-pytcr",
+      "present": true,
+      "sha256": "019de6eacd0aaff6fb8bd70705e203fe97d30afc2ce04bb9db422d657cef382e",
+      "toolVersion": "1.8.1",
+      "commit": "8e8a02c5be35e574dc37142161c6af91f3ec67d0",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "alexiii-grafen",
+      "present": true,
+      "sha256": "08a9c1eb89222dc53cd3303bf5b4820189e7b5b22188d31bcd4c1c2da20b4c15",
+      "toolVersion": "1.8.1",
+      "commit": "9643b13350dbbce5355a02715270f1e481aacf94",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "apaloczy-antarcticavorticitybudget",
+      "present": true,
+      "sha256": "0875d6617b54dcc53a5c565a166115c33be62ca9d879d7b21a514a5e46c95857",
+      "toolVersion": "1.8.1",
+      "commit": "d524cd6459d6aa2c2fb312ecb527c4fa6823dc6b",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "mannlabs-alphapepttools",
+      "present": true,
+      "sha256": "4c15d56a03807ebba9e499485f2dff356327eb4a3a42ede3ade75f9058f6f013",
+      "toolVersion": "1.8.1",
+      "commit": "d191e12362b9e886128af7cc16f23f1a6cc6278c",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "bremor-bureau-of-meteorology",
+      "present": true,
+      "sha256": "77e37dd81efb780379c259f7d27b054db870bedd8972f4a79ba78a4da05d8ce9",
+      "toolVersion": "1.8.1",
+      "commit": "e9cd8daf4220e11db05a6f70aba3fef34ce8cc71",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "brazil-data-cube-lccs-py",
+      "present": true,
+      "sha256": "ef2d500b7f8e5278ee1c9d7f67f73cb280b48517924462b7067925be26129d4f",
+      "toolVersion": "1.8.1",
+      "commit": "6688c4076d67299261505050964bf963e56a6489",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "astroimagej-astroimagej",
+      "present": true,
+      "sha256": "0c8d119d44306179729ffe759aa5c383f063ba75fc697d6f829d7bbb34e3e880",
+      "toolVersion": "1.8.1",
+      "commit": "2ca4c674ec3ea801161abef08c0f745be55ccffe",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "pytlab-vaspy",
+      "present": true,
+      "sha256": "07a859ca61de7bccde363a254c5fb5c11e45e7c72d395a35d261a6dd4da4689a",
+      "toolVersion": "1.8.1",
+      "commit": "385c0f233e37629fb9263a6918885ae2851cf03b",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "ahmedfgad-torchga",
+      "present": true,
+      "sha256": "36c9ce9313b321072c9559c05fc9d646d5802f7230e04558e74cfc451df3c093",
+      "toolVersion": "1.8.1",
+      "commit": "ffd28f7e2d35adc4e8438697057d828396dda3c1",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "ashtonmv-twod-materials",
+      "present": true,
+      "sha256": "c844d7ca71b2beb914f9236561e62c1bffb79fe2450bf1f812ae8d0c03ad2430",
+      "toolVersion": "1.8.1",
+      "commit": "6bcf24099a410df17f3ff578c4852be0a56196de",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "xuzhougeng-scientificfigurelibrary",
+      "present": true,
+      "sha256": "33b94ff21a111902d6575d2de2af844f3fddf898cae8b37f9be5dc7e898de549",
+      "toolVersion": "1.8.1",
+      "commit": "3291e4dc6cc6e88506e494180576a617280cf14f",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "lhalloran-ertplot",
+      "present": true,
+      "sha256": "d0dc796525df4327eca29fd490f3b14b1631529d179158acf49f036ef7bc8141",
+      "toolVersion": "1.8.1",
+      "commit": "9d6cd86799815ca1d77acf68b393874ec0df8ea9",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "ecojulia-diversity-jl",
+      "present": true,
+      "sha256": "1d665357a565450f13c8710d44ef7fb6dbbf8c19f2da58dcab9197be1164081f",
+      "toolVersion": "1.8.1",
+      "commit": "353a1a353f7707c8f96abc3d194b1db388c4921c",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "starskyzheng-panpop",
+      "present": true,
+      "sha256": "9ad50e623c096f35ed7bd4642397b1e90ff4cf9ef49f28f520a3d99e2c59a22b",
+      "toolVersion": "1.8.1",
+      "commit": "a392753c7850831674ea09ed18685da816a5c4c3",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "nmcdev-nmc-met-io",
+      "present": true,
+      "sha256": "e4acfe5633eb36e11aa6d0718edbc596887e3178c7f57f41ff2305b4fc9c7ce3",
+      "toolVersion": "1.8.1",
+      "commit": "b8f431c58128315c739e818104ce4d9feeb3d4b5",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "mpocanes-mpo624-2018",
+      "present": true,
+      "sha256": "41a27b82725dd132376726a17c9d3f79ad659b758055af898715b5df419f1e3c",
+      "toolVersion": "1.8.1",
+      "commit": "d369cf0bc0a753db0798d51a8a29a07af6a506b9",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "brian-team-brian2",
+      "present": true,
+      "sha256": "02360b0a54e296a83ea0443b69c476d092b34ab27dba1ca13fcb91ebd08727c3",
+      "toolVersion": "1.8.1",
+      "commit": "240e2f0210e14a89ae2daea3c45fc875c3ac319f",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "juliaastro-fitsio-jl",
+      "present": true,
+      "sha256": "6895fcde5f91e989ef072960a383f7734900f197b8ec5b13fc5458880f30fa04",
+      "toolVersion": "1.8.1",
+      "commit": "da70a0f037970ea65448fba94feb464cdb9f1f34",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "drozmotix-iobroker-tado",
+      "present": true,
+      "sha256": "9161f55b32b030dddd1b1ab95e7d3961db325a436542ee16410193f4717ec80a",
+      "toolVersion": "1.8.1",
+      "commit": "95d7eb8a8acd8190466bb79dae77bc916086decd",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "ethanhe42-u-net",
+      "present": true,
+      "sha256": "2fc15140e1544cb97fd22e7d933b66272063fbfaabd49580896e3f292781f00d",
+      "toolVersion": "1.8.1",
+      "commit": "117b5dafdfb65157dde6e401c72cb15baca56ddd",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "juliaocean-oceanrobots-jl",
+      "present": true,
+      "sha256": "a7548bb7f59939d53ca73c2efc5f908faa0ca46968a732d66d6742160b649593",
+      "toolVersion": "1.8.1",
+      "commit": "554cd6b9ff192b68126e7ad708e686b79b833eca",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "jgradone-glider-adcp-real-time-processing",
+      "present": true,
+      "sha256": "526b64eca5cc07895e55b8e029ccfd245596d6a39d33a232a2a2c3036ca472ef",
+      "toolVersion": "1.8.1",
+      "commit": "523fead3ccba7ae08b3184526c96f26af6f0c60b",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "martinsos-edlib",
+      "present": true,
+      "sha256": "e0a7e2547c8093ee8a127ae26502d1a92313bd96437560e85dd9fd915189aa5c",
+      "toolVersion": "1.8.1",
+      "commit": "0ddc23ea06abd95ab6227442acb4c27bd7607b68",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "refresh-bio-famsa",
+      "present": true,
+      "sha256": "b94162c063e26ec0e46f2eeb2db97c2bc52e2fb5886e4a2286603ee128a52542",
+      "toolVersion": "1.8.1",
+      "commit": "47eeea3c9029b926214bd3f78b6631bd9b56b70e",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "omoolab-bioxelnodes",
+      "present": true,
+      "sha256": "a926b43bc331ffb474ddb249ab3d823051f4ba22366c90b4d14656ce6d16117e",
+      "toolVersion": "1.8.1",
+      "commit": "1350bbfb3671b8dfe84f73b348bbf46bc0aabf6f",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "gao-lab-slat",
+      "present": true,
+      "sha256": "047397f5288a893f4f784515f796aebb444b7ce52a21b0ca9d321c975e11ee2e",
+      "toolVersion": "1.8.1",
+      "commit": "dfb2b01d6fd52d5eeb88b8f17a69be6daaacdad4",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "single-cell-data-tiledb-soma",
+      "present": true,
+      "sha256": "d8e112b82190d93a36647edbc8b9d89b4299d8d6af5b4bd6858c158d927601a1",
+      "toolVersion": "1.8.1",
+      "commit": "7b2480031d4f6d8bab2afdc4e79db80d4ed9ace3",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "fatiando-fatiando",
+      "present": true,
+      "sha256": "ee44f3c95990b53cd1597249da59aeaf5916f9e9fa74f60702d9b8ab8f9e760f",
+      "toolVersion": "1.8.1",
+      "commit": "ac2afbcb2d99b18f145cc1ed40075beb5f92dd5a",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "petrkryslucsd-finetools-jl",
+      "present": true,
+      "sha256": "20492289cc4af08fed0b9756711ed301b68251a3e3b94daae1258ef95b0c891f",
+      "toolVersion": "1.8.1",
+      "commit": "03fee925261da97a9dd8b637f6ae702efd3a0a3b",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "swiftsim-swift",
+      "present": true,
+      "sha256": "220fcdc73eb7aa7234bf9410bc6066361164ce55607f578b8ecb4b0bb9fb246c",
+      "toolVersion": "1.8.1",
+      "commit": "104511257f04f2108ff0d4f41c890f4012e3a712",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "liu-hy-genomas",
+      "present": true,
+      "sha256": "1edc4b775c482f3b34fad6c8f8a03fa070771fe58c3b751aa2d50ba375666ee6",
+      "toolVersion": "1.8.1",
+      "commit": "d6365a700794587b53958db3bf22bb1fb80c3451",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "noble-lab-carafe",
+      "present": true,
+      "sha256": "2f4ff448ddcadc4c48f8713761cd4739936de9d0669e7b617783ff53345c13da",
+      "toolVersion": "1.8.1",
+      "commit": "0e7cff5611cb817011b8c66a59fb350d8c1fb29c",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "edrewitz-firewxpy",
+      "present": true,
+      "sha256": "85a2fd402283e36bb9d53260120ad061ec8841404e67d09bdc1c60f7c63b08ae",
+      "toolVersion": "1.8.1",
+      "commit": "37dc3cfef18ffacdb5c9337d5a6027fb682a7286",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "pcraster-pcraster",
+      "present": true,
+      "sha256": "522fbc3bf6a4c06d0b019d9ab33ebd5cee401bab57d22d0706e6b88e9f879746",
+      "toolVersion": "1.8.1",
+      "commit": "44b7f9a3eabebfa07326447b6e00b90ae8560606",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "keltonhalbert-sharplib",
+      "present": true,
+      "sha256": "a9d98caaddb8f5ede48e4485b0c5f03dfc92b317724fdce629ef6f6214c07f55",
+      "toolVersion": "1.8.1",
+      "commit": "fde6fe7b166c220220ab718e91cd220ec9cdd35a",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "kjappelbaum-moffragmentor",
+      "present": true,
+      "sha256": "c9aafb16b3973d98310fab247a5927bce1586a27a361c85622cb64d24821a0ba",
+      "toolVersion": "1.8.1",
+      "commit": "0029c82314968c4f465cde7826ccd1142b1a8413",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "aksub99-moldqn-pytorch",
+      "present": true,
+      "sha256": "801014c7c8ad1078c2bb6a1031349e2764963c909eeb6779ccd387a6763993df",
+      "toolVersion": "1.8.1",
+      "commit": "4b1da5c4f555f9e1806d0575fc0de3f25525b6f6",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "theoretical-chemistry-group-uclouvain-std2",
+      "present": true,
+      "sha256": "9bca58adf7cfad2dd03879cf6dfe27e75eaa572a8a0bcfe248ee86cb570f246b",
+      "toolVersion": "1.8.1",
+      "commit": "8d50f9f2a4b66b534e19bb8a99524be6b7153a47",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "aamini-chemprop",
+      "present": true,
+      "sha256": "133c92742d40b56c55fec46238bf8288b368f331c33240cd41cf933f208c4bf8",
+      "toolVersion": "1.8.1",
+      "commit": "a7a137a09589474a5c5a83f75fbddbddfb877dc8",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "plotly-dash-cytoscape",
+      "present": true,
+      "sha256": "dd0645ecf5551dca400582980e3eacb7c00ee78fa5362cffa9776d9e5a62ec2b",
+      "toolVersion": "1.8.1",
+      "commit": "f96e760f3b84c3f4d7ecbfaa905e9d57c698456d",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "mannlabs-alphapeptdeep",
+      "present": true,
+      "sha256": "55eb47cb9b77af589ceeaf0e9a529bff06106bb5a9ef9db4586fb8636bae8472",
+      "toolVersion": "1.8.1",
+      "commit": "8e9eba6e25b217cc11cc35d08e63ca6bb7e15f12",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "kirklong-threebodybot",
+      "present": true,
+      "sha256": "b1fe49f4c509d7cecbda63ec9e6fdb1cf66ba3968142e6f8c1054087d629aa08",
+      "toolVersion": "1.8.1",
+      "commit": "40715f3acc74dd904f48055f0d9e7add73ba729e",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "biomicroscopy-dpr-resolution-enhancement-with-deblurring-by-pixel-reassignment",
+      "present": true,
+      "sha256": "1f029e942b42582b38887655747d5904cbc81cf7622de6b58b4d2f77691acceb",
+      "toolVersion": "1.8.1",
+      "commit": "fbe91b94778ca7e4ffe7e7cadde143c2f5cf9dac",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "ashleve-activeragdoll",
+      "present": true,
+      "sha256": "500c710b1cda7515611dd937ea559754e6da297c25579ba05cae4677c84169e1",
+      "toolVersion": "1.8.1",
+      "commit": "749cd80dbccd73dffb7bb1d3827ad0e719b84f1c",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "davidt0x-micro-maker",
+      "present": true,
+      "sha256": "e744a8410dc0c6a5a42a6c510cef42d47c18041256ec8cb641721e3fdd0ca371",
+      "toolVersion": "1.8.1",
+      "commit": "0a798ccc6cf75c3ee87675d0847bb51e29ce17b4",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "gher-uliege-ocot-notebook",
+      "present": true,
+      "sha256": "de674a02bae070419e3f619dd13d74fc3ddf38b5669d3ff4520d9738dedbd683",
+      "toolVersion": "1.8.1",
+      "commit": "2057ec09d856c4244f37bfbd0d0a089417266c78",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "x1shang-wetbulb-calculator",
+      "present": true,
+      "sha256": "dc9b5c721dca77b2d95f83ca40d340e0c62e4b71dcda873ce67475f7e4657989",
+      "toolVersion": "1.8.1",
+      "commit": "1da2baa8eee95581119090f2bca0a129bd4441ad",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "compgeolab-euler-inversion",
+      "present": true,
+      "sha256": "a79626db4985e7deca05255153d73f877aed9293cda09eddef1cf11c15b80411",
+      "toolVersion": "1.8.1",
+      "commit": "91ffed9ea163897fa691ca6cf3cdd91fa2738c58",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "scidart-scidart",
+      "present": true,
+      "sha256": "83863c26300a386ed611891ccda50327e6a3a6fdb7836991885a68176966f444",
+      "toolVersion": "1.8.1",
+      "commit": "86b7ff8d97f20fdac2696c5f8dca8d739f0b0797",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "samedvossberg-3d-brain-animations",
+      "present": true,
+      "sha256": "e8c6e067e1888346df7cdb4870a943bae82714ee770178fdb52472208834dadf",
+      "toolVersion": "1.8.1",
+      "commit": "5ff5fecfc0750e5a3ac9b61638e50f4bd56dcead",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "williamgilpin-pypdb",
+      "present": true,
+      "sha256": "9efcfc1d41da7c517c82cba76a2c32b4f2ba14ffb44d02db1e4d245f0f04c8e8",
+      "toolVersion": "1.8.1",
+      "commit": "976e818b8bedf486c97fa94d486648f94031a56c",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "radonpy-radonpy",
+      "present": true,
+      "sha256": "a13eee07c5ebb9c369b23537e413ad95929bd83ad1cff78b70617658eeccdb9d",
+      "toolVersion": "1.8.1",
+      "commit": "5d14893515376a4518e9f1373a1ebc4bb756db14",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "ropensci-ediutils",
+      "present": true,
+      "sha256": "62e5855f89e9815676eef566aa0e4001e412cea77d65935881716d7f69147a8a",
+      "toolVersion": "1.8.1",
+      "commit": "435f02c2859b0fe7b1b09aa8c357b9331610e4bb",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "astropy-astropy",
+      "present": true,
+      "sha256": "793f8bbddff0b24d727e4cbf662f46dfbee9c02bbc19fa2f84ae63f2364d22f2",
+      "toolVersion": "1.8.1",
+      "commit": "cad3b90e104cdb5ccb86772066eb50268026d87c",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "logannye-rosalind",
+      "present": true,
+      "sha256": "5c9231287d620edbeaf678456a4a92fb8961daa78348fcf85b5f65964b0a040a",
+      "toolVersion": "1.8.1",
+      "commit": "8874508844e106484fa290b04e3fc6349686beaf",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "aaronwmorris-indi-allsky",
+      "present": true,
+      "sha256": "be44d715d0584dd40d66e112b5a68ba6c6f4edbb7a708dc3be47d45bf53b7ff0",
+      "toolVersion": "1.8.1",
+      "commit": "4a4a9170291bdc1466a688128b0c9e7fd4bd10b5",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "alexeypechnikov-pygmtsar",
+      "present": true,
+      "sha256": "6ed9250fbf421e6c18fb0718c7fcdd94d41a5ab87e1543925a098a1cdeb38baa",
+      "toolVersion": "1.8.1",
+      "commit": "65a90545f23153283e06c8a177e94cdb573d222a",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "davisidarta-dbmap",
+      "present": true,
+      "sha256": "7d70292f8e4f9426565c7e438196f91c19ff551db91c50669d77333006742d5a",
+      "toolVersion": "1.8.1",
+      "commit": "1d95d6a10c4e87745ee7b9793e7e66d463f0bd1d",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "protontypes-climate-triage",
+      "present": true,
+      "sha256": "29cdeaf2eca9cb9186f60fd6c854cd65b0007437e5e3d52e8993c0925c1da86f",
+      "toolVersion": "1.8.1",
+      "commit": "9f7103c5cba98e10a1664be15eb48d47acb5e53d",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "lh3-minimap2",
+      "present": true,
+      "sha256": "fc5dba55f76cedec3e2162366f2488f360bec341c3a97143263da8c2441ffd58",
+      "toolVersion": "1.8.1",
+      "commit": "3c28777e7e2dcc90f825de1b9f17a89cca7d4452",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "bioperl-bioperl-live",
+      "present": true,
+      "sha256": "593162d4aec31dbf724740daedd81f169a3e1278415eb03910c0f2261ca1684d",
+      "toolVersion": "1.8.1",
+      "commit": "e0c4fec81a3e26157ce2e60facc6711595165c78",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "arcticsnow-topopyscale",
+      "present": true,
+      "sha256": "86907c4aa21558ef3daa7054ad96d7dd7f5fff076a758b2bb3195ce8a6c2c2ee",
+      "toolVersion": "1.8.1",
+      "commit": "8668a5bf6adb2caf884b61f98857578e7b530c3c",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "nickjcroucher-gubbins",
+      "present": true,
+      "sha256": "865d6743d040b66081398e75be68383adcc7ecc9cf0b5572cb3417e7ee35a49b",
+      "toolVersion": "1.8.1",
+      "commit": "82ce42aa657cb0d3d051c493826fb05ee9eac764",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "rust-ndarray-ndarray-stats",
+      "present": true,
+      "sha256": "90df70bfea13bfaa302fcfdcc0e1c5f41fe0b25f0161f3f378a9df5b6a99ec73",
+      "toolVersion": "1.8.1",
+      "commit": "67d0292f483c90b8afa0c975832d979d24204e95",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "yt-project-yt",
+      "present": true,
+      "sha256": "5567c4a8868edcee2eb6e2bbfeeca10d87747223d8f26e7ff70510c3309d5661",
+      "toolVersion": "1.8.1",
+      "commit": "f8d7975cbdb7ec1e49e5885c8e4ba571091d55eb",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "juliaastrosim-astronbodysim-jl",
+      "present": true,
+      "sha256": "7c245213a1c247951a43ae8777ad2d7421a46e6529b9a44991dc39e6754bbaa5",
+      "toolVersion": "1.8.1",
+      "commit": "7ab9a5412053f79984c4a138557b9f7afb9be29d",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "nel-lab-mesmerize-core",
+      "present": true,
+      "sha256": "f6f7b75a0204111a4be63bdb5c0b861949fd1122ffb2aa2f11b9bab38c940320",
+      "toolVersion": "1.8.1",
+      "commit": "93ae1a61411cf64c2f941fd071440bfeb019538d",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "shenwei356-seqkit",
+      "present": true,
+      "sha256": "4852bed3ec5a91f9839c3d58ce61f2c8b372bd5bb9b734d42bffef263e716515",
+      "toolVersion": "1.8.1",
+      "commit": "48d70213e9a8066cd4554cbffa81f2094f9c768c",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "deepmodeling-deepmd-kit",
+      "present": true,
+      "sha256": "65cdabbe37bebcec8f4dfc6749f8745d00126a3f58506c500ea5d75544a26995",
+      "toolVersion": "1.8.1",
+      "commit": "64d32661861ef6c621bee326c851b84ff501b287",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "edwardberman-shopt",
+      "present": true,
+      "sha256": "be1996fc816c6d3d74486e7a31d5402586fe5d94d8a92436c3668387497791ea",
+      "toolVersion": "1.8.1",
+      "commit": "ee290766d752151a7391a1d13fc4e27b394d6b24",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "tkphd-kks-binary-solidification",
+      "present": true,
+      "sha256": "cfb41b8aed15232e564512756c7dadba7ff199b14457fc2a03f885a9777ab50c",
+      "toolVersion": "1.8.1",
+      "commit": "09100cc0bcf93494ce8241f98cb65226c3b03f38",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "karasiewiczstephane-witomi",
+      "present": true,
+      "sha256": "64d708e4e536f0f6bba45c16c33c568d0b736f6df785f06908fe7ef35595e7c7",
+      "toolVersion": "1.8.1",
+      "commit": "4779880b472ae4940838657dec2eab19d1d5cc43",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "broadinstitute-protigy",
+      "present": true,
+      "sha256": "f5af5c60c294e27267bc34409e3a36f2f728f70abcf87dc17590b473feb9dc87",
+      "toolVersion": "1.8.1",
+      "commit": "58698454d05ddc3f9aa3437be4a23b558d070100",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "sozawa94-hbi",
+      "present": true,
+      "sha256": "8cdf38fb605b18ddf8de6932ef7fb8ecc8c136455d5901332a7330636d2941cb",
+      "toolVersion": "1.8.1",
+      "commit": "19a40f24e95a781f77a4536e073cca627b7efeb6",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "willyhagi-climate-data-science",
+      "present": true,
+      "sha256": "0b74f3a35b9762cddfad05527c51f45e7ff771d7af0a9b8d9cf82ff05eac8fbf",
+      "toolVersion": "1.8.1",
+      "commit": "53fbfa2f8393ddf3fdd29e48ad5128201ffcbf18",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "qcscine-qcmaquis",
+      "present": true,
+      "sha256": "c53bb289b1cd6656a321b781b9ac8429f9e0d126d5753290240bfa72cd149d17",
+      "toolVersion": "1.8.1",
+      "commit": "59635575f69eabb14cb04c1492226a5fa6c4bf41",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "esipfed-sweet",
+      "present": true,
+      "sha256": "646cdf86be590edf0bdf6e12e08a0800c6a15609971f0e0194a27e31091d206c",
+      "toolVersion": "1.8.1",
+      "commit": "db60c8ddb1b781fbadae176f69286a2cdd5099a0",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "chenyangkang-stemflow",
+      "present": true,
+      "sha256": "971e29e4cab323a48a2bd5d18369731db662e0afe2d06317bac433703a4d0b78",
+      "toolVersion": "1.8.1",
+      "commit": "564e729489a4311be00e6538056823d85684c4a8",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "environmentontology-envo",
+      "present": true,
+      "sha256": "cca03feadfd528a2457287e14e9a64f2cb5ba36c54d699f06234e3c7235b4724",
+      "toolVersion": "1.8.1",
+      "commit": "a2455d1a77e46bb8a664d65a157166b539269042",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "jerbzz-pi-eco-indicator",
+      "present": true,
+      "sha256": "4a2c61f49e64562fa66e34dc6abdb4be5c695199ae36c1b917908fecf856d8f4",
+      "toolVersion": "1.8.1",
+      "commit": "964ed66c17641cc21b3c4535dad0afa653569062",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "hail-is-hail",
+      "present": true,
+      "sha256": "112afa1c1170f76115fcaadbbd6f9f0048081747cec693a131baf6f9b14ab7af",
+      "toolVersion": "1.8.1",
+      "commit": "bffda154c5a4d2d746750881c82826de5d706350",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "ago109-predictive-forward-forward",
+      "present": true,
+      "sha256": "6ecf545e9ca528c5e52882c21fe3ebdfced627eb71ad9448efba661d9fa04843",
+      "toolVersion": "1.8.1",
+      "commit": "adeb918941afaafb11bc9f1b0953dae2d7dd1f13",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "bart-inho-em-inversion-4-buried-ice",
+      "present": true,
+      "sha256": "48ed1e562ae84088f32777f0039145b644f6859db8fb72c199f49c91dee82ea5",
+      "toolVersion": "1.8.1",
+      "commit": "6b0fe296daafd6eab94c1ddd9ebf6aa6db690e80",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "ad-si-woxi",
+      "present": true,
+      "sha256": "aa839e144132e299f249ec024baa8a487e549f961e3ba2532f1106242e6a2173",
+      "toolVersion": "1.8.1",
+      "commit": "87d2d31cc2e3460f63185d9cc52706a0ee71fab9",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "dna-seq-just-dna-lite",
+      "present": true,
+      "sha256": "9df1290363e1d0ada759073156146fe361da834e0dddad85e6c93bcf14313d46",
+      "toolVersion": "1.8.1",
+      "commit": "da9e6443c4827d18e6534b0d0a496c52f47dc2cd",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "espressomd-espresso",
+      "present": true,
+      "sha256": "5d5b8117f12b5eb28e4a3f33648dfaf686bed0d137758abd2e3b2db5ba64eb25",
+      "toolVersion": "1.8.1",
+      "commit": "6dd80a1a514fce1962aec7d9b2a07aef339cb924",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "jobovy-gaia-tools",
+      "present": true,
+      "sha256": "aaa258726a7f2e16a318040d084b0d6dbd4344ed8708bf45929d2989497b5049",
+      "toolVersion": "1.8.1",
+      "commit": "4cb8acff9e8e9660f24b2b933ad4117ed844c17c",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "pcastellanoescuder-pomashiny",
+      "present": true,
+      "sha256": "406b2cbf6efc1b44e164eb42154efc67a077cd584cbc3e3cde539a45dbcd1ced",
+      "toolVersion": "1.8.1",
+      "commit": "476a727264a2ed9e30edfa84546a0b86b001c830",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "nicgirault-circosjs",
+      "present": true,
+      "sha256": "96ca0538fc621c7c916705ff03999edbacda135b1d75deeb3c1eaa5c66a5c516",
+      "toolVersion": "1.8.1",
+      "commit": "a9162cf0a22b9223fb955c021f97d37253c54985",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "es5nhc-trv",
+      "present": true,
+      "sha256": "93e1cf43ab285815908ec0ba93969553b878bae86206d198b5040b243c17b3d7",
+      "toolVersion": "1.8.1",
+      "commit": "15291bd7b5051ac39c0840e18fb7174a0334dcb8",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "foleylab-moleculardynamics",
+      "present": true,
+      "sha256": "502932efdb39cb221862e3cefe3455ac1212cf668313569d4e163138742b2d52",
+      "toolVersion": "1.8.1",
+      "commit": "2702d3fd7df6bc55167c377e7ff22e0eac25cec8",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "camlab-ethz-poseidon",
+      "present": true,
+      "sha256": "224e8ef363c869827928129ab71fdc93ae8717d5e649f58942b39c1b3ddeda7f",
+      "toolVersion": "1.8.1",
+      "commit": "b8fa28f59bd7f7673323f28d11a12c6f3a215c61",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "usnistgov-phasefield-precipitate-aging",
+      "present": true,
+      "sha256": "0b24b410284f618cb50eebe9a0f68b05c921a020febc92947dc0b1a7181d379a",
+      "toolVersion": "1.8.1",
+      "commit": "ef7d21775cc9f3a7542a53ab70c7ba350bd6368a",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "mne-tools-mne-bids",
+      "present": true,
+      "sha256": "986b8d6cda2eebd63fdbcfe2f8fc5c4ebb227cb17e28da11486e08cb2017ff78",
+      "toolVersion": "1.8.1",
+      "commit": "90b31312c8030b4300a7cc5aacb3faa09ae5eb71",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "poisotlab-gbif-jl",
+      "present": true,
+      "sha256": "104f8ad7b53d6be58cbe486eb82e89b9fbde4161d88631d2e9c0581f13123c26",
+      "toolVersion": "1.8.1",
+      "commit": "89486148dfd1891b94e75e8d7c18f5870ed40d35",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "scdiffeq-scdiffeq",
+      "present": true,
+      "sha256": "4e3fb05ad218cc7d5f591a87819fc96345fdd964ea9118bba8fab6af39ec6fa0",
+      "toolVersion": "1.8.1",
+      "commit": "b4a272c7d0f3fe77a52ac07f7511dc98cac50111",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "juliarheology-rheos-jl",
+      "present": true,
+      "sha256": "9c23f331e340d4a3e31a9de617af9bab442caeb406d9910431b32affbd7c3f57",
+      "toolVersion": "1.8.1",
+      "commit": "a4e6de805b569e34bddfa79df0bd56fc557063f7",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "stingraysoftware-hendrics",
+      "present": true,
+      "sha256": "7d6adc13bcb399bed341cea04478e1343f124caee7d9c74d6989b23b3ed51f29",
+      "toolVersion": "1.8.1",
+      "commit": "123a95287d4fc1c6d4d7585c3ba4c29e206147f6",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "leanprover-community-physlib",
+      "present": true,
+      "sha256": "33b4f5c8f54dea16f08a0c88fde552b1d20140cc6f871f7cc70ca0cd20bfbe9a",
+      "toolVersion": "1.8.1",
+      "commit": "a4ef46125b32bb2599ab42d9c3a95e1d88ca75ff",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "ibpa-deeppep",
+      "present": true,
+      "sha256": "04527379a7194027ee60820b7e812162b58dd46a44dea3e8be8f986f27255f96",
+      "toolVersion": "1.8.1",
+      "commit": "2a08ed427fd4f1bee0ebed698d6794643d41ffb7",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "rtdtwo-india-weather-rest",
+      "present": true,
+      "sha256": "006629730b0e05e742048bdebf060c95f2c548a36fd0d9088e4f3ee687ea279c",
+      "toolVersion": "1.8.1",
+      "commit": "642976e259773286f413f9afc5dc0069d18483b3",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "aretasg-dockit",
+      "present": true,
+      "sha256": "570b47dba3cfd646bc860fa3199664c89b64cf65f8800bcb2e62442980c7c1f8",
+      "toolVersion": "1.8.1",
+      "commit": "5ae0785e269a4eb5a88cc7c19c9ea440ee4c14a5",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "baffou-phaselab",
+      "present": true,
+      "sha256": "78a1a18d740599fbe008e34d35d2af9f63879a2c14481c90a5dc6c2a2c53c2a4",
+      "toolVersion": "1.8.1",
+      "commit": "20537dfaccaede6fd34da0f2889a3239373ed181",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "sanger-pathogens-snp-sites",
+      "present": true,
+      "sha256": "a12e4ea3e6988acbee321c06a6f1b7800655eea8d98649f034a58b3cc6b44394",
+      "toolVersion": "1.8.1",
+      "commit": "52c98cb3e0ed0d336b24b27a5c0f3da4cbe44e71",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "joshuaalbert-jaxns",
+      "present": true,
+      "sha256": "a98ba087583ece919d00b64d8bd0a5c167724b7cefb04d5d158654a7537280ac",
+      "toolVersion": "1.8.1",
+      "commit": "9efa45503def9ecae943afb4b6e1d45f61b1efa3",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "bunpc-homer3",
+      "present": true,
+      "sha256": "5a3a9ebed3f1f1480b4fd7094a29fafff0956b7da713fd927e017561ccc8cd37",
+      "toolVersion": "1.8.1",
+      "commit": "a2bdfcf65e932478110cd9abdd4f0d1b773c5217",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "cogent3-cogent3",
+      "present": true,
+      "sha256": "8619146ba0c49f67d768490817dc1a7050e592cb65a961ecb79beb86d3818356",
+      "toolVersion": "1.8.1",
+      "commit": "24c77d8b523d329f33dba3adfd74d13f0c80a355",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "greenscheduler-cats",
+      "present": true,
+      "sha256": "60ecc2f6438eada7f3734e9e03616c4ccb907aa4ae5f1ba433260284a222822f",
+      "toolVersion": "1.8.1",
+      "commit": "666e73f4fdc7bb5ec7f08c3071e8be491b886cef",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "katrinleinweber-phd-thesis",
+      "present": true,
+      "sha256": "a89f3d40b292bdfe7aafbb926a9b6e5d8fcefd757f641f42999d26d049680074",
+      "toolVersion": "1.8.1",
+      "commit": "a0adbce69faa88d6dc3b30c48042dbc84347c61a",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "vegandevs-vegan",
+      "present": true,
+      "sha256": "d2eb8677bcb8c8ab4dcb001339784701d9cda3381d74c4300e55ee02339f5eb4",
+      "toolVersion": "1.8.1",
+      "commit": "a574546bee7a03f7ea034fe259dd42818eea43ac",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "mcs07-molvs",
+      "present": true,
+      "sha256": "ad32b91bc2eea6857ee01ece9de0ec2fb869cfa7e8b4c3916211e30890061289",
+      "toolVersion": "1.8.1",
+      "commit": "d815fe52d160abcecbcbf117e6437bf727dbd8ad",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "pyqms-pyqms",
+      "present": true,
+      "sha256": "8a17ab6eb833e384b5319805aa0795971ab30a641d1671d1c31e31afdc7e9541",
+      "toolVersion": "1.8.1",
+      "commit": "6d5553d35be0c7a677a5df59982153f00fbc54c6",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "gridap-gridap-jl",
+      "present": true,
+      "sha256": "fa511c74acc0d92a6329d82e7b4852306da27d28bac0589d09dfa13a51329654",
+      "toolVersion": "1.8.1",
+      "commit": "41e72e1c1af343efb6ac29b37125a1d31c3d515a",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "dennissergeev-octant",
+      "present": true,
+      "sha256": "fde169aa6bbe5fd3495528ddbd64fbce00f2143d9bbaa388c656598800092016",
+      "toolVersion": "1.8.1",
+      "commit": "edbf3ae1e576dacc42480cf3c7e9801528db4104",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "glotzerlab-freud",
+      "present": true,
+      "sha256": "571f9fccb268fda61e17b0de82a0386376a15d82a885b0b6e14672a3941c02e0",
+      "toolVersion": "1.8.1",
+      "commit": "730ce99571d09c8966b75f3127df2d2e579bd095",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "bioio-devs-bioio-ome-zarr",
+      "present": true,
+      "sha256": "18b4386c8a1094e723bd724a6e053771b69efe439214f4c5321ec4948f8c0802",
+      "toolVersion": "1.8.1",
+      "commit": "474c7afea51ca94fc21f575f64aad3629224e61e",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "shdshim-peakpo",
+      "present": true,
+      "sha256": "06c948151dfb40f00796942a1662117dc2f7d87f6a12db4941ea34d230d645ac",
+      "toolVersion": "1.8.1",
+      "commit": "a6db065f2a84994be4680ffa900c5d7c4ce0c4c0",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "seevee-cap-alerts",
+      "present": true,
+      "sha256": "b0e1fef4e64ecfdd792ee2690d8978ef6313faf3dd9160e7cf5b8d819e3adf70",
+      "toolVersion": "1.8.1",
+      "commit": "13687de1958b7abb8150b5db283c6b45f498736f",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "mnucci32-aither",
+      "present": true,
+      "sha256": "1827991040341588a2ceef5541d20fa453e9b81e24abdc4f6f4f65f8dd4b132e",
+      "toolVersion": "1.8.1",
+      "commit": "1ed1d58ea9f95aefd7fee4f20bfd948cb96eaac0",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "sigma-py-accupy",
+      "present": true,
+      "sha256": "2ef8ea3aca03f70f74b8f984e348eadc3ef05cda62ed68f3c10ac1828a2b5592",
+      "toolVersion": "1.8.1",
+      "commit": "dbbc4ee8862b1da381a463626d011106462c691b",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "bigbio-proteomics-sample-metadata",
+      "present": true,
+      "sha256": "47778742eb4f6cfcfbb9e3dd6b42774f1f3016c357763b2b1f57a0f6abb158f2",
+      "toolVersion": "1.8.1",
+      "commit": "03df7bc728dc740a7e9aa2a56262cf32848545f6",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "nuc-astro-winnet",
+      "present": true,
+      "sha256": "611d3fc6940076e076a4e9f96e7ae691a88f83e7f6742a6a819c185fb0f37ed9",
+      "toolVersion": "1.8.1",
+      "commit": "de0c9c852907a8714444287f3ebe0bdedf328397",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "lopezgroup-iciq-care",
+      "present": true,
+      "sha256": "acff2c5fe1754d34207e3e556f088df8c2c3f9473df1b25e90a88776f07074f3",
+      "toolVersion": "1.8.1",
+      "commit": "4f1ecfb42d01637cb1c691addc9806aa20d126af",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "alesgenova-colormap",
+      "present": true,
+      "sha256": "4e3f64475b927422f74dc20f5547af45de8b3a8dcb46ad2b575fa18623808c1f",
+      "toolVersion": "1.8.1",
+      "commit": "cf29c7676d773ed3061a2170ea4724ffc94581f6",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "biologytools-bioimager",
+      "present": true,
+      "sha256": "8916d14016d1db495c9f818a5bd6dc1e55445b519329ce1c963a51575c0a9693",
+      "toolVersion": "1.8.1",
+      "commit": "149b45255d628cc4118b3829cd7c5b10c9c6cb07",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "euroargodev-argodmqc-owc",
+      "present": true,
+      "sha256": "b8bb75661707ba648a206b98f0427e8307ca9bcf92b3d707ce908e456d016d92",
+      "toolVersion": "1.8.1",
+      "commit": "f85e32bf0ea2f79132d70db99cb181d420b11521",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "minkaixu-confvae-icml21",
+      "present": true,
+      "sha256": "4f07e091da82b49066baa1bda71f6e440fb303ab3431af2a22fa370330e5e8a5",
+      "toolVersion": "1.8.1",
+      "commit": "d1d7469a67c82fc0e5d0d3bf8ce3572376f15a10",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "qcscine-autocas",
+      "present": true,
+      "sha256": "94692c4953d5acd336f33cb9b730faf3e51533bb3ff6dfb339a2c7d01c34c7d1",
+      "toolVersion": "1.8.1",
+      "commit": "52bbd0a0f7d73f451a981763132c6947ff9c702e",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "chhylp123-hifiasm",
+      "present": true,
+      "sha256": "7286e0793afc1570f89cdb08255b8052d926bf7b72b13a4bc084501b8a163bb8",
+      "toolVersion": "1.8.1",
+      "commit": "ec9a8b222d149d25b7355e83765698640d59b189",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "undp-undp-national-carbon-registry",
+      "present": true,
+      "sha256": "a4676d7dac41dbab370d792b4a785397cc003905bc0bf183820b69100b424306",
+      "toolVersion": "1.8.1",
+      "commit": "a4f447b317d2ce4e29abe2b772359502b6400771",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "inviwo-inviwo",
+      "present": true,
+      "sha256": "8118294903e74c7ff2a0f41dacd581bbaed6928cf01253ff2fc5d55c51d5701d",
+      "toolVersion": "1.8.1",
+      "commit": "5bab5267bb6efd66180a80e53835690e1f9b210b",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "dynverse-dyngen",
+      "present": true,
+      "sha256": "4ea8caa63ce4a516744607f3cac0bb57de631055d4d6626c2a724e65f126dd3f",
+      "toolVersion": "1.8.1",
+      "commit": "620b3e8fabf9f6ee50362f9d38fb27eed2725b47",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "euroargodev-osnet",
+      "present": true,
+      "sha256": "ed7e31c2fca3498f3e58adc91a0d6720cdadecf09114af62e000cd386b71de78",
+      "toolVersion": "1.8.1",
+      "commit": "7769ce76f63a42c9c27cef1dabe3598ba57ad083",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "marianattestad-ribbon",
+      "present": true,
+      "sha256": "b16e8059546f76647d59134bbe3a62261cb45489671b164ec61463f35c5e4750",
+      "toolVersion": "1.8.1",
+      "commit": "8ebc77ec3d6f803fe0203cddcdc92446c892c06d",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "luping-liu-pndm",
+      "present": true,
+      "sha256": "ed26f0c8287bc5e0e9993ac7f812e43b1b1442dc90383c130612206eabaafefe",
+      "toolVersion": "1.8.1",
+      "commit": "e771949c344875ebecda46967de68fc86e970569",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "jedarden-gribtract",
+      "present": true,
+      "sha256": "0b6dc547e2ca02592562e0000e5daae43d1c52ce5a4ed24419da5fb93b3cf4ae",
+      "toolVersion": "1.8.1",
+      "commit": "9445b8bc86d9435682dadc44ca9fea3bc0efcb80",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "mlin-genomicsqlite",
+      "present": true,
+      "sha256": "82b76d6d2e159660a946f65ba91bd8cd2590744fcaf4109f734dcf7e6986271d",
+      "toolVersion": "1.8.1",
+      "commit": "eb9bd7b227cab21bbe8950b1b5232c8cc6b1afd3",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "kcieslik-eq-insar",
+      "present": true,
+      "sha256": "e852583d6da901554f1385d707ff29bd064d33409c6f37fd605d966c3e050998",
+      "toolVersion": "1.8.1",
+      "commit": "a7400413b6ac047bc53170a951d9ff6dab5e199e",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "sokrypton-colabfold",
+      "present": true,
+      "sha256": "db0c220f51c7218ed0362b5abe95cd9db2d2adf96ccd45b12760651d606e4934",
+      "toolVersion": "1.8.1",
+      "commit": "efbf31c37cedb38cd09c69c1b991910a9866480e",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "yaniszirem-prism-profiler",
+      "present": true,
+      "sha256": "6f4963b9b42c6abd6b57547d22f20fd1b332faf186ae27522e2cbebba20e3455",
+      "toolVersion": "1.8.1",
+      "commit": "55ab2ac6ce9818108dbb7e3ac178a905f16d07fd",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "t-0hmura-pdb2reaction",
+      "present": true,
+      "sha256": "7b72c894433edaad046e3bbc6ecd0048ed8d7d5b39a8aedeca19a428377ea770",
+      "toolVersion": "1.8.1",
+      "commit": "0b8cc6e82e1d72e2432afed5f5530ce5e7ce55f5",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "dotnet-silk-net",
+      "present": true,
+      "sha256": "e537ca1f2e770bf144a475d9f87c75e022b96e18d3e367dd077ccca73b27653b",
+      "toolVersion": "1.8.1",
+      "commit": "caf5eea6f9ebb2fa84d1f2a2e5280b6bb989a098",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "starlink-starjava",
+      "present": true,
+      "sha256": "649cff40e830c07160c3ccef5879e89549372aa51c1dd75c2efa906bda6a5c2e",
+      "toolVersion": "1.8.1",
+      "commit": "217610a741826f840a59bf3b156f0b591de1cdd4",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "viventriglia-geodesic-light",
+      "present": true,
+      "sha256": "90d45837d657dbebacc50eec2f69ae0c4b40406b1bd00eed8d71e66078177cf9",
+      "toolVersion": "1.8.1",
+      "commit": "f5d9dbdcd82c2da4835f83fd3b04369baa4a0161",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "canlab-canlabcore",
+      "present": true,
+      "sha256": "a31187fb07f8b8cc14eb2b37a05816456ead0b3b6a563a91545656153c2098f9",
+      "toolVersion": "1.8.1",
+      "commit": "5c4f6827d6937c3c16f2dc5f250fd0cc5889568d",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "weech-grib-jl",
+      "present": true,
+      "sha256": "523ee56861f1c2c6db84e4ffcdd813d582b0904d05755fd4d346f016efacd2c5",
+      "toolVersion": "1.8.1",
+      "commit": "098168f74a05251c706f7a64313d5da82c4b82f4",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "cnio-bu-beyondcell",
+      "present": true,
+      "sha256": "c1a0be038430598c32ac9f2860971547ca7785c1b1a29d11ca7625bd94b4039b",
+      "toolVersion": "1.8.1",
+      "commit": "30d986a3353bc8c9d7c57d25d820ef683f1656a9",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "iliailmer-parameterestimation-jl",
+      "present": true,
+      "sha256": "752f0e41ae4baf410b32fbaa115d3933bfc7cc49ea779d64d9aaa0359280c953",
+      "toolVersion": "1.8.1",
+      "commit": "5729a612fc733364a69c9a73f01ff94e2e024645",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "yu-yang-li-starwhisper",
+      "present": true,
+      "sha256": "8f48546de9326d7c72d25611a2ea704a3723bc7a302a91ef1512d2d5aff8b0bc",
+      "toolVersion": "1.8.1",
+      "commit": "e92646c8d3c90e3e478d8103fde2bd315eb1cfe7",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "docotak-gsw-xarray",
+      "present": true,
+      "sha256": "95c681c9e3430d28bd90710c0ff80854932ec2ba98b90f4215ce51c20dc0fc39",
+      "toolVersion": "1.8.1",
+      "commit": "71df00c34b19112af95b388471096950504eb9fe",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "regime-shifts-abrupt",
+      "present": true,
+      "sha256": "649c51b29131f34f7f40035ee129f2d4d1ba3b373e21d43e1ff90038fbc52484",
+      "toolVersion": "1.8.1",
+      "commit": "1c24d9a0941b4e0d0568985f987bac55b5143505",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "pfizer-opensource-e3moldiffusion",
+      "present": true,
+      "sha256": "568e00bcc5121bbc3ba3b8bef4797081aa477d550b0cefdbde9afb7b21f49a9f",
+      "toolVersion": "1.8.1",
+      "commit": "f5e9bb8a77b64c7f318ef7200e73d4eb96927f74",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "expyriment-expyriment",
+      "present": true,
+      "sha256": "84c3e0e9a8772fa463130a869c4cc35282f0be2967b49e51349d56db2e28f1d9",
+      "toolVersion": "1.8.1",
+      "commit": "aceda89c611e84136b069981ef642cf84cb25b52",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "nekitmm-starnet",
+      "present": true,
+      "sha256": "a0370e3c42f25cbc3bd3855580f2d51e6e1aecb7c92dfbfbb2b19e7ee6415a7e",
+      "toolVersion": "1.8.1",
+      "commit": "a6ba2c3612c4f6137dc910448c0bedc9abea0347",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "kmnhan-erlabpy",
+      "present": true,
+      "sha256": "c61a58aa52cc5f1a78bcbbbc8dd67c49b0866ab2930f2662a090a28da5e3c29a",
+      "toolVersion": "1.8.1",
+      "commit": "f6d0859d8d26c3433f9c2b41e30053fa364dda51",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "cwebster2-pymeteo",
+      "present": true,
+      "sha256": "e639301b998b9f9e7a8ed8caa42b86396a1351b4d28e5470a834ff1d8866d62f",
+      "toolVersion": "1.8.1",
+      "commit": "333ac6545c134a95a563c5282a4edb02bc297006",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "theislab-scarches",
+      "present": true,
+      "sha256": "e2c15780d3d00490b180501f375673799dc84831c7b93d10e5ee7007715ca35d",
+      "toolVersion": "1.8.1",
+      "commit": "d35cde61fff4dec6b86660817f4750fa35ff836d",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "glass-dev-glass",
+      "present": true,
+      "sha256": "daf7efa67b75b7cf9603e2fe4eaec2698f5d0547deebe27c5b0128b3ee43c994",
+      "toolVersion": "1.8.1",
+      "commit": "4dfaa50545a9f4a58b604e5221fc87ea68ee929c",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "benlangmead-bowtie",
+      "present": true,
+      "sha256": "323657eaebce7f56c2ef75fd7758fbf6613b1f861c955d0f83b8b6f2087275a6",
+      "toolVersion": "1.8.1",
+      "commit": "86c6d7797228ec808ace59f368979c3019471ec7",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "brewsci-homebrew-bio",
+      "present": true,
+      "sha256": "ad8bb20d138544768542a8ffc718fef1be829762d851998a1889d3d901a41d8c",
+      "toolVersion": "1.8.1",
+      "commit": "5b8223dce0bbbd39ac87ac38783d64e59afcd828",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "tariqdaouda-pygeno",
+      "present": true,
+      "sha256": "cf928188031253d63026c60c1e07ba0fa865fbadda5054f6c856d6fad6581eeb",
+      "toolVersion": "1.8.1",
+      "commit": "6311c9cd94443e05b130d8b4babc24c374a77d7c",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "argonne-lcf-chemgraph",
+      "present": true,
+      "sha256": "e9bae03d7f966fcf555eff54dccba42b4005b3bd98e02082f9a037e60be92ebe",
+      "toolVersion": "1.8.1",
+      "commit": "e890eb37db7b2a64f6618e37f27d4ae12472dca8",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "mph-py-mph",
+      "present": true,
+      "sha256": "5bd11969ed806f61ab35fa99bc193e0f53ca05727fd0807a736cdaefb3a510e4",
+      "toolVersion": "1.8.1",
+      "commit": "30e0cff361d680249bae5c29f7873a29f1639c5d",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "emanuelhuber-rgpr",
+      "present": true,
+      "sha256": "2365c2ff29d04f8d3b36bcd3b3cb4b8bb4d74e336d559eb4348796140e4268cc",
+      "toolVersion": "1.8.1",
+      "commit": "94ff686c8b5931033465a1ab8ee521c1db364895",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "jhuus-hawkears",
+      "present": true,
+      "sha256": "d175664a27e3d15357ed0e3ccfe262fc617a7c0dd7ac64323d1a1983805d86b8",
+      "toolVersion": "1.8.1",
+      "commit": "38b75b4ae0f7055882bbf72b6b0d55c032119abd",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "pyautolabs-pyautolens",
+      "present": true,
+      "sha256": "e19368f650e20454eff7f962d0c520e4fcc858baa2fac66b1d65f7fa375e724b",
+      "toolVersion": "1.8.1",
+      "commit": "33a5bf1c6d0ec6a9f1bad8f7d62f570465afc109",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "qiyunlab-hgtector",
+      "present": true,
+      "sha256": "8391aaa3295431f6515ab1788f2af9320725bf84d47c5b12ad68a8bc157e8aa2",
+      "toolVersion": "1.8.1",
+      "commit": "ea9fa7222fb3b9e44643952c58b462cf4e3a788f",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "hoangsonww-earthquake-r-analysis",
+      "present": true,
+      "sha256": "983cf3f0f4faf1726181b8ebdb9ca546fe20bb48ea2eb4558f83dca2ccb7ea1e",
+      "toolVersion": "1.8.1",
+      "commit": "cb7220f34bb3ace2c2fa252fc48db489e2218d96",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "bluescarni-heyoka-py",
+      "present": true,
+      "sha256": "64c89a1c6ae3714613dc6359845427e43426b2eff177cd6975735556b8694605",
+      "toolVersion": "1.8.1",
+      "commit": "f896ed55538c015ea019cf395c040e24b84c4a8e",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "a-ws-m-unlocknn",
+      "present": true,
+      "sha256": "ab7e2b1710e49410cfbb9e1945fade97a4ba30519105573981ab6e038d4c0e33",
+      "toolVersion": "1.8.1",
+      "commit": "ff2bee7c182f4433e978eeda96bc399a98863a9d",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "astrorama-sourcextractorplusplus",
+      "present": true,
+      "sha256": "bb1d22eb334bd7bd653a6b2fac57320256632e0882c01a653382e188026c0229",
+      "toolVersion": "1.8.1",
+      "commit": "208b0eaa798229db72e65d3972a391d7f7972157",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "vitessce-vitessce-python",
+      "present": true,
+      "sha256": "4da0f687e50b9b9d4330cd981cdba3d296d3f6709213b7abfcc24dc3f15bc148",
+      "toolVersion": "1.8.1",
+      "commit": "1fdcf8a238a5e22cdfad21ef2f679c03154f000c",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "ukhd-np-proteopy",
+      "present": true,
+      "sha256": "de604ba3f3252c95b590566138d85343f9a92de5b0d35566445408dc86aaeff8",
+      "toolVersion": "1.8.1",
+      "commit": "3ab0460b320b61b90fd41033dc8b91314051c5a6",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "adaptiveparticles-libapr",
+      "present": true,
+      "sha256": "9d9fbffd62cc2e196d35ac76962b04f208b23615b6e31f016926666a55f6b25b",
+      "toolVersion": "1.8.1",
+      "commit": "202fed95a798e58b142f59e0372ee69c0cd405ae",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "jrouwe-joltphysics-js",
+      "present": true,
+      "sha256": "ebded261a2062a425b663998c7cea5b17940203d0a41467d348510f78481e7a4",
+      "toolVersion": "1.8.1",
+      "commit": "3e3b5ff0bae3db323395d72fe1ae1ca693dedc17",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "dunni3-flowmol",
+      "present": true,
+      "sha256": "674b088cfde7952c2e7404bee168a4369d2eb7c50b5a2612ce369679c037069d",
+      "toolVersion": "1.8.1",
+      "commit": "77cae22174b7792b0e25e9e0414038420736d841",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "soedinglab-mmseqs2",
+      "present": true,
+      "sha256": "fea4bb7da64abc092d244a764c4ec22a9f5593b2aa1804a11de3556acc60154a",
+      "toolVersion": "1.8.1",
+      "commit": "564f40d8857f4eca4e1dfe100c67c155b1933e70",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "turagalab-decode",
+      "present": true,
+      "sha256": "f766e86657558ee5bd1dcd597bd6dca306d922994bacdbc656e05cc26978ece0",
+      "toolVersion": "1.8.1",
+      "commit": "4c0f38c33681d1c3005bc18bd99a11f46d30f1c1",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "alexisvdb-singlecellhaystack",
+      "present": true,
+      "sha256": "2f19930e46dcd2c349e65a04bcb2114e3a1385d8eff9234a9c25aa17fce65b6f",
+      "toolVersion": "1.8.1",
+      "commit": "652e5d681dd23603b305c13884db050ba7f2a398",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "hmz-03-daspy",
+      "present": true,
+      "sha256": "b46220fcdb276c81be2050bec47e72b3f135f102891895eaa50834bb687224ce",
+      "toolVersion": "1.8.1",
+      "commit": "929a4256cef0adfe57fe8b797cf8c823754c6b8a",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "masfaraud-bmspy",
+      "present": true,
+      "sha256": "17651539ef34fb0d34c78f962e99570fd757012627f6b4b0412b2a243b129b3a",
+      "toolVersion": "1.8.1",
+      "commit": "8830a674184560d56ddceef707b26459e9bfcc7f",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "tmtenbrink-frc",
+      "present": true,
+      "sha256": "5d7cf6b4a9a60a4c3009334189a8957040a4ca7e09e8fe1cb3e284e30b9bfd4e",
+      "toolVersion": "1.8.1",
+      "commit": "4c0d7840ff4200955eba8d849e58ac83b424e188",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "theislab-scgen",
+      "present": true,
+      "sha256": "0eea68d8a1b768ae42d2ce3a3f43d839e62865b2f45669edbc1b40fd81c32b2e",
+      "toolVersion": "1.8.1",
+      "commit": "d79e1f04233c30f9a4eb5b8d57718127909807d7",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "kamanberr-ocean-data-download",
+      "present": true,
+      "sha256": "0b027e8dd1c8a8562ac602a44981b3272e53c1c9a363dd49f95c88b295f2ec94",
+      "toolVersion": "1.8.1",
+      "commit": "a7456a5e2c605172754fe54a7e165a9fc8f93792",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "dreaming381-latios-framework",
+      "present": true,
+      "sha256": "ebef779879193068642a86d2be4c83e717e9f57619f811da73dabbca91a1d2bd",
+      "toolVersion": "1.8.1",
+      "commit": "ae2262afd5c80ac4850fef23c9e7d4a971fabf53",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "dylanwal-chemistry-drawer",
+      "present": true,
+      "sha256": "4fcd1fb654fd2899226162fdfd1a03d669613b9a64849de293043fad362b9c0b",
+      "toolVersion": "1.8.1",
+      "commit": "4fa69eeafa94c4cf2f4aaa0c37c71b6f3f93c3ca",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "zhong-yy-graply",
+      "present": true,
+      "sha256": "caa568a972ab6ae9fe10b2ad74df4b2da1b157a1368ebd68196006cb8b348b34",
+      "toolVersion": "1.8.1",
+      "commit": "dec17c5ee6d4189ff06c594ef3a0c91581acdd3e",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "sanger-pathogens-ariba",
+      "present": true,
+      "sha256": "7353f1eb5d98f517a7b638fb33846040d59a670acac1f429f3f17b4b561ef67b",
+      "toolVersion": "1.8.1",
+      "commit": "71909ed5b068723119e941045d25ed60328e70e7",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "mne-tools-mne-lsl",
+      "present": true,
+      "sha256": "24b416604a061bd33458e42d5eb920f7619ea96988a89174c9abd38a7f644b31",
+      "toolVersion": "1.8.1",
+      "commit": "75ea85d967e449b965706e31e897fc669dad6973",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "cako-kirchmig-jl",
+      "present": true,
+      "sha256": "4fb280fcbcb6025eda0d51e37a975fd4ac12b40c59a8e620ef2037d5e912e553",
+      "toolVersion": "1.8.1",
+      "commit": "6bc65d24cd36ea05a848ddc51093ac07ec5e9035",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "wavespectra-wavespectra",
+      "present": true,
+      "sha256": "923ed8785b900adc84620de46508d7df55923ab4bb2853061faa98b4f85f7d8e",
+      "toolVersion": "1.8.1",
+      "commit": "de30b5573e4547cf51032efbf3d034a68bc99980",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "njdevpro-numerical-recipes",
+      "present": true,
+      "sha256": "9269eb7ab8fb07e2da7d0008fa8e2c88b0ff038b386a426d69f1343c30dc5225",
+      "toolVersion": "1.8.1",
+      "commit": "3e117a8367b52e7ed635f447c9dda7be9ee4e678",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "st-tech-ppf-contact-solver",
+      "present": true,
+      "sha256": "412189c8bd000a2ae805ae1e9d0616612ac0ae111cd1bb3aac0704f7a555e241",
+      "toolVersion": "1.8.1",
+      "commit": "618f85b667b7f211f762908690bc46f65b578ae0",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "delmic-odemis",
+      "present": true,
+      "sha256": "b7a2b49758a55a530949afe3c383c918589e0fec2fa21a71c3a14759d7d0952e",
+      "toolVersion": "1.8.1",
+      "commit": "fdab037696e11789655404430c42da8e8001c053",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "neuralchen-rainnet",
+      "present": true,
+      "sha256": "741f26e0e237db9515a6795e98467ccac984ab2f7d6ad1fb2b6ddfd12377fe50",
+      "toolVersion": "1.8.1",
+      "commit": "e44eb907e5db146c4714d5675e3e7cb22ea9d3f9",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "scitools-tephi",
+      "present": true,
+      "sha256": "27cd0493ad6b34374e14d9b1e914881ce2eaeb24f564ca6c0e1b8a870539ab77",
+      "toolVersion": "1.8.1",
+      "commit": "068c950acd0c741e80838273f61942e6b00bd7b3",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "pressio-shaw",
+      "present": true,
+      "sha256": "5b8f4fd12f5788f9b719b341127b0c521b37de3968c0af6e8e2ae2f0208fa1f0",
+      "toolVersion": "1.8.1",
+      "commit": "66f7ac5d0ffccfbf772c88e0d8387024c69424bc",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "ml-evs-matador",
+      "present": true,
+      "sha256": "14585394950fc680558cf7a8069d9276292bee1b31ea911362e935223373306a",
+      "toolVersion": "1.8.1",
+      "commit": "5c58495c5f8e418c16cc53f6c442bddbbb1e1abf",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "poisotlab-speciesdistributiontoolkit-jl",
+      "present": true,
+      "sha256": "c8cafd0c70eff718a795a61ca38c730df3853502f9228fe7258d5460d2accc78",
+      "toolVersion": "1.8.1",
+      "commit": "1ff65ec91573e12d6eb9d95aaac165a4a1b9b86d",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "ntampellini-prism-pruner",
+      "present": true,
+      "sha256": "14b2e9b0e77917a57e553b000f5580ebbf2667075acf649be86cc393ce32905f",
+      "toolVersion": "1.8.1",
+      "commit": "cc21b05ab229835031806df210fbf02baca1f232",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "protea-earth-carbon-footprint",
+      "present": true,
+      "sha256": "ebc0f3d3a0f83c837f09bf8b9725fa319d2dd9eaf2e75094aaf21d3f3d8d501a",
+      "toolVersion": "1.8.1",
+      "commit": "69d5184237b16660390e90ac587d3637f2e06215",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "wiheto-teneto",
+      "present": true,
+      "sha256": "5f3df178ad98b808cb6fe15f709e73cfbf865f803fe499dbd5a91963ca5056db",
+      "toolVersion": "1.8.1",
+      "commit": "b410273926c2821b462b836b5f39637753db799a",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "pycroscopy-pycroscopy",
+      "present": true,
+      "sha256": "9c47d424be7ff1d341a6886c115d8fef7fd3580785aa1552c5a94a4142cedb98",
+      "toolVersion": "1.8.1",
+      "commit": "90e2d232acc9da634131c1793f082a70a04a3297",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "aradfarahani-seismology",
+      "present": true,
+      "sha256": "e8a597849fac524c727f6b0a42c9fb59cb488656bf8439b44f36bf9f0e99b94d",
+      "toolVersion": "1.8.1",
+      "commit": "424e7871ea7a83bd7121cc66df0d5e5afccb1325",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "psi4-psi4",
+      "present": true,
+      "sha256": "5de6923262181d06502e70cea4751bfcf850eb7277abc045e9ee90c917f5440f",
+      "toolVersion": "1.8.1",
+      "commit": "66507f43f5c324bcf595be35f6d4f49773804103",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "noaa-gfdl-fms",
+      "present": true,
+      "sha256": "261c20ac525e02f1a502f8184caa95a4b2db87898d728a937d20b3570b2daf11",
+      "toolVersion": "1.8.1",
+      "commit": "6534c3e4c6e42480ddaaeec7fd08b712863401d4",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "plant99-felicette",
+      "present": true,
+      "sha256": "182c0dddcffc6f32e709121a9a763cfa110080c60d198a3ea854fe492541bee3",
+      "toolVersion": "1.8.1",
+      "commit": "61aadea0703d217920021c199c924818cb96372d",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "mortazavilab-pywgcna",
+      "present": true,
+      "sha256": "56e547aa3c7058c21c334849b83d2ebd62b56f16f9d4c162810b816553627919",
+      "toolVersion": "1.8.1",
+      "commit": "f1d470e7c0ba33eec17afae76ab6b1e04af1a52e",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "simon-sat-pycoxmunk",
+      "present": true,
+      "sha256": "046b147ffc1605244a21abd1f59bb172f1bf662f7d584402ee3b36a997ef96d0",
+      "toolVersion": "1.8.1",
+      "commit": "87f9e79d08612cdaab9703ed1a460525464af5ff",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "dswah-pygam",
+      "present": true,
+      "sha256": "0bdea68a6a275f297f04dff5064860fea74e43e809269e8d233a676c29d27059",
+      "toolVersion": "1.8.1",
+      "commit": "b6a48ab5d1ef7df07ce2a34bbe572bca75e83e7d",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "oceanstreamio-oceanstream",
+      "present": true,
+      "sha256": "898ac9ec56a9b3eef762f3837fe77eb9eaac46f2046b732aa1090c2bd30865b6",
+      "toolVersion": "1.8.1",
+      "commit": "8494fd1ef322326da6f1274d65a5429e4a5d8f23",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "baderlab-scclustviz",
+      "present": true,
+      "sha256": "f390287be86d215eca217ee1f0a237ddd09b31315066356132c67b8fbd9f90a4",
+      "toolVersion": "1.8.1",
+      "commit": "6707c89589c1793ebb7e042d40ce80331e96fe6e",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "tkanx-bio-forge",
+      "present": true,
+      "sha256": "3fed5388f511c79c73f2fbe3fa85f0a883a67a3925c8ff4f07bca4c8d0ef1711",
+      "toolVersion": "1.8.1",
+      "commit": "11dda7ab079c1da109592e057fe467969aac8b03",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "open-reaction-database-ord-data",
+      "present": true,
+      "sha256": "dc0dbd0e1f969991369bc095d1a415084090a983ed6974a0ef4019ed3f60346a",
+      "toolVersion": "1.8.1",
+      "commit": "83f971f586f6ad18f358ae4ae99d045e94ed2066",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "fernando-aristizabal-gval",
+      "present": true,
+      "sha256": "4f6593183d94c8a5b1f8bb97b71796a369599d14517c63c596f0538077ee49a1",
+      "toolVersion": "1.8.1",
+      "commit": "fd32fc8303386feab406177b6306da1c622821c5",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "verisimilitudex-dnanalyzer",
+      "present": true,
+      "sha256": "2d495df79493a111f64a6f6269a52453c408947ed6bc2b6c423b2fc50d9d5578",
+      "toolVersion": "1.8.1",
+      "commit": "d5e85549d7b0be26ad7acc6bddd9623993205867",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "pygae-galgebra",
+      "present": true,
+      "sha256": "7b96f7a0963a4f5e43222a9de2bf71415ebadb4e72f74800ce7b117f3ceefbb3",
+      "toolVersion": "1.8.1",
+      "commit": "d160238c6ddbedce676e633d69840fdaab83ab86",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "swharden-pyabf",
+      "present": true,
+      "sha256": "e9969bf402c4de62eaefcff30e2d004af666646b349b4a36861b947fa866e990",
+      "toolVersion": "1.8.1",
+      "commit": "3ad9cd6f2cdfe79bc1978736ab46314866ca1c4c",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "geoschem-gchp",
+      "present": true,
+      "sha256": "0e51a706a04604b3d85b0c1ede16ba75fdc5b7bd25fd0e31f1ca5f9d260b705d",
+      "toolVersion": "1.8.1",
+      "commit": "e449fcc5757087049a13935eb7ae2b6dfd7c0426",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "bio-phys-mdbenchmark",
+      "present": true,
+      "sha256": "533709dad6e9ea4811dcd1014d771760df97a738d96dd888334c4a31308fa89a",
+      "toolVersion": "1.8.1",
+      "commit": "58dca5891cbf986d2e13de95c2b46a4d13505c02",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "vgteam-vg",
+      "present": true,
+      "sha256": "6f8fc1275d70995addd330409eccb2286a71302444137002d18b16f929dd6a20",
+      "toolVersion": "1.8.1",
+      "commit": "ce79f1283b2eaee639d2d50ccc92f17c9cda17b9",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "rformassspectrometry-mscoreutils",
+      "present": true,
+      "sha256": "7736f3585a0617b6f9f337949f7d50026d5d39384dfa51da36fc6193241470a0",
+      "toolVersion": "1.8.1",
+      "commit": "5fef3519649ee7ffd80e2ae23a95165fc8cb338a",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "jenndrei-bayhunter",
+      "present": true,
+      "sha256": "f51b857bc6e39057c67d8047633f82412a8d21c8fbef8a64b29e35cc995cc807",
+      "toolVersion": "1.8.1",
+      "commit": "af06830c266fb9790e4c4c59503c08aed2cf8023",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "nicholasjclark-portal-var",
+      "present": true,
+      "sha256": "ca3d645a248ee41604075c9e4ac4d8f54ba0c7b73b2299c574e9af5eb2dc28c0",
+      "toolVersion": "1.8.1",
+      "commit": "3a95de89431068080025c46e02be14043ad33c08",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "changwn-scfea",
+      "present": true,
+      "sha256": "baa64aafe419eba86708bc01e84c6ddb3a40ce8e2a76f74fa7b724ca352382b9",
+      "toolVersion": "1.8.1",
+      "commit": "4c1fb76d52f07bafad84ce7686ad7c3acfcf0126",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "materialyzeai-matpes",
+      "present": true,
+      "sha256": "db98c610e612c4a97d08b34808e2550ff0c347c0651083aa06ad975a2d09b2ec",
+      "toolVersion": "1.8.1",
+      "commit": "9e6003d97a8dd445f5288cc6e388433628ff2e44",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "goekelab-xpore",
+      "present": true,
+      "sha256": "2bfd1c45c2ef0118e2091cb94450ebbf59e2cc7f93c1f8a3d87a34d2e4de55fd",
+      "toolVersion": "1.8.1",
+      "commit": "4271d678cad2a4286a6db05815d16c63ee798c5b",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "brentp-goleft",
+      "present": true,
+      "sha256": "e4032556eaef97caf2a658bb6b575a74677e9f0af5586863479b3cf27322a70b",
+      "toolVersion": "1.8.1",
+      "commit": "c9e31f24128573215cae619a74589cfcd7fc3c10",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "pymmcore-plus-useq-schema",
+      "present": true,
+      "sha256": "7f1642b30eac4657c96ced87e7f7c2bd4690da81a540290db4e4960a58c54cf1",
+      "toolVersion": "1.8.1",
+      "commit": "8e44aa21c04f32641e16a2a52c35ac186e5cfd2e",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "owlbarn-owl",
+      "present": true,
+      "sha256": "6c58488f0df496473e413c17979b18a762c6f3384041f807649f2bad89a1b81d",
+      "toolVersion": "1.8.1",
+      "commit": "67d7fe99d239b1db1a2f1017371ca89a493f218a",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "nu-cucis-elemnet",
+      "present": true,
+      "sha256": "aac35845e284ac3fc624ba2612f66ba8424fe7c7a3de5958fe90614153323afb",
+      "toolVersion": "1.8.1",
+      "commit": "45b801ea87d1002a20d7e2b614e77de5b4d6ab35",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "koushikphy-interactive-data-editor",
+      "present": true,
+      "sha256": "500d5b2a5e807fb663f7e6ce7b0be722f12935628992372d8c2e6ee533a5ccb1",
+      "toolVersion": "1.8.1",
+      "commit": "ecc12e6aac8c902723b94ca071d4699340b7b7ba",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "gvoulgaris0-waveric",
+      "present": true,
+      "sha256": "6a3e2b8310d9ff266997ffad9f7a07d4d38c956aeb047e65b5211b5f7e089a14",
+      "toolVersion": "1.8.1",
+      "commit": "f3f15bf009818f2d30a0c301c6a9c6038c1c438f",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "sappelhoff-pyprep",
+      "present": true,
+      "sha256": "3931d316fde996434d5b3e15d3ef1d2866bfef6c8b240726db3ea99782bee6d2",
+      "toolVersion": "1.8.1",
+      "commit": "dc018ad5b7d5c37740a58914e269f8996ec6eb6e",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "mommermi-photometrypipeline",
+      "present": true,
+      "sha256": "875d90e85ca7266b3660c2b1b78e373c179e9a10742f7f92745e090442c92c0a",
+      "toolVersion": "1.8.1",
+      "commit": "dbc60478f1449fa5a5354b6ebcb6513bab66cab1",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "smtg-bham-doped",
+      "present": true,
+      "sha256": "7fb93bea20e2c3f2f0a8230629db464ef61972b56cf50f0a496646198a1d8ed6",
+      "toolVersion": "1.8.1",
+      "commit": "9f08c3e18e7326b4973402e41bdc97cfdd11b31e",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "stemangiola-tidyseurat",
+      "present": true,
+      "sha256": "ad6f1885b97ab3fd9d32bce0d4d895d02a707862c901a821e0824b7cc4949c38",
+      "toolVersion": "1.8.1",
+      "commit": "5a96f9573251c550b60c208b53a7707863c311c3",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "openbiosim-biosimspace",
+      "present": true,
+      "sha256": "68db67a1cb0231279fa7393a19c71a05fc60b86c561dd1a5f6d9b98edbcc0b11",
+      "toolVersion": "1.8.1",
+      "commit": "bd364ec0283c0135bffc04634c4e7e305f4eadf1",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "tlambert03-pycudasirecon",
+      "present": true,
+      "sha256": "c0bd3165308e1702aa7d3a2854fa80f3c949e6dc98e8cd53f1e18ea0d84bef52",
+      "toolVersion": "1.8.1",
+      "commit": "d393d25f215765059cbd11da7794d4eacd27c3b1",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "llnl-sundials",
+      "present": true,
+      "sha256": "02f124a6fc939376b7f3851c89d3ab8e4bd4f3485c22355fa95f82285f0142fa",
+      "toolVersion": "1.8.1",
+      "commit": "312fc0f3684f27209ca9dc9249d194436eb41a7a",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "a-new-bellhope-bellhopcuda",
+      "present": true,
+      "sha256": "2e2bc0d80f7a0e8668919600cd49a128c0d1e6f4025c851d8419580aeebce90e",
+      "toolVersion": "1.8.1",
+      "commit": "d28b2173c51281905963ccd6612c36015da4b623",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "apiad-tesserax",
+      "present": true,
+      "sha256": "1393b62d880b42ffaef5aadafe2fe2862cae54c1645e84b39a82bf34071de5b7",
+      "toolVersion": "1.8.1",
+      "commit": "e4f3adbcac137cf36d8734ef2a05ec4df2eaafdf",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "maroba-findiff",
+      "present": true,
+      "sha256": "7661ec21f5c7490cfc1169351a1597abb24d09d2a4310dd4d36f9a137aa0acdb",
+      "toolVersion": "1.8.1",
+      "commit": "6ed90aa8a4433376c3ea7004bc775dd08e0cef70",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "halleewong-scribbleprompt",
+      "present": true,
+      "sha256": "706b0d183c53acd1031e0489965fcfbd7594aefed0b0b0fb3ebff3a23f7c069b",
+      "toolVersion": "1.8.1",
+      "commit": "182c44975f77749b559974ce8db558c8bde57788",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "boyle-lab-blacklist",
+      "present": true,
+      "sha256": "0d7d54436df9765c1bd3442267151633e9b34b7ca1ca63ce3316a616ccda471a",
+      "toolVersion": "1.8.1",
+      "commit": "61a04d2c5e49341d76735d485c61f0d1177d08a8",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "combine-lab-alevin-fry",
+      "present": true,
+      "sha256": "dfe2fc495b2dea815cac6daef16488d5352a011baa170f18ffb18877c96e39fb",
+      "toolVersion": "1.8.1",
+      "commit": "ad05742d274230f9141b2eabeebd1c1b31692199",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "pmocz-pic-python",
+      "present": true,
+      "sha256": "c635ab4e3e5588cc0c7e9426a812c3c16ae4e2a71ab76a7947ccb23f60b1478c",
+      "toolVersion": "1.8.1",
+      "commit": "5a9bf93b5fb5dfbd58e069411fce33fb61fa730f",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "mesoscale-mmsp",
+      "present": true,
+      "sha256": "ff27aff1b95f23ac2763c011f1e3f848486bc43fb95728b54852626be72cd6b2",
+      "toolVersion": "1.8.1",
+      "commit": "27ea5f7a2d39bc551b20d75ab85b61f26ef36c66",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "ezygeo-ai-mlgi",
+      "present": true,
+      "sha256": "378225aaf9c2454e0e0e867f99ecb10328c038857b493ddf3435fbdbce973683",
+      "toolVersion": "1.8.1",
+      "commit": "d37b32d572faf875d3d0bc5c991f6f80490bddcc",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "spglib-moyo",
+      "present": true,
+      "sha256": "d270f0d316c98407f324112ccf245d9f57c526cb08f79a4d8c9cefdf5daf6a4a",
+      "toolVersion": "1.8.1",
+      "commit": "c4c6ea22193121ad20cd388037694c03a31a3025",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "zfergus-finite-diff",
+      "present": true,
+      "sha256": "33377f893c82461750cbf62b1d71672bfa14b116d2cd9cc38155f12f9a96f2dd",
+      "toolVersion": "1.8.1",
+      "commit": "50ec7115ef6e86099800a5385115fc4444b5c015",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "wavespectra-diwasp-python",
+      "present": true,
+      "sha256": "72e2e6ba8df9bcf85c4371897febde2d6f00b8bc58ed3ee55f70f97d24f3e7ac",
+      "toolVersion": "1.8.1",
+      "commit": "c9b1c9934444a269c772427b34a493a658a9382d",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "google-research-sofima",
+      "present": true,
+      "sha256": "e623f301f821975a11474f5499d5e92d80ea8da0fc41a4902e2aa29696dfaee9",
+      "toolVersion": "1.8.1",
+      "commit": "c8b5e254a9b031a9c00f3d399e47bafda3c96a22",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "microsoft-biodiversity",
+      "present": true,
+      "sha256": "7be847fcced272099579173e01e3e34f4a1de812340fc36ac2accbfa5620a999",
+      "toolVersion": "1.8.1",
+      "commit": "d3e0a0697167bb859a6f1c97b2e81344ff86c28a",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "bareboat-necessities-bbn-wave-period-esp32",
+      "present": true,
+      "sha256": "c93e5441edd5ed5706330b1aa63ed6cfe59471db4c700821542ac1b3476d9b36",
+      "toolVersion": "1.8.1",
+      "commit": "2db962c5ecefc160cd05c369264dd0e8778289f9",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "kylejgillett-sounderpy",
+      "present": true,
+      "sha256": "d78d0ad1a9cd8b11ba13c3a98b72dfc807c81a419183a0a7c14b0f9e5871e99d",
+      "toolVersion": "1.8.1",
+      "commit": "b7b5223b4db8b3aac64310b0115908b6227e983d",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "cytomining-cytominer",
+      "present": true,
+      "sha256": "a014e7419a6ab954d11b5c5af2227402056fee76702417f74eacb18f125b5179",
+      "toolVersion": "1.8.1",
+      "commit": "d911eb5bc152e0fc8e382ee0492356fd939d2488",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "sysbiochalmers-gecko",
+      "present": true,
+      "sha256": "9306784940bbd20f5bc9789f45ce6ec7777a37d907f58d0699b599b76abc1013",
+      "toolVersion": "1.8.1",
+      "commit": "c5b114b08afe5c1144abe50aafddea46e276651f",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "atlasoflivingaustralia-ala-labs",
+      "present": true,
+      "sha256": "4826b721982659edbce1a91a3376f8a411c723f3119d2edddb9f13f7089527e3",
+      "toolVersion": "1.8.1",
+      "commit": "b82a91e60dca27974f0898517af1094351bc943f",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "rougier-matplotlib-3d",
+      "present": true,
+      "sha256": "b4bd89cc58e774c347c735d380c5646367f8c134c3cdec262d3571de2ce466a4",
+      "toolVersion": "1.8.1",
+      "commit": "5e79358cf1d3baec17674a0651de0a8571df5831",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "polymathorg-polymath",
+      "present": true,
+      "sha256": "ec55b5a62a84c59457f098552991cbfd882509af72b35c8b25681e55ea62ed47",
+      "toolVersion": "1.8.1",
+      "commit": "181bdf147d006f17852820daf8b5f114945b5ca3",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "natashabatalha-pandexo",
+      "present": true,
+      "sha256": "e666266c90da8a7077da5232b60486be37b50e55946538a97bda5b4d5adc4c6f",
+      "toolVersion": "1.8.1",
+      "commit": "ff50d58c8fc872e7fec8484d5e1b009255361691",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "iuryt-ocean-gyre-tank",
+      "present": true,
+      "sha256": "6d5773fa7fbbf8eb3f3c2dead09296f64b83343506b49f448df9a5308570d1dd",
+      "toolVersion": "1.8.1",
+      "commit": "84c05d4f98a7a22dbd244b3e5381798a0b7677ac",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "dr-mod-little-sun-gazer",
+      "present": true,
+      "sha256": "512944f1f60bef21de3f742d6230293a93b0da1487e58696822da138dd561ee6",
+      "toolVersion": "1.8.1",
+      "commit": "dccf9730d59c06939353a15889bf56a53ffb7aaa",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "datalab-org-datalab",
+      "present": true,
+      "sha256": "34c6da6fb74a67f057e4a24fea74a825b94d8eb47955f259b01d76330a523888",
+      "toolVersion": "1.8.1",
+      "commit": "306d3504b622cf4af7b5dc021cb090503c26ebe5",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "bimsbbioinfo-ikarus",
+      "present": true,
+      "sha256": "6cd7683fc0e5e26ab7ad1fcc50c663e16aadb3c074345552e91cc0aeb7c99646",
+      "toolVersion": "1.8.1",
+      "commit": "07ffba7c7cb7dfacd697ea18b43f3de077b34c96",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "razvandu-duck-net",
+      "present": true,
+      "sha256": "bad774382ee7d4eb8410d58f4b6e96ecaa1c31f5410b4494327db878a1c6d527",
+      "toolVersion": "1.8.1",
+      "commit": "7cc6517332ec291766c89e04fbb489b6dad206b9",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "arda-guler-orbitsim3d",
+      "present": true,
+      "sha256": "a30248ac013c6feadc0803a0dbd616d826799a307d8114e45853785773a1af9e",
+      "toolVersion": "1.8.1",
+      "commit": "48577726d4ff979d5c97c379f6bb652087808339",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "mdshw5-pyfaidx",
+      "present": true,
+      "sha256": "b45bdce13ceb7446bac328c3f047dd1339264295918d0cbe045e80c628d660a0",
+      "toolVersion": "1.8.1",
+      "commit": "3e7131240b4f826fe77fff9eda58e5e8ae95d90b",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "bill-gray-find-orb",
+      "present": true,
+      "sha256": "faa34af43ce4eaa72e047a086046c8c44784f65232b3b0f9cfb397f4f8610b26",
+      "toolVersion": "1.8.1",
+      "commit": "d12165aa428c10c5d2ea7a229f9c4197df873ee6",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "jinghuazhao-inf",
+      "present": true,
+      "sha256": "dc9d101ff08ee9341b07f530d4644365d450e3ddd4b313e616e710144a54673a",
+      "toolVersion": "1.8.1",
+      "commit": "6216cc1c046c9a01deffa1e05c72558afb6e28f7",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "brentp-hts-nim",
+      "present": true,
+      "sha256": "05fd64f8683bc6c70333cdb2a25c429d8932e5208e393151ccebd159ff572323",
+      "toolVersion": "1.8.1",
+      "commit": "50b64d8843f20326d113c1ef1f29dc773f32915b",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "franciscoadasme-chem-cr",
+      "present": true,
+      "sha256": "842e187b439a66ccadf53ea8872285549b7dd11793baaa4ede94910e302fc277",
+      "toolVersion": "1.8.1",
+      "commit": "b3fca915c8816bbad08f25f22cc06f3a6c0dd49c",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "lh3-seqtk",
+      "present": true,
+      "sha256": "07e28e84c7b048d9cf584b4c26696cac8806d404a461c3950c5255bf0401254a",
+      "toolVersion": "1.8.1",
+      "commit": "94e707082d39b0a038f234df676e32d9802c0dc7",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "osu-nlp-group-llm4chem",
+      "present": true,
+      "sha256": "69225ec590bb292215e8e1289a303820d1869981fbddf61c8bb3af893c716f2c",
+      "toolVersion": "1.8.1",
+      "commit": "43ab5fccd14514ddf756534d18a6917e7e11d0ae",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "bartromgens-climatemaps",
+      "present": true,
+      "sha256": "93dd25d6daafd86e2ec07deddba26b37667959045340c843cde2f5a726ffd8c8",
+      "toolVersion": "1.8.1",
+      "commit": "60de52f14072384b7bd40456472266eeb3f33c2d",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "jguhlin-minimap2-rs",
+      "present": true,
+      "sha256": "0a2cbc61eb17438b51101ea27b4ecf9399661c86ab9b3c74541f7395b9c4d48c",
+      "toolVersion": "1.8.1",
+      "commit": "b3f11e4e303658b1ac8ce7abd1c3c7e0d9af6ae9",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "eleanorlutz-topography-atlas-of-space",
+      "present": true,
+      "sha256": "a8e1ef2b29645b576a94b1d1f8706a757d407fef9413f984eca61075d0471459",
+      "toolVersion": "1.8.1",
+      "commit": "17383b391bf2a982689ca1d1bd41cc914fd4c8ed",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "rcastelo-gsva",
+      "present": true,
+      "sha256": "8397c6156e6491f071325bfff87a81167bfd645fc5eb30c7cd9dbcd77e028f5f",
+      "toolVersion": "1.8.1",
+      "commit": "62670afe11aee1c2d1478c4f6b4ff52c35d8af83",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "looselab-readfish",
+      "present": true,
+      "sha256": "3526d7199e8460495b874ca24fef7d6382ff56386720fbe9a2bb84b2fc43dfd0",
+      "toolVersion": "1.8.1",
+      "commit": "5f8a95ceb0d76b7b771dd129b6b5479553824d20",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "zushah-wasmgpu",
+      "present": true,
+      "sha256": "f6fc681fab55e57cb899f438f5b8ca0e80d9a7de50f84e2a3618404b97fb52c2",
+      "toolVersion": "1.8.1",
+      "commit": "381f5dc905546746a1888cd7c0a5c9ee1e03e490",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "paternogbc-sensiphy",
+      "present": true,
+      "sha256": "ca7013ab3cfcfabe32964dcab1baa236a681d652beca4f2df53011dcf8b11c42",
+      "toolVersion": "1.8.1",
+      "commit": "e20b0003f9b9d8c98786afc6772f83f16f5d7c07",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "akcarsten-fmri-data-analysis",
+      "present": true,
+      "sha256": "377bc0e00cd4ad48f0b6d0394cc05f300f71b65b8cdc838f4100597b95db9ceb",
+      "toolVersion": "1.8.1",
+      "commit": "ada1d53d2bb1082ddaf3e0a9c8a9c5cc9fb5bc9a",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "aaitorg-napari-dinosim",
+      "present": true,
+      "sha256": "fdcbd3f08219e25a35fa7c29792c924f92dc6559bb5dbfd60f7b5f71bc4ea059",
+      "toolVersion": "1.8.1",
+      "commit": "3958ef0608f6ceaf3ee9ae8a12d93dd316c2252b",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "ivmartel-dwv-react",
+      "present": true,
+      "sha256": "2af9919b8f4e9e160fc0f46bf16ffb33609e11ec240fe6d92f31f444f3984064",
+      "toolVersion": "1.8.1",
+      "commit": "8d90c8d2f4ab3469a039e371ff3ed7e9531b638d",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "gao-lab-cell-blast",
+      "present": true,
+      "sha256": "ba280598dd7eda91495bbf3f6d31f6cfd811a18aeb8834d4130198d957387c19",
+      "toolVersion": "1.8.1",
+      "commit": "3a9cf2402a7dace62cfa2c4e32c77d6af4b77f2f",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "mobinasri-flagger",
+      "present": true,
+      "sha256": "19a764737acf02cf1ce68ebcd1a81acfcf1b8d2e5172eab358d1d78535b5a1f1",
+      "toolVersion": "1.8.1",
+      "commit": "f30ff97a5539538b721608653c8d2794dc9d138f",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "deepchem-deepchem",
+      "present": true,
+      "sha256": "ac521e936028967fc58e495645e7f3f2c1a68f821ca9574c7543a9f6e4478254",
+      "toolVersion": "1.8.1",
+      "commit": "455d07f3e17e880a4d980b5b0365e4a02b417e14",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "openchemistry-avogadroapp",
+      "present": true,
+      "sha256": "ef6cfb32bde1a3ef5c253257f395a39335d3021b6d6c5a19902713f1c6075762",
+      "toolVersion": "1.8.1",
+      "commit": "42aabccc4461f015873f2598673df1a79cf49381",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "asif-iqbal-bhatti-high-entropy-alloys",
+      "present": true,
+      "sha256": "2e62ddba149483057c6db8c03defbde669ec14124422693dd58e2c695098c11f",
+      "toolVersion": "1.8.1",
+      "commit": "e751e4cbc4be63fa61fe50a325ed7a01e4e6dbdc",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "aazuspan-wxee",
+      "present": true,
+      "sha256": "d3346a8eb9f8a415f9cbd2a3460a13cfb6135cb9b3c39fa8440314e13fe8347d",
+      "toolVersion": "1.8.1",
+      "commit": "33b79185953e9fc64ad5508f66137992620afec4",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "climateconnect-climatehub",
+      "present": true,
+      "sha256": "aba6ecc35cd1d6eff2e44c1450dacaa11c953d5bc970273d1425af764b17914c",
+      "toolVersion": "1.8.1",
+      "commit": "3bf1a77a047ad1c9c34fab6962febd1fbb78b520",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "duncanwp-esem",
+      "present": true,
+      "sha256": "33a80ef10ccffb7e723eaa2da4b7de49f43dfc051ef562945a05965af25ea09c",
+      "toolVersion": "1.8.1",
+      "commit": "ed2660fbeb74b18c71a13da58b404559bb784545",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "cboettig-neonstore",
+      "present": true,
+      "sha256": "d16eba87ef77db801f38ccef0276e63b0b3552b580cf6f6e15ac3b6922331b88",
+      "toolVersion": "1.8.1",
+      "commit": "a4313e42b4f4c91dfdf83a3048ccb7a151b9c0f2",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "zhouzilu-dendro",
+      "present": true,
+      "sha256": "67e973a04f6c5c7fe1a270d7f4637705a8500952f75ef67a442393af87a9d6c5",
+      "toolVersion": "1.8.1",
+      "commit": "a9134a8e7c992143f96de9fd804e5eb9c95f8d49",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "nf-core-scdownstream",
+      "present": true,
+      "sha256": "24b249f65c8b9aef666ca14645ff85c0e64f20435a1ed17a57909e58bb6bd58c",
+      "toolVersion": "1.8.1",
+      "commit": "3c2644ccdbedf1b558900c5c48002625aff4589c",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "kmolan-multicalc-rust",
+      "present": true,
+      "sha256": "137bd113da618a597520b7dc1e5956f11ae1559345325716511d227856683873",
+      "toolVersion": "1.8.1",
+      "commit": "a33031df56b0f096abf4ed65f12977bc1c01bf8b",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "olivettigroup-materials-synthesis-generative-models",
+      "present": true,
+      "sha256": "5dd462df52aa7643d989588991a9e5dd2f0725c7fb58651a75677a678f6e5fe3",
+      "toolVersion": "1.8.1",
+      "commit": "cb11cded2af62f5b2154174a5831fd40d298647e",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "mne-tools-mne-python",
+      "present": true,
+      "sha256": "5e9258947ce04652ed023deacb9121bf4413ebe0ef65c5575815bb1934836164",
+      "toolVersion": "1.8.1",
+      "commit": "995ee6255b04e45eba4e196fe95957d93539ee95",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "nesvilab-fragpipe",
+      "present": true,
+      "sha256": "643376d887525dfa5d2c5c7f7b6a8aeb2f8c2373a295726055253b68f8b92a52",
+      "toolVersion": "1.8.1",
+      "commit": "1b8dd3c8e51080647c473e8d89d619ce100e716a",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "steveberardi-starplot",
+      "present": true,
+      "sha256": "dbb6a28f6f2566d745b740dc6538996df4909c0cdc28b83992ece031b2d714b1",
+      "toolVersion": "1.8.1",
+      "commit": "436a0166fddb62ae84686d5a8c891e69d52ba226",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "curiosit-ifcjsonlcabygparser",
+      "present": true,
+      "sha256": "c1afaa3401dc8d13942023bfc2400f6a64c00b1251b3647d503d281833b1e46b",
+      "toolVersion": "1.8.1",
+      "commit": "aedfd3228d464cc1d63856470d1f50f4cbc03dbb",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "simpeg-discretize",
+      "present": true,
+      "sha256": "615829e30e80c4fa4589da0c6fcc90a680ca1540e87bc9ae6e5cb314f7e8c260",
+      "toolVersion": "1.8.1",
+      "commit": "30d85318af82a9377df14f80afa12dcef4b202cf",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "vibbits-nis2pyr",
+      "present": true,
+      "sha256": "8be59a312d7fe074451965784274123d868bb6358c815c5634a3d0497f1f920b",
+      "toolVersion": "1.8.1",
+      "commit": "4d4cac0dbf7240af8b0a5106f86900410a510c64",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "ecoisilva-movedesign",
+      "present": true,
+      "sha256": "09a3677c32c1b750c294847d4ce32cc65eb0c02a71f2a9c2b1d67b849a9ce399",
+      "toolVersion": "1.8.1",
+      "commit": "2c42fdc73a3e7caeacd3cb4e828fb4b0729daaa9",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "marcelm-cutadapt",
+      "present": true,
+      "sha256": "ddfb6ba4f469e71c321955f1889d5e1a9d52fcf7d26ec9d8f1a9c82419e3c11e",
+      "toolVersion": "1.8.1",
+      "commit": "4927632f7c546dd290c53501c8417f909252befe",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "birch-san-box2d-wasm",
+      "present": true,
+      "sha256": "39f1a4d5a0b4493f181bc177a15be04eeba45aa79dc8e0639cb0dedaed0b1052",
+      "toolVersion": "1.8.1",
+      "commit": "826c74e652fcbdd2e320f65d650913caec554e4c",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "gabriel-ing-simplipytem",
+      "present": true,
+      "sha256": "0d38f32e56e7d8995396f057ab23186a3c7fbd61743e832364bde59f7ed6ce05",
+      "toolVersion": "1.8.1",
+      "commit": "a93f9f18e422c7f284696a874e9c1cff1820df01",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "mheriyanto-mh2dgrav",
+      "present": true,
+      "sha256": "75263650d7dc53efd5d6a6cd2df988869651eb13369fd835d94eebad5d0de0f3",
+      "toolVersion": "1.8.1",
+      "commit": "e706d8189d9596d0ebd9b07b53d4025425a76333",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "nilsmagnus-grib",
+      "present": true,
+      "sha256": "623a1488bcf30d5231d22e91d49897d0013d829777dd1c0ec80b0a7392c12fd5",
+      "toolVersion": "1.8.1",
+      "commit": "3ba2bfddbd358429dac08975e8044fe5a616892e",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "ncfrey-pytopomat",
+      "present": true,
+      "sha256": "d192c92960933aaf301f6496a2196035948bfb855254d84d962cf8a1178cf7ea",
+      "toolVersion": "1.8.1",
+      "commit": "30c6e7ac3c068ee6936d73a1b139c377c58f2de1",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "lemonspurple-diy-scanning-tunneling-microscope",
+      "present": true,
+      "sha256": "a7f1a5d61b8cda188ab791a3ca33f22d731c48cde07ebac8fc5b9f004198746e",
+      "toolVersion": "1.8.1",
+      "commit": "fcca81cf2a2466ecda4dd8757e602a8a7baa041d",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "jdiaz97-iucnredlist-jl",
+      "present": true,
+      "sha256": "2cbbe6a986a9741a784fa4021f95c2a854be85abf156b07e091695046dab7c73",
+      "toolVersion": "1.8.1",
+      "commit": "54fb181d8ce56fd7f024d9f2eafa096ff92d5bae",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "wallace-dyfq-cfd-julia-12-steps-o-navier-stokes-equations",
+      "present": true,
+      "sha256": "2c4f54ee807da9fa4af1034ab9f048ba9915dfa98b6d9b30ffb661a5dd1c868c",
+      "toolVersion": "1.8.1",
+      "commit": "ab9229f22178b29e85a38f8fb02d0b4678b53129",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "dr-li-fei-wftem3d",
+      "present": true,
+      "sha256": "0100b086acff38a1a8e4340a5bcfd0b10e3640ff11185f106621925b14567ea2",
+      "toolVersion": "1.8.1",
+      "commit": "0a077eb19722d4be92d173c56767167e596e00c6",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "pasteurlabs-tesseract-core",
+      "present": true,
+      "sha256": "63a09b229c79e23df369a9ec62406c6345b0f5b5bb07c8439f970b8c0e83bbed",
+      "toolVersion": "1.8.1",
+      "commit": "314daa43291fb752f6ef23bfe0d298b93313bc9b",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "nasa-exominer",
+      "present": true,
+      "sha256": "dfca265673b53a21bb7970b769323c0105e509375eceab63f9c97ce9cfbd3580",
+      "toolVersion": "1.8.1",
+      "commit": "f0b831906a1d7ed6b7a72a1c960d81567e5e8741",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "hyperledger-labs-blockchain-carbon-accounting",
+      "present": true,
+      "sha256": "7abd4149bea3bdab1b913f2293eda83787e4259724ee01343153173ecba908d9",
+      "toolVersion": "1.8.1",
+      "commit": "a53185cf7a2f0956e108a7b875142e86106e61c9",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "djpugh-mtfit",
+      "present": true,
+      "sha256": "71861a7e54d10f694ec803a460420f1cddf708b44e7061e25ab7cd74a2a2a4c3",
+      "toolVersion": "1.8.1",
+      "commit": "4aebc0b670e14f4ba73a627893cb024aaaca87d7",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "negrinho-sane-tikz",
+      "present": true,
+      "sha256": "2cc025996d5f3361ea48cfee353121c0f7a2317402564d8ed7d8368604c49c19",
+      "toolVersion": "1.8.1",
+      "commit": "fd6f291d9815613594d724678cb91ac9d412fbb7",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "snijderlab-annotator",
+      "present": true,
+      "sha256": "4c619f0dc4003305012ce826e943b82087692782c181fbbb959159211605b4c9",
+      "toolVersion": "1.8.1",
+      "commit": "a35261fc77ba2e34f28107a937b714f4347e721d",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "milescranmer-gnn-resource-allocation",
+      "present": true,
+      "sha256": "4eab53b7279a73f1bf54103f4cc18aadeaa181cfc996d5e1739ae45aa094e563",
+      "toolVersion": "1.8.1",
+      "commit": "9f41214df33fa15bbef589e5e582b6e54f898943",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "cds-astro-ipyaladin",
+      "present": true,
+      "sha256": "bc16672d3997925511c28e9a4de2de15d152e38d735dc2f5e1f00a974a92ca93",
+      "toolVersion": "1.8.1",
+      "commit": "0098816c68d81fd3c6c95939b970183f1ab05530",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "danieljprice-giza",
+      "present": true,
+      "sha256": "b1ba9b349d91f66a1c0b96cfb70a4841e7269cf12554bf62dc04534ad84c9ef9",
+      "toolVersion": "1.8.1",
+      "commit": "421c6da5f86d14712e3590906d41ca5fd400c9d8",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "scverse-rapids-singlecell",
+      "present": true,
+      "sha256": "98e31453b48d135c95d061ef5260c2b9545a55611bc4519c6739cd9f74c93a75",
+      "toolVersion": "1.8.1",
+      "commit": "24cec25fe9267a060796e90f606509dc9bc6658e",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "patrick-cole-pygmi",
+      "present": true,
+      "sha256": "c69bd38ef160330beb346152519e0079d2dd71c86330e36a9c730428e877f6ee",
+      "toolVersion": "1.8.1",
+      "commit": "53af972da3bebc7a51419e4d4cf0b7d5bd362d76",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "valentinitnelav-plotbiomes",
+      "present": true,
+      "sha256": "107e4b31b1696576e03a057eb40b8be80a37e337729a3de832ae2d71dd6211ec",
+      "toolVersion": "1.8.1",
+      "commit": "19dfcaf26a8304b9812093471438ace2f9966bb8",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "mmisw-cfsn",
+      "present": true,
+      "sha256": "9e3138101eace7a91a70f54960557c4b674568f48f233f398ed820ddca2fe767",
+      "toolVersion": "1.8.1",
+      "commit": "c519c1c0a2110675ed1fb1015a3384c1116ab29f",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "baotlake-periodic-table-pro",
+      "present": true,
+      "sha256": "13f6f3c21cc15e33d260066f827a072931873b2ca3f97457d820f67b59d9ddcd",
+      "toolVersion": "1.8.1",
+      "commit": "4b0446cf5126e1e05da7c9a1d1597afeba6fdf06",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "sourmash-bio-sourmash",
+      "present": true,
+      "sha256": "d7d1b62578c28077cbc9b50e4421f896883f00ca921fcfcd628b24e77bea76e8",
+      "toolVersion": "1.8.1",
+      "commit": "e2d5de268c134b75148c03e8e0f0d39f8ce113fe",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "gavin971-ncl-meteorology-libs",
+      "present": true,
+      "sha256": "f28a9a5b54b435136326293e9d126e8a31efa87bdb921d63af8498ae1487ae19",
+      "toolVersion": "1.8.1",
+      "commit": "ebc77b4c8207faf485ba84398b0d7ba8fb148131",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "catalyst-cooperative-pudl",
+      "present": true,
+      "sha256": "3c7b457714ac0f8ad373fe3991c6e2ceeda8f19acfdd81b228123ebbe0eca5dc",
+      "toolVersion": "1.8.1",
+      "commit": "bb9eac77cd9c60e3139716c0b220afabdf569f26",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "cognitive-ai-systems-warp",
+      "present": true,
+      "sha256": "ae8883b24734cf52ace31b43871e677cafa879daf1b056c9c4893fadd8ac4548",
+      "toolVersion": "1.8.1",
+      "commit": "4f5f8cf6d3154d9ae0cde0c7c6333d307a12740b",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "tonner-zech-group-chem-diagrams",
+      "present": true,
+      "sha256": "c3753dfce48593754a1394be99d297bfde024658a6692c8ab8394d9051254f9f",
+      "toolVersion": "1.8.1",
+      "commit": "b6805c179ce6f7abdac17a70b397542d136e717c",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "mlpack-mlpack",
+      "present": true,
+      "sha256": "e9ce6c9dc8b7e602bc0dd2264f0a15cb93ce01612a92e7c1ae134eefaf8a19b5",
+      "toolVersion": "1.8.1",
+      "commit": "3c26615acfcc89b3c8fdee0c11a69e4df4c1223b",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "stevewolter-rapidstorm",
+      "present": true,
+      "sha256": "9c7feaeb2f92737cd5548725d911c0954ebef45666d96d3b14ef06ccf08369f2",
+      "toolVersion": "1.8.1",
+      "commit": "f912ad5689220c32844fd8faa36d521a89271e60",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "liabru-matter-js",
+      "present": true,
+      "sha256": "2c86414bc1a189465d5146d57532bc6874418f4af8ded06a61fbf5ca66adec19",
+      "toolVersion": "1.8.1",
+      "commit": "b8ee71cd7f9b49f53639ddaedd6254f1929bcbe5",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "ornldaac-tesvis",
+      "present": true,
+      "sha256": "e0eaef9e038eb12c35b76ac6212766c25fdbe85fc408e9785e70174ea945b286",
+      "toolVersion": "1.8.1",
+      "commit": "6512695788b63a74239e7f7420a04cde44249aec",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "alconley-spectrix",
+      "present": true,
+      "sha256": "940a3f665b71d7a23f392fe50cf7ce73cca203d1b5afe92954f6005a1e769bb9",
+      "toolVersion": "1.8.1",
+      "commit": "edec6f0b32a4f527aa9d0a2220c41aab8216321a",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "spacetelescope-webbpsf",
+      "present": true,
+      "sha256": "c4c88b1129d1aab7c758db48cb1abb8476775f6cb9722e96a352968205c91bc8",
+      "toolVersion": "1.8.1",
+      "commit": "95b37d2263eb60e8d6967239e166f6932724d5fc",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "sdss-marvin",
+      "present": true,
+      "sha256": "e5873c67ed04b74181758b97107ef9659fc1522920da39bab31183d73333a83a",
+      "toolVersion": "1.8.1",
+      "commit": "b7a25e8b301b4a4ed118356124504cd431de8ec6",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "bioinfomachinelearning-posebench",
+      "present": true,
+      "sha256": "7179f23c1eaadf454c2c6424442ad6624df901a2c7085ab538e1ee6db000ae84",
+      "toolVersion": "1.8.1",
+      "commit": "c5d728d2a31ddb0a27512be75ea2d44e391e6529",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "ryotarookabe-scigen",
+      "present": true,
+      "sha256": "006ff2386692fb01bdd53d386917748899b6cae822cea4e41373f232346af5d9",
+      "toolVersion": "1.8.1",
+      "commit": "99055d5c5e40795f71d2126ba79a28bcd929d5bb",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "brainglobe-cellfinder-core",
+      "present": true,
+      "sha256": "8d4317cad8f9a2e17a9df3c4d72c31b8bc46005cfd566b618b469110c9aaa3aa",
+      "toolVersion": "1.8.1",
+      "commit": "ea07406a28cc08a3714ac15c1784d0cfe016cf45",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "kyleaoman-martini",
+      "present": true,
+      "sha256": "21bc6e9871ee8de0ff8a9a7d723dc44b03fcb61e20964c1fe7fd2fe1fae1089b",
+      "toolVersion": "1.8.1",
+      "commit": "9e4f3202898f3fffeb609aa8415293ec1e7b5510",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "sncosmo-sncosmo",
+      "present": true,
+      "sha256": "7747b0d4da49771434709d3ad5de78f83439d1b6a935bb2842d567c38ebb08de",
+      "toolVersion": "1.8.1",
+      "commit": "a42c93634a472b2c80878cebc43976aadaff6d2b",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "ngless-toolkit-ngless",
+      "present": true,
+      "sha256": "e060bcc4cdbb65f1573db6fb9ac7d261431b3b85b744282d883ebf7374e93b68",
+      "toolVersion": "1.8.1",
+      "commit": "77ee28db1394f62ac91bf3aae8a46c90bf823a26",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "jlindemann42-atomic-periodic-table-android",
+      "present": true,
+      "sha256": "45796632fd4619773dc865a70259a0c25b58c87ae66bb87c0bce31b5de9b7bee",
+      "toolVersion": "1.8.1",
+      "commit": "3a633471e9e1f71c4403654163dedd079d800391",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "buu-huu-mesodetect",
+      "present": true,
+      "sha256": "3bf24ebc73b642831d3e640029151ae3f37401c63fbecddcf2ca55715758d51f",
+      "toolVersion": "1.8.1",
+      "commit": "73161033ad5c8647217a8c647e9cfddbfdd1b595",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "jesperdramsch-comig",
+      "present": true,
+      "sha256": "ba16fbbb8737c2386055b32bc4f9acfb52d13b323c9a185d69a3265be75f370c",
+      "toolVersion": "1.8.1",
+      "commit": "c73e66886d617ccb39a2d2f381a9affa6bfbdff4",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "pypr-pysph",
+      "present": true,
+      "sha256": "414429b3ba49b1856f1268d8c39a2c2ddc0a277eb70713a82eaf5652b64c73c5",
+      "toolVersion": "1.8.1",
+      "commit": "1cd3dea9cfaac7d9f1bda2a2491ce4b42a31dbe5",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "mwt-inteq",
+      "present": true,
+      "sha256": "92ba88d3aefd19f8a35bb5b26cd619ab8e8f6714988b29087e77cb9f9811d3fd",
+      "toolVersion": "1.8.1",
+      "commit": "fa4b6c339e39d4263b3cf1415fdd7ca04cf918ed",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "compgeolab-eqs-magnetic-spherical",
+      "present": true,
+      "sha256": "072e31abec29f89e5c844e0d5ebc44230fdf949e599b3507fa9cfe2aabc80475",
+      "toolVersion": "1.8.1",
+      "commit": "cf2c1093c297a39428bd0e6815fe65e1d0cff8fb",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "moshi4-pycirclize",
+      "present": true,
+      "sha256": "f8933dd35d87fdaf8655b5b5edce32a2e5f8e2d5807a1edf65edcdc112244b0d",
+      "toolVersion": "1.8.1",
+      "commit": "5a0f36111a4bbfab3e3d765e7365a1108f891dcb",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "amrex-astro-maestro",
+      "present": true,
+      "sha256": "7a26f26330fa7b8384887473436aaca635563e24738e6a85a78fe27cc6471068",
+      "toolVersion": "1.8.1",
+      "commit": "70eb811e64c411237fc02b709d771a81cdb9c91d",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "open-science-tools-nd2reader",
+      "present": true,
+      "sha256": "50c533b6086fc4d988e16daac89841aa442a82b3910a78fcfe22decdd5d1bf7e",
+      "toolVersion": "1.8.1",
+      "commit": "6d825725d0c7574409d56cdbe3680937da25b0bf",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "chainer-chainer-chemistry",
+      "present": true,
+      "sha256": "f2dc5b95e656c0c286d28cfba44f2a4295f138b6ac9b8aaff7634841967c0dbc",
+      "toolVersion": "1.8.1",
+      "commit": "efe323aa21f63a815130d673781e7cca1ccb72d2",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "molssi-qcelemental",
+      "present": true,
+      "sha256": "b790e1728db2fe7e34df25f2d750a9bcea8783e50ee4b140102ed5c03006a05a",
+      "toolVersion": "1.8.1",
+      "commit": "7828af830a1fa8de78517bcaec750eee8a9468ca",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "birocoles-gravmag",
+      "present": true,
+      "sha256": "3c2e8420626912e4adb4ce1df596aa4c475aafd769f8a839138ec26e26288e68",
+      "toolVersion": "1.8.1",
+      "commit": "7e9c8b999fe46672e36946191a08cfa4ccbc0e71",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "timcera-mettoolbox",
+      "present": true,
+      "sha256": "66497a60b69c895071b3d52bf67276465cfd53b1f91aa21c2189cad8b458c08b",
+      "toolVersion": "1.8.1",
+      "commit": "451564dd093936ecc71718bf027e06ba2f6146a2",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "gaelforget-climatemodels-jl",
+      "present": true,
+      "sha256": "03098d0abac8a970270879aae9e16d0b3153b5f6640423d47a56bc9cd738408f",
+      "toolVersion": "1.8.1",
+      "commit": "7b3b51e57454d166a38daf26d537b76f85fd93b8",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "gunvirranu-perturb",
+      "present": true,
+      "sha256": "6648ef0304f13154f829b3f4de61f92becc2e1b3edca2b413777caafa4ef5b0c",
+      "toolVersion": "1.8.1",
+      "commit": "128291c02675dc63ced11358129aa1384aec3545",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "nf-core-proteomicslfq",
+      "present": true,
+      "sha256": "465b097c38e7199db16dd886c4cdd0d9afc255285708998cd6925e072c3237d3",
+      "toolVersion": "1.8.1",
+      "commit": "f35b1607a84ab2c31fbc0be9f61f49c33916bf06",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "ferreols-tipi4icy",
+      "present": true,
+      "sha256": "dae343806ecb47846a52002636524e88d0f29dbddddb1b859bda4c7f757535d4",
+      "toolVersion": "1.8.1",
+      "commit": "46fc190e402e0295a0767f96b44c00cacfdeccf8",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "pmeal-porespy",
+      "present": true,
+      "sha256": "52e6ab181b23d7103e017b8d9c482d964ea9d65a4412c02af6f98ffac559c4c7",
+      "toolVersion": "1.8.1",
+      "commit": "cbfd6f3110434704c16536451b66f03b4bf08e08",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "giannisdravilas-weather-plotting",
+      "present": true,
+      "sha256": "0375f8b2453a26a0ca7074d4db297896d04218175b2b97a9aaba50a0114eee48",
+      "toolVersion": "1.8.1",
+      "commit": "290c1819703540a0aa9822d54d90b673587b39b5",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "hang-jin-editaplot",
+      "present": true,
+      "sha256": "a0a055f9b6085c8c2b791190ae4d66b7ddf7eae2cdc03a2b219f5d98fdebbfb1",
+      "toolVersion": "1.8.1",
+      "commit": "01721038afd212103d96225319b22d1bbfe32270",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "reddimus-spc-cpp",
+      "present": true,
+      "sha256": "8794ddadf8cffdf3b6739a982bf502c4d0238c7a3cf6410471641462afdc4ba4",
+      "toolVersion": "1.8.1",
+      "commit": "714a2828083f353c214c9a06f6c09630cd99686a",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "amiralansary-rl-medical",
+      "present": true,
+      "sha256": "e085b97d28eb7c65be30741d104b7ca7cae4aae20d9d285d85d78f92ec23aad8",
+      "toolVersion": "1.8.1",
+      "commit": "77846906320af74af905463803960238e4daaa1b",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "danwbr-dwsim5",
+      "present": true,
+      "sha256": "b4e295de1a74ab47525fe2cd4e5af23ff54e30555bf2157ee455ba9e328c4e4b",
+      "toolVersion": "1.8.1",
+      "commit": "961e820b2a1c082c392071323b0d93dd8f1b9cb8",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "rsnemmen-nmmn",
+      "present": true,
+      "sha256": "cc3be4e182e339488d4a55778f051a83180e7bde18a52751fd4e65f31bebe0dd",
+      "toolVersion": "1.8.1",
+      "commit": "a23ea3d8d286171f84fe727a22fd19371ea6b9cd",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "harirakul-chemlib",
+      "present": true,
+      "sha256": "e7b8002e8c1bf1d65f7a64d496eafaebc8d9e5dee1dea5da4582d7b035629955",
+      "toolVersion": "1.8.1",
+      "commit": "5230bb370acc496037836ee38f90f9af833b454c",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "akensert-molgraph",
+      "present": true,
+      "sha256": "6689a91a17aa5b45871eed945bbba319beed49759abed96e4fa539333d28c624",
+      "toolVersion": "1.8.1",
+      "commit": "010940d7084d6b9511150caffe50352b5d5841d7",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "bioinfodlsu-phage-host-prediction",
+      "present": true,
+      "sha256": "ef3cd5b68451e41324c1ab04457dc10f2e83a96f46afe4f46ddb92b7bfffc928",
+      "toolVersion": "1.8.1",
+      "commit": "7f992995cf6826ff2ff350566b474da87964deaa",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "snailbones-cellforest",
+      "present": true,
+      "sha256": "37d47edde7c4d9e13dccb299312fb3eed4e3a408808447fac75937d4056dbc17",
+      "toolVersion": "1.8.1",
+      "commit": "39c83e6e3eae14d5ac9c1853d6fb8c9f716e7186",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "jcorbino-mole",
+      "present": true,
+      "sha256": "4deb0e065af131d54d7d00172c2360899e964816d75733c76d6b57335cf7bc6a",
+      "toolVersion": "1.8.1",
+      "commit": "83ffb7fefaee4ec689429f0cd1a8aa4265967036",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "ri-imaging-nrefocus",
+      "present": true,
+      "sha256": "f1b8ad2bab44162caa4a4409bbe831e27a2c121a94c49c0b8e1714f88b61bc70",
+      "toolVersion": "1.8.1",
+      "commit": "cda43af2ca738121f0790fbbb39001abacf8ca0b",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "nesvilab-philosopher",
+      "present": true,
+      "sha256": "912cc3a463ca1b9505326d50d265a2fb8c0dfd68b0766a56451178fdf82c12b8",
+      "toolVersion": "1.8.1",
+      "commit": "8c2d65e5405cbc23e56cf16cbc978e85b76287f1",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "sagirimo-biodsh",
+      "present": true,
+      "sha256": "9a64f242d9cf825c31a804455ba6e5cc8c26fd0a0834a598a022e1af5254a92b",
+      "toolVersion": "1.8.1",
+      "commit": "955d710d602164842fbc7d0864d9be0f8ed26bb6",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "csteele2-wx4colab",
+      "present": true,
+      "sha256": "6f9ed40293b8234e7b60f91b620b61252340d02ee986278ba5480a2d71a5b3b0",
+      "toolVersion": "1.8.1",
+      "commit": "40f6971ae850a0c4e1622cd651ef1a7a54854200",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "biodynamo-biodynamo",
+      "present": true,
+      "sha256": "e20f60bd396372fe43d472e3eca21d0e18aaa720cabe9143c504a6ec3e69b04b",
+      "toolVersion": "1.8.1",
+      "commit": "060d86f1078a10eb0b547d717976c96edf10e3d7",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "singularitti-spglib-jl",
+      "present": true,
+      "sha256": "e4488e3d0ec8d09084caf7de3eda7001054b030a3ecdaf103753945133fc0522",
+      "toolVersion": "1.8.1",
+      "commit": "62ee3cae4949687b6c94e81d6dd7841e90fad904",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "seq-lang-seq",
+      "present": true,
+      "sha256": "f524c4b104f59cac770b2bd4982daf872f5b6f9ad63af3a0a0b3ed69d71c2025",
+      "toolVersion": "1.8.1",
+      "commit": "0c275584163c172e5e7f20562c314991ed3bcf37",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "neurodatawithoutborders-pynwb",
+      "present": true,
+      "sha256": "b823a795543e9178c777696137199eb76963b23678566b1274c02e70bed25c1c",
+      "toolVersion": "1.8.1",
+      "commit": "ef74c1660ac4ae6980a86ffbb665fc24e8c2d197",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "nasa-podaacpy",
+      "present": true,
+      "sha256": "5f819ab049c8b87d7446f66fdf19a1027dc410931be97f31cea7a507fdae93dc",
+      "toolVersion": "1.8.1",
+      "commit": "4812ef96557b79a35f6566f22f9e1243856314d2",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "tuw-geo-gldas",
+      "present": true,
+      "sha256": "9156edb91f0f9af7016a7af9d86333ec33319d3fa396f23f11a1bccb08a9ae21",
+      "toolVersion": "1.8.1",
+      "commit": "d08cbaae6d8a409994358cafffd5d7b3d711ad5a",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "ppsp-team-hypyp",
+      "present": true,
+      "sha256": "90debacea42147db87eb9ba2de41613beba01849431ac01433ff9f806d4466a7",
+      "toolVersion": "1.8.1",
+      "commit": "dbeeb375385ba566410a6811e244be1b67452e62",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "materialyzeai-m3gnet",
+      "present": true,
+      "sha256": "7d95ed006ec610b61600829e41b99d2e63b0bb168675167524767473f60a8fba",
+      "toolVersion": "1.8.1",
+      "commit": "c00c1be927ea60ab9708ac55c99953a7651d6f27",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "gaolabtools-scnanogps",
+      "present": true,
+      "sha256": "9451f6b0643a49d10feee3878cab2888e1dfcd32db7e26838660380e4b141b89",
+      "toolVersion": "1.8.1",
+      "commit": "8095d282ccb8250fb5d3ac9a05b7a4c57a3c2936",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "aramis-lab-clinica",
+      "present": true,
+      "sha256": "6d4e4d6d781fe2a70842b1cf7d2a03fd8a8b73908ebc21d2c7f5546e358727d6",
+      "toolVersion": "1.8.1",
+      "commit": "c9fb3d3b8c1b8373d9d4d7039cac378533c072a6",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "aquaticecodynamics-libaed-water",
+      "present": true,
+      "sha256": "1ada2014deedd1430e7b62fee41d5db76ab7b4a4bc68332a03d015776ba2dd13",
+      "toolVersion": "1.8.1",
+      "commit": "d87457c7303100b1435bca181de248b28b3a7d91",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "mgleeming-synthedia",
+      "present": true,
+      "sha256": "ae3dbe2b31b60ba7ad6f66f7982530a44dfd5821cab4f1a8ee95e46d68a4878b",
+      "toolVersion": "1.8.1",
+      "commit": "7f7a1e2a8fa8d26abe4433f115e350984704498b",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "mcs07-cirpy",
+      "present": true,
+      "sha256": "4d3e7a1fb777febd7b32448a0dd4a79974ec9ee63b4c435b2c5a875d780f7d5d",
+      "toolVersion": "1.8.1",
+      "commit": "fee2bbbb08eb39bbbe003f835d64e8c0c1688904",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "the-virtual-brain-tvb-root",
+      "present": true,
+      "sha256": "8f0b07ef4215dcedf1e3e5709f6c281cdaab9d76624a865b88117bea6f6b2a14",
+      "toolVersion": "1.8.1",
+      "commit": "8e766d68622fa2f6b057119ac5a1cf3652ea6f89",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "zhu-xlab-dofa",
+      "present": true,
+      "sha256": "1f33330afa219dc50ed0667993c70a503eb070f29822a55b021d05101a84dfb8",
+      "toolVersion": "1.8.1",
+      "commit": "0cfb7e1099f4d4c4022946ff7862c7cd7b8411b9",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "suyashkumar-dicom",
+      "present": true,
+      "sha256": "178f84437304a214d7c02de8a525152152c74c92605200b2452eaf1e0ebf7753",
+      "toolVersion": "1.8.1",
+      "commit": "8ae5137aa164e11a1ffb53b10778cba6cd910a87",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "gboeing-pynamical",
+      "present": true,
+      "sha256": "be7cc699f16ea4f357d00a24675d2fe30b292f8865062250feab298266540ae8",
+      "toolVersion": "1.8.1",
+      "commit": "1afd603ebcb535f0a0268da2866753cbc1aff37a",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "stilldesign-physx-net",
+      "present": true,
+      "sha256": "02125d38d9ab797d95e4399029a670921bc8c138ba0084880f24df93c08f70ed",
+      "toolVersion": "1.8.1",
+      "commit": "f8c14d9f35dc3f9790e0df6ff0df17d7e88660bf",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "mituan-ai-paperbanana-cn",
+      "present": true,
+      "sha256": "2cd5ed3aa41370a0e0dd2e5e9a71794404575e9a90b2d2352c23dadbb33bc318",
+      "toolVersion": "1.8.1",
+      "commit": "5f701ecbfff1aaf0433dec6d63f88c34a4d86716",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "materialyzeai-maml",
+      "present": true,
+      "sha256": "15bc0bc23d1761ca5d276d7c6f38a6f30077a6fa1ff079857c35fd05276f5eea",
+      "toolVersion": "1.8.1",
+      "commit": "8916c6ea05ff19a1b351bd2b8f11e210750ba032",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "spikeinterface-spikeinterface",
+      "present": true,
+      "sha256": "d88c6d940a4d2b6b1b00c919719fecbba82d3032072b2b726beeeffbfc8ba53e",
+      "toolVersion": "1.8.1",
+      "commit": "f08c987a8221ac791b9262fff98d986b49cf2f59",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "jpl-evapotranspiration-algorithms-gedi-canopy-height",
+      "present": true,
+      "sha256": "b897a90e9e22657c34c11caadeed2f499dbe357d0aa58d892a205c86f2d234f0",
+      "toolVersion": "1.8.1",
+      "commit": "72424c33aa313a465cd3e411baa8c09c80f98394",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "stanfordrockphysics-srbtoolbox",
+      "present": true,
+      "sha256": "4619f17dc0596577b5fe614ab0faf06456922e17e43083ff14e31eb35646b397",
+      "toolVersion": "1.8.1",
+      "commit": "d693d10db9ac8daa94bdfbb2383f42ec523b24f0",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "cds-astro-mocpy",
+      "present": true,
+      "sha256": "fde00bf8d4e246a82b1c05fa73173a688e535255330f8b3b850595f7f95a5799",
+      "toolVersion": "1.8.1",
+      "commit": "d3f38dd516ef24ef5afd7a8486ea1f3ec77bee89",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "pwwang-plotthis",
+      "present": true,
+      "sha256": "a191a2f64af878961801b36681d72beea9d664de7e9417d7d771fb22674ff756",
+      "toolVersion": "1.8.1",
+      "commit": "0b0384f34a17731a18259614ec40777db90c9a07",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "aiconslab-miracl",
+      "present": true,
+      "sha256": "3b52d2b1f87397852f4f208e1c04b9cb801d859f01e353df73c49d65ccf0d8ca",
+      "toolVersion": "1.8.1",
+      "commit": "86f0ff77ba20bf2dc64dab20d9ee7b1458b601e2",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "jcmgray-quimb",
+      "present": true,
+      "sha256": "24e3e2eb015e51c07389a4ad6c2b7f8cb41ae7214f01f5a6bcc4ad9bbe8960a7",
+      "toolVersion": "1.8.1",
+      "commit": "b3bf45a505b6870a3046bf485dd31ecd0946935a",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "hemberg-lab-scrna-seq-datasets",
+      "present": true,
+      "sha256": "71ce76f91d5427a90bb3ee73e22d0b41006ca77240fe5a7a94106c1fcadb299c",
+      "toolVersion": "1.8.1",
+      "commit": "8fd6ec9b85917e3f4a0c097006083e9c9e62cde8",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "jobovy-wendy",
+      "present": true,
+      "sha256": "593fcc10f16a2f5cc89929e68aad45b660da7745ca6e7f9fd88a8490750b7764",
+      "toolVersion": "1.8.1",
+      "commit": "b5bd653b081db97409b93d1718376c6d4690964e",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "nci-scores",
+      "present": true,
+      "sha256": "84fa74380ce51a3ff28d3b6c4d59df85541b8a3349943a6aa7ff415f06695dbb",
+      "toolVersion": "1.8.1",
+      "commit": "4636aee97a1ddea9eecc2615f82310ba2ebe1197",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "eiszapfen2000-tgda",
+      "present": true,
+      "sha256": "1f247e0a73bddec34bc8569297c095a8bf26571c95bb2fed582c6ac32f97bddc",
+      "toolVersion": "1.8.1",
+      "commit": "d78a551e9baead24d006d0714eecb445e1c19722",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "sofa-framework-sofa",
+      "present": true,
+      "sha256": "bccf490358fb6f1352c8dcc5b96ff35c45dfd31c3f3a0719fc9b776cc65eb806",
+      "toolVersion": "1.8.1",
+      "commit": "dfeb009096a0c777bd91062ed991d201e4387ac3",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "csyhuang-hn2016-falwa",
+      "present": true,
+      "sha256": "bceb6206543b4e7a24b4be8ecc2ab8f4bfdc9502c01689f7e38c79b3dd7e5d79",
+      "toolVersion": "1.8.1",
+      "commit": "410ebc892815d231b97925f0c5282ac34a580dc4",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "miguelcarcamov-gpuvmem",
+      "present": true,
+      "sha256": "d7d810a04bea8a6ef93b8a54017f930900749b44949e38d23924a5a1f1ae78ca",
+      "toolVersion": "1.8.1",
+      "commit": "b860b9406fcf11c91b34d06f0b18008b36cb0f11",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "birollab-abyss",
+      "present": true,
+      "sha256": "f3ef102232ccd6c1181cbb782b0036eb2d3ec7441c9e80423d3d0cdf6563a2f1",
+      "toolVersion": "1.8.1",
+      "commit": "82ab61922c3c2fdd32372de2c470f8217c109284",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "geoscienceaustralia-hiperseis",
+      "present": true,
+      "sha256": "2daeca74b96095d70d40fb4bf4412c5ddc9c2daed24a6c40406a4731fc8c10df",
+      "toolVersion": "1.8.1",
+      "commit": "a96cdfc23a2a4d20e05d55f0085d9547c7bc0a9e",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "genometools-genometools",
+      "present": true,
+      "sha256": "d4f23b2542b5ab06eb8e4f916ee677f004b4099eac9b6ea872fcb0f759b70541",
+      "toolVersion": "1.8.1",
+      "commit": "1f0ff66b3ab77021250b7bc474a8d423149290db",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "redouanelg-qgsw-di",
+      "present": true,
+      "sha256": "863e25abea5a090c0a4bb4f027dd7d11c97e0adf2a15f26459d12eb24eedc140",
+      "toolVersion": "1.8.1",
+      "commit": "20257746166f609bf280097264c79dd35655f757",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "rafsanjanihub-pyfeat",
+      "present": true,
+      "sha256": "cecb0279f424b7c2e02ec88f25cf803787c85a9195a984774efdecaee750a12c",
+      "toolVersion": "1.8.1",
+      "commit": "0fe014b790ac86ece0246ca868fb402dc68cc055",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "hku-bal-clairs",
+      "present": true,
+      "sha256": "19ddd65be8d190edaa85c576e9e53d9e0a605ac3ac748eb4abfd44db452cb4d7",
+      "toolVersion": "1.8.1",
+      "commit": "2fd797d8a626353d953d5363a8418364f1d9d2e7",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "natearnas-bead-analyzer",
+      "present": true,
+      "sha256": "a05ca7c8bf2c888877def800474141af3aaa723aac64b10d5fd49bb0905d4573",
+      "toolVersion": "1.8.1",
+      "commit": "ec34fdc871f9027830c50130ab8494db57440578",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "uu-cellbiology-comdet",
+      "present": true,
+      "sha256": "31feb5eae7023f44d105d3121a475c90e0a6f86ea139f0415238363f05082351",
+      "toolVersion": "1.8.1",
+      "commit": "cda3eb76a6da33583bd35d42402474e464c9c110",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "neuropsychology-psycho-r",
+      "present": true,
+      "sha256": "70853dbe908d068d4a9f61a3ba0ab7705074339b6fd828c2ed7c7a348962e90f",
+      "toolVersion": "1.8.1",
+      "commit": "ed4f00664a9dc370f565a1f5038d9b82adaf64ee",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "cnes-lenapy",
+      "present": true,
+      "sha256": "cb10a5fb3e83e7a12c3bad57ffcb030a7114cc6fb8e1dd2b9b7d2ee1ad3948b1",
+      "toolVersion": "1.8.1",
+      "commit": "840cd1f9517073f0078dec831dfb716ec663bf96",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "compomics-denovogui",
+      "present": true,
+      "sha256": "c4522241e2a608aa282a144aa80de1cc47a6f3ac13f24ccb2170c8c1e7c531a0",
+      "toolVersion": "1.8.1",
+      "commit": "1363b547b33217d6f6b35af91b99d6852c6ce5f1",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "renderkit-ospray-studio",
+      "present": true,
+      "sha256": "55d6af4691e8ccb3049c0f02faf7764f1e0f7a0417f0cdc608aeaa7724a4e3c7",
+      "toolVersion": "1.8.1",
+      "commit": "686ceff5f1f9ee5441d5551bc22a42bcc1ef0567",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "agilescientific-seisplot",
+      "present": true,
+      "sha256": "8b18513c59706f9550f216910c88706b2046245e3bec945d18f2a4b8899ab7c0",
+      "toolVersion": "1.8.1",
+      "commit": "5d489950c0065de8c36ee48a0c79bc3e908bf87b",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "2auk-pyrism",
+      "present": true,
+      "sha256": "580543303a793b2146c2cf3b5f8b07231b34f7c48c988d60312f4427e92c3527",
+      "toolVersion": "1.8.1",
+      "commit": "89b613194d02c067402d048cad68d8a3fe679c66",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "zwony-ecotrace",
+      "present": true,
+      "sha256": "deab6b9d2c8d0c430819b8eb33a87f25e257a4498ec067e54663d136d5ac766c",
+      "toolVersion": "1.8.1",
+      "commit": "ae01842090e8d31e69877cf41e6eaf74748523ce",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "deltares-veriflow",
+      "present": true,
+      "sha256": "6834f45c7b5a48762804efc99b0a6a69e746e7c93230a0fbda675f2120466612",
+      "toolVersion": "1.8.1",
+      "commit": "f1394bd2109ea08773c0a4ce0857e42de218cbfe",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "dgehringer-sqsgenerator",
+      "present": true,
+      "sha256": "fdaf06339d2341461865d33c5c36c34a172c69c26802bace5e8997bb14a82b11",
+      "toolVersion": "1.8.1",
+      "commit": "eae14db1dd5693685c11257c8b1ec5001a56447d",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "szymonzaczek-mdms",
+      "present": true,
+      "sha256": "0c2606c68692e61ba7abdaab8c6d2bff81be49a7102e966118cfbf5cc998e790",
+      "toolVersion": "1.8.1",
+      "commit": "ce1c76d4ea14de338b4391dff7a8d1d882804d7c",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "iraf-community-pyraf",
+      "present": true,
+      "sha256": "57ea5b918ccfe2c4ad6cee5ebcb7f7dbefb38d4ad2abfa69f769978fb0dec7e2",
+      "toolVersion": "1.8.1",
+      "commit": "e91c8398c153e3948d9f0b5552947762a6dbbe8c",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "ma-compbio-lab-skillfoundry",
+      "present": true,
+      "sha256": "905a340af5c57ffe51120ef2d6a87246aefa20583d29685563997e53b4ca924c",
+      "toolVersion": "1.8.1",
+      "commit": "4a8cc0cd9f923cde47a7f542d4a84b92bbabc59f",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "obidam-copoda",
+      "present": true,
+      "sha256": "f0fd7561b08d2b91417206b6af1ce81c8e927fe58a8b7d9c2e5c97d0b8b76292",
+      "toolVersion": "1.8.1",
+      "commit": "7adfd131f6bfd537d4f1f17c3421ca45ec63e09b",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "jackbibby1-scpa",
+      "present": true,
+      "sha256": "ad72eae2de5f5b1d724e229db64929697c912a76b03fa53cd836498672071708",
+      "toolVersion": "1.8.1",
+      "commit": "68b6c9954a0eca82b4cfc990a963d5f5ca1f711b",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "esipfed-query-understanding",
+      "present": true,
+      "sha256": "89e28e6002e8c3a48d317f7fb6c8d95a9374913308b9c2ad812f6aefc44eae6f",
+      "toolVersion": "1.8.1",
+      "commit": "df136738e090995e6ce634626c128987bcd2c392",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "jovequli-madr",
+      "present": true,
+      "sha256": "736e96ffab1118c53a09ca8f527826503d9c191570c6214b8f5121de674a2d73",
+      "toolVersion": "1.8.1",
+      "commit": "4ec1ec2438fd57401f628df8cea09861f77167a2",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "skoohy-gpt-pinn",
+      "present": true,
+      "sha256": "224f16bc545009372e9d4938eb5563954654b9ef20d7a60a493650444743733d",
+      "toolVersion": "1.8.1",
+      "commit": "2b7dae22e7fdd781c47252a33fdaaf021afc4e72",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "jtappin-graffer",
+      "present": true,
+      "sha256": "59688c22b86af622eae85a2ca4b00c773afd041d5ec52fb7370f5b5a5c17c8f4",
+      "toolVersion": "1.8.1",
+      "commit": "7c9c9b8d9a34a9a861d6ecd63fba4b9cd173d206",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "atomscience-org-ampl",
+      "present": true,
+      "sha256": "a708f5df00ae56e16f58efa6a0fa028a574abee5a8cbd9872d6655e2cf0d3cff",
+      "toolVersion": "1.8.1",
+      "commit": "c3fff25f138fcc792a62cad053e6d2707146f240",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "maritime-labs-calypso-anemometer",
+      "present": true,
+      "sha256": "addb862a9d32b29096fa1313b43e02297a7d3d6ba18f3435a139abf4e23bb7b3",
+      "toolVersion": "1.8.1",
+      "commit": "33fd4a10528bddd9d9643e006f7cb10cc3688feb",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "marcoalopez-strength-envelopes",
+      "present": true,
+      "sha256": "25ed6b363676a675ae38f7eaad868de7ba9d95211229d16bbfae67971756dee0",
+      "toolVersion": "1.8.1",
+      "commit": "593311f89dda824634f66b2c362be6353d14dec3",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "jpl-evapotranspiration-algorithms-pt-jpl",
+      "present": true,
+      "sha256": "6db490163a33591ab7224035a06646710725fcb31e4a7c4f56488c9e06a25992",
+      "toolVersion": "1.8.1",
+      "commit": "0a2d0b56542cc1e5d54cacd335186d7c9c0b14b0",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "ropensci-rnoaa",
+      "present": true,
+      "sha256": "97aaa247fd6bd4e14f3027386483bdd5a623529153327153426e1211dcc3de2c",
+      "toolVersion": "1.8.1",
+      "commit": "b26b4c53821c73161852730b6fdb9eafe23220df",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "molleraj-metacrast",
+      "present": true,
+      "sha256": "d134fe4866030adb10a901c9be559b5dbd6cf6984b0a47008695a75da42154fb",
+      "toolVersion": "1.8.1",
+      "commit": "ed82df4c40cf09d047032601849db62ba290df85",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "lh3-miniasm",
+      "present": true,
+      "sha256": "5c3b1486e8c1fac1433a973a1e92c6fa323e450054cdf29ab4d714b12a6f8e5a",
+      "toolVersion": "1.8.1",
+      "commit": "2cd690de1e6af3e0438b7df0a99dd3e3b27ad6f9",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "ecologicaltraitdata-traitdataform",
+      "present": true,
+      "sha256": "de93250c4781462836b922915c440b8df9cc3ae5d540cb4a31d4d60c0ad2fb31",
+      "toolVersion": "1.8.1",
+      "commit": "a1a0b4656a404bddcd229ee2d42d430908be9d94",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "grimme-lab-dxtb",
+      "present": true,
+      "sha256": "f23917226365dab4be39d0d1e485740bab65c536e637a7f6338c48657ca023aa",
+      "toolVersion": "1.8.1",
+      "commit": "3b6a90f8bd2e4584e14408c59f2d42700f881417",
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "name": "mroberge-hydrofunctions",
+      "present": true,
+      "sha256": "377511bf61db56745076e4a6b599d28e9534c29c5695bc4dab0dcf9074abc068",
+      "toolVersion": "1.8.1",
+      "commit": "488c12f03d32df680fb4565f2a4ef35ecf82c52b",
+      "truncated": false,
+      "complete": true
+    }
+  ],
+  "summary": {
+    "selected": 500,
+    "present": 500,
+    "complete": 500,
+    "failedGroups": []
+  }
+}
