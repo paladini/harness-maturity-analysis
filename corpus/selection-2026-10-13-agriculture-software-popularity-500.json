@@ -28675,9 +28675,9 @@
   "exploratorySearches": [
     "corpus/popularity-search-2026-10-13-music-audio-software.json"
   ],
-  "analysisIssueNumber": null,
-  "analysisIssueUrl": null,
+  "analysisIssueNumber": 24,
+  "analysisIssueUrl": "https://github.com/paladini/harness-maturity-analysis/issues/24",
   "analysisPrUrl": null,
   "showcaseIssueUrl": null,
   "showcasePrUrl": null
-}\n
+}
