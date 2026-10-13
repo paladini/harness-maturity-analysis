@@ -16,6 +16,7 @@ const CATEGORY_LABELS = {
   'developer-tools': 'developer tools',
   'cloud-platforms': 'cloud, IaC, platforms',
   'data-ml-science': 'data, ML, science',
+  agriculture: 'agriculture software',
   'observability-networking': 'observability and networking',
   security: 'security',
   'community-applications': 'community applications',
