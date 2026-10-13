@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
+import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 
 const topics = [
   'audio',
@@ -37,7 +37,11 @@ const topics = [
 const date = '2026-10-13';
 const path = new URL(`./popularity-search-${date}-music-audio-software.json`, import.meta.url);
 const prior = (() => {
-  try { return JSON.parse(readFileSync(path, 'utf8')); } catch { return null; }
+  try {
+    return JSON.parse(readFileSync(path, 'utf8'));
+  } catch {
+    return null;
+  }
 })();
 const capturedAt = prior?.capturedAt ?? new Date().toISOString();
 const searches = prior?.searches ?? [];
@@ -98,24 +102,25 @@ for (const topic of topics) {
     for (const repo of repos) {
       const previous = candidates.get(repo.databaseId);
       if (previous) previous.queries.push(topic);
-      else candidates.set(repo.databaseId, {
-        id: repo.databaseId,
-        fullName: repo.nameWithOwner,
-        htmlUrl: repo.url,
-        cloneUrl: `https://github.com/${repo.nameWithOwner}.git`,
-        description: repo.description,
-        stars: repo.stargazerCount,
-        isFork: repo.isFork,
-        archived: repo.isArchived,
-        defaultBranch: repo.defaultBranchRef?.name ?? null,
-        searchCommit: repo.defaultBranchRef?.target?.oid ?? null,
-        pushedAt: repo.pushedAt,
-        createdAt: repo.createdAt,
-        language: repo.primaryLanguage?.name ?? null,
-        license: repo.licenseInfo?.spdxId ?? null,
-        sizeKb: repo.diskUsage,
-        queries: [topic],
-      });
+      else
+        candidates.set(repo.databaseId, {
+          id: repo.databaseId,
+          fullName: repo.nameWithOwner,
+          htmlUrl: repo.url,
+          cloneUrl: `https://github.com/${repo.nameWithOwner}.git`,
+          description: repo.description,
+          stars: repo.stargazerCount,
+          isFork: repo.isFork,
+          archived: repo.isArchived,
+          defaultBranch: repo.defaultBranchRef?.name ?? null,
+          searchCommit: repo.defaultBranchRef?.target?.oid ?? null,
+          pushedAt: repo.pushedAt,
+          createdAt: repo.createdAt,
+          language: repo.primaryLanguage?.name ?? null,
+          license: repo.licenseInfo?.spdxId ?? null,
+          sizeKb: repo.diskUsage,
+          queries: [topic],
+        });
     }
     snapshot();
     if (!result.pageInfo.hasNextPage) break;
@@ -123,4 +128,16 @@ for (const topic of topics) {
 }
 mkdirSync(new URL('.', import.meta.url), { recursive: true });
 const final = snapshot();
-console.log(JSON.stringify({ candidates: final.uniqueCanonicalIds, rawReturned: final.rawReturnedRecords, searches: searches.length, capped: searches.filter((item) => item.capped).length, output: path.pathname }, null, 2));
+console.log(
+  JSON.stringify(
+    {
+      candidates: final.uniqueCanonicalIds,
+      rawReturned: final.rawReturnedRecords,
+      searches: searches.length,
+      capped: searches.filter((item) => item.capped).length,
+      output: path.pathname,
+    },
+    null,
+    2,
+  ),
+);
