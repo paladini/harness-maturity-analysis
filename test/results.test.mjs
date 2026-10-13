@@ -120,6 +120,24 @@ describe('renderLeaderboardCsv', () => {
     expect(md).toContain('GitHub software popularity #1000');
     expect(md).toContain('70/100 (70%)');
   });
+  it('labels the developer infrastructure popularity cohort separately from the harness rank', () => {
+    const entry = fakeEntry('infrastructure-tool', {
+      category: 'developer-tools',
+      selection: {
+        cohort: 'developer-infrastructure-popularity-816',
+        date: '2026-10-11',
+        githubStars: 159,
+        popularityRank: 816,
+      },
+    });
+    const md = renderLeaderboardMarkdown(
+      [{ entry, report: fakeReport({ percent: 70, level: 1 }) }],
+      { toolVersion: 'harness-score@1.8.1', entries: [entry] },
+      [],
+    );
+    expect(md).toContain('Developer infrastructure popularity #816');
+    expect(md).toContain('70/100 (70%)');
+  });
 });
 
 describe('renderLeaderboardMarkdown', () => {

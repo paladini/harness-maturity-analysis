@@ -88,6 +88,28 @@ describe('renderSite', () => {
     expect(html).toContain('issues/15');
     expect(html).toContain('Popularity is selection metadata, not maturity');
   });
+  it('labels developer infrastructure entries and cohort selection provenance', () => {
+    const entry = fakeEntry('infrastructure-tool', {
+      category: 'database-data-platforms',
+      selection: {
+        cohort: 'developer-infrastructure-popularity-816',
+        focusCategory: 'database-data-platforms',
+        date: '2026-10-11',
+        githubStars: 159,
+        popularityRank: 816,
+      },
+    });
+    const html = renderSite([{ entry, report: fakeReport({ percent: 42, level: 1 }) }], {
+      toolVersion: 'harness-score@1.8.1',
+      entries: [entry],
+    });
+    expect(html).toContain('Developer infrastructure (database and data platforms) cohort: popularity #816');
+    expect(html).toContain('159 GitHub stars on 2026-10-11');
+    expect(html).toContain(
+      'Includes 1 database, developer-tool, code-quality and software-delivery repositories',
+    );
+    expect(html).toContain('issues/19');
+  });
   it('produces a well-formed document with a matching title and repo count', () => {
     const entries = [fakeEntry('one'), fakeEntry('two')];
     const rows = [

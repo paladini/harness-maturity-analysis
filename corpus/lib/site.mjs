@@ -14,6 +14,10 @@ const CATEGORY_LABELS = {
   'artifact-governance': 'artifact governance',
   'ai-automation': 'AI and automation',
   'developer-tools': 'developer tools',
+  'database-data-platforms': 'database and data platforms',
+  'developer-experience': 'developer experience',
+  'code-quality': 'code quality',
+  'software-delivery-testing-build': 'software delivery, testing, build',
   'cloud-platforms': 'cloud, IaC, platforms',
   'data-ml-science': 'data, ML, science',
   agriculture: 'agriculture software',
@@ -79,6 +83,7 @@ function renderLeaderboardRow(row, rank) {
     'media-editing-popularity',
     'game-ai-popularity',
     'github-top-software-popularity',
+    'developer-infrastructure-popularity-816',
     'agent-ecosystem-popularity',
     'ai-ide-adoption',
   ].includes(selection?.cohort)
@@ -91,11 +96,13 @@ function renderLeaderboardRow(row, rank) {
               ? `Video game AI software cohort: popularity #${esc(selection.popularityRank)} · `
               : selection.cohort === 'github-top-software-popularity'
                 ? `GitHub software cohort: popularity #${esc(selection.popularityRank)} · `
-                : selection.cohort === 'agent-ecosystem-popularity'
-                  ? `Agent ecosystem (${esc(categoryLabel(selection.focusCategory))}): popularity #${esc(selection.popularityRank)} · `
-                  : selection.cohort === 'ai-ide-adoption'
-                    ? `AI coding-assistant adoption cohort: ${esc(selection.selectionMode === 'popular' ? `popularity #${esc(selection.popularityRank)}` : 'seeded zero-star sample')} - `
-                    : 'Media editing software cohort: '
+                : selection.cohort === 'developer-infrastructure-popularity-816'
+                  ? `Developer infrastructure (${esc(categoryLabel(selection.focusCategory))}) cohort: popularity #${esc(selection.popularityRank)} · `
+                  : selection.cohort === 'agent-ecosystem-popularity'
+                    ? `Agent ecosystem (${esc(categoryLabel(selection.focusCategory))}): popularity #${esc(selection.popularityRank)} · `
+                    : selection.cohort === 'ai-ide-adoption'
+                      ? `AI coding-assistant adoption cohort: ${esc(selection.selectionMode === 'popular' ? `popularity #${esc(selection.popularityRank)}` : 'seeded zero-star sample')} - `
+                      : 'Media editing software cohort: '
       }${esc(Number(selection.githubStars).toLocaleString('en-US'))} GitHub stars on ${esc(selection.date)}</p>`
     : '';
   return `
@@ -221,6 +228,9 @@ export function renderSite(rows, manifest, historyRuns = []) {
   const githubTopCount = manifest.entries.filter(
     (entry) => entry.selection?.cohort === 'github-top-software-popularity',
   ).length;
+  const developerInfrastructureCount = manifest.entries.filter(
+    (entry) => entry.selection?.cohort === 'developer-infrastructure-popularity-816',
+  ).length;
   const agentEcosystemCount = manifest.entries.filter(
     (entry) => entry.selection?.cohort === 'agent-ecosystem-popularity',
   ).length;
@@ -257,6 +267,7 @@ ${SITE_CSS}
       ${mediaEditingCount ? `<span class="cohort-note">Media editing cohort selection: ${mediaEditingCount} projects from a recorded bounded GitHub search union. <a href="https://github.com/paladini/harness-maturity-analysis/issues/7">Selection and source evidence</a>.</span>` : ''}
       ${gameAiCount ? `<span class="cohort-note">Includes ${gameAiCount} video game AI and AI-assisted game development projects selected by stars within a bounded search union. <a href="https://github.com/paladini/harness-maturity-analysis/issues/11">Selection and source evidence</a>.</span>` : ''}
       ${githubTopCount ? `<span class="cohort-note">Includes ${githubTopCount} new public software repositories selected by GitHub stars within a bounded search union. Popularity is selection metadata, not maturity. <a href="https://github.com/paladini/harness-maturity-analysis/issues/15">Selection and source evidence</a>.</span>` : ''}
+      ${developerInfrastructureCount ? `<span class="cohort-note">Includes ${developerInfrastructureCount} database, developer-tool, code-quality and software-delivery repositories selected by GitHub stars in a bounded search union. Popularity is selection metadata, not maturity. <a href="https://github.com/paladini/harness-maturity-analysis/issues/19">Selection and source evidence</a>.</span>` : ''}
       ${agentEcosystemCount ? `<span class="cohort-note">Includes ${agentEcosystemCount} loop-engineering, harness, MCP, A2A and related agent-software projects selected by GitHub stars in bounded searches. Popularity is selection metadata, not maturity. <a href="https://github.com/paladini/harness-maturity-analysis/issues/17">Selection and source evidence</a>.</span>` : ''}
       ${aiIdeAdoptionCount ? `<span class="cohort-note">Includes ${aiIdeAdoptionCount} repositories with explicit AI coding-agent and IDE instruction files, selected from bounded code searches. Stars and the zero-star sample are selection metadata, not maturity. <a href="https://github.com/paladini/harness-maturity-analysis/issues/20">Selection and source evidence</a>.</span>` : ''}
     </p>
