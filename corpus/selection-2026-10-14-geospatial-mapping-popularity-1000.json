@@ -62313,8 +62313,8 @@
       }
     }
   ],
-  "analysisIssueNumber": null,
-  "analysisIssueUrl": null,
+  "analysisIssueNumber": 27,
+  "analysisIssueUrl": "https://github.com/paladini/harness-maturity-analysis/issues/27",
   "analysisPrUrl": null,
   "showcaseIssueUrl": null,
   "showcasePrUrl": null,
