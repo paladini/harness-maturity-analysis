@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.1"
+    "version": "1.8.2"
   },
-  "root": "/tmp/scientific-software-random-500/repos/eiszapfen2000-tgda",
+  "root": "/home/fernando_paladini/harness-scan-2026-10-14/eiszapfen2000-tgda",
   "truncated": false,
   "verdicts": {
     "maturity": {

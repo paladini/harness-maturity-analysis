@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.1"
+    "version": "1.8.2"
   },
-  "root": "/home/fernando_paladini/.cache/agri-scan-root2/.cache/repos/lejubila-pigardenweb",
+  "root": "/home/fernando_paladini/harness-scan-2026-10-14/lejubila-pigardenweb",
   "truncated": false,
   "verdicts": {
     "maturity": {

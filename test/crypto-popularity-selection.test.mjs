@@ -8,17 +8,19 @@ const manifest = json('corpus/manifest.json');
 
 describe('Phase 1D cryptocurrency software cohort', () => {
   it('records an authoritative complete Linux CCXT read without dropping the quarantined fixture', () => {
-    const receipt = json('corpus/scan-environment-2026-10-08-ccxt.json');
+    const receipt = json('corpus/platform-receipts/harness-score-1.8.2-2026-10-14/ccxt.json');
     const candidate = selection.candidates.find((entry) => entry.name === 'ccxt');
     const supplemental = json('corpus/checkout-audit-2026-10-08-crypto-popularity-ccxt-linux.json');
-    expect(receipt.platform).toBe('linux');
+    expect(receipt.platform).toBe('WSL2 Ubuntu 24.04');
     expect(receipt.commit).toBe(candidate.commit);
-    expect(receipt.checkoutExcludes).toEqual([]);
-    expect(receipt.codeExecutedFromTarget).toBe(false);
-    expect(receipt.maturityStatus).toBe('complete');
-    expect(receipt.truncated).toBe(false);
+    expect(receipt.headMatchesPin).toBe(true);
+    expect(receipt.diffIndexClean).toBe(true);
+    expect(receipt.report.toolVersion).toBe('1.8.2');
+    expect(receipt.report.truncated).toBe(false);
     expect(supplemental.entries[0].codeEvidence).toEqual({ ...candidate.codeEvidence, status: 'verified' });
-    expect(json('corpus/reports/ccxt.json').root).toBe(receipt.root);
+    const report = json('corpus/reports/ccxt.json');
+    expect(report.root).toBe(receipt.scannerRoot);
+    expect(report.tool.version).toBe(receipt.report.toolVersion);
   });
   it('adds exactly25 new canonical identities without changing101 earlier pins', () => {
     expect(selection.candidates).toHaveLength(25);
@@ -75,9 +77,12 @@ describe('Phase 1D cryptocurrency software cohort', () => {
     }
   });
 
-  it('matches all25 implementation blobs and the complete named126-report history', () => {
+  it('matches all25 implementation blobs while preserving the original and current report histories', () => {
     const audit = json('corpus/checkout-audit-2026-10-08-crypto-popularity.json');
     const history = json('corpus/history/2026-10-08-harness-score-1.8.1-crypto-popularity.json');
+    const currentHistory = json(
+      'corpus/history/2026-10-14-harness-score-1.8.2-geospatial-mapping-popularity-1000.json',
+    );
     expect(audit.entries).toHaveLength(25);
     expect(history.entries).toHaveLength(126);
     expect(history.runId).toBe('crypto-popularity');
@@ -89,9 +94,12 @@ describe('Phase 1D cryptocurrency software cohort', () => {
       expect(entry.codeEvidence).toEqual({ ...candidate.codeEvidence, status: 'verified' });
       const report = json(`corpus/reports/${candidate.name}.json`);
       const historical = history.entries.find((item) => item.name === candidate.name);
-      expect(report.tool.version).toBe('1.8.1');
-      expect(historical.score).toEqual(report.score);
-      expect(historical.level.index).toBe(report.level.index);
+      const current = currentHistory.entries.find((item) => item.name === candidate.name);
+      expect(historical.status).toBe('scored');
+      expect(report.tool.version).toBe('1.8.2');
+      expect(current.status).toBe('scored');
+      expect(current.score).toEqual(report.score);
+      expect(current.level.index).toBe(report.level.index);
     }
   });
 });

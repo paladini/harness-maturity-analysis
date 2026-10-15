@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.1"
+    "version": "1.8.2"
   },
-  "root": "/tmp/codex-github-top-1000-juanfont-headscale/repo",
+  "root": "/home/fernando_paladini/harness-scan-2026-10-14/juanfont-headscale",
   "truncated": false,
   "verdicts": {
     "maturity": {

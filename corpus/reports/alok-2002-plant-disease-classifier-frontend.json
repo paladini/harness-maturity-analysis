@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.1"
+    "version": "1.8.2"
   },
-  "root": "/root/agri-scan-root3/.cache/repos/alok-2002-plant-disease-classifier-frontend",
+  "root": "D:\\code\\harness-maturity-analysis-geospatial-1000\\.cache\\repos\\alok-2002-plant-disease-classifier-frontend",
   "truncated": false,
   "verdicts": {
     "maturity": {

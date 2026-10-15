@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.1"
+    "version": "1.8.2"
   },
-  "root": "C:\\Users\\Fernando Paladini\\.codex\\worktrees\\ai500-clean\\.cache\\repos\\folo",
+  "root": "D:\\code\\harness-maturity-analysis-geospatial-1000\\.cache\\repos\\folo",
   "truncated": false,
   "verdicts": {
     "maturity": {
@@ -439,7 +439,7 @@
       "points": 3,
       "earned": 3,
       "passed": true,
-      "evidence": "CI invokes static checks (\"rector\").",
+      "evidence": "CI invokes static checks (\"typecheck\").",
       "remediation": "Add lint and typecheck steps to CI — cheap computational sensors belong on every push (\"keep quality left\").",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ci-03",
       "severity": "error",
@@ -974,7 +974,7 @@
         "points": 3,
         "earned": 3,
         "passed": true,
-        "evidence": "CI invokes static checks (\"rector\").",
+        "evidence": "CI invokes static checks (\"typecheck\").",
         "remediation": "Add lint and typecheck steps to CI — cheap computational sensors belong on every push (\"keep quality left\").",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ci-03",
         "severity": "error",

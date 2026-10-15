@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.1"
+    "version": "1.8.2"
   },
-  "root": "/home/fernando_paladini/.local/share/codex-harness-corpus/repos/envoyproxy-envoy/repo",
+  "root": "/home/fernando_paladini/harness-scan-2026-10-14/envoyproxy-envoy",
   "truncated": false,
   "verdicts": {
     "maturity": {

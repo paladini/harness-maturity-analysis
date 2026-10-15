@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.1"
+    "version": "1.8.2"
   },
-  "root": "C:\\Users\\Fernando Paladini\\.codex\\worktrees\\loop-engineering-mcp-500\\.cache\\repos\\dryxio-reagent",
+  "root": "D:\\code\\harness-maturity-analysis-geospatial-1000\\.cache\\repos\\dryxio-reagent",
   "truncated": false,
   "verdicts": {
     "maturity": {
@@ -421,7 +421,7 @@
       "points": 4,
       "earned": 4,
       "passed": true,
-      "evidence": "CI invokes tests (\"test\").",
+      "evidence": "CI invokes tests (\"pytest\").",
       "remediation": "Make CI execute the test suite (npm test, pytest, go test…) so no agent-authored change can merge without the sensors firing.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ci-02",
       "severity": "error",
@@ -434,7 +434,7 @@
       "points": 3,
       "earned": 3,
       "passed": true,
-      "evidence": "CI invokes static checks (\"lint\").",
+      "evidence": "CI invokes static checks (\"ruff\").",
       "remediation": "Add lint and typecheck steps to CI — cheap computational sensors belong on every push (\"keep quality left\").",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ci-03",
       "severity": "error",
@@ -955,7 +955,7 @@
         "points": 4,
         "earned": 4,
         "passed": true,
-        "evidence": "CI invokes tests (\"test\").",
+        "evidence": "CI invokes tests (\"pytest\").",
         "remediation": "Make CI execute the test suite (npm test, pytest, go test…) so no agent-authored change can merge without the sensors firing.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ci-02",
         "severity": "error",
@@ -968,7 +968,7 @@
         "points": 3,
         "earned": 3,
         "passed": true,
-        "evidence": "CI invokes static checks (\"lint\").",
+        "evidence": "CI invokes static checks (\"ruff\").",
         "remediation": "Add lint and typecheck steps to CI — cheap computational sensors belong on every push (\"keep quality left\").",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ci-03",
         "severity": "error",

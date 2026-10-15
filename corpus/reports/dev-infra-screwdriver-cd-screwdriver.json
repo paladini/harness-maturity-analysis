@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.1"
+    "version": "1.8.2"
   },
-  "root": "/tmp/harness-corpus-retries/dev-infra-screwdriver-cd-screwdriver",
+  "root": "/home/fernando_paladini/harness-scan-2026-10-14/dev-infra-screwdriver-cd-screwdriver",
   "truncated": false,
   "verdicts": {
     "maturity": {

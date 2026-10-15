@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.1"
+    "version": "1.8.2"
   },
-  "root": "D:\\code\\harness-maturity-analysis\\.cache\\repos\\caveman",
+  "root": "D:\\code\\harness-maturity-analysis-geospatial-1000\\.cache\\repos\\caveman",
   "truncated": false,
   "verdicts": {
     "maturity": {
