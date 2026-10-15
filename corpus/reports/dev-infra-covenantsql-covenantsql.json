@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.1"
+    "version": "1.8.2"
   },
-  "root": "/tmp/harness-corpus-retries/dev-infra-covenantsql-covenantsql",
+  "root": "/home/fernando_paladini/harness-scan-2026-10-14/dev-infra-covenantsql-covenantsql",
   "truncated": false,
   "verdicts": {
     "maturity": {
@@ -421,7 +421,7 @@
       "points": 4,
       "earned": 4,
       "passed": true,
-      "evidence": "CI invokes tests (\"test\").",
+      "evidence": "CI invokes tests (\"go test\").",
       "remediation": "Make CI execute the test suite (npm test, pytest, go test…) so no agent-authored change can merge without the sensors firing.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ci-02",
       "severity": "error",
@@ -955,7 +955,7 @@
         "points": 4,
         "earned": 4,
         "passed": true,
-        "evidence": "CI invokes tests (\"test\").",
+        "evidence": "CI invokes tests (\"go test\").",
         "remediation": "Make CI execute the test suite (npm test, pytest, go test…) so no agent-authored change can merge without the sensors firing.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ci-02",
         "severity": "error",

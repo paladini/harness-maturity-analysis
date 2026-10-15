@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.1"
+    "version": "1.8.2"
   },
-  "root": "D:\\code\\harness-maturity-analysis-ai-ide-2026-10-11\\.cache\\repos\\ai-ide-techwavedev-agi-agent-kit-1140790995",
+  "root": "D:\\code\\harness-maturity-analysis-geospatial-1000\\.cache\\repos\\ai-ide-techwavedev-agi-agent-kit-1140790995",
   "truncated": false,
   "verdicts": {
     "maturity": {
@@ -427,7 +427,7 @@
       "points": 4,
       "earned": 4,
       "passed": true,
-      "evidence": "CI invokes tests (\"TEST\").",
+      "evidence": "CI invokes tests (\"test\").",
       "remediation": "Make CI execute the test suite (npm test, pytest, go test…) so no agent-authored change can merge without the sensors firing.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ci-02",
       "severity": "error",
@@ -963,7 +963,7 @@
         "points": 4,
         "earned": 4,
         "passed": true,
-        "evidence": "CI invokes tests (\"TEST\").",
+        "evidence": "CI invokes tests (\"test\").",
         "remediation": "Make CI execute the test suite (npm test, pytest, go test…) so no agent-authored change can merge without the sensors firing.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ci-02",
         "severity": "error",

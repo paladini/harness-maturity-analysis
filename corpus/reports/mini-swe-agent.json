@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.1"
+    "version": "1.8.2"
   },
-  "root": "C:\\Users\\Fernando Paladini\\.codex\\worktrees\\ai500-clean\\.cache\\repos\\mini-swe-agent",
+  "root": "D:\\code\\harness-maturity-analysis-geospatial-1000\\.cache\\repos\\mini-swe-agent",
   "truncated": false,
   "verdicts": {
     "maturity": {
@@ -437,7 +437,7 @@
       "points": 3,
       "earned": 3,
       "passed": true,
-      "evidence": "CI invokes static checks (\"Pylint\").",
+      "evidence": "CI invokes static checks (\"pylint\").",
       "remediation": "Add lint and typecheck steps to CI — cheap computational sensors belong on every push (\"keep quality left\").",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ci-03",
       "severity": "error",
@@ -972,7 +972,7 @@
         "points": 3,
         "earned": 3,
         "passed": true,
-        "evidence": "CI invokes static checks (\"Pylint\").",
+        "evidence": "CI invokes static checks (\"pylint\").",
         "remediation": "Add lint and typecheck steps to CI — cheap computational sensors belong on every push (\"keep quality left\").",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ci-03",
         "severity": "error",

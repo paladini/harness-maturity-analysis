@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.1"
+    "version": "1.8.2"
   },
-  "root": "D:\\code\\harness-maturity-analysis-dev-infra-1000\\.cache\\repos\\dev-infra-welliamcao-opsmanage",
+  "root": "D:\\code\\harness-maturity-analysis-geospatial-1000\\.cache\\repos\\dev-infra-welliamcao-opsmanage",
   "truncated": false,
   "verdicts": {
     "maturity": {

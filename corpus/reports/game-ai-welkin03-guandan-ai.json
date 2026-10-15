@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.1"
+    "version": "1.8.2"
   },
-  "root": "D:\\code\\harness-maturity-analysis-ai-games\\.cache\\repos\\game-ai-welkin03-guandan-ai",
+  "root": "D:\\code\\harness-maturity-analysis-geospatial-1000\\.cache\\repos\\game-ai-welkin03-guandan-ai",
   "truncated": false,
   "verdicts": {
     "maturity": {

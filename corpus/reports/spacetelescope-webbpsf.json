@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.1"
+    "version": "1.8.2"
   },
-  "root": "D:\\code\\harness-maturity-analysis-ai-ide-2026-10-11\\.cache\\repos\\spacetelescope-webbpsf",
+  "root": "D:\\code\\harness-maturity-analysis-geospatial-1000\\.cache\\repos\\spacetelescope-webbpsf",
   "truncated": false,
   "verdicts": {
     "maturity": {
@@ -34,9 +34,9 @@
     "capped": false
   },
   "score": {
-    "earned": 34,
+    "earned": 30,
     "max": 105,
-    "percent": 32
+    "percent": 29
   },
   "dimensions": [
     {
@@ -74,9 +74,9 @@
     {
       "id": "ci",
       "title": "CI Feedback",
-      "earned": 8,
+      "earned": 4,
       "max": 14,
-      "percent": 57,
+      "percent": 29,
       "applicable": true
     },
     {
@@ -419,9 +419,9 @@
       "dimension": "ci",
       "title": "CI runs the test suite",
       "points": 4,
-      "earned": 4,
-      "passed": true,
-      "evidence": "CI invokes tests (\"test\").",
+      "earned": 0,
+      "passed": false,
+      "evidence": "CI configuration does not appear to run tests.",
       "remediation": "Make CI execute the test suite (npm test, pytest, go test…) so no agent-authored change can merge without the sensors firing.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ci-02",
       "severity": "error",
@@ -568,9 +568,9 @@
       "capped": false
     },
     "score": {
-      "earned": 34,
+      "earned": 30,
       "max": 105,
-      "percent": 32
+      "percent": 29
     },
     "dimensions": [
       {
@@ -608,9 +608,9 @@
       {
         "id": "ci",
         "title": "CI Feedback",
-        "earned": 8,
+        "earned": 4,
         "max": 14,
-        "percent": 57,
+        "percent": 29,
         "applicable": true
       },
       {
@@ -953,9 +953,9 @@
         "dimension": "ci",
         "title": "CI runs the test suite",
         "points": 4,
-        "earned": 4,
-        "passed": true,
-        "evidence": "CI invokes tests (\"test\").",
+        "earned": 0,
+        "passed": false,
+        "evidence": "CI configuration does not appear to run tests.",
         "remediation": "Make CI execute the test suite (npm test, pytest, go test…) so no agent-authored change can merge without the sensors firing.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ci-02",
         "severity": "error",

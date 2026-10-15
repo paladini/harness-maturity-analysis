@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.1"
+    "version": "1.8.2"
   },
-  "root": "D:\\code\\harness-maturity-analysis-dev-infra-1000\\.cache\\repos\\dev-infra-graphql-hive-graphql-yoga",
+  "root": "D:\\code\\harness-maturity-analysis-geospatial-1000\\.cache\\repos\\dev-infra-graphql-hive-graphql-yoga",
   "truncated": false,
   "verdicts": {
     "maturity": {
@@ -434,7 +434,7 @@
       "points": 3,
       "earned": 3,
       "passed": true,
-      "evidence": "CI invokes static checks (\"rector\").",
+      "evidence": "CI invokes static checks (\"lint\").",
       "remediation": "Add lint and typecheck steps to CI — cheap computational sensors belong on every push (\"keep quality left\").",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ci-03",
       "severity": "error",
@@ -968,7 +968,7 @@
         "points": 3,
         "earned": 3,
         "passed": true,
-        "evidence": "CI invokes static checks (\"rector\").",
+        "evidence": "CI invokes static checks (\"lint\").",
         "remediation": "Add lint and typecheck steps to CI — cheap computational sensors belong on every push (\"keep quality left\").",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ci-03",
         "severity": "error",

@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.1"
+    "version": "1.8.2"
   },
-  "root": "C:\\Users\\Fernando Paladini\\.codex\\worktrees\\loop-engineering-mcp-500\\.cache\\repos\\zarazhangrui-beautiful-html-templates",
+  "root": "D:\\code\\harness-maturity-analysis-geospatial-1000\\.cache\\repos\\zarazhangrui-beautiful-html-templates",
   "truncated": false,
   "verdicts": {
     "maturity": {

@@ -18,7 +18,9 @@ const MANIFEST_PATH = path.join(__dirname, 'manifest.json');
 export function parseArgs(argv) {
   const onlyIdx = argv.indexOf('--only');
   const only = onlyIdx >= 0 && argv[onlyIdx + 1] ? new Set(argv[onlyIdx + 1].split(',')) : null;
-  return { only, pruneCache: argv.includes('--prune-cache') };
+  const skipIdx = argv.indexOf('--skip');
+  const skip = skipIdx >= 0 && argv[skipIdx + 1] ? new Set(argv[skipIdx + 1].split(',')) : null;
+  return { only, skip, pruneCache: argv.includes('--prune-cache') };
 }
 
 // Guards the script body so vitest can import parseArgs (and, in principle,
@@ -26,9 +28,9 @@ export function parseArgs(argv) {
 const isMain = path.resolve(fileURLToPath(import.meta.url)) === path.resolve(process.argv[1] ?? '');
 
 if (isMain) {
-  const { only, pruneCache } = parseArgs(process.argv.slice(2));
+  const { only, skip, pruneCache } = parseArgs(process.argv.slice(2));
   const manifest = JSON.parse(readFileSync(MANIFEST_PATH, 'utf8'));
-  const entries = only ? manifest.entries.filter((e) => only.has(e.name)) : manifest.entries;
+  const entries = manifest.entries.filter((e) => (!only || only.has(e.name)) && (!skip || !skip.has(e.name)));
 
   if (entries.length === 0) {
     process.stderr.write('No matching manifest entries — check --only against corpus/manifest.json names.\n');
@@ -106,7 +108,7 @@ if (isMain) {
 
   const failed = summary.filter((s) => !s.ok);
   process.stdout.write(`\n${summary.length - failed.length}/${summary.length} scanned successfully.\n`);
-  if (!only && failed.length === 0) {
+  if (!only && !skip && failed.length === 0) {
     const snapshot = createHistorySnapshot(manifest, new Map(summary.map((result) => [result.name, result])));
     const snapshotPath = writeHistorySnapshot(HISTORY_DIR, snapshot);
     process.stdout.write(`History verified: ${path.relative(ROOT, snapshotPath)}\n`);

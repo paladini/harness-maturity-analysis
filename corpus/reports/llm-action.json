@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.1"
+    "version": "1.8.2"
   },
-  "root": "/tmp/codex-ai500-llm-action/repo",
+  "root": "/home/fernando_paladini/harness-scan-2026-10-14/llm-action",
   "truncated": false,
   "verdicts": {
     "maturity": {

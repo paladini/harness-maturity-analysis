@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.1"
+    "version": "1.8.2"
   },
-  "root": "D:\\code\\harness-maturity-analysis-ai-ide-2026-10-11\\.cache\\repos\\ai-ide-involvex-happy-vibecode-1192337987",
+  "root": "D:\\code\\harness-maturity-analysis-geospatial-1000\\.cache\\repos\\ai-ide-involvex-happy-vibecode-1192337987",
   "truncated": false,
   "verdicts": {
     "maturity": {
@@ -38,9 +38,9 @@
     "capped": false
   },
   "score": {
-    "earned": 63,
+    "earned": 60,
     "max": 105,
-    "percent": 60
+    "percent": 57
   },
   "dimensions": [
     {
@@ -78,9 +78,9 @@
     {
       "id": "ci",
       "title": "CI Feedback",
-      "earned": 7,
+      "earned": 4,
       "max": 14,
-      "percent": 50,
+      "percent": 29,
       "applicable": true
     },
     {
@@ -436,9 +436,9 @@
       "dimension": "ci",
       "title": "CI runs lint / type checks",
       "points": 3,
-      "earned": 3,
-      "passed": true,
-      "evidence": "CI invokes static checks (\"rector\").",
+      "earned": 0,
+      "passed": false,
+      "evidence": "CI configuration does not appear to run lint or type checks.",
       "remediation": "Add lint and typecheck steps to CI — cheap computational sensors belong on every push (\"keep quality left\").",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ci-03",
       "severity": "error",
@@ -572,9 +572,9 @@
       "capped": false
     },
     "score": {
-      "earned": 63,
+      "earned": 60,
       "max": 105,
-      "percent": 60
+      "percent": 57
     },
     "dimensions": [
       {
@@ -612,9 +612,9 @@
       {
         "id": "ci",
         "title": "CI Feedback",
-        "earned": 7,
+        "earned": 4,
         "max": 14,
-        "percent": 50,
+        "percent": 29,
         "applicable": true
       },
       {
@@ -970,9 +970,9 @@
         "dimension": "ci",
         "title": "CI runs lint / type checks",
         "points": 3,
-        "earned": 3,
-        "passed": true,
-        "evidence": "CI invokes static checks (\"rector\").",
+        "earned": 0,
+        "passed": false,
+        "evidence": "CI configuration does not appear to run lint or type checks.",
         "remediation": "Add lint and typecheck steps to CI — cheap computational sensors belong on every push (\"keep quality left\").",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ci-03",
         "severity": "error",

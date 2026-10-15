@@ -88,14 +88,22 @@ function graphql(query) {
   for (let attempt = 0; attempt < 6; attempt++) {
     try {
       const output = execFileSync('rtk', ['gh', 'api', 'graphql', '-f', `query=${query}`], {
-        encoding: 'utf8', maxBuffer: 4 * 1024 * 1024, timeout: 90_000,
+        encoding: 'utf8',
+        maxBuffer: 4 * 1024 * 1024,
+        timeout: 90_000,
       });
       const response = JSON.parse(output);
       if (response.errors?.length) throw new Error(JSON.stringify(response.errors));
       return response.data;
     } catch (error) {
       lastError = error;
-      if (!/HTTP 5\d\d|timeout|timed out|unexpected end of JSON|JSON input/i.test(`${error.stderr ?? ''} ${error.message ?? ''}`) || attempt === 5) throw error;
+      if (
+        !/HTTP 5\d\d|timeout|timed out|unexpected end of JSON|JSON input/i.test(
+          `${error.stderr ?? ''} ${error.message ?? ''}`,
+        ) ||
+        attempt === 5
+      )
+        throw error;
       Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 2000 * (attempt + 1));
     }
   }
@@ -106,13 +114,15 @@ const pending = [...repos.values()].filter((repo) => repo.databaseId === undefin
 const chunkSize = 35;
 for (let offset = 0; offset < pending.length; offset += chunkSize) {
   const batch = pending.slice(offset, offset + chunkSize);
-  const fields = batch.map((repo, i) => {
-    const [owner, name] = repo.slug.split('/');
-    if (!/^[A-Za-z0-9_.-]+$/.test(owner) || !/^[A-Za-z0-9_.-]+$/.test(name)) {
-      throw new Error(`unexpected GitHub slug: ${repo.slug}`);
-    }
-    return `r${i}: repository(owner: "${escapeGraphQL(owner)}", name: "${escapeGraphQL(name)}") { databaseId nameWithOwner url }`;
-  }).join('\n');
+  const fields = batch
+    .map((repo, i) => {
+      const [owner, name] = repo.slug.split('/');
+      if (!/^[A-Za-z0-9_.-]+$/.test(owner) || !/^[A-Za-z0-9_.-]+$/.test(name)) {
+        throw new Error(`unexpected GitHub slug: ${repo.slug}`);
+      }
+      return `r${i}: repository(owner: "${escapeGraphQL(owner)}", name: "${escapeGraphQL(name)}") { databaseId nameWithOwner url }`;
+    })
+    .join('\n');
   const data = graphql(`query { ${fields} }`);
   batch.forEach((repo, i) => {
     const current = data[`r${i}`];
@@ -126,9 +136,15 @@ for (let offset = 0; offset < pending.length; offset += chunkSize) {
 }
 
 const final = save();
-console.log(JSON.stringify({
-  repositories: final.repositories.length,
-  resolved: final.repositories.filter((repo) => repo.databaseId).length,
-  unresolved: final.repositories.filter((repo) => !repo.databaseId).length,
-  output: inventoryPath,
-}, null, 2));
+console.log(
+  JSON.stringify(
+    {
+      repositories: final.repositories.length,
+      resolved: final.repositories.filter((repo) => repo.databaseId).length,
+      unresolved: final.repositories.filter((repo) => !repo.databaseId).length,
+      output: inventoryPath,
+    },
+    null,
+    2,
+  ),
+);

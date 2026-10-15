@@ -7,6 +7,7 @@
       "!corpus/.cache",
       "!corpus/checkout-audit-*.json",
       "!corpus/popularity-search-*.json",
+      "!corpus/canonical-identity-inventory-2026-10-14.json",
       "!results",
       "!docs",
       "!.cache",

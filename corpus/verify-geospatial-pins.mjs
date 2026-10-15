@@ -2,8 +2,8 @@
 import { execFile } from 'node:child_process';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
-import { promisify } from 'node:util';
 import { fileURLToPath } from 'node:url';
+import { promisify } from 'node:util';
 
 const execFileAsync = promisify(execFile);
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -21,7 +21,12 @@ function save() {
     observedAt: prior?.observedAt ?? new Date().toISOString(),
     sourceAudit: 'corpus/content-audit-2026-10-14-geospatial-mapping.json',
     candidateCount: eligible.length,
-    candidates: eligible.map((repo) => ({ databaseId: repo.databaseId, fullName: repo.fullName, stars: repo.stars, searchCommit: repo.commit })),
+    candidates: eligible.map((repo) => ({
+      databaseId: repo.databaseId,
+      fullName: repo.fullName,
+      stars: repo.stars,
+      searchCommit: repo.commit,
+    })),
     results: [...results.values()].sort((a, b) => b.stars - a.stars),
   };
   mkdirSync(path.dirname(outputPath), { recursive: true });
@@ -44,7 +49,9 @@ async function resolve(repo) {
   for (let attempt = 0; attempt < 5; attempt++) {
     try {
       const { stdout } = await execFileAsync('rtk', ['git', 'ls-remote', '--symref', repo.repoUrl, 'HEAD'], {
-        encoding: 'utf8', timeout: 90_000, maxBuffer: 1024 * 1024,
+        encoding: 'utf8',
+        timeout: 90_000,
+        maxBuffer: 1024 * 1024,
       });
       const current = parseLsRemote(stdout);
       return {
@@ -100,10 +107,16 @@ async function worker() {
 
 await Promise.all(Array.from({ length: concurrency }, () => worker()));
 const final = save();
-console.log(JSON.stringify({
-  candidates: final.candidateCount,
-  resolved: final.results.filter((repo) => repo.commit && !repo.error).length,
-  moved: final.results.filter((repo) => repo.movedSinceDiscovery).length,
-  failed: final.results.filter((repo) => repo.error).length,
-  output: outputPath,
-}, null, 2));
+console.log(
+  JSON.stringify(
+    {
+      candidates: final.candidateCount,
+      resolved: final.results.filter((repo) => repo.commit && !repo.error).length,
+      moved: final.results.filter((repo) => repo.movedSinceDiscovery).length,
+      failed: final.results.filter((repo) => repo.error).length,
+      output: outputPath,
+    },
+    null,
+    2,
+  ),
+);

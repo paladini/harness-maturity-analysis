@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.1"
+    "version": "1.8.2"
   },
-  "root": "/root/agri-scan-root3/.cache/repos/gopiashokan-potato-disease-classification-using-deep-learning",
+  "root": "/home/fernando_paladini/harness-scan-2026-10-14/gopiashokan-potato-disease-classification-using-deep-learning",
   "truncated": false,
   "verdicts": {
     "maturity": {

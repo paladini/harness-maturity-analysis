@@ -4,15 +4,20 @@ import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const topics = [
-  'geospatial', 'gis', 'map', 'mapping', 'cartography', 'qgis',
-];
+const topics = ['geospatial', 'gis', 'map', 'mapping', 'cartography', 'qgis'];
 const date = '2026-10-14';
-const scrubTokens = (value) => value?.replace(/\b(?:pk|sk)\.[A-Za-z0-9_-]{20,}\b/g, '[redacted-mapbox-token]') ?? value;
-const output = path.join(path.dirname(fileURLToPath(import.meta.url)),
-  `popularity-search-${date}-geospatial-mapping.json`);
+const scrubTokens = (value) =>
+  value?.replace(/\b(?:pk|sk)\.[A-Za-z0-9_-]{20,}\b/g, '[redacted-mapbox-token]') ?? value;
+const output = path.join(
+  path.dirname(fileURLToPath(import.meta.url)),
+  `popularity-search-${date}-geospatial-mapping.json`,
+);
 const prior = (() => {
-  try { return JSON.parse(readFileSync(output, 'utf8')); } catch { return null; }
+  try {
+    return JSON.parse(readFileSync(output, 'utf8'));
+  } catch {
+    return null;
+  }
 })();
 const capturedAt = prior?.capturedAt ?? new Date().toISOString();
 const searches = prior?.searches ?? [];
@@ -23,7 +28,9 @@ function graphql(query) {
   for (let attempt = 0; attempt < 6; attempt++) {
     try {
       const output = execFileSync('rtk', ['gh', 'api', 'graphql', '-f', `query=${query}`], {
-        encoding: 'utf8', maxBuffer: 24 * 1024 * 1024, timeout: 90_000,
+        encoding: 'utf8',
+        maxBuffer: 24 * 1024 * 1024,
+        timeout: 90_000,
       });
       const result = JSON.parse(output);
       if (result.errors?.length) throw new Error(JSON.stringify(result.errors));
@@ -31,7 +38,8 @@ function graphql(query) {
     } catch (error) {
       lastError = error;
       const detail = `${error.stderr ?? ''} ${error.message ?? ''}`;
-      if (!/HTTP 5\d\d|timeout|timed out|unexpected end of JSON|JSON input/i.test(detail) || attempt === 5) throw error;
+      if (!/HTTP 5\d\d|timeout|timed out|unexpected end of JSON|JSON input/i.test(detail) || attempt === 5)
+        throw error;
       const waitMs = 2000 * (attempt + 1);
       console.log(`Transient GitHub failure; retrying after ${waitMs}ms.`);
       Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, waitMs);
@@ -46,7 +54,8 @@ function save() {
     roundId: 'geospatial-mapping-popularity-1000',
     capturedAt,
     endpoint: 'GitHub GraphQL Search API via rtk gh',
-    queryMode: 'public repository topics, stars descending, first 100 per page, at most ten pages per topic; GraphQL Search does not expose incompleteResults',
+    queryMode:
+      'public repository topics, stars descending, first 100 per page, at most ten pages per topic; GraphQL Search does not expose incompleteResults',
     perTopicResultCap: 1000,
     topics,
     searches,
@@ -99,11 +108,17 @@ for (const topic of topics) {
     const repos = result.edges.map((edge) => edge.node).filter((repo) => repo?.databaseId);
     const observedAt = new Date().toISOString();
     searches.push({
-      topic, page, query: searchText, totalCount: result.repositoryCount,
-      returned: repos.length, incompleteResults: null,
+      topic,
+      page,
+      query: searchText,
+      totalCount: result.repositoryCount,
+      returned: repos.length,
+      incompleteResults: null,
       capped: result.pageInfo.hasNextPage && page === 10,
-      hasNextPage: result.pageInfo.hasNextPage, endCursor: result.pageInfo.endCursor,
-      sort: 'stars descending', observedAt,
+      hasNextPage: result.pageInfo.hasNextPage,
+      endCursor: result.pageInfo.endCursor,
+      sort: 'stars descending',
+      observedAt,
     });
     cursor = result.pageInfo.endCursor;
     for (const repo of repos) {
@@ -112,16 +127,22 @@ for (const topic of topics) {
         if (!existing.queries.includes(topic)) existing.queries.push(topic);
       } else {
         candidates.set(repo.databaseId, {
-          id: repo.databaseId, fullName: repo.nameWithOwner, htmlUrl: repo.url,
+          id: repo.databaseId,
+          fullName: repo.nameWithOwner,
+          htmlUrl: repo.url,
           cloneUrl: `https://github.com/${repo.nameWithOwner}.git`,
-          description: scrubTokens(repo.description), stars: repo.stargazerCount,
-          isFork: repo.isFork, archived: repo.isArchived,
+          description: scrubTokens(repo.description),
+          stars: repo.stargazerCount,
+          isFork: repo.isFork,
+          archived: repo.isArchived,
           defaultBranch: repo.defaultBranchRef?.name ?? null,
           searchCommit: repo.defaultBranchRef?.target?.oid ?? null,
-          pushedAt: repo.pushedAt, createdAt: repo.createdAt,
+          pushedAt: repo.pushedAt,
+          createdAt: repo.createdAt,
           language: repo.primaryLanguage?.name ?? null,
           license: repo.licenseInfo?.spdxId ?? null,
-          sizeKb: repo.diskUsage, queries: [topic],
+          sizeKb: repo.diskUsage,
+          queries: [topic],
         });
       }
     }
@@ -131,10 +152,16 @@ for (const topic of topics) {
 }
 
 const final = save();
-console.log(JSON.stringify({
-  candidates: final.uniqueCanonicalIds,
-  rawReturned: final.rawReturnedRecords,
-  searches: searches.length,
-  capped: searches.filter((item) => item.capped).length,
-  output,
-}, null, 2));
+console.log(
+  JSON.stringify(
+    {
+      candidates: final.uniqueCanonicalIds,
+      rawReturned: final.rawReturnedRecords,
+      searches: searches.length,
+      capped: searches.filter((item) => item.capped).length,
+      output,
+    },
+    null,
+    2,
+  ),
+);

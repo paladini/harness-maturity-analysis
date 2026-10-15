@@ -110,6 +110,28 @@ describe('renderSite', () => {
     );
     expect(html).toContain('issues/19');
   });
+  it('labels geospatial and mapping entries as a bounded popularity cohort', () => {
+    const entry = fakeEntry('geospatial-tool', {
+      category: 'geospatial',
+      selection: {
+        cohort: 'geospatial-mapping-popularity-1000',
+        focusCategory: 'geospatial',
+        date: '2026-10-14',
+        githubStars: 240,
+        popularityRank: 1000,
+      },
+    });
+    const html = renderSite([{ entry, report: fakeReport({ percent: 61, level: 2 }) }], {
+      toolVersion: 'harness-score@1.8.2',
+      entries: [entry],
+    });
+    expect(html).toContain('Geospatial and mapping cohort: popularity #1000');
+    expect(html).toContain('geospatial and mapping');
+    expect(html).toContain('240 GitHub stars on 2026-10-14');
+    expect(html).toContain('1 geospatial, mapping, GIS and routing repositories');
+    expect(html).toContain('issues/27');
+    expect(html).toContain('61/100');
+  });
   it('produces a well-formed document with a matching title and repo count', () => {
     const entries = [fakeEntry('one'), fakeEntry('two')];
     const rows = [

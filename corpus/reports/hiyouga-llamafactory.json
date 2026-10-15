@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.1"
+    "version": "1.8.2"
   },
-  "root": "C:\\Users\\Fernando Paladini\\.codex\\worktrees\\github-top-1000-analysis-clean\\.cache\\repos\\hiyouga-llamafactory",
+  "root": "D:\\code\\harness-maturity-analysis-geospatial-1000\\.cache\\repos\\hiyouga-llamafactory",
   "truncated": false,
   "verdicts": {
     "maturity": {
