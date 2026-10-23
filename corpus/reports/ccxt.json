@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.2"
+    "version": "1.8.3"
   },
-  "root": "/home/fernando_paladini/harness-scan-2026-10-14/ccxt",
+  "root": "/home/fernando_paladini/harness-scan-2026-10-22-score-1.8.3/ccxt",
   "truncated": false,
   "verdicts": {
     "maturity": {
@@ -1122,5 +1122,8 @@
     "extends": [],
     "rules": {},
     "resolved": []
+  },
+  "scan": {
+    "includePaths": []
   }
 }

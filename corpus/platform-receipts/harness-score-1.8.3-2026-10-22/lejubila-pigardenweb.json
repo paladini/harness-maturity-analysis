@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "repository": "lejubila/piGardenWeb",
+  "manifestName": "lejubila-pigardenweb",
+  "commit": "3ed1930207d59d72de49fd8877880fe4d30592c2",
+  "reason": "Windows checkout failed or was incomplete; rescanned from a pinned WSL2 Ubuntu 24.04 checkout without omitting tracked paths.",
+  "scanner": "harness-score@1.8.3",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-22-score-1.8.3/lejubila-pigardenweb",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v24.16.0",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 25605,
+  "treeModes": {
+    "100644": 24904,
+    "100755": 695,
+    "120000": 6
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [],
+  "treeListingSha256": "357fd5af001aa1f231ce2b0f96c6977497a8cb0d508d71d3836053fa2a8bfa4a",
+  "report": {
+    "path": "corpus/reports/lejubila-pigardenweb.json",
+    "sha256": "aa926d0c0969dd3fbd1ea000c8f3c81b2e162c1a09154f8bfdd7bc44e5bbd901",
+    "sizeBytes": 45035,
+    "toolVersion": "1.8.3",
+    "truncated": false
+  }
+}

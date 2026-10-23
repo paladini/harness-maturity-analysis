@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.2"
+    "version": "1.8.3"
   },
-  "root": "/home/fernando_paladini/harness-scan-2026-10-14/h2o-3",
+  "root": "D:\\code\\harness-maturity-analysis-geospatial-1000\\.cache\\repos\\h2o-3",
   "truncated": false,
   "verdicts": {
     "maturity": {
@@ -1104,5 +1104,8 @@
     "extends": [],
     "rules": {},
     "resolved": []
+  },
+  "scan": {
+    "includePaths": []
   }
 }

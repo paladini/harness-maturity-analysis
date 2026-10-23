@@ -1,7 +1,7 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.2"
+    "version": "1.8.3"
   },
   "root": "D:\\code\\harness-maturity-analysis-geospatial-1000\\.cache\\repos\\dev-infra-firebase-firebase-ios-sdk",
   "truncated": false,
@@ -1104,5 +1104,8 @@
     "extends": [],
     "rules": {},
     "resolved": []
+  },
+  "scan": {
+    "includePaths": []
   }
 }

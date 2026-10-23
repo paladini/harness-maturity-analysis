@@ -126,6 +126,7 @@ function scoreCell(entry) {
 }
 
 function latestDelta(entries) {
+  if (entries.at(-1)?.status !== 'scored') return '—';
   const scored = entries.filter((entry) => entry?.status === 'scored');
   if (scored.length < 2) return '—';
   const delta = scored.at(-1).score.percent - scored.at(-2).score.percent;

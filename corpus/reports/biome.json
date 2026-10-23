@@ -1,7 +1,7 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.2"
+    "version": "1.8.3"
   },
   "root": "D:\\code\\harness-maturity-analysis-geospatial-1000\\.cache\\repos\\biome",
   "truncated": false,
@@ -399,7 +399,7 @@
       "points": 2,
       "earned": 2,
       "passed": true,
-      "evidence": "Found 25817 test file(s), e.g. crates/biome_cli/tests/cases/assist.rs.",
+      "evidence": "Found 25816 test file(s), e.g. crates/biome_cli/tests/cases/assist.rs.",
       "remediation": "Write at least one real test file — a configured runner with zero tests gives the agent a green light it did not earn.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#sns-05",
       "severity": "error",
@@ -933,7 +933,7 @@
         "points": 2,
         "earned": 2,
         "passed": true,
-        "evidence": "Found 25817 test file(s), e.g. crates/biome_cli/tests/cases/assist.rs.",
+        "evidence": "Found 25816 test file(s), e.g. crates/biome_cli/tests/cases/assist.rs.",
         "remediation": "Write at least one real test file — a configured runner with zero tests gives the agent a green light it did not earn.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#sns-05",
         "severity": "error",
@@ -1106,5 +1106,8 @@
     "extends": [],
     "rules": {},
     "resolved": []
+  },
+  "scan": {
+    "includePaths": []
   }
 }

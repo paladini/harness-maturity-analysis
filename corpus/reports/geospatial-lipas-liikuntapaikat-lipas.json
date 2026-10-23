@@ -1,7 +1,7 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.2"
+    "version": "1.8.3"
   },
   "root": "D:\\code\\harness-maturity-analysis-geospatial-1000\\.cache\\repos\\geospatial-lipas-liikuntapaikat-lipas",
   "truncated": false,
@@ -36,9 +36,9 @@
     "capped": false
   },
   "score": {
-    "earned": 70,
+    "earned": 73,
     "max": 105,
-    "percent": 67
+    "percent": 70
   },
   "dimensions": [
     {
@@ -76,9 +76,9 @@
     {
       "id": "ci",
       "title": "CI Feedback",
-      "earned": 7,
+      "earned": 10,
       "max": 14,
-      "percent": 50,
+      "percent": 71,
       "applicable": true
     },
     {
@@ -455,9 +455,9 @@
       "dimension": "ci",
       "title": "Pre-commit checks installed",
       "points": 3,
-      "earned": 0,
-      "passed": false,
-      "evidence": "No pre-commit hook tooling detected.",
+      "earned": 3,
+      "passed": true,
+      "evidence": "Found: .githooks/pre-commit.",
       "remediation": "Add pre-commit tooling (husky + lint-staged, pre-commit, lefthook) so fast checks run before a commit exists — the earliest possible feedback loop.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ci-04",
       "severity": "error",
@@ -578,9 +578,9 @@
       "capped": false
     },
     "score": {
-      "earned": 70,
+      "earned": 73,
       "max": 105,
-      "percent": 67
+      "percent": 70
     },
     "dimensions": [
       {
@@ -618,9 +618,9 @@
       {
         "id": "ci",
         "title": "CI Feedback",
-        "earned": 7,
+        "earned": 10,
         "max": 14,
-        "percent": 50,
+        "percent": 71,
         "applicable": true
       },
       {
@@ -997,9 +997,9 @@
         "dimension": "ci",
         "title": "Pre-commit checks installed",
         "points": 3,
-        "earned": 0,
-        "passed": false,
-        "evidence": "No pre-commit hook tooling detected.",
+        "earned": 3,
+        "passed": true,
+        "evidence": "Found: .githooks/pre-commit.",
         "remediation": "Add pre-commit tooling (husky + lint-staged, pre-commit, lefthook) so fast checks run before a commit exists — the earliest possible feedback loop.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ci-04",
         "severity": "error",
@@ -1118,5 +1118,8 @@
     "extends": [],
     "rules": {},
     "resolved": []
+  },
+  "scan": {
+    "includePaths": []
   }
 }

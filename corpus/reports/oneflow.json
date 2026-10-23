@@ -1,7 +1,7 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.2"
+    "version": "1.8.3"
   },
   "root": "D:\\code\\harness-maturity-analysis-geospatial-1000\\.cache\\repos\\oneflow",
   "truncated": false,
@@ -343,7 +343,7 @@
       "points": 6,
       "earned": 0,
       "passed": false,
-      "evidence": "Found 945 test file(s), e.g. ci/test/1node_benchmark_test.sh, but no test runner or standard entry point detected.",
+      "evidence": "Found 939 test file(s), e.g. ci/test/1node_benchmark_test.sh, but no test runner or standard entry point detected.",
       "remediation": "Wire up a test runner (vitest/jest, pytest, go test, cargo test, node --test…) with a standard entry point — tests are the strongest feedback sensor an agent can run on its own work.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#sns-01",
       "severity": "error",
@@ -395,7 +395,7 @@
       "points": 2,
       "earned": 2,
       "passed": true,
-      "evidence": "Found 945 test file(s), e.g. ci/test/1node_benchmark_test.sh.",
+      "evidence": "Found 939 test file(s), e.g. ci/test/1node_benchmark_test.sh.",
       "remediation": "Write at least one real test file — a configured runner with zero tests gives the agent a green light it did not earn.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#sns-05",
       "severity": "error",
@@ -877,7 +877,7 @@
         "points": 6,
         "earned": 0,
         "passed": false,
-        "evidence": "Found 945 test file(s), e.g. ci/test/1node_benchmark_test.sh, but no test runner or standard entry point detected.",
+        "evidence": "Found 939 test file(s), e.g. ci/test/1node_benchmark_test.sh, but no test runner or standard entry point detected.",
         "remediation": "Wire up a test runner (vitest/jest, pytest, go test, cargo test, node --test…) with a standard entry point — tests are the strongest feedback sensor an agent can run on its own work.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#sns-01",
         "severity": "error",
@@ -929,7 +929,7 @@
         "points": 2,
         "earned": 2,
         "passed": true,
-        "evidence": "Found 945 test file(s), e.g. ci/test/1node_benchmark_test.sh.",
+        "evidence": "Found 939 test file(s), e.g. ci/test/1node_benchmark_test.sh.",
         "remediation": "Write at least one real test file — a configured runner with zero tests gives the agent a green light it did not earn.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#sns-05",
         "severity": "error",
@@ -1098,5 +1098,8 @@
     "extends": [],
     "rules": {},
     "resolved": []
+  },
+  "scan": {
+    "includePaths": []
   }
 }

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "repository": "jedarden/gribtract",
+  "manifestName": "jedarden-gribtract",
+  "commit": "9445b8bc86d9435682dadc44ca9fea3bc0efcb80",
+  "reason": "Windows checkout failed or was incomplete; rescanned from a pinned WSL2 Ubuntu 24.04 checkout without omitting tracked paths.",
+  "scanner": "harness-score@1.8.3",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-22-score-1.8.3/jedarden-gribtract",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v24.16.0",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 458,
+  "treeModes": {
+    "100644": 421,
+    "100755": 37
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [],
+  "treeListingSha256": "3bc01d38aae1c2098a06095d1c01e9f70f8ac8021c9ddf2da601009c8223a0bb",
+  "report": {
+    "path": "corpus/reports/jedarden-gribtract.json",
+    "sha256": "8e603b67c412e852dbf72170e58c5b1d115d67fc062df2c0151e80cb0da6e8f3",
+    "sizeBytes": 45139,
+    "toolVersion": "1.8.3",
+    "truncated": false
+  }
+}

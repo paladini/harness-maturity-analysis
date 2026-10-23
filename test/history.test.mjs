@@ -160,4 +160,20 @@ describe('renderScoreHistoryMarkdown', () => {
     expect(markdown).toContain('| [sample]');
     expect(markdown).toContain('| +15 pp |');
   });
+  it('does not label an older score delta as the latest when the newest run was not scanned', () => {
+    const repository = entry('sample');
+    const runs = [
+      createHistorySnapshot(
+        { runDate: '2026-10-14', toolVersion: 'harness-score@1.8.2', entries: [repository] },
+        new Map([['sample', { status: 'scored', report: report(55, '1.8.2') }]]),
+      ),
+      createHistorySnapshot(
+        { runDate: '2026-10-22', toolVersion: 'harness-score@1.8.3', entries: [repository] },
+        new Map([['sample', { status: 'not-scanned', error: 'Repository unavailable.' }]]),
+      ),
+    ];
+    const markdown = renderScoreHistoryMarkdown(runs, [repository]);
+    expect(markdown).toContain('| [sample]');
+    expect(markdown).toContain('| not-scanned | — |');
+  });
 });

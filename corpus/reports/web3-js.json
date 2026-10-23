@@ -1,7 +1,7 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.2"
+    "version": "1.8.3"
   },
   "root": "D:\\code\\harness-maturity-analysis-geospatial-1000\\.cache\\repos\\web3-js",
   "truncated": false,
@@ -395,7 +395,7 @@
       "points": 2,
       "earned": 2,
       "passed": true,
-      "evidence": "Found 799 test file(s), e.g. .eslintrc.test.js.",
+      "evidence": "Found 798 test file(s), e.g. .eslintrc.test.js.",
       "remediation": "Write at least one real test file — a configured runner with zero tests gives the agent a green light it did not earn.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#sns-05",
       "severity": "error",
@@ -929,7 +929,7 @@
         "points": 2,
         "earned": 2,
         "passed": true,
-        "evidence": "Found 799 test file(s), e.g. .eslintrc.test.js.",
+        "evidence": "Found 798 test file(s), e.g. .eslintrc.test.js.",
         "remediation": "Write at least one real test file — a configured runner with zero tests gives the agent a green light it did not earn.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#sns-05",
         "severity": "error",
@@ -1098,5 +1098,8 @@
     "extends": [],
     "rules": {},
     "resolved": []
+  },
+  "scan": {
+    "includePaths": []
   }
 }

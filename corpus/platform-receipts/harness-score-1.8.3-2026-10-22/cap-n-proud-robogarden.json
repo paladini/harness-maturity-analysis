@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "repository": "Cap-n-Proud/roboGarden",
+  "manifestName": "cap-n-proud-robogarden",
+  "commit": "802f2daafcd11131f89395bd9858f7d65e1f5bca",
+  "reason": "Windows checkout failed or was incomplete; rescanned from a pinned WSL2 Ubuntu 24.04 checkout without omitting tracked paths.",
+  "scanner": "harness-score@1.8.3",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-22-score-1.8.3/cap-n-proud-robogarden",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v24.16.0",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 4091,
+  "treeModes": {
+    "100755": 4088,
+    "120000": 3
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [],
+  "treeListingSha256": "93e8456a80ca0bd6dfb3ef83d5f12e9284eb4415ecb44d7ab99ec7f773df6f08",
+  "report": {
+    "path": "corpus/reports/cap-n-proud-robogarden.json",
+    "sha256": "39309ac9512ef33b1197c7df680648a774f15424bade85d4d7191e70faa067ba",
+    "sizeBytes": 45519,
+    "toolVersion": "1.8.3",
+    "truncated": false
+  }
+}

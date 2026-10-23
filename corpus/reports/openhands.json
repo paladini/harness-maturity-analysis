@@ -1,7 +1,7 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.2"
+    "version": "1.8.3"
   },
   "root": "D:\\code\\harness-maturity-analysis-geospatial-1000\\.cache\\repos\\openhands",
   "truncated": false,
@@ -450,7 +450,7 @@
       "points": 3,
       "earned": 3,
       "passed": true,
-      "evidence": "Found: .husky/.",
+      "evidence": "Found: pre-commit config (dev_config/python/.pre-commit-config.yaml), pre-commit config (enterprise/dev_config/python/.pre-commit-config.yaml), .husky/.",
       "remediation": "Add pre-commit tooling (husky + lint-staged, pre-commit, lefthook) so fast checks run before a commit exists — the earliest possible feedback loop.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ci-04",
       "severity": "error",
@@ -984,7 +984,7 @@
         "points": 3,
         "earned": 3,
         "passed": true,
-        "evidence": "Found: .husky/.",
+        "evidence": "Found: pre-commit config (dev_config/python/.pre-commit-config.yaml), pre-commit config (enterprise/dev_config/python/.pre-commit-config.yaml), .husky/.",
         "remediation": "Add pre-commit tooling (husky + lint-staged, pre-commit, lefthook) so fast checks run before a commit exists — the earliest possible feedback loop.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ci-04",
         "severity": "error",
@@ -1104,5 +1104,8 @@
     "extends": [],
     "rules": {},
     "resolved": []
+  },
+  "scan": {
+    "includePaths": []
   }
 }

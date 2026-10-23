@@ -1,7 +1,7 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.2"
+    "version": "1.8.3"
   },
   "root": "D:\\code\\harness-maturity-analysis-geospatial-1000\\.cache\\repos\\deusyu-harness-engineering",
   "truncated": false,
@@ -32,15 +32,14 @@
     "index": 2,
     "name": "Guided",
     "nextLevelGaps": [
-      "sensors ≥ 60%",
-      "ci ≥ 50%"
+      "sensors ≥ 60%"
     ],
     "capped": false
   },
   "score": {
-    "earned": 55,
+    "earned": 58,
     "max": 105,
-    "percent": 52
+    "percent": 55
   },
   "dimensions": [
     {
@@ -78,9 +77,9 @@
     {
       "id": "ci",
       "title": "CI Feedback",
-      "earned": 4,
+      "earned": 7,
       "max": 14,
-      "percent": 29,
+      "percent": 50,
       "applicable": true
     },
     {
@@ -449,9 +448,9 @@
       "dimension": "ci",
       "title": "Pre-commit checks installed",
       "points": 3,
-      "earned": 0,
-      "passed": false,
-      "evidence": "No pre-commit hook tooling detected.",
+      "earned": 3,
+      "passed": true,
+      "evidence": "Found: .githooks/pre-commit.",
       "remediation": "Add pre-commit tooling (husky + lint-staged, pre-commit, lefthook) so fast checks run before a commit exists — the earliest possible feedback loop.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ci-04",
       "severity": "error",
@@ -567,15 +566,14 @@
       "index": 2,
       "name": "Guided",
       "nextLevelGaps": [
-        "sensors ≥ 60%",
-        "ci ≥ 50%"
+        "sensors ≥ 60%"
       ],
       "capped": false
     },
     "score": {
-      "earned": 55,
+      "earned": 58,
       "max": 105,
-      "percent": 52
+      "percent": 55
     },
     "dimensions": [
       {
@@ -613,9 +611,9 @@
       {
         "id": "ci",
         "title": "CI Feedback",
-        "earned": 4,
+        "earned": 7,
         "max": 14,
-        "percent": 29,
+        "percent": 50,
         "applicable": true
       },
       {
@@ -984,9 +982,9 @@
         "dimension": "ci",
         "title": "Pre-commit checks installed",
         "points": 3,
-        "earned": 0,
-        "passed": false,
-        "evidence": "No pre-commit hook tooling detected.",
+        "earned": 3,
+        "passed": true,
+        "evidence": "Found: .githooks/pre-commit.",
         "remediation": "Add pre-commit tooling (husky + lint-staged, pre-commit, lefthook) so fast checks run before a commit exists — the earliest possible feedback loop.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ci-04",
         "severity": "error",
@@ -1106,5 +1104,8 @@
     "extends": [],
     "rules": {},
     "resolved": []
+  },
+  "scan": {
+    "includePaths": []
   }
 }

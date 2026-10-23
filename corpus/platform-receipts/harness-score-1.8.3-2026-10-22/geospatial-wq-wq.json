@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "repository": "wq/wq",
+  "manifestName": "geospatial-wq-wq",
+  "commit": "c13e1394146a5a61c84f8134001efd102f85a14d",
+  "reason": "Windows checkout failed or was incomplete; rescanned from a pinned WSL2 Ubuntu 24.04 checkout without omitting tracked paths.",
+  "scanner": "harness-score@1.8.3",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-22-score-1.8.3/geospatial-wq-wq",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v24.16.0",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 566,
+  "treeModes": {
+    "100644": 559,
+    "100755": 2,
+    "120000": 1,
+    "160000": 4
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [],
+  "treeListingSha256": "38a692cd79cddb044553db812d2e56eaeddb93b9125deca0d9362feefa5c6b65",
+  "report": {
+    "path": "corpus/reports/geospatial-wq-wq.json",
+    "sha256": "ffad10e69cd63d8af19f1a38de50fef5623cbbc78fecc5c0a27b5d048a6666c0",
+    "sizeBytes": 45103,
+    "toolVersion": "1.8.3",
+    "truncated": false
+  }
+}

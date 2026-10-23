@@ -1,7 +1,7 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.2"
+    "version": "1.8.3"
   },
   "root": "D:\\code\\harness-maturity-analysis-geospatial-1000\\.cache\\repos\\dicklesworthstone-pi-agent-rust",
   "truncated": false,
@@ -410,7 +410,7 @@
       "points": 2,
       "earned": 2,
       "passed": true,
-      "evidence": "Found 20147 test file(s), e.g. legacy_pi_mono_code/pi-mono/packages/agent/test/agent-loop.test.ts.",
+      "evidence": "Found 20146 test file(s), e.g. legacy_pi_mono_code/pi-mono/packages/agent/test/agent-loop.test.ts.",
       "remediation": "Write at least one real test file — a configured runner with zero tests gives the agent a green light it did not earn.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#sns-05",
       "severity": "error",
@@ -955,7 +955,7 @@
         "points": 2,
         "earned": 2,
         "passed": true,
-        "evidence": "Found 20147 test file(s), e.g. legacy_pi_mono_code/pi-mono/packages/agent/test/agent-loop.test.ts.",
+        "evidence": "Found 20146 test file(s), e.g. legacy_pi_mono_code/pi-mono/packages/agent/test/agent-loop.test.ts.",
         "remediation": "Write at least one real test file — a configured runner with zero tests gives the agent a green light it did not earn.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#sns-05",
         "severity": "error",
@@ -1128,5 +1128,8 @@
     "extends": [],
     "rules": {},
     "resolved": []
+  },
+  "scan": {
+    "includePaths": []
   }
 }

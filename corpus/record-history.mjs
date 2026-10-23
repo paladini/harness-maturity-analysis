@@ -14,6 +14,11 @@ for (const entry of manifest.entries) {
   const report = JSON.parse(readFileSync(reportPath, 'utf8'));
   if (reportMatchesToolVersion(report, manifest.toolVersion)) {
     resultsByName.set(entry.name, { status: 'scored', report });
+  } else if (entry.scanStatus === 'failed' || entry.scanStatus === 'not-scanned') {
+    resultsByName.set(entry.name, {
+      status: entry.scanStatus,
+      error: entry.scanNote ?? 'No matching report was available for this run.',
+    });
   }
 }
 

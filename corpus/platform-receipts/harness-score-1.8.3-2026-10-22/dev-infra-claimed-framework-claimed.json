@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "repository": "claimed-framework/claimed",
+  "manifestName": "dev-infra-claimed-framework-claimed",
+  "commit": "d86da9298ebe92f5a13332a48056b4e11e2d801b",
+  "reason": "Windows checkout failed or was incomplete; rescanned from a pinned WSL2 Ubuntu 24.04 checkout without omitting tracked paths.",
+  "scanner": "harness-score@1.8.3",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-22-score-1.8.3/dev-infra-claimed-framework-claimed",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v24.16.0",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 468,
+  "treeModes": {
+    "100644": 445,
+    "100755": 23
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [
+    "src/claimed/components/transform/image-tiling-with-metadata_adjustment.cwl:Zone.Identifier",
+    "src/claimed/components/transform/image-tiling-with-metadata_adjustment.ipynb:Zone.Identifier",
+    "src/claimed/components/transform/image-tiling-with-metadata_adjustment.job.yaml:Zone.Identifier",
+    "src/claimed/components/transform/image-tiling-with-metadata_adjustment.yaml:Zone.Identifier"
+  ],
+  "treeListingSha256": "8ad71628ae1995832a85b652b19adf54f502891846de3468241ecd4e637f5eb8",
+  "report": {
+    "path": "corpus/reports/dev-infra-claimed-framework-claimed.json",
+    "sha256": "09aee32db72fc416fe1c9ec55edc63fbacc2c48788804a2ba9edd0009b63a745",
+    "sizeBytes": 45288,
+    "toolVersion": "1.8.3",
+    "truncated": false
+  }
+}

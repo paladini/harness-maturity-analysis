@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "repository": "dennissergeev/octant",
+  "manifestName": "dennissergeev-octant",
+  "commit": "edbf3ae1e576dacc42480cf3c7e9801528db4104",
+  "reason": "Windows checkout failed or was incomplete; rescanned from a pinned WSL2 Ubuntu 24.04 checkout without omitting tracked paths.",
+  "scanner": "harness-score@1.8.3",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-22-score-1.8.3/dennissergeev-octant",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v24.16.0",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 1099,
+  "treeModes": {
+    "100644": 1099
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": ["docs/source/api/aux.rst"],
+  "treeListingSha256": "efa66346488c918e403a8490f95d859b44f93ca7a4332b1bb2c0bfcf7142fcb7",
+  "report": {
+    "path": "corpus/reports/dennissergeev-octant.json",
+    "sha256": "0a91043dda5e4ec4e4e93ba6a58c45c7adfc4e43b11bd2f0bc7894e14a785476",
+    "sizeBytes": 45547,
+    "toolVersion": "1.8.3",
+    "truncated": false
+  }
+}

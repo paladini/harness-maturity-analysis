@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "repository": "juanfont/headscale",
+  "manifestName": "juanfont-headscale",
+  "commit": "a8d6f5be81e578a078001b908e41611ec03ce69e",
+  "reason": "Windows checkout failed or was incomplete; rescanned from a pinned WSL2 Ubuntu 24.04 checkout without omitting tracked paths.",
+  "scanner": "harness-score@1.8.3",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-22-score-1.8.3/juanfont-headscale",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v24.16.0",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 1514,
+  "treeModes": {
+    "100644": 1513,
+    "100755": 1
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [
+    "hscontrol/testdata/apiv1_golden/TestAPIV1ApiKeyDelete_path_prefix_with_id_query_is_both_->_400_parity.json"
+  ],
+  "treeListingSha256": "368135607080228ddaa5b9499533409559e6da66a4b7b060a1bc6cd859f14b0a",
+  "report": {
+    "path": "corpus/reports/juanfont-headscale.json",
+    "sha256": "560dbf89b41cee284da7f07b6f86afd3e5ebefedbfbbff50d17fa459f033cfcf",
+    "sizeBytes": 45149,
+    "toolVersion": "1.8.3",
+    "truncated": false
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "repository": "influxdata/influxdb",
+  "manifestName": "influxdata-influxdb",
+  "commit": "06200ef96ba82c5f6727e5038a83af8e722c6875",
+  "reason": "Windows checkout failed or was incomplete; rescanned from a pinned WSL2 Ubuntu 24.04 checkout without omitting tracked paths.",
+  "scanner": "harness-score@1.8.3",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-22-score-1.8.3/influxdata-influxdb",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v24.16.0",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 1845,
+  "treeModes": {
+    "100644": 1833,
+    "100755": 12
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [
+    "core/iox_query_influxql/src/plan/snapshots/iox_query_influxql__plan__planner__tests__select_aggregate__single_measurement__Error during planning: limit out of range.snap",
+    "core/iox_query_influxql/src/plan/snapshots/iox_query_influxql__plan__planner__tests__select_aggregate__single_measurement__Error during planning: offset out of range.snap"
+  ],
+  "treeListingSha256": "46a3b95fe29b95e989a91021c13f9e2fc12c161bc7d5e05a4748d86b1c34e0a2",
+  "report": {
+    "path": "corpus/reports/influxdata-influxdb.json",
+    "sha256": "9a7d0adc3a221a3a295c8cf3c3bff032f22a28f003e10821f25dda75a75a0bbd",
+    "sizeBytes": 45078,
+    "toolVersion": "1.8.3",
+    "truncated": false
+  }
+}

@@ -41,13 +41,25 @@ describe('committed corpus history', () => {
     expect(existsSync(currentPath)).toBe(true);
     const current = JSON.parse(readFileSync(currentPath, 'utf8'));
     expect(current.entries.map((entry) => entry.name)).toEqual(manifest.entries.map((entry) => entry.name));
-    expect(current.entries.every((entry) => entry.status === 'scored')).toBe(true);
+    const unavailable = manifest.entries.filter((entry) => entry.scanStatus);
+    expect(current.entries.filter((entry) => entry.status !== 'scored').map((entry) => entry.name)).toEqual(
+      unavailable.map((entry) => entry.name),
+    );
+    for (const entry of unavailable) {
+      const historical = current.entries.find((item) => item.name === entry.name);
+      expect(historical.status).toBe(entry.scanStatus);
+      expect(historical.note).toBe(entry.scanNote);
+    }
   });
 
   it('keeps every current raw report on the pinned scanner version', () => {
     for (const entry of manifest.entries) {
       const report = JSON.parse(readFileSync(path.join(corpusDir, 'reports', `${entry.name}.json`), 'utf8'));
-      expect(reportMatchesToolVersion(report, manifest.toolVersion), entry.name).toBe(true);
+      if (entry.scanStatus) {
+        expect(reportMatchesToolVersion(report, manifest.toolVersion), entry.name).toBe(false);
+      } else {
+        expect(reportMatchesToolVersion(report, manifest.toolVersion), entry.name).toBe(true);
+      }
     }
   });
 });

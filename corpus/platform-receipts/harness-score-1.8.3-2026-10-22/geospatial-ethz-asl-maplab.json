@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "repository": "ethz-asl/maplab",
+  "manifestName": "geospatial-ethz-asl-maplab",
+  "commit": "0b4868efeb292851d71f98d31a1e6bb40ebb244b",
+  "reason": "Windows checkout failed or was incomplete; rescanned from a pinned WSL2 Ubuntu 24.04 checkout without omitting tracked paths.",
+  "scanner": "harness-score@1.8.3",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-22-score-1.8.3/geospatial-ethz-asl-maplab",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v24.16.0",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 1397,
+  "treeModes": {
+    "100644": 1345,
+    "100755": 28,
+    "160000": 24
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [
+    "docs/pages/tutorials-extending-maplab/C_Coding-Examples:-Creating-a-custom-console-plugin.md",
+    "docs/pages/tutorials-extending-maplab/D_Coding-Examples:-Working-with-the-VI-Map.md"
+  ],
+  "treeListingSha256": "40edc6465faac7f29dbed13edcf2e2ebf374772f19c11ae539846bb0072db69b",
+  "report": {
+    "path": "corpus/reports/geospatial-ethz-asl-maplab.json",
+    "sha256": "191aa0bfa0f93aaf4eff1532d86bfd6ecfac69d04da5dbcde2a215108b5a8a9a",
+    "sizeBytes": 45515,
+    "toolVersion": "1.8.3",
+    "truncated": false
+  }
+}

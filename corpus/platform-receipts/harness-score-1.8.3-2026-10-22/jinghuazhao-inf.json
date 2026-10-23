@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "repository": "jinghuazhao/INF",
+  "manifestName": "jinghuazhao-inf",
+  "commit": "6216cc1c046c9a01deffa1e05c72558afb6e28f7",
+  "reason": "Windows checkout failed or was incomplete; rescanned from a pinned WSL2 Ubuntu 24.04 checkout without omitting tracked paths.",
+  "scanner": "harness-score@1.8.3",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-22-score-1.8.3/jinghuazhao-inf",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v24.16.0",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 399,
+  "treeModes": {
+    "100644": 293,
+    "100755": 106
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [],
+  "treeListingSha256": "b11222e49da5c302be10d0d2201c3f8643cd5ec58b54412fe48e94692d4e2336",
+  "report": {
+    "path": "corpus/reports/jinghuazhao-inf.json",
+    "sha256": "1800d234299b10ebedb3bd8cfdac716cbff6db0865851ea778898f1cf042cbd4",
+    "sizeBytes": 45176,
+    "toolVersion": "1.8.3",
+    "truncated": false
+  }
+}

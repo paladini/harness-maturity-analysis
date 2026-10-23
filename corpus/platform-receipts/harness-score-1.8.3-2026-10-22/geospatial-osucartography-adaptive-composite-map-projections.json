@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "repository": "OSUCartography/adaptive-composite-map-projections",
+  "manifestName": "geospatial-osucartography-adaptive-composite-map-projections",
+  "commit": "bba9686faa2699c6b5b2ed1400a229d937e52f1f",
+  "reason": "Windows checkout failed or was incomplete; rescanned from a pinned WSL2 Ubuntu 24.04 checkout without omitting tracked paths.",
+  "scanner": "harness-score@1.8.3",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-22-score-1.8.3/geospatial-osucartography-adaptive-composite-map-projections",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v24.16.0",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 294,
+  "treeModes": {
+    "100644": 42,
+    "100755": 252
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": ["data_layers/video/Datasets | Science On a Sphere.webloc"],
+  "treeListingSha256": "d96d8f2cb848aee77b70b2b7f39b19d43db4a64c29a6924fcfdd04076790a3ef",
+  "report": {
+    "path": "corpus/reports/geospatial-osucartography-adaptive-composite-map-projections.json",
+    "sha256": "52946b874af6e405572b856b76887ded21a64a5c8b7c168724b8ae2c5da9d12a",
+    "sizeBytes": 45325,
+    "toolVersion": "1.8.3",
+    "truncated": false
+  }
+}
