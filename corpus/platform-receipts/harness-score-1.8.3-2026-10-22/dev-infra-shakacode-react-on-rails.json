@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "repository": "shakacode/react_on_rails",
+  "manifestName": "dev-infra-shakacode-react-on-rails",
+  "commit": "9fe6fc5b46b0e8f3266cccc240aa50383d26b931",
+  "reason": "Windows checkout failed or was incomplete; rescanned from a pinned WSL2 Ubuntu 24.04 checkout without omitting tracked paths.",
+  "scanner": "harness-score@1.8.3",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-22-score-1.8.3/dev-infra-shakacode-react-on-rails",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v24.16.0",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 3264,
+  "treeModes": {
+    "100644": 2962,
+    "100755": 264,
+    "120000": 38
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [
+    "packages/react-on-rails-pro-node-renderer/tests/fixtures/projects/spec-dummy-web-target/9fa89f7 /reduxAppRenderingRequest.js",
+    "packages/react-on-rails-pro-node-renderer/tests/fixtures/projects/spec-dummy-web-target/9fa89f7 /server-bundle-node-target.js",
+    "packages/react-on-rails-pro-node-renderer/tests/fixtures/projects/spec-dummy-web-target/9fa89f7 /server-bundle-web-target.js",
+    "react_on_rails_pro/.controlplane/postgres.yml "
+  ],
+  "treeListingSha256": "655d38bcdcd7193e02449c6a464deee1bd895e8ce4d9bedd2dcf08b6fa23cd87",
+  "report": {
+    "path": "corpus/reports/dev-infra-shakacode-react-on-rails.json",
+    "sha256": "2d634bafd3c6a27632d49ed464c47de26f1d82f050f631463eaffcb31bba1f77",
+    "sizeBytes": 46451,
+    "toolVersion": "1.8.3",
+    "truncated": false
+  }
+}

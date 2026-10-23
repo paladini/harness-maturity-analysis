@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "repository": "mapmint/mapmint",
+  "manifestName": "geospatial-mapmint-mapmint",
+  "commit": "79b4221a795d3093a0d6ec51def0c1c0b3156fef",
+  "reason": "Windows checkout failed or was incomplete; rescanned from a pinned WSL2 Ubuntu 24.04 checkout without omitting tracked paths.",
+  "scanner": "harness-score@1.8.3",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-22-score-1.8.3/geospatial-mapmint-mapmint",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v24.16.0",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 4898,
+  "treeModes": {
+    "100644": 3832,
+    "100755": 1027,
+    "120000": 38,
+    "160000": 1
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": ["con.xsl"],
+  "treeListingSha256": "e5c8d4c8d09dbe40c8a30e6cc19dec1d25c388959aba95f7a1a3d741baabceb3",
+  "report": {
+    "path": "corpus/reports/geospatial-mapmint-mapmint.json",
+    "sha256": "6f2026d88c2e4bb34d1490a0f54de8d1303d72995de334d25e70b2da55f45297",
+    "sizeBytes": 45159,
+    "toolVersion": "1.8.3",
+    "truncated": false
+  }
+}

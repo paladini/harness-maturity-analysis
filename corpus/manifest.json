@@ -1,8 +1,8 @@
 {
   "$comment": "Each entry pins a repository to an exact commit for reproducible scanning. runDate and toolVersion identify the current historical run. toolVersion is the npm spec passed to `npx --yes <toolVersion>`. scanSubpath scans only part of a monorepo when set. checkoutExcludes omits platform-incompatible, non-harness data from checkout. isStressCase marks entries chosen because the scanner is expected to score them poorly or surprisingly — see METHODOLOGY.md. Never edit an existing entry's commit in place: add a new entry or a dated note instead.",
   "schemaVersion": 2,
-  "runDate": "2026-10-14",
-  "toolVersion": "harness-score@1.8.2",
+  "runDate": "2026-10-22",
+  "toolVersion": "harness-score@1.8.3",
   "entries": [
     {
       "name": "harness-score",
@@ -65529,7 +65529,9 @@
       "commit": "5a154311ae82c638719953c65bbf3540d97d5bd8",
       "scanSubpath": null,
       "isStressCase": false,
-      "notes": "Popular agriculture software cohort agriculture-software-popularity-500; canonical GitHub ID=1349919133; observed stars=7 at 2026-10-13T04:28:50.677Z; pinned implementation=jiofarm/cli.py. Selection popularity is not a Harness Score input. See corpus/selection-2026-10-13-agriculture-software-popularity-500.json."
+      "notes": "Popular agriculture software cohort agriculture-software-popularity-500; canonical GitHub ID=1349919133; observed stars=7 at 2026-10-13T04:28:50.677Z; pinned implementation=jiofarm/cli.py. Selection popularity is not a Harness Score input. See corpus/selection-2026-10-13-agriculture-software-popularity-500.json.",
+      "scanStatus": "not-scanned",
+      "scanNote": "The pinned repository was unavailable: GitHub returned Repository not found during both Windows and WSL2 rescans on 2026-10-22. Its previous 1.8.2 report is retained but excluded from this 1.8.3 history and outputs."
     },
     {
       "name": "wittiden-belagrooptimization",
@@ -100002,5 +100004,5 @@
       }
     }
   ],
-  "runId": "geospatial-mapping-popularity-1000"
+  "runId": "scanner-refresh-1-8-3"
 }

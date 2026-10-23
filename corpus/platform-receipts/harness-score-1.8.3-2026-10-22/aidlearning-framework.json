@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "repository": "aidlearning/AidLearning-FrameWork",
+  "manifestName": "aidlearning-framework",
+  "commit": "84d0676baffa905c12189959480c9a1bb14619a6",
+  "reason": "Windows checkout failed or was incomplete; rescanned from a pinned WSL2 Ubuntu 24.04 checkout without omitting tracked paths.",
+  "scanner": "harness-score@1.8.3",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-22-score-1.8.3/aidlearning-framework",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v24.16.0",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 257,
+  "treeModes": {
+    "100644": 248,
+    "100755": 9
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [],
+  "treeListingSha256": "ab9c8e8fa353c3df59f3a876b58acbcb82cc4980973ba6ed87e71a85fc6177b8",
+  "report": {
+    "path": "corpus/reports/aidlearning-framework.json",
+    "sha256": "da083e409c9f44705c3c24ea292aab75dfd5c22195d08f04cb59671426a03e73",
+    "sizeBytes": 45166,
+    "toolVersion": "1.8.3",
+    "truncated": false
+  }
+}

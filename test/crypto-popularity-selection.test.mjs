@@ -8,14 +8,14 @@ const manifest = json('corpus/manifest.json');
 
 describe('Phase 1D cryptocurrency software cohort', () => {
   it('records an authoritative complete Linux CCXT read without dropping the quarantined fixture', () => {
-    const receipt = json('corpus/platform-receipts/harness-score-1.8.2-2026-10-14/ccxt.json');
+    const receipt = json('corpus/platform-receipts/harness-score-1.8.3-2026-10-22/ccxt.json');
     const candidate = selection.candidates.find((entry) => entry.name === 'ccxt');
     const supplemental = json('corpus/checkout-audit-2026-10-08-crypto-popularity-ccxt-linux.json');
     expect(receipt.platform).toBe('WSL2 Ubuntu 24.04');
     expect(receipt.commit).toBe(candidate.commit);
     expect(receipt.headMatchesPin).toBe(true);
     expect(receipt.diffIndexClean).toBe(true);
-    expect(receipt.report.toolVersion).toBe('1.8.2');
+    expect(receipt.report.toolVersion).toBe('1.8.3');
     expect(receipt.report.truncated).toBe(false);
     expect(supplemental.entries[0].codeEvidence).toEqual({ ...candidate.codeEvidence, status: 'verified' });
     const report = json('corpus/reports/ccxt.json');
@@ -81,7 +81,7 @@ describe('Phase 1D cryptocurrency software cohort', () => {
     const audit = json('corpus/checkout-audit-2026-10-08-crypto-popularity.json');
     const history = json('corpus/history/2026-10-08-harness-score-1.8.1-crypto-popularity.json');
     const currentHistory = json(
-      'corpus/history/2026-10-14-harness-score-1.8.2-geospatial-mapping-popularity-1000.json',
+      `corpus/history/${manifest.runDate}-harness-score-1.8.3-${manifest.runId}.json`,
     );
     expect(audit.entries).toHaveLength(25);
     expect(history.entries).toHaveLength(126);
@@ -96,7 +96,7 @@ describe('Phase 1D cryptocurrency software cohort', () => {
       const historical = history.entries.find((item) => item.name === candidate.name);
       const current = currentHistory.entries.find((item) => item.name === candidate.name);
       expect(historical.status).toBe('scored');
-      expect(report.tool.version).toBe('1.8.2');
+      expect(report.tool.version).toBe('1.8.3');
       expect(current.status).toBe('scored');
       expect(current.score).toEqual(report.score);
       expect(current.level.index).toBe(report.level.index);

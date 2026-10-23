@@ -1,6 +1,6 @@
 # Dimension Heatmap
 
-_Percent earned per dimension, `harness-score@1.8.2`._
+_Percent earned per dimension, `harness-score@1.8.3`._
 
 | Repository | Context & Guides | Skills & Commands | Hooks & Guardrails | Sensors & Feedback | CI Feedback | Hygiene & Safety |
 |---|---|---|---|---|---|---|
@@ -24,6 +24,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | dyad | 100% | 53% | 86% | 100% | 100% | 100% |
 | oven-sh-bun | 85% | 71% | 100% | 100% | 79% | 100% |
 | diegosouzapw-omniroute | 90% | 71% | 71% | 100% | 100% | 100% |
+| tw93-mole | 100% | 82% | 71% | 100% | 100% | 85% |
 | litefuse-litefuse | 90% | 71% | 71% | 100% | 100% | 100% |
 | kastalien-research-thoughtbox | 90% | 71% | 100% | 85% | 100% | 100% |
 | ai-ide-holomush-holomush-1136351676 | 75% | 82% | 100% | 100% | 79% | 100% |
@@ -34,8 +35,9 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | mlflow | 85% | 53% | 86% | 100% | 100% | 100% |
 | bit | 100% | 53% | 86% | 100% | 100% | 87% |
 | ruvnet-ruview | 100% | 41% | 100% | 100% | 79% | 100% |
-| tw93-mole | 100% | 82% | 71% | 100% | 79% | 85% |
+| atmosphere-atmosphere | 100% | 53% | 100% | 75% | 100% | 100% |
 | idavidov13-agentic-playwright | 100% | 53% | 86% | 100% | 100% | 85% |
+| ai-ide-meowlynxsea-steward-1196309899 | 100% | 47% | 86% | 100% | 100% | 90% |
 | dev-infra-unstablebuild-rune | 100% | 47% | 86% | 100% | 100% | 87% |
 | tambo | 100% | 100% | 0% | 100% | 100% | 100% |
 | tryghost-ghost | 100% | 71% | 57% | 85% | 100% | 100% |
@@ -51,8 +53,6 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | ai-ide-sergio-salcedo-dev-erpify-1200398502 | 75% | 71% | 100% | 100% | 79% | 91% |
 | mindfold-ai-trellis | 45% | 88% | 86% | 100% | 100% | 100% |
 | actualbudget-actual | 100% | 53% | 86% | 85% | 100% | 85% |
-| atmosphere-atmosphere | 100% | 53% | 100% | 75% | 79% | 100% |
-| ai-ide-meowlynxsea-steward-1196309899 | 100% | 47% | 86% | 100% | 79% | 90% |
 | ai-ide-andr-ca-agentharness-1297456427 | 85% | 71% | 86% | 100% | 79% | 85% |
 | arcreel | 75% | 71% | 57% | 100% | 100% | 100% |
 | nrwl-nx | 100% | 88% | 0% | 100% | 100% | 100% |
@@ -72,6 +72,8 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | game-ai-tristan578-project-forge | 75% | 71% | 86% | 85% | 79% | 100% |
 | ai-ide-micheltlutz-dev-challenge-693855872 | 100% | 100% | 0% | 80% | 100% | 100% |
 | dify | 85% | 53% | 86% | 85% | 79% | 100% |
+| game-ai-mrcalderon3d-everything-game-dev-code | 100% | 35% | 100% | 75% | 79% | 100% |
+| dev-infra-yugabyte-yugabyte-db | 100% | 71% | 86% | 85% | 100% | 55% |
 | onyx | 100% | 24% | 57% | 100% | 100% | 100% |
 | composio | 100% | 71% | 0% | 100% | 100% | 100% |
 | cube | 100% | 71% | 0% | 100% | 100% | 100% |
@@ -88,10 +90,11 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | activepieces | 85% | 82% | 0% | 100% | 100% | 100% |
 | dev-infra-superset-sh-superset | 100% | 82% | 0% | 100% | 79% | 100% |
 | bisheng | 100% | 24% | 71% | 100% | 71% | 100% |
-| game-ai-mrcalderon3d-everything-game-dev-code | 100% | 35% | 100% | 75% | 57% | 100% |
 | mksglu-context-mode | 100% | 53% | 100% | 60% | 79% | 87% |
 | dagster | 100% | 71% | 0% | 100% | 100% | 87% |
+| suna | 100% | 53% | 0% | 100% | 100% | 100% |
 | novuhq-novu | 100% | 71% | 0% | 100% | 100% | 90% |
+| getsentry-mobilebuildmcp | 100% | 53% | 0% | 100% | 100% | 100% |
 | basicmachines-co-basic-memory | 100% | 71% | 0% | 100% | 79% | 100% |
 | ai-ide-rodrigorjsf-political-authority-highlighter-1169562985 | 100% | 82% | 0% | 100% | 79% | 91% |
 | dev-infra-supabase-supabase-js | 100% | 53% | 0% | 100% | 100% | 100% |
@@ -107,11 +110,12 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | prisma-orm | 85% | 0% | 86% | 100% | 100% | 100% |
 | hasura-graphql-engine | 85% | 0% | 86% | 100% | 100% | 100% |
 | apify-apify-mcp-server | 100% | 82% | 0% | 85% | 79% | 100% |
+| dograh-hq-dograh | 100% | 71% | 0% | 85% | 100% | 100% |
 | moltis-org-moltis | 85% | 18% | 86% | 100% | 79% | 100% |
 | doobidoo-mcp-memory-service | 100% | 71% | 71% | 60% | 57% | 100% |
 | ai-ide-infantlab-videoannotator-1016357917 | 100% | 53% | 0% | 100% | 100% | 100% |
 | ai-ide-jf1shh-agentic-app-harness-1307809416 | 75% | 53% | 71% | 85% | 79% | 100% |
-| dev-infra-yugabyte-yugabyte-db | 100% | 71% | 86% | 85% | 79% | 55% |
+| dev-infra-neilotoole-sq | 100% | 53% | 0% | 100% | 100% | 100% |
 | harness-sdk | 100% | 53% | 0% | 100% | 100% | 91% |
 | apache-superset | 90% | 18% | 71% | 100% | 100% | 85% |
 | trycua-cua | 90% | 53% | 0% | 100% | 100% | 100% |
@@ -127,19 +131,19 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | autogpt | 90% | 53% | 0% | 100% | 100% | 100% |
 | ai | 100% | 0% | 71% | 85% | 100% | 100% |
 | opik | 90% | 53% | 0% | 100% | 100% | 100% |
-| suna | 100% | 53% | 0% | 100% | 79% | 100% |
 | open-swe | 100% | 53% | 0% | 100% | 79% | 100% |
 | omnigent | 90% | 53% | 0% | 100% | 100% | 100% |
 | nextlevelbuilder-ui-ux-pro-max-skill | 100% | 100% | 0% | 60% | 79% | 100% |
 | twentyhq-twenty | 85% | 53% | 57% | 75% | 79% | 100% |
+| vectorize-io-hindsight | 85% | 53% | 0% | 100% | 100% | 100% |
 | swc-project-swc | 100% | 53% | 0% | 100% | 100% | 87% |
 | signoz-signoz | 65% | 82% | 0% | 100% | 100% | 100% |
 | nanocoai-nanoclaw | 85% | 53% | 0% | 100% | 100% | 100% |
-| getsentry-mobilebuildmcp | 100% | 53% | 0% | 100% | 79% | 100% |
 | kenn-io-agentsview | 100% | 53% | 0% | 100% | 79% | 100% |
 | pipeshub-ai-pipeshub-ai | 100% | 53% | 0% | 100% | 79% | 100% |
 | felinics-memoh | 90% | 53% | 0% | 100% | 100% | 100% |
 | ai-ide-xera-ai-xera-1238378361 | 90% | 71% | 0% | 100% | 79% | 100% |
+| mforce-cluckwork | 100% | 0% | 71% | 85% | 100% | 100% |
 | dev-infra-stagewise-io-stagewise | 90% | 53% | 0% | 100% | 100% | 100% |
 | geospatial-vinayakkulkarni-tileserver-rs | 90% | 53% | 0% | 100% | 100% | 100% |
 | ai-ide-benkruger-flow-1162158683 | 90% | 82% | 100% | 75% | 0% | 100% |
@@ -169,13 +173,12 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | xiaomimimo-mimo-code | 100% | 53% | 0% | 100% | 79% | 100% |
 | vercel-labs-deepsec | 100% | 53% | 0% | 100% | 79% | 100% |
 | modelengine-group-nexent | 100% | 53% | 0% | 100% | 79% | 100% |
-| dograh-hq-dograh | 100% | 71% | 0% | 85% | 79% | 100% |
 | mistralai-mistral-vibe | 100% | 53% | 0% | 100% | 79% | 100% |
+| usefulsoftwareco-executor | 100% | 53% | 0% | 85% | 100% | 100% |
 | infisical-agent-vault | 100% | 53% | 0% | 100% | 79% | 100% |
 | labsai-eddi | 100% | 53% | 0% | 100% | 79% | 100% |
 | ai-ide-shrimpshiro-monet-kove-1304715394 | 100% | 82% | 0% | 85% | 79% | 90% |
 | ai-ide-phazzie-tarotoutmyheart-1091371041 | 85% | 53% | 0% | 100% | 100% | 100% |
-| dev-infra-neilotoole-sq | 100% | 53% | 0% | 100% | 79% | 100% |
 | cognee | 45% | 53% | 57% | 100% | 100% | 100% |
 | speech | 45% | 53% | 57% | 100% | 100% | 100% |
 | astral-sh-ruff | 45% | 53% | 57% | 100% | 100% | 100% |
@@ -192,12 +195,10 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | ai-ide-niksacdev-multi-agent-system-1034067055 | 100% | 29% | 0% | 100% | 100% | 100% |
 | paperclipai-paperclip | 100% | 82% | 0% | 60% | 79% | 100% |
 | appwrite-appwrite | 90% | 53% | 0% | 100% | 79% | 100% |
-| vectorize-io-hindsight | 85% | 53% | 0% | 100% | 79% | 100% |
 | spacedriveapp-spacedrive | 90% | 53% | 0% | 100% | 79% | 100% |
 | rustfs-rustfs | 100% | 53% | 0% | 75% | 100% | 100% |
 | spec-kitty-spec-kitty | 100% | 41% | 0% | 100% | 79% | 100% |
 | ai-ide-cleaniquecoders-kickoff-1029706155 | 75% | 100% | 0% | 100% | 79% | 75% |
-| mforce-cluckwork | 100% | 0% | 71% | 85% | 79% | 100% |
 | dev-infra-eclipse-che-che | 100% | 71% | 0% | 70% | 100% | 87% |
 | geospatial-geoql-v-maplibre | 90% | 53% | 0% | 85% | 100% | 100% |
 | dragonflydb-dragonfly | 85% | 53% | 71% | 55% | 100% | 85% |
@@ -209,6 +210,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | ai-ide-penguintechinc-skauswatch-606108379 | 100% | 24% | 0% | 100% | 100% | 100% |
 | pytorch | 85% | 53% | 0% | 100% | 79% | 100% |
 | onnx | 85% | 53% | 0% | 100% | 100% | 85% |
+| doris | 100% | 53% | 0% | 85% | 100% | 85% |
 | opensandbox | 100% | 53% | 0% | 85% | 79% | 100% |
 | mui-material-ui | 100% | 53% | 0% | 100% | 57% | 100% |
 | morluto-rea | 100% | 53% | 0% | 85% | 100% | 85% |
@@ -221,7 +223,6 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | moonshotai-kimi-code | 100% | 53% | 0% | 85% | 100% | 85% |
 | lightdash-lightdash | 90% | 41% | 0% | 85% | 100% | 100% |
 | prest-prest | 85% | 53% | 0% | 100% | 79% | 100% |
-| usefulsoftwareco-executor | 100% | 53% | 0% | 85% | 79% | 100% |
 | kagent-dev-kagent | 100% | 53% | 0% | 85% | 79% | 100% |
 | ai-ide-os-factory-har-1283354974 | 100% | 53% | 0% | 100% | 57% | 100% |
 | ai-ide-kelthon-roobra-api-1276380473 | 85% | 53% | 0% | 100% | 79% | 100% |
@@ -229,6 +230,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | dev-infra-usebruno-bruno | 95% | 53% | 0% | 85% | 100% | 90% |
 | dev-infra-oxsecurity-megalinter | 90% | 82% | 0% | 70% | 79% | 100% |
 | omi | 90% | 18% | 29% | 100% | 100% | 87% |
+| openlit-openlit | 100% | 18% | 0% | 100% | 100% | 100% |
 | ai-ide-terraphim-terraphim-ai-698304144 | 100% | 29% | 0% | 100% | 100% | 90% |
 | ai-ide-pranav-karra-3301-tuck-1123485560 | 100% | 18% | 0% | 100% | 100% | 100% |
 | dokploy-dokploy | 30% | 53% | 71% | 100% | 100% | 90% |
@@ -247,6 +249,8 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | addyosmani-agent-skills | 100% | 100% | 0% | 40% | 79% | 100% |
 | chen08209-flclash | 100% | 53% | 71% | 40% | 79% | 87% |
 | home-assistant-core | 40% | 82% | 0% | 100% | 100% | 100% |
+| zeroclaw | 100% | 24% | 0% | 100% | 100% | 90% |
+| dicklesworthstone-mcp-agent-mail | 45% | 0% | 86% | 100% | 100% | 100% |
 | ai-ide-alanchelmickjr-memorable-965797900 | 45% | 0% | 86% | 100% | 100% | 100% |
 | ai-ide-patrob-ai-sdlc-1130789991 | 30% | 71% | 71% | 85% | 79% | 100% |
 | zed | 85% | 53% | 0% | 100% | 79% | 90% |
@@ -269,24 +273,24 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | grafana | 90% | 53% | 0% | 100% | 100% | 65% |
 | netdata | 100% | 53% | 0% | 65% | 79% | 100% |
 | openspec | 85% | 53% | 0% | 85% | 79% | 100% |
-| doris | 100% | 53% | 0% | 85% | 79% | 85% |
 | shadcn-ui-ui | 65% | 53% | 0% | 100% | 79% | 100% |
 | makeplane-plane | 90% | 53% | 0% | 85% | 71% | 100% |
 | tabler-tabler | 65% | 53% | 0% | 100% | 79% | 100% |
 | mantinedev-mantine | 100% | 0% | 57% | 85% | 57% | 100% |
 | pingdotgg-t3code | 90% | 53% | 0% | 60% | 100% | 100% |
 | ai-ide-homeassistant-extras-whisker-1182006131 | 100% | 53% | 0% | 100% | 57% | 85% |
+| dev-infra-jetbrains-intellij-community | 100% | 53% | 0% | 85% | 100% | 65% |
 | dev-infra-questdb-questdb | 90% | 53% | 0% | 75% | 79% | 100% |
 | dev-infra-azrtydxb-procoder | 85% | 71% | 0% | 100% | 79% | 70% |
 | coollabsio-coolify | 100% | 53% | 0% | 100% | 29% | 100% |
 | ai-ide-hamidrezarezaeigithub-man-agent-ment-1223084030 | 100% | 100% | 57% | 0% | 79% | 90% |
+| geospatial-lipas-liikuntapaikat-lipas | 65% | 82% | 100% | 10% | 71% | 100% |
 | fakeflix | 45% | 82% | 0% | 100% | 79% | 100% |
 | opencode | 100% | 0% | 0% | 100% | 100% | 100% |
 | langfuse | 75% | 24% | 0% | 100% | 100% | 100% |
 | gemini-cli | 100% | 0% | 0% | 100% | 100% | 100% |
 | ccxt | 45% | 82% | 0% | 100% | 79% | 100% |
 | aionui | 40% | 71% | 0% | 100% | 100% | 100% |
-| zeroclaw | 100% | 24% | 0% | 100% | 79% | 90% |
 | invokeai | 100% | 0% | 0% | 100% | 100% | 100% |
 | kilocode | 100% | 0% | 0% | 100% | 100% | 100% |
 | docsgpt | 100% | 0% | 0% | 100% | 100% | 100% |
@@ -301,7 +305,6 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | evermind-ai-raven | 100% | 0% | 0% | 100% | 100% | 100% |
 | gptme-gptme | 100% | 0% | 0% | 100% | 100% | 100% |
 | ascending-llc-jarvis-registry | 100% | 0% | 0% | 100% | 100% | 100% |
-| openlit-openlit | 100% | 18% | 0% | 100% | 79% | 100% |
 | ai-ide-extra-org-extra-1261127156 | 45% | 82% | 0% | 100% | 79% | 100% |
 | ai-ide-popupmaker-popup-maker-28651590 | 95% | 18% | 0% | 100% | 100% | 90% |
 | ai-ide-indenscale-typedown-1117911162 | 100% | 0% | 0% | 100% | 100% | 100% |
@@ -333,11 +336,11 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | charmbracelet-crush | 100% | 24% | 0% | 100% | 57% | 100% |
 | modelcontextprotocol-python-sdk | 45% | 71% | 0% | 100% | 79% | 100% |
 | op7418-codepilot | 100% | 0% | 0% | 85% | 100% | 100% |
+| microsoft-agent-governance-toolkit | 100% | 0% | 0% | 85% | 100% | 100% |
 | mock-server-mockserver-monorepo | 45% | 35% | 86% | 85% | 79% | 85% |
 | dimensionalos-dimos | 45% | 53% | 0% | 100% | 100% | 100% |
 | openai-openai-agents-js | 45% | 53% | 0% | 100% | 100% | 100% |
 | skyhook-io-radar | 45% | 71% | 0% | 100% | 79% | 100% |
-| dicklesworthstone-mcp-agent-mail | 45% | 0% | 86% | 100% | 79% | 100% |
 | a2aproject-a2a-python | 45% | 53% | 0% | 100% | 100% | 100% |
 | agentic-community-mcp-gateway-registry | 45% | 53% | 0% | 100% | 100% | 100% |
 | ai-ide-voltcyclone-pcileechfwgenerator-994386315 | 45% | 82% | 86% | 40% | 79% | 87% |
@@ -346,6 +349,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | ai-ide-nathalie-b-melea-policy-paper-1140719076 | 45% | 53% | 0% | 100% | 100% | 100% |
 | open-reaction-database-ord-data | 45% | 53% | 0% | 100% | 100% | 100% |
 | dev-infra-keploy-keploy | 45% | 53% | 0% | 100% | 100% | 100% |
+| dev-infra-rorkai-app-store-connect-cli | 45% | 53% | 0% | 100% | 100% | 100% |
 | dev-infra-baserow-baserow | 45% | 53% | 0% | 100% | 100% | 100% |
 | dev-infra-help-me-mom-ng-mocks | 45% | 53% | 0% | 100% | 100% | 100% |
 | geospatial-flukelaster-siahra | 45% | 47% | 86% | 60% | 79% | 100% |
@@ -370,10 +374,12 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | seleniumhq-selenium | 100% | 0% | 0% | 100% | 79% | 100% |
 | supermemoryai-supermemory | 100% | 0% | 0% | 100% | 79% | 100% |
 | transloadit-uppy | 100% | 0% | 0% | 100% | 79% | 100% |
+| envoyproxy-envoy | 100% | 0% | 0% | 100% | 100% | 85% |
 | manaflow-ai-cmux | 85% | 18% | 0% | 100% | 79% | 100% |
 | goauthentik-authentik | 100% | 0% | 0% | 100% | 79% | 100% |
 | openstatushq-openstatus | 100% | 18% | 0% | 85% | 79% | 100% |
 | truefoundry-trueforge | 85% | 0% | 0% | 100% | 100% | 100% |
+| kungfu-systems-kungfu | 100% | 0% | 0% | 100% | 100% | 85% |
 | yvgude-lean-ctx | 85% | 0% | 0% | 100% | 100% | 100% |
 | nextlevelbuilder-goclaw | 100% | 0% | 0% | 100% | 79% | 100% |
 | agent-of-empires-agent-of-empires | 100% | 0% | 0% | 100% | 79% | 100% |
@@ -397,14 +403,13 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | open-curiosity-gini-agent | 100% | 53% | 0% | 85% | 50% | 85% |
 | ai-ide-peiyuanqi-canwu-1335235000 | 100% | 41% | 0% | 75% | 79% | 85% |
 | dev-infra-pubkey-rxdb | 100% | 0% | 86% | 85% | 79% | 50% |
-| dev-infra-jetbrains-intellij-community | 100% | 53% | 0% | 85% | 79% | 65% |
 | dev-infra-microsoft-testfx | 100% | 53% | 0% | 60% | 79% | 87% |
 | geospatial-giswater-plugin | 100% | 35% | 0% | 65% | 100% | 85% |
 | ai-ide-addyosmani-factory-1338909303 | 85% | 100% | 71% | 10% | 29% | 100% |
 | ai-ide-techwavedev-agi-agent-kit-1140790995 | 90% | 18% | 86% | 30% | 79% | 100% |
-| geospatial-lipas-liikuntapaikat-lipas | 65% | 82% | 100% | 10% | 50% | 100% |
 | metamask-extension | 100% | 18% | 0% | 100% | 100% | 65% |
 | claude-task-master | 90% | 18% | 0% | 100% | 79% | 87% |
+| remotion-dev-remotion | 45% | 41% | 0% | 100% | 100% | 100% |
 | galaxy-dawn-claude-scholar | 45% | 100% | 100% | 10% | 57% | 100% |
 | jordanhubbard-loom | 90% | 0% | 0% | 100% | 79% | 100% |
 | ai-ide-consensys-incorporated-doc-linea-559899547 | 95% | 24% | 0% | 100% | 50% | 100% |
@@ -439,7 +444,9 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | traefik-traefik | 45% | 53% | 0% | 100% | 100% | 85% |
 | usememos-memos | 45% | 53% | 0% | 100% | 79% | 100% |
 | withastro-astro | 45% | 53% | 0% | 100% | 79% | 100% |
+| moment-moment | 45% | 53% | 0% | 100% | 100% | 85% |
 | gogs-gogs | 45% | 53% | 0% | 100% | 79% | 100% |
+| herdrdev-herdr | 45% | 53% | 0% | 100% | 100% | 85% |
 | chakra-ui-chakra-ui | 45% | 35% | 0% | 100% | 100% | 100% |
 | reactivex-rxjs | 45% | 53% | 0% | 100% | 100% | 85% |
 | karakeep-app-karakeep | 45% | 53% | 0% | 85% | 100% | 100% |
@@ -448,12 +455,13 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | nukeop-nuclear | 45% | 53% | 0% | 100% | 100% | 85% |
 | ag-ui-protocol-ag-ui | 85% | 0% | 0% | 100% | 100% | 87% |
 | alvinunreal-oh-my-opencode-slim | 45% | 53% | 0% | 100% | 79% | 100% |
-| microsoft-agent-governance-toolkit | 100% | 0% | 0% | 85% | 79% | 100% |
 | stickerdaniel-linkedin-mcp-server | 45% | 53% | 0% | 80% | 100% | 100% |
 | standardagents-arrow-js | 90% | 0% | 0% | 100% | 79% | 100% |
 | code-yeongyu-lazycodex | 85% | 0% | 0% | 100% | 79% | 100% |
 | whiteguo233-openbiliclaw | 45% | 53% | 0% | 100% | 79% | 100% |
+| spacedriveapp-spacebot | 45% | 53% | 0% | 100% | 100% | 85% |
 | adithyan-ak-agenthound | 100% | 0% | 0% | 100% | 57% | 100% |
+| nvlabs-enpire | 45% | 53% | 0% | 100% | 100% | 85% |
 | grafana-agento11y | 45% | 53% | 0% | 100% | 79% | 100% |
 | ai-ide-citrus-bit-anaxa-1195714375 | 90% | 0% | 0% | 100% | 79% | 100% |
 | ai-ide-lensjs-lens-1039551199 | 100% | 0% | 0% | 100% | 79% | 90% |
@@ -466,7 +474,6 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | ai-ide-poairtronic-error-correction-application-1286070601 | 100% | 0% | 0% | 100% | 79% | 90% |
 | productofamerica-deere-sdk | 45% | 53% | 0% | 100% | 79% | 100% |
 | dev-infra-sqlfluff-sqlfluff | 90% | 0% | 0% | 100% | 100% | 85% |
-| dev-infra-rorkai-app-store-connect-cli | 45% | 53% | 0% | 100% | 79% | 100% |
 | dev-infra-github-gh-aw | 45% | 53% | 0% | 100% | 79% | 100% |
 | dev-infra-cdxgen-cdxgen | 45% | 53% | 0% | 100% | 79% | 100% |
 | dev-infra-cranot-roam-code | 45% | 53% | 0% | 80% | 100% | 100% |
@@ -489,11 +496,9 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | react-react-native | 100% | 0% | 0% | 100% | 79% | 85% |
 | agalwood-motrix | 85% | 0% | 0% | 100% | 79% | 100% |
 | styled-components-styled-components | 100% | 0% | 0% | 100% | 79% | 85% |
-| envoyproxy-envoy | 100% | 0% | 0% | 100% | 79% | 85% |
 | apache-flink | 100% | 0% | 0% | 100% | 79% | 85% |
 | modelcontextprotocol-typescript-sdk | 85% | 0% | 0% | 100% | 79% | 100% |
 | agentscope-ai-agentscope-java | 100% | 0% | 0% | 100% | 79% | 85% |
-| kungfu-systems-kungfu | 100% | 0% | 0% | 100% | 79% | 85% |
 | nolabs-ai-nono | 100% | 0% | 0% | 100% | 79% | 85% |
 | kirodotdev-kirocrew | 100% | 0% | 0% | 100% | 79% | 85% |
 | gcwing-openbitfun | 100% | 0% | 0% | 100% | 79% | 85% |
@@ -521,8 +526,8 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | game-ai-hi-godot-godot-ai | 45% | 53% | 57% | 80% | 79% | 70% |
 | freecodecamp-freecodecamp | 65% | 0% | 0% | 100% | 100% | 100% |
 | toeverything-affine | 65% | 0% | 0% | 100% | 100% | 100% |
-| remotion-dev-remotion | 45% | 41% | 0% | 100% | 79% | 100% |
 | remix-run-react-router | 45% | 53% | 0% | 90% | 79% | 100% |
+| k1tbyte-wand-enhancer | 100% | 0% | 0% | 100% | 50% | 100% |
 | bloopai-vibe-kanban | 100% | 0% | 0% | 100% | 50% | 100% |
 | rollup-rollup | 100% | 0% | 0% | 100% | 100% | 65% |
 | modelcontextprotocol-inspector | 45% | 53% | 0% | 100% | 57% | 100% |
@@ -553,20 +558,17 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | game-ai-glt258-game-ai-agent | 85% | 0% | 0% | 100% | 100% | 75% |
 | twbs-bootstrap | 45% | 53% | 0% | 100% | 79% | 85% |
 | chromedevtools-chrome-devtools-mcp | 45% | 53% | 0% | 100% | 57% | 100% |
-| moment-moment | 45% | 53% | 0% | 100% | 79% | 85% |
-| herdrdev-herdr | 45% | 53% | 0% | 100% | 79% | 85% |
 | surrealdb-surrealdb | 100% | 0% | 0% | 75% | 100% | 85% |
 | kestra-io-kestra | 90% | 0% | 0% | 85% | 79% | 100% |
 | gitbookio-gitbook | 45% | 53% | 0% | 85% | 79% | 100% |
 | gastownhall-gastown | 45% | 71% | 0% | 100% | 57% | 85% |
 | apache-camel | 100% | 0% | 0% | 85% | 79% | 87% |
 | dzhng-jevgrep | 45% | 53% | 0% | 85% | 79% | 100% |
-| spacedriveapp-spacebot | 45% | 53% | 0% | 100% | 79% | 85% |
 | tianma-if-edgeever | 100% | 0% | 0% | 75% | 79% | 100% |
 | peteromallet-dataclaw | 45% | 53% | 0% | 100% | 79% | 85% |
 | minimax-ai-minimax-code | 45% | 53% | 0% | 100% | 57% | 100% |
 | dicklesworthstone-agentic-coding-flywheel-setup | 90% | 0% | 0% | 85% | 79% | 100% |
-| nvlabs-enpire | 45% | 53% | 0% | 100% | 79% | 85% |
+| ai-ide-quantizor-markdown-to-jsx-47486737 | 85% | 18% | 0% | 100% | 79% | 75% |
 | ai-ide-open-source-legal-opencontracts-556553471 | 100% | 0% | 0% | 75% | 100% | 85% |
 | ai-ide-sky-systems-sky-phone-1321732221 | 45% | 53% | 0% | 100% | 79% | 85% |
 | ai-ide-polyipseity-obsidian-modules-669649952 | 45% | 53% | 0% | 100% | 57% | 100% |
@@ -637,15 +639,16 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | resume-matcher | 100% | 0% | 0% | 100% | 29% | 100% |
 | coze-studio | 45% | 29% | 0% | 100% | 79% | 91% |
 | rd-agent | 65% | 0% | 0% | 100% | 79% | 100% |
+| agent-framework | 65% | 0% | 0% | 85% | 100% | 100% |
 | tvm | 45% | 24% | 0% | 100% | 100% | 85% |
 | maka | 65% | 0% | 0% | 100% | 100% | 85% |
 | thedaviddias-front-end-checklist | 45% | 0% | 0% | 100% | 100% | 100% |
 | career-ops-hq-career-ops | 100% | 24% | 0% | 60% | 79% | 85% |
 | webpack-webpack | 45% | 0% | 57% | 100% | 100% | 65% |
+| gsd-build-get-shit-done | 90% | 0% | 0% | 60% | 100% | 100% |
 | ultralytics-ultralytics | 100% | 0% | 0% | 80% | 79% | 85% |
 | alishahryar1-free-claude-code | 65% | 0% | 0% | 100% | 79% | 100% |
 | telegramdesktop-tdesktop | 45% | 71% | 71% | 10% | 79% | 100% |
-| k1tbyte-wand-enhancer | 100% | 0% | 0% | 100% | 29% | 100% |
 | usekaneo-kaneo | 45% | 53% | 0% | 60% | 100% | 100% |
 | mervinpraison-praisonai | 90% | 18% | 0% | 60% | 79% | 100% |
 | agentgateway-agentgateway | 65% | 0% | 0% | 100% | 79% | 100% |
@@ -687,10 +690,12 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | open-knowledge | 45% | 0% | 0% | 100% | 100% | 100% |
 | semantic-router | 45% | 0% | 0% | 100% | 100% | 100% |
 | game-ai-alii13-open-mercy | 45% | 53% | 0% | 70% | 79% | 100% |
+| game-ai-pranavmishra17-soulengine | 45% | 47% | 0% | 60% | 100% | 100% |
 | axios-axios | 45% | 0% | 0% | 100% | 100% | 100% |
 | angular-angular | 85% | 18% | 0% | 75% | 79% | 85% |
 | heyputer-puter | 45% | 0% | 0% | 100% | 100% | 100% |
 | hkuds-deeptutor | 45% | 0% | 0% | 100% | 100% | 100% |
+| nushell-nushell | 45% | 0% | 0% | 100% | 100% | 100% |
 | trailofbits-algo | 45% | 0% | 0% | 100% | 100% | 100% |
 | nautechsystems-nautilus-trader | 45% | 0% | 0% | 100% | 100% | 100% |
 | swagger-api-swagger-ui | 45% | 0% | 0% | 100% | 100% | 100% |
@@ -708,16 +713,18 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | the-open-engine-zeroshot | 45% | 0% | 0% | 100% | 100% | 100% |
 | tickernelz-opencode-mem | 45% | 0% | 0% | 100% | 100% | 100% |
 | a2aproject-a2a-java | 45% | 53% | 0% | 85% | 57% | 100% |
-| ai-ide-quantizor-markdown-to-jsx-47486737 | 85% | 18% | 0% | 100% | 57% | 75% |
 | ai-ide-haseeb-heaven-gworkspace-agent-642224541 | 45% | 0% | 0% | 100% | 100% | 100% |
 | ai-ide-zm-bad-headroom-1263174131 | 45% | 0% | 0% | 100% | 100% | 100% |
 | ai-ide-sruja-ai-sruja-1102559480 | 75% | 18% | 0% | 75% | 79% | 91% |
 | ai-ide-lichtblick-suite-asam-osi-converter-862278444 | 45% | 0% | 0% | 100% | 100% | 100% |
+| ai-ide-yungookim-n-codes-1131931144 | 100% | 0% | 0% | 60% | 79% | 100% |
 | ai-ide-vadolasi-codelabs-817640356 | 100% | 0% | 0% | 100% | 21% | 100% |
 | ai-ide-matdev83-portfolio-backtester-1012458640 | 100% | 0% | 0% | 75% | 79% | 85% |
 | ai-ide-rduo1009-vocab-tuister-886510459 | 45% | 0% | 0% | 100% | 100% | 100% |
 | ai-ide-stackoverworld-primer-ai-1159144063 | 100% | 0% | 0% | 60% | 79% | 100% |
 | ai-ide-grethel-labs-excaliplant-1226097209 | 85% | 0% | 0% | 75% | 100% | 85% |
+| ai-ide-236sec-go-boilerplate-1065685646 | 100% | 0% | 0% | 100% | 21% | 100% |
+| ai-ide-kubex-ecosystem-analyzer-1053518765 | 45% | 0% | 0% | 100% | 100% | 100% |
 | ai-ide-publicledger-data-1154896123 | 45% | 0% | 0% | 100% | 100% | 100% |
 | galaxyproject-galaxy | 60% | 18% | 0% | 100% | 79% | 85% |
 | kmnhan-erlabpy | 45% | 0% | 0% | 100% | 100% | 100% |
@@ -756,6 +763,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | fynnfluegge-agtx | 45% | 71% | 0% | 75% | 57% | 87% |
 | ai-ide-goldziher-gitfluff-1077723484 | 45% | 71% | 0% | 75% | 79% | 75% |
 | ai-ide-imperialcollegelondon-ve-data-science-923491301 | 90% | 0% | 0% | 50% | 100% | 100% |
+| ai-ide-justb81-watchbuddy-1208094283 | 45% | 0% | 57% | 70% | 100% | 85% |
 | ai-ide-yurimutti-yurimutti-com-524741865 | 45% | 53% | 0% | 100% | 21% | 100% |
 | undp-undp-national-carbon-registry | 45% | 47% | 0% | 85% | 57% | 100% |
 | spglib-moyo | 45% | 53% | 0% | 75% | 79% | 90% |
@@ -777,17 +785,16 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | ai-website-cloner-template | 45% | 71% | 0% | 45% | 79% | 100% |
 | 9router | 100% | 0% | 0% | 65% | 79% | 85% |
 | codexbar | 45% | 53% | 0% | 60% | 79% | 100% |
-| agent-framework | 65% | 0% | 0% | 85% | 79% | 100% |
 | morphic | 45% | 0% | 0% | 100% | 79% | 100% |
 | wigolo | 65% | 0% | 0% | 85% | 79% | 100% |
 | game-ai-chrisreddington-turn-based-game-mcp | 65% | 0% | 0% | 85% | 79% | 100% |
-| gsd-build-get-shit-done | 90% | 0% | 0% | 60% | 79% | 100% |
 | maybe-finance-maybe | 100% | 0% | 0% | 50% | 79% | 100% |
 | juanfont-headscale | 45% | 0% | 0% | 100% | 100% | 87% |
 | reactive-resume-reactive-resume | 45% | 0% | 0% | 85% | 100% | 100% |
 | k3s-io-k3s | 65% | 0% | 0% | 100% | 79% | 85% |
 | conductor-oss-conductor | 45% | 29% | 0% | 100% | 100% | 65% |
 | waishnav-devspace | 45% | 53% | 0% | 60% | 79% | 100% |
+| modelcontextprotocol-rust-sdk | 65% | 0% | 0% | 100% | 100% | 70% |
 | simonlin1212-vibe-research | 45% | 53% | 0% | 60% | 79% | 100% |
 | ai-ide-guyteichman-rnalysis-192915576 | 40% | 53% | 0% | 65% | 79% | 100% |
 | ai-ide-rensongroup-home-assistant-92548761 | 85% | 0% | 0% | 100% | 50% | 85% |
@@ -799,6 +806,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | dev-infra-dineug-erd-editor | 90% | 0% | 0% | 60% | 79% | 100% |
 | dev-infra-github-codeql-action | 65% | 0% | 0% | 85% | 100% | 85% |
 | dev-infra-r3bl-org-r3bl-open-core | 100% | 24% | 0% | 75% | 29% | 87% |
+| game-ai-jaylfc-taos | 30% | 53% | 0% | 60% | 100% | 100% |
 | anomalyco-sst | 30% | 24% | 0% | 100% | 79% | 100% |
 | mattpocock-sandcastle | 30% | 53% | 0% | 75% | 79% | 100% |
 | geospatial-danactive-history | 30% | 53% | 0% | 85% | 79% | 87% |
@@ -832,7 +840,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | lobsterai | 45% | 0% | 0% | 100% | 100% | 85% |
 | kserve | 45% | 0% | 0% | 100% | 100% | 85% |
 | open-science | 45% | 0% | 0% | 100% | 79% | 100% |
-| game-ai-pranavmishra17-soulengine | 45% | 47% | 0% | 60% | 79% | 100% |
+| game-ai-rouges78-gamestringer | 45% | 0% | 0% | 85% | 100% | 100% |
 | louislam-uptime-kuma | 45% | 0% | 0% | 100% | 79% | 100% |
 | jesseduffield-lazygit | 45% | 0% | 0% | 100% | 79% | 100% |
 | warpdotdev-warp | 45% | 53% | 0% | 75% | 79% | 78% |
@@ -843,7 +851,6 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | alibaba-open-code-review | 45% | 18% | 0% | 100% | 79% | 85% |
 | meteor-meteor | 45% | 0% | 0% | 100% | 100% | 85% |
 | outline-outline | 45% | 0% | 0% | 85% | 100% | 100% |
-| nushell-nushell | 45% | 0% | 0% | 100% | 79% | 100% |
 | triliumnext-trilium | 45% | 53% | 0% | 85% | 79% | 70% |
 | nextcloud-server | 45% | 0% | 0% | 100% | 100% | 85% |
 | filebrowser-filebrowser | 45% | 0% | 0% | 100% | 79% | 100% |
@@ -886,12 +893,9 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | ai-ide-antipopp-agno-client-1086509876 | 45% | 0% | 0% | 100% | 79% | 100% |
 | ai-ide-klen-muffin-admin-34291282 | 40% | 0% | 0% | 100% | 100% | 90% |
 | ai-ide-zhiming-dev-roster-1251937324 | 100% | 0% | 0% | 100% | 0% | 100% |
-| ai-ide-yungookim-n-codes-1131931144 | 100% | 0% | 0% | 60% | 57% | 100% |
 | ai-ide-ita-social-projects-victorycenter-client-958011135 | 45% | 0% | 0% | 100% | 79% | 100% |
 | ai-ide-charmedllm-sales-bot-1068737524 | 45% | 0% | 0% | 100% | 79% | 100% |
 | ai-ide-ismaelmartinez-github-issue-triage-bot-1171146736 | 45% | 0% | 0% | 100% | 79% | 100% |
-| ai-ide-236sec-go-boilerplate-1065685646 | 100% | 0% | 0% | 100% | 0% | 100% |
-| ai-ide-kubex-ecosystem-analyzer-1053518765 | 45% | 0% | 0% | 100% | 79% | 100% |
 | ai-ide-throw-if-null-orfe-1194760313 | 45% | 18% | 0% | 85% | 79% | 100% |
 | yt-project-yt | 45% | 0% | 0% | 100% | 100% | 85% |
 | jaketherabbit-ha-irrigation-strategy | 45% | 0% | 0% | 100% | 79% | 100% |
@@ -912,8 +916,10 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | keycloak | 30% | 0% | 0% | 100% | 100% | 100% |
 | firecrawl | 30% | 0% | 0% | 100% | 100% | 100% |
 | ai-job-search | 30% | 100% | 0% | 30% | 79% | 100% |
+| parlant | 30% | 0% | 0% | 100% | 100% | 100% |
 | game-ai-teklabsdigital-x2-method | 30% | 53% | 43% | 55% | 79% | 85% |
 | excalidraw-excalidraw | 30% | 0% | 0% | 100% | 100% | 100% |
+| modelcontextprotocol-registry | 30% | 0% | 0% | 100% | 100% | 100% |
 | runmaestro-maestro | 30% | 0% | 0% | 100% | 100% | 100% |
 | ai-ide-device-management-toolkit-mps-193788831 | 30% | 0% | 0% | 100% | 100% | 100% |
 | ai-ide-device-management-toolkit-wsman-messages-434391841 | 30% | 0% | 0% | 100% | 100% | 100% |
@@ -945,12 +951,13 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | wenqingyu-ralphy-openspec | 100% | 18% | 0% | 60% | 29% | 100% |
 | ai-ide-verygoodplugins-automem-1057758059 | 45% | 0% | 0% | 80% | 100% | 100% |
 | ai-ide-psic4t-nospeak-1106724436 | 100% | 0% | 0% | 60% | 50% | 100% |
-| ai-ide-justb81-watchbuddy-1208094283 | 45% | 0% | 57% | 70% | 79% | 85% |
 | ai-ide-eraevous-cognitive-scaffolding-967787402 | 45% | 0% | 0% | 80% | 100% | 100% |
 | ai-ide-estebangarviso-nextjs-template-1346942186 | 45% | 0% | 0% | 90% | 100% | 90% |
 | llnl-sundials | 45% | 53% | 0% | 80% | 79% | 70% |
 | pasteurlabs-tesseract-core | 45% | 0% | 0% | 80% | 100% | 100% |
 | antitoine-ha-solem-irrigation | 45% | 0% | 0% | 80% | 100% | 100% |
+| dev-infra-datazip-inc-olake | 65% | 0% | 0% | 100% | 100% | 60% |
+| game-ai-lxsolutions-studio-foundation | 30% | 53% | 0% | 60% | 79% | 100% |
 | fastapi-fastapi | 10% | 53% | 0% | 100% | 79% | 85% |
 | hkuds-openharness | 10% | 53% | 0% | 100% | 79% | 85% |
 | codegraphcontext-codegraphcontext | 10% | 53% | 0% | 100% | 79% | 85% |
@@ -960,6 +967,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | geospatial-ruvnet-worldgraph | 30% | 71% | 0% | 75% | 79% | 75% |
 | saadeghi-daisyui | 65% | 53% | 0% | 55% | 57% | 85% |
 | square-leakcanary | 90% | 53% | 0% | 30% | 57% | 85% |
+| deusyu-harness-engineering | 100% | 53% | 0% | 10% | 50% | 100% |
 | aldinokemal-go-whatsapp-web-multidevice | 95% | 53% | 0% | 40% | 29% | 90% |
 | ai-ide-vishipayyallore-speaker-series-2026-1123999408 | 85% | 82% | 0% | 0% | 50% | 100% |
 | dev-infra-firebase-firebase-ios-sdk | 65% | 53% | 0% | 40% | 79% | 85% |
@@ -972,15 +980,14 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | vercel-labs-skills | 45% | 0% | 0% | 75% | 100% | 100% |
 | webadderallorg-recordly | 50% | 0% | 0% | 100% | 79% | 85% |
 | automattic-mongoose | 65% | 0% | 0% | 85% | 79% | 85% |
-| modelcontextprotocol-rust-sdk | 65% | 0% | 0% | 100% | 79% | 70% |
 | ai-ide-theodoreonzgit-kopitiam-1287979749 | 45% | 53% | 57% | 75% | 0% | 85% |
 | ai-ide-paivapereira-lgpd-policy-review-1226950265 | 100% | 0% | 0% | 60% | 29% | 100% |
 | xuzhougeng-scientificfigurelibrary | 45% | 53% | 0% | 60% | 79% | 85% |
 | nf-core-scdownstream | 85% | 0% | 0% | 50% | 100% | 85% |
 | dev-infra-xo-usql | 45% | 53% | 0% | 75% | 57% | 85% |
+| dev-infra-xtdb-xtdb | 40% | 82% | 0% | 30% | 79% | 87% |
 | geospatial-jordangunn-gdal-mcp | 65% | 0% | 0% | 55% | 100% | 100% |
 | next-ai-draw-io | 10% | 0% | 0% | 100% | 100% | 100% |
-| game-ai-jaylfc-taos | 30% | 53% | 0% | 60% | 79% | 100% |
 | repowise-dev-repowise | 10% | 0% | 0% | 100% | 100% | 100% |
 | dev-infra-cloudquery-cloudquery | 10% | 29% | 0% | 100% | 79% | 100% |
 | worldflowai-everything-claude-code | 65% | 71% | 86% | 10% | 0% | 90% |
@@ -998,7 +1005,6 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | ida-pro-mcp | 45% | 53% | 0% | 70% | 57% | 85% |
 | openui | 65% | 0% | 0% | 100% | 29% | 100% |
 | metaflow | 45% | 0% | 0% | 85% | 100% | 85% |
-| game-ai-rouges78-gamestringer | 45% | 0% | 0% | 85% | 79% | 100% |
 | game-ai-bttf-ogremcp | 45% | 29% | 0% | 60% | 79% | 100% |
 | gohugoio-hugo | 85% | 0% | 0% | 75% | 57% | 85% |
 | egonex-ai-understand-anything | 45% | 0% | 0% | 85% | 79% | 100% |
@@ -1036,6 +1042,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | kocoro-lab-shannon | 45% | 0% | 0% | 85% | 79% | 100% |
 | stakpak-agent | 45% | 0% | 0% | 100% | 79% | 85% |
 | umputun-ralphex | 45% | 0% | 0% | 100% | 57% | 100% |
+| dokimos-dev-dokimos | 45% | 0% | 0% | 100% | 79% | 85% |
 | ai-ide-flyinpancake-yoink-1166099737 | 45% | 53% | 0% | 75% | 29% | 100% |
 | ai-ide-algolia-cli-446476572 | 45% | 0% | 0% | 100% | 57% | 100% |
 | ai-ide-static-analyzer-factory-static-analyzer-factory-1203781902 | 45% | 0% | 0% | 100% | 57% | 100% |
@@ -1065,16 +1072,15 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | ollama | 30% | 0% | 0% | 100% | 79% | 100% |
 | deepseek-reasonix | 30% | 0% | 0% | 100% | 79% | 100% |
 | serena | 30% | 0% | 0% | 100% | 79% | 100% |
-| parlant | 30% | 0% | 0% | 100% | 79% | 100% |
 | oumi | 30% | 0% | 0% | 100% | 100% | 85% |
-| game-ai-lxsolutions-studio-foundation | 30% | 53% | 0% | 60% | 57% | 100% |
 | nuxt-nuxt | 30% | 0% | 0% | 85% | 100% | 100% |
 | babel-babel | 30% | 0% | 0% | 100% | 100% | 85% |
 | date-fns-date-fns | 30% | 18% | 0% | 85% | 79% | 91% |
 | ankitects-anki | 30% | 0% | 0% | 100% | 100% | 85% |
+| mihomo-party-org-clash-party | 30% | 0% | 0% | 100% | 100% | 85% |
 | googleapis-mcp-toolbox | 30% | 0% | 0% | 100% | 79% | 100% |
 | e2b-dev-e2b | 30% | 0% | 0% | 100% | 79% | 100% |
-| modelcontextprotocol-registry | 30% | 0% | 0% | 100% | 79% | 100% |
+| samnjoro30-smart-agriculture | 10% | 53% | 0% | 70% | 100% | 90% |
 | dev-infra-step-security-harden-runner | 30% | 0% | 0% | 85% | 100% | 100% |
 | geospatial-azgaar-fantasy-map-generator | 30% | 0% | 0% | 100% | 100% | 85% |
 | geospatial-infra-geo-ouverte-igo2 | 10% | 53% | 0% | 100% | 79% | 75% |
@@ -1115,7 +1121,6 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | dev-infra-graphile-crystal | 45% | 0% | 0% | 100% | 50% | 100% |
 | dev-infra-papermark-papermark | 55% | 53% | 0% | 60% | 29% | 100% |
 | dev-infra-dirac-run-dirac | 45% | 0% | 0% | 100% | 50% | 100% |
-| dev-infra-datazip-inc-olake | 65% | 0% | 0% | 100% | 79% | 60% |
 | dev-infra-rchgrav-claudebox | 100% | 0% | 0% | 40% | 57% | 100% |
 | geospatial-nasa-ammos-mmgis | 45% | 0% | 0% | 80% | 79% | 100% |
 | geospatial-xuedai-mayi-dsh-wenshan | 65% | 0% | 0% | 60% | 79% | 100% |
@@ -1143,6 +1148,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | streamich-react-use | 10% | 0% | 0% | 100% | 100% | 100% |
 | siddharthvaddem-openscreen | 10% | 0% | 0% | 100% | 100% | 100% |
 | bytedance-ui-tars-desktop | 10% | 0% | 0% | 100% | 100% | 100% |
+| servo-servo | 10% | 0% | 0% | 100% | 100% | 100% |
 | nervjs-taro | 10% | 0% | 0% | 100% | 100% | 100% |
 | refinedev-refine | 10% | 0% | 0% | 100% | 100% | 100% |
 | vbenjs-vue-vben-admin | 10% | 0% | 0% | 100% | 100% | 100% |
@@ -1187,7 +1193,6 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | geospatial-blsq-iaso | 10% | 0% | 0% | 100% | 100% | 100% |
 | geospatial-thierryrakotomanana-gitcharta | 10% | 0% | 0% | 100% | 100% | 100% |
 | geospatial-giro3d-org-giro3d | 10% | 0% | 0% | 100% | 100% | 100% |
-| deusyu-harness-engineering | 100% | 53% | 0% | 10% | 29% | 100% |
 | dev-infra-mongodb-mongo-csharp-driver | 100% | 47% | 0% | 30% | 29% | 85% |
 | photocraft | 45% | 0% | 0% | 100% | 79% | 75% |
 | mcp-agent | 65% | 0% | 0% | 60% | 71% | 100% |
@@ -1201,9 +1206,12 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | bigpizzav3-codexplusplus | 45% | 0% | 0% | 75% | 79% | 100% |
 | bagisto-bagisto | 45% | 0% | 0% | 75% | 79% | 100% |
 | bethington-ghidra-mcp | 45% | 0% | 0% | 75% | 79% | 100% |
+| totec448-spec-chat-on-steroids | 45% | 0% | 0% | 60% | 100% | 100% |
 | spider-rs-spider | 45% | 0% | 0% | 75% | 79% | 100% |
+| chengzuopeng-stock-sdk | 45% | 0% | 0% | 60% | 100% | 100% |
 | twigpine-zero | 45% | 0% | 0% | 75% | 79% | 100% |
 | muratcankoylan-ralph-wiggum-marketer | 45% | 71% | 71% | 30% | 0% | 90% |
+| nexu-io-looper | 45% | 0% | 0% | 75% | 79% | 100% |
 | jaiswal-naman-agentland | 45% | 0% | 0% | 75% | 79% | 100% |
 | ai-ide-wawona-wawona-1097411133 | 45% | 0% | 0% | 75% | 79% | 100% |
 | ai-ide-rustyy-ecoflow-api-808331262 | 45% | 0% | 0% | 75% | 79% | 100% |
@@ -1215,7 +1223,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | ai-ide-slegroux-westside-la-events-1094790435 | 45% | 53% | 0% | 40% | 79% | 90% |
 | ad-si-woxi | 40% | 0% | 0% | 75% | 100% | 90% |
 | dev-infra-snouzy-workout-cool | 40% | 0% | 0% | 100% | 50% | 100% |
-| dev-infra-xtdb-xtdb | 40% | 82% | 0% | 30% | 57% | 87% |
+| dev-infra-orneryd-nornicdb | 45% | 0% | 0% | 75% | 100% | 85% |
 | dev-infra-itsallcode-openfasttrace | 45% | 53% | 0% | 60% | 57% | 85% |
 | freecut | 30% | 53% | 0% | 60% | 57% | 100% |
 | context7 | 10% | 0% | 0% | 100% | 79% | 100% |
@@ -1246,7 +1254,6 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | txn2-kubefwd | 45% | 0% | 0% | 100% | 57% | 85% |
 | neomjs-neo | 45% | 18% | 0% | 40% | 100% | 100% |
 | kite-org-kite | 45% | 0% | 0% | 100% | 57% | 85% |
-| dokimos-dev-dokimos | 45% | 0% | 0% | 100% | 57% | 85% |
 | ai-ide-geekywizkid-writing-helper-941820680 | 100% | 29% | 0% | 45% | 0% | 100% |
 | ai-ide-niall-young-canvasight-1288820389 | 45% | 0% | 0% | 60% | 79% | 100% |
 | ai-ide-swapnilsoni1999-amul-notify-1005504496 | 100% | 0% | 0% | 60% | 29% | 90% |
@@ -1256,11 +1263,13 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | ai-ide-kickflip-labs-cissp-study-hub-1241798426 | 45% | 53% | 0% | 40% | 57% | 100% |
 | ai-ide-xusnitdinov-uzbek-humanizer-1328586939 | 45% | 53% | 0% | 40% | 79% | 85% |
 | ai-ide-nouradinabdurahman-devforgekit-1288715699 | 45% | 0% | 0% | 85% | 79% | 85% |
+| ai-ide-asmoyou-linx-1137950454 | 45% | 0% | 0% | 55% | 100% | 100% |
 | seevee-cap-alerts | 45% | 0% | 0% | 85% | 79% | 85% |
 | princedale99-tyfi | 65% | 0% | 0% | 85% | 29% | 100% |
 | dev-infra-pestphp-pest | 45% | 0% | 0% | 100% | 79% | 70% |
 | dev-infra-thought-machine-please | 45% | 0% | 0% | 100% | 57% | 85% |
 | dev-infra-termio-sh-termio | 45% | 0% | 0% | 85% | 79% | 85% |
+| dev-infra-dicklesworthstone-ultimate-bug-scanner | 45% | 0% | 86% | 10% | 100% | 85% |
 | geospatial-nkarasiak-dzetsaka | 45% | 0% | 0% | 100% | 79% | 70% |
 | geospatial-jumpinjackie-mapguide-react-layout | 45% | 53% | 0% | 75% | 29% | 85% |
 | geospatial-sgraaf-papermap | 45% | 0% | 0% | 70% | 79% | 100% |
@@ -1278,14 +1287,12 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | tinygrad-tinygrad | 30% | 0% | 0% | 100% | 100% | 70% |
 | influxdata-influxdb | 10% | 18% | 0% | 100% | 79% | 90% |
 | google-labs-code-design-md | 10% | 53% | 0% | 60% | 79% | 100% |
-| mihomo-party-org-clash-party | 30% | 0% | 0% | 100% | 79% | 85% |
 | mark3labs-mcp-go | 30% | 0% | 0% | 100% | 57% | 100% |
 | aipentest-cyberstrikeai | 10% | 53% | 0% | 75% | 57% | 100% |
 | alphaxiv-openresearch | 30% | 0% | 0% | 100% | 79% | 85% |
 | tnt-likely-panwatch | 10% | 53% | 0% | 60% | 79% | 100% |
 | ai-ide-vaquum-new-repository-template-901706870 | 30% | 0% | 0% | 100% | 79% | 85% |
 | yyassin-floralyfe | 10% | 0% | 0% | 100% | 100% | 90% |
-| samnjoro30-smart-agriculture | 10% | 53% | 0% | 70% | 79% | 90% |
 | d0linger-treckrr | 30% | 0% | 0% | 100% | 57% | 100% |
 | dev-infra-withfig-autocomplete | 10% | 0% | 0% | 90% | 100% | 100% |
 | dev-infra-crynta-terax-ai | 30% | 0% | 0% | 100% | 79% | 85% |
@@ -1298,6 +1305,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | ai-ide-aaddrick-attention-control-1320242957 | 100% | 53% | 0% | 10% | 29% | 85% |
 | ai-ide-jrhoades1-dark-software-factory-1165166920 | 90% | 82% | 0% | 0% | 21% | 90% |
 | ai-ide-lfariabr-masters-swe-ai-993944558 | 100% | 53% | 0% | 20% | 0% | 100% |
+| tensorflow | 65% | 0% | 0% | 65% | 71% | 85% |
 | prometheus | 45% | 0% | 0% | 100% | 79% | 65% |
 | semgrep | 45% | 0% | 0% | 60% | 100% | 85% |
 | comfyui | 45% | 0% | 0% | 80% | 79% | 85% |
@@ -1337,20 +1345,18 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | h4ckf0r0day-obscura | 45% | 0% | 0% | 75% | 79% | 85% |
 | jarrodwatts-claude-hud | 45% | 18% | 0% | 60% | 57% | 100% |
 | schniz-fnm | 45% | 0% | 0% | 75% | 79% | 85% |
+| devolutions-unigetui | 45% | 53% | 0% | 20% | 100% | 85% |
 | kkkkhazix-aihot | 45% | 0% | 0% | 60% | 79% | 100% |
 | openjiuwen-ai-jiuwenswarm | 65% | 0% | 0% | 100% | 0% | 100% |
 | peonping-peon-ping | 45% | 0% | 0% | 60% | 79% | 100% |
-| totec448-spec-chat-on-steroids | 45% | 0% | 0% | 60% | 79% | 100% |
 | phodal-auto-dev | 45% | 0% | 0% | 60% | 79% | 100% |
 | httprunner-httprunner | 45% | 0% | 0% | 75% | 57% | 100% |
 | vibiumdev-vibium | 45% | 0% | 0% | 60% | 79% | 100% |
 | proma-ai-proma | 85% | 0% | 0% | 60% | 29% | 100% |
-| chengzuopeng-stock-sdk | 45% | 0% | 0% | 60% | 79% | 100% |
 | yologdev-yoyo-evolve | 45% | 0% | 0% | 75% | 79% | 85% |
 | standardagents-dmux | 100% | 0% | 0% | 60% | 29% | 85% |
 | w8123-enterpriseagentframework | 100% | 0% | 0% | 60% | 0% | 100% |
 | mezmo-aura | 45% | 0% | 0% | 75% | 57% | 100% |
-| nexu-io-looper | 45% | 0% | 0% | 75% | 57% | 100% |
 | ai-ide-martialbe-one-hub-689214770 | 45% | 0% | 0% | 100% | 29% | 100% |
 | ai-ide-joshuadavidthomas-opencode-agent-skills-1104796307 | 45% | 0% | 0% | 60% | 79% | 100% |
 | ai-ide-idiap-sdialog-988252213 | 45% | 0% | 0% | 65% | 100% | 85% |
@@ -1388,7 +1394,6 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | dev-infra-wgzhao-addax | 45% | 53% | 0% | 50% | 50% | 85% |
 | dev-infra-zhenorzz-goploy | 45% | 0% | 0% | 100% | 29% | 100% |
 | dev-infra-icefiredb-icefiredb | 45% | 0% | 0% | 75% | 57% | 100% |
-| dev-infra-orneryd-nornicdb | 45% | 0% | 0% | 75% | 79% | 85% |
 | dev-infra-yoanwai-agent-manager | 45% | 0% | 0% | 75% | 57% | 100% |
 | geospatial-openstreetmap-ng-openstreetmap-ng | 45% | 0% | 0% | 100% | 29% | 100% |
 | geospatial-phlask-phlask-map | 45% | 0% | 0% | 90% | 57% | 90% |
@@ -1407,6 +1412,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | metagpt | 10% | 0% | 0% | 100% | 79% | 100% |
 | fabric | 10% | 0% | 0% | 100% | 79% | 100% |
 | qdrant | 10% | 0% | 0% | 100% | 79% | 100% |
+| semantic-kernel | 10% | 0% | 0% | 85% | 100% | 100% |
 | pandas-ai | 10% | 0% | 0% | 80% | 100% | 100% |
 | machine-learning-for-trading | 10% | 0% | 0% | 80% | 100% | 100% |
 | qbot | 10% | 0% | 0% | 100% | 79% | 100% |
@@ -1437,7 +1443,6 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | corentinth-it-tools | 10% | 0% | 0% | 100% | 79% | 100% |
 | thu-maic-openmaic | 10% | 0% | 0% | 100% | 79% | 100% |
 | pola-rs-polars | 10% | 0% | 0% | 100% | 79% | 100% |
-| servo-servo | 10% | 0% | 0% | 100% | 79% | 100% |
 | textualize-textual | 10% | 0% | 0% | 100% | 79% | 100% |
 | laion-ai-open-assistant | 10% | 0% | 0% | 100% | 100% | 85% |
 | tailscale-tailscale | 10% | 0% | 0% | 100% | 79% | 100% |
@@ -1455,6 +1460,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | mattermost-community-focalboard | 10% | 0% | 0% | 100% | 79% | 100% |
 | microsoft-typescript-go | 10% | 0% | 0% | 100% | 79% | 100% |
 | react-native-elements-react-native-elements | 10% | 0% | 0% | 100% | 100% | 85% |
+| infracost-infracost | 10% | 0% | 0% | 100% | 71% | 100% |
 | idosal-git-mcp | 10% | 0% | 0% | 100% | 79% | 100% |
 | minishlab-semble | 10% | 0% | 0% | 100% | 79% | 100% |
 | openclaw-mcporter | 30% | 0% | 0% | 85% | 79% | 87% |
@@ -1551,14 +1557,12 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | ai-ide-a710128-opencode-vscode-ui-1175740555 | 45% | 0% | 0% | 85% | 57% | 85% |
 | ai-ide-jamesoleinik-launch-control-1222961665 | 100% | 0% | 0% | 55% | 0% | 100% |
 | ai-ide-rainnystone-skill-orchestration-system-1220186740 | 45% | 53% | 0% | 40% | 57% | 85% |
-| ai-ide-asmoyou-linx-1137950454 | 45% | 0% | 0% | 55% | 79% | 100% |
 | ai-ide-krahd-mail-summariser-1180286078 | 45% | 0% | 0% | 85% | 57% | 85% |
 | ai-ide-milbia-is-goat-burning-580513645 | 45% | 0% | 0% | 50% | 100% | 90% |
 | dev-infra-vrana-adminer | 45% | 0% | 0% | 85% | 79% | 70% |
 | dev-infra-larastan-larastan | 45% | 0% | 0% | 85% | 79% | 70% |
 | dev-infra-testng-team-testng | 100% | 0% | 0% | 30% | 57% | 85% |
 | dev-infra-nayjest-gito | 45% | 0% | 0% | 55% | 79% | 100% |
-| dev-infra-dicklesworthstone-ultimate-bug-scanner | 45% | 0% | 86% | 10% | 79% | 85% |
 | geospatial-shisatoyano-autonomousvehiclecontrolbeginnersguide | 45% | 53% | 0% | 60% | 29% | 85% |
 | geospatial-filimoa-polars-h3 | 45% | 0% | 0% | 70% | 79% | 85% |
 | geospatial-utopia-os-utopia-map | 45% | 0% | 0% | 70% | 79% | 85% |
@@ -1585,7 +1589,6 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | geospatial-parkerziegler-cartokit | 10% | 0% | 0% | 100% | 79% | 90% |
 | geospatial-sanderdesnaijer-map-gesture-controls | 10% | 0% | 0% | 75% | 100% | 100% |
 | geospatial-cliffordkleinsr-solidjs-maplibre-gl | 10% | 0% | 0% | 100% | 79% | 90% |
-| tensorflow | 65% | 0% | 0% | 65% | 50% | 85% |
 | nodejs | 45% | 0% | 0% | 100% | 79% | 50% |
 | agentmemory | 45% | 0% | 0% | 60% | 79% | 87% |
 | longmemory | 65% | 0% | 0% | 60% | 29% | 100% |
@@ -1597,7 +1600,6 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | powershell-powershell | 50% | 0% | 0% | 45% | 79% | 100% |
 | docker-compose | 45% | 0% | 0% | 100% | 57% | 65% |
 | gchq-cyberchef | 45% | 0% | 0% | 65% | 79% | 85% |
-| devolutions-unigetui | 45% | 53% | 0% | 20% | 79% | 85% |
 | tradesdontlie-tradingview-mcp | 45% | 0% | 0% | 65% | 79% | 85% |
 | visa-visa-vulnerability-agentic-harness | 45% | 0% | 0% | 100% | 29% | 85% |
 | letsfg-letsfg | 45% | 0% | 0% | 60% | 79% | 87% |
@@ -1629,7 +1631,6 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | anything-llm | 10% | 0% | 0% | 100% | 79% | 85% |
 | llama-index | 10% | 0% | 0% | 70% | 100% | 100% |
 | prompt-optimizer | 10% | 0% | 0% | 85% | 79% | 100% |
-| semantic-kernel | 10% | 0% | 0% | 85% | 79% | 100% |
 | toon | 10% | 0% | 0% | 85% | 79% | 100% |
 | lightgbm | 10% | 0% | 0% | 70% | 100% | 100% |
 | openfang | 30% | 0% | 0% | 75% | 79% | 90% |
@@ -1753,6 +1754,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | dev-infra-akiyosi-goneovim | 10% | 0% | 0% | 100% | 79% | 85% |
 | dev-infra-typescript-language-server-typescript-language-server | 10% | 0% | 0% | 85% | 100% | 85% |
 | dev-infra-lahmatiy-react-render-tracker | 10% | 0% | 0% | 100% | 79% | 85% |
+| dev-infra-oschwald-geoip2-golang | 10% | 0% | 0% | 100% | 79% | 85% |
 | dev-infra-cider-security-research-cicd-goat | 10% | 0% | 0% | 70% | 100% | 100% |
 | dev-infra-eslint-stylistic-eslint-stylistic | 10% | 0% | 0% | 85% | 100% | 85% |
 | dev-infra-piccolo-orm-piccolo | 10% | 0% | 0% | 100% | 79% | 85% |
@@ -1869,7 +1871,6 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | digitalocean-nginxconfig-io | 10% | 0% | 0% | 80% | 100% | 85% |
 | remy-nodemon | 10% | 0% | 0% | 80% | 79% | 100% |
 | henrygd-beszel | 5% | 0% | 0% | 100% | 79% | 85% |
-| infracost-infracost | 10% | 0% | 0% | 100% | 50% | 100% |
 | hangwin-mcp-chrome | 10% | 0% | 0% | 100% | 50% | 100% |
 | nanbingxyz-5ire | 10% | 0% | 0% | 100% | 50% | 100% |
 | unicomai-wanwu | 10% | 53% | 0% | 75% | 21% | 100% |
@@ -1912,6 +1913,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | game-ai-dy-2026-gamedesignos | 100% | 0% | 0% | 50% | 29% | 70% |
 | keygraphhq-shannon | 45% | 18% | 0% | 60% | 29% | 100% |
 | lizardbyte-sunshine | 45% | 0% | 0% | 55% | 79% | 85% |
+| llvm-llvm-project | 65% | 0% | 0% | 45% | 100% | 60% |
 | microsoft-playwright-mcp | 45% | 0% | 0% | 40% | 79% | 100% |
 | alibaba-arthas | 45% | 0% | 0% | 75% | 79% | 65% |
 | apache-kafka | 45% | 0% | 0% | 55% | 79% | 85% |
@@ -1983,6 +1985,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | ai-ide-google-play-services-plugins-138894170 | 100% | 0% | 0% | 10% | 57% | 85% |
 | ai-ide-onflow-flowyieldvaults-983638615 | 100% | 0% | 0% | 10% | 57% | 85% |
 | ai-ide-rm2thaddeus-pixel-detective-946078032 | 75% | 0% | 0% | 55% | 29% | 85% |
+| ai-ide-govtech-responsibleai-playbook-894357188 | 45% | 53% | 0% | 20% | 50% | 90% |
 | ai-ide-modelcode-ai-mcode-benchmark-1098806891 | 45% | 47% | 0% | 30% | 29% | 100% |
 | ai-ide-scbd-absch-cbd-int-15262773 | 45% | 0% | 0% | 85% | 29% | 85% |
 | ai-ide-billcshi-jobbot-1262380674 | 45% | 0% | 0% | 60% | 57% | 90% |
@@ -2055,6 +2058,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | dida-do-eurocropsml | 10% | 0% | 0% | 100% | 79% | 70% |
 | dev-infra-muesli-duf | 10% | 0% | 0% | 100% | 57% | 85% |
 | dev-infra-kubescape-kubescape | 10% | 0% | 0% | 100% | 57% | 85% |
+| dev-infra-super-linter-super-linter | 10% | 0% | 0% | 70% | 79% | 100% |
 | dev-infra-abhivaikar-howtheytest | 10% | 0% | 0% | 85% | 57% | 100% |
 | dev-infra-rosedblabs-rosedb | 10% | 0% | 0% | 100% | 57% | 85% |
 | dev-infra-vuejs-eslint-plugin-vue | 10% | 0% | 0% | 100% | 79% | 70% |
@@ -2062,7 +2066,6 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | dev-infra-getgauge-gauge | 10% | 0% | 0% | 100% | 57% | 85% |
 | dev-infra-seleniumhq-selenium-ide | 10% | 0% | 0% | 100% | 57% | 85% |
 | dev-infra-jenkinsci-blueocean-plugin | 10% | 0% | 0% | 100% | 57% | 85% |
-| dev-infra-oschwald-geoip2-golang | 10% | 0% | 0% | 100% | 57% | 85% |
 | dev-infra-lotusdblabs-lotusdb | 10% | 0% | 0% | 100% | 57% | 85% |
 | dev-infra-sublimelsp-lsp | 30% | 0% | 0% | 70% | 71% | 85% |
 | dev-infra-greenmaskio-greenmask | 10% | 0% | 0% | 100% | 57% | 85% |
@@ -2078,6 +2081,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | dev-infra-thetarnav-solid-devtools | 10% | 0% | 0% | 85% | 57% | 100% |
 | dev-infra-open-policy-agent-regal | 10% | 0% | 0% | 100% | 57% | 85% |
 | dev-infra-hadialqattan-pycln | 10% | 0% | 0% | 70% | 79% | 100% |
+| dev-infra-thibaudcolas-curlylint | 10% | 0% | 0% | 55% | 100% | 100% |
 | geospatial-openstreetmap-id | 10% | 0% | 0% | 85% | 57% | 100% |
 | geospatial-itowns-itowns | 10% | 0% | 0% | 85% | 79% | 85% |
 | geospatial-twpayne-go-geom | 10% | 0% | 0% | 100% | 57% | 85% |
@@ -2099,6 +2103,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | game-ai-henbomb-polyfish | 45% | 0% | 0% | 30% | 79% | 100% |
 | game-ai-flameskydexive-legends-of-heroes | 100% | 0% | 0% | 20% | 29% | 87% |
 | anthropics-claude-code | 45% | 18% | 0% | 30% | 79% | 85% |
+| abi-screenshot-to-code | 45% | 0% | 0% | 85% | 21% | 85% |
 | zie619-n8n-workflows | 45% | 0% | 0% | 30% | 79% | 100% |
 | ayghri-i-have-adhd | 45% | 53% | 57% | 10% | 29% | 70% |
 | jeecgboot-jeecgboot | 65% | 0% | 0% | 100% | 0% | 65% |
@@ -2108,6 +2113,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | ai-ide-daniel-sc-ng-extract-i18n-merge-452307835 | 45% | 0% | 0% | 60% | 57% | 85% |
 | ai-ide-zennomi-truyendrive-1233079161 | 100% | 0% | 0% | 35% | 29% | 75% |
 | ai-ide-wahibonae-onefile-921216430 | 45% | 0% | 0% | 85% | 0% | 100% |
+| ai-ide-haraka-haraka-plugin-rspamd-103224432 | 45% | 0% | 0% | 80% | 50% | 70% |
 | ai-ide-axjing-stockaskill-1280230514 | 45% | 0% | 0% | 100% | 0% | 85% |
 | ai-ide-nicolaybang-applygo-1265291716 | 45% | 0% | 0% | 30% | 79% | 100% |
 | ai-ide-taylorfinklea-harness-deck-1245611559 | 45% | 0% | 0% | 75% | 57% | 70% |
@@ -2216,7 +2222,6 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | spring-projects-spring-framework | 45% | 0% | 0% | 55% | 57% | 85% |
 | ggml-org-whisper-cpp | 45% | 0% | 0% | 40% | 79% | 85% |
 | k-dense-ai-scientific-agent-skills | 45% | 0% | 0% | 40% | 79% | 85% |
-| llvm-llvm-project | 65% | 0% | 0% | 45% | 79% | 60% |
 | zhaoxuya520-reverse-skill | 45% | 0% | 0% | 40% | 79% | 85% |
 | huggingface-pytorch-image-models | 45% | 0% | 0% | 40% | 57% | 100% |
 | doocs-leetcode | 45% | 53% | 0% | 15% | 50% | 85% |
@@ -2335,6 +2340,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | chatall | 45% | 0% | 0% | 40% | 50% | 100% |
 | game-ai-geqo-godot-geqo | 65% | 0% | 0% | 30% | 57% | 85% |
 | sxyazi-yazi | 45% | 0% | 0% | 35% | 79% | 85% |
+| anthropics-financial-services | 45% | 53% | 0% | 0% | 50% | 87% |
 | microsoft-winget-cli | 85% | 0% | 0% | 30% | 29% | 85% |
 | graykode-abtop | 45% | 0% | 0% | 35% | 79% | 85% |
 | nexting-ai-nexting | 65% | 0% | 0% | 40% | 57% | 75% |
@@ -2342,7 +2348,6 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | ai-ide-boxpositron-envsitter-guard-1132721961 | 45% | 0% | 0% | 60% | 21% | 100% |
 | ai-ide-openshift-console-operator-148216080 | 45% | 18% | 0% | 75% | 0% | 85% |
 | ai-ide-flightphp-docs-743051824 | 100% | 0% | 0% | 45% | 0% | 75% |
-| ai-ide-govtech-responsibleai-playbook-894357188 | 45% | 53% | 0% | 20% | 29% | 90% |
 | ai-ide-atlassianps-jiraagileps-135073611 | 100% | 0% | 0% | 0% | 29% | 100% |
 | ai-ide-irvj-papyrust-1272452269 | 45% | 0% | 0% | 35% | 79% | 85% |
 | ai-ide-arc-907-agent-workspace-starter-kit-1250614307 | 100% | 0% | 0% | 0% | 29% | 100% |
@@ -2371,7 +2376,6 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | ai-ide-nakul-26-leetcode-clone-1074780050 | 10% | 0% | 0% | 65% | 79% | 90% |
 | dgehringer-sqsgenerator | 10% | 0% | 0% | 70% | 79% | 85% |
 | vanstinator-raincloudy | 5% | 0% | 0% | 80% | 50% | 100% |
-| dev-infra-super-linter-super-linter | 10% | 0% | 0% | 70% | 57% | 100% |
 | dev-infra-devexpress-testcafe | 10% | 0% | 0% | 85% | 57% | 85% |
 | dev-infra-jsx-eslint-eslint-plugin-react | 10% | 0% | 0% | 85% | 79% | 70% |
 | dev-infra-ducaale-xh | 10% | 0% | 0% | 75% | 50% | 100% |
@@ -2385,7 +2389,6 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | dev-infra-shiftleftsecurity-sast-scan | 10% | 0% | 0% | 55% | 79% | 100% |
 | dev-infra-ys-ll-uniterm | 10% | 0% | 0% | 75% | 50% | 100% |
 | dev-infra-blazejkustra-react-compiler-marker | 10% | 0% | 0% | 70% | 79% | 85% |
-| dev-infra-thibaudcolas-curlylint | 10% | 0% | 0% | 55% | 79% | 100% |
 | dev-infra-primer-stylelint-config | 10% | 0% | 0% | 70% | 79% | 85% |
 | geospatial-graphhopper-graphhopper | 10% | 0% | 0% | 85% | 57% | 85% |
 | geospatial-proj4js-proj4js | 10% | 0% | 0% | 85% | 57% | 85% |
@@ -2394,6 +2397,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | geospatial-mapfish-mapfish-print | 10% | 0% | 0% | 70% | 79% | 85% |
 | geospatial-tobilg-duckdb-tileserver | 10% | 0% | 0% | 75% | 57% | 87% |
 | geospatial-3liz-py-qgis-server | 10% | 0% | 0% | 55% | 79% | 100% |
+| geospatial-spatialx-project-geolake | 10% | 0% | 0% | 55% | 100% | 85% |
 | geospatial-developmentseed-async-geotiff | 10% | 0% | 0% | 70% | 57% | 100% |
 | geospatial-danieljdufour-geowarp | 10% | 0% | 0% | 70% | 79% | 85% |
 | geospatial-bedrock-engineer-bedrock-ge | 10% | 0% | 0% | 70% | 57% | 100% |
@@ -2404,7 +2408,6 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | lifeos | 65% | 0% | 0% | 30% | 29% | 100% |
 | game-ai-nether403-spritegamegen | 45% | 0% | 0% | 30% | 57% | 100% |
 | laravel-laravel | 45% | 0% | 0% | 55% | 57% | 75% |
-| abi-screenshot-to-code | 45% | 0% | 0% | 85% | 0% | 85% |
 | 2dust-v2rayng | 100% | 0% | 0% | 10% | 29% | 85% |
 | nvm-windows-nvm | 65% | 0% | 0% | 10% | 79% | 85% |
 | pcottle-learngitbranching | 45% | 0% | 0% | 65% | 29% | 85% |
@@ -2415,7 +2418,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | ai-ide-ifaxity-vite-plugin-istanbul-286056954 | 45% | 0% | 0% | 35% | 50% | 100% |
 | ai-ide-sa-es-ir-detester-1070084048 | 45% | 0% | 0% | 30% | 57% | 100% |
 | ai-ide-amsterdam-amsterdam-agent-skills-1186980448 | 45% | 0% | 0% | 45% | 57% | 85% |
-| ai-ide-haraka-haraka-plugin-rspamd-103224432 | 45% | 0% | 0% | 80% | 29% | 70% |
+| ai-ide-pingwu-maca-1052450090 | 45% | 29% | 0% | 30% | 21% | 100% |
 | ai-ide-21stdigital-statamic-cloudinary-418524345 | 45% | 0% | 0% | 100% | 0% | 70% |
 | ai-ide-kulesh-recurgent-1157651919 | 45% | 0% | 0% | 35% | 50% | 100% |
 | ai-ide-sps-l-joulie-1221127426 | 45% | 0% | 0% | 30% | 79% | 85% |
@@ -2568,6 +2571,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | game-ai-tugcantopaloglu-godot-mcp | 10% | 0% | 0% | 60% | 57% | 100% |
 | game-ai-satelliteoflove-godot-mcp | 10% | 0% | 0% | 60% | 57% | 100% |
 | game-ai-pirua-game-ai-game-base-analysis-cli-mcp-tool | 10% | 0% | 0% | 45% | 79% | 100% |
+| game-ai-chungs10-dnd-ai | 10% | 0% | 0% | 85% | 21% | 100% |
 | trekhleb-javascript-algorithms | 10% | 0% | 0% | 65% | 71% | 85% |
 | pallets-flask | 10% | 0% | 0% | 100% | 50% | 65% |
 | burntsushi-ripgrep | 10% | 0% | 0% | 75% | 57% | 85% |
@@ -2600,6 +2604,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | win4r-openclaw-a2a-gateway | 10% | 0% | 0% | 60% | 79% | 85% |
 | googlecloudplatform-bigquery-agent-analytics-sdk | 10% | 0% | 0% | 60% | 79% | 85% |
 | ai-ide-glossmod-gloss-mod-manager-656126673 | 30% | 0% | 0% | 60% | 29% | 100% |
+| cafferychen777-mllmcelltype | 30% | 0% | 0% | 10% | 100% | 100% |
 | tkanx-bio-forge | 10% | 0% | 0% | 60% | 79% | 85% |
 | combine-lab-alevin-fry | 10% | 0% | 0% | 75% | 57% | 85% |
 | marcelm-cutadapt | 5% | 0% | 0% | 100% | 50% | 70% |
@@ -2684,7 +2689,6 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | game-ai-leestott-foundrylocal-learningadventure | 45% | 0% | 0% | 40% | 29% | 100% |
 | game-ai-majidmanzarpour-threejs-game-skills | 45% | 0% | 0% | 60% | 0% | 100% |
 | yangshun-tech-interview-handbook | 45% | 0% | 0% | 20% | 57% | 100% |
-| anthropics-financial-services | 45% | 53% | 0% | 0% | 29% | 87% |
 | openai-symphony | 65% | 0% | 0% | 10% | 79% | 75% |
 | hashcat-hashcat | 45% | 0% | 0% | 30% | 79% | 75% |
 | numtide-llm-agents-nix | 45% | 0% | 0% | 70% | 29% | 70% |
@@ -2719,6 +2723,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | reactivex-rxjava | 10% | 0% | 0% | 55% | 79% | 85% |
 | vnpy-vnpy | 10% | 0% | 0% | 70% | 79% | 70% |
 | datalab-to-marker | 10% | 0% | 0% | 40% | 79% | 100% |
+| soxoj-maigret | 10% | 0% | 0% | 40% | 79% | 100% |
 | facefusion-facefusion | 10% | 0% | 0% | 55% | 79% | 85% |
 | wezterm-wezterm | 10% | 0% | 0% | 75% | 50% | 85% |
 | t3-oss-create-t3-app | 10% | 0% | 0% | 60% | 50% | 100% |
@@ -2752,11 +2757,12 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | dev-infra-stribny-sidewinder | 10% | 0% | 0% | 80% | 21% | 100% |
 | geospatial-gee-community-geemap | 10% | 0% | 0% | 60% | 50% | 100% |
 | geospatial-chrieke-prettymapp | 10% | 0% | 0% | 40% | 79% | 100% |
+| geospatial-w111liang222-lidar-slam-detection | 10% | 0% | 0% | 75% | 71% | 70% |
 | geospatial-sourcentis-mercator | 10% | 0% | 0% | 75% | 29% | 100% |
+| geospatial-merginmaps-server | 10% | 0% | 0% | 70% | 100% | 55% |
 | geospatial-chargetrip-clusterbuster | 10% | 0% | 0% | 55% | 57% | 100% |
 | geospatial-cholmes-qgis-plugin-gpq-downloader | 10% | 0% | 0% | 55% | 79% | 85% |
 | geospatial-girder-django-large-image | 10% | 0% | 0% | 75% | 79% | 65% |
-| geospatial-spatialx-project-geolake | 10% | 0% | 0% | 55% | 79% | 85% |
 | geospatial-jdesboeufs-geojson2shp | 10% | 0% | 0% | 40% | 79% | 100% |
 | geospatial-urschrei-convertbng | 10% | 0% | 0% | 75% | 50% | 85% |
 | geospatial-maxsupermanhd-webchunk | 10% | 0% | 0% | 75% | 29% | 100% |
@@ -2771,7 +2777,6 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | z-siqi-clash-for-windows-chinese | 45% | 0% | 0% | 40% | 57% | 75% |
 | katanaml-sparrow | 60% | 0% | 0% | 55% | 0% | 85% |
 | fstandhartinger-ralph-wiggum | 100% | 18% | 0% | 0% | 0% | 85% |
-| ai-ide-pingwu-maca-1052450090 | 45% | 29% | 0% | 30% | 0% | 100% |
 | ai-ide-gianfossi-whb-1333052940 | 45% | 0% | 0% | 30% | 57% | 85% |
 | ai-ide-kafka0nkoffee-lvl5engineer-order-api-1226700214 | 45% | 0% | 0% | 40% | 57% | 75% |
 | ai-ide-softagram-sgraph-365001332 | 45% | 0% | 0% | 35% | 29% | 100% |
@@ -2786,6 +2791,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | sktime | 10% | 0% | 0% | 50% | 79% | 85% |
 | computervision-recipes | 10% | 0% | 0% | 50% | 79% | 85% |
 | mmagic | 10% | 0% | 0% | 35% | 79% | 100% |
+| fedml | 10% | 0% | 0% | 35% | 100% | 85% |
 | game-ai-wangdiandao-godot-devtool | 10% | 82% | 0% | 20% | 0% | 100% |
 | gokumohandas-made-with-ml | 10% | 0% | 0% | 55% | 50% | 100% |
 | bigskysoftware-htmx | 10% | 0% | 0% | 65% | 57% | 85% |
@@ -2861,6 +2867,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | geospatial-hyparam-geoparquet | 10% | 0% | 0% | 85% | 50% | 70% |
 | geospatial-kotobamedia-jpksj-to-sql | 10% | 0% | 0% | 35% | 79% | 100% |
 | geospatial-nico579-lidar2map | 10% | 0% | 0% | 50% | 79% | 85% |
+| geospatial-fallintodusk-alis | 10% | 53% | 0% | 10% | 50% | 100% |
 | easy-dataset | 45% | 0% | 0% | 15% | 50% | 100% |
 | h2o-3 | 45% | 0% | 0% | 30% | 50% | 85% |
 | open-dots | 65% | 0% | 0% | 55% | 0% | 75% |
@@ -2894,7 +2901,6 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | vowpal-wabbit | 10% | 0% | 0% | 30% | 100% | 85% |
 | game-ai-nmatter1-smallville | 10% | 0% | 0% | 100% | 0% | 85% |
 | game-ai-demircancelebi-tafl | 10% | 0% | 0% | 60% | 57% | 85% |
-| game-ai-chungs10-dnd-ai | 10% | 0% | 0% | 85% | 0% | 100% |
 | game-ai-drgost1-robloxstudio-mcp | 10% | 0% | 0% | 85% | 0% | 100% |
 | datawhalechina-hello-agents | 10% | 0% | 0% | 85% | 0% | 100% |
 | shareai-lab-learn-claude-code | 10% | 0% | 0% | 30% | 79% | 100% |
@@ -2916,17 +2922,18 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | xai-org-grok-build | 10% | 0% | 0% | 100% | 0% | 85% |
 | apolloauto-apollo | 10% | 0% | 0% | 100% | 0% | 85% |
 | localforage-localforage | 10% | 0% | 0% | 100% | 21% | 70% |
-| cafferychen777-mllmcelltype | 30% | 0% | 0% | 10% | 79% | 100% |
 | keltonhalbert-sharplib | 10% | 0% | 0% | 60% | 79% | 70% |
 | qcscine-qcmaquis | 10% | 0% | 0% | 75% | 57% | 70% |
 | espressomd-espresso | 5% | 0% | 0% | 35% | 100% | 85% |
 | adaptiveparticles-libapr | 10% | 0% | 0% | 60% | 57% | 85% |
+| ajzhai-cropcraft | 10% | 0% | 0% | 70% | 21% | 100% |
 | kosasih-agricorp | 10% | 0% | 0% | 100% | 21% | 70% |
 | balaraj74-agrisence | 10% | 0% | 0% | 60% | 50% | 90% |
 | dev-infra-apache-pouchdb | 10% | 0% | 0% | 65% | 50% | 85% |
 | dev-infra-release-it-release-it | 10% | 0% | 0% | 80% | 57% | 65% |
 | dev-infra-zilliztech-deep-searcher | 10% | 0% | 0% | 50% | 50% | 100% |
 | dev-infra-manifoldco-promptui | 10% | 0% | 0% | 100% | 0% | 85% |
+| dev-infra-polardb-polardb-for-postgresql | 10% | 0% | 0% | 30% | 100% | 85% |
 | dev-infra-zuoyebang-bitalostored | 10% | 0% | 0% | 100% | 0% | 85% |
 | dev-infra-m14r41-pentestingeverything | 10% | 53% | 0% | 20% | 29% | 100% |
 | dev-infra-cpplint-cpplint | 5% | 0% | 0% | 70% | 50% | 85% |
@@ -2998,7 +3005,6 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | alistgo-alist | 10% | 0% | 0% | 75% | 29% | 85% |
 | remoteintech-remote-jobs | 30% | 0% | 0% | 25% | 50% | 100% |
 | dogfalo-materialize | 10% | 0% | 0% | 80% | 21% | 85% |
-| soxoj-maigret | 10% | 0% | 0% | 40% | 57% | 100% |
 | musistudio-claude-code-router | 10% | 0% | 0% | 60% | 29% | 100% |
 | glanceapp-glance | 10% | 0% | 0% | 75% | 29% | 85% |
 | mpv-player-mpv | 10% | 0% | 0% | 50% | 100% | 60% |
@@ -3062,13 +3068,11 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | dev-infra-nextcloud-nextcloud-docker-dev | 10% | 0% | 0% | 40% | 57% | 100% |
 | dev-infra-presubmit-ai-reviewer | 10% | 0% | 0% | 60% | 29% | 100% |
 | geospatial-locationtech-jts | 10% | 0% | 0% | 85% | 29% | 75% |
-| geospatial-w111liang222-lidar-slam-detection | 10% | 0% | 0% | 75% | 50% | 70% |
 | geospatial-geonetwork-core-geonetwork | 10% | 0% | 0% | 75% | 29% | 85% |
 | geospatial-dronedb-dronedb | 10% | 0% | 0% | 40% | 79% | 85% |
 | geospatial-urbica-galton | 10% | 0% | 0% | 80% | 21% | 85% |
 | geospatial-osmlab-atlas | 10% | 0% | 0% | 55% | 57% | 85% |
 | geospatial-qgis-qgis-js | 10% | 0% | 0% | 75% | 29% | 85% |
-| geospatial-merginmaps-server | 10% | 0% | 0% | 70% | 79% | 55% |
 | geospatial-opengeos-open-buildings | 10% | 0% | 0% | 40% | 57% | 100% |
 | geospatial-n-thumann-easybell-carrier-map | 10% | 0% | 0% | 60% | 50% | 85% |
 | geospatial-kauevestena-osm-sidewalkreator | 30% | 0% | 0% | 40% | 29% | 100% |
@@ -3094,6 +3098,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | ai-ide-wojcikmm-spec-development-protocol-1212910290 | 100% | 0% | 0% | 0% | 0% | 85% |
 | ai-ide-ashryaagr-clawdslate-1224253961 | 45% | 0% | 0% | 20% | 29% | 100% |
 | ai-ide-daveinchy-autopython-base-1058175295 | 100% | 0% | 0% | 10% | 0% | 75% |
+| ai-ide-eidos-agi-forge-forge-1188493101 | 45% | 0% | 0% | 10% | 50% | 87% |
 | ai-ide-gennappio-opencellcomms-999207456 | 45% | 18% | 0% | 10% | 21% | 100% |
 | ai-ide-kabaidoo-hymnal-cmp-974568460 | 45% | 18% | 0% | 30% | 29% | 75% |
 | ai-ide-marie55-python-m110-1074174555 | 45% | 47% | 0% | 0% | 0% | 100% |
@@ -3110,8 +3115,8 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | deepspeech | 5% | 0% | 0% | 55% | 79% | 70% |
 | deep-research | 10% | 0% | 0% | 75% | 0% | 100% |
 | nni | 10% | 0% | 0% | 70% | 29% | 85% |
+| flexllmgen | 10% | 0% | 0% | 35% | 100% | 70% |
 | llm-scraper | 10% | 0% | 0% | 75% | 0% | 100% |
-| fedml | 10% | 0% | 0% | 35% | 79% | 85% |
 | game-ai-equim-chan-mortal | 10% | 0% | 0% | 35% | 79% | 85% |
 | game-ai-npc-worldwide-npcsh | 10% | 0% | 0% | 35% | 57% | 100% |
 | game-ai-glade-tool-glade-mcp | 10% | 0% | 0% | 10% | 79% | 100% |
@@ -3148,6 +3153,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | dev-infra-enzymejs-enzyme | 10% | 0% | 0% | 65% | 57% | 70% |
 | dev-infra-porsager-postgres | 10% | 0% | 0% | 85% | 57% | 50% |
 | dev-infra-throwtheswitch-unity | 10% | 0% | 0% | 35% | 79% | 85% |
+| dev-infra-ruc-datalab-deepanalyze | 10% | 0% | 0% | 60% | 21% | 100% |
 | dev-infra-hhatto-autopep8 | 5% | 0% | 0% | 40% | 100% | 70% |
 | dev-infra-qovery-replibyte | 10% | 0% | 0% | 35% | 57% | 100% |
 | dev-infra-qunitjs-qunit | 10% | 0% | 0% | 65% | 57% | 70% |
@@ -3163,7 +3169,6 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | geospatial-openindoormaps-openindoormaps | 10% | 0% | 0% | 60% | 21% | 100% |
 | geospatial-jaykickliter-hextree | 10% | 0% | 0% | 75% | 57% | 60% |
 | geospatial-gauteh-roaring-landmask | 10% | 0% | 0% | 75% | 57% | 60% |
-| geospatial-fallintodusk-alis | 10% | 53% | 0% | 10% | 29% | 100% |
 | geospatial-ybubnov-torch-geopooling | 10% | 0% | 0% | 50% | 79% | 70% |
 | geospatial-gden173-geotiff | 10% | 0% | 0% | 75% | 57% | 60% |
 | game-ai-grovegs-behaviourtree | 45% | 0% | 0% | 30% | 29% | 85% |
@@ -3224,12 +3229,10 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | ml-evs-matador | 5% | 0% | 0% | 35% | 100% | 70% |
 | swharden-pyabf | 10% | 0% | 0% | 30% | 57% | 100% |
 | nasaharvest-crop-maml | 10% | 0% | 0% | 55% | 57% | 75% |
-| ajzhai-cropcraft | 10% | 0% | 0% | 70% | 0% | 100% |
 | dev-infra-vadimdemedes-ink | 5% | 0% | 0% | 75% | 57% | 60% |
 | dev-infra-pocoproject-poco | 10% | 0% | 0% | 30% | 79% | 85% |
 | dev-infra-robolectric-robolectric | 10% | 0% | 0% | 30% | 79% | 85% |
 | dev-infra-triple-t-gradle-play-publisher | 10% | 0% | 0% | 30% | 79% | 85% |
-| dev-infra-polardb-polardb-for-postgresql | 10% | 0% | 0% | 30% | 79% | 85% |
 | dev-infra-heavyai-heavydb | 10% | 0% | 0% | 35% | 100% | 65% |
 | dev-infra-tencent-codeanalysis | 10% | 0% | 0% | 85% | 29% | 65% |
 | dev-infra-lemonappdev-konsist | 10% | 0% | 0% | 30% | 79% | 85% |
@@ -3398,7 +3401,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | ai-ide-oyanibtech-iii-growfico-official-webapp-1171229591 | 45% | 0% | 0% | 30% | 0% | 100% |
 | ai-ide-jagadish-k-video-gif-creator-1068635093 | 45% | 0% | 0% | 20% | 29% | 85% |
 | ai-ide-mikeydotio-lillist-1236962486 | 45% | 0% | 0% | 0% | 57% | 85% |
-| ai-ide-eidos-agi-forge-forge-1188493101 | 45% | 0% | 0% | 10% | 29% | 87% |
+| ai-ide-kodicw-nixspirit-1215340672 | 45% | 0% | 0% | 10% | 21% | 100% |
 | ai-ide-marianaboroni-tissueresolve-1254465462 | 45% | 0% | 0% | 40% | 0% | 85% |
 | geospatial-hajkmap-hajk | 45% | 0% | 0% | 60% | 0% | 65% |
 | geospatial-outdooractive-gis-tools | 45% | 0% | 0% | 0% | 57% | 85% |
@@ -3406,7 +3409,6 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | dia | 10% | 0% | 0% | 40% | 50% | 85% |
 | crucix | 10% | 0% | 0% | 40% | 29% | 100% |
 | horizon | 10% | 0% | 0% | 40% | 29% | 100% |
-| flexllmgen | 10% | 0% | 0% | 35% | 79% | 70% |
 | tree-of-thoughts | 10% | 0% | 0% | 40% | 29% | 100% |
 | game-ai-r1n7aro-locus | 10% | 0% | 0% | 60% | 0% | 100% |
 | game-ai-tomyud1-godot-mcp | 10% | 0% | 0% | 60% | 0% | 100% |
@@ -3453,7 +3455,6 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | dev-infra-concourse-concourse | 10% | 0% | 0% | 75% | 29% | 65% |
 | dev-infra-akopytov-sysbench | 10% | 0% | 0% | 35% | 57% | 85% |
 | dev-infra-data-dog-go-sqlmock | 10% | 0% | 0% | 75% | 0% | 85% |
-| dev-infra-ruc-datalab-deepanalyze | 10% | 0% | 0% | 60% | 0% | 100% |
 | dev-infra-orioledb-orioledb | 30% | 0% | 0% | 10% | 79% | 75% |
 | dev-infra-spotbugs-spotbugs | 10% | 0% | 0% | 55% | 29% | 85% |
 | dev-infra-w3tecch-express-typescript-boilerplate | 10% | 0% | 0% | 60% | 0% | 100% |
@@ -3508,6 +3509,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | mcp-for-blender | 10% | 0% | 0% | 40% | 0% | 100% |
 | txtai | 10% | 0% | 0% | 50% | 50% | 70% |
 | chatgpt-shortcut | 10% | 0% | 0% | 20% | 50% | 100% |
+| optimate | 10% | 0% | 0% | 10% | 79% | 90% |
 | game-ai-ikpil-dotrecast | 10% | 0% | 0% | 30% | 57% | 85% |
 | game-ai-zoyluoblue-mc-aiplayer | 10% | 0% | 0% | 30% | 57% | 85% |
 | game-ai-ruslanmv-ai-gameplay-bot | 10% | 0% | 0% | 55% | 0% | 100% |
@@ -3604,7 +3606,6 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | ai-ide-azyrn-pulsesms-1182848438 | 45% | 0% | 0% | 30% | 0% | 85% |
 | ai-ide-s0ck3t-aws-demos-1282445061 | 45% | 0% | 0% | 10% | 0% | 100% |
 | ai-ide-easestart-easestart-public-1189336880 | 45% | 18% | 0% | 10% | 0% | 85% |
-| ai-ide-kodicw-nixspirit-1215340672 | 45% | 0% | 0% | 10% | 0% | 100% |
 | ai-ide-lucashe952-voxvault-1181543590 | 45% | 0% | 0% | 10% | 0% | 100% |
 | ai-ide-rohitbarnwal-student-logging-1048889397 | 45% | 0% | 0% | 50% | 0% | 65% |
 | ai-ide-xusysysy-pyvandroid-1323687187 | 45% | 0% | 0% | 30% | 0% | 85% |
@@ -3651,6 +3652,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | game-ai-crony-io-2d-assets-mcp | 10% | 0% | 0% | 60% | 0% | 85% |
 | macrozheng-mall | 10% | 0% | 0% | 60% | 0% | 85% |
 | tensorflow-models | 10% | 0% | 0% | 10% | 50% | 100% |
+| appflowy-io-appflowy | 10% | 0% | 0% | 10% | 100% | 65% |
 | juliangarnier-anime | 10% | 0% | 0% | 60% | 0% | 85% |
 | binary-husky-gpt-academic | 10% | 0% | 0% | 10% | 50% | 100% |
 | xtekky-gpt4free | 10% | 0% | 0% | 40% | 29% | 85% |
@@ -3850,7 +3852,6 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | pinta | 5% | 0% | 0% | 30% | 57% | 75% |
 | tesseract | 10% | 0% | 0% | 0% | 79% | 85% |
 | numpy-ml | 10% | 0% | 0% | 40% | 0% | 100% |
-| optimate | 10% | 0% | 0% | 10% | 57% | 90% |
 | game-ai-shixiangxi0-cobweb | 10% | 0% | 0% | 40% | 0% | 100% |
 | game-ai-natfii-ue5-mcp-bridge | 10% | 0% | 0% | 40% | 0% | 100% |
 | game-ai-hec-ovi-gamentic | 10% | 0% | 0% | 40% | 0% | 100% |
@@ -4015,6 +4016,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | genometools-genometools | 10% | 0% | 0% | 45% | 29% | 70% |
 | compomics-denovogui | 10% | 0% | 0% | 60% | 0% | 75% |
 | jpl-evapotranspiration-algorithms-pt-jpl | 10% | 0% | 0% | 10% | 57% | 85% |
+| kcofoni-ha-netro-watering | 10% | 0% | 0% | 10% | 79% | 70% |
 | carrington-115-agrosensor | 10% | 0% | 0% | 10% | 57% | 85% |
 | robinck-zroshua | 10% | 0% | 0% | 60% | 0% | 75% |
 | sowaiba-01-agrovision-net | 10% | 0% | 0% | 10% | 57% | 85% |
@@ -4111,7 +4113,6 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | 3b1b-manim | 10% | 0% | 0% | 10% | 29% | 100% |
 | panjiachen-vue-element-admin | 10% | 0% | 0% | 65% | 21% | 50% |
 | 666ghj-mirofish | 10% | 0% | 0% | 10% | 29% | 100% |
-| appflowy-io-appflowy | 10% | 0% | 0% | 10% | 79% | 65% |
 | huginn-huginn | 10% | 0% | 0% | 10% | 29% | 100% |
 | algorithm-visualizer-algorithm-visualizer | 10% | 0% | 0% | 30% | 0% | 100% |
 | acmesh-official-acme-sh | 10% | 0% | 0% | 0% | 79% | 75% |
@@ -4236,6 +4237,7 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | geospatial-kvos-coastsat | 10% | 0% | 0% | 0% | 57% | 85% |
 | geospatial-qgis-qgis-documentation | 10% | 0% | 0% | 0% | 50% | 90% |
 | geospatial-wildhoney-leaflet-freedraw | 10% | 0% | 0% | 40% | 0% | 85% |
+| geospatial-greppo-io-greppo | 10% | 0% | 0% | 10% | 21% | 100% |
 | geospatial-bryceco-gomap | 10% | 0% | 0% | 0% | 57% | 85% |
 | geospatial-knight-l-sat-hunter | 10% | 0% | 0% | 20% | 29% | 85% |
 | geospatial-mapbox-turf-swift | 10% | 0% | 0% | 0% | 57% | 85% |
@@ -4318,7 +4320,6 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | fields2cover-fields2cover | 10% | 0% | 0% | 10% | 57% | 70% |
 | patrickhallek-automated-irrigation-system | 10% | 0% | 0% | 30% | 0% | 90% |
 | shsarv-awarewego | 10% | 0% | 0% | 30% | 0% | 90% |
-| kcofoni-ha-netro-watering | 10% | 0% | 0% | 10% | 57% | 70% |
 | haripatel07-smart-agriculture-system | 10% | 0% | 0% | 45% | 0% | 75% |
 | sid3345-farm-auction | 10% | 0% | 0% | 30% | 0% | 90% |
 | theandrew168-seahorse | 10% | 0% | 0% | 35% | 0% | 85% |
@@ -4576,7 +4577,6 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | geospatial-felixpalmer-procedural-gl-js | 10% | 0% | 0% | 25% | 0% | 85% |
 | geospatial-ispring-webglobe | 10% | 0% | 0% | 50% | 0% | 60% |
 | geospatial-arthur-e-wicket | 10% | 0% | 0% | 40% | 0% | 70% |
-| geospatial-greppo-io-greppo | 10% | 0% | 0% | 10% | 0% | 100% |
 | geospatial-sxguojf-three-tile | 10% | 0% | 0% | 35% | 0% | 75% |
 | geospatial-kylebing-map | 10% | 0% | 0% | 20% | 0% | 90% |
 | geospatial-giswqs-earthengine-py-examples | 10% | 0% | 0% | 10% | 0% | 100% |
@@ -5118,7 +5118,6 @@ _Percent earned per dimension, `harness-score@1.8.2`._
 | anonymousv73x-shamba-ai | 10% | 0% | 0% | 0% | 0% | 90% |
 | aymenhmaidiwastaken-agrocare | 10% | 0% | 0% | 0% | 0% | 90% |
 | meet244-plantex | 10% | 0% | 0% | 15% | 0% | 75% |
-| undisciplined-alchemist8546-jiofarm | 10% | 0% | 0% | 0% | 0% | 90% |
 | being-invincible-shai | 10% | 0% | 0% | 0% | 0% | 90% |
 | hassanmunene-mazao-erp | 10% | 0% | 0% | 45% | 0% | 45% |
 | abdullahrfa-rice-supply-chain-management-system | 10% | 0% | 0% | 0% | 0% | 90% |

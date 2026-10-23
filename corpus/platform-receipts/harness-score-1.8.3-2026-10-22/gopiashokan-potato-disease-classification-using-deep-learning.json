@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "repository": "gopiashokan/Potato-Disease-Classification-using-Deep-Learning",
+  "manifestName": "gopiashokan-potato-disease-classification-using-deep-learning",
+  "commit": "08cf5efd03f1294cef92018e700b9f24915cc000",
+  "reason": "Windows checkout failed or was incomplete; rescanned from a pinned WSL2 Ubuntu 24.04 checkout without omitting tracked paths.",
+  "scanner": "harness-score@1.8.3",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-22-score-1.8.3/gopiashokan-potato-disease-classification-using-deep-learning",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v24.16.0",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 9,
+  "treeModes": {
+    "100644": 9
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [],
+  "treeListingSha256": "fece4d176ccea16394aead51ca8f0b44820bc9618b9e1a1a125656b80a0398bf",
+  "report": {
+    "path": "corpus/reports/gopiashokan-potato-disease-classification-using-deep-learning.json",
+    "sha256": "12f3a7de1c8818331c1fe18668cefa076c108e7c0a6c2429f004dfeb65e581f6",
+    "sizeBytes": 45098,
+    "toolVersion": "1.8.3",
+    "truncated": false
+  }
+}

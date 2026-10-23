@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "repository": "flipkart-incubator/Astra",
+  "manifestName": "dev-infra-flipkart-incubator-astra",
+  "commit": "092804a9f9abb3e019c60479e2968b01a76f4ea3",
+  "reason": "Windows checkout failed or was incomplete; rescanned from a pinned WSL2 Ubuntu 24.04 checkout without omitting tracked paths.",
+  "scanner": "harness-score@1.8.3",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-22-score-1.8.3/dev-infra-flipkart-incubator-astra",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v24.16.0",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 139,
+  "treeModes": {
+    "100644": 137,
+    "100755": 1,
+    "160000": 1
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [
+    "SSRFmap/127.0.0.1:5000/____etc_passwd",
+    "SSRFmap/127.0.0.1:5000/_etc_hosts",
+    "SSRFmap/127.0.0.1:5000/_etc_passwd"
+  ],
+  "treeListingSha256": "cfaa34ab7553464b40f83419b304854f9fa3fd15406457918fc6ec360d1cf7cf",
+  "report": {
+    "path": "corpus/reports/dev-infra-flipkart-incubator-astra.json",
+    "sha256": "3fb4c0bc5e02fe71c42f8b4744f1c499768578810846e371dc9c91d4cdbd04a9",
+    "sizeBytes": 45081,
+    "toolVersion": "1.8.3",
+    "truncated": false
+  }
+}

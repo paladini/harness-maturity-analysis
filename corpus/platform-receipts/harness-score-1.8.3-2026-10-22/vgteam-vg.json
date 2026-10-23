@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "repository": "vgteam/vg",
+  "manifestName": "vgteam-vg",
+  "commit": "ce79f1283b2eaee639d2d50ccc92f17c9cda17b9",
+  "reason": "Windows checkout failed or was incomplete; rescanned from a pinned WSL2 Ubuntu 24.04 checkout without omitting tracked paths.",
+  "scanner": "harness-score@1.8.3",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-22-score-1.8.3/vgteam-vg",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v24.16.0",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 1272,
+  "treeModes": {
+    "100644": 1175,
+    "100755": 53,
+    "120000": 1,
+    "160000": 43
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [
+    "test/graphs/199754000:199755000.vg",
+    "test/mapsoftclip/113968116:113968146.seq",
+    "test/mapsoftclip/113968116:113968146.vg"
+  ],
+  "treeListingSha256": "1a3663927dd2a23ccd3a23303a8ae8717ac4ad223e9497adf6472c049090beb2",
+  "report": {
+    "path": "corpus/reports/vgteam-vg.json",
+    "sha256": "c2305d489aacf1e83a543ccae386d20bbdcc57f0e5b4f488932235fe21e04a38",
+    "sizeBytes": 45034,
+    "toolVersion": "1.8.3",
+    "truncated": false
+  }
+}

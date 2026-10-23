@@ -1,7 +1,7 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.2"
+    "version": "1.8.3"
   },
   "root": "D:\\code\\harness-maturity-analysis-geospatial-1000\\.cache\\repos\\kcofoni-ha-netro-watering",
   "truncated": false,
@@ -34,9 +34,9 @@
     "capped": false
   },
   "score": {
-    "earned": 26,
+    "earned": 29,
     "max": 105,
-    "percent": 25
+    "percent": 28
   },
   "dimensions": [
     {
@@ -74,9 +74,9 @@
     {
       "id": "ci",
       "title": "CI Feedback",
-      "earned": 8,
+      "earned": 11,
       "max": 14,
-      "percent": 57,
+      "percent": 79,
       "applicable": true
     },
     {
@@ -445,9 +445,9 @@
       "dimension": "ci",
       "title": "Pre-commit checks installed",
       "points": 3,
-      "earned": 0,
-      "passed": false,
-      "evidence": "No pre-commit hook tooling detected.",
+      "earned": 3,
+      "passed": true,
+      "evidence": "Found: pre-commit config (custom_components/netro_watering/.pre-commit-config.yaml).",
       "remediation": "Add pre-commit tooling (husky + lint-staged, pre-commit, lefthook) so fast checks run before a commit exists — the earliest possible feedback loop.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ci-04",
       "severity": "error",
@@ -568,9 +568,9 @@
       "capped": false
     },
     "score": {
-      "earned": 26,
+      "earned": 29,
       "max": 105,
-      "percent": 25
+      "percent": 28
     },
     "dimensions": [
       {
@@ -608,9 +608,9 @@
       {
         "id": "ci",
         "title": "CI Feedback",
-        "earned": 8,
+        "earned": 11,
         "max": 14,
-        "percent": 57,
+        "percent": 79,
         "applicable": true
       },
       {
@@ -979,9 +979,9 @@
         "dimension": "ci",
         "title": "Pre-commit checks installed",
         "points": 3,
-        "earned": 0,
-        "passed": false,
-        "evidence": "No pre-commit hook tooling detected.",
+        "earned": 3,
+        "passed": true,
+        "evidence": "Found: pre-commit config (custom_components/netro_watering/.pre-commit-config.yaml).",
         "remediation": "Add pre-commit tooling (husky + lint-staged, pre-commit, lefthook) so fast checks run before a commit exists — the earliest possible feedback loop.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ci-04",
         "severity": "error",
@@ -1098,5 +1098,8 @@
     "extends": [],
     "rules": {},
     "resolved": []
+  },
+  "scan": {
+    "includePaths": []
   }
 }

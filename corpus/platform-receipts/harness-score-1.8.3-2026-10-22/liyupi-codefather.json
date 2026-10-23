@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "repository": "liyupi/codefather",
+  "manifestName": "liyupi-codefather",
+  "commit": "24587506abdee3f4257a873fed8e18163d925670",
+  "reason": "Windows checkout failed or was incomplete; rescanned from a pinned WSL2 Ubuntu 24.04 checkout without omitting tracked paths.",
+  "scanner": "harness-score@1.8.3",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-22-score-1.8.3/liyupi-codefather",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v24.16.0",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 1055,
+  "treeModes": {
+    "100644": 1055
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [
+    "高频面试题/26 届春招 Go 热题/GO语言中非接口的任意类型T都能调用*T的方法么？反过来呢？.md",
+    "高频面试题/26 届春招 Go 热题/Go 语言中所有的 T 类型都有 *T 类型吗？.md",
+    "高频面试题/26 届春招 Go 热题/Go 语言中的 = 和 := 有什么区别？.md",
+    "高频面试题/前端热门面试题 200 道/Node.js 中的回调、Promise 和 async:await 有什么区别？.md",
+    "高频面试题/前端热门面试题 200 道/什么是非阻塞 I:O？Node.js 如何实现非阻塞 I:O？.md"
+  ],
+  "treeListingSha256": "cd2963963b824029c1bbda2d015392b779c2a23dc2c3a710b71a6c5ed13f94d8",
+  "report": {
+    "path": "corpus/reports/liyupi-codefather.json",
+    "sha256": "dae81e0fc6f39b097066acd4710ab3e30966efe5a60831a7ad158d7f8eb2f026",
+    "sizeBytes": 45112,
+    "toolVersion": "1.8.3",
+    "truncated": false
+  }
+}

@@ -1,7 +1,7 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.2"
+    "version": "1.8.3"
   },
   "root": "D:\\code\\harness-maturity-analysis-geospatial-1000\\.cache\\repos\\alexsjones-llmfit",
   "truncated": false,
@@ -396,7 +396,7 @@
       "points": 2,
       "earned": 2,
       "passed": true,
-      "evidence": "Found 56 test file(s), e.g. llmfit-core/tests/estimator_accuracy.rs.",
+      "evidence": "Found 50 test file(s), e.g. llmfit-core/tests/estimator_accuracy.rs.",
       "remediation": "Write at least one real test file — a configured runner with zero tests gives the agent a green light it did not earn.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#sns-05",
       "severity": "error",
@@ -931,7 +931,7 @@
         "points": 2,
         "earned": 2,
         "passed": true,
-        "evidence": "Found 56 test file(s), e.g. llmfit-core/tests/estimator_accuracy.rs.",
+        "evidence": "Found 50 test file(s), e.g. llmfit-core/tests/estimator_accuracy.rs.",
         "remediation": "Write at least one real test file — a configured runner with zero tests gives the agent a green light it did not earn.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#sns-05",
         "severity": "error",
@@ -1100,5 +1100,8 @@
     "extends": [],
     "rules": {},
     "resolved": []
+  },
+  "scan": {
+    "includePaths": []
   }
 }

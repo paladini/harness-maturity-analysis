@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "repository": "eiszapfen2000/tgda",
+  "manifestName": "eiszapfen2000-tgda",
+  "commit": "d78a551e9baead24d006d0714eecb445e1c19722",
+  "reason": "Windows checkout failed or was incomplete; rescanned from a pinned WSL2 Ubuntu 24.04 checkout without omitting tracked paths.",
+  "scanner": "harness-score@1.8.3",
+  "scannerRoot": "/home/fernando_paladini/harness-scan-2026-10-22-score-1.8.3/eiszapfen2000-tgda",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v24.16.0",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "treeEntryCount": 4436,
+  "treeModes": {
+    "100644": 4262,
+    "100755": 128,
+    "120000": 46
+  },
+  "trackedLfsPaths": [],
+  "invalidNtfsPaths": [],
+  "treeListingSha256": "256d80934d72cd5d5cd8832328b9f5f112f915af917200b1770dcf6c05ed9b63",
+  "report": {
+    "path": "corpus/reports/eiszapfen2000-tgda.json",
+    "sha256": "88cbdfba3c5d5322055908e7a98d7498ea3dd7affc3d8fbb178bd3f205c28502",
+    "sizeBytes": 45119,
+    "toolVersion": "1.8.3",
+    "truncated": false
+  }
+}
