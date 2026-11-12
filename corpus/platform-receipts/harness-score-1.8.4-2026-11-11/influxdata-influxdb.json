@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/influxdata/influxdb.git",
+  "manifestName": "influxdata-influxdb",
+  "commit": "06200ef96ba82c5f6727e5038a83af8e722c6875",
+  "reason": "Windows scan failed; rescanned on WSL2 using the pinned checkout.",
+  "scanner": "harness-score@1.8.4",
+  "scannerRoot": "/home/fernando_paladini/harness-refresh-2026-11-11-1-8-4/influxdata-influxdb",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "checkoutExcludes": [],
+  "treeEntryCount": 1845,
+  "treeModes": {
+    "100644": 1833,
+    "100755": 12
+  },
+  "treeListingSha256": "46a3b95fe29b95e989a91021c13f9e2fc12c161bc7d5e05a4748d86b1c34e0a2",
+  "report": {
+    "path": "corpus/reports/influxdata-influxdb.json",
+    "sha256": "41c8bc5c1d7248e694209b6dadb409a5defa6ccbbda4c35e806931d285b5ac2b",
+    "sizeBytes": 45075,
+    "toolVersion": "1.8.4",
+    "truncated": false
+  }
+}

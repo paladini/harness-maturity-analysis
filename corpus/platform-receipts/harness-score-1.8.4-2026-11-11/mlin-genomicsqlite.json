@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/mlin/GenomicSQLite.git",
+  "manifestName": "mlin-genomicsqlite",
+  "commit": "eb9bd7b227cab21bbe8950b1b5232c8cc6b1afd3",
+  "reason": "Windows scan failed; rescanned on WSL2 using the pinned checkout.",
+  "scanner": "harness-score@1.8.4",
+  "scannerRoot": "/home/fernando_paladini/harness-refresh-2026-11-11-1-8-4/mlin-genomicsqlite",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "checkoutExcludes": [],
+  "treeEntryCount": 84,
+  "treeModes": {
+    "100644": 77,
+    "100755": 6,
+    "120000": 1
+  },
+  "treeListingSha256": "1afcac34c4e1889a70adc0bcb1b6afaab1fc33b9f270025a033c93636dd8b50b",
+  "report": {
+    "path": "corpus/reports/mlin-genomicsqlite.json",
+    "sha256": "e8a4c715f2b458ec2f6f26bd9bcc09919ff4389826870f0f5ed565c6765f9a74",
+    "sizeBytes": 45426,
+    "toolVersion": "1.8.4",
+    "truncated": false
+  }
+}

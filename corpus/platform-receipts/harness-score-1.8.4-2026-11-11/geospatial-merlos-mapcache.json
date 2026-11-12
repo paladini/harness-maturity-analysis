@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/merlos/MapCache.git",
+  "manifestName": "geospatial-merlos-mapcache",
+  "commit": "fbc0f644578d7ac109313f8ca472cb2c31cb414a",
+  "reason": "Windows scan failed; rescanned on WSL2 using the pinned checkout.",
+  "scanner": "harness-score@1.8.4",
+  "scannerRoot": "/home/fernando_paladini/harness-refresh-2026-11-11-1-8-4/geospatial-merlos-mapcache",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "checkoutExcludes": [],
+  "treeEntryCount": 438,
+  "treeModes": {
+    "100644": 421,
+    "100755": 16,
+    "120000": 1
+  },
+  "treeListingSha256": "20d06f15107cb9224afa0168e72d2c0a7b8721079d03b677fe564a68fd0e7d45",
+  "report": {
+    "path": "corpus/reports/geospatial-merlos-mapcache.json",
+    "sha256": "d902ac40e8e29ecc15d34596fdfaa946712bb94e1f289ede9c482ee5eaccd00b",
+    "sizeBytes": 45176,
+    "toolVersion": "1.8.4",
+    "truncated": false
+  }
+}

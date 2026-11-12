@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/nhost/nhost.git",
+  "manifestName": "dev-infra-nhost-nhost",
+  "commit": "a37f8cce0d7c033c1435869ec216a4cf83f10d7f",
+  "reason": "Windows scan failed; rescanned on WSL2 using the pinned checkout.",
+  "scanner": "harness-score@1.8.4",
+  "scannerRoot": "/home/fernando_paladini/harness-refresh-2026-11-11-1-8-4/dev-infra-nhost-nhost",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "checkoutExcludes": [],
+  "treeEntryCount": 18875,
+  "treeModes": {
+    "100644": 18822,
+    "100755": 53
+  },
+  "treeListingSha256": "41d022dcfbe0e01b05cbd3776976898f16b3ec926f882758bb5549d9643f9c13",
+  "report": {
+    "path": "corpus/reports/dev-infra-nhost-nhost.json",
+    "sha256": "dbb0ac1e503974b771b6e6da29bd17e3b86500d8b679fab3bda4f0df73a9c500",
+    "sizeBytes": 45437,
+    "toolVersion": "1.8.4",
+    "truncated": false
+  }
+}

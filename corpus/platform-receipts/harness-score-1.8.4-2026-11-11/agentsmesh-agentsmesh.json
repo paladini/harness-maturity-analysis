@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/AgentsMesh/AgentsMesh.git",
+  "manifestName": "agentsmesh-agentsmesh",
+  "commit": "d38e3932df436fadd814a8871b8c6b7be52281d5",
+  "reason": "Original remote returned 404; fetched the identical pinned commit from neverfi/AgentsMesh and scanned on WSL2.",
+  "source": "https://github.com/neverfi/AgentsMesh.git",
+  "scanner": "harness-score@1.8.4",
+  "scannerRoot": "/home/fernando_paladini/harness-refresh-2026-11-11-1-8-4/agentsmesh-agentsmesh",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "checkoutExcludes": [],
+  "treeEntryCount": 6618,
+  "treeModes": {
+    "100644": 6580,
+    "100755": 28,
+    "120000": 10
+  },
+  "treeListingSha256": "abfc80d0aed29bf09de6d61daadc72def73a46d328743eeffe09e81e1ee59970",
+  "report": {
+    "path": "corpus/reports/agentsmesh-agentsmesh.json",
+    "sha256": "93b67abeee62057f887c301f11bcbb15dc086a9fa6972c74f89d3f1e8b474f42",
+    "sizeBytes": 45541,
+    "toolVersion": "1.8.4",
+    "truncated": false
+  }
+}

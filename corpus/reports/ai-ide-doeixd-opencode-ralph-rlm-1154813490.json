@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.3"
+    "version": "1.8.4"
   },
-  "root": "D:\\code\\harness-maturity-analysis-geospatial-1000\\.cache\\repos\\ai-ide-doeixd-opencode-ralph-rlm-1154813490",
+  "root": "D:\\code\\harness-maturity-analysis-ai-ide-2026-10-11\\.cache\\repos\\ai-ide-doeixd-opencode-ralph-rlm-1154813490",
   "truncated": false,
   "verdicts": {
     "maturity": {

@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.3"
+    "version": "1.8.4"
   },
-  "root": "D:\\code\\harness-maturity-analysis-geospatial-1000\\.cache\\repos\\v2ray-v2ray-core",
+  "root": "D:\\code\\harness-maturity-analysis-1-8-4\\.cache\\repos\\v2ray-v2ray-core",
   "truncated": false,
   "verdicts": {
     "maturity": {

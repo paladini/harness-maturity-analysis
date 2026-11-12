@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/google-research/google-research.git",
+  "manifestName": "google-research-google-research",
+  "commit": "5b381db4139c3cbf25cc9a698c5fe9754215fae2",
+  "reason": "Windows scan failed; rescanned on WSL2 using the pinned checkout.",
+  "scanner": "harness-score@1.8.4",
+  "scannerRoot": "/home/fernando_paladini/harness-refresh-2026-11-11-1-8-4/google-research-google-research",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "checkoutExcludes": [],
+  "treeEntryCount": 23262,
+  "treeModes": {
+    "100644": 22646,
+    "100755": 615,
+    "120000": 1
+  },
+  "treeListingSha256": "cd59b36077d909a4ad4531369e7d768ce9f261d17f49881aa905c227b77d062b",
+  "report": {
+    "path": "corpus/reports/google-research-google-research.json",
+    "sha256": "df58d53a38b6654e1adc4fbb7f3114da4435ad4e528d1e668b3b1298ddd5d1eb",
+    "sizeBytes": 45319,
+    "toolVersion": "1.8.4",
+    "truncated": false
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/tradecatlabs/vibe-coding-cn.git",
+  "manifestName": "vibe-coding-cn",
+  "commit": "a800de9bf939d8b8c7dd1e22756ddbd19780bd25",
+  "reason": "Original remote returned 404; fetched the identical pinned commit from Scuner/vibe-coding-cn and scanned on WSL2.",
+  "source": "https://github.com/Scuner/vibe-coding-cn.git",
+  "scanner": "harness-score@1.8.4",
+  "scannerRoot": "/home/fernando_paladini/harness-refresh-2026-11-11-1-8-4/vibe-coding-cn",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "checkoutExcludes": [],
+  "treeEntryCount": 1970,
+  "treeModes": {
+    "100644": 1906,
+    "100755": 56,
+    "120000": 4,
+    "160000": 4
+  },
+  "treeListingSha256": "55da2aac94fdfb469936b3139a74454df7384127be1343e77be2ca618275a8c2",
+  "report": {
+    "path": "corpus/reports/vibe-coding-cn.json",
+    "sha256": "d0179eb981316ae9f79d51c7fa5fdea4f17c591d69fcba71f29cb0094fb0933c",
+    "sizeBytes": 45724,
+    "toolVersion": "1.8.4",
+    "truncated": false
+  }
+}

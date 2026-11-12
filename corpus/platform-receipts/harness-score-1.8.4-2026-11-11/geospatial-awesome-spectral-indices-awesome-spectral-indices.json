@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/awesome-spectral-indices/awesome-spectral-indices.git",
+  "manifestName": "geospatial-awesome-spectral-indices-awesome-spectral-indices",
+  "commit": "dad4f08014fee3d784327985c72d42592842cf5d",
+  "reason": "Windows scan failed; rescanned on WSL2 using the pinned checkout.",
+  "scanner": "harness-score@1.8.4",
+  "scannerRoot": "/home/fernando_paladini/harness-refresh-2026-11-11-1-8-4/geospatial-awesome-spectral-indices-awesome-spectral-indices",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "checkoutExcludes": [],
+  "treeEntryCount": 428,
+  "treeModes": {
+    "100644": 416,
+    "100755": 12
+  },
+  "treeListingSha256": "66f0804f4eba4ced2fb072d67350c68c630e72f205284ae412f4abeaacc0869c",
+  "report": {
+    "path": "corpus/reports/geospatial-awesome-spectral-indices-awesome-spectral-indices.json",
+    "sha256": "f33e413da1f1fb8ca76879a706166b05595c0b2821f72af694debbdd7933d129",
+    "sizeBytes": 45274,
+    "toolVersion": "1.8.4",
+    "truncated": false
+  }
+}

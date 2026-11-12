@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/vgteam/vg.git",
+  "manifestName": "vgteam-vg",
+  "commit": "ce79f1283b2eaee639d2d50ccc92f17c9cda17b9",
+  "reason": "Windows scan failed; rescanned on WSL2 using the pinned checkout.",
+  "scanner": "harness-score@1.8.4",
+  "scannerRoot": "/home/fernando_paladini/harness-refresh-2026-11-11-1-8-4/vgteam-vg",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "checkoutExcludes": [],
+  "treeEntryCount": 1272,
+  "treeModes": {
+    "100644": 1175,
+    "100755": 53,
+    "120000": 1,
+    "160000": 43
+  },
+  "treeListingSha256": "1a3663927dd2a23ccd3a23303a8ae8717ac4ad223e9497adf6472c049090beb2",
+  "report": {
+    "path": "corpus/reports/vgteam-vg.json",
+    "sha256": "805adebbc3b1a6d6bdc01111c8c090f4048438b418d5a8c946a16464b1a65468",
+    "sizeBytes": 45031,
+    "toolVersion": "1.8.4",
+    "truncated": false
+  }
+}

@@ -61,5 +61,5 @@ describe('committed corpus history', () => {
         expect(reportMatchesToolVersion(report, manifest.toolVersion), entry.name).toBe(true);
       }
     }
-  });
+  }, 120_000);
 });

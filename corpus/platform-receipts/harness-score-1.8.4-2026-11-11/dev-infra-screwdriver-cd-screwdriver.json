@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/screwdriver-cd/screwdriver.git",
+  "manifestName": "dev-infra-screwdriver-cd-screwdriver",
+  "commit": "5773fa90284c516c0b1b21bd8b178fe8c47b93ce",
+  "reason": "Windows scan failed; rescanned on WSL2 using the pinned checkout.",
+  "scanner": "harness-score@1.8.4",
+  "scannerRoot": "/home/fernando_paladini/harness-refresh-2026-11-11-1-8-4/dev-infra-screwdriver-cd-screwdriver",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "checkoutExcludes": [],
+  "treeEntryCount": 571,
+  "treeModes": {
+    "100644": 568,
+    "100755": 3
+  },
+  "treeListingSha256": "98e19f00725b4728d7184487b0334b93dbaf2d157256e2bdff8d830e4ba7a483",
+  "report": {
+    "path": "corpus/reports/dev-infra-screwdriver-cd-screwdriver.json",
+    "sha256": "06d1d7066a7213119eaf42583396b84dbeb6c8b27d9ebe512441301f04436d9f",
+    "sizeBytes": 45762,
+    "toolVersion": "1.8.4",
+    "truncated": false
+  }
+}

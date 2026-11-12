@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/VladimirKalachikhin/Galadriel-map.git",
+  "manifestName": "geospatial-vladimirkalachikhin-galadriel-map",
+  "commit": "3214c4a2087d5bf5d7f30916a993d79dfcc24124",
+  "reason": "Windows scan failed; rescanned on WSL2 using the pinned checkout.",
+  "source": "https://github.com/VladimirKalachikhin/Galadriel-map.git",
+  "scanner": "harness-score@1.8.4",
+  "scannerRoot": "/home/fernando_paladini/harness-refresh-2026-11-11-1-8-4/geospatial-vladimirkalachikhin-galadriel-map",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "checkoutExcludes": [],
+  "treeEntryCount": 663,
+  "treeModes": {
+    "100644": 619,
+    "100755": 42,
+    "120000": 2
+  },
+  "treeListingSha256": "150249fc0ac15a67f782c06f84959caf6dba6053c43343c3dae1db352885c0d2",
+  "report": {
+    "path": "corpus/reports/geospatial-vladimirkalachikhin-galadriel-map.json",
+    "sha256": "c2305badb96d0a165aabb8250778477002282b57e6f8f025c60280e58b4f09fb",
+    "sizeBytes": 45148,
+    "toolVersion": "1.8.4",
+    "truncated": false
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/opengeos/NASA-CMR-STAC.git",
+  "manifestName": "geospatial-opengeos-nasa-cmr-stac",
+  "commit": "a26fe75c354b0d49e3952191b929a7064e2f4574",
+  "reason": "Windows scan failed; rescanned on WSL2 using the pinned checkout.",
+  "source": "https://github.com/opengeos/NASA-CMR-STAC.git",
+  "scanner": "harness-score@1.8.4",
+  "scannerRoot": "/home/fernando_paladini/harness-refresh-2026-11-11-1-8-4/geospatial-opengeos-nasa-cmr-stac",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "checkoutExcludes": [],
+  "treeEntryCount": 30210,
+  "treeModes": {
+    "100644": 30210
+  },
+  "treeListingSha256": "485d53dc25de0409d73ba47c18fc3a2f20d4a62071b5c1a0b5cc1e911811a6f2",
+  "report": {
+    "path": "corpus/reports/geospatial-opengeos-nasa-cmr-stac.json",
+    "sha256": "7e87bda02f60ace33a15f6310bc9b0042f0fe8244ad3cd60f2ee02df71daada9",
+    "sizeBytes": 45125,
+    "toolVersion": "1.8.4",
+    "truncated": false
+  }
+}

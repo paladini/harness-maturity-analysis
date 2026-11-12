@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/HCID274/Unity-FPS-Video-Games.git",
+  "manifestName": "game-ai-hcid274-unity-fps-video-games",
+  "commit": "75640c718e7894093f55526771961323c78b0b43",
+  "reason": "Windows scan failed; rescanned on WSL2 using the pinned checkout.",
+  "scanner": "harness-score@1.8.4",
+  "scannerRoot": "/home/fernando_paladini/harness-refresh-2026-11-11-1-8-4/game-ai-hcid274-unity-fps-video-games",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "checkoutExcludes": [],
+  "treeEntryCount": 13393,
+  "treeModes": {
+    "100644": 13393
+  },
+  "treeListingSha256": "3f2bf692450c1c9b0467b54d7c1dee1aaa30458c9292f8861515eff88c1e0f65",
+  "report": {
+    "path": "corpus/reports/game-ai-hcid274-unity-fps-video-games.json",
+    "sha256": "915434ec8cfd7eb6ebd4be51aef299cde04064ea272a007e6156db2ac2dda1e8",
+    "sizeBytes": 45219,
+    "toolVersion": "1.8.4",
+    "truncated": false
+  }
+}

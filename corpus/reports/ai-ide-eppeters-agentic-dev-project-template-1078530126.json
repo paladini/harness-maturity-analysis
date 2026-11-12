@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.3"
+    "version": "1.8.4"
   },
-  "root": "D:\\code\\harness-maturity-analysis-geospatial-1000\\.cache\\repos\\ai-ide-eppeters-agentic-dev-project-template-1078530126",
+  "root": "D:\\code\\harness-maturity-analysis-ai-ide-2026-10-11\\.cache\\repos\\ai-ide-eppeters-agentic-dev-project-template-1078530126",
   "truncated": false,
   "verdicts": {
     "maturity": {

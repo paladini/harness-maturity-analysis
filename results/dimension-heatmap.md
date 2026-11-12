@@ -1,6 +1,6 @@
 # Dimension Heatmap
 
-_Percent earned per dimension, `harness-score@1.8.3`._
+_Percent earned per dimension, `harness-score@1.8.4`._
 
 | Repository | Context & Guides | Skills & Commands | Hooks & Guardrails | Sensors & Feedback | CI Feedback | Hygiene & Safety |
 |---|---|---|---|---|---|---|
@@ -3274,6 +3274,7 @@ _Percent earned per dimension, `harness-score@1.8.3`._
 | ai-ide-brown-university-library-alt-text-project-1144338085 | 45% | 0% | 0% | 35% | 29% | 75% |
 | ai-ide-chrislyonsky-aperture-1201314513 | 45% | 0% | 0% | 30% | 0% | 100% |
 | ai-ide-tarunkumarnyu-safetynyc-1207794647 | 45% | 53% | 0% | 10% | 0% | 75% |
+| dev-infra-lerianstudio-ring | 45% | 0% | 0% | 10% | 50% | 85% |
 | geospatial-pelicanmapping-osgearth | 45% | 0% | 0% | 10% | 50% | 85% |
 | geospatial-liodali-osm-flutter | 45% | 0% | 0% | 10% | 50% | 85% |
 | geospatial-pelicanmapping-rocky | 45% | 0% | 0% | 10% | 50% | 85% |
@@ -3774,7 +3775,6 @@ _Percent earned per dimension, `harness-score@1.8.3`._
 | dev-infra-dalance-svlint | 10% | 0% | 0% | 35% | 57% | 70% |
 | dev-infra-voided-org-deepkit-ml | 10% | 0% | 0% | 60% | 29% | 70% |
 | dev-infra-fsprojects-fsharplint | 10% | 0% | 0% | 30% | 50% | 74% |
-| dev-infra-lerianstudio-ring | 30% | 0% | 0% | 10% | 50% | 85% |
 | dev-infra-rust-man-org-rustman | 5% | 0% | 0% | 45% | 29% | 85% |
 | geospatial-rastapasta-mapscii | 10% | 0% | 0% | 65% | 0% | 85% |
 | geospatial-mbloch-mapshaper | 10% | 0% | 0% | 65% | 0% | 85% |

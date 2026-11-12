@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/LerianStudio/ring.git",
+  "manifestName": "dev-infra-lerianstudio-ring",
+  "commit": "5dcf4ef66574c900c17ee3b8364bdd103f216f88",
+  "reason": "Original remote returned 404; fetched the identical pinned commit from alexgarzao/ring and scanned on WSL2.",
+  "source": "https://github.com/alexgarzao/ring.git",
+  "scanner": "harness-score@1.8.4",
+  "scannerRoot": "/home/fernando_paladini/harness-refresh-2026-11-11-1-8-4/dev-infra-lerianstudio-ring",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "checkoutExcludes": [],
+  "treeEntryCount": 302,
+  "treeModes": {
+    "100644": 285,
+    "100755": 16,
+    "120000": 1
+  },
+  "treeListingSha256": "d5576881e21d988ec3fc07a4feaa34142963538f99a5f00e728af11fed39370b",
+  "report": {
+    "path": "corpus/reports/dev-infra-lerianstudio-ring.json",
+    "sha256": "446c5098cea6ec5bc4b02357578d808502a7bb9aeb8bc047225361b08696db59",
+    "sizeBytes": 45267,
+    "toolVersion": "1.8.4",
+    "truncated": false
+  },
+  "platformComparison": {
+    "reason": "The previous Windows 1.8.3 report read AGENTS.md as a one-line symlink placeholder; AGENTS.md is a Git symlink (mode 120000). On the same clean WSL2 checkout, both scanner versions resolve it and award CTX-02 3 points.",
+    "sameCheckout": {
+      "toolVersions": ["1.8.3", "1.8.4"],
+      "score": {
+        "earned": 35,
+        "max": 105,
+        "percent": 33
+      },
+      "level": 1,
+      "checkId": "CTX-02",
+      "checkEarned": 3
+    },
+    "previousWindows": {
+      "toolVersion": "1.8.3",
+      "score": {
+        "earned": 32,
+        "max": 105,
+        "percent": 30
+      },
+      "level": 0,
+      "checkId": "CTX-02",
+      "checkEarned": 0
+    }
+  }
+}

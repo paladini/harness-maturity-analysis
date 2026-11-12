@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.3"
+    "version": "1.8.4"
   },
-  "root": "D:\\code\\harness-maturity-analysis-geospatial-1000\\.cache\\repos\\phaserjs-phaser",
+  "root": "D:\\code\\harness-maturity-analysis-1-8-4\\.cache\\repos\\phaserjs-phaser",
   "truncated": false,
   "verdicts": {
     "maturity": {

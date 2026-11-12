@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.3"
+    "version": "1.8.4"
   },
-  "root": "D:\\code\\harness-maturity-analysis-geospatial-1000\\.cache\\repos\\alirezarezvani-claude-skills",
+  "root": "D:\\code\\harness-maturity-analysis-1-8-4\\.cache\\repos\\alirezarezvani-claude-skills",
   "truncated": false,
   "verdicts": {
     "maturity": {

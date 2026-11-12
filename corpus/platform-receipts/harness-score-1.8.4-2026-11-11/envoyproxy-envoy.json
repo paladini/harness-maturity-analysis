@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/envoyproxy/envoy.git",
+  "manifestName": "envoyproxy-envoy",
+  "commit": "744a11b5bea643b80f002e8d4020c89e04cea62a",
+  "reason": "Windows scan failed; rescanned on WSL2 using the pinned checkout.",
+  "scanner": "harness-score@1.8.4",
+  "scannerRoot": "/home/fernando_paladini/harness-refresh-2026-11-11-1-8-4/envoyproxy-envoy",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "checkoutExcludes": [],
+  "treeEntryCount": 15052,
+  "treeModes": {
+    "100644": 14821,
+    "100755": 220,
+    "120000": 11
+  },
+  "treeListingSha256": "48de3366190ae25bf209969273ef8c92445aa657f44a9bda161426dfe5d7ad4e",
+  "report": {
+    "path": "corpus/reports/envoyproxy-envoy.json",
+    "sha256": "287e35fc1eee53a13564b9c7ab514a73dc56abf1bfe8f46efea901aed1cb822a",
+    "sizeBytes": 45028,
+    "toolVersion": "1.8.4",
+    "truncated": false
+  }
+}
