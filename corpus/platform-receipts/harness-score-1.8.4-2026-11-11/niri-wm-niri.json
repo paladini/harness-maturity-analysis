@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/niri-wm/niri.git",
+  "manifestName": "niri-wm-niri",
+  "commit": "d0cd58ec5ac6b2d41d42478fb4f3cc7c0c687db9",
+  "reason": "Windows scan failed; rescanned on WSL2 using the pinned checkout.",
+  "scanner": "harness-score@1.8.4",
+  "scannerRoot": "/home/fernando_paladini/harness-refresh-2026-11-11-1-8-4/niri-wm-niri",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "checkoutExcludes": [],
+  "treeEntryCount": 5604,
+  "treeModes": {
+    "100644": 5603,
+    "100755": 1
+  },
+  "treeListingSha256": "e54711d13855536e5db5bf6b8be491874f20d1c43978187cf449d67531930b1c",
+  "report": {
+    "path": "corpus/reports/niri-wm-niri.json",
+    "sha256": "15210dba3484c3937b4f1f127f4e22d8f1245524181d328cf46d472e9747af02",
+    "sizeBytes": 44970,
+    "toolVersion": "1.8.4",
+    "truncated": false
+  }
+}

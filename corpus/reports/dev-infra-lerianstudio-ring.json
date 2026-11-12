@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.3"
+    "version": "1.8.4"
   },
-  "root": "D:\\code\\harness-maturity-analysis-geospatial-1000\\.cache\\repos\\dev-infra-lerianstudio-ring",
+  "root": "/home/fernando_paladini/harness-refresh-2026-11-11-1-8-4/dev-infra-lerianstudio-ring",
   "truncated": false,
   "verdicts": {
     "maturity": {
@@ -28,25 +28,26 @@
     "claude-code"
   ],
   "level": {
-    "index": 0,
-    "name": "Unharnessed",
+    "index": 1,
+    "name": "Documented",
     "nextLevelGaps": [
-      "context ≥ 40%"
+      "context ≥ 60%",
+      "skills ≥ 30% or hooks ≥ 30%"
     ],
     "capped": false
   },
   "score": {
-    "earned": 32,
+    "earned": 35,
     "max": 105,
-    "percent": 30
+    "percent": 33
   },
   "dimensions": [
     {
       "id": "context",
       "title": "Context & Guides",
-      "earned": 6,
+      "earned": 9,
       "max": 20,
-      "percent": 30,
+      "percent": 45,
       "applicable": true
     },
     {
@@ -109,9 +110,9 @@
       "dimension": "context",
       "title": "Agent context file is substantive",
       "points": 3,
-      "earned": 0,
-      "passed": false,
-      "evidence": "AGENTS.md: 1 non-empty lines, 0 headings (needs ≥20 lines and ≥2 headings).",
+      "earned": 3,
+      "passed": true,
+      "evidence": "AGENTS.md: 101 non-empty lines, 18 headings (needs ≥20 lines and ≥2 headings).",
       "remediation": "Flesh out AGENTS.md: add sections for project overview, build & test commands, architecture, and conventions (aim for 20+ meaningful lines with headings).",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ctx-02",
       "severity": "error",
@@ -562,25 +563,26 @@
   ],
   "effective": {
     "level": {
-      "index": 0,
-      "name": "Unharnessed",
+      "index": 1,
+      "name": "Documented",
       "nextLevelGaps": [
-        "context ≥ 40%"
+        "context ≥ 60%",
+        "skills ≥ 30% or hooks ≥ 30%"
       ],
       "capped": false
     },
     "score": {
-      "earned": 32,
+      "earned": 35,
       "max": 105,
-      "percent": 30
+      "percent": 33
     },
     "dimensions": [
       {
         "id": "context",
         "title": "Context & Guides",
-        "earned": 6,
+        "earned": 9,
         "max": 20,
-        "percent": 30,
+        "percent": 45,
         "applicable": true
       },
       {
@@ -643,9 +645,9 @@
         "dimension": "context",
         "title": "Agent context file is substantive",
         "points": 3,
-        "earned": 0,
-        "passed": false,
-        "evidence": "AGENTS.md: 1 non-empty lines, 0 headings (needs ≥20 lines and ≥2 headings).",
+        "earned": 3,
+        "passed": true,
+        "evidence": "AGENTS.md: 101 non-empty lines, 18 headings (needs ≥20 lines and ≥2 headings).",
         "remediation": "Flesh out AGENTS.md: add sections for project overview, build & test commands, architecture, and conventions (aim for 20+ meaningful lines with headings).",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ctx-02",
         "severity": "error",

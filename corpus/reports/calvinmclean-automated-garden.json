@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.3"
+    "version": "1.8.4"
   },
-  "root": "D:\\code\\harness-maturity-analysis-geospatial-1000\\.cache\\repos\\calvinmclean-automated-garden",
+  "root": "D:\\code\\harness-maturity-analysis-audio-500\\.cache\\repos\\calvinmclean-automated-garden",
   "truncated": false,
   "verdicts": {
     "maturity": {

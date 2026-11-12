@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/flipkart-incubator/Astra.git",
+  "manifestName": "dev-infra-flipkart-incubator-astra",
+  "commit": "092804a9f9abb3e019c60479e2968b01a76f4ea3",
+  "reason": "Windows scan failed; rescanned on WSL2 using the pinned checkout.",
+  "scanner": "harness-score@1.8.4",
+  "scannerRoot": "/home/fernando_paladini/harness-refresh-2026-11-11-1-8-4/dev-infra-flipkart-incubator-astra",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "checkoutExcludes": [],
+  "treeEntryCount": 139,
+  "treeModes": {
+    "100644": 137,
+    "100755": 1,
+    "160000": 1
+  },
+  "treeListingSha256": "cfaa34ab7553464b40f83419b304854f9fa3fd15406457918fc6ec360d1cf7cf",
+  "report": {
+    "path": "corpus/reports/dev-infra-flipkart-incubator-astra.json",
+    "sha256": "38be3aa31e241525e9889a099cca09818cc587edd838f87149e79ed8a72a81df",
+    "sizeBytes": 45078,
+    "toolVersion": "1.8.4",
+    "truncated": false
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/liyupi/codefather.git",
+  "manifestName": "liyupi-codefather",
+  "commit": "24587506abdee3f4257a873fed8e18163d925670",
+  "reason": "Windows scan failed; rescanned on WSL2 using the pinned checkout.",
+  "scanner": "harness-score@1.8.4",
+  "scannerRoot": "/home/fernando_paladini/harness-refresh-2026-11-11-1-8-4/liyupi-codefather",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "checkoutExcludes": [],
+  "treeEntryCount": 1055,
+  "treeModes": {
+    "100644": 1055
+  },
+  "treeListingSha256": "cd2963963b824029c1bbda2d015392b779c2a23dc2c3a710b71a6c5ed13f94d8",
+  "report": {
+    "path": "corpus/reports/liyupi-codefather.json",
+    "sha256": "385b67624fb6a3bc0c49a4538936bfeaef0e9cc84ff7286f9fa436b4818b29eb",
+    "sizeBytes": 45109,
+    "toolVersion": "1.8.4",
+    "truncated": false
+  }
+}

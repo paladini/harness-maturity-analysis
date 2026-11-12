@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/CovenantSQL/CovenantSQL.git",
+  "manifestName": "dev-infra-covenantsql-covenantsql",
+  "commit": "ce1b3c0121e193a61e3558e8175c8e831b1c2057",
+  "reason": "Windows scan failed; rescanned on WSL2 using the pinned checkout.",
+  "scanner": "harness-score@1.8.4",
+  "scannerRoot": "/home/fernando_paladini/harness-refresh-2026-11-11-1-8-4/dev-infra-covenantsql-covenantsql",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "checkoutExcludes": [],
+  "treeEntryCount": 1297,
+  "treeModes": {
+    "100644": 1240,
+    "100755": 36,
+    "120000": 20,
+    "160000": 1
+  },
+  "treeListingSha256": "78de7c53e5b661316c0dfd34ffe703f577c03ec0ba775e96d66cb3cfddc65f18",
+  "report": {
+    "path": "corpus/reports/dev-infra-covenantsql-covenantsql.json",
+    "sha256": "45d9dc6e16cd02fd9e5ec00c4edddd4266d68c27042a7091349f44cc89ef1a0c",
+    "sizeBytes": 44867,
+    "toolVersion": "1.8.4",
+    "truncated": false
+  }
+}

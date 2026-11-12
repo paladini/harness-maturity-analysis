@@ -1,6 +1,6 @@
 # Leaderboard
 
-_6001/6002 corpus repositories scanned with `harness-score@1.8.3`. A high score measures harness infrastructure, not company AI competence — see [METHODOLOGY.md](../METHODOLOGY.md). Not yet scanned: undisciplined-alchemist8546-jiofarm._
+_6001/6002 corpus repositories scanned with `harness-score@1.8.4`. A high score measures harness infrastructure, not company AI competence — see [METHODOLOGY.md](../METHODOLOGY.md). Not yet scanned: undisciplined-alchemist8546-jiofarm._
 
 | Rank | Repository | Category | Level | Score | Detected harnesses | Flags |
 |---|---|---|---|---|---|---|
@@ -3274,507 +3274,507 @@ _6001/6002 corpus repositories scanned with `harness-score@1.8.3`. A high score 
 | 3268 | [ai-ide-brown-university-library-alt-text-project-1144338085](https://github.com/Brown-University-Library/alt_text_project.git) | ai-coding-assistant-adoption | L1 · Documented | 35/105 (33%) | — | AI coding-assistant adoption (seeded zero-star sample) |
 | 3269 | [ai-ide-chrislyonsky-aperture-1201314513](https://github.com/chrislyonsKY/aperture.git) | ai-coding-assistant-adoption | L1 · Documented | 35/105 (33%) | claude-code | AI coding-assistant adoption (seeded zero-star sample) |
 | 3270 | [ai-ide-tarunkumarnyu-safetynyc-1207794647](https://github.com/tarunkumarnyu/SafetyNYC.git) | ai-coding-assistant-adoption | L1 · Documented | 35/105 (33%) | antigravity, codex | AI coding-assistant adoption (seeded zero-star sample) |
-| 3271 | [geospatial-pelicanmapping-osgearth](https://github.com/pelicanmapping/osgearth.git) | geospatial | L1 · Documented | 35/105 (33%) | — | — |
-| 3272 | [geospatial-liodali-osm-flutter](https://github.com/liodali/osm_flutter.git) | geospatial | L1 · Documented | 35/105 (33%) | — | — |
-| 3273 | [geospatial-pelicanmapping-rocky](https://github.com/pelicanmapping/rocky.git) | geospatial | L1 · Documented | 35/105 (33%) | — | — |
-| 3274 | [crawl4ai](https://github.com/unclecode/crawl4ai.git) | ai-model-inference | L0 · Unharnessed | 35/105 (33%) | claude-code | — |
-| 3275 | [kong](https://github.com/Kong/kong.git) | ai-applications | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3276 | [pageindex](https://github.com/VectifyAI/PageIndex.git) | ai-model-inference | L0 · Unharnessed | 35/105 (33%) | claude-code | — |
-| 3277 | [open-generative-ai](https://github.com/Anil-matcha/Open-Generative-AI.git) | ai-vision-media | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3278 | [fluidvoice](https://github.com/altic-dev/FluidVoice.git) | ai-model-inference | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3279 | [promptflow](https://github.com/microsoft/promptflow.git) | ai-model-inference | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3280 | [deeplake](https://github.com/activeloopai/deeplake.git) | ai-model-inference | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3281 | [anus](https://github.com/anus-dev/ANUS.git) | ai-coding-tools | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3282 | [openclawchinesetranslation](https://github.com/1186258278/OpenClawChineseTranslation.git) | ai-agent-frameworks | L0 · Unharnessed | 35/105 (33%) | claude-code | — |
-| 3283 | [game-ai-jackbekket-hellper](https://github.com/JackBekket/Hellper.git) | video-game-ai | L0 · Unharnessed | 35/105 (33%) | — | Video game AI popularity #272 |
-| 3284 | [game-ai-tooichitake-gymnasium-mario](https://github.com/tooichitake/gymnasium-mario.git) | video-game-ai | L0 · Unharnessed | 35/105 (33%) | — | Video game AI popularity #338 |
-| 3285 | [game-ai-fulviuus-defold-mcp](https://github.com/Fulviuus/defold-mcp.git) | video-game-ai | L0 · Unharnessed | 35/105 (33%) | — | Video game AI popularity #399 |
-| 3286 | [game-ai-ttinies-sc2gamelobby](https://github.com/ttinies/sc2gameLobby.git) | video-game-ai | L0 · Unharnessed | 35/105 (33%) | — | Video game AI popularity #415 |
-| 3287 | [game-ai-sanjaysah101-retroai-quest](https://github.com/sanjaysah101/RetroAI-Quest.git) | video-game-ai | L0 · Unharnessed | 35/105 (33%) | — | Video game AI popularity #469 |
-| 3288 | [microsoft-markitdown](https://github.com/microsoft/markitdown.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #9 |
-| 3289 | [ytdl-org-youtube-dl](https://github.com/ytdl-org/youtube-dl.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #22 |
-| 3290 | [nanmicoder-mediacrawler](https://github.com/NanmiCoder/MediaCrawler.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #132 |
-| 3291 | [lodash-lodash](https://github.com/lodash/lodash.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #168 |
-| 3292 | [atom-atom](https://github.com/atom/atom.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #174 |
-| 3293 | [foundationagents-openmanus](https://github.com/FoundationAgents/OpenManus.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #190 |
-| 3294 | [soimort-you-get](https://github.com/soimort/you-get.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #203 |
-| 3295 | [google-guava](https://github.com/google/guava.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #242 |
-| 3296 | [yuan1z0825-nature-skills](https://github.com/Yuan1z0825/nature-skills.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #297 |
-| 3297 | [httpie-cli](https://github.com/httpie/cli.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #453 |
-| 3298 | [pdfmathtranslate-pdfmathtranslate](https://github.com/PDFMathTranslate/PDFMathTranslate.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #485 |
-| 3299 | [typicode-husky](https://github.com/typicode/husky.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #541 |
-| 3300 | [maboloshi-github-chinese](https://github.com/maboloshi/github-chinese.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #547 |
-| 3301 | [xkcoding-spring-boot-demo](https://github.com/xkcoding/spring-boot-demo.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #586 |
-| 3302 | [vscodium-vscodium](https://github.com/VSCodium/vscodium.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #605 |
-| 3303 | [fincept-corporation-finceptterminal](https://github.com/Fincept-Corporation/FinceptTerminal.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #647 |
-| 3304 | [oai-openapi-specification](https://github.com/OAI/OpenAPI-Specification.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #697 |
-| 3305 | [sortablejs-sortable](https://github.com/SortableJS/Sortable.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #698 |
-| 3306 | [openssl-openssl](https://github.com/openssl/openssl.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #710 |
-| 3307 | [foundation-yeti](https://github.com/foundation/yeti.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #753 |
-| 3308 | [alibaba-spring-cloud-alibaba](https://github.com/alibaba/spring-cloud-alibaba.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #786 |
-| 3309 | [ymfe-yapi](https://github.com/YMFE/yapi.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #862 |
-| 3310 | [nawfalmotii79-plfm-radar](https://github.com/NawfalMotii79/PLFM_RADAR.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #909 |
-| 3311 | [openfaas-faas](https://github.com/openfaas/faas.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #944 |
-| 3312 | [select2-select2](https://github.com/select2/select2.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #970 |
-| 3313 | [cinnamon-kotaemon](https://github.com/Cinnamon/kotaemon.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #979 |
-| 3314 | [ageerle-ruoyi-ai](https://github.com/ageerle/ruoyi-ai.git) | mcp-server-sdk | L0 · Unharnessed | 35/105 (33%) | — | Agent ecosystem popularity #74 |
-| 3315 | [zhkl0228-unidbg](https://github.com/zhkl0228/unidbg.git) | mcp-server-sdk | L0 · Unharnessed | 35/105 (33%) | — | Agent ecosystem popularity #90 |
-| 3316 | [seemseam-claude-codex-bridge](https://github.com/SeemSeam/claude_codex_bridge.git) | multi-agent-orchestration | L0 · Unharnessed | 35/105 (33%) | — | Agent ecosystem popularity #24 |
-| 3317 | [firecrawl-open-agent-builder](https://github.com/firecrawl/open-agent-builder.git) | multi-agent-orchestration | L0 · Unharnessed | 35/105 (33%) | — | Agent ecosystem popularity #32 |
-| 3318 | [gao-lab-slat](https://github.com/gao-lab/SLAT.git) | data-ml-science | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3319 | [nel-lab-mesmerize-core](https://github.com/nel-lab/mesmerize-core.git) | data-ml-science | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3320 | [bioio-devs-bioio-ome-zarr](https://github.com/bioio-devs/bioio-ome-zarr.git) | data-ml-science | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3321 | [lopezgroup-iciq-care](https://github.com/LopezGroup-ICIQ/care.git) | data-ml-science | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3322 | [mlin-genomicsqlite](https://github.com/mlin/GenomicSQLite.git) | data-ml-science | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3323 | [kcieslik-eq-insar](https://github.com/kcieslik/eq-insar.git) | data-ml-science | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3324 | [simon-sat-pycoxmunk](https://github.com/simon-sat/PyCoxMunk.git) | data-ml-science | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3325 | [ncfrey-pytopomat](https://github.com/ncfrey/pytopomat.git) | data-ml-science | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3326 | [gboeing-pynamical](https://github.com/gboeing/pynamical.git) | data-ml-science | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3327 | [aiconslab-miracl](https://github.com/AICONSlab/MIRACL.git) | data-ml-science | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3328 | [jobovy-wendy](https://github.com/jobovy/wendy.git) | data-ml-science | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3329 | [cnes-lenapy](https://github.com/CNES/lenapy.git) | data-ml-science | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3330 | [40rbidd3n-hydro0x01](https://github.com/40rbidd3n/Hydro0x01.git) | agriculture | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3331 | [rgc99-irrigation-unlimited](https://github.com/rgc99/irrigation_unlimited.git) | agriculture | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3332 | [mysticrenji-home-assistant-on-kubernetes](https://github.com/mysticrenji/home-assistant-on-kubernetes.git) | agriculture | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3333 | [mhdb96-chernozem](https://github.com/mhdb96/Chernozem.git) | agriculture | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3334 | [bovheat-bovheat](https://github.com/bovheat/bovheat.git) | agriculture | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3335 | [wur-abe-rl-drone-object-search](https://github.com/WUR-ABE/rl_drone_object_search.git) | agriculture | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3336 | [dreamer41-ha-smart-irrigation](https://github.com/Dreamer41/ha-smart-irrigation.git) | agriculture | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3337 | [lawpaul-ha-solar-shade](https://github.com/LawPaul/HA_Solar_Shade.git) | agriculture | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3338 | [ankit-sengupta05-smart-agriculture-assistant](https://github.com/ankit-sengupta05/Smart-Agriculture-Assistant.git) | agriculture | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3339 | [xiaomiju-x-rootscope-adventurex2026](https://github.com/Xiaomiju-x/RootScope-AdventureX2026.git) | agriculture | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3340 | [dev-infra-avajs-ava](https://github.com/avajs/ava.git) | developer-tools | L0 · Unharnessed | 35/105 (33%) | — | Developer infrastructure popularity #24 |
-| 3341 | [dev-infra-bats-core-bats-core](https://github.com/bats-core/bats-core.git) | software-delivery-testing-build | L0 · Unharnessed | 35/105 (33%) | — | Developer infrastructure popularity #201 |
-| 3342 | [dev-infra-pycqa-flake8](https://github.com/PyCQA/flake8.git) | code-quality | L0 · Unharnessed | 35/105 (33%) | — | Developer infrastructure popularity #284 |
-| 3343 | [dev-infra-speedment-speedment](https://github.com/speedment/speedment.git) | database-data-platforms | L0 · Unharnessed | 35/105 (33%) | — | Developer infrastructure popularity #409 |
-| 3344 | [dev-infra-reviewboard-reviewboard](https://github.com/reviewboard/reviewboard.git) | code-quality | L0 · Unharnessed | 35/105 (33%) | — | Developer infrastructure popularity #471 |
-| 3345 | [dev-infra-securitybunker-databunker](https://github.com/securitybunker/databunker.git) | database-data-platforms | L0 · Unharnessed | 35/105 (33%) | — | Developer infrastructure popularity #505 |
-| 3346 | [dev-infra-datalevin-datalevin](https://github.com/datalevin/datalevin.git) | database-data-platforms | L0 · Unharnessed | 35/105 (33%) | — | Developer infrastructure popularity #512 |
-| 3347 | [dev-infra-pixielabs-cavy](https://github.com/pixielabs/cavy.git) | software-delivery-testing-build | L0 · Unharnessed | 35/105 (33%) | — | Developer infrastructure popularity #544 |
-| 3348 | [dev-infra-deepfence-yarahunter](https://github.com/deepfence/YaraHunter.git) | software-delivery-testing-build | L0 · Unharnessed | 35/105 (33%) | — | Developer infrastructure popularity #552 |
-| 3349 | [dev-infra-spatie-laravel-schemaless-attributes](https://github.com/spatie/laravel-schemaless-attributes.git) | database-data-platforms | L0 · Unharnessed | 35/105 (33%) | — | Developer infrastructure popularity #619 |
-| 3350 | [dev-infra-patrikx3-redis-ui](https://github.com/patrikx3/redis-ui.git) | database-data-platforms | L0 · Unharnessed | 35/105 (33%) | — | Developer infrastructure popularity #685 |
-| 3351 | [dev-infra-wemake-services-flake8-eradicate](https://github.com/wemake-services/flake8-eradicate.git) | code-quality | L0 · Unharnessed | 35/105 (33%) | — | Developer infrastructure popularity #768 |
-| 3352 | [geospatial-w3reality-three-geo](https://github.com/w3reality/three-geo.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3353 | [geospatial-opengisch-qfield](https://github.com/opengisch/QField.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3354 | [geospatial-opengeos-geospatial](https://github.com/opengeos/geospatial.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3355 | [geospatial-bugra9-gdal3-js](https://github.com/bugra9/gdal3.js.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3356 | [geospatial-merginmaps-mobile](https://github.com/MerginMaps/mobile.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3357 | [geospatial-qgis-qwc2](https://github.com/qgis/qwc2.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3358 | [geospatial-opengeos-qgis-gee-data-catalogs-plugin](https://github.com/opengeos/qgis-gee-data-catalogs-plugin.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3359 | [geospatial-larswiegers-laravel-maps](https://github.com/LarsWiegers/laravel-maps.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3360 | [geospatial-allenhwkim-react-openlayers](https://github.com/allenhwkim/react-openlayers.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3361 | [geospatial-biasvariancelabs-aitlas](https://github.com/biasvariancelabs/aitlas.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3362 | [geospatial-locationtech-proj4j](https://github.com/locationtech/proj4j.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3363 | [geospatial-clarisma-geodesk](https://github.com/clarisma/geodesk.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3364 | [geospatial-opengeos-qgis-samgeo-plugin](https://github.com/opengeos/qgis-samgeo-plugin.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3365 | [geospatial-omanges-turfpy](https://github.com/omanges/turfpy.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3366 | [geospatial-googlecloudplatform-bigquery-geo-viz](https://github.com/GoogleCloudPlatform/bigquery-geo-viz.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3367 | [geospatial-rlxai-rbot](https://github.com/rlxai/rbot.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3368 | [geospatial-opengeos-qgis-notebook-plugin](https://github.com/opengeos/qgis-notebook-plugin.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3369 | [geospatial-koopjs-featureserver](https://github.com/koopjs/FeatureServer.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3370 | [geospatial-ingelibre-ingecad](https://github.com/ingelibre/ingecad.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3371 | [geospatial-opengeos-qgis-nasa-earthdata-plugin](https://github.com/opengeos/qgis-nasa-earthdata-plugin.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3372 | [geospatial-urbica-tessella](https://github.com/urbica/tessella.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3373 | [geospatial-sijie-yang-urbancode](https://github.com/Sijie-Yang/UrbanCode.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3374 | [geospatial-ni1o1-pybdshadow](https://github.com/ni1o1/pybdshadow.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3375 | [geospatial-xavb64-lowtrip](https://github.com/XavB64/lowtrip.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3376 | [geospatial-maplibre-maplibre-gl-inspect](https://github.com/maplibre/maplibre-gl-inspect.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3377 | [geospatial-w8r-wms-capabilities](https://github.com/w8r/wms-capabilities.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3378 | [geospatial-ronitgupta138-bharat-spatial-engine](https://github.com/ronitgupta138/bharat-spatial-engine.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3379 | [geospatial-opengeos-qgis-terminal-plugin](https://github.com/opengeos/qgis-terminal-plugin.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3380 | [geospatial-oneofftech-geoserver-client-php](https://github.com/OneOffTech/geoserver-client-php.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3381 | [geospatial-cneben-react-maplibre-standalone](https://github.com/cneben/react-maplibre-standalone.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3382 | [geospatial-imrz-twtk-interactive-map](https://github.com/IMRZ/twtk-interactive-map.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3383 | [geospatial-opengeos-qgis-geemap-plugin](https://github.com/opengeos/qgis-geemap-plugin.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3384 | [geospatial-openstates-openstates-geo](https://github.com/openstates/openstates-geo.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3385 | [geospatial-opengeos-qgis-leafmap-plugin](https://github.com/opengeos/qgis-leafmap-plugin.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
-| 3386 | [game-ai-ivanmurzak-unity-ai-cinemachine](https://github.com/IvanMurzak/Unity-AI-Cinemachine.git) | video-game-ai | L1 · Documented | 34/105 (32%) | claude-code | Video game AI popularity #365 |
-| 3387 | [octane0411-open-vibe-island](https://github.com/Octane0411/open-vibe-island.git) | coding-agent-harness | L1 · Documented | 34/105 (32%) | claude-code | Agent ecosystem popularity #90 |
-| 3388 | [ai-ide-workersio-skills-1157564896](https://github.com/workersio/skills.git) | ai-coding-assistant-adoption | L1 · Documented | 34/105 (32%) | claude-code | AI coding-assistant adoption popularity #26 |
-| 3389 | [ai-ide-microsoft-mcp-dotnet-samples-966419612](https://github.com/microsoft/mcp-dotnet-samples.git) | ai-coding-assistant-adoption | L1 · Documented | 34/105 (32%) | — | AI coding-assistant adoption popularity #27 |
-| 3390 | [ai-ide-k1xe-interviewforge-1239685182](https://github.com/K1XE/InterviewForge.git) | ai-coding-assistant-adoption | L1 · Documented | 34/105 (32%) | antigravity, claude-code | AI coding-assistant adoption popularity #64 |
-| 3391 | [ai-ide-ekollof-meshtui-1078838458](https://github.com/ekollof/meshtui.git) | ai-coding-assistant-adoption | L1 · Documented | 34/105 (32%) | claude-code | AI coding-assistant adoption popularity #91 |
-| 3392 | [ai-ide-sebastianaigner-reelchest-441682344](https://github.com/SebastianAigner/reelchest.git) | ai-coding-assistant-adoption | L1 · Documented | 34/105 (32%) | — | AI coding-assistant adoption popularity #149 |
-| 3393 | [ai-ide-jedipi-quick-stocktaker-333262843](https://github.com/jedipi/Quick-Stocktaker.git) | ai-coding-assistant-adoption | L1 · Documented | 34/105 (32%) | — | AI coding-assistant adoption popularity #160 |
-| 3394 | [ai-ide-elhabashylab-3dclans-988903214](https://github.com/ElhabashyLab/3DClans.git) | ai-coding-assistant-adoption | L1 · Documented | 34/105 (32%) | — | AI coding-assistant adoption popularity #302 |
-| 3395 | [ai-ide-oyanibtech-iii-growfico-official-webapp-1171229591](https://github.com/OyanibTech-iii/Growfico-Official-webapp.git) | ai-coding-assistant-adoption | L1 · Documented | 33/103 (32%) | antigravity | AI coding-assistant adoption popularity #317 |
-| 3396 | [ai-ide-jagadish-k-video-gif-creator-1068635093](https://github.com/jagadish-k/video-gif-creator.git) | ai-coding-assistant-adoption | L1 · Documented | 34/105 (32%) | claude-code | AI coding-assistant adoption popularity #349 |
-| 3397 | [ai-ide-mikeydotio-lillist-1236962486](https://github.com/mikeydotio/lillist.git) | ai-coding-assistant-adoption | L1 · Documented | 34/105 (32%) | claude-code | AI coding-assistant adoption popularity #359 |
-| 3398 | [ai-ide-kodicw-nixspirit-1215340672](https://github.com/kodicw/nixspirit.git) | ai-coding-assistant-adoption | L1 · Documented | 34/105 (32%) | antigravity | AI coding-assistant adoption (seeded zero-star sample) |
-| 3399 | [ai-ide-marianaboroni-tissueresolve-1254465462](https://github.com/marianaboroni/TissueResolve.git) | ai-coding-assistant-adoption | L1 · Documented | 34/105 (32%) | claude-code | AI coding-assistant adoption (seeded zero-star sample) |
-| 3400 | [geospatial-hajkmap-hajk](https://github.com/hajkmap/Hajk.git) | geospatial | L1 · Documented | 34/105 (32%) | — | — |
-| 3401 | [geospatial-outdooractive-gis-tools](https://github.com/Outdooractive/gis-tools.git) | geospatial | L1 · Documented | 34/105 (32%) | — | — |
-| 3402 | [geospatial-outdooractive-mvt-tools](https://github.com/Outdooractive/mvt-tools.git) | geospatial | L1 · Documented | 34/105 (32%) | — | — |
-| 3403 | [dia](https://github.com/nari-labs/dia.git) | ai-model-inference | L0 · Unharnessed | 34/105 (32%) | — | — |
-| 3404 | [crucix](https://github.com/calesthio/Crucix.git) | ai-agent-frameworks | L0 · Unharnessed | 34/105 (32%) | — | — |
-| 3405 | [horizon](https://github.com/Thysrael/Horizon.git) | ai-model-inference | L0 · Unharnessed | 34/105 (32%) | — | — |
-| 3406 | [tree-of-thoughts](https://github.com/kyegomez/tree-of-thoughts.git) | ai-model-inference | L0 · Unharnessed | 34/105 (32%) | — | — |
-| 3407 | [game-ai-r1n7aro-locus](https://github.com/r1n7aro/Locus.git) | video-game-ai | L0 · Unharnessed | 34/105 (32%) | — | Video game AI popularity #26 |
-| 3408 | [game-ai-tomyud1-godot-mcp](https://github.com/tomyud1/godot-mcp.git) | video-game-ai | L0 · Unharnessed | 34/105 (32%) | — | Video game AI popularity #41 |
-| 3409 | [game-ai-beckettlab-beckett-godot-mcp](https://github.com/beckettlab/beckett-godot-mcp.git) | video-game-ai | L0 · Unharnessed | 35/108 (32%) | claude-code | Video game AI popularity #189 |
-| 3410 | [game-ai-scrdest-cranium](https://github.com/scrdest/Cranium.git) | video-game-ai | L0 · Unharnessed | 34/105 (32%) | — | Video game AI popularity #245 |
-| 3411 | [game-ai-qimidandapigu-dsh-xiaotangyuan-game](https://github.com/qimidandapigu/dsh-xiaotangyuan-game.git) | video-game-ai | L0 · Unharnessed | 34/105 (32%) | — | Video game AI popularity #437 |
-| 3412 | [game-ai-aivrar-ai-character-engine](https://github.com/aivrar/ai-character-engine.git) | video-game-ai | L0 · Unharnessed | 34/105 (32%) | — | Video game AI popularity #477 |
-| 3413 | [genymobile-scrcpy](https://github.com/Genymobile/scrcpy.git) | github-top-software | L0 · Unharnessed | 34/105 (32%) | — | GitHub software popularity #17 |
-| 3414 | [2dust-v2rayn](https://github.com/2dust/v2rayN.git) | github-top-software | L0 · Unharnessed | 34/105 (32%) | — | GitHub software popularity #34 |
-| 3415 | [opencv-opencv](https://github.com/opencv/opencv.git) | github-top-software | L0 · Unharnessed | 34/105 (32%) | — | GitHub software popularity #64 |
-| 3416 | [nolimits4web-swiper](https://github.com/nolimits4web/swiper.git) | github-top-software | L0 · Unharnessed | 34/105 (32%) | — | GitHub software popularity #370 |
-| 3417 | [facebookresearch-faiss](https://github.com/facebookresearch/faiss.git) | github-top-software | L0 · Unharnessed | 34/105 (32%) | — | GitHub software popularity #383 |
-| 3418 | [teamnewpipe-newpipe](https://github.com/TeamNewPipe/NewPipe.git) | github-top-software | L0 · Unharnessed | 34/105 (32%) | — | GitHub software popularity #417 |
-| 3419 | [tencentarc-gfpgan](https://github.com/TencentARC/GFPGAN.git) | github-top-software | L0 · Unharnessed | 34/105 (32%) | — | GitHub software popularity #480 |
-| 3420 | [xinntao-real-esrgan](https://github.com/xinntao/Real-ESRGAN.git) | github-top-software | L0 · Unharnessed | 34/105 (32%) | — | GitHub software popularity #503 |
-| 3421 | [facebookresearch-detectron2](https://github.com/facebookresearch/detectron2.git) | github-top-software | L0 · Unharnessed | 34/105 (32%) | — | GitHub software popularity #555 |
-| 3422 | [dokku-dokku](https://github.com/dokku/dokku.git) | github-top-software | L0 · Unharnessed | 34/105 (32%) | — | GitHub software popularity #657 |
-| 3423 | [devtoys-app-devtoys](https://github.com/DevToys-app/DevToys.git) | github-top-software | L0 · Unharnessed | 34/105 (32%) | — | GitHub software popularity #661 |
-| 3424 | [xiaojieonly-ehviewer-cn-sxj](https://github.com/xiaojieonly/Ehviewer_CN_SXJ.git) | github-top-software | L0 · Unharnessed | 34/105 (32%) | — | GitHub software popularity #867 |
-| 3425 | [beyonddimension-steamtools](https://github.com/BeyondDimension/SteamTools.git) | github-top-software | L0 · Unharnessed | 34/105 (32%) | — | GitHub software popularity #896 |
-| 3426 | [cmderdev-cmder](https://github.com/cmderdev/cmder.git) | github-top-software | L0 · Unharnessed | 34/105 (32%) | — | GitHub software popularity #902 |
-| 3427 | [a2aproject-a2a](https://github.com/a2aproject/A2A.git) | github-top-software | L0 · Unharnessed | 34/105 (32%) | — | GitHub software popularity #953 |
-| 3428 | [thealgorithms-rust](https://github.com/TheAlgorithms/Rust.git) | github-top-software | L0 · Unharnessed | 34/105 (32%) | — | GitHub software popularity #956 |
-| 3429 | [xiaoduoya-codex-with-chatgpt](https://github.com/XiaoDuoYa/codex-with-chatgpt.git) | mcp-server-sdk | L0 · Unharnessed | 34/105 (32%) | — | Agent ecosystem popularity #49 |
-| 3430 | [jetbrains-go-modern-guidelines](https://github.com/JetBrains/go-modern-guidelines.git) | coding-agent-harness | L0 · Unharnessed | 34/105 (32%) | — | Agent ecosystem popularity #42 |
-| 3431 | [analysiscenter-pydens](https://github.com/analysiscenter/pydens.git) | data-ml-science | L0 · Unharnessed | 34/105 (32%) | — | — |
-| 3432 | [pjazdzyk-hvac-engine](https://github.com/pjazdzyk/hvac-engine.git) | data-ml-science | L0 · Unharnessed | 34/105 (32%) | — | — |
-| 3433 | [shenwei356-seqkit](https://github.com/shenwei356/seqkit.git) | data-ml-science | L0 · Unharnessed | 34/105 (32%) | — | — |
-| 3434 | [brentp-goleft](https://github.com/brentp/goleft.git) | data-ml-science | L0 · Unharnessed | 34/105 (32%) | — | — |
-| 3435 | [jguhlin-minimap2-rs](https://github.com/jguhlin/minimap2-rs.git) | data-ml-science | L0 · Unharnessed | 34/105 (32%) | — | — |
-| 3436 | [aazuspan-wxee](https://github.com/aazuspan/wxee.git) | data-ml-science | L0 · Unharnessed | 34/105 (32%) | — | — |
-| 3437 | [pypr-pysph](https://github.com/pypr/pysph.git) | data-ml-science | L0 · Unharnessed | 34/105 (32%) | — | — |
-| 3438 | [farmos-farmos](https://github.com/farmOS/farmOS.git) | agriculture | L0 · Unharnessed | 34/105 (32%) | — | — |
-| 3439 | [farmos-farmos-map](https://github.com/farmOS/farmOS-map.git) | agriculture | L0 · Unharnessed | 34/105 (32%) | — | — |
-| 3440 | [daraan-cropandweeddetection](https://github.com/Daraan/CropAndWeedDetection.git) | agriculture | L0 · Unharnessed | 34/105 (32%) | — | — |
-| 3441 | [vacovsky-pirrigo](https://github.com/vacovsky/pirrigo.git) | agriculture | L0 · Unharnessed | 34/105 (32%) | — | — |
-| 3442 | [pkparthk-plant-disease-detection](https://github.com/pkparthk/Plant-Disease-Detection.git) | agriculture | L0 · Unharnessed | 34/105 (32%) | — | — |
-| 3443 | [saschadoemer-iso-11783-toolsuite](https://github.com/saschadoemer/iso-11783-toolsuite.git) | agriculture | L0 · Unharnessed | 34/105 (32%) | — | — |
-| 3444 | [sprinqua-sprinqua](https://github.com/Sprinqua/sprinqua.git) | agriculture | L0 · Unharnessed | 34/105 (32%) | — | — |
-| 3445 | [bubblesnet-controller](https://github.com/bubblesnet/controller.git) | agriculture | L0 · Unharnessed | 34/105 (32%) | — | — |
-| 3446 | [bernardonal-my-chemicals](https://github.com/BernardoNal/my-chemicals.git) | agriculture | L0 · Unharnessed | 34/105 (32%) | — | — |
-| 3447 | [dev-infra-harelba-q](https://github.com/harelba/q.git) | database-data-platforms | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #107 |
-| 3448 | [dev-infra-httpie-http-prompt](https://github.com/httpie/http-prompt.git) | developer-tools | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #132 |
-| 3449 | [dev-infra-concourse-concourse](https://github.com/concourse/concourse.git) | software-delivery-testing-build | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #159 |
-| 3450 | [dev-infra-akopytov-sysbench](https://github.com/akopytov/sysbench.git) | database-data-platforms | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #187 |
-| 3451 | [dev-infra-data-dog-go-sqlmock](https://github.com/DATA-DOG/go-sqlmock.git) | database-data-platforms | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #192 |
-| 3452 | [dev-infra-orioledb-orioledb](https://github.com/orioledb/orioledb.git) | database-data-platforms | L0 · Unharnessed | 34/105 (32%) | claude-code | Developer infrastructure popularity #268 |
-| 3453 | [dev-infra-spotbugs-spotbugs](https://github.com/spotbugs/spotbugs.git) | code-quality | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #280 |
-| 3454 | [dev-infra-w3tecch-express-typescript-boilerplate](https://github.com/w3tecch/express-typescript-boilerplate.git) | database-data-platforms | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #307 |
-| 3455 | [dev-infra-cosmos72-gomacro](https://github.com/cosmos72/gomacro.git) | developer-tools | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #396 |
-| 3456 | [dev-infra-asdine-storm](https://github.com/asdine/storm.git) | database-data-platforms | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #410 |
-| 3457 | [dev-infra-julien040-anyquery](https://github.com/julien040/anyquery.git) | database-data-platforms | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #459 |
-| 3458 | [dev-infra-seaql-firedbg-for-rust](https://github.com/SeaQL/FireDBG.for.Rust.git) | developer-tools | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #477 |
-| 3459 | [dev-infra-percona-percona-toolkit](https://github.com/percona/percona-toolkit.git) | database-data-platforms | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #491 |
-| 3460 | [dev-infra-pdbpp-pdbpp](https://github.com/pdbpp/pdbpp.git) | developer-tools | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #517 |
-| 3461 | [dev-infra-smallnest-gen](https://github.com/smallnest/gen.git) | database-data-platforms | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #527 |
-| 3462 | [dev-infra-qiniu-qmgo](https://github.com/qiniu/qmgo.git) | database-data-platforms | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #545 |
-| 3463 | [dev-infra-testsigmahq-testsigma](https://github.com/testsigmahq/testsigma.git) | software-delivery-testing-build | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #576 |
-| 3464 | [dev-infra-danielgavin-ols](https://github.com/DanielGavin/ols.git) | developer-tools | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #583 |
-| 3465 | [dev-infra-eleven-sh-cli](https://github.com/eleven-sh/cli.git) | developer-experience | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #775 |
-| 3466 | [dev-infra-muety-mininote](https://github.com/muety/mininote.git) | developer-tools | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #779 |
-| 3467 | [geospatial-atsushisakai-pythonrobotics](https://github.com/AtsushiSakai/PythonRobotics.git) | geospatial | L0 · Unharnessed | 34/105 (32%) | — | — |
-| 3468 | [geospatial-mariusandra-pigeon-maps](https://github.com/mariusandra/pigeon-maps.git) | geospatial | L0 · Unharnessed | 34/105 (32%) | — | — |
-| 3469 | [geospatial-neocturne-minedmap](https://github.com/neocturne/MinedMap.git) | geospatial | L0 · Unharnessed | 34/105 (32%) | — | — |
-| 3470 | [geospatial-dotswan-filament-map-picker](https://github.com/dotswan/filament-map-picker.git) | geospatial | L0 · Unharnessed | 34/105 (32%) | — | — |
-| 3471 | [geospatial-datawan-labs-schools](https://github.com/datawan-labs/schools.git) | geospatial | L0 · Unharnessed | 34/105 (32%) | — | — |
-| 3472 | [geospatial-thomersch-grandine](https://github.com/thomersch/grandine.git) | geospatial | L0 · Unharnessed | 34/105 (32%) | — | — |
-| 3473 | [geospatial-akhenakh-mbmatch](https://github.com/akhenakh/mbmatch.git) | geospatial | L0 · Unharnessed | 34/105 (32%) | — | — |
-| 3474 | [geospatial-farshidroohi-reminderpro](https://github.com/FarshidRoohi/ReminderPro.git) | geospatial | L0 · Unharnessed | 34/105 (32%) | — | — |
-| 3475 | [geospatial-seuros-activerecord-postgis](https://github.com/seuros/activerecord-postgis.git) | geospatial | L0 · Unharnessed | 34/105 (32%) | — | — |
-| 3476 | [geospatial-dechristopher-xyz](https://github.com/dechristopher/xyz.git) | geospatial | L0 · Unharnessed | 34/105 (32%) | — | — |
-| 3477 | [geospatial-stationa-tilenol](https://github.com/StationA/tilenol.git) | geospatial | L0 · Unharnessed | 34/105 (32%) | — | — |
-| 3478 | [geospatial-eliperez-dev-untileverycage](https://github.com/eliperez-dev/UntilEveryCage.git) | geospatial | L0 · Unharnessed | 34/105 (32%) | — | — |
-| 3479 | [geospatial-nextgis-qgis-devtools](https://github.com/nextgis/qgis_devtools.git) | geospatial | L0 · Unharnessed | 34/105 (32%) | — | — |
-| 3480 | [geospatial-leonardosya-ecolens-system](https://github.com/LeonardoSya/Ecolens-System.git) | geospatial | L0 · Unharnessed | 34/105 (32%) | — | — |
-| 3481 | [llm-wiki-agent](https://github.com/SamurAIGPT/llm-wiki-agent.git) | ai-agent-frameworks | L1 · Documented | 33/105 (31%) | antigravity, claude-code | — |
-| 3482 | [game-ai-forest0xia-dota2bot-openhyperai](https://github.com/forest0xia/dota2bot-OpenHyperAI.git) | video-game-ai | L1 · Documented | 33/105 (31%) | claude-code | Video game AI popularity #58 |
-| 3483 | [game-ai-jmurth1234-claudeplayer](https://github.com/jmurth1234/ClaudePlayer.git) | video-game-ai | L1 · Documented | 33/105 (31%) | cursor | Video game AI popularity #175 |
-| 3484 | [game-ai-hackerzhuli-unity-code-mcp](https://github.com/hackerzhuli/unity_code_mcp.git) | video-game-ai | L1 · Documented | 33/105 (31%) | claude-code | Video game AI popularity #379 |
-| 3485 | [agentskills-agentskills](https://github.com/agentskills/agentskills.git) | github-top-software | L1 · Documented | 33/105 (31%) | claude-code | GitHub software popularity #960 |
-| 3486 | [agentsmd-agents-md](https://github.com/agentsmd/agents.md.git) | coding-agent-harness | L1 · Documented | 33/105 (31%) | — | Agent ecosystem popularity #2 |
-| 3487 | [ai-ide-nillionnetwork-nillion-docs-754422272](https://github.com/NillionNetwork/nillion-docs.git) | ai-coding-assistant-adoption | L1 · Documented | 33/105 (31%) | — | AI coding-assistant adoption popularity #81 |
-| 3488 | [ai-ide-geneontology-go-annotation-39641371](https://github.com/geneontology/go-annotation.git) | ai-coding-assistant-adoption | L1 · Documented | 33/105 (31%) | claude-code | AI coding-assistant adoption popularity #98 |
-| 3489 | [ai-ide-bjesuiter-opencode-acp-skill-1132160447](https://github.com/bjesuiter/opencode-acp-skill.git) | ai-coding-assistant-adoption | L1 · Documented | 33/105 (31%) | — | AI coding-assistant adoption popularity #138 |
-| 3490 | [ai-ide-zyecs-awesome-reprogrammability-1052414545](https://github.com/zyecs/awesome-reprogrammability.git) | ai-coding-assistant-adoption | L1 · Documented | 33/105 (31%) | claude-code | AI coding-assistant adoption popularity #178 |
-| 3491 | [ai-ide-amscotti-anthropic-cr-1132482069](https://github.com/amscotti/anthropic-cr.git) | ai-coding-assistant-adoption | L1 · Documented | 33/105 (31%) | claude-code | AI coding-assistant adoption popularity #292 |
-| 3492 | [ai-ide-ark-aak-bogo-game-1207847625](https://github.com/Ark-Aak/bogo-game.git) | ai-coding-assistant-adoption | L1 · Documented | 33/105 (31%) | — | AI coding-assistant adoption popularity #293 |
-| 3493 | [ai-ide-przbadu-skills-factory-1153289414](https://github.com/przbadu/skills-factory.git) | ai-coding-assistant-adoption | L1 · Documented | 33/105 (31%) | claude-code | AI coding-assistant adoption popularity #365 |
-| 3494 | [ai-ide-ei-dolon-jetsetui-1230285495](https://github.com/Ei-Dolon/JetsetUI.git) | ai-coding-assistant-adoption | L1 · Documented | 33/105 (31%) | antigravity, claude-code | AI coding-assistant adoption (seeded zero-star sample) |
-| 3495 | [ai-ide-h4x0r-eisenboard-1062717209](https://github.com/h4x0r/eisenboard.git) | ai-coding-assistant-adoption | L1 · Documented | 33/105 (31%) | claude-code | AI coding-assistant adoption (seeded zero-star sample) |
-| 3496 | [ai-ide-loyolachicagocs-ssl-html5up-883271152](https://github.com/LoyolaChicagoCS/ssl-html5up.git) | ai-coding-assistant-adoption | L1 · Documented | 33/105 (31%) | — | AI coding-assistant adoption (seeded zero-star sample) |
-| 3497 | [ai-ide-rajaghv-dev-open-star-map-1221450115](https://github.com/rajaghv-dev/open-star-map.git) | ai-coding-assistant-adoption | L1 · Documented | 33/105 (31%) | claude-code | AI coding-assistant adoption (seeded zero-star sample) |
-| 3498 | [arcticsnow-topopyscale](https://github.com/ArcticSnow/TopoPyScale.git) | data-ml-science | L1 · Documented | 33/105 (31%) | claude-code | — |
-| 3499 | [geospatial-nshiab-simple-data-analysis](https://github.com/nshiab/simple-data-analysis.git) | geospatial | L1 · Documented | 33/105 (31%) | — | — |
-| 3500 | [deep-live-cam](https://github.com/hacksider/Deep-Live-Cam.git) | ai-vision-media | L0 · Unharnessed | 33/105 (31%) | — | AI popularity #28 |
-| 3501 | [llm-app](https://github.com/pathwaycom/llm-app.git) | ai-model-inference | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3502 | [upscayl](https://github.com/upscayl/upscayl.git) | ai-vision-media | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3503 | [mcp-for-blender](https://github.com/ahujasid/mcp-for-blender.git) | ai-model-inference | L0 · Unharnessed | 33/108 (31%) | claude-code | — |
-| 3504 | [txtai](https://github.com/neuml/txtai.git) | ai-agent-frameworks | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3505 | [chatgpt-shortcut](https://github.com/rockbenben/ChatGPT-Shortcut.git) | prompt-eval-engineering | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3506 | [optimate](https://github.com/nebuly-ai/optimate.git) | ai-model-inference | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3507 | [game-ai-ikpil-dotrecast](https://github.com/ikpil/DotRecast.git) | video-game-ai | L0 · Unharnessed | 33/105 (31%) | — | Video game AI popularity #19 |
-| 3508 | [game-ai-zoyluoblue-mc-aiplayer](https://github.com/zoyluoblue/mc_aiplayer.git) | video-game-ai | L0 · Unharnessed | 33/105 (31%) | — | Video game AI popularity #84 |
-| 3509 | [game-ai-ruslanmv-ai-gameplay-bot](https://github.com/ruslanmv/ai-gameplay-bot.git) | video-game-ai | L0 · Unharnessed | 33/105 (31%) | — | Video game AI popularity #274 |
-| 3510 | [game-ai-edwarddn-dinosaur-edward-game](https://github.com/edwarddn/dinosaur-edward-game.git) | video-game-ai | L0 · Unharnessed | 33/105 (31%) | — | Video game AI popularity #285 |
-| 3511 | [game-ai-komorra-eugeniusz](https://github.com/komorra/Eugeniusz.git) | video-game-ai | L0 · Unharnessed | 33/105 (31%) | — | Video game AI popularity #405 |
-| 3512 | [game-ai-tzwm-botbotbotbot](https://github.com/tzwm/botbotbotbot.git) | video-game-ai | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3513 | [opencut-app-opencut](https://github.com/OpenCut-app/OpenCut.git) | github-top-software | L0 · Unharnessed | 33/105 (31%) | — | GitHub software popularity #61 |
-| 3514 | [nomic-ai-gpt4all](https://github.com/nomic-ai/gpt4all.git) | github-top-software | L0 · Unharnessed | 33/105 (31%) | — | GitHub software popularity #95 |
-| 3515 | [termux-termux-app](https://github.com/termux/termux-app.git) | github-top-software | L0 · Unharnessed | 33/105 (31%) | — | GitHub software popularity #162 |
-| 3516 | [jellyfin-jellyfin](https://github.com/jellyfin/jellyfin.git) | github-top-software | L0 · Unharnessed | 33/105 (31%) | — | GitHub software popularity #196 |
-| 3517 | [justvugg-colibri](https://github.com/JustVugg/colibri.git) | github-top-software | L0 · Unharnessed | 33/105 (31%) | — | GitHub software popularity #389 |
-| 3518 | [philjay-mpandroidchart](https://github.com/PhilJay/MPAndroidChart.git) | github-top-software | L0 · Unharnessed | 33/105 (31%) | — | GitHub software popularity #468 |
-| 3519 | [airbnb-lottie-android](https://github.com/airbnb/lottie-android.git) | github-top-software | L0 · Unharnessed | 33/105 (31%) | — | GitHub software popularity #536 |
-| 3520 | [xx-net-xx-net](https://github.com/XX-net/XX-Net.git) | github-top-software | L0 · Unharnessed | 33/105 (31%) | — | GitHub software popularity #610 |
-| 3521 | [shadps4-emu-shadps4](https://github.com/shadps4-emu/shadPS4.git) | github-top-software | L0 · Unharnessed | 33/105 (31%) | — | GitHub software popularity #616 |
-| 3522 | [anuken-mindustry](https://github.com/Anuken/Mindustry.git) | github-top-software | L0 · Unharnessed | 33/105 (31%) | — | GitHub software popularity #782 |
-| 3523 | [firecrawl-open-lovable](https://github.com/firecrawl/open-lovable.git) | github-top-software | L0 · Unharnessed | 34/108 (31%) | cursor | GitHub software popularity #813 |
-| 3524 | [facebook-zstd](https://github.com/facebook/zstd.git) | github-top-software | L0 · Unharnessed | 33/105 (31%) | — | GitHub software popularity #852 |
-| 3525 | [yeasy-docker-practice](https://github.com/yeasy/docker_practice.git) | github-top-software | L0 · Unharnessed | 33/105 (31%) | — | GitHub software popularity #941 |
-| 3526 | [googlechromelabs-squoosh](https://github.com/GoogleChromeLabs/squoosh.git) | github-top-software | L0 · Unharnessed | 33/105 (31%) | — | GitHub software popularity #959 |
-| 3527 | [ycm-core-youcompleteme](https://github.com/ycm-core/YouCompleteMe.git) | github-top-software | L0 · Unharnessed | 33/105 (31%) | — | GitHub software popularity #974 |
-| 3528 | [ibotpeaches-apktool](https://github.com/iBotPeaches/Apktool.git) | github-top-software | L0 · Unharnessed | 33/105 (31%) | — | GitHub software popularity #980 |
-| 3529 | [lofcz-llmtornado](https://github.com/lofcz/LLMTornado.git) | agent-to-agent-protocol | L0 · Unharnessed | 33/105 (31%) | — | Agent ecosystem popularity #22 |
-| 3530 | [p90-rushb-agentark](https://github.com/P90-RushB/AgentArk.git) | agent-evaluation-observability | L0 · Unharnessed | 33/105 (31%) | antigravity, codex | Agent ecosystem popularity #7 |
-| 3531 | [eccc-cccs-climate-data-extraction-tool](https://github.com/ECCC-CCCS/climate-data-extraction-tool.git) | data-ml-science | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3532 | [refresh-bio-famsa](https://github.com/refresh-bio/FAMSA.git) | data-ml-science | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3533 | [pcraster-pcraster](https://github.com/pcraster/pcraster.git) | data-ml-science | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3534 | [ivmartel-dwv-react](https://github.com/ivmartel/dwv-react.git) | data-ml-science | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3535 | [simpeg-discretize](https://github.com/simpeg/discretize.git) | data-ml-science | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3536 | [baotlake-periodic-table-pro](https://github.com/baotlake/periodic-table-pro.git) | data-ml-science | L0 · Unharnessed | 32/103 (31%) | — | — |
-| 3537 | [seq-lang-seq](https://github.com/seq-lang/seq.git) | data-ml-science | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3538 | [uu-cellbiology-comdet](https://github.com/UU-cellbiology/ComDet.git) | data-ml-science | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3539 | [rgc99-irrigation-unlimited-card](https://github.com/rgc99/irrigation-unlimited-card.git) | agriculture | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3540 | [jpgorganizer-iobroker-smartgarden](https://github.com/jpgorganizer/ioBroker.smartgarden.git) | agriculture | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3541 | [cristoforocervino-esp32-sprinkler-queue](https://github.com/cristoforocervino/esp32-sprinkler-queue.git) | agriculture | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3542 | [francois-roseberry-hydropi](https://github.com/francois-roseberry/hydropi.git) | agriculture | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3543 | [satiricalguru-agrinode](https://github.com/satiricalguru/AgriNode.git) | agriculture | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3544 | [dev-infra-testcontainers-testcontainers-dotnet](https://github.com/testcontainers/testcontainers-dotnet.git) | software-delivery-testing-build | L0 · Unharnessed | 33/105 (31%) | — | Developer infrastructure popularity #262 |
-| 3545 | [dev-infra-lukeed-uvu](https://github.com/lukeed/uvu.git) | software-delivery-testing-build | L0 · Unharnessed | 33/105 (31%) | — | Developer infrastructure popularity #339 |
-| 3546 | [dev-infra-debugswift-debugswift](https://github.com/DebugSwift/DebugSwift.git) | developer-tools | L0 · Unharnessed | 33/105 (31%) | — | Developer infrastructure popularity #383 |
-| 3547 | [dev-infra-oracle-node-oracledb](https://github.com/oracle/node-oracledb.git) | database-data-platforms | L0 · Unharnessed | 33/105 (31%) | — | Developer infrastructure popularity #386 |
-| 3548 | [dev-infra-intellij-elixir-intellij-elixir](https://github.com/intellij-elixir/intellij-elixir.git) | developer-tools | L0 · Unharnessed | 33/105 (31%) | — | Developer infrastructure popularity #436 |
-| 3549 | [dev-infra-dtmilano-androidviewclient](https://github.com/dtmilano/AndroidViewClient.git) | software-delivery-testing-build | L0 · Unharnessed | 34/108 (31%) | claude-code | Developer infrastructure popularity #473 |
-| 3550 | [dev-infra-wiremock-wiremock-net](https://github.com/wiremock/WireMock.Net.git) | software-delivery-testing-build | L0 · Unharnessed | 33/105 (31%) | — | Developer infrastructure popularity #478 |
-| 3551 | [dev-infra-moonsharp-devs-moonsharp](https://github.com/moonsharp-devs/moonsharp.git) | developer-tools | L0 · Unharnessed | 33/105 (31%) | — | Developer infrastructure popularity #489 |
-| 3552 | [dev-infra-scalameta-scalafmt](https://github.com/scalameta/scalafmt.git) | code-quality | L0 · Unharnessed | 33/105 (31%) | antigravity, claude-code | Developer infrastructure popularity #507 |
-| 3553 | [dev-infra-pypa-gh-action-pypi-publish](https://github.com/pypa/gh-action-pypi-publish.git) | software-delivery-testing-build | L0 · Unharnessed | 33/105 (31%) | — | Developer infrastructure popularity #588 |
-| 3554 | [dev-infra-topling-toplingdb](https://github.com/topling/toplingdb.git) | database-data-platforms | L0 · Unharnessed | 33/105 (31%) | — | Developer infrastructure popularity #637 |
-| 3555 | [dev-infra-powershell-powershelleditorservices](https://github.com/PowerShell/PowerShellEditorServices.git) | developer-tools | L0 · Unharnessed | 33/105 (31%) | — | Developer infrastructure popularity #693 |
-| 3556 | [dev-infra-nuhkoca-kotlin-modular-tdd-coroutines-mvvm](https://github.com/nuhkoca/kotlin-modular-tdd-coroutines-mvvm.git) | code-quality | L0 · Unharnessed | 33/105 (31%) | — | Developer infrastructure popularity #730 |
-| 3557 | [dev-infra-sonarsource-sonarlint-visualstudio](https://github.com/SonarSource/sonarlint-visualstudio.git) | code-quality | L0 · Unharnessed | 33/105 (31%) | — | Developer infrastructure popularity #733 |
-| 3558 | [dev-infra-bjankord-stylelint-config-sass-guidelines](https://github.com/bjankord/stylelint-config-sass-guidelines.git) | code-quality | L0 · Unharnessed | 33/105 (31%) | — | Developer infrastructure popularity #743 |
-| 3559 | [dev-infra-travisvn-gptree](https://github.com/travisvn/gptree.git) | developer-tools | L0 · Unharnessed | 33/105 (31%) | — | Developer infrastructure popularity #773 |
-| 3560 | [dev-infra-agricidaniel-claude-cybersecurity](https://github.com/AgriciDaniel/claude-cybersecurity.git) | code-quality | L0 · Unharnessed | 33/105 (31%) | claude-code | Developer infrastructure popularity #794 |
-| 3561 | [geospatial-mapserver-mapserver](https://github.com/MapServer/MapServer.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3562 | [geospatial-uber-h3-java](https://github.com/uber/h3-java.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3563 | [geospatial-nettopologysuite-projnet4geoapi](https://github.com/NetTopologySuite/ProjNet4GeoAPI.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3564 | [geospatial-korywka-mapbox-controls](https://github.com/korywka/mapbox-controls.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3565 | [geospatial-ggerman-libgd-gis](https://github.com/ggerman/libgd-gis.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3566 | [geospatial-williamliu-1997-3d-tiles-rendererjs-3dgs-plugin](https://github.com/WilliamLiu-1997/3D-Tiles-RendererJS-3DGS-Plugin.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3567 | [geospatial-cesiumgs-cesium-omniverse](https://github.com/CesiumGS/cesium-omniverse.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3568 | [geospatial-palewire-python-googlegeocoder](https://github.com/palewire/python-googlegeocoder.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3569 | [geospatial-ateliercartographie-khartis](https://github.com/AtelierCartographie/Khartis.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3570 | [geospatial-urschrei-polylabel-rs](https://github.com/urschrei/polylabel-rs.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3571 | [geospatial-pocketken-h3-net](https://github.com/pocketken/H3.net.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3572 | [geospatial-iconem-search-satellite-imagery](https://github.com/Iconem/search-satellite-imagery.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3573 | [geospatial-worldwindearth-worldwind-react-globe](https://github.com/WorldWindEarth/worldwind-react-globe.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3574 | [geospatial-itsmedmd-satellite-tracker](https://github.com/itsmedmd/satellite-tracker.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3575 | [geospatial-everwinter23-graphene-gis](https://github.com/EverWinter23/graphene-gis.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3576 | [geospatial-osmarluiz-sam-mosaic](https://github.com/osmarluiz/sam-mosaic.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3577 | [geospatial-georust-kml](https://github.com/georust/kml.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3578 | [geospatial-pf-wikis-mapping](https://github.com/pf-wikis/mapping.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3579 | [geospatial-imrz-tww-interactive-map](https://github.com/IMRZ/tww-interactive-map.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3580 | [geospatial-azure-samples-azure-maps-leaflet](https://github.com/Azure-Samples/azure-maps-leaflet.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3581 | [geospatial-fbrosda-weather-maps](https://github.com/fbrosda/weather-maps.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3582 | [geospatial-azure-samples-azure-maps-animations](https://github.com/Azure-Samples/azure-maps-animations.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3583 | [geospatial-eoda-dev-py-openlayers](https://github.com/eoda-dev/py-openlayers.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3584 | [geospatial-cityofphiladelphia-ais](https://github.com/CityOfPhiladelphia/ais.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
-| 3585 | [ppt-master](https://github.com/hugohe3/ppt-master.git) | ai-agent-frameworks | L1 · Documented | 31/105 (30%) | claude-code | — |
-| 3586 | [ai-berkshire](https://github.com/xbtlin/ai-berkshire.git) | ai-agent-frameworks | L1 · Documented | 31/105 (30%) | claude-code | — |
-| 3587 | [pocketflow](https://github.com/The-Pocket/PocketFlow.git) | ai-model-inference | L1 · Documented | 32/105 (30%) | cursor | — |
-| 3588 | [game-ai-itzik123-clashroyaleai](https://github.com/itzik123/ClashRoyaleAi.git) | video-game-ai | L1 · Documented | 32/105 (30%) | claude-code | Video game AI popularity #281 |
-| 3589 | [game-ai-djmango-openfront-ai](https://github.com/djmango/openfront-ai.git) | video-game-ai | L1 · Documented | 31/105 (30%) | cursor | Video game AI popularity #305 |
-| 3590 | [game-ai-rollacode-playnite-bridge](https://github.com/rollacode/playnite-bridge.git) | video-game-ai | L1 · Documented | 32/105 (30%) | claude-code | Video game AI popularity #356 |
-| 3591 | [game-ai-niqibiao-unity-cli-skill](https://github.com/niqibiao/unity-cli-skill.git) | video-game-ai | L1 · Documented | 32/105 (30%) | claude-code | Video game AI popularity #177 |
-| 3592 | [asgeirtj-system-prompts-leaks](https://github.com/asgeirtj/system_prompts_leaks.git) | github-top-software | L1 · Documented | 32/105 (30%) | codex | GitHub software popularity #123 |
-| 3593 | [bazelbuild-bazel](https://github.com/bazelbuild/bazel.git) | github-top-software | L1 · Documented | 32/105 (30%) | — | GitHub software popularity #969 |
-| 3594 | [ai-ide-prosusai-prism-1210513772](https://github.com/ProsusAI/prism.git) | ai-coding-assistant-adoption | L1 · Documented | 32/105 (30%) | claude-code | AI coding-assistant adoption popularity #136 |
-| 3595 | [ai-ide-xiaoran007-pyhw-811241123](https://github.com/xiaoran007/pyhw.git) | ai-coding-assistant-adoption | L1 · Documented | 32/105 (30%) | — | AI coding-assistant adoption popularity #150 |
-| 3596 | [ai-ide-dotlabshq-spec-ops-1146006434](https://github.com/dotlabshq/spec-ops.git) | ai-coding-assistant-adoption | L1 · Documented | 31/105 (30%) | — | AI coding-assistant adoption popularity #199 |
-| 3597 | [ai-ide-microruri-endfield-studio-1163552493](https://github.com/microruri/Endfield-Studio.git) | ai-coding-assistant-adoption | L1 · Documented | 32/105 (30%) | — | AI coding-assistant adoption popularity #214 |
-| 3598 | [ai-ide-ianyangchina-ddbot-ieee-tro-2025-819476349](https://github.com/IanYangChina/DDBot-IEEE-TRO-2025.git) | ai-coding-assistant-adoption | L1 · Documented | 31/105 (30%) | — | AI coding-assistant adoption popularity #248 |
-| 3599 | [ai-ide-walkingice-momodict-82467945](https://github.com/walkingice/MomoDict.git) | ai-coding-assistant-adoption | L1 · Documented | 32/105 (30%) | — | AI coding-assistant adoption popularity #258 |
-| 3600 | [ai-ide-azyrn-pulsesms-1182848438](https://github.com/Azyrn/PulseSMS.git) | ai-coding-assistant-adoption | L1 · Documented | 32/105 (30%) | claude-code | AI coding-assistant adoption popularity #297 |
-| 3601 | [ai-ide-s0ck3t-aws-demos-1282445061](https://github.com/s0ck3t/aws-demos.git) | ai-coding-assistant-adoption | L1 · Documented | 31/105 (30%) | antigravity | AI coding-assistant adoption popularity #371 |
-| 3602 | [ai-ide-easestart-easestart-public-1189336880](https://github.com/EaseStart/easestart-public.git) | ai-coding-assistant-adoption | L1 · Documented | 31/105 (30%) | antigravity | AI coding-assistant adoption (seeded zero-star sample) |
-| 3603 | [ai-ide-lucashe952-voxvault-1181543590](https://github.com/LucasHE952/VoxVault.git) | ai-coding-assistant-adoption | L1 · Documented | 31/105 (30%) | claude-code | AI coding-assistant adoption (seeded zero-star sample) |
-| 3604 | [ai-ide-rohitbarnwal-student-logging-1048889397](https://github.com/RohitBarnwal/student_logging.git) | ai-coding-assistant-adoption | L1 · Documented | 32/105 (30%) | antigravity | AI coding-assistant adoption (seeded zero-star sample) |
-| 3605 | [ai-ide-xusysysy-pyvandroid-1323687187](https://github.com/Xusysysy/pyvandroid.git) | ai-coding-assistant-adoption | L1 · Documented | 32/105 (30%) | claude-code | AI coding-assistant adoption (seeded zero-star sample) |
-| 3606 | [juliaocean-aibecs-jl](https://github.com/JuliaOcean/AIBECS.jl.git) | data-ml-science | L1 · Documented | 31/105 (30%) | — | — |
-| 3607 | [pwwang-plotthis](https://github.com/pwwang/plotthis.git) | data-ml-science | L1 · Documented | 32/105 (30%) | claude-code | — |
-| 3608 | [realistic-farming-fs25-soilfertilizer](https://github.com/Realistic-Farming/FS25_SoilFertilizer.git) | agriculture | L1 · Documented | 32/105 (30%) | claude-code | — |
-| 3609 | [edisonlee0212-evoengine](https://github.com/edisonlee0212/EvoEngine.git) | agriculture | L1 · Documented | 32/105 (30%) | — | — |
-| 3610 | [realistic-farming-fs25-seasonalcropstress](https://github.com/Realistic-Farming/FS25_SeasonalCropStress.git) | agriculture | L1 · Documented | 32/105 (30%) | claude-code | — |
-| 3611 | [nikitapn-nscalc](https://github.com/nikitapn/nscalc.git) | agriculture | L1 · Documented | 32/105 (30%) | claude-code | — |
-| 3612 | [dev-infra-appleboy-ssh-action](https://github.com/appleboy/ssh-action.git) | software-delivery-testing-build | L1 · Documented | 32/105 (30%) | claude-code | Developer infrastructure popularity #204 |
-| 3613 | [dev-infra-tonsky-datascript](https://github.com/tonsky/datascript.git) | database-data-platforms | L1 · Documented | 32/105 (30%) | claude-code | Developer infrastructure popularity #215 |
-| 3614 | [dev-infra-foss42-apidash](https://github.com/foss42/apidash.git) | developer-tools | L1 · Documented | 32/105 (30%) | — | Developer infrastructure popularity #346 |
-| 3615 | [dev-infra-slick-slick](https://github.com/slick/slick.git) | database-data-platforms | L1 · Documented | 32/105 (30%) | claude-code | Developer infrastructure popularity #362 |
-| 3616 | [geospatial-mstrimas-smoothr](https://github.com/mstrimas/smoothr.git) | geospatial | L1 · Documented | 32/105 (30%) | claude-code | — |
-| 3617 | [geospatial-ncsu-geoforall-lab-geospatial-modeling-course](https://github.com/ncsu-geoforall-lab/geospatial-modeling-course.git) | geospatial | L1 · Documented | 31/105 (30%) | claude-code | — |
-| 3618 | [execa](https://github.com/sindresorhus/execa.git) | control-non-ai-quality | L0 · Unharnessed | 32/105 (30%) | — | stress case |
-| 3619 | [solidity](https://github.com/argotorg/solidity.git) | crypto-developer-tools | L0 · Unharnessed | 32/105 (30%) | — | Crypto popularity #12 |
-| 3620 | [so-vits-svc](https://github.com/svc-develop-team/so-vits-svc.git) | ai-vision-media | L0 · Unharnessed | 31/105 (30%) | — | — |
-| 3621 | [fingpt](https://github.com/AI4Finance-Foundation/FinGPT.git) | ai-model-inference | L0 · Unharnessed | 32/105 (30%) | — | — |
-| 3622 | [owl](https://github.com/camel-ai/owl.git) | ai-agent-frameworks | L0 · Unharnessed | 31/105 (30%) | — | — |
-| 3623 | [openmythos](https://github.com/kyegomez/OpenMythos.git) | ai-applications | L0 · Unharnessed | 32/105 (30%) | — | — |
-| 3624 | [chatterbot](https://github.com/gunthercox/ChatterBot.git) | ai-applications | L0 · Unharnessed | 32/105 (30%) | — | — |
-| 3625 | [pytorch-grad-cam](https://github.com/jacobgil/pytorch-grad-cam.git) | ai-vision-media | L0 · Unharnessed | 32/105 (30%) | — | — |
-| 3626 | [mlalgorithms](https://github.com/rushter/MLAlgorithms.git) | ai-applications | L0 · Unharnessed | 32/105 (30%) | — | — |
-| 3627 | [petals](https://github.com/bigscience-workshop/petals.git) | ai-model-inference | L0 · Unharnessed | 32/105 (30%) | — | — |
-| 3628 | [internvl](https://github.com/OpenGVLab/InternVL.git) | ai-model-inference | L0 · Unharnessed | 32/105 (30%) | — | — |
-| 3629 | [autokeras](https://github.com/keras-team/autokeras.git) | ai-applications | L0 · Unharnessed | 32/105 (30%) | — | — |
-| 3630 | [modelscope](https://github.com/modelscope/modelscope.git) | ai-model-inference | L0 · Unharnessed | 31/105 (30%) | — | — |
-| 3631 | [imageai](https://github.com/OlafenwaMoses/ImageAI.git) | ai-vision-media | L0 · Unharnessed | 32/105 (30%) | — | — |
-| 3632 | [search-with-lepton](https://github.com/leptonai/search_with_lepton.git) | ai-model-inference | L0 · Unharnessed | 31/105 (30%) | — | — |
-| 3633 | [integuru](https://github.com/Integuru-AI/Integuru.git) | ai-agent-frameworks | L0 · Unharnessed | 32/105 (30%) | — | — |
-| 3634 | [segment-geospatial](https://github.com/opengeos/segment-geospatial.git) | ai-model-inference | L0 · Unharnessed | 31/105 (30%) | — | — |
-| 3635 | [game-ai-mugen87-yuka](https://github.com/Mugen87/yuka.git) | video-game-ai | L0 · Unharnessed | 32/105 (30%) | — | Video game AI popularity #15 |
-| 3636 | [game-ai-ivanmurzak-unity-ai-animation](https://github.com/IvanMurzak/Unity-AI-Animation.git) | video-game-ai | L0 · Unharnessed | 31/105 (30%) | claude-code | Video game AI popularity #98 |
-| 3637 | [game-ai-killedbyapixel-littlejs-ai](https://github.com/KilledByAPixel/LittleJS-AI.git) | video-game-ai | L0 · Unharnessed | 32/105 (30%) | claude-code | Video game AI popularity #122 |
-| 3638 | [game-ai-ivanmurzak-unity-ai-probuilder](https://github.com/IvanMurzak/Unity-AI-ProBuilder.git) | video-game-ai | L0 · Unharnessed | 31/105 (30%) | claude-code | Video game AI popularity #154 |
-| 3639 | [game-ai-apmem-brainai](https://github.com/ApmeM/BrainAI.git) | video-game-ai | L0 · Unharnessed | 31/105 (30%) | — | Video game AI popularity #155 |
-| 3640 | [game-ai-ivanmurzak-unity-ai-particlesystem](https://github.com/IvanMurzak/Unity-AI-ParticleSystem.git) | video-game-ai | L0 · Unharnessed | 31/105 (30%) | claude-code | Video game AI popularity #157 |
-| 3641 | [game-ai-mpoapostolis-vxlverse](https://github.com/mpoapostolis/vxlverse.git) | video-game-ai | L0 · Unharnessed | 32/105 (30%) | — | Video game AI popularity #243 |
-| 3642 | [game-ai-frabcd-codex-ai-game-studio](https://github.com/frabcd/codex-ai-game-studio.git) | video-game-ai | L0 · Unharnessed | 32/108 (30%) | claude-code | Video game AI popularity #306 |
-| 3643 | [game-ai-jianzhnie-rlzero](https://github.com/jianzhnie/RLZero.git) | video-game-ai | L0 · Unharnessed | 32/105 (30%) | — | Video game AI popularity #307 |
-| 3644 | [game-ai-rudra496-worldsim-ai](https://github.com/rudra496/worldsim-ai.git) | video-game-ai | L0 · Unharnessed | 32/105 (30%) | — | Video game AI popularity #357 |
-| 3645 | [game-ai-rasca0027-mahjong4rl](https://github.com/rasca0027/Mahjong4RL.git) | video-game-ai | L0 · Unharnessed | 31/105 (30%) | — | Video game AI popularity #367 |
-| 3646 | [game-ai-crony-io-2d-assets-mcp](https://github.com/crony-io/2d-assets-mcp.git) | video-game-ai | L0 · Unharnessed | 31/105 (30%) | — | — |
-| 3647 | [macrozheng-mall](https://github.com/macrozheng/mall.git) | github-top-software | L0 · Unharnessed | 31/105 (30%) | — | GitHub software popularity #78 |
-| 3648 | [tensorflow-models](https://github.com/tensorflow/models.git) | github-top-software | L0 · Unharnessed | 31/105 (30%) | — | GitHub software popularity #94 |
-| 3649 | [appflowy-io-appflowy](https://github.com/AppFlowy-IO/AppFlowy.git) | github-top-software | L0 · Unharnessed | 31/105 (30%) | — | GitHub software popularity #96 |
-| 3650 | [juliangarnier-anime](https://github.com/juliangarnier/anime.git) | github-top-software | L0 · Unharnessed | 31/105 (30%) | — | GitHub software popularity #113 |
-| 3651 | [binary-husky-gpt-academic](https://github.com/binary-husky/gpt_academic.git) | github-top-software | L0 · Unharnessed | 31/105 (30%) | — | GitHub software popularity #120 |
-| 3652 | [xtekky-gpt4free](https://github.com/xtekky/gpt4free.git) | github-top-software | L0 · Unharnessed | 31/105 (30%) | — | GitHub software popularity #130 |
-| 3653 | [filosottile-mkcert](https://github.com/FiloSottile/mkcert.git) | github-top-software | L0 · Unharnessed | 32/105 (30%) | — | GitHub software popularity #183 |
-| 3654 | [ageitgey-face-recognition](https://github.com/ageitgey/face_recognition.git) | github-top-software | L0 · Unharnessed | 31/105 (30%) | — | GitHub software popularity #204 |
-| 3655 | [werwolv-imhex](https://github.com/WerWolv/ImHex.git) | github-top-software | L0 · Unharnessed | 32/105 (30%) | — | GitHub software popularity #216 |
-| 3656 | [team-spotube-spotube](https://github.com/team-spotube/spotube.git) | github-top-software | L0 · Unharnessed | 32/105 (30%) | — | GitHub software popularity #265 |
-| 3657 | [google-research-google-research](https://github.com/google-research/google-research.git) | github-top-software | L0 · Unharnessed | 32/105 (30%) | — | GitHub software popularity #448 |
-| 3658 | [freecodecampchina-freecodecamp-cn](https://github.com/FreeCodeCampChina/freecodecamp.cn.git) | github-top-software | L0 · Unharnessed | 32/105 (30%) | — | GitHub software popularity #475 |
-| 3659 | [anthropics-claude-plugins-official](https://github.com/anthropics/claude-plugins-official.git) | github-top-software | L0 · Unharnessed | 32/108 (30%) | claude-code | GitHub software popularity #482 |
-| 3660 | [permissionlesstech-bitchat](https://github.com/permissionlesstech/bitchat.git) | github-top-software | L0 · Unharnessed | 32/105 (30%) | — | GitHub software popularity #510 |
-| 3661 | [jqlang-jq](https://github.com/jqlang/jq.git) | github-top-software | L0 · Unharnessed | 32/105 (30%) | — | GitHub software popularity #534 |
-| 3662 | [predidit-kazumi](https://github.com/Predidit/Kazumi.git) | github-top-software | L0 · Unharnessed | 32/105 (30%) | — | GitHub software popularity #570 |
-| 3663 | [adobe-brackets](https://github.com/adobe/brackets.git) | github-top-software | L0 · Unharnessed | 32/105 (30%) | — | GitHub software popularity #633 |
-| 3664 | [airbnb-lottie-web](https://github.com/airbnb/lottie-web.git) | github-top-software | L0 · Unharnessed | 31/105 (30%) | — | GitHub software popularity #654 |
-| 3665 | [chanzhaoyu-chatgpt-web](https://github.com/Chanzhaoyu/chatgpt-web.git) | github-top-software | L0 · Unharnessed | 32/105 (30%) | — | GitHub software popularity #692 |
-| 3666 | [microsoft-calculator](https://github.com/microsoft/calculator.git) | github-top-software | L0 · Unharnessed | 31/105 (30%) | — | GitHub software popularity #706 |
-| 3667 | [xuxueli-xxl-job](https://github.com/xuxueli/xxl-job.git) | github-top-software | L0 · Unharnessed | 31/105 (30%) | — | GitHub software popularity #718 |
-| 3668 | [chinabugotech-hutool](https://github.com/chinabugotech/hutool.git) | github-top-software | L0 · Unharnessed | 31/105 (30%) | — | GitHub software popularity #729 |
-| 3669 | [encode-django-rest-framework](https://github.com/encode/django-rest-framework.git) | github-top-software | L0 · Unharnessed | 31/105 (30%) | — | GitHub software popularity #734 |
-| 3670 | [signalapp-signal-android](https://github.com/signalapp/Signal-Android.git) | github-top-software | L0 · Unharnessed | 32/105 (30%) | — | GitHub software popularity #772 |
-| 3671 | [google-python-fire](https://github.com/google/python-fire.git) | github-top-software | L0 · Unharnessed | 31/105 (30%) | — | GitHub software popularity #837 |
-| 3672 | [ungoogled-software-ungoogled-chromium](https://github.com/ungoogled-software/ungoogled-chromium.git) | github-top-software | L0 · Unharnessed | 32/105 (30%) | — | GitHub software popularity #856 |
-| 3673 | [squidfunk-mkdocs-material](https://github.com/squidfunk/mkdocs-material.git) | github-top-software | L0 · Unharnessed | 32/105 (30%) | — | GitHub software popularity #873 |
-| 3674 | [microsoft-vcpkg](https://github.com/microsoft/vcpkg.git) | github-top-software | L0 · Unharnessed | 32/105 (30%) | claude-code | GitHub software popularity #874 |
-| 3675 | [libuv-libuv](https://github.com/libuv/libuv.git) | github-top-software | L0 · Unharnessed | 32/105 (30%) | — | GitHub software popularity #890 |
-| 3676 | [robertdavidgraham-masscan](https://github.com/robertdavidgraham/masscan.git) | github-top-software | L0 · Unharnessed | 31/105 (30%) | — | GitHub software popularity #957 |
-| 3677 | [fmtlib-fmt](https://github.com/fmtlib/fmt.git) | github-top-software | L0 · Unharnessed | 32/105 (30%) | — | GitHub software popularity #973 |
-| 3678 | [systran-faster-whisper](https://github.com/SYSTRAN/faster-whisper.git) | github-top-software | L0 · Unharnessed | 32/105 (30%) | — | GitHub software popularity #978 |
-| 3679 | [qwenlm-qwen-agent](https://github.com/QwenLM/Qwen-Agent.git) | mcp-server-sdk | L0 · Unharnessed | 32/105 (30%) | — | Agent ecosystem popularity #8 |
-| 3680 | [joeanamier-xhs-downloader](https://github.com/JoeanAmier/XHS-Downloader.git) | mcp-server-sdk | L0 · Unharnessed | 31/105 (30%) | — | Agent ecosystem popularity #16 |
-| 3681 | [yizhiyanhua-ai-fireworks-tech-graph](https://github.com/yizhiyanhua-ai/fireworks-tech-graph.git) | multi-agent-orchestration | L0 · Unharnessed | 32/105 (30%) | — | Agent ecosystem popularity #5 |
-| 3682 | [miromindai-mirothinker](https://github.com/MiroMindAI/MiroThinker.git) | agent-memory-runtime | L0 · Unharnessed | 31/105 (30%) | — | Agent ecosystem popularity #4 |
-| 3683 | [forceinjection-ai-fundamentals](https://github.com/ForceInjection/AI-fundamentals.git) | agent-memory-runtime | L0 · Unharnessed | 31/105 (30%) | claude-code | Agent ecosystem popularity #24 |
-| 3684 | [trypromptly-llmstack](https://github.com/trypromptly/LLMStack.git) | multi-agent-orchestration | L0 · Unharnessed | 31/105 (30%) | — | Agent ecosystem popularity #42 |
-| 3685 | [guy-hartstein-company-research-agent](https://github.com/guy-hartstein/company-research-agent.git) | multi-agent-orchestration | L0 · Unharnessed | 31/105 (30%) | — | Agent ecosystem popularity #43 |
-| 3686 | [isekos-isek](https://github.com/isekOS/ISEK.git) | agent-to-agent-protocol | L0 · Unharnessed | 32/105 (30%) | — | Agent ecosystem popularity #24 |
-| 3687 | [google-agentic-commerce-a2a-x402](https://github.com/google-agentic-commerce/a2a-x402.git) | agent-to-agent-protocol | L0 · Unharnessed | 31/105 (30%) | — | Agent ecosystem popularity #25 |
-| 3688 | [coleam00-ralph-loop-quickstart](https://github.com/coleam00/ralph-loop-quickstart.git) | ralph-loop | L0 · Unharnessed | 32/105 (30%) | claude-code | Agent ecosystem popularity #25 |
-| 3689 | [sdtaylor-pyphenology](https://github.com/sdtaylor/pyPhenology.git) | data-ml-science | L0 · Unharnessed | 32/105 (30%) | — | — |
-| 3690 | [martinsos-edlib](https://github.com/Martinsos/edlib.git) | data-ml-science | L0 · Unharnessed | 32/105 (30%) | — | — |
-| 3691 | [fatiando-fatiando](https://github.com/fatiando/fatiando.git) | data-ml-science | L0 · Unharnessed | 31/105 (30%) | — | — |
-| 3692 | [noble-lab-carafe](https://github.com/Noble-Lab/Carafe.git) | data-ml-science | L0 · Unharnessed | 31/105 (30%) | — | — |
-| 3693 | [williamgilpin-pypdb](https://github.com/williamgilpin/pypdb.git) | data-ml-science | L0 · Unharnessed | 32/105 (30%) | — | — |
-| 3694 | [chenyangkang-stemflow](https://github.com/chenyangkang/stemflow.git) | data-ml-science | L0 · Unharnessed | 32/105 (30%) | — | — |
-| 3695 | [foleylab-moleculardynamics](https://github.com/FoleyLab/MolecularDynamics.git) | data-ml-science | L0 · Unharnessed | 32/105 (30%) | — | — |
-| 3696 | [sigma-py-accupy](https://github.com/sigma-py/accupy.git) | data-ml-science | L0 · Unharnessed | 31/105 (30%) | — | — |
-| 3697 | [dotnet-silk-net](https://github.com/dotnet/Silk.NET.git) | data-ml-science | L0 · Unharnessed | 31/105 (30%) | — | — |
-| 3698 | [bluescarni-heyoka-py](https://github.com/bluescarni/heyoka.py.git) | data-ml-science | L0 · Unharnessed | 32/105 (30%) | — | — |
-| 3699 | [sanger-pathogens-ariba](https://github.com/sanger-pathogens/ariba.git) | data-ml-science | L0 · Unharnessed | 32/105 (30%) | — | — |
-| 3700 | [bio-phys-mdbenchmark](https://github.com/bio-phys/MDBenchmark.git) | data-ml-science | L0 · Unharnessed | 31/105 (30%) | — | — |
-| 3701 | [mdshw5-pyfaidx](https://github.com/mdshw5/pyfaidx.git) | data-ml-science | L0 · Unharnessed | 31/105 (30%) | — | — |
-| 3702 | [deepchem-deepchem](https://github.com/deepchem/deepchem.git) | data-ml-science | L0 · Unharnessed | 32/105 (30%) | — | — |
-| 3703 | [openchemistry-avogadroapp](https://github.com/OpenChemistry/avogadroapp.git) | data-ml-science | L0 · Unharnessed | 32/105 (30%) | — | — |
-| 3704 | [alconley-spectrix](https://github.com/alconley/spectrix.git) | data-ml-science | L0 · Unharnessed | 32/105 (30%) | — | — |
-| 3705 | [sdss-marvin](https://github.com/sdss/marvin.git) | data-ml-science | L0 · Unharnessed | 31/105 (30%) | — | — |
-| 3706 | [open-science-tools-nd2reader](https://github.com/Open-Science-Tools/nd2reader.git) | data-ml-science | L0 · Unharnessed | 32/105 (30%) | — | — |
-| 3707 | [harirakul-chemlib](https://github.com/harirakul/chemlib.git) | data-ml-science | L0 · Unharnessed | 32/105 (30%) | — | — |
-| 3708 | [ri-imaging-nrefocus](https://github.com/RI-imaging/nrefocus.git) | data-ml-science | L0 · Unharnessed | 31/105 (30%) | — | — |
-| 3709 | [biodynamo-biodynamo](https://github.com/BioDynaMo/biodynamo.git) | data-ml-science | L0 · Unharnessed | 32/105 (30%) | — | — |
-| 3710 | [singularitti-spglib-jl](https://github.com/singularitti/Spglib.jl.git) | data-ml-science | L0 · Unharnessed | 32/105 (30%) | — | — |
-| 3711 | [tuw-geo-gldas](https://github.com/TUW-GEO/gldas.git) | data-ml-science | L0 · Unharnessed | 31/105 (30%) | — | — |
-| 3712 | [mgleeming-synthedia](https://github.com/mgleeming/synthedia.git) | data-ml-science | L0 · Unharnessed | 32/105 (30%) | — | — |
-| 3713 | [csyhuang-hn2016-falwa](https://github.com/csyhuang/hn2016_falwa.git) | data-ml-science | L0 · Unharnessed | 31/105 (30%) | — | — |
-| 3714 | [miguelcarcamov-gpuvmem](https://github.com/miguelcarcamov/gpuvmem.git) | data-ml-science | L0 · Unharnessed | 32/105 (30%) | — | — |
-| 3715 | [geoscienceaustralia-hiperseis](https://github.com/GeoscienceAustralia/hiperseis.git) | data-ml-science | L0 · Unharnessed | 31/105 (30%) | — | — |
-| 3716 | [iraf-community-pyraf](https://github.com/iraf-community/pyraf.git) | data-ml-science | L0 · Unharnessed | 31/105 (30%) | — | — |
-| 3717 | [geonextgis-geeagri](https://github.com/geonextgis/geeagri.git) | agriculture | L0 · Unharnessed | 31/105 (30%) | — | — |
-| 3718 | [open-agriculture-agisostack-rs](https://github.com/Open-Agriculture/AgIsoStack-rs.git) | agriculture | L0 · Unharnessed | 32/105 (30%) | — | — |
-| 3719 | [nasaharvest-togo-crop-mask](https://github.com/nasaharvest/togo-crop-mask.git) | agriculture | L0 · Unharnessed | 32/105 (30%) | — | — |
-| 3720 | [peter-evance-demo-efarm](https://github.com/peter-evance/demo-efarm.git) | agriculture | L0 · Unharnessed | 31/105 (30%) | — | — |
-| 3721 | [grovahome-grova-cube-firmware](https://github.com/grovahome/grova-cube-firmware.git) | agriculture | L0 · Unharnessed | 32/105 (30%) | — | — |
-| 3722 | [edilson-z-hydroponics-iot-app-cross-platfrom](https://github.com/edilson-z/hydroponics-iot-app-cross-platfrom.git) | agriculture | L0 · Unharnessed | 32/105 (30%) | — | — |
-| 3723 | [ljmerza-orbit-bhyve-ble](https://github.com/ljmerza/orbit-bhyve-ble.git) | agriculture | L0 · Unharnessed | 31/105 (30%) | — | — |
-| 3724 | [saswatsundar123-cropforge](https://github.com/saswatsundar123/CropForge.git) | agriculture | L0 · Unharnessed | 32/105 (30%) | — | — |
-| 3725 | [nexlogik-agrimarket](https://github.com/NexLogik/agrimarket.git) | agriculture | L0 · Unharnessed | 31/105 (30%) | — | — |
-| 3726 | [bismillahkrenova2026-smartsabinv2](https://github.com/bismillahKrenova2026/SmartSabinV2.git) | agriculture | L0 · Unharnessed | 31/105 (30%) | — | — |
-| 3727 | [opengreenery-opengreenery](https://github.com/OpenGreenery/OpenGreenery.git) | agriculture | L0 · Unharnessed | 32/105 (30%) | — | — |
-| 3728 | [suryan-s-precio](https://github.com/suryan-s/Precio.git) | agriculture | L0 · Unharnessed | 31/105 (30%) | — | — |
-| 3729 | [adametherzlab-irrigation-planner](https://github.com/AdametherzLab/irrigation-planner.git) | agriculture | L0 · Unharnessed | 31/105 (30%) | — | — |
-| 3730 | [csnyder256-grain-bids-to-excel](https://github.com/csnyder256/grain-bids-to-excel.git) | agriculture | L0 · Unharnessed | 32/105 (30%) | — | — |
-| 3731 | [adametherzlab-fertigation-mix](https://github.com/AdametherzLab/fertigation-mix.git) | agriculture | L0 · Unharnessed | 31/105 (30%) | — | — |
-| 3732 | [diiibe-mlops-smartharvest](https://github.com/diiibe/MLOPS-SmartHarvest.git) | agriculture | L0 · Unharnessed | 32/105 (30%) | — | — |
-| 3733 | [dev-infra-ogham-exa](https://github.com/ogham/exa.git) | developer-tools | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #7 |
-| 3734 | [dev-infra-yudai-gotty](https://github.com/yudai/gotty.git) | developer-tools | L0 · Unharnessed | 31/105 (30%) | — | Developer infrastructure popularity #28 |
-| 3735 | [dev-infra-sonarsource-sonarqube](https://github.com/SonarSource/sonarqube.git) | code-quality | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #99 |
-| 3736 | [dev-infra-oceanbase-oceanbase](https://github.com/oceanbase/oceanbase.git) | database-data-platforms | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #109 |
-| 3737 | [dev-infra-platformio-platformio-core](https://github.com/platformio/platformio-core.git) | software-delivery-testing-build | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #122 |
-| 3738 | [dev-infra-apache-couchdb](https://github.com/apache/couchdb.git) | database-data-platforms | L0 · Unharnessed | 31/105 (30%) | — | Developer infrastructure popularity #178 |
-| 3739 | [dev-infra-clearml-clearml](https://github.com/clearml/clearml.git) | software-delivery-testing-build | L0 · Unharnessed | 31/105 (30%) | — | Developer infrastructure popularity #181 |
-| 3740 | [dev-infra-ogham-dog](https://github.com/ogham/dog.git) | developer-tools | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #190 |
-| 3741 | [dev-infra-hibernate-hibernate-orm](https://github.com/hibernate/hibernate-orm.git) | database-data-platforms | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #197 |
-| 3742 | [dev-infra-globalizejs-globalize](https://github.com/globalizejs/globalize.git) | code-quality | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #245 |
-| 3743 | [dev-infra-nuke-build-nuke](https://github.com/nuke-build/nuke.git) | software-delivery-testing-build | L0 · Unharnessed | 31/105 (30%) | — | Developer infrastructure popularity #287 |
-| 3744 | [dev-infra-coala-coala](https://github.com/coala/coala.git) | code-quality | L0 · Unharnessed | 31/105 (30%) | — | Developer infrastructure popularity #298 |
-| 3745 | [dev-infra-disposaboy-gosublime](https://github.com/DisposaBoy/GoSublime.git) | developer-tools | L0 · Unharnessed | 31/105 (30%) | — | Developer infrastructure popularity #308 |
-| 3746 | [dev-infra-tcgoetz-garmindb](https://github.com/tcgoetz/GarminDB.git) | database-data-platforms | L0 · Unharnessed | 31/105 (30%) | — | Developer infrastructure popularity #312 |
-| 3747 | [dev-infra-tencent-tendis](https://github.com/Tencent/Tendis.git) | database-data-platforms | L0 · Unharnessed | 31/105 (30%) | — | Developer infrastructure popularity #324 |
-| 3748 | [dev-infra-beefytech-beef](https://github.com/beefytech/Beef.git) | developer-tools | L0 · Unharnessed | 31/105 (30%) | claude-code | Developer infrastructure popularity #351 |
-| 3749 | [dev-infra-linux-test-project-ltp](https://github.com/linux-test-project/ltp.git) | software-delivery-testing-build | L0 · Unharnessed | 31/105 (30%) | — | Developer infrastructure popularity #370 |
-| 3750 | [dev-infra-griddb-griddb](https://github.com/griddb/griddb.git) | database-data-platforms | L0 · Unharnessed | 31/105 (30%) | — | Developer infrastructure popularity #379 |
-| 3751 | [dev-infra-jeffknupp-sandman2](https://github.com/jeffknupp/sandman2.git) | database-data-platforms | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #420 |
-| 3752 | [dev-infra-eveningkid-denodb](https://github.com/eveningkid/denodb.git) | database-data-platforms | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #432 |
-| 3753 | [dev-infra-flowci-flow-core-x](https://github.com/FlowCI/flow-core-x.git) | software-delivery-testing-build | L0 · Unharnessed | 31/105 (30%) | — | Developer infrastructure popularity #484 |
-| 3754 | [dev-infra-fullstackproltd-aspnetcorespa](https://github.com/fullstackproltd/AspNetCoreSpa.git) | software-delivery-testing-build | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #497 |
-| 3755 | [dev-infra-alexmojaki-snoop](https://github.com/alexmojaki/snoop.git) | developer-tools | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #521 |
-| 3756 | [dev-infra-boost-ext-ut](https://github.com/boost-ext/ut.git) | software-delivery-testing-build | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #526 |
-| 3757 | [dev-infra-kamadorueda-alejandra](https://github.com/kamadorueda/alejandra.git) | code-quality | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #536 |
-| 3758 | [dev-infra-distributedio-titan](https://github.com/distributedio/titan.git) | database-data-platforms | L0 · Unharnessed | 31/105 (30%) | — | Developer infrastructure popularity #537 |
-| 3759 | [dev-infra-harisekhon-dockerfiles](https://github.com/HariSekhon/Dockerfiles.git) | software-delivery-testing-build | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #540 |
-| 3760 | [dev-infra-swiftlang-swift-llbuild](https://github.com/swiftlang/swift-llbuild.git) | software-delivery-testing-build | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #557 |
-| 3761 | [dev-infra-spatie-laravel-db-snapshots](https://github.com/spatie/laravel-db-snapshots.git) | database-data-platforms | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #578 |
-| 3762 | [dev-infra-fortran-lang-fpm](https://github.com/fortran-lang/fpm.git) | software-delivery-testing-build | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #622 |
-| 3763 | [dev-infra-redistimeseries-redistimeseries](https://github.com/RedisTimeSeries/RedisTimeSeries.git) | database-data-platforms | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #627 |
-| 3764 | [dev-infra-duaraghav8-ethlint](https://github.com/duaraghav8/Ethlint.git) | code-quality | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #652 |
-| 3765 | [dev-infra-hyrise-hyrise](https://github.com/hyrise/hyrise.git) | database-data-platforms | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #670 |
-| 3766 | [dev-infra-koihik-luaformatter](https://github.com/Koihik/LuaFormatter.git) | code-quality | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #684 |
-| 3767 | [dev-infra-pep8speaks-org-pep8speaks](https://github.com/pep8speaks-org/pep8speaks.git) | code-quality | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #715 |
-| 3768 | [dev-infra-dalance-svlint](https://github.com/dalance/svlint.git) | code-quality | L0 · Unharnessed | 31/105 (30%) | — | Developer infrastructure popularity #752 |
-| 3769 | [dev-infra-voided-org-deepkit-ml](https://github.com/voided-org/deepkit-ml.git) | developer-tools | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #755 |
-| 3770 | [dev-infra-fsprojects-fsharplint](https://github.com/fsprojects/FSharpLint.git) | code-quality | L0 · Unharnessed | 32/108 (30%) | claude-code | Developer infrastructure popularity #762 |
-| 3771 | [dev-infra-lerianstudio-ring](https://github.com/LerianStudio/ring.git) | code-quality | L0 · Unharnessed | 32/105 (30%) | claude-code | Developer infrastructure popularity #797 |
+| 3271 | [dev-infra-lerianstudio-ring](https://github.com/LerianStudio/ring.git) | code-quality | L1 · Documented | 35/105 (33%) | claude-code | Developer infrastructure popularity #797 |
+| 3272 | [geospatial-pelicanmapping-osgearth](https://github.com/pelicanmapping/osgearth.git) | geospatial | L1 · Documented | 35/105 (33%) | — | — |
+| 3273 | [geospatial-liodali-osm-flutter](https://github.com/liodali/osm_flutter.git) | geospatial | L1 · Documented | 35/105 (33%) | — | — |
+| 3274 | [geospatial-pelicanmapping-rocky](https://github.com/pelicanmapping/rocky.git) | geospatial | L1 · Documented | 35/105 (33%) | — | — |
+| 3275 | [crawl4ai](https://github.com/unclecode/crawl4ai.git) | ai-model-inference | L0 · Unharnessed | 35/105 (33%) | claude-code | — |
+| 3276 | [kong](https://github.com/Kong/kong.git) | ai-applications | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3277 | [pageindex](https://github.com/VectifyAI/PageIndex.git) | ai-model-inference | L0 · Unharnessed | 35/105 (33%) | claude-code | — |
+| 3278 | [open-generative-ai](https://github.com/Anil-matcha/Open-Generative-AI.git) | ai-vision-media | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3279 | [fluidvoice](https://github.com/altic-dev/FluidVoice.git) | ai-model-inference | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3280 | [promptflow](https://github.com/microsoft/promptflow.git) | ai-model-inference | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3281 | [deeplake](https://github.com/activeloopai/deeplake.git) | ai-model-inference | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3282 | [anus](https://github.com/anus-dev/ANUS.git) | ai-coding-tools | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3283 | [openclawchinesetranslation](https://github.com/1186258278/OpenClawChineseTranslation.git) | ai-agent-frameworks | L0 · Unharnessed | 35/105 (33%) | claude-code | — |
+| 3284 | [game-ai-jackbekket-hellper](https://github.com/JackBekket/Hellper.git) | video-game-ai | L0 · Unharnessed | 35/105 (33%) | — | Video game AI popularity #272 |
+| 3285 | [game-ai-tooichitake-gymnasium-mario](https://github.com/tooichitake/gymnasium-mario.git) | video-game-ai | L0 · Unharnessed | 35/105 (33%) | — | Video game AI popularity #338 |
+| 3286 | [game-ai-fulviuus-defold-mcp](https://github.com/Fulviuus/defold-mcp.git) | video-game-ai | L0 · Unharnessed | 35/105 (33%) | — | Video game AI popularity #399 |
+| 3287 | [game-ai-ttinies-sc2gamelobby](https://github.com/ttinies/sc2gameLobby.git) | video-game-ai | L0 · Unharnessed | 35/105 (33%) | — | Video game AI popularity #415 |
+| 3288 | [game-ai-sanjaysah101-retroai-quest](https://github.com/sanjaysah101/RetroAI-Quest.git) | video-game-ai | L0 · Unharnessed | 35/105 (33%) | — | Video game AI popularity #469 |
+| 3289 | [microsoft-markitdown](https://github.com/microsoft/markitdown.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #9 |
+| 3290 | [ytdl-org-youtube-dl](https://github.com/ytdl-org/youtube-dl.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #22 |
+| 3291 | [nanmicoder-mediacrawler](https://github.com/NanmiCoder/MediaCrawler.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #132 |
+| 3292 | [lodash-lodash](https://github.com/lodash/lodash.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #168 |
+| 3293 | [atom-atom](https://github.com/atom/atom.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #174 |
+| 3294 | [foundationagents-openmanus](https://github.com/FoundationAgents/OpenManus.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #190 |
+| 3295 | [soimort-you-get](https://github.com/soimort/you-get.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #203 |
+| 3296 | [google-guava](https://github.com/google/guava.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #242 |
+| 3297 | [yuan1z0825-nature-skills](https://github.com/Yuan1z0825/nature-skills.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #297 |
+| 3298 | [httpie-cli](https://github.com/httpie/cli.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #453 |
+| 3299 | [pdfmathtranslate-pdfmathtranslate](https://github.com/PDFMathTranslate/PDFMathTranslate.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #485 |
+| 3300 | [typicode-husky](https://github.com/typicode/husky.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #541 |
+| 3301 | [maboloshi-github-chinese](https://github.com/maboloshi/github-chinese.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #547 |
+| 3302 | [xkcoding-spring-boot-demo](https://github.com/xkcoding/spring-boot-demo.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #586 |
+| 3303 | [vscodium-vscodium](https://github.com/VSCodium/vscodium.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #605 |
+| 3304 | [fincept-corporation-finceptterminal](https://github.com/Fincept-Corporation/FinceptTerminal.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #647 |
+| 3305 | [oai-openapi-specification](https://github.com/OAI/OpenAPI-Specification.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #697 |
+| 3306 | [sortablejs-sortable](https://github.com/SortableJS/Sortable.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #698 |
+| 3307 | [openssl-openssl](https://github.com/openssl/openssl.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #710 |
+| 3308 | [foundation-yeti](https://github.com/foundation/yeti.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #753 |
+| 3309 | [alibaba-spring-cloud-alibaba](https://github.com/alibaba/spring-cloud-alibaba.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #786 |
+| 3310 | [ymfe-yapi](https://github.com/YMFE/yapi.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #862 |
+| 3311 | [nawfalmotii79-plfm-radar](https://github.com/NawfalMotii79/PLFM_RADAR.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #909 |
+| 3312 | [openfaas-faas](https://github.com/openfaas/faas.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #944 |
+| 3313 | [select2-select2](https://github.com/select2/select2.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #970 |
+| 3314 | [cinnamon-kotaemon](https://github.com/Cinnamon/kotaemon.git) | github-top-software | L0 · Unharnessed | 35/105 (33%) | — | GitHub software popularity #979 |
+| 3315 | [ageerle-ruoyi-ai](https://github.com/ageerle/ruoyi-ai.git) | mcp-server-sdk | L0 · Unharnessed | 35/105 (33%) | — | Agent ecosystem popularity #74 |
+| 3316 | [zhkl0228-unidbg](https://github.com/zhkl0228/unidbg.git) | mcp-server-sdk | L0 · Unharnessed | 35/105 (33%) | — | Agent ecosystem popularity #90 |
+| 3317 | [seemseam-claude-codex-bridge](https://github.com/SeemSeam/claude_codex_bridge.git) | multi-agent-orchestration | L0 · Unharnessed | 35/105 (33%) | — | Agent ecosystem popularity #24 |
+| 3318 | [firecrawl-open-agent-builder](https://github.com/firecrawl/open-agent-builder.git) | multi-agent-orchestration | L0 · Unharnessed | 35/105 (33%) | — | Agent ecosystem popularity #32 |
+| 3319 | [gao-lab-slat](https://github.com/gao-lab/SLAT.git) | data-ml-science | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3320 | [nel-lab-mesmerize-core](https://github.com/nel-lab/mesmerize-core.git) | data-ml-science | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3321 | [bioio-devs-bioio-ome-zarr](https://github.com/bioio-devs/bioio-ome-zarr.git) | data-ml-science | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3322 | [lopezgroup-iciq-care](https://github.com/LopezGroup-ICIQ/care.git) | data-ml-science | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3323 | [mlin-genomicsqlite](https://github.com/mlin/GenomicSQLite.git) | data-ml-science | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3324 | [kcieslik-eq-insar](https://github.com/kcieslik/eq-insar.git) | data-ml-science | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3325 | [simon-sat-pycoxmunk](https://github.com/simon-sat/PyCoxMunk.git) | data-ml-science | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3326 | [ncfrey-pytopomat](https://github.com/ncfrey/pytopomat.git) | data-ml-science | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3327 | [gboeing-pynamical](https://github.com/gboeing/pynamical.git) | data-ml-science | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3328 | [aiconslab-miracl](https://github.com/AICONSlab/MIRACL.git) | data-ml-science | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3329 | [jobovy-wendy](https://github.com/jobovy/wendy.git) | data-ml-science | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3330 | [cnes-lenapy](https://github.com/CNES/lenapy.git) | data-ml-science | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3331 | [40rbidd3n-hydro0x01](https://github.com/40rbidd3n/Hydro0x01.git) | agriculture | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3332 | [rgc99-irrigation-unlimited](https://github.com/rgc99/irrigation_unlimited.git) | agriculture | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3333 | [mysticrenji-home-assistant-on-kubernetes](https://github.com/mysticrenji/home-assistant-on-kubernetes.git) | agriculture | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3334 | [mhdb96-chernozem](https://github.com/mhdb96/Chernozem.git) | agriculture | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3335 | [bovheat-bovheat](https://github.com/bovheat/bovheat.git) | agriculture | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3336 | [wur-abe-rl-drone-object-search](https://github.com/WUR-ABE/rl_drone_object_search.git) | agriculture | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3337 | [dreamer41-ha-smart-irrigation](https://github.com/Dreamer41/ha-smart-irrigation.git) | agriculture | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3338 | [lawpaul-ha-solar-shade](https://github.com/LawPaul/HA_Solar_Shade.git) | agriculture | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3339 | [ankit-sengupta05-smart-agriculture-assistant](https://github.com/ankit-sengupta05/Smart-Agriculture-Assistant.git) | agriculture | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3340 | [xiaomiju-x-rootscope-adventurex2026](https://github.com/Xiaomiju-x/RootScope-AdventureX2026.git) | agriculture | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3341 | [dev-infra-avajs-ava](https://github.com/avajs/ava.git) | developer-tools | L0 · Unharnessed | 35/105 (33%) | — | Developer infrastructure popularity #24 |
+| 3342 | [dev-infra-bats-core-bats-core](https://github.com/bats-core/bats-core.git) | software-delivery-testing-build | L0 · Unharnessed | 35/105 (33%) | — | Developer infrastructure popularity #201 |
+| 3343 | [dev-infra-pycqa-flake8](https://github.com/PyCQA/flake8.git) | code-quality | L0 · Unharnessed | 35/105 (33%) | — | Developer infrastructure popularity #284 |
+| 3344 | [dev-infra-speedment-speedment](https://github.com/speedment/speedment.git) | database-data-platforms | L0 · Unharnessed | 35/105 (33%) | — | Developer infrastructure popularity #409 |
+| 3345 | [dev-infra-reviewboard-reviewboard](https://github.com/reviewboard/reviewboard.git) | code-quality | L0 · Unharnessed | 35/105 (33%) | — | Developer infrastructure popularity #471 |
+| 3346 | [dev-infra-securitybunker-databunker](https://github.com/securitybunker/databunker.git) | database-data-platforms | L0 · Unharnessed | 35/105 (33%) | — | Developer infrastructure popularity #505 |
+| 3347 | [dev-infra-datalevin-datalevin](https://github.com/datalevin/datalevin.git) | database-data-platforms | L0 · Unharnessed | 35/105 (33%) | — | Developer infrastructure popularity #512 |
+| 3348 | [dev-infra-pixielabs-cavy](https://github.com/pixielabs/cavy.git) | software-delivery-testing-build | L0 · Unharnessed | 35/105 (33%) | — | Developer infrastructure popularity #544 |
+| 3349 | [dev-infra-deepfence-yarahunter](https://github.com/deepfence/YaraHunter.git) | software-delivery-testing-build | L0 · Unharnessed | 35/105 (33%) | — | Developer infrastructure popularity #552 |
+| 3350 | [dev-infra-spatie-laravel-schemaless-attributes](https://github.com/spatie/laravel-schemaless-attributes.git) | database-data-platforms | L0 · Unharnessed | 35/105 (33%) | — | Developer infrastructure popularity #619 |
+| 3351 | [dev-infra-patrikx3-redis-ui](https://github.com/patrikx3/redis-ui.git) | database-data-platforms | L0 · Unharnessed | 35/105 (33%) | — | Developer infrastructure popularity #685 |
+| 3352 | [dev-infra-wemake-services-flake8-eradicate](https://github.com/wemake-services/flake8-eradicate.git) | code-quality | L0 · Unharnessed | 35/105 (33%) | — | Developer infrastructure popularity #768 |
+| 3353 | [geospatial-w3reality-three-geo](https://github.com/w3reality/three-geo.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3354 | [geospatial-opengisch-qfield](https://github.com/opengisch/QField.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3355 | [geospatial-opengeos-geospatial](https://github.com/opengeos/geospatial.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3356 | [geospatial-bugra9-gdal3-js](https://github.com/bugra9/gdal3.js.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3357 | [geospatial-merginmaps-mobile](https://github.com/MerginMaps/mobile.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3358 | [geospatial-qgis-qwc2](https://github.com/qgis/qwc2.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3359 | [geospatial-opengeos-qgis-gee-data-catalogs-plugin](https://github.com/opengeos/qgis-gee-data-catalogs-plugin.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3360 | [geospatial-larswiegers-laravel-maps](https://github.com/LarsWiegers/laravel-maps.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3361 | [geospatial-allenhwkim-react-openlayers](https://github.com/allenhwkim/react-openlayers.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3362 | [geospatial-biasvariancelabs-aitlas](https://github.com/biasvariancelabs/aitlas.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3363 | [geospatial-locationtech-proj4j](https://github.com/locationtech/proj4j.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3364 | [geospatial-clarisma-geodesk](https://github.com/clarisma/geodesk.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3365 | [geospatial-opengeos-qgis-samgeo-plugin](https://github.com/opengeos/qgis-samgeo-plugin.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3366 | [geospatial-omanges-turfpy](https://github.com/omanges/turfpy.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3367 | [geospatial-googlecloudplatform-bigquery-geo-viz](https://github.com/GoogleCloudPlatform/bigquery-geo-viz.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3368 | [geospatial-rlxai-rbot](https://github.com/rlxai/rbot.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3369 | [geospatial-opengeos-qgis-notebook-plugin](https://github.com/opengeos/qgis-notebook-plugin.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3370 | [geospatial-koopjs-featureserver](https://github.com/koopjs/FeatureServer.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3371 | [geospatial-ingelibre-ingecad](https://github.com/ingelibre/ingecad.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3372 | [geospatial-opengeos-qgis-nasa-earthdata-plugin](https://github.com/opengeos/qgis-nasa-earthdata-plugin.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3373 | [geospatial-urbica-tessella](https://github.com/urbica/tessella.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3374 | [geospatial-sijie-yang-urbancode](https://github.com/Sijie-Yang/UrbanCode.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3375 | [geospatial-ni1o1-pybdshadow](https://github.com/ni1o1/pybdshadow.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3376 | [geospatial-xavb64-lowtrip](https://github.com/XavB64/lowtrip.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3377 | [geospatial-maplibre-maplibre-gl-inspect](https://github.com/maplibre/maplibre-gl-inspect.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3378 | [geospatial-w8r-wms-capabilities](https://github.com/w8r/wms-capabilities.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3379 | [geospatial-ronitgupta138-bharat-spatial-engine](https://github.com/ronitgupta138/bharat-spatial-engine.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3380 | [geospatial-opengeos-qgis-terminal-plugin](https://github.com/opengeos/qgis-terminal-plugin.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3381 | [geospatial-oneofftech-geoserver-client-php](https://github.com/OneOffTech/geoserver-client-php.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3382 | [geospatial-cneben-react-maplibre-standalone](https://github.com/cneben/react-maplibre-standalone.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3383 | [geospatial-imrz-twtk-interactive-map](https://github.com/IMRZ/twtk-interactive-map.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3384 | [geospatial-opengeos-qgis-geemap-plugin](https://github.com/opengeos/qgis-geemap-plugin.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3385 | [geospatial-openstates-openstates-geo](https://github.com/openstates/openstates-geo.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3386 | [geospatial-opengeos-qgis-leafmap-plugin](https://github.com/opengeos/qgis-leafmap-plugin.git) | geospatial | L0 · Unharnessed | 35/105 (33%) | — | — |
+| 3387 | [game-ai-ivanmurzak-unity-ai-cinemachine](https://github.com/IvanMurzak/Unity-AI-Cinemachine.git) | video-game-ai | L1 · Documented | 34/105 (32%) | claude-code | Video game AI popularity #365 |
+| 3388 | [octane0411-open-vibe-island](https://github.com/Octane0411/open-vibe-island.git) | coding-agent-harness | L1 · Documented | 34/105 (32%) | claude-code | Agent ecosystem popularity #90 |
+| 3389 | [ai-ide-workersio-skills-1157564896](https://github.com/workersio/skills.git) | ai-coding-assistant-adoption | L1 · Documented | 34/105 (32%) | claude-code | AI coding-assistant adoption popularity #26 |
+| 3390 | [ai-ide-microsoft-mcp-dotnet-samples-966419612](https://github.com/microsoft/mcp-dotnet-samples.git) | ai-coding-assistant-adoption | L1 · Documented | 34/105 (32%) | — | AI coding-assistant adoption popularity #27 |
+| 3391 | [ai-ide-k1xe-interviewforge-1239685182](https://github.com/K1XE/InterviewForge.git) | ai-coding-assistant-adoption | L1 · Documented | 34/105 (32%) | antigravity, claude-code | AI coding-assistant adoption popularity #64 |
+| 3392 | [ai-ide-ekollof-meshtui-1078838458](https://github.com/ekollof/meshtui.git) | ai-coding-assistant-adoption | L1 · Documented | 34/105 (32%) | claude-code | AI coding-assistant adoption popularity #91 |
+| 3393 | [ai-ide-sebastianaigner-reelchest-441682344](https://github.com/SebastianAigner/reelchest.git) | ai-coding-assistant-adoption | L1 · Documented | 34/105 (32%) | — | AI coding-assistant adoption popularity #149 |
+| 3394 | [ai-ide-jedipi-quick-stocktaker-333262843](https://github.com/jedipi/Quick-Stocktaker.git) | ai-coding-assistant-adoption | L1 · Documented | 34/105 (32%) | — | AI coding-assistant adoption popularity #160 |
+| 3395 | [ai-ide-elhabashylab-3dclans-988903214](https://github.com/ElhabashyLab/3DClans.git) | ai-coding-assistant-adoption | L1 · Documented | 34/105 (32%) | — | AI coding-assistant adoption popularity #302 |
+| 3396 | [ai-ide-oyanibtech-iii-growfico-official-webapp-1171229591](https://github.com/OyanibTech-iii/Growfico-Official-webapp.git) | ai-coding-assistant-adoption | L1 · Documented | 33/103 (32%) | antigravity | AI coding-assistant adoption popularity #317 |
+| 3397 | [ai-ide-jagadish-k-video-gif-creator-1068635093](https://github.com/jagadish-k/video-gif-creator.git) | ai-coding-assistant-adoption | L1 · Documented | 34/105 (32%) | claude-code | AI coding-assistant adoption popularity #349 |
+| 3398 | [ai-ide-mikeydotio-lillist-1236962486](https://github.com/mikeydotio/lillist.git) | ai-coding-assistant-adoption | L1 · Documented | 34/105 (32%) | claude-code | AI coding-assistant adoption popularity #359 |
+| 3399 | [ai-ide-kodicw-nixspirit-1215340672](https://github.com/kodicw/nixspirit.git) | ai-coding-assistant-adoption | L1 · Documented | 34/105 (32%) | antigravity | AI coding-assistant adoption (seeded zero-star sample) |
+| 3400 | [ai-ide-marianaboroni-tissueresolve-1254465462](https://github.com/marianaboroni/TissueResolve.git) | ai-coding-assistant-adoption | L1 · Documented | 34/105 (32%) | claude-code | AI coding-assistant adoption (seeded zero-star sample) |
+| 3401 | [geospatial-hajkmap-hajk](https://github.com/hajkmap/Hajk.git) | geospatial | L1 · Documented | 34/105 (32%) | — | — |
+| 3402 | [geospatial-outdooractive-gis-tools](https://github.com/Outdooractive/gis-tools.git) | geospatial | L1 · Documented | 34/105 (32%) | — | — |
+| 3403 | [geospatial-outdooractive-mvt-tools](https://github.com/Outdooractive/mvt-tools.git) | geospatial | L1 · Documented | 34/105 (32%) | — | — |
+| 3404 | [dia](https://github.com/nari-labs/dia.git) | ai-model-inference | L0 · Unharnessed | 34/105 (32%) | — | — |
+| 3405 | [crucix](https://github.com/calesthio/Crucix.git) | ai-agent-frameworks | L0 · Unharnessed | 34/105 (32%) | — | — |
+| 3406 | [horizon](https://github.com/Thysrael/Horizon.git) | ai-model-inference | L0 · Unharnessed | 34/105 (32%) | — | — |
+| 3407 | [tree-of-thoughts](https://github.com/kyegomez/tree-of-thoughts.git) | ai-model-inference | L0 · Unharnessed | 34/105 (32%) | — | — |
+| 3408 | [game-ai-r1n7aro-locus](https://github.com/r1n7aro/Locus.git) | video-game-ai | L0 · Unharnessed | 34/105 (32%) | — | Video game AI popularity #26 |
+| 3409 | [game-ai-tomyud1-godot-mcp](https://github.com/tomyud1/godot-mcp.git) | video-game-ai | L0 · Unharnessed | 34/105 (32%) | — | Video game AI popularity #41 |
+| 3410 | [game-ai-beckettlab-beckett-godot-mcp](https://github.com/beckettlab/beckett-godot-mcp.git) | video-game-ai | L0 · Unharnessed | 35/108 (32%) | claude-code | Video game AI popularity #189 |
+| 3411 | [game-ai-scrdest-cranium](https://github.com/scrdest/Cranium.git) | video-game-ai | L0 · Unharnessed | 34/105 (32%) | — | Video game AI popularity #245 |
+| 3412 | [game-ai-qimidandapigu-dsh-xiaotangyuan-game](https://github.com/qimidandapigu/dsh-xiaotangyuan-game.git) | video-game-ai | L0 · Unharnessed | 34/105 (32%) | — | Video game AI popularity #437 |
+| 3413 | [game-ai-aivrar-ai-character-engine](https://github.com/aivrar/ai-character-engine.git) | video-game-ai | L0 · Unharnessed | 34/105 (32%) | — | Video game AI popularity #477 |
+| 3414 | [genymobile-scrcpy](https://github.com/Genymobile/scrcpy.git) | github-top-software | L0 · Unharnessed | 34/105 (32%) | — | GitHub software popularity #17 |
+| 3415 | [2dust-v2rayn](https://github.com/2dust/v2rayN.git) | github-top-software | L0 · Unharnessed | 34/105 (32%) | — | GitHub software popularity #34 |
+| 3416 | [opencv-opencv](https://github.com/opencv/opencv.git) | github-top-software | L0 · Unharnessed | 34/105 (32%) | — | GitHub software popularity #64 |
+| 3417 | [nolimits4web-swiper](https://github.com/nolimits4web/swiper.git) | github-top-software | L0 · Unharnessed | 34/105 (32%) | — | GitHub software popularity #370 |
+| 3418 | [facebookresearch-faiss](https://github.com/facebookresearch/faiss.git) | github-top-software | L0 · Unharnessed | 34/105 (32%) | — | GitHub software popularity #383 |
+| 3419 | [teamnewpipe-newpipe](https://github.com/TeamNewPipe/NewPipe.git) | github-top-software | L0 · Unharnessed | 34/105 (32%) | — | GitHub software popularity #417 |
+| 3420 | [tencentarc-gfpgan](https://github.com/TencentARC/GFPGAN.git) | github-top-software | L0 · Unharnessed | 34/105 (32%) | — | GitHub software popularity #480 |
+| 3421 | [xinntao-real-esrgan](https://github.com/xinntao/Real-ESRGAN.git) | github-top-software | L0 · Unharnessed | 34/105 (32%) | — | GitHub software popularity #503 |
+| 3422 | [facebookresearch-detectron2](https://github.com/facebookresearch/detectron2.git) | github-top-software | L0 · Unharnessed | 34/105 (32%) | — | GitHub software popularity #555 |
+| 3423 | [dokku-dokku](https://github.com/dokku/dokku.git) | github-top-software | L0 · Unharnessed | 34/105 (32%) | — | GitHub software popularity #657 |
+| 3424 | [devtoys-app-devtoys](https://github.com/DevToys-app/DevToys.git) | github-top-software | L0 · Unharnessed | 34/105 (32%) | — | GitHub software popularity #661 |
+| 3425 | [xiaojieonly-ehviewer-cn-sxj](https://github.com/xiaojieonly/Ehviewer_CN_SXJ.git) | github-top-software | L0 · Unharnessed | 34/105 (32%) | — | GitHub software popularity #867 |
+| 3426 | [beyonddimension-steamtools](https://github.com/BeyondDimension/SteamTools.git) | github-top-software | L0 · Unharnessed | 34/105 (32%) | — | GitHub software popularity #896 |
+| 3427 | [cmderdev-cmder](https://github.com/cmderdev/cmder.git) | github-top-software | L0 · Unharnessed | 34/105 (32%) | — | GitHub software popularity #902 |
+| 3428 | [a2aproject-a2a](https://github.com/a2aproject/A2A.git) | github-top-software | L0 · Unharnessed | 34/105 (32%) | — | GitHub software popularity #953 |
+| 3429 | [thealgorithms-rust](https://github.com/TheAlgorithms/Rust.git) | github-top-software | L0 · Unharnessed | 34/105 (32%) | — | GitHub software popularity #956 |
+| 3430 | [xiaoduoya-codex-with-chatgpt](https://github.com/XiaoDuoYa/codex-with-chatgpt.git) | mcp-server-sdk | L0 · Unharnessed | 34/105 (32%) | — | Agent ecosystem popularity #49 |
+| 3431 | [jetbrains-go-modern-guidelines](https://github.com/JetBrains/go-modern-guidelines.git) | coding-agent-harness | L0 · Unharnessed | 34/105 (32%) | — | Agent ecosystem popularity #42 |
+| 3432 | [analysiscenter-pydens](https://github.com/analysiscenter/pydens.git) | data-ml-science | L0 · Unharnessed | 34/105 (32%) | — | — |
+| 3433 | [pjazdzyk-hvac-engine](https://github.com/pjazdzyk/hvac-engine.git) | data-ml-science | L0 · Unharnessed | 34/105 (32%) | — | — |
+| 3434 | [shenwei356-seqkit](https://github.com/shenwei356/seqkit.git) | data-ml-science | L0 · Unharnessed | 34/105 (32%) | — | — |
+| 3435 | [brentp-goleft](https://github.com/brentp/goleft.git) | data-ml-science | L0 · Unharnessed | 34/105 (32%) | — | — |
+| 3436 | [jguhlin-minimap2-rs](https://github.com/jguhlin/minimap2-rs.git) | data-ml-science | L0 · Unharnessed | 34/105 (32%) | — | — |
+| 3437 | [aazuspan-wxee](https://github.com/aazuspan/wxee.git) | data-ml-science | L0 · Unharnessed | 34/105 (32%) | — | — |
+| 3438 | [pypr-pysph](https://github.com/pypr/pysph.git) | data-ml-science | L0 · Unharnessed | 34/105 (32%) | — | — |
+| 3439 | [farmos-farmos](https://github.com/farmOS/farmOS.git) | agriculture | L0 · Unharnessed | 34/105 (32%) | — | — |
+| 3440 | [farmos-farmos-map](https://github.com/farmOS/farmOS-map.git) | agriculture | L0 · Unharnessed | 34/105 (32%) | — | — |
+| 3441 | [daraan-cropandweeddetection](https://github.com/Daraan/CropAndWeedDetection.git) | agriculture | L0 · Unharnessed | 34/105 (32%) | — | — |
+| 3442 | [vacovsky-pirrigo](https://github.com/vacovsky/pirrigo.git) | agriculture | L0 · Unharnessed | 34/105 (32%) | — | — |
+| 3443 | [pkparthk-plant-disease-detection](https://github.com/pkparthk/Plant-Disease-Detection.git) | agriculture | L0 · Unharnessed | 34/105 (32%) | — | — |
+| 3444 | [saschadoemer-iso-11783-toolsuite](https://github.com/saschadoemer/iso-11783-toolsuite.git) | agriculture | L0 · Unharnessed | 34/105 (32%) | — | — |
+| 3445 | [sprinqua-sprinqua](https://github.com/Sprinqua/sprinqua.git) | agriculture | L0 · Unharnessed | 34/105 (32%) | — | — |
+| 3446 | [bubblesnet-controller](https://github.com/bubblesnet/controller.git) | agriculture | L0 · Unharnessed | 34/105 (32%) | — | — |
+| 3447 | [bernardonal-my-chemicals](https://github.com/BernardoNal/my-chemicals.git) | agriculture | L0 · Unharnessed | 34/105 (32%) | — | — |
+| 3448 | [dev-infra-harelba-q](https://github.com/harelba/q.git) | database-data-platforms | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #107 |
+| 3449 | [dev-infra-httpie-http-prompt](https://github.com/httpie/http-prompt.git) | developer-tools | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #132 |
+| 3450 | [dev-infra-concourse-concourse](https://github.com/concourse/concourse.git) | software-delivery-testing-build | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #159 |
+| 3451 | [dev-infra-akopytov-sysbench](https://github.com/akopytov/sysbench.git) | database-data-platforms | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #187 |
+| 3452 | [dev-infra-data-dog-go-sqlmock](https://github.com/DATA-DOG/go-sqlmock.git) | database-data-platforms | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #192 |
+| 3453 | [dev-infra-orioledb-orioledb](https://github.com/orioledb/orioledb.git) | database-data-platforms | L0 · Unharnessed | 34/105 (32%) | claude-code | Developer infrastructure popularity #268 |
+| 3454 | [dev-infra-spotbugs-spotbugs](https://github.com/spotbugs/spotbugs.git) | code-quality | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #280 |
+| 3455 | [dev-infra-w3tecch-express-typescript-boilerplate](https://github.com/w3tecch/express-typescript-boilerplate.git) | database-data-platforms | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #307 |
+| 3456 | [dev-infra-cosmos72-gomacro](https://github.com/cosmos72/gomacro.git) | developer-tools | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #396 |
+| 3457 | [dev-infra-asdine-storm](https://github.com/asdine/storm.git) | database-data-platforms | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #410 |
+| 3458 | [dev-infra-julien040-anyquery](https://github.com/julien040/anyquery.git) | database-data-platforms | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #459 |
+| 3459 | [dev-infra-seaql-firedbg-for-rust](https://github.com/SeaQL/FireDBG.for.Rust.git) | developer-tools | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #477 |
+| 3460 | [dev-infra-percona-percona-toolkit](https://github.com/percona/percona-toolkit.git) | database-data-platforms | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #491 |
+| 3461 | [dev-infra-pdbpp-pdbpp](https://github.com/pdbpp/pdbpp.git) | developer-tools | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #517 |
+| 3462 | [dev-infra-smallnest-gen](https://github.com/smallnest/gen.git) | database-data-platforms | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #527 |
+| 3463 | [dev-infra-qiniu-qmgo](https://github.com/qiniu/qmgo.git) | database-data-platforms | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #545 |
+| 3464 | [dev-infra-testsigmahq-testsigma](https://github.com/testsigmahq/testsigma.git) | software-delivery-testing-build | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #576 |
+| 3465 | [dev-infra-danielgavin-ols](https://github.com/DanielGavin/ols.git) | developer-tools | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #583 |
+| 3466 | [dev-infra-eleven-sh-cli](https://github.com/eleven-sh/cli.git) | developer-experience | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #775 |
+| 3467 | [dev-infra-muety-mininote](https://github.com/muety/mininote.git) | developer-tools | L0 · Unharnessed | 34/105 (32%) | — | Developer infrastructure popularity #779 |
+| 3468 | [geospatial-atsushisakai-pythonrobotics](https://github.com/AtsushiSakai/PythonRobotics.git) | geospatial | L0 · Unharnessed | 34/105 (32%) | — | — |
+| 3469 | [geospatial-mariusandra-pigeon-maps](https://github.com/mariusandra/pigeon-maps.git) | geospatial | L0 · Unharnessed | 34/105 (32%) | — | — |
+| 3470 | [geospatial-neocturne-minedmap](https://github.com/neocturne/MinedMap.git) | geospatial | L0 · Unharnessed | 34/105 (32%) | — | — |
+| 3471 | [geospatial-dotswan-filament-map-picker](https://github.com/dotswan/filament-map-picker.git) | geospatial | L0 · Unharnessed | 34/105 (32%) | — | — |
+| 3472 | [geospatial-datawan-labs-schools](https://github.com/datawan-labs/schools.git) | geospatial | L0 · Unharnessed | 34/105 (32%) | — | — |
+| 3473 | [geospatial-thomersch-grandine](https://github.com/thomersch/grandine.git) | geospatial | L0 · Unharnessed | 34/105 (32%) | — | — |
+| 3474 | [geospatial-akhenakh-mbmatch](https://github.com/akhenakh/mbmatch.git) | geospatial | L0 · Unharnessed | 34/105 (32%) | — | — |
+| 3475 | [geospatial-farshidroohi-reminderpro](https://github.com/FarshidRoohi/ReminderPro.git) | geospatial | L0 · Unharnessed | 34/105 (32%) | — | — |
+| 3476 | [geospatial-seuros-activerecord-postgis](https://github.com/seuros/activerecord-postgis.git) | geospatial | L0 · Unharnessed | 34/105 (32%) | — | — |
+| 3477 | [geospatial-dechristopher-xyz](https://github.com/dechristopher/xyz.git) | geospatial | L0 · Unharnessed | 34/105 (32%) | — | — |
+| 3478 | [geospatial-stationa-tilenol](https://github.com/StationA/tilenol.git) | geospatial | L0 · Unharnessed | 34/105 (32%) | — | — |
+| 3479 | [geospatial-eliperez-dev-untileverycage](https://github.com/eliperez-dev/UntilEveryCage.git) | geospatial | L0 · Unharnessed | 34/105 (32%) | — | — |
+| 3480 | [geospatial-nextgis-qgis-devtools](https://github.com/nextgis/qgis_devtools.git) | geospatial | L0 · Unharnessed | 34/105 (32%) | — | — |
+| 3481 | [geospatial-leonardosya-ecolens-system](https://github.com/LeonardoSya/Ecolens-System.git) | geospatial | L0 · Unharnessed | 34/105 (32%) | — | — |
+| 3482 | [llm-wiki-agent](https://github.com/SamurAIGPT/llm-wiki-agent.git) | ai-agent-frameworks | L1 · Documented | 33/105 (31%) | antigravity, claude-code | — |
+| 3483 | [game-ai-forest0xia-dota2bot-openhyperai](https://github.com/forest0xia/dota2bot-OpenHyperAI.git) | video-game-ai | L1 · Documented | 33/105 (31%) | claude-code | Video game AI popularity #58 |
+| 3484 | [game-ai-jmurth1234-claudeplayer](https://github.com/jmurth1234/ClaudePlayer.git) | video-game-ai | L1 · Documented | 33/105 (31%) | cursor | Video game AI popularity #175 |
+| 3485 | [game-ai-hackerzhuli-unity-code-mcp](https://github.com/hackerzhuli/unity_code_mcp.git) | video-game-ai | L1 · Documented | 33/105 (31%) | claude-code | Video game AI popularity #379 |
+| 3486 | [agentskills-agentskills](https://github.com/agentskills/agentskills.git) | github-top-software | L1 · Documented | 33/105 (31%) | claude-code | GitHub software popularity #960 |
+| 3487 | [agentsmd-agents-md](https://github.com/agentsmd/agents.md.git) | coding-agent-harness | L1 · Documented | 33/105 (31%) | — | Agent ecosystem popularity #2 |
+| 3488 | [ai-ide-nillionnetwork-nillion-docs-754422272](https://github.com/NillionNetwork/nillion-docs.git) | ai-coding-assistant-adoption | L1 · Documented | 33/105 (31%) | — | AI coding-assistant adoption popularity #81 |
+| 3489 | [ai-ide-geneontology-go-annotation-39641371](https://github.com/geneontology/go-annotation.git) | ai-coding-assistant-adoption | L1 · Documented | 33/105 (31%) | claude-code | AI coding-assistant adoption popularity #98 |
+| 3490 | [ai-ide-bjesuiter-opencode-acp-skill-1132160447](https://github.com/bjesuiter/opencode-acp-skill.git) | ai-coding-assistant-adoption | L1 · Documented | 33/105 (31%) | — | AI coding-assistant adoption popularity #138 |
+| 3491 | [ai-ide-zyecs-awesome-reprogrammability-1052414545](https://github.com/zyecs/awesome-reprogrammability.git) | ai-coding-assistant-adoption | L1 · Documented | 33/105 (31%) | claude-code | AI coding-assistant adoption popularity #178 |
+| 3492 | [ai-ide-amscotti-anthropic-cr-1132482069](https://github.com/amscotti/anthropic-cr.git) | ai-coding-assistant-adoption | L1 · Documented | 33/105 (31%) | claude-code | AI coding-assistant adoption popularity #292 |
+| 3493 | [ai-ide-ark-aak-bogo-game-1207847625](https://github.com/Ark-Aak/bogo-game.git) | ai-coding-assistant-adoption | L1 · Documented | 33/105 (31%) | — | AI coding-assistant adoption popularity #293 |
+| 3494 | [ai-ide-przbadu-skills-factory-1153289414](https://github.com/przbadu/skills-factory.git) | ai-coding-assistant-adoption | L1 · Documented | 33/105 (31%) | claude-code | AI coding-assistant adoption popularity #365 |
+| 3495 | [ai-ide-ei-dolon-jetsetui-1230285495](https://github.com/Ei-Dolon/JetsetUI.git) | ai-coding-assistant-adoption | L1 · Documented | 33/105 (31%) | antigravity, claude-code | AI coding-assistant adoption (seeded zero-star sample) |
+| 3496 | [ai-ide-h4x0r-eisenboard-1062717209](https://github.com/h4x0r/eisenboard.git) | ai-coding-assistant-adoption | L1 · Documented | 33/105 (31%) | claude-code | AI coding-assistant adoption (seeded zero-star sample) |
+| 3497 | [ai-ide-loyolachicagocs-ssl-html5up-883271152](https://github.com/LoyolaChicagoCS/ssl-html5up.git) | ai-coding-assistant-adoption | L1 · Documented | 33/105 (31%) | — | AI coding-assistant adoption (seeded zero-star sample) |
+| 3498 | [ai-ide-rajaghv-dev-open-star-map-1221450115](https://github.com/rajaghv-dev/open-star-map.git) | ai-coding-assistant-adoption | L1 · Documented | 33/105 (31%) | claude-code | AI coding-assistant adoption (seeded zero-star sample) |
+| 3499 | [arcticsnow-topopyscale](https://github.com/ArcticSnow/TopoPyScale.git) | data-ml-science | L1 · Documented | 33/105 (31%) | claude-code | — |
+| 3500 | [geospatial-nshiab-simple-data-analysis](https://github.com/nshiab/simple-data-analysis.git) | geospatial | L1 · Documented | 33/105 (31%) | — | — |
+| 3501 | [deep-live-cam](https://github.com/hacksider/Deep-Live-Cam.git) | ai-vision-media | L0 · Unharnessed | 33/105 (31%) | — | AI popularity #28 |
+| 3502 | [llm-app](https://github.com/pathwaycom/llm-app.git) | ai-model-inference | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3503 | [upscayl](https://github.com/upscayl/upscayl.git) | ai-vision-media | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3504 | [mcp-for-blender](https://github.com/ahujasid/mcp-for-blender.git) | ai-model-inference | L0 · Unharnessed | 33/108 (31%) | claude-code | — |
+| 3505 | [txtai](https://github.com/neuml/txtai.git) | ai-agent-frameworks | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3506 | [chatgpt-shortcut](https://github.com/rockbenben/ChatGPT-Shortcut.git) | prompt-eval-engineering | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3507 | [optimate](https://github.com/nebuly-ai/optimate.git) | ai-model-inference | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3508 | [game-ai-ikpil-dotrecast](https://github.com/ikpil/DotRecast.git) | video-game-ai | L0 · Unharnessed | 33/105 (31%) | — | Video game AI popularity #19 |
+| 3509 | [game-ai-zoyluoblue-mc-aiplayer](https://github.com/zoyluoblue/mc_aiplayer.git) | video-game-ai | L0 · Unharnessed | 33/105 (31%) | — | Video game AI popularity #84 |
+| 3510 | [game-ai-ruslanmv-ai-gameplay-bot](https://github.com/ruslanmv/ai-gameplay-bot.git) | video-game-ai | L0 · Unharnessed | 33/105 (31%) | — | Video game AI popularity #274 |
+| 3511 | [game-ai-edwarddn-dinosaur-edward-game](https://github.com/edwarddn/dinosaur-edward-game.git) | video-game-ai | L0 · Unharnessed | 33/105 (31%) | — | Video game AI popularity #285 |
+| 3512 | [game-ai-komorra-eugeniusz](https://github.com/komorra/Eugeniusz.git) | video-game-ai | L0 · Unharnessed | 33/105 (31%) | — | Video game AI popularity #405 |
+| 3513 | [game-ai-tzwm-botbotbotbot](https://github.com/tzwm/botbotbotbot.git) | video-game-ai | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3514 | [opencut-app-opencut](https://github.com/OpenCut-app/OpenCut.git) | github-top-software | L0 · Unharnessed | 33/105 (31%) | — | GitHub software popularity #61 |
+| 3515 | [nomic-ai-gpt4all](https://github.com/nomic-ai/gpt4all.git) | github-top-software | L0 · Unharnessed | 33/105 (31%) | — | GitHub software popularity #95 |
+| 3516 | [termux-termux-app](https://github.com/termux/termux-app.git) | github-top-software | L0 · Unharnessed | 33/105 (31%) | — | GitHub software popularity #162 |
+| 3517 | [jellyfin-jellyfin](https://github.com/jellyfin/jellyfin.git) | github-top-software | L0 · Unharnessed | 33/105 (31%) | — | GitHub software popularity #196 |
+| 3518 | [justvugg-colibri](https://github.com/JustVugg/colibri.git) | github-top-software | L0 · Unharnessed | 33/105 (31%) | — | GitHub software popularity #389 |
+| 3519 | [philjay-mpandroidchart](https://github.com/PhilJay/MPAndroidChart.git) | github-top-software | L0 · Unharnessed | 33/105 (31%) | — | GitHub software popularity #468 |
+| 3520 | [airbnb-lottie-android](https://github.com/airbnb/lottie-android.git) | github-top-software | L0 · Unharnessed | 33/105 (31%) | — | GitHub software popularity #536 |
+| 3521 | [xx-net-xx-net](https://github.com/XX-net/XX-Net.git) | github-top-software | L0 · Unharnessed | 33/105 (31%) | — | GitHub software popularity #610 |
+| 3522 | [shadps4-emu-shadps4](https://github.com/shadps4-emu/shadPS4.git) | github-top-software | L0 · Unharnessed | 33/105 (31%) | — | GitHub software popularity #616 |
+| 3523 | [anuken-mindustry](https://github.com/Anuken/Mindustry.git) | github-top-software | L0 · Unharnessed | 33/105 (31%) | — | GitHub software popularity #782 |
+| 3524 | [firecrawl-open-lovable](https://github.com/firecrawl/open-lovable.git) | github-top-software | L0 · Unharnessed | 34/108 (31%) | cursor | GitHub software popularity #813 |
+| 3525 | [facebook-zstd](https://github.com/facebook/zstd.git) | github-top-software | L0 · Unharnessed | 33/105 (31%) | — | GitHub software popularity #852 |
+| 3526 | [yeasy-docker-practice](https://github.com/yeasy/docker_practice.git) | github-top-software | L0 · Unharnessed | 33/105 (31%) | — | GitHub software popularity #941 |
+| 3527 | [googlechromelabs-squoosh](https://github.com/GoogleChromeLabs/squoosh.git) | github-top-software | L0 · Unharnessed | 33/105 (31%) | — | GitHub software popularity #959 |
+| 3528 | [ycm-core-youcompleteme](https://github.com/ycm-core/YouCompleteMe.git) | github-top-software | L0 · Unharnessed | 33/105 (31%) | — | GitHub software popularity #974 |
+| 3529 | [ibotpeaches-apktool](https://github.com/iBotPeaches/Apktool.git) | github-top-software | L0 · Unharnessed | 33/105 (31%) | — | GitHub software popularity #980 |
+| 3530 | [lofcz-llmtornado](https://github.com/lofcz/LLMTornado.git) | agent-to-agent-protocol | L0 · Unharnessed | 33/105 (31%) | — | Agent ecosystem popularity #22 |
+| 3531 | [p90-rushb-agentark](https://github.com/P90-RushB/AgentArk.git) | agent-evaluation-observability | L0 · Unharnessed | 33/105 (31%) | antigravity, codex | Agent ecosystem popularity #7 |
+| 3532 | [eccc-cccs-climate-data-extraction-tool](https://github.com/ECCC-CCCS/climate-data-extraction-tool.git) | data-ml-science | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3533 | [refresh-bio-famsa](https://github.com/refresh-bio/FAMSA.git) | data-ml-science | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3534 | [pcraster-pcraster](https://github.com/pcraster/pcraster.git) | data-ml-science | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3535 | [ivmartel-dwv-react](https://github.com/ivmartel/dwv-react.git) | data-ml-science | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3536 | [simpeg-discretize](https://github.com/simpeg/discretize.git) | data-ml-science | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3537 | [baotlake-periodic-table-pro](https://github.com/baotlake/periodic-table-pro.git) | data-ml-science | L0 · Unharnessed | 32/103 (31%) | — | — |
+| 3538 | [seq-lang-seq](https://github.com/seq-lang/seq.git) | data-ml-science | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3539 | [uu-cellbiology-comdet](https://github.com/UU-cellbiology/ComDet.git) | data-ml-science | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3540 | [rgc99-irrigation-unlimited-card](https://github.com/rgc99/irrigation-unlimited-card.git) | agriculture | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3541 | [jpgorganizer-iobroker-smartgarden](https://github.com/jpgorganizer/ioBroker.smartgarden.git) | agriculture | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3542 | [cristoforocervino-esp32-sprinkler-queue](https://github.com/cristoforocervino/esp32-sprinkler-queue.git) | agriculture | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3543 | [francois-roseberry-hydropi](https://github.com/francois-roseberry/hydropi.git) | agriculture | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3544 | [satiricalguru-agrinode](https://github.com/satiricalguru/AgriNode.git) | agriculture | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3545 | [dev-infra-testcontainers-testcontainers-dotnet](https://github.com/testcontainers/testcontainers-dotnet.git) | software-delivery-testing-build | L0 · Unharnessed | 33/105 (31%) | — | Developer infrastructure popularity #262 |
+| 3546 | [dev-infra-lukeed-uvu](https://github.com/lukeed/uvu.git) | software-delivery-testing-build | L0 · Unharnessed | 33/105 (31%) | — | Developer infrastructure popularity #339 |
+| 3547 | [dev-infra-debugswift-debugswift](https://github.com/DebugSwift/DebugSwift.git) | developer-tools | L0 · Unharnessed | 33/105 (31%) | — | Developer infrastructure popularity #383 |
+| 3548 | [dev-infra-oracle-node-oracledb](https://github.com/oracle/node-oracledb.git) | database-data-platforms | L0 · Unharnessed | 33/105 (31%) | — | Developer infrastructure popularity #386 |
+| 3549 | [dev-infra-intellij-elixir-intellij-elixir](https://github.com/intellij-elixir/intellij-elixir.git) | developer-tools | L0 · Unharnessed | 33/105 (31%) | — | Developer infrastructure popularity #436 |
+| 3550 | [dev-infra-dtmilano-androidviewclient](https://github.com/dtmilano/AndroidViewClient.git) | software-delivery-testing-build | L0 · Unharnessed | 34/108 (31%) | claude-code | Developer infrastructure popularity #473 |
+| 3551 | [dev-infra-wiremock-wiremock-net](https://github.com/wiremock/WireMock.Net.git) | software-delivery-testing-build | L0 · Unharnessed | 33/105 (31%) | — | Developer infrastructure popularity #478 |
+| 3552 | [dev-infra-moonsharp-devs-moonsharp](https://github.com/moonsharp-devs/moonsharp.git) | developer-tools | L0 · Unharnessed | 33/105 (31%) | — | Developer infrastructure popularity #489 |
+| 3553 | [dev-infra-scalameta-scalafmt](https://github.com/scalameta/scalafmt.git) | code-quality | L0 · Unharnessed | 33/105 (31%) | antigravity, claude-code | Developer infrastructure popularity #507 |
+| 3554 | [dev-infra-pypa-gh-action-pypi-publish](https://github.com/pypa/gh-action-pypi-publish.git) | software-delivery-testing-build | L0 · Unharnessed | 33/105 (31%) | — | Developer infrastructure popularity #588 |
+| 3555 | [dev-infra-topling-toplingdb](https://github.com/topling/toplingdb.git) | database-data-platforms | L0 · Unharnessed | 33/105 (31%) | — | Developer infrastructure popularity #637 |
+| 3556 | [dev-infra-powershell-powershelleditorservices](https://github.com/PowerShell/PowerShellEditorServices.git) | developer-tools | L0 · Unharnessed | 33/105 (31%) | — | Developer infrastructure popularity #693 |
+| 3557 | [dev-infra-nuhkoca-kotlin-modular-tdd-coroutines-mvvm](https://github.com/nuhkoca/kotlin-modular-tdd-coroutines-mvvm.git) | code-quality | L0 · Unharnessed | 33/105 (31%) | — | Developer infrastructure popularity #730 |
+| 3558 | [dev-infra-sonarsource-sonarlint-visualstudio](https://github.com/SonarSource/sonarlint-visualstudio.git) | code-quality | L0 · Unharnessed | 33/105 (31%) | — | Developer infrastructure popularity #733 |
+| 3559 | [dev-infra-bjankord-stylelint-config-sass-guidelines](https://github.com/bjankord/stylelint-config-sass-guidelines.git) | code-quality | L0 · Unharnessed | 33/105 (31%) | — | Developer infrastructure popularity #743 |
+| 3560 | [dev-infra-travisvn-gptree](https://github.com/travisvn/gptree.git) | developer-tools | L0 · Unharnessed | 33/105 (31%) | — | Developer infrastructure popularity #773 |
+| 3561 | [dev-infra-agricidaniel-claude-cybersecurity](https://github.com/AgriciDaniel/claude-cybersecurity.git) | code-quality | L0 · Unharnessed | 33/105 (31%) | claude-code | Developer infrastructure popularity #794 |
+| 3562 | [geospatial-mapserver-mapserver](https://github.com/MapServer/MapServer.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3563 | [geospatial-uber-h3-java](https://github.com/uber/h3-java.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3564 | [geospatial-nettopologysuite-projnet4geoapi](https://github.com/NetTopologySuite/ProjNet4GeoAPI.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3565 | [geospatial-korywka-mapbox-controls](https://github.com/korywka/mapbox-controls.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3566 | [geospatial-ggerman-libgd-gis](https://github.com/ggerman/libgd-gis.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3567 | [geospatial-williamliu-1997-3d-tiles-rendererjs-3dgs-plugin](https://github.com/WilliamLiu-1997/3D-Tiles-RendererJS-3DGS-Plugin.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3568 | [geospatial-cesiumgs-cesium-omniverse](https://github.com/CesiumGS/cesium-omniverse.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3569 | [geospatial-palewire-python-googlegeocoder](https://github.com/palewire/python-googlegeocoder.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3570 | [geospatial-ateliercartographie-khartis](https://github.com/AtelierCartographie/Khartis.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3571 | [geospatial-urschrei-polylabel-rs](https://github.com/urschrei/polylabel-rs.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3572 | [geospatial-pocketken-h3-net](https://github.com/pocketken/H3.net.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3573 | [geospatial-iconem-search-satellite-imagery](https://github.com/Iconem/search-satellite-imagery.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3574 | [geospatial-worldwindearth-worldwind-react-globe](https://github.com/WorldWindEarth/worldwind-react-globe.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3575 | [geospatial-itsmedmd-satellite-tracker](https://github.com/itsmedmd/satellite-tracker.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3576 | [geospatial-everwinter23-graphene-gis](https://github.com/EverWinter23/graphene-gis.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3577 | [geospatial-osmarluiz-sam-mosaic](https://github.com/osmarluiz/sam-mosaic.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3578 | [geospatial-georust-kml](https://github.com/georust/kml.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3579 | [geospatial-pf-wikis-mapping](https://github.com/pf-wikis/mapping.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3580 | [geospatial-imrz-tww-interactive-map](https://github.com/IMRZ/tww-interactive-map.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3581 | [geospatial-azure-samples-azure-maps-leaflet](https://github.com/Azure-Samples/azure-maps-leaflet.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3582 | [geospatial-fbrosda-weather-maps](https://github.com/fbrosda/weather-maps.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3583 | [geospatial-azure-samples-azure-maps-animations](https://github.com/Azure-Samples/azure-maps-animations.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3584 | [geospatial-eoda-dev-py-openlayers](https://github.com/eoda-dev/py-openlayers.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3585 | [geospatial-cityofphiladelphia-ais](https://github.com/CityOfPhiladelphia/ais.git) | geospatial | L0 · Unharnessed | 33/105 (31%) | — | — |
+| 3586 | [ppt-master](https://github.com/hugohe3/ppt-master.git) | ai-agent-frameworks | L1 · Documented | 31/105 (30%) | claude-code | — |
+| 3587 | [ai-berkshire](https://github.com/xbtlin/ai-berkshire.git) | ai-agent-frameworks | L1 · Documented | 31/105 (30%) | claude-code | — |
+| 3588 | [pocketflow](https://github.com/The-Pocket/PocketFlow.git) | ai-model-inference | L1 · Documented | 32/105 (30%) | cursor | — |
+| 3589 | [game-ai-itzik123-clashroyaleai](https://github.com/itzik123/ClashRoyaleAi.git) | video-game-ai | L1 · Documented | 32/105 (30%) | claude-code | Video game AI popularity #281 |
+| 3590 | [game-ai-djmango-openfront-ai](https://github.com/djmango/openfront-ai.git) | video-game-ai | L1 · Documented | 31/105 (30%) | cursor | Video game AI popularity #305 |
+| 3591 | [game-ai-rollacode-playnite-bridge](https://github.com/rollacode/playnite-bridge.git) | video-game-ai | L1 · Documented | 32/105 (30%) | claude-code | Video game AI popularity #356 |
+| 3592 | [game-ai-niqibiao-unity-cli-skill](https://github.com/niqibiao/unity-cli-skill.git) | video-game-ai | L1 · Documented | 32/105 (30%) | claude-code | Video game AI popularity #177 |
+| 3593 | [asgeirtj-system-prompts-leaks](https://github.com/asgeirtj/system_prompts_leaks.git) | github-top-software | L1 · Documented | 32/105 (30%) | codex | GitHub software popularity #123 |
+| 3594 | [bazelbuild-bazel](https://github.com/bazelbuild/bazel.git) | github-top-software | L1 · Documented | 32/105 (30%) | — | GitHub software popularity #969 |
+| 3595 | [ai-ide-prosusai-prism-1210513772](https://github.com/ProsusAI/prism.git) | ai-coding-assistant-adoption | L1 · Documented | 32/105 (30%) | claude-code | AI coding-assistant adoption popularity #136 |
+| 3596 | [ai-ide-xiaoran007-pyhw-811241123](https://github.com/xiaoran007/pyhw.git) | ai-coding-assistant-adoption | L1 · Documented | 32/105 (30%) | — | AI coding-assistant adoption popularity #150 |
+| 3597 | [ai-ide-dotlabshq-spec-ops-1146006434](https://github.com/dotlabshq/spec-ops.git) | ai-coding-assistant-adoption | L1 · Documented | 31/105 (30%) | — | AI coding-assistant adoption popularity #199 |
+| 3598 | [ai-ide-microruri-endfield-studio-1163552493](https://github.com/microruri/Endfield-Studio.git) | ai-coding-assistant-adoption | L1 · Documented | 32/105 (30%) | — | AI coding-assistant adoption popularity #214 |
+| 3599 | [ai-ide-ianyangchina-ddbot-ieee-tro-2025-819476349](https://github.com/IanYangChina/DDBot-IEEE-TRO-2025.git) | ai-coding-assistant-adoption | L1 · Documented | 31/105 (30%) | — | AI coding-assistant adoption popularity #248 |
+| 3600 | [ai-ide-walkingice-momodict-82467945](https://github.com/walkingice/MomoDict.git) | ai-coding-assistant-adoption | L1 · Documented | 32/105 (30%) | — | AI coding-assistant adoption popularity #258 |
+| 3601 | [ai-ide-azyrn-pulsesms-1182848438](https://github.com/Azyrn/PulseSMS.git) | ai-coding-assistant-adoption | L1 · Documented | 32/105 (30%) | claude-code | AI coding-assistant adoption popularity #297 |
+| 3602 | [ai-ide-s0ck3t-aws-demos-1282445061](https://github.com/s0ck3t/aws-demos.git) | ai-coding-assistant-adoption | L1 · Documented | 31/105 (30%) | antigravity | AI coding-assistant adoption popularity #371 |
+| 3603 | [ai-ide-easestart-easestart-public-1189336880](https://github.com/EaseStart/easestart-public.git) | ai-coding-assistant-adoption | L1 · Documented | 31/105 (30%) | antigravity | AI coding-assistant adoption (seeded zero-star sample) |
+| 3604 | [ai-ide-lucashe952-voxvault-1181543590](https://github.com/LucasHE952/VoxVault.git) | ai-coding-assistant-adoption | L1 · Documented | 31/105 (30%) | claude-code | AI coding-assistant adoption (seeded zero-star sample) |
+| 3605 | [ai-ide-rohitbarnwal-student-logging-1048889397](https://github.com/RohitBarnwal/student_logging.git) | ai-coding-assistant-adoption | L1 · Documented | 32/105 (30%) | antigravity | AI coding-assistant adoption (seeded zero-star sample) |
+| 3606 | [ai-ide-xusysysy-pyvandroid-1323687187](https://github.com/Xusysysy/pyvandroid.git) | ai-coding-assistant-adoption | L1 · Documented | 32/105 (30%) | claude-code | AI coding-assistant adoption (seeded zero-star sample) |
+| 3607 | [juliaocean-aibecs-jl](https://github.com/JuliaOcean/AIBECS.jl.git) | data-ml-science | L1 · Documented | 31/105 (30%) | — | — |
+| 3608 | [pwwang-plotthis](https://github.com/pwwang/plotthis.git) | data-ml-science | L1 · Documented | 32/105 (30%) | claude-code | — |
+| 3609 | [realistic-farming-fs25-soilfertilizer](https://github.com/Realistic-Farming/FS25_SoilFertilizer.git) | agriculture | L1 · Documented | 32/105 (30%) | claude-code | — |
+| 3610 | [edisonlee0212-evoengine](https://github.com/edisonlee0212/EvoEngine.git) | agriculture | L1 · Documented | 32/105 (30%) | — | — |
+| 3611 | [realistic-farming-fs25-seasonalcropstress](https://github.com/Realistic-Farming/FS25_SeasonalCropStress.git) | agriculture | L1 · Documented | 32/105 (30%) | claude-code | — |
+| 3612 | [nikitapn-nscalc](https://github.com/nikitapn/nscalc.git) | agriculture | L1 · Documented | 32/105 (30%) | claude-code | — |
+| 3613 | [dev-infra-appleboy-ssh-action](https://github.com/appleboy/ssh-action.git) | software-delivery-testing-build | L1 · Documented | 32/105 (30%) | claude-code | Developer infrastructure popularity #204 |
+| 3614 | [dev-infra-tonsky-datascript](https://github.com/tonsky/datascript.git) | database-data-platforms | L1 · Documented | 32/105 (30%) | claude-code | Developer infrastructure popularity #215 |
+| 3615 | [dev-infra-foss42-apidash](https://github.com/foss42/apidash.git) | developer-tools | L1 · Documented | 32/105 (30%) | — | Developer infrastructure popularity #346 |
+| 3616 | [dev-infra-slick-slick](https://github.com/slick/slick.git) | database-data-platforms | L1 · Documented | 32/105 (30%) | claude-code | Developer infrastructure popularity #362 |
+| 3617 | [geospatial-mstrimas-smoothr](https://github.com/mstrimas/smoothr.git) | geospatial | L1 · Documented | 32/105 (30%) | claude-code | — |
+| 3618 | [geospatial-ncsu-geoforall-lab-geospatial-modeling-course](https://github.com/ncsu-geoforall-lab/geospatial-modeling-course.git) | geospatial | L1 · Documented | 31/105 (30%) | claude-code | — |
+| 3619 | [execa](https://github.com/sindresorhus/execa.git) | control-non-ai-quality | L0 · Unharnessed | 32/105 (30%) | — | stress case |
+| 3620 | [solidity](https://github.com/argotorg/solidity.git) | crypto-developer-tools | L0 · Unharnessed | 32/105 (30%) | — | Crypto popularity #12 |
+| 3621 | [so-vits-svc](https://github.com/svc-develop-team/so-vits-svc.git) | ai-vision-media | L0 · Unharnessed | 31/105 (30%) | — | — |
+| 3622 | [fingpt](https://github.com/AI4Finance-Foundation/FinGPT.git) | ai-model-inference | L0 · Unharnessed | 32/105 (30%) | — | — |
+| 3623 | [owl](https://github.com/camel-ai/owl.git) | ai-agent-frameworks | L0 · Unharnessed | 31/105 (30%) | — | — |
+| 3624 | [openmythos](https://github.com/kyegomez/OpenMythos.git) | ai-applications | L0 · Unharnessed | 32/105 (30%) | — | — |
+| 3625 | [chatterbot](https://github.com/gunthercox/ChatterBot.git) | ai-applications | L0 · Unharnessed | 32/105 (30%) | — | — |
+| 3626 | [pytorch-grad-cam](https://github.com/jacobgil/pytorch-grad-cam.git) | ai-vision-media | L0 · Unharnessed | 32/105 (30%) | — | — |
+| 3627 | [mlalgorithms](https://github.com/rushter/MLAlgorithms.git) | ai-applications | L0 · Unharnessed | 32/105 (30%) | — | — |
+| 3628 | [petals](https://github.com/bigscience-workshop/petals.git) | ai-model-inference | L0 · Unharnessed | 32/105 (30%) | — | — |
+| 3629 | [internvl](https://github.com/OpenGVLab/InternVL.git) | ai-model-inference | L0 · Unharnessed | 32/105 (30%) | — | — |
+| 3630 | [autokeras](https://github.com/keras-team/autokeras.git) | ai-applications | L0 · Unharnessed | 32/105 (30%) | — | — |
+| 3631 | [modelscope](https://github.com/modelscope/modelscope.git) | ai-model-inference | L0 · Unharnessed | 31/105 (30%) | — | — |
+| 3632 | [imageai](https://github.com/OlafenwaMoses/ImageAI.git) | ai-vision-media | L0 · Unharnessed | 32/105 (30%) | — | — |
+| 3633 | [search-with-lepton](https://github.com/leptonai/search_with_lepton.git) | ai-model-inference | L0 · Unharnessed | 31/105 (30%) | — | — |
+| 3634 | [integuru](https://github.com/Integuru-AI/Integuru.git) | ai-agent-frameworks | L0 · Unharnessed | 32/105 (30%) | — | — |
+| 3635 | [segment-geospatial](https://github.com/opengeos/segment-geospatial.git) | ai-model-inference | L0 · Unharnessed | 31/105 (30%) | — | — |
+| 3636 | [game-ai-mugen87-yuka](https://github.com/Mugen87/yuka.git) | video-game-ai | L0 · Unharnessed | 32/105 (30%) | — | Video game AI popularity #15 |
+| 3637 | [game-ai-ivanmurzak-unity-ai-animation](https://github.com/IvanMurzak/Unity-AI-Animation.git) | video-game-ai | L0 · Unharnessed | 31/105 (30%) | claude-code | Video game AI popularity #98 |
+| 3638 | [game-ai-killedbyapixel-littlejs-ai](https://github.com/KilledByAPixel/LittleJS-AI.git) | video-game-ai | L0 · Unharnessed | 32/105 (30%) | claude-code | Video game AI popularity #122 |
+| 3639 | [game-ai-ivanmurzak-unity-ai-probuilder](https://github.com/IvanMurzak/Unity-AI-ProBuilder.git) | video-game-ai | L0 · Unharnessed | 31/105 (30%) | claude-code | Video game AI popularity #154 |
+| 3640 | [game-ai-apmem-brainai](https://github.com/ApmeM/BrainAI.git) | video-game-ai | L0 · Unharnessed | 31/105 (30%) | — | Video game AI popularity #155 |
+| 3641 | [game-ai-ivanmurzak-unity-ai-particlesystem](https://github.com/IvanMurzak/Unity-AI-ParticleSystem.git) | video-game-ai | L0 · Unharnessed | 31/105 (30%) | claude-code | Video game AI popularity #157 |
+| 3642 | [game-ai-mpoapostolis-vxlverse](https://github.com/mpoapostolis/vxlverse.git) | video-game-ai | L0 · Unharnessed | 32/105 (30%) | — | Video game AI popularity #243 |
+| 3643 | [game-ai-frabcd-codex-ai-game-studio](https://github.com/frabcd/codex-ai-game-studio.git) | video-game-ai | L0 · Unharnessed | 32/108 (30%) | claude-code | Video game AI popularity #306 |
+| 3644 | [game-ai-jianzhnie-rlzero](https://github.com/jianzhnie/RLZero.git) | video-game-ai | L0 · Unharnessed | 32/105 (30%) | — | Video game AI popularity #307 |
+| 3645 | [game-ai-rudra496-worldsim-ai](https://github.com/rudra496/worldsim-ai.git) | video-game-ai | L0 · Unharnessed | 32/105 (30%) | — | Video game AI popularity #357 |
+| 3646 | [game-ai-rasca0027-mahjong4rl](https://github.com/rasca0027/Mahjong4RL.git) | video-game-ai | L0 · Unharnessed | 31/105 (30%) | — | Video game AI popularity #367 |
+| 3647 | [game-ai-crony-io-2d-assets-mcp](https://github.com/crony-io/2d-assets-mcp.git) | video-game-ai | L0 · Unharnessed | 31/105 (30%) | — | — |
+| 3648 | [macrozheng-mall](https://github.com/macrozheng/mall.git) | github-top-software | L0 · Unharnessed | 31/105 (30%) | — | GitHub software popularity #78 |
+| 3649 | [tensorflow-models](https://github.com/tensorflow/models.git) | github-top-software | L0 · Unharnessed | 31/105 (30%) | — | GitHub software popularity #94 |
+| 3650 | [appflowy-io-appflowy](https://github.com/AppFlowy-IO/AppFlowy.git) | github-top-software | L0 · Unharnessed | 31/105 (30%) | — | GitHub software popularity #96 |
+| 3651 | [juliangarnier-anime](https://github.com/juliangarnier/anime.git) | github-top-software | L0 · Unharnessed | 31/105 (30%) | — | GitHub software popularity #113 |
+| 3652 | [binary-husky-gpt-academic](https://github.com/binary-husky/gpt_academic.git) | github-top-software | L0 · Unharnessed | 31/105 (30%) | — | GitHub software popularity #120 |
+| 3653 | [xtekky-gpt4free](https://github.com/xtekky/gpt4free.git) | github-top-software | L0 · Unharnessed | 31/105 (30%) | — | GitHub software popularity #130 |
+| 3654 | [filosottile-mkcert](https://github.com/FiloSottile/mkcert.git) | github-top-software | L0 · Unharnessed | 32/105 (30%) | — | GitHub software popularity #183 |
+| 3655 | [ageitgey-face-recognition](https://github.com/ageitgey/face_recognition.git) | github-top-software | L0 · Unharnessed | 31/105 (30%) | — | GitHub software popularity #204 |
+| 3656 | [werwolv-imhex](https://github.com/WerWolv/ImHex.git) | github-top-software | L0 · Unharnessed | 32/105 (30%) | — | GitHub software popularity #216 |
+| 3657 | [team-spotube-spotube](https://github.com/team-spotube/spotube.git) | github-top-software | L0 · Unharnessed | 32/105 (30%) | — | GitHub software popularity #265 |
+| 3658 | [google-research-google-research](https://github.com/google-research/google-research.git) | github-top-software | L0 · Unharnessed | 32/105 (30%) | — | GitHub software popularity #448 |
+| 3659 | [freecodecampchina-freecodecamp-cn](https://github.com/FreeCodeCampChina/freecodecamp.cn.git) | github-top-software | L0 · Unharnessed | 32/105 (30%) | — | GitHub software popularity #475 |
+| 3660 | [anthropics-claude-plugins-official](https://github.com/anthropics/claude-plugins-official.git) | github-top-software | L0 · Unharnessed | 32/108 (30%) | claude-code | GitHub software popularity #482 |
+| 3661 | [permissionlesstech-bitchat](https://github.com/permissionlesstech/bitchat.git) | github-top-software | L0 · Unharnessed | 32/105 (30%) | — | GitHub software popularity #510 |
+| 3662 | [jqlang-jq](https://github.com/jqlang/jq.git) | github-top-software | L0 · Unharnessed | 32/105 (30%) | — | GitHub software popularity #534 |
+| 3663 | [predidit-kazumi](https://github.com/Predidit/Kazumi.git) | github-top-software | L0 · Unharnessed | 32/105 (30%) | — | GitHub software popularity #570 |
+| 3664 | [adobe-brackets](https://github.com/adobe/brackets.git) | github-top-software | L0 · Unharnessed | 32/105 (30%) | — | GitHub software popularity #633 |
+| 3665 | [airbnb-lottie-web](https://github.com/airbnb/lottie-web.git) | github-top-software | L0 · Unharnessed | 31/105 (30%) | — | GitHub software popularity #654 |
+| 3666 | [chanzhaoyu-chatgpt-web](https://github.com/Chanzhaoyu/chatgpt-web.git) | github-top-software | L0 · Unharnessed | 32/105 (30%) | — | GitHub software popularity #692 |
+| 3667 | [microsoft-calculator](https://github.com/microsoft/calculator.git) | github-top-software | L0 · Unharnessed | 31/105 (30%) | — | GitHub software popularity #706 |
+| 3668 | [xuxueli-xxl-job](https://github.com/xuxueli/xxl-job.git) | github-top-software | L0 · Unharnessed | 31/105 (30%) | — | GitHub software popularity #718 |
+| 3669 | [chinabugotech-hutool](https://github.com/chinabugotech/hutool.git) | github-top-software | L0 · Unharnessed | 31/105 (30%) | — | GitHub software popularity #729 |
+| 3670 | [encode-django-rest-framework](https://github.com/encode/django-rest-framework.git) | github-top-software | L0 · Unharnessed | 31/105 (30%) | — | GitHub software popularity #734 |
+| 3671 | [signalapp-signal-android](https://github.com/signalapp/Signal-Android.git) | github-top-software | L0 · Unharnessed | 32/105 (30%) | — | GitHub software popularity #772 |
+| 3672 | [google-python-fire](https://github.com/google/python-fire.git) | github-top-software | L0 · Unharnessed | 31/105 (30%) | — | GitHub software popularity #837 |
+| 3673 | [ungoogled-software-ungoogled-chromium](https://github.com/ungoogled-software/ungoogled-chromium.git) | github-top-software | L0 · Unharnessed | 32/105 (30%) | — | GitHub software popularity #856 |
+| 3674 | [squidfunk-mkdocs-material](https://github.com/squidfunk/mkdocs-material.git) | github-top-software | L0 · Unharnessed | 32/105 (30%) | — | GitHub software popularity #873 |
+| 3675 | [microsoft-vcpkg](https://github.com/microsoft/vcpkg.git) | github-top-software | L0 · Unharnessed | 32/105 (30%) | claude-code | GitHub software popularity #874 |
+| 3676 | [libuv-libuv](https://github.com/libuv/libuv.git) | github-top-software | L0 · Unharnessed | 32/105 (30%) | — | GitHub software popularity #890 |
+| 3677 | [robertdavidgraham-masscan](https://github.com/robertdavidgraham/masscan.git) | github-top-software | L0 · Unharnessed | 31/105 (30%) | — | GitHub software popularity #957 |
+| 3678 | [fmtlib-fmt](https://github.com/fmtlib/fmt.git) | github-top-software | L0 · Unharnessed | 32/105 (30%) | — | GitHub software popularity #973 |
+| 3679 | [systran-faster-whisper](https://github.com/SYSTRAN/faster-whisper.git) | github-top-software | L0 · Unharnessed | 32/105 (30%) | — | GitHub software popularity #978 |
+| 3680 | [qwenlm-qwen-agent](https://github.com/QwenLM/Qwen-Agent.git) | mcp-server-sdk | L0 · Unharnessed | 32/105 (30%) | — | Agent ecosystem popularity #8 |
+| 3681 | [joeanamier-xhs-downloader](https://github.com/JoeanAmier/XHS-Downloader.git) | mcp-server-sdk | L0 · Unharnessed | 31/105 (30%) | — | Agent ecosystem popularity #16 |
+| 3682 | [yizhiyanhua-ai-fireworks-tech-graph](https://github.com/yizhiyanhua-ai/fireworks-tech-graph.git) | multi-agent-orchestration | L0 · Unharnessed | 32/105 (30%) | — | Agent ecosystem popularity #5 |
+| 3683 | [miromindai-mirothinker](https://github.com/MiroMindAI/MiroThinker.git) | agent-memory-runtime | L0 · Unharnessed | 31/105 (30%) | — | Agent ecosystem popularity #4 |
+| 3684 | [forceinjection-ai-fundamentals](https://github.com/ForceInjection/AI-fundamentals.git) | agent-memory-runtime | L0 · Unharnessed | 31/105 (30%) | claude-code | Agent ecosystem popularity #24 |
+| 3685 | [trypromptly-llmstack](https://github.com/trypromptly/LLMStack.git) | multi-agent-orchestration | L0 · Unharnessed | 31/105 (30%) | — | Agent ecosystem popularity #42 |
+| 3686 | [guy-hartstein-company-research-agent](https://github.com/guy-hartstein/company-research-agent.git) | multi-agent-orchestration | L0 · Unharnessed | 31/105 (30%) | — | Agent ecosystem popularity #43 |
+| 3687 | [isekos-isek](https://github.com/isekOS/ISEK.git) | agent-to-agent-protocol | L0 · Unharnessed | 32/105 (30%) | — | Agent ecosystem popularity #24 |
+| 3688 | [google-agentic-commerce-a2a-x402](https://github.com/google-agentic-commerce/a2a-x402.git) | agent-to-agent-protocol | L0 · Unharnessed | 31/105 (30%) | — | Agent ecosystem popularity #25 |
+| 3689 | [coleam00-ralph-loop-quickstart](https://github.com/coleam00/ralph-loop-quickstart.git) | ralph-loop | L0 · Unharnessed | 32/105 (30%) | claude-code | Agent ecosystem popularity #25 |
+| 3690 | [sdtaylor-pyphenology](https://github.com/sdtaylor/pyPhenology.git) | data-ml-science | L0 · Unharnessed | 32/105 (30%) | — | — |
+| 3691 | [martinsos-edlib](https://github.com/Martinsos/edlib.git) | data-ml-science | L0 · Unharnessed | 32/105 (30%) | — | — |
+| 3692 | [fatiando-fatiando](https://github.com/fatiando/fatiando.git) | data-ml-science | L0 · Unharnessed | 31/105 (30%) | — | — |
+| 3693 | [noble-lab-carafe](https://github.com/Noble-Lab/Carafe.git) | data-ml-science | L0 · Unharnessed | 31/105 (30%) | — | — |
+| 3694 | [williamgilpin-pypdb](https://github.com/williamgilpin/pypdb.git) | data-ml-science | L0 · Unharnessed | 32/105 (30%) | — | — |
+| 3695 | [chenyangkang-stemflow](https://github.com/chenyangkang/stemflow.git) | data-ml-science | L0 · Unharnessed | 32/105 (30%) | — | — |
+| 3696 | [foleylab-moleculardynamics](https://github.com/FoleyLab/MolecularDynamics.git) | data-ml-science | L0 · Unharnessed | 32/105 (30%) | — | — |
+| 3697 | [sigma-py-accupy](https://github.com/sigma-py/accupy.git) | data-ml-science | L0 · Unharnessed | 31/105 (30%) | — | — |
+| 3698 | [dotnet-silk-net](https://github.com/dotnet/Silk.NET.git) | data-ml-science | L0 · Unharnessed | 31/105 (30%) | — | — |
+| 3699 | [bluescarni-heyoka-py](https://github.com/bluescarni/heyoka.py.git) | data-ml-science | L0 · Unharnessed | 32/105 (30%) | — | — |
+| 3700 | [sanger-pathogens-ariba](https://github.com/sanger-pathogens/ariba.git) | data-ml-science | L0 · Unharnessed | 32/105 (30%) | — | — |
+| 3701 | [bio-phys-mdbenchmark](https://github.com/bio-phys/MDBenchmark.git) | data-ml-science | L0 · Unharnessed | 31/105 (30%) | — | — |
+| 3702 | [mdshw5-pyfaidx](https://github.com/mdshw5/pyfaidx.git) | data-ml-science | L0 · Unharnessed | 31/105 (30%) | — | — |
+| 3703 | [deepchem-deepchem](https://github.com/deepchem/deepchem.git) | data-ml-science | L0 · Unharnessed | 32/105 (30%) | — | — |
+| 3704 | [openchemistry-avogadroapp](https://github.com/OpenChemistry/avogadroapp.git) | data-ml-science | L0 · Unharnessed | 32/105 (30%) | — | — |
+| 3705 | [alconley-spectrix](https://github.com/alconley/spectrix.git) | data-ml-science | L0 · Unharnessed | 32/105 (30%) | — | — |
+| 3706 | [sdss-marvin](https://github.com/sdss/marvin.git) | data-ml-science | L0 · Unharnessed | 31/105 (30%) | — | — |
+| 3707 | [open-science-tools-nd2reader](https://github.com/Open-Science-Tools/nd2reader.git) | data-ml-science | L0 · Unharnessed | 32/105 (30%) | — | — |
+| 3708 | [harirakul-chemlib](https://github.com/harirakul/chemlib.git) | data-ml-science | L0 · Unharnessed | 32/105 (30%) | — | — |
+| 3709 | [ri-imaging-nrefocus](https://github.com/RI-imaging/nrefocus.git) | data-ml-science | L0 · Unharnessed | 31/105 (30%) | — | — |
+| 3710 | [biodynamo-biodynamo](https://github.com/BioDynaMo/biodynamo.git) | data-ml-science | L0 · Unharnessed | 32/105 (30%) | — | — |
+| 3711 | [singularitti-spglib-jl](https://github.com/singularitti/Spglib.jl.git) | data-ml-science | L0 · Unharnessed | 32/105 (30%) | — | — |
+| 3712 | [tuw-geo-gldas](https://github.com/TUW-GEO/gldas.git) | data-ml-science | L0 · Unharnessed | 31/105 (30%) | — | — |
+| 3713 | [mgleeming-synthedia](https://github.com/mgleeming/synthedia.git) | data-ml-science | L0 · Unharnessed | 32/105 (30%) | — | — |
+| 3714 | [csyhuang-hn2016-falwa](https://github.com/csyhuang/hn2016_falwa.git) | data-ml-science | L0 · Unharnessed | 31/105 (30%) | — | — |
+| 3715 | [miguelcarcamov-gpuvmem](https://github.com/miguelcarcamov/gpuvmem.git) | data-ml-science | L0 · Unharnessed | 32/105 (30%) | — | — |
+| 3716 | [geoscienceaustralia-hiperseis](https://github.com/GeoscienceAustralia/hiperseis.git) | data-ml-science | L0 · Unharnessed | 31/105 (30%) | — | — |
+| 3717 | [iraf-community-pyraf](https://github.com/iraf-community/pyraf.git) | data-ml-science | L0 · Unharnessed | 31/105 (30%) | — | — |
+| 3718 | [geonextgis-geeagri](https://github.com/geonextgis/geeagri.git) | agriculture | L0 · Unharnessed | 31/105 (30%) | — | — |
+| 3719 | [open-agriculture-agisostack-rs](https://github.com/Open-Agriculture/AgIsoStack-rs.git) | agriculture | L0 · Unharnessed | 32/105 (30%) | — | — |
+| 3720 | [nasaharvest-togo-crop-mask](https://github.com/nasaharvest/togo-crop-mask.git) | agriculture | L0 · Unharnessed | 32/105 (30%) | — | — |
+| 3721 | [peter-evance-demo-efarm](https://github.com/peter-evance/demo-efarm.git) | agriculture | L0 · Unharnessed | 31/105 (30%) | — | — |
+| 3722 | [grovahome-grova-cube-firmware](https://github.com/grovahome/grova-cube-firmware.git) | agriculture | L0 · Unharnessed | 32/105 (30%) | — | — |
+| 3723 | [edilson-z-hydroponics-iot-app-cross-platfrom](https://github.com/edilson-z/hydroponics-iot-app-cross-platfrom.git) | agriculture | L0 · Unharnessed | 32/105 (30%) | — | — |
+| 3724 | [ljmerza-orbit-bhyve-ble](https://github.com/ljmerza/orbit-bhyve-ble.git) | agriculture | L0 · Unharnessed | 31/105 (30%) | — | — |
+| 3725 | [saswatsundar123-cropforge](https://github.com/saswatsundar123/CropForge.git) | agriculture | L0 · Unharnessed | 32/105 (30%) | — | — |
+| 3726 | [nexlogik-agrimarket](https://github.com/NexLogik/agrimarket.git) | agriculture | L0 · Unharnessed | 31/105 (30%) | — | — |
+| 3727 | [bismillahkrenova2026-smartsabinv2](https://github.com/bismillahKrenova2026/SmartSabinV2.git) | agriculture | L0 · Unharnessed | 31/105 (30%) | — | — |
+| 3728 | [opengreenery-opengreenery](https://github.com/OpenGreenery/OpenGreenery.git) | agriculture | L0 · Unharnessed | 32/105 (30%) | — | — |
+| 3729 | [suryan-s-precio](https://github.com/suryan-s/Precio.git) | agriculture | L0 · Unharnessed | 31/105 (30%) | — | — |
+| 3730 | [adametherzlab-irrigation-planner](https://github.com/AdametherzLab/irrigation-planner.git) | agriculture | L0 · Unharnessed | 31/105 (30%) | — | — |
+| 3731 | [csnyder256-grain-bids-to-excel](https://github.com/csnyder256/grain-bids-to-excel.git) | agriculture | L0 · Unharnessed | 32/105 (30%) | — | — |
+| 3732 | [adametherzlab-fertigation-mix](https://github.com/AdametherzLab/fertigation-mix.git) | agriculture | L0 · Unharnessed | 31/105 (30%) | — | — |
+| 3733 | [diiibe-mlops-smartharvest](https://github.com/diiibe/MLOPS-SmartHarvest.git) | agriculture | L0 · Unharnessed | 32/105 (30%) | — | — |
+| 3734 | [dev-infra-ogham-exa](https://github.com/ogham/exa.git) | developer-tools | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #7 |
+| 3735 | [dev-infra-yudai-gotty](https://github.com/yudai/gotty.git) | developer-tools | L0 · Unharnessed | 31/105 (30%) | — | Developer infrastructure popularity #28 |
+| 3736 | [dev-infra-sonarsource-sonarqube](https://github.com/SonarSource/sonarqube.git) | code-quality | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #99 |
+| 3737 | [dev-infra-oceanbase-oceanbase](https://github.com/oceanbase/oceanbase.git) | database-data-platforms | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #109 |
+| 3738 | [dev-infra-platformio-platformio-core](https://github.com/platformio/platformio-core.git) | software-delivery-testing-build | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #122 |
+| 3739 | [dev-infra-apache-couchdb](https://github.com/apache/couchdb.git) | database-data-platforms | L0 · Unharnessed | 31/105 (30%) | — | Developer infrastructure popularity #178 |
+| 3740 | [dev-infra-clearml-clearml](https://github.com/clearml/clearml.git) | software-delivery-testing-build | L0 · Unharnessed | 31/105 (30%) | — | Developer infrastructure popularity #181 |
+| 3741 | [dev-infra-ogham-dog](https://github.com/ogham/dog.git) | developer-tools | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #190 |
+| 3742 | [dev-infra-hibernate-hibernate-orm](https://github.com/hibernate/hibernate-orm.git) | database-data-platforms | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #197 |
+| 3743 | [dev-infra-globalizejs-globalize](https://github.com/globalizejs/globalize.git) | code-quality | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #245 |
+| 3744 | [dev-infra-nuke-build-nuke](https://github.com/nuke-build/nuke.git) | software-delivery-testing-build | L0 · Unharnessed | 31/105 (30%) | — | Developer infrastructure popularity #287 |
+| 3745 | [dev-infra-coala-coala](https://github.com/coala/coala.git) | code-quality | L0 · Unharnessed | 31/105 (30%) | — | Developer infrastructure popularity #298 |
+| 3746 | [dev-infra-disposaboy-gosublime](https://github.com/DisposaBoy/GoSublime.git) | developer-tools | L0 · Unharnessed | 31/105 (30%) | — | Developer infrastructure popularity #308 |
+| 3747 | [dev-infra-tcgoetz-garmindb](https://github.com/tcgoetz/GarminDB.git) | database-data-platforms | L0 · Unharnessed | 31/105 (30%) | — | Developer infrastructure popularity #312 |
+| 3748 | [dev-infra-tencent-tendis](https://github.com/Tencent/Tendis.git) | database-data-platforms | L0 · Unharnessed | 31/105 (30%) | — | Developer infrastructure popularity #324 |
+| 3749 | [dev-infra-beefytech-beef](https://github.com/beefytech/Beef.git) | developer-tools | L0 · Unharnessed | 31/105 (30%) | claude-code | Developer infrastructure popularity #351 |
+| 3750 | [dev-infra-linux-test-project-ltp](https://github.com/linux-test-project/ltp.git) | software-delivery-testing-build | L0 · Unharnessed | 31/105 (30%) | — | Developer infrastructure popularity #370 |
+| 3751 | [dev-infra-griddb-griddb](https://github.com/griddb/griddb.git) | database-data-platforms | L0 · Unharnessed | 31/105 (30%) | — | Developer infrastructure popularity #379 |
+| 3752 | [dev-infra-jeffknupp-sandman2](https://github.com/jeffknupp/sandman2.git) | database-data-platforms | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #420 |
+| 3753 | [dev-infra-eveningkid-denodb](https://github.com/eveningkid/denodb.git) | database-data-platforms | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #432 |
+| 3754 | [dev-infra-flowci-flow-core-x](https://github.com/FlowCI/flow-core-x.git) | software-delivery-testing-build | L0 · Unharnessed | 31/105 (30%) | — | Developer infrastructure popularity #484 |
+| 3755 | [dev-infra-fullstackproltd-aspnetcorespa](https://github.com/fullstackproltd/AspNetCoreSpa.git) | software-delivery-testing-build | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #497 |
+| 3756 | [dev-infra-alexmojaki-snoop](https://github.com/alexmojaki/snoop.git) | developer-tools | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #521 |
+| 3757 | [dev-infra-boost-ext-ut](https://github.com/boost-ext/ut.git) | software-delivery-testing-build | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #526 |
+| 3758 | [dev-infra-kamadorueda-alejandra](https://github.com/kamadorueda/alejandra.git) | code-quality | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #536 |
+| 3759 | [dev-infra-distributedio-titan](https://github.com/distributedio/titan.git) | database-data-platforms | L0 · Unharnessed | 31/105 (30%) | — | Developer infrastructure popularity #537 |
+| 3760 | [dev-infra-harisekhon-dockerfiles](https://github.com/HariSekhon/Dockerfiles.git) | software-delivery-testing-build | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #540 |
+| 3761 | [dev-infra-swiftlang-swift-llbuild](https://github.com/swiftlang/swift-llbuild.git) | software-delivery-testing-build | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #557 |
+| 3762 | [dev-infra-spatie-laravel-db-snapshots](https://github.com/spatie/laravel-db-snapshots.git) | database-data-platforms | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #578 |
+| 3763 | [dev-infra-fortran-lang-fpm](https://github.com/fortran-lang/fpm.git) | software-delivery-testing-build | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #622 |
+| 3764 | [dev-infra-redistimeseries-redistimeseries](https://github.com/RedisTimeSeries/RedisTimeSeries.git) | database-data-platforms | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #627 |
+| 3765 | [dev-infra-duaraghav8-ethlint](https://github.com/duaraghav8/Ethlint.git) | code-quality | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #652 |
+| 3766 | [dev-infra-hyrise-hyrise](https://github.com/hyrise/hyrise.git) | database-data-platforms | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #670 |
+| 3767 | [dev-infra-koihik-luaformatter](https://github.com/Koihik/LuaFormatter.git) | code-quality | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #684 |
+| 3768 | [dev-infra-pep8speaks-org-pep8speaks](https://github.com/pep8speaks-org/pep8speaks.git) | code-quality | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #715 |
+| 3769 | [dev-infra-dalance-svlint](https://github.com/dalance/svlint.git) | code-quality | L0 · Unharnessed | 31/105 (30%) | — | Developer infrastructure popularity #752 |
+| 3770 | [dev-infra-voided-org-deepkit-ml](https://github.com/voided-org/deepkit-ml.git) | developer-tools | L0 · Unharnessed | 32/105 (30%) | — | Developer infrastructure popularity #755 |
+| 3771 | [dev-infra-fsprojects-fsharplint](https://github.com/fsprojects/FSharpLint.git) | code-quality | L0 · Unharnessed | 32/108 (30%) | claude-code | Developer infrastructure popularity #762 |
 | 3772 | [dev-infra-rust-man-org-rustman](https://github.com/rust-man-org/rustman.git) | developer-tools | L0 · Unharnessed | 31/105 (30%) | — | Developer infrastructure popularity #810 |
 | 3773 | [geospatial-rastapasta-mapscii](https://github.com/rastapasta/mapscii.git) | geospatial | L0 · Unharnessed | 32/105 (30%) | — | — |
 | 3774 | [geospatial-mbloch-mapshaper](https://github.com/mbloch/mapshaper.git) | geospatial | L0 · Unharnessed | 32/105 (30%) | — | — |

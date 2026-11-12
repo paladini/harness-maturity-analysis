@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/raga-ai-hub/RagaAI-Catalyst.git",
+  "manifestName": "raga-ai-hub-ragaai-catalyst",
+  "commit": "ab67893310891140211280a496402003e52cdab5",
+  "reason": "Windows scan failed; rescanned on WSL2 using the pinned checkout.",
+  "scanner": "harness-score@1.8.4",
+  "scannerRoot": "/home/fernando_paladini/harness-refresh-2026-11-11-1-8-4/raga-ai-hub-ragaai-catalyst",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "checkoutExcludes": [],
+  "treeEntryCount": 214,
+  "treeModes": {
+    "100644": 214
+  },
+  "treeListingSha256": "240d5fc52604c7317efb778ef5710ac6deee311b59959b6a04b2c574cecbcc88",
+  "report": {
+    "path": "corpus/reports/raga-ai-hub-ragaai-catalyst.json",
+    "sha256": "28e148031c213ece6398b9fb1e77f6bf94245878a640f66d72fe77a057c9c1b0",
+    "sizeBytes": 44901,
+    "toolVersion": "1.8.4",
+    "truncated": false
+  }
+}

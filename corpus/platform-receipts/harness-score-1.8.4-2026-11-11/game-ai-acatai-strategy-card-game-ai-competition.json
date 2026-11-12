@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/acatai/Strategy-Card-Game-AI-Competition.git",
+  "manifestName": "game-ai-acatai-strategy-card-game-ai-competition",
+  "commit": "844c2264ed4b0d29ec424355d12774b242217882",
+  "reason": "Windows scan failed; rescanned on WSL2 using the pinned checkout.",
+  "scanner": "harness-score@1.8.4",
+  "scannerRoot": "/home/fernando_paladini/harness-refresh-2026-11-11-1-8-4/game-ai-acatai-strategy-card-game-ai-competition",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "checkoutExcludes": [],
+  "treeEntryCount": 1048,
+  "treeModes": {
+    "100644": 994,
+    "100755": 54
+  },
+  "treeListingSha256": "9c7768c344a2193b88f8376034a9dba4534d3b48a1ede81321d24f58b654fab1",
+  "report": {
+    "path": "corpus/reports/game-ai-acatai-strategy-card-game-ai-competition.json",
+    "sha256": "ae502be88f26928da5425b6655882bb600c189692c7056fb9ba23f7ded0c31a8",
+    "sizeBytes": 45602,
+    "toolVersion": "1.8.4",
+    "truncated": false
+  }
+}

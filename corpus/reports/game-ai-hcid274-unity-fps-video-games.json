@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.3"
+    "version": "1.8.4"
   },
-  "root": "D:\\code\\harness-maturity-analysis-geospatial-1000\\.cache\\repos\\game-ai-hcid274-unity-fps-video-games",
+  "root": "/home/fernando_paladini/harness-refresh-2026-11-11-1-8-4/game-ai-hcid274-unity-fps-video-games",
   "truncated": false,
   "verdicts": {
     "maturity": {

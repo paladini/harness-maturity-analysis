@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/ubicloud/ubicloud.git",
+  "manifestName": "dev-infra-ubicloud-ubicloud",
+  "commit": "fad16215cbf0b392ab5b9cfc8e4a4c7df382ac28",
+  "reason": "Windows scan failed; rescanned on WSL2 using the pinned checkout.",
+  "scanner": "harness-score@1.8.4",
+  "scannerRoot": "/home/fernando_paladini/harness-refresh-2026-11-11-1-8-4/dev-infra-ubicloud-ubicloud",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "checkoutExcludes": [],
+  "treeEntryCount": 2661,
+  "treeModes": {
+    "100644": 2567,
+    "100755": 94
+  },
+  "treeListingSha256": "83f64f74381eeb304e51b1a180a85a4ae837b34ee7f22d3f069bf798aa07e465",
+  "report": {
+    "path": "corpus/reports/dev-infra-ubicloud-ubicloud.json",
+    "sha256": "042ddbdd2c3421b78cf61624aa4a93a97a59b1dd3872fe1dafb9d3dca6319899",
+    "sizeBytes": 45403,
+    "toolVersion": "1.8.4",
+    "truncated": false
+  }
+}

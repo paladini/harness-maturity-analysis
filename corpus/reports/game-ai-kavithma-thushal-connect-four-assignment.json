@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.3"
+    "version": "1.8.4"
   },
-  "root": "D:\\code\\harness-maturity-analysis-geospatial-1000\\.cache\\repos\\game-ai-kavithma-thushal-connect-four-assignment",
+  "root": "D:\\code\\harness-maturity-analysis-ai-games\\.cache\\repos\\game-ai-kavithma-thushal-connect-four-assignment",
   "truncated": false,
   "verdicts": {
     "maturity": {

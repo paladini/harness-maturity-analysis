@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.3"
+    "version": "1.8.4"
   },
-  "root": "D:\\code\\harness-maturity-analysis-geospatial-1000\\.cache\\repos\\seyedmuhammadhosseinmousavi-on-the-feasibility-of-estimating-fruits-weights-using-depth-sensors",
+  "root": "D:\\code\\harness-maturity-analysis-1-8-4\\.cache\\repos\\seyedmuhammadhosseinmousavi-on-the-feasibility-of-estimating-fruits-weights-using-depth-sensors",
   "truncated": false,
   "verdicts": {
     "maturity": {

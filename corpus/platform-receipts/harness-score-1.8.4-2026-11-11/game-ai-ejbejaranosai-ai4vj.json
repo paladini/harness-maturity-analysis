@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/EjbejaranosAI/AI4VJ.git",
+  "manifestName": "game-ai-ejbejaranosai-ai4vj",
+  "commit": "50f522bff47fd7a0c5ef82788d6a3ebde9c70045",
+  "reason": "Windows scan failed; rescanned on WSL2 using the pinned checkout.",
+  "scanner": "harness-score@1.8.4",
+  "scannerRoot": "/home/fernando_paladini/harness-refresh-2026-11-11-1-8-4/game-ai-ejbejaranosai-ai4vj",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "checkoutExcludes": [],
+  "treeEntryCount": 51,
+  "treeModes": {
+    "100644": 51
+  },
+  "treeListingSha256": "eeb1f935a990f9a2ce8c46fb7d5278f2e6bbd39f40137a53bada32ad9b134339",
+  "report": {
+    "path": "corpus/reports/game-ai-ejbejaranosai-ai4vj.json",
+    "sha256": "97940638488d1f59a097f682484f4ac3827c36b963dc647d22dd2ce481464865",
+    "sizeBytes": 45125,
+    "toolVersion": "1.8.4",
+    "truncated": false
+  }
+}

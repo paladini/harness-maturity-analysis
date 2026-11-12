@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/mapforge-org/mapforge.git",
+  "manifestName": "geospatial-mapforge-org-mapforge",
+  "commit": "99d1469c2b71ce1673bcc8bd9e9f082814e7b8e0",
+  "reason": "Windows scan failed; rescanned on WSL2 using the pinned checkout.",
+  "source": "https://github.com/mapforge-org/mapforge.git",
+  "scanner": "harness-score@1.8.4",
+  "scannerRoot": "/home/fernando_paladini/harness-refresh-2026-11-11-1-8-4/geospatial-mapforge-org-mapforge",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "checkoutExcludes": [],
+  "treeEntryCount": 13095,
+  "treeModes": {
+    "100644": 13073,
+    "100755": 16,
+    "120000": 6
+  },
+  "treeListingSha256": "43197ebc1e3afde555174b9a50fdc7a5c0fc3b6119b87113d24555c405489805",
+  "report": {
+    "path": "corpus/reports/geospatial-mapforge-org-mapforge.json",
+    "sha256": "1b5724ff0d93d6f64cba461feb7a80873d7941fa6a5bbe5f827df2450fd361ad",
+    "sizeBytes": 45462,
+    "toolVersion": "1.8.4",
+    "truncated": false
+  }
+}

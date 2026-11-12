@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/cactus-compute/needle.git",
+  "manifestName": "needle",
+  "commit": "ef3cf7543204d99878c0dd913a05f6a506da4be8",
+  "reason": "Original remote no longer serves the pinned commit; fetched the identical commit from cactus-compute/cactus and scanned on WSL2.",
+  "source": "https://github.com/cactus-compute/cactus.git",
+  "scanner": "harness-score@1.8.4",
+  "scannerRoot": "/home/fernando_paladini/harness-refresh-2026-11-11-1-8-4/needle",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "checkoutExcludes": [],
+  "treeEntryCount": 72,
+  "treeModes": {
+    "100644": 71,
+    "100755": 1
+  },
+  "treeListingSha256": "aa26d52c4ebc9312961e90ad342db5e84be551ac7baba5aa77b5a3588f3c86ea",
+  "report": {
+    "path": "corpus/reports/needle.json",
+    "sha256": "ac914f1963ed129c867190b7cb2d71d6826ce06e78c5a78c119916ea74fa6420",
+    "sizeBytes": 45018,
+    "toolVersion": "1.8.4",
+    "truncated": false
+  }
+}

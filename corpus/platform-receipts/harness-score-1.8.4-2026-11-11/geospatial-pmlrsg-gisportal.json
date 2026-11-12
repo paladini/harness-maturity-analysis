@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/pmlrsg/GISportal.git",
+  "manifestName": "geospatial-pmlrsg-gisportal",
+  "commit": "6988ebe635dbcf803a974583c8bcac77f20b5b79",
+  "reason": "Windows scan failed; rescanned on WSL2 using the pinned checkout.",
+  "source": "https://github.com/pmlrsg/GISportal.git",
+  "scanner": "harness-score@1.8.4",
+  "scannerRoot": "/home/fernando_paladini/harness-refresh-2026-11-11-1-8-4/geospatial-pmlrsg-gisportal",
+  "platform": "WSL2 Ubuntu 24.04",
+  "gitVersion": "git version 2.43.0",
+  "nodeVersion": "v18.19.1",
+  "gitLfsSkipSmudge": true,
+  "headMatchesPin": true,
+  "diffIndexClean": true,
+  "checkoutExcludes": [],
+  "treeEntryCount": 533,
+  "treeModes": {
+    "100644": 480,
+    "100755": 52,
+    "120000": 1
+  },
+  "treeListingSha256": "b1b520e4c6547b23ceb2e49ffb12b7df7b4ddf299ce871fb04cab76d7b394a5f",
+  "report": {
+    "path": "corpus/reports/geospatial-pmlrsg-gisportal.json",
+    "sha256": "6d0c216c64df786722f27d252586d09f4e8682475ac9397e41190bdbe4707c99",
+    "sizeBytes": 45289,
+    "toolVersion": "1.8.4",
+    "truncated": false
+  }
+}
