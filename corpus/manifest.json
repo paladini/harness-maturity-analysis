@@ -55342,9 +55342,7 @@
         "selectionMode": "popular",
         "assistantConfigPath": "CLAUDE.md",
         "githubRepositoryId": 1236962486
-      },
-      "scanStatus": "not-scanned",
-      "scanNote": "The pinned source was unavailable during the 2026-11-14 refresh; no verified copy of this exact commit was found. The earlier report is retained and excluded from 1.8.5 results. See corpus/source-audit-2026-11-14-ai-ide-unavailable.md."
+      }
     },
     {
       "name": "ai-ide-milbia-is-goat-burning-580513645",
@@ -100020,5 +100018,5 @@
       }
     }
   ],
-  "runId": "scanner-refresh-1-8-5"
+  "runId": "scanner-refresh-1-8-5-recovery-1"
 }

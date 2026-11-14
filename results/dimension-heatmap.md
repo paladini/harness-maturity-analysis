@@ -3398,6 +3398,7 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | ai-ide-elhabashylab-3dclans-988903214 | 45% | 0% | 0% | 40% | 0% | 85% |
 | ai-ide-oyanibtech-iii-growfico-official-webapp-1171229591 | 45% | 0% | 0% | 30% | 0% | 100% |
 | ai-ide-jagadish-k-video-gif-creator-1068635093 | 45% | 0% | 0% | 20% | 29% | 85% |
+| ai-ide-mikeydotio-lillist-1236962486 | 45% | 0% | 0% | 0% | 57% | 85% |
 | ai-ide-kodicw-nixspirit-1215340672 | 45% | 0% | 0% | 10% | 21% | 100% |
 | ai-ide-marianaboroni-tissueresolve-1254465462 | 45% | 0% | 0% | 40% | 0% | 85% |
 | geospatial-hajkmap-hajk | 45% | 0% | 0% | 60% | 0% | 65% |

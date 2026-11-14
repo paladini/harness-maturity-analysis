@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.4"
+    "version": "1.8.5"
   },
-  "root": "D:\\code\\harness-maturity-analysis-ai-ide-2026-10-11\\.cache\\repos\\ai-ide-mikeydotio-lillist-1236962486",
+  "root": "/home/fernando_paladini/harness-refresh-185/ai-ide-mikeydotio-lillist-1236962486",
   "truncated": false,
   "verdicts": {
     "maturity": {

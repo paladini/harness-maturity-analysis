@@ -19,3 +19,6 @@ is claimed from these attempts.
 
 Retry only a source containing the exact commit; do not substitute a different
 revision or claim an older report as a 1.8.5 result.
+
+Subsequent recovery: `lillist` was found at the exact pinned commit in a
+public copy and rescanned; see `checkout-audit-2026-11-14-lillist-1-8-5.md`.
