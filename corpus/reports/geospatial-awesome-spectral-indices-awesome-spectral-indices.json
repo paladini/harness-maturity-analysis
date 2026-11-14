@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.4"
+    "version": "1.8.5"
   },
-  "root": "/home/fernando_paladini/harness-refresh-2026-11-11-1-8-4/geospatial-awesome-spectral-indices-awesome-spectral-indices",
+  "root": "/home/fernando_paladini/harness-refresh-185/recovered-batch/geospatial-awesome-spectral-indices-awesome-spectral-indices",
   "truncated": false,
   "verdicts": {
     "maturity": {

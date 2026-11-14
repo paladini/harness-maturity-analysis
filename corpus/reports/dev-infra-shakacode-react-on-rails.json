@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.4"
+    "version": "1.8.5"
   },
-  "root": "/home/fernando_paladini/harness-refresh-2026-11-11-1-8-4/dev-infra-shakacode-react-on-rails",
+  "root": "/home/fernando_paladini/harness-refresh-185/recovered-batch/dev-infra-shakacode-react-on-rails",
   "truncated": false,
   "verdicts": {
     "maturity": {

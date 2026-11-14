@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.4"
+    "version": "1.8.5"
   },
-  "root": "/home/fernando_paladini/harness-refresh-2026-11-11-1-8-4/liyupi-codefather",
+  "root": "/home/fernando_paladini/harness-refresh-185/recovered-batch/liyupi-codefather",
   "truncated": false,
   "verdicts": {
     "maturity": {

@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.4"
+    "version": "1.8.5"
   },
-  "root": "D:\\code\\harness-maturity-analysis-audio-500\\.cache\\repos\\emansarahafi-monicrophardware",
+  "root": "D:\\code\\harness-maturity-analysis-1-8-5\\.cache\\repos\\emansarahafi-monicrophardware",
   "truncated": false,
   "verdicts": {
     "maturity": {

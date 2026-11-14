@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.4"
+    "version": "1.8.5"
   },
-  "root": "D:\\code\\harness-maturity-analysis-1-8-4\\.cache\\repos\\proma-ai-proma",
+  "root": "D:\\code\\harness-maturity-analysis-1-8-5\\.cache\\repos\\proma-ai-proma",
   "truncated": false,
   "verdicts": {
     "maturity": {

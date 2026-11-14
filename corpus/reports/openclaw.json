@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.4"
+    "version": "1.8.5"
   },
-  "root": "D:\\code\\harness-maturity-analysis-1-8-4\\.cache\\repos\\openclaw",
+  "root": "D:\\code\\harness-maturity-analysis-1-8-5\\.cache\\repos\\openclaw",
   "truncated": false,
   "verdicts": {
     "maturity": {
@@ -34,15 +34,14 @@
     "index": 3,
     "name": "Sensing",
     "nextLevelGaps": [
-      "hooks ≥ 70%",
-      "total ≥ 80%"
+      "hooks ≥ 70%"
     ],
     "capped": false
   },
   "score": {
-    "earned": 83,
+    "earned": 86,
     "max": 105,
-    "percent": 79
+    "percent": 82
   },
   "dimensions": [
     {
@@ -72,9 +71,9 @@
     {
       "id": "sensors",
       "title": "Sensors & Feedback",
-      "earned": 17,
+      "earned": 20,
       "max": 20,
-      "percent": 85,
+      "percent": 100,
       "applicable": true
     },
     {
@@ -388,9 +387,9 @@
       "dimension": "sensors",
       "title": "Formatter configured",
       "points": 3,
-      "earned": 0,
-      "passed": false,
-      "evidence": "No formatter configuration detected.",
+      "earned": 3,
+      "passed": true,
+      "evidence": "formatter in devDependencies; oxfmt configuration.",
       "remediation": "Add an auto-formatter (prettier/biome, black or ruff format, gofmt/rustfmt are built-in) — formatting noise in diffs hides real agent mistakes from review.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#sns-04",
       "severity": "error",
@@ -571,15 +570,14 @@
       "index": 3,
       "name": "Sensing",
       "nextLevelGaps": [
-        "hooks ≥ 70%",
-        "total ≥ 80%"
+        "hooks ≥ 70%"
       ],
       "capped": false
     },
     "score": {
-      "earned": 83,
+      "earned": 86,
       "max": 105,
-      "percent": 79
+      "percent": 82
     },
     "dimensions": [
       {
@@ -609,9 +607,9 @@
       {
         "id": "sensors",
         "title": "Sensors & Feedback",
-        "earned": 17,
+        "earned": 20,
         "max": 20,
-        "percent": 85,
+        "percent": 100,
         "applicable": true
       },
       {
@@ -925,9 +923,9 @@
         "dimension": "sensors",
         "title": "Formatter configured",
         "points": 3,
-        "earned": 0,
-        "passed": false,
-        "evidence": "No formatter configuration detected.",
+        "earned": 3,
+        "passed": true,
+        "evidence": "formatter in devDependencies; oxfmt configuration.",
         "remediation": "Add an auto-formatter (prettier/biome, black or ruff format, gofmt/rustfmt are built-in) — formatting noise in diffs hides real agent mistakes from review.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#sns-04",
         "severity": "error",

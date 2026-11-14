@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.4"
+    "version": "1.8.5"
   },
-  "root": "D:\\code\\harness-maturity-analysis-1-8-4\\.cache\\repos\\openjiuwen-ai-jiuwenswarm",
+  "root": "D:\\code\\harness-maturity-analysis-1-8-5\\.cache\\repos\\openjiuwen-ai-jiuwenswarm",
   "truncated": false,
   "verdicts": {
     "maturity": {
@@ -384,7 +384,7 @@
       "points": 3,
       "earned": 3,
       "passed": true,
-      "evidence": "prettier configuration.",
+      "evidence": "prettier configuration; oxfmt configuration.",
       "remediation": "Add an auto-formatter (prettier/biome, black or ruff format, gofmt/rustfmt are built-in) — formatting noise in diffs hides real agent mistakes from review.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#sns-04",
       "severity": "error",
@@ -918,7 +918,7 @@
         "points": 3,
         "earned": 3,
         "passed": true,
-        "evidence": "prettier configuration.",
+        "evidence": "prettier configuration; oxfmt configuration.",
         "remediation": "Add an auto-formatter (prettier/biome, black or ruff format, gofmt/rustfmt are built-in) — formatting noise in diffs hides real agent mistakes from review.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#sns-04",
         "severity": "error",

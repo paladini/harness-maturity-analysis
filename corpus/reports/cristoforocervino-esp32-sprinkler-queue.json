@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.4"
+    "version": "1.8.5"
   },
-  "root": "D:\\code\\harness-maturity-analysis-1-8-4\\.cache\\repos\\cristoforocervino-esp32-sprinkler-queue",
+  "root": "D:\\code\\harness-maturity-analysis-1-8-5\\.cache\\repos\\cristoforocervino-esp32-sprinkler-queue",
   "truncated": false,
   "verdicts": {
     "maturity": {

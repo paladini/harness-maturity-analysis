@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.4"
+    "version": "1.8.5"
   },
-  "root": "D:\\code\\harness-maturity-analysis-1-8-4\\.cache\\repos\\stanford-oval-storm",
+  "root": "D:\\code\\harness-maturity-analysis-1-8-5\\.cache\\repos\\stanford-oval-storm",
   "truncated": false,
   "verdicts": {
     "maturity": {
