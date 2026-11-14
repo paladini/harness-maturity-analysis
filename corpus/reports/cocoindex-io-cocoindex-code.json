@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.4"
+    "version": "1.8.5"
   },
-  "root": "D:\\code\\harness-maturity-analysis-1-8-4\\.cache\\repos\\cocoindex-io-cocoindex-code",
+  "root": "D:\\code\\harness-maturity-analysis-1-8-5\\.cache\\repos\\cocoindex-io-cocoindex-code",
   "truncated": false,
   "verdicts": {
     "maturity": {

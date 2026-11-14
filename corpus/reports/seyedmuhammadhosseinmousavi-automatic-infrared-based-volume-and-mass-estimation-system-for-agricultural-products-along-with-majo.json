@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.4"
+    "version": "1.8.5"
   },
-  "root": "D:\\code\\harness-maturity-analysis-1-8-4\\.cache\\repos\\seyedmuhammadhosseinmousavi-automatic-infrared-based-volume-and-mass-estimation-system-for-agricultural-products-along-with-majo",
+  "root": "D:\\code\\harness-maturity-analysis-1-8-5\\.cache\\repos\\seyedmuhammadhosseinmousavi-automatic-infrared-based-volume-and-mass-estimation-system-for-agricultural-products-along-with-majo",
   "truncated": false,
   "verdicts": {
     "maturity": {

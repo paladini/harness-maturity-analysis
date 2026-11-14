@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.4"
+    "version": "1.8.5"
   },
-  "root": "D:\\code\\harness-maturity-analysis-1-8-4\\.cache\\repos\\goauthentik-authentik",
+  "root": "D:\\code\\harness-maturity-analysis-1-8-5\\.cache\\repos\\goauthentik-authentik",
   "truncated": false,
   "verdicts": {
     "maturity": {
@@ -385,7 +385,7 @@
       "points": 3,
       "earned": 3,
       "passed": true,
-      "evidence": "python formatter via pyproject.toml; gofmt (built into Go toolchain); rustfmt (built into Rust toolchain).",
+      "evidence": "formatter in devDependencies; oxfmt configuration; python formatter via pyproject.toml.",
       "remediation": "Add an auto-formatter (prettier/biome, black or ruff format, gofmt/rustfmt are built-in) — formatting noise in diffs hides real agent mistakes from review.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#sns-04",
       "severity": "error",
@@ -919,7 +919,7 @@
         "points": 3,
         "earned": 3,
         "passed": true,
-        "evidence": "python formatter via pyproject.toml; gofmt (built into Go toolchain); rustfmt (built into Rust toolchain).",
+        "evidence": "formatter in devDependencies; oxfmt configuration; python formatter via pyproject.toml.",
         "remediation": "Add an auto-formatter (prettier/biome, black or ruff format, gofmt/rustfmt are built-in) — formatting noise in diffs hides real agent mistakes from review.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#sns-04",
         "severity": "error",

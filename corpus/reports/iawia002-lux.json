@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.4"
+    "version": "1.8.5"
   },
-  "root": "D:\\code\\harness-maturity-analysis-1-8-4\\.cache\\repos\\iawia002-lux",
+  "root": "D:\\code\\harness-maturity-analysis-1-8-5\\.cache\\repos\\iawia002-lux",
   "truncated": false,
   "verdicts": {
     "maturity": {

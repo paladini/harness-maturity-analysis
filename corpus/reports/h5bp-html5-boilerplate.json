@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.4"
+    "version": "1.8.5"
   },
-  "root": "D:\\code\\harness-maturity-analysis-1-8-4\\.cache\\repos\\h5bp-html5-boilerplate",
+  "root": "D:\\code\\harness-maturity-analysis-1-8-5\\.cache\\repos\\h5bp-html5-boilerplate",
   "truncated": false,
   "verdicts": {
     "maturity": {

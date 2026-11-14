@@ -18,9 +18,13 @@ describe('Phase 1D cryptocurrency software cohort', () => {
     expect(receipt.report.toolVersion).toBe('1.8.4');
     expect(receipt.report.truncated).toBe(false);
     expect(supplemental.entries[0].codeEvidence).toEqual({ ...candidate.codeEvidence, status: 'verified' });
+    const currentReceipt = json(
+      `corpus/platform-receipts/${manifest.toolVersion.replace('@', '-')}-${manifest.runDate}/ccxt.json`,
+    );
     const report = json('corpus/reports/ccxt.json');
-    expect(report.root).toBe(receipt.scannerRoot);
-    expect(report.tool.version).toBe(receipt.report.toolVersion);
+    expect(currentReceipt.commit).toBe(candidate.commit);
+    expect(report.root).toBe(currentReceipt.scannerRoot);
+    expect(report.tool.version).toBe(currentReceipt.report.toolVersion);
   });
   it('adds exactly25 new canonical identities without changing101 earlier pins', () => {
     expect(selection.candidates).toHaveLength(25);
@@ -81,7 +85,7 @@ describe('Phase 1D cryptocurrency software cohort', () => {
     const audit = json('corpus/checkout-audit-2026-10-08-crypto-popularity.json');
     const history = json('corpus/history/2026-10-08-harness-score-1.8.1-crypto-popularity.json');
     const currentHistory = json(
-      `corpus/history/${manifest.runDate}-harness-score-1.8.4-${manifest.runId}.json`,
+      `corpus/history/${manifest.runDate}-${manifest.toolVersion.replace('@', '-')}-${manifest.runId}.json`,
     );
     expect(audit.entries).toHaveLength(25);
     expect(history.entries).toHaveLength(126);
@@ -96,7 +100,7 @@ describe('Phase 1D cryptocurrency software cohort', () => {
       const historical = history.entries.find((item) => item.name === candidate.name);
       const current = currentHistory.entries.find((item) => item.name === candidate.name);
       expect(historical.status).toBe('scored');
-      expect(report.tool.version).toBe('1.8.4');
+      expect(report.tool.version).toBe(manifest.toolVersion.replace('harness-score@', ''));
       expect(current.status).toBe('scored');
       expect(current.score).toEqual(report.score);
       expect(current.level.index).toBe(report.level.index);

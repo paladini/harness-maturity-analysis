@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.4"
+    "version": "1.8.5"
   },
-  "root": "D:\\code\\harness-maturity-analysis-1-8-4\\.cache\\repos\\sambit-318-ai-based-fertilizer-and-input-usage-optimization",
+  "root": "D:\\code\\harness-maturity-analysis-1-8-5\\.cache\\repos\\sambit-318-ai-based-fertilizer-and-input-usage-optimization",
   "truncated": false,
   "verdicts": {
     "maturity": {

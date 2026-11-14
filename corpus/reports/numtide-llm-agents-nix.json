@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.4"
+    "version": "1.8.5"
   },
-  "root": "D:\\code\\harness-maturity-analysis-1-8-4\\.cache\\repos\\numtide-llm-agents-nix",
+  "root": "D:\\code\\harness-maturity-analysis-1-8-5\\.cache\\repos\\numtide-llm-agents-nix",
   "truncated": false,
   "verdicts": {
     "maturity": {

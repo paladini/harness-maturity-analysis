@@ -1,8 +1,8 @@
 {
   "$comment": "Each entry pins a repository to an exact commit for reproducible scanning. runDate and toolVersion identify the current historical run. toolVersion is the npm spec passed to `npx --yes <toolVersion>`. scanSubpath scans only part of a monorepo when set. checkoutExcludes omits platform-incompatible, non-harness data from checkout. isStressCase marks entries chosen because the scanner is expected to score them poorly or surprisingly — see METHODOLOGY.md. Never edit an existing entry's commit in place: add a new entry or a dated note instead.",
   "schemaVersion": 2,
-  "runDate": "2026-11-11",
-  "toolVersion": "harness-score@1.8.4",
+  "runDate": "2026-11-14",
+  "toolVersion": "harness-score@1.8.5",
   "entries": [
     {
       "name": "harness-score",
@@ -15736,7 +15736,9 @@
         "popularityRank": 447,
         "selectionMode": "popular",
         "archived": false
-      }
+      },
+      "scanStatus": "not-scanned",
+      "scanNote": "The pinned source was unavailable during the 2026-11-14 refresh; no verified copy of this exact commit was found. The earlier report is retained and excluded from 1.8.5 results. See corpus/source-audit-2026-11-14-genpark-tutor.md."
     },
     {
       "name": "game-ai-vl4dt-godot-skills",
@@ -53427,7 +53429,9 @@
         "selectionMode": "popular",
         "assistantConfigPath": "AGENTS.md",
         "githubRepositoryId": 967787402
-      }
+      },
+      "scanStatus": "not-scanned",
+      "scanNote": "The pinned source was unavailable during the 2026-11-14 refresh; no verified copy of this exact commit was found. The earlier report is retained and excluded from 1.8.5 results. See corpus/source-audit-2026-11-14-ai-ide-unavailable.md."
     },
     {
       "name": "ai-ide-ethicks-x-smaran-1347205999",
@@ -55338,7 +55342,9 @@
         "selectionMode": "popular",
         "assistantConfigPath": "CLAUDE.md",
         "githubRepositoryId": 1236962486
-      }
+      },
+      "scanStatus": "not-scanned",
+      "scanNote": "The pinned source was unavailable during the 2026-11-14 refresh; no verified copy of this exact commit was found. The earlier report is retained and excluded from 1.8.5 results. See corpus/source-audit-2026-11-14-ai-ide-unavailable.md."
     },
     {
       "name": "ai-ide-milbia-is-goat-burning-580513645",
@@ -56496,7 +56502,9 @@
         "selectionMode": "random",
         "assistantConfigPath": "CLAUDE.md",
         "githubRepositoryId": 999207456
-      }
+      },
+      "scanStatus": "not-scanned",
+      "scanNote": "The pinned source was unavailable during the 2026-11-14 refresh; no verified copy of this exact commit was found. The earlier report is retained and excluded from 1.8.5 results. See corpus/source-audit-2026-11-14-ai-ide-unavailable.md."
     },
     {
       "name": "ai-ide-geowa4-claude-plugins-1141500765",
@@ -56538,7 +56546,9 @@
         "selectionMode": "random",
         "assistantConfigPath": "AGENTS.md",
         "githubRepositoryId": 1333052940
-      }
+      },
+      "scanStatus": "not-scanned",
+      "scanNote": "The pinned source was unavailable during the 2026-11-14 refresh; no verified copy of this exact commit was found. The earlier report is retained and excluded from 1.8.5 results. See corpus/source-audit-2026-11-14-ai-ide-unavailable.md."
     },
     {
       "name": "ai-ide-h4x0r-eisenboard-1062717209",
@@ -56919,7 +56929,9 @@
         "selectionMode": "random",
         "assistantConfigPath": "GEMINI.md",
         "githubRepositoryId": 1137809893
-      }
+      },
+      "scanStatus": "not-scanned",
+      "scanNote": "The pinned source was unavailable during the 2026-11-14 refresh; no verified copy of this exact commit was found. The earlier report is retained and excluded from 1.8.5 results. See corpus/source-audit-2026-11-14-ai-ide-unavailable.md."
     },
     {
       "name": "ai-ide-kelthon-roobra-api-1276380473",
@@ -56940,7 +56952,9 @@
         "selectionMode": "random",
         "assistantConfigPath": "AGENTS.md",
         "githubRepositoryId": 1276380473
-      }
+      },
+      "scanStatus": "not-scanned",
+      "scanNote": "The pinned source was unavailable during the 2026-11-14 refresh; no verified copy of this exact commit was found. The earlier report is retained and excluded from 1.8.5 results. See corpus/source-audit-2026-11-14-ai-ide-unavailable.md."
     },
     {
       "name": "ai-ide-kingofknights-minidb-1209060008",
@@ -57234,7 +57248,9 @@
         "selectionMode": "random",
         "assistantConfigPath": "GEMINI.md",
         "githubRepositoryId": 1289369557
-      }
+      },
+      "scanStatus": "not-scanned",
+      "scanNote": "The pinned source was unavailable during the 2026-11-14 refresh; no verified copy of this exact commit was found. The earlier report is retained and excluded from 1.8.5 results. See corpus/source-audit-2026-11-14-ai-ide-unavailable.md."
     },
     {
       "name": "ai-ide-marciohideaki-second-brain-starter-1217435548",
@@ -65531,7 +65547,7 @@
       "isStressCase": false,
       "notes": "Popular agriculture software cohort agriculture-software-popularity-500; canonical GitHub ID=1349919133; observed stars=7 at 2026-10-13T04:28:50.677Z; pinned implementation=jiofarm/cli.py. Selection popularity is not a Harness Score input. See corpus/selection-2026-10-13-agriculture-software-popularity-500.json.",
       "scanStatus": "not-scanned",
-      "scanNote": "The pinned repository returned GitHub 404 during the 2026-11-11 refresh; no verified source for the pinned commit was found. The previous report is retained and excluded from the 1.8.4 results."
+      "scanNote": "The pinned source was unavailable during the 2026-11-14 refresh; no verified copy of this exact commit was found. The earlier report is retained and excluded from 1.8.5 results. See corpus/source-audit-2026-11-14-jiofarm.md."
     },
     {
       "name": "wittiden-belagrooptimization",
@@ -100004,5 +100020,5 @@
       }
     }
   ],
-  "runId": "scanner-refresh-1-8-4-recovery-2"
+  "runId": "scanner-refresh-1-8-5"
 }

@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.4"
+    "version": "1.8.5"
   },
-  "root": "D:\\code\\harness-maturity-analysis-1-8-4\\.cache\\repos\\dev-infra-omnisharp-csharp-language-server-protocol",
+  "root": "D:\\code\\harness-maturity-analysis-1-8-5\\.cache\\repos\\dev-infra-omnisharp-csharp-language-server-protocol",
   "truncated": false,
   "verdicts": {
     "maturity": {
