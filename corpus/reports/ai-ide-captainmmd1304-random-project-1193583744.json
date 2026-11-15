@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.5"
+    "version": "1.9.0"
   },
-  "root": "D:\\code\\harness-maturity-analysis-1-8-5\\.cache\\repos\\ai-ide-captainmmd1304-random-project-1193583744",
+  "root": "D:\\code\\harness-maturity-analysis-1-9-0-refresh\\.cache\\repos\\ai-ide-captainmmd1304-random-project-1193583744",
   "truncated": false,
   "verdicts": {
     "maturity": {

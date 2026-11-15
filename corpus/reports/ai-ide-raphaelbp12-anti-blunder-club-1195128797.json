@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.5"
+    "version": "1.9.0"
   },
-  "root": "D:\\code\\harness-maturity-analysis-1-8-5\\.cache\\repos\\ai-ide-raphaelbp12-anti-blunder-club-1195128797",
+  "root": "D:\\code\\harness-maturity-analysis-1-9-0-refresh\\.cache\\repos\\ai-ide-raphaelbp12-anti-blunder-club-1195128797",
   "truncated": false,
   "verdicts": {
     "maturity": {
