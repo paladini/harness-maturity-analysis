@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.5"
+    "version": "1.9.0"
   },
-  "root": "D:\\code\\harness-maturity-analysis-1-8-5\\.cache\\repos\\zju-fast-lab-ego-planner-swarm",
+  "root": "D:\\code\\harness-maturity-analysis-1-9-0-refresh\\.cache\\repos\\zju-fast-lab-ego-planner-swarm",
   "truncated": false,
   "verdicts": {
     "maturity": {

@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.5"
+    "version": "1.9.0"
   },
-  "root": "D:\\code\\harness-maturity-analysis-1-8-5\\.cache\\repos\\ai-ide-iurykrieger-claude-yoke-1220508464",
+  "root": "D:\\code\\harness-maturity-analysis-1-9-0-refresh\\.cache\\repos\\ai-ide-iurykrieger-claude-yoke-1220508464",
   "truncated": false,
   "verdicts": {
     "maturity": {

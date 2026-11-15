@@ -1,13 +1,12 @@
 # Dimension Heatmap
 
-_Percent earned per dimension, `harness-score@1.8.5`._
+_Percent earned per dimension, `harness-score@1.9.0`._
 
 | Repository | Context & Guides | Skills & Commands | Hooks & Guardrails | Sensors & Feedback | CI Feedback | Hygiene & Safety |
 |---|---|---|---|---|---|---|
 | harness-score | 100% | 100% | 100% | 100% | 100% | 100% |
 | ruvnet-ruflo | 90% | 100% | 100% | 100% | 100% | 100% |
 | ecc | 100% | 100% | 100% | 100% | 79% | 100% |
-| dev-infra-shakacode-react-on-rails | 100% | 100% | 100% | 100% | 100% | 85% |
 | streamlit-streamlit | 100% | 88% | 100% | 100% | 100% | 85% |
 | yeachan-heo-oh-my-claudecode | 100% | 100% | 100% | 100% | 79% | 91% |
 | ai-ide-shyftlabs-continuum-1250579815 | 100% | 71% | 86% | 100% | 100% | 100% |
@@ -391,7 +390,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | ai-ide-atman-33-spec-for-codex-ide-1064572035 | 100% | 0% | 0% | 100% | 79% | 100% |
 | ai-ide-opsmill-infrahub-demo-sp-1239655555 | 100% | 0% | 0% | 100% | 79% | 100% |
 | runchuan-bu-bioclaw | 100% | 24% | 0% | 75% | 79% | 100% |
-| dev-infra-nhost-nhost | 100% | 0% | 0% | 100% | 79% | 100% |
 | dev-infra-prettier-prettier-vscode | 100% | 0% | 0% | 100% | 100% | 85% |
 | dev-infra-myriad-dreamin-tinymist | 100% | 0% | 0% | 100% | 79% | 100% |
 | dev-infra-percona-pmm | 100% | 0% | 0% | 100% | 79% | 100% |
@@ -671,7 +669,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | geospatial-fityannugroho-idn-area-map | 65% | 0% | 0% | 100% | 79% | 100% |
 | recharts-recharts | 30% | 41% | 0% | 100% | 100% | 85% |
 | dev-infra-alexfazio-plankton | 10% | 0% | 100% | 100% | 79% | 85% |
-| game-ai-xeldaralz-everything-claude-unity | 90% | 47% | 100% | 10% | 29% | 85% |
 | ai-ide-ui5-openui5-15085215 | 100% | 53% | 0% | 85% | 0% | 85% |
 | ai-ide-jvsena42-mandacaru-939392945 | 100% | 71% | 0% | 30% | 57% | 85% |
 | ai-ide-finos-morphir-dotnet-251394937 | 85% | 53% | 0% | 30% | 100% | 85% |
@@ -1162,7 +1159,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | mcp-ui-org-mcp-ui | 10% | 0% | 0% | 100% | 100% | 100% |
 | openclaw-mcporter | 30% | 0% | 0% | 100% | 79% | 87% |
 | leigest519-opengame | 10% | 0% | 0% | 100% | 100% | 100% |
-| agentsmesh-agentsmesh | 30% | 0% | 0% | 100% | 79% | 87% |
 | databricks-solutions-ai-dev-kit | 10% | 53% | 57% | 30% | 79% | 100% |
 | core-mate-opengui | 30% | 0% | 0% | 100% | 79% | 87% |
 | sourmash-bio-sourmash | 10% | 0% | 0% | 100% | 100% | 100% |
@@ -1285,7 +1281,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | mitmproxy-mitmproxy | 30% | 0% | 0% | 100% | 79% | 85% |
 | chatboxai-chatbox | 10% | 53% | 0% | 100% | 21% | 100% |
 | tinygrad-tinygrad | 30% | 0% | 0% | 100% | 100% | 70% |
-| influxdata-influxdb | 10% | 18% | 0% | 100% | 79% | 90% |
 | google-labs-code-design-md | 10% | 53% | 0% | 60% | 79% | 100% |
 | mark3labs-mcp-go | 30% | 0% | 0% | 100% | 57% | 100% |
 | aipentest-cyberstrikeai | 10% | 53% | 0% | 75% | 57% | 100% |
@@ -1798,7 +1793,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | geospatial-geostyler-geostyler-qgis-parser | 10% | 0% | 0% | 85% | 79% | 100% |
 | game-ai-bgrenat-godot-game-dev-studio | 85% | 53% | 0% | 10% | 29% | 85% |
 | 12-factor-agents | 100% | 0% | 0% | 60% | 0% | 85% |
-| vibe-coding-cn | 100% | 0% | 0% | 10% | 50% | 100% |
 | ekko-studio | 45% | 0% | 0% | 60% | 57% | 100% |
 | ruby-llm | 45% | 53% | 0% | 35% | 50% | 85% |
 | game-ai-loomle-loomle | 45% | 0% | 0% | 60% | 79% | 85% |
@@ -1954,7 +1948,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | jj-vcs-jj | 10% | 0% | 0% | 75% | 79% | 100% |
 | emilk-egui | 10% | 0% | 0% | 100% | 79% | 75% |
 | sharkdp-hyperfine | 10% | 0% | 0% | 100% | 79% | 75% |
-| raga-ai-hub-ragaai-catalyst | 10% | 0% | 0% | 75% | 79% | 100% |
 | octelium-octelium | 10% | 0% | 0% | 85% | 79% | 90% |
 | zeronsh-zeron | 10% | 0% | 0% | 75% | 79% | 100% |
 | hardbeat920-monocode | 10% | 0% | 0% | 75% | 79% | 100% |
@@ -1965,7 +1958,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | peopleandpixel-agrocore-rs | 10% | 0% | 0% | 75% | 79% | 100% |
 | dev-infra-transact-rs-sqlx | 10% | 0% | 0% | 100% | 79% | 75% |
 | dev-infra-carthage-software-mago | 10% | 0% | 0% | 100% | 79% | 75% |
-| dev-infra-claimed-framework-claimed | 10% | 0% | 0% | 75% | 100% | 85% |
 | geospatial-paullecam-react-leaflet | 10% | 0% | 0% | 90% | 79% | 85% |
 | geospatial-mapcomponents-react-map-components-maplibre | 10% | 0% | 0% | 100% | 79% | 75% |
 | better-shot | 45% | 53% | 0% | 20% | 57% | 85% |
@@ -2237,7 +2229,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | ai-ide-knoxmcken-da-pipeline-1100439189 | 45% | 0% | 0% | 80% | 0% | 100% |
 | omoolab-bioxelnodes | 45% | 53% | 0% | 15% | 29% | 100% |
 | joshuaalbert-jaxns | 45% | 0% | 0% | 40% | 79% | 85% |
-| vgteam-vg | 45% | 0% | 0% | 40% | 79% | 85% |
 | cloudless-garden-ha-gardena-smart-local-preview | 45% | 0% | 0% | 40% | 79% | 85% |
 | dev-infra-kubenetworks-kubevpn | 45% | 0% | 0% | 75% | 29% | 85% |
 | geospatial-wybert-georouting | 45% | 0% | 0% | 40% | 57% | 100% |
@@ -2301,7 +2292,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | dev-infra-primocms-primo | 10% | 0% | 0% | 75% | 57% | 100% |
 | dev-infra-stephenafamo-bob | 10% | 0% | 0% | 100% | 57% | 75% |
 | dev-infra-cswinter-locustdb | 10% | 0% | 0% | 75% | 79% | 85% |
-| dev-infra-covenantsql-covenantsql | 10% | 0% | 0% | 75% | 79% | 85% |
 | dev-infra-mfridman-tparse | 10% | 0% | 0% | 100% | 57% | 75% |
 | dev-infra-digitallyinduced-thin-backend | 10% | 0% | 0% | 60% | 79% | 100% |
 | dev-infra-go-testfixtures-testfixtures | 10% | 0% | 0% | 75% | 57% | 100% |
@@ -2542,7 +2532,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | ai-ide-venividivici-givtcp-power-flow-card-622713177 | 45% | 0% | 0% | 60% | 29% | 85% |
 | ai-ide-jfcherng-sublime-lsp-batch-268517480 | 45% | 0% | 0% | 60% | 29% | 85% |
 | ai-ide-crussella0129-tricorne-1219580503 | 45% | 0% | 0% | 10% | 79% | 100% |
-| ai-ide-tahasohail-goat-sabaqai-1347257888 | 45% | 0% | 0% | 30% | 50% | 100% |
 | ai-ide-div0rce-quant-systems-lab-1253628818 | 45% | 18% | 0% | 10% | 79% | 85% |
 | ai-ide-penguintechinc-penguincloud-940077450 | 45% | 0% | 0% | 70% | 29% | 75% |
 | ai-ide-avi161-life-dots-1176339755 | 45% | 0% | 0% | 65% | 0% | 100% |
@@ -2823,7 +2812,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | callum-mason-fs25-farm-managment-system | 10% | 0% | 0% | 60% | 57% | 90% |
 | dev-infra-nodebb-nodebb | 10% | 0% | 0% | 35% | 100% | 85% |
 | dev-infra-sql-js-sql-js | 10% | 0% | 0% | 65% | 57% | 85% |
-| dev-infra-ubicloud-ubicloud | 10% | 0% | 0% | 35% | 79% | 100% |
 | dev-infra-harisekhon-devops-bash-tools | 10% | 0% | 0% | 35% | 79% | 100% |
 | dev-infra-xwmx-nb | 10% | 0% | 0% | 65% | 57% | 85% |
 | dev-infra-postmanlabs-newman | 10% | 0% | 0% | 65% | 57% | 85% |
@@ -2938,7 +2926,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | dev-infra-kalessil-phpinspectionsea | 10% | 0% | 0% | 60% | 57% | 85% |
 | dev-infra-ovh-venom | 10% | 0% | 0% | 100% | 0% | 85% |
 | dev-infra-spatie-db-dumper | 10% | 0% | 0% | 75% | 57% | 70% |
-| dev-infra-screwdriver-cd-screwdriver | 10% | 0% | 0% | 80% | 29% | 85% |
 | dev-infra-glaredb-glaredb | 10% | 0% | 0% | 45% | 79% | 85% |
 | dev-infra-softinstigate-restheart | 10% | 0% | 0% | 60% | 57% | 85% |
 | dev-infra-webfuzzing-evomaster | 10% | 0% | 0% | 60% | 57% | 85% |
@@ -2983,7 +2970,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | fairseq | 10% | 0% | 0% | 25% | 100% | 85% |
 | ml-agents | 5% | 0% | 0% | 60% | 79% | 70% |
 | plandex | 10% | 0% | 0% | 60% | 29% | 100% |
-| needle | 10% | 0% | 0% | 40% | 57% | 100% |
 | openllm | 10% | 0% | 0% | 45% | 50% | 100% |
 | bytebot | 10% | 0% | 0% | 60% | 29% | 100% |
 | aichat | 10% | 0% | 0% | 35% | 79% | 90% |
@@ -3035,7 +3021,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | reingart-pyafipws | 10% | 0% | 0% | 40% | 79% | 85% |
 | servir-servir-aces | 10% | 0% | 0% | 40% | 57% | 100% |
 | earthdaily-geosyspy | 10% | 0% | 0% | 35% | 79% | 90% |
-| cap-n-proud-robogarden | 10% | 0% | 0% | 85% | 57% | 55% |
 | dev-infra-spicetify-cli | 10% | 0% | 0% | 60% | 50% | 85% |
 | dev-infra-mockito-mockito | 10% | 0% | 0% | 55% | 57% | 85% |
 | dev-infra-dbcli-pgcli | 5% | 0% | 0% | 80% | 50% | 70% |
@@ -3249,7 +3234,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | geospatial-lolochristen-openlayers-blazor | 10% | 0% | 0% | 30% | 79% | 85% |
 | geospatial-fgpv-vpgf-fgpv-vpgf | 10% | 0% | 0% | 70% | 0% | 100% |
 | geospatial-eyeseast-datasette-geojson-map | 10% | 0% | 0% | 55% | 57% | 75% |
-| geospatial-mapforge-org-mapforge | 10% | 0% | 0% | 35% | 50% | 100% |
 | cursor-talk-to-figma-mcp | 45% | 0% | 0% | 20% | 0% | 100% |
 | game-ai-mattwilliamson-comfyui-ai-gamedev | 45% | 0% | 0% | 40% | 0% | 90% |
 | game-ai-hjl2004-10-agent-worlds | 45% | 0% | 0% | 30% | 0% | 100% |
@@ -3270,7 +3254,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | ai-ide-brown-university-library-alt-text-project-1144338085 | 45% | 0% | 0% | 35% | 29% | 75% |
 | ai-ide-chrislyonsky-aperture-1201314513 | 45% | 0% | 0% | 30% | 0% | 100% |
 | ai-ide-tarunkumarnyu-safetynyc-1207794647 | 45% | 53% | 0% | 10% | 0% | 75% |
-| dev-infra-lerianstudio-ring | 45% | 0% | 0% | 10% | 50% | 85% |
 | geospatial-pelicanmapping-osgearth | 45% | 0% | 0% | 10% | 50% | 85% |
 | geospatial-liodali-osm-flutter | 45% | 0% | 0% | 10% | 50% | 85% |
 | geospatial-pelicanmapping-rocky | 45% | 0% | 0% | 10% | 50% | 85% |
@@ -3322,7 +3305,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | nel-lab-mesmerize-core | 10% | 0% | 0% | 10% | 79% | 100% |
 | bioio-devs-bioio-ome-zarr | 10% | 0% | 0% | 45% | 50% | 85% |
 | lopezgroup-iciq-care | 10% | 0% | 0% | 40% | 79% | 70% |
-| mlin-genomicsqlite | 10% | 0% | 0% | 10% | 100% | 85% |
 | kcieslik-eq-insar | 10% | 0% | 0% | 40% | 57% | 85% |
 | simon-sat-pycoxmunk | 10% | 0% | 0% | 10% | 79% | 100% |
 | ncfrey-pytopomat | 10% | 0% | 0% | 10% | 79% | 100% |
@@ -3398,7 +3380,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | ai-ide-elhabashylab-3dclans-988903214 | 45% | 0% | 0% | 40% | 0% | 85% |
 | ai-ide-oyanibtech-iii-growfico-official-webapp-1171229591 | 45% | 0% | 0% | 30% | 0% | 100% |
 | ai-ide-jagadish-k-video-gif-creator-1068635093 | 45% | 0% | 0% | 20% | 29% | 85% |
-| ai-ide-mikeydotio-lillist-1236962486 | 45% | 0% | 0% | 0% | 57% | 85% |
 | ai-ide-kodicw-nixspirit-1215340672 | 45% | 0% | 0% | 10% | 21% | 100% |
 | ai-ide-marianaboroni-tissueresolve-1254465462 | 45% | 0% | 0% | 40% | 0% | 85% |
 | geospatial-hajkmap-hajk | 45% | 0% | 0% | 60% | 0% | 65% |
@@ -3656,7 +3637,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | ageitgey-face-recognition | 10% | 0% | 0% | 40% | 29% | 85% |
 | werwolv-imhex | 10% | 0% | 0% | 30% | 50% | 85% |
 | team-spotube-spotube | 10% | 0% | 0% | 30% | 29% | 100% |
-| google-research-google-research | 10% | 0% | 0% | 30% | 50% | 85% |
 | freecodecampchina-freecodecamp-cn | 10% | 0% | 0% | 65% | 0% | 85% |
 | anthropics-claude-plugins-official | 10% | 0% | 0% | 30% | 29% | 87% |
 | permissionlesstech-bitchat | 10% | 0% | 0% | 10% | 79% | 85% |
@@ -3781,7 +3761,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | geospatial-beyonk-svelte-mapbox | 10% | 0% | 0% | 25% | 29% | 100% |
 | geospatial-gnudatalanguage-gdl | 10% | 0% | 0% | 10% | 79% | 85% |
 | geospatial-inasafe-inasafe | 10% | 0% | 0% | 65% | 50% | 50% |
-| geospatial-wq-wq | 10% | 0% | 0% | 45% | 29% | 85% |
 | geospatial-isaacbrodsky-h3-duckdb | 10% | 0% | 0% | 10% | 50% | 100% |
 | geospatial-gwlucastrig-tinfour | 10% | 0% | 0% | 60% | 0% | 85% |
 | geospatial-georust-proj | 10% | 0% | 0% | 35% | 79% | 60% |
@@ -3798,7 +3777,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | geospatial-opengeos-qgis-timelapse-plugin | 10% | 0% | 0% | 10% | 79% | 85% |
 | geospatial-nbuchwitz-icingaweb2-module-map | 10% | 0% | 0% | 25% | 50% | 85% |
 | geospatial-georust-geocoding | 10% | 0% | 0% | 35% | 79% | 60% |
-| geospatial-pmlrsg-gisportal | 10% | 0% | 0% | 40% | 57% | 70% |
 | geospatial-devork-grava | 10% | 0% | 0% | 40% | 29% | 85% |
 | geospatial-dotmorten-microsoft-sqlserver-types | 10% | 0% | 0% | 20% | 57% | 85% |
 | geospatial-origo-map-origo | 10% | 0% | 0% | 25% | 50% | 85% |
@@ -3877,7 +3855,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | sofa-framework-sofa | 10% | 0% | 0% | 10% | 79% | 75% |
 | usetania-tania | 10% | 0% | 0% | 40% | 0% | 100% |
 | mtry-homebridge-smart-irrigation | 10% | 0% | 0% | 55% | 0% | 85% |
-| lejubila-pigardenweb | 10% | 0% | 0% | 40% | 0% | 100% |
 | jacobdonenfeld-homeassistant-aerogarden | 10% | 0% | 0% | 10% | 100% | 60% |
 | alok-2002-plant-disease-classifier-frontend | 10% | 0% | 0% | 40% | 0% | 100% |
 | dev-infra-ovity-octotree | 10% | 0% | 0% | 55% | 0% | 85% |
@@ -3994,7 +3971,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | gridap-gridap-jl | 10% | 0% | 0% | 10% | 57% | 85% |
 | nuc-astro-winnet | 10% | 0% | 0% | 10% | 57% | 85% |
 | inviwo-inviwo | 10% | 0% | 0% | 10% | 57% | 85% |
-| jedarden-gribtract | 10% | 0% | 0% | 75% | 0% | 60% |
 | turagalab-decode | 10% | 0% | 0% | 10% | 57% | 85% |
 | tmtenbrink-frc | 10% | 0% | 0% | 10% | 57% | 85% |
 | delmic-odemis | 10% | 0% | 0% | 10% | 79% | 70% |
@@ -4046,7 +4022,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | geospatial-marceloprates-prettymaps | 10% | 0% | 0% | 10% | 57% | 85% |
 | geospatial-uber-h3 | 10% | 0% | 0% | 10% | 57% | 85% |
 | geospatial-talkingdata-inmap | 10% | 0% | 0% | 65% | 0% | 70% |
-| geospatial-awesome-spectral-indices-awesome-spectral-indices | 10% | 0% | 0% | 10% | 57% | 85% |
 | geospatial-opengeos-geospatial-data-catalogs | 10% | 0% | 0% | 0% | 50% | 100% |
 | geospatial-ouguangjun-leg-kilo | 10% | 0% | 0% | 30% | 29% | 85% |
 | geospatial-opengeos-maxar-open-data | 10% | 0% | 0% | 0% | 50% | 100% |
@@ -4170,7 +4145,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | zhongyang219-trafficmonitor | 10% | 0% | 0% | 20% | 29% | 85% |
 | exelban-stats | 10% | 0% | 0% | 0% | 57% | 85% |
 | alamofire-alamofire | 10% | 0% | 0% | 0% | 57% | 85% |
-| qsctech-zju-icicles | 10% | 0% | 0% | 30% | 29% | 75% |
 | huiyadanli-revokemsgpatcher | 10% | 0% | 0% | 20% | 29% | 85% |
 | valinet-explorerpatcher | 10% | 0% | 0% | 20% | 29% | 85% |
 | nginx-nginx | 10% | 0% | 0% | 0% | 57% | 85% |
@@ -4185,7 +4159,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | tio-ikim-cellvit | 10% | 0% | 0% | 25% | 21% | 85% |
 | ncbi-amr | 10% | 0% | 0% | 0% | 57% | 85% |
 | taoge946-academic-figure-patterns | 10% | 0% | 0% | 40% | 0% | 85% |
-| dennissergeev-octant | 10% | 0% | 0% | 25% | 21% | 85% |
 | marianattestad-ribbon | 10% | 0% | 0% | 40% | 0% | 85% |
 | noaa-gfdl-fms | 10% | 0% | 0% | 0% | 57% | 85% |
 | plant99-felicette | 10% | 0% | 0% | 40% | 0% | 85% |
@@ -4217,7 +4190,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | dev-infra-dbcli-mssql-cli | 10% | 0% | 0% | 40% | 0% | 85% |
 | dev-infra-shellspec-shellspec | 10% | 0% | 0% | 0% | 57% | 85% |
 | dev-infra-spotify-xcmetrics | 10% | 0% | 0% | 0% | 57% | 85% |
-| dev-infra-mergesort-boutique | 10% | 0% | 0% | 0% | 57% | 85% |
 | dev-infra-src-d-go-kallax | 10% | 0% | 0% | 40% | 0% | 85% |
 | dev-infra-orlandos-nl-mongokitten | 10% | 0% | 0% | 0% | 57% | 85% |
 | dev-infra-vimjas-vint | 5% | 0% | 0% | 40% | 29% | 70% |
@@ -4242,7 +4214,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | geospatial-mapbox-mapboxstatic-swift | 10% | 0% | 0% | 0% | 57% | 85% |
 | geospatial-roam-qgis-roam | 10% | 0% | 0% | 40% | 0% | 85% |
 | geospatial-kth-rpl-neural-graph-mapping | 10% | 0% | 0% | 40% | 0% | 85% |
-| geospatial-merlos-mapcache | 10% | 0% | 0% | 0% | 57% | 85% |
 | geospatial-jacobsjo-mc-datapack-map | 10% | 0% | 0% | 20% | 29% | 85% |
 | geospatial-simonhuwiler-uawardata | 10% | 0% | 0% | 0% | 50% | 90% |
 | geospatial-hongfaqiu-mvtimageryprovider | 10% | 0% | 0% | 20% | 29% | 85% |
@@ -4341,7 +4312,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | geospatial-bellingcat-avoc | 10% | 0% | 0% | 0% | 29% | 100% |
 | geospatial-tcallsen-react-func-openlayers | 10% | 0% | 0% | 30% | 0% | 90% |
 | geospatial-alexarcpy-gdbee | 10% | 0% | 0% | 35% | 0% | 85% |
-| geospatial-opengeos-nasa-cmr-stac | 10% | 0% | 0% | 0% | 29% | 100% |
 | geospatial-afourmy-swap | 10% | 0% | 0% | 35% | 0% | 85% |
 | geospatial-opengeos-aws-open-data-stac | 10% | 0% | 0% | 0% | 29% | 100% |
 | geospatial-trchudley-pdemtools | 10% | 0% | 0% | 10% | 57% | 70% |
@@ -4566,7 +4536,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | dev-infra-cyber-buddy-apkhunt | 10% | 0% | 0% | 10% | 0% | 100% |
 | dev-infra-kiranz-just-api | 10% | 0% | 0% | 40% | 0% | 70% |
 | dev-infra-standard-snazzy | 10% | 0% | 0% | 30% | 29% | 60% |
-| dev-infra-orange-cyberdefense-grepmarx | 10% | 0% | 0% | 25% | 29% | 65% |
 | dev-infra-feysh-group-corax-community | 5% | 0% | 0% | 30% | 0% | 85% |
 | geospatial-felixpalmer-procedural-gl-js | 10% | 0% | 0% | 25% | 0% | 85% |
 | geospatial-ispring-webglobe | 10% | 0% | 0% | 50% | 0% | 60% |
@@ -4737,7 +4706,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | geospatial-all4gis-load-qss | 10% | 0% | 0% | 0% | 29% | 85% |
 | geospatial-gvellut-freehandrastergeoreferencer | 10% | 0% | 0% | 0% | 29% | 85% |
 | geospatial-ecmwfcode4earth-wildfire-forecasting | 10% | 0% | 0% | 25% | 21% | 65% |
-| geospatial-mapmint-mapmint | 10% | 0% | 0% | 0% | 29% | 85% |
 | geospatial-rolandhill-geoscience | 30% | 0% | 0% | 0% | 0% | 85% |
 | geospatial-kios-research-importphotos | 10% | 0% | 0% | 0% | 29% | 85% |
 | geospatial-gacarrillor-loadthemall | 10% | 0% | 0% | 10% | 29% | 75% |
@@ -4777,7 +4745,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | game-ai-dashidhy-danlm | 10% | 0% | 0% | 0% | 0% | 100% |
 | game-ai-rainingcomputers-nes-punchout-ai | 10% | 0% | 0% | 25% | 0% | 75% |
 | game-ai-nhanphamthanh-it-wumpus-world-game | 10% | 0% | 0% | 0% | 0% | 100% |
-| game-ai-xander100891-super-mario-bros-v0 | 10% | 0% | 0% | 0% | 0% | 100% |
 | game-ai-anmoljagetia-oreillyai-gamebots | 10% | 0% | 0% | 0% | 0% | 100% |
 | game-ai-undergroundai-dm-multibot | 10% | 0% | 0% | 0% | 0% | 100% |
 | game-ai-ykaitao-the-elements-of-reinforcement-learning | 10% | 0% | 0% | 0% | 0% | 100% |
@@ -5034,7 +5001,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | dev-infra-nodesocket-jsonlite | 10% | 0% | 0% | 10% | 0% | 85% |
 | dev-infra-george0st-qgate-model | 10% | 0% | 0% | 10% | 0% | 85% |
 | dev-infra-george0st-qgate-sln-mlrun | 10% | 0% | 0% | 10% | 0% | 85% |
-| geospatial-ethz-asl-maplab | 10% | 0% | 0% | 10% | 0% | 85% |
 | geospatial-laboshinl-loam-velodyne | 10% | 0% | 0% | 10% | 0% | 85% |
 | geospatial-darkmoonight-rain | 10% | 0% | 0% | 10% | 0% | 85% |
 | geospatial-hyye-lio-mapping | 10% | 0% | 0% | 10% | 0% | 85% |
@@ -5056,7 +5022,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | geospatial-fortyninemaps-karta | 10% | 0% | 0% | 10% | 0% | 85% |
 | geospatial-addy90-map-matching-2 | 10% | 0% | 0% | 10% | 0% | 85% |
 | geospatial-zoran-cuckovic-qgis-visibility-analysis | 10% | 0% | 0% | 10% | 0% | 85% |
-| geospatial-osucartography-adaptive-composite-map-projections | 10% | 0% | 0% | 10% | 0% | 85% |
 | geospatial-eliabntt-irotate-active-slam | 10% | 0% | 0% | 10% | 0% | 85% |
 | geospatial-stefanb-gurs-rpe | 10% | 0% | 0% | 0% | 29% | 75% |
 | geospatial-ecere-dggal | 10% | 0% | 0% | 10% | 0% | 85% |
@@ -5210,7 +5175,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | game-ai-varadhkaushik-ai-character-forge | 10% | 0% | 0% | 0% | 0% | 85% |
 | game-ai-baballev-qsu | 10% | 0% | 0% | 0% | 0% | 85% |
 | game-ai-dylanelu-geometry-dash-ai | 10% | 0% | 0% | 0% | 29% | 65% |
-| game-ai-hellosky983-dsh-mc-agent | 10% | 0% | 0% | 0% | 0% | 85% |
 | game-ai-mryellow-maze-explorer | 10% | 0% | 0% | 0% | 0% | 85% |
 | game-ai-pedro15-moonbehavior | 10% | 0% | 0% | 0% | 0% | 85% |
 | game-ai-deanaviv-unity-turn-base-toolkit | 10% | 0% | 0% | 0% | 0% | 85% |
@@ -5379,7 +5343,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | dev-infra-wisser-jailer | 10% | 0% | 0% | 10% | 0% | 75% |
 | dev-infra-aapanel-aapanel | 10% | 0% | 0% | 10% | 0% | 75% |
 | dev-infra-m0rtem-cloudfail | 10% | 0% | 0% | 0% | 0% | 85% |
-| dev-infra-flipkart-incubator-astra | 10% | 0% | 0% | 0% | 0% | 85% |
 | dev-infra-emirozer-fake2db | 10% | 0% | 0% | 0% | 0% | 85% |
 | dev-infra-indragiek-inappviewdebugger | 10% | 0% | 0% | 0% | 0% | 85% |
 | dev-infra-alexmojaki-heartrate | 10% | 0% | 0% | 0% | 0% | 85% |
@@ -5491,7 +5454,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | birocoles-gravmag | 10% | 0% | 0% | 10% | 0% | 70% |
 | agilescientific-seisplot | 5% | 0% | 0% | 0% | 0% | 85% |
 | annadatahackfest-annadata | 10% | 0% | 0% | 50% | 0% | 30% |
-| kazulagi-plantfem | 10% | 0% | 0% | 10% | 0% | 70% |
 | sherzodr-penmon | 10% | 0% | 0% | 10% | 0% | 70% |
 | brycejohnston-agroclimatology | 10% | 0% | 0% | 10% | 0% | 70% |
 | brycejohnston-evapotranspiration | 10% | 0% | 0% | 10% | 0% | 70% |
@@ -5563,7 +5525,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | game-ai-rmcqueen-game-of-the-amazons-ai | 10% | 0% | 0% | 0% | 0% | 75% |
 | game-ai-somekg-snakegameai | 10% | 0% | 0% | 0% | 0% | 75% |
 | game-ai-andresolerc-ai-growth-pack | 10% | 0% | 0% | 0% | 0% | 75% |
-| game-ai-ejbejaranosai-ai4vj | 10% | 0% | 0% | 0% | 0% | 75% |
 | game-ai-fool-yang-alphasnake-zero | 10% | 0% | 0% | 10% | 0% | 65% |
 | game-ai-kangnam7654-game-npc-with-llm | 10% | 0% | 0% | 0% | 0% | 75% |
 | game-ai-kilian-kier-dino-game-ai | 10% | 0% | 0% | 0% | 0% | 75% |
@@ -5621,7 +5582,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | pmocz-pic-python | 10% | 0% | 0% | 0% | 0% | 75% |
 | dr-mod-little-sun-gazer | 10% | 0% | 0% | 0% | 0% | 75% |
 | razvandu-duck-net | 10% | 0% | 0% | 0% | 0% | 75% |
-| jinghuazhao-inf | 10% | 0% | 0% | 0% | 0% | 75% |
 | eleanorlutz-topography-atlas-of-space | 10% | 0% | 0% | 0% | 0% | 75% |
 | akcarsten-fmri-data-analysis | 10% | 0% | 0% | 0% | 0% | 75% |
 | asif-iqbal-bhatti-high-entropy-alloys | 10% | 0% | 0% | 10% | 0% | 65% |
@@ -5636,7 +5596,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | compgeolab-eqs-magnetic-spherical | 10% | 0% | 0% | 0% | 0% | 75% |
 | nasa-podaacpy | 5% | 0% | 0% | 10% | 0% | 70% |
 | hemberg-lab-scrna-seq-datasets | 10% | 0% | 0% | 0% | 0% | 75% |
-| eiszapfen2000-tgda | 10% | 0% | 0% | 0% | 0% | 75% |
 | redouanelg-qgsw-di | 10% | 0% | 0% | 0% | 0% | 75% |
 | rafsanjanihub-pyfeat | 10% | 0% | 0% | 0% | 0% | 75% |
 | hku-bal-clairs | 10% | 0% | 0% | 0% | 0% | 75% |
@@ -5684,7 +5643,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | iamtariqul-digital-farmer-plant-diseases-recognition | 10% | 0% | 0% | 0% | 0% | 75% |
 | nitinkumarhere-open-channel-flow | 10% | 0% | 0% | 0% | 0% | 75% |
 | aitesam961-cattle-health-monitoring-wsn | 10% | 0% | 0% | 10% | 0% | 65% |
-| gopiashokan-potato-disease-classification-using-deep-learning | 10% | 0% | 0% | 0% | 0% | 75% |
 | mwasifanwar-agrovision-precision | 10% | 0% | 0% | 10% | 0% | 65% |
 | bunnysunny24-smart-agriculture | 10% | 0% | 0% | 10% | 0% | 65% |
 | caseywebb-mayfly | 10% | 0% | 0% | 0% | 0% | 75% |
@@ -5780,7 +5738,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | geospatial-celliesprojects-openstreetmap-esp32 | 10% | 0% | 0% | 0% | 0% | 75% |
 | geospatial-clarkcga-multi-temporal-crop-classification-baseline | 10% | 0% | 0% | 0% | 0% | 75% |
 | geospatial-fcc-lpfmpoints | 10% | 0% | 0% | 0% | 0% | 75% |
-| geospatial-vladimirkalachikhin-galadriel-map | 10% | 0% | 0% | 0% | 0% | 75% |
 | geospatial-jagennath-hari-fusionslam-unifying-instant-ngp-for-monocular-slam | 10% | 0% | 0% | 0% | 0% | 75% |
 | geospatial-rtbigdata-geojson-mongo-import-py | 10% | 0% | 0% | 0% | 0% | 75% |
 | geospatial-jamessimo-rimmap | 10% | 0% | 0% | 0% | 0% | 75% |
@@ -5834,7 +5791,6 @@ _Percent earned per dimension, `harness-score@1.8.5`._
 | geospatial-clavijojuan-l-switchbasemap | 10% | 0% | 0% | 0% | 0% | 70% |
 | geospatial-gherardovarando-leaflet-map-builder | 10% | 0% | 0% | 0% | 0% | 70% |
 | chatglm2-6b | 10% | 0% | 0% | 0% | 0% | 65% |
-| aidlearning-framework | 10% | 0% | 0% | 0% | 0% | 65% |
 | game-ai-code-bullet-worldshardestgameai | 10% | 0% | 0% | 0% | 0% | 65% |
 | game-ai-karlapalem-uc-berkeley-ai-pacman-project | 10% | 0% | 0% | 0% | 0% | 65% |
 | game-ai-no5ix-flock-ai-ue4-plugin | 10% | 0% | 0% | 0% | 0% | 65% |

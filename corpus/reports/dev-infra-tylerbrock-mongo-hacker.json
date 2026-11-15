@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.5"
+    "version": "1.9.0"
   },
-  "root": "D:\\code\\harness-maturity-analysis-1-8-5\\.cache\\repos\\dev-infra-tylerbrock-mongo-hacker",
+  "root": "D:\\code\\harness-maturity-analysis-1-9-0-refresh\\.cache\\repos\\dev-infra-tylerbrock-mongo-hacker",
   "truncated": false,
   "verdicts": {
     "maturity": {

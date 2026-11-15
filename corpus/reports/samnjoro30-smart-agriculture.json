@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.5"
+    "version": "1.9.0"
   },
-  "root": "D:\\code\\harness-maturity-analysis-1-8-5\\.cache\\repos\\samnjoro30-smart-agriculture",
+  "root": "D:\\code\\harness-maturity-analysis-1-9-0-refresh\\.cache\\repos\\samnjoro30-smart-agriculture",
   "truncated": false,
   "verdicts": {
     "maturity": {

@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.5"
+    "version": "1.9.0"
   },
-  "root": "D:\\code\\harness-maturity-analysis-1-8-5\\.cache\\repos\\ai-ide-micheltlutz-dev-challenge-693855872",
+  "root": "D:\\code\\harness-maturity-analysis-1-9-0-refresh\\.cache\\repos\\ai-ide-micheltlutz-dev-challenge-693855872",
   "truncated": false,
   "verdicts": {
     "maturity": {

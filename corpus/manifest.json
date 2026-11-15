@@ -2,7 +2,7 @@
   "$comment": "Each entry pins a repository to an exact commit for reproducible scanning. runDate and toolVersion identify the current historical run. toolVersion is the npm spec passed to `npx --yes <toolVersion>`. scanSubpath scans only part of a monorepo when set. checkoutExcludes omits platform-incompatible, non-harness data from checkout. isStressCase marks entries chosen because the scanner is expected to score them poorly or surprisingly — see METHODOLOGY.md. Never edit an existing entry's commit in place: add a new entry or a dated note instead.",
   "schemaVersion": 2,
   "runDate": "2026-11-14",
-  "toolVersion": "harness-score@1.8.5",
+  "toolVersion": "harness-score@1.9.0",
   "entries": [
     {
       "name": "harness-score",
@@ -3847,7 +3847,9 @@
       "commit": "a800de9bf939d8b8c7dd1e22756ddbd19780bd25",
       "scanSubpath": null,
       "isStressCase": false,
-      "notes": "Phase 1F AI popularity rank 208; observed GitHub stars 17350. Purpose: Vibe Coding 从入门到精通教程｜AI 结对编程工作流｜Prompt、Skill、Workflow、上下文管理、codex实战指南"
+      "notes": "Phase 1F AI popularity rank 208; observed GitHub stars 17350. Purpose: Vibe Coding 从入门到精通教程｜AI 结对编程工作流｜Prompt、Skill、Workflow、上下文管理、codex实战指南",
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "opencodex",
@@ -4360,7 +4362,9 @@
       "commit": "ef3cf7543204d99878c0dd913a05f6a506da4be8",
       "scanSubpath": null,
       "isStressCase": false,
-      "notes": "Phase 1F AI popularity rank 265; observed GitHub stars 13734. Purpose: Automation foundation model for tiny devices: 2-bit, 8-29 MB, tool calls, ASR, structured extraction and embeddings on phones, wearables, smart homes, robots, cars and microcontrollers."
+      "notes": "Phase 1F AI popularity rank 265; observed GitHub stars 13734. Purpose: Automation foundation model for tiny devices: 2-bit, 8-29 MB, tool calls, ASR, structured extraction and embeddings on phones, wearables, smart homes, robots, cars and microcontrollers.",
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "omi",
@@ -5944,7 +5948,9 @@
       "commit": "84d0676baffa905c12189959480c9a1bb14619a6",
       "scanSubpath": null,
       "isStressCase": false,
-      "notes": "Phase 1F AI popularity rank 441; observed GitHub stars 5814. Purpose: 🔥🔥🔥AidLearning is a powerful AIOT development platform, AidLearning builds a linux env supporting GUI, deep learning and visual IDE on Android...Now Aid supports CPU+GPU+NPU for inference with high performance acceleration...Linux on Android or HarmonyOS"
+      "notes": "Phase 1F AI popularity rank 441; observed GitHub stars 5814. Purpose: 🔥🔥🔥AidLearning is a powerful AIOT development platform, AidLearning builds a linux env supporting GUI, deep learning and visual IDE on Android...Now Aid supports CPU+GPU+NPU for inference with high performance acceleration...Linux on Android or HarmonyOS",
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "daft",
@@ -11470,7 +11476,9 @@
         "popularityRank": 301,
         "selectionMode": "popular",
         "archived": false
-      }
+      },
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "game-ai-arman-aminian-risk-game-ai-agent",
@@ -13630,7 +13638,9 @@
         "popularityRank": 427,
         "selectionMode": "popular",
         "archived": false
-      }
+      },
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "game-ai-hiper2d-mafia-gpt",
@@ -14026,7 +14036,9 @@
         "popularityRank": 453,
         "selectionMode": "popular",
         "archived": false
-      }
+      },
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "game-ai-fool-yang-alphasnake-zero",
@@ -15520,7 +15532,9 @@
         "popularityRank": 258,
         "selectionMode": "popular",
         "archived": false
-      }
+      },
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "game-ai-llsourcell-ai-for-video-games-demo",
@@ -15737,8 +15751,8 @@
         "selectionMode": "popular",
         "archived": false
       },
-      "scanStatus": "not-scanned",
-      "scanNote": "The pinned source was unavailable during the 2026-11-14 refresh; no verified copy of this exact commit was found. The earlier report is retained and excluded from 1.8.5 results. See corpus/source-audit-2026-11-14-genpark-tutor.md."
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "game-ai-vl4dt-godot-skills",
@@ -23392,7 +23406,9 @@
         "canonicalSlug": "QSCTech/zju-icicles",
         "archived": false,
         "selectionMode": "popular"
-      }
+      },
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "vim-vim",
@@ -24752,7 +24768,9 @@
         "canonicalSlug": "google-research/google-research",
         "archived": false,
         "selectionMode": "popular"
-      }
+      },
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "ant-design-ant-design-pro",
@@ -29412,7 +29430,9 @@
         "canonicalSlug": "influxdata/influxdb",
         "archived": false,
         "selectionMode": "popular"
-      }
+      },
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "iced-rs-iced",
@@ -36320,7 +36340,9 @@
         "focusCategory": "multi-agent-orchestration",
         "starsObservedAt": "2026-10-10T22:51:58.705Z",
         "categorySearchRank": 24
-      }
+      },
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "hkuds-openharness",
@@ -43424,7 +43446,9 @@
         "focusCategory": "coding-agent-harness",
         "starsObservedAt": "2026-10-10T22:51:58.705Z",
         "categorySearchRank": 149
-      }
+      },
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "unicomai-wanwu",
@@ -53430,8 +53454,8 @@
         "assistantConfigPath": "AGENTS.md",
         "githubRepositoryId": 967787402
       },
-      "scanStatus": "not-scanned",
-      "scanNote": "The pinned source was unavailable during the 2026-11-14 refresh; no verified copy of this exact commit was found. The earlier report is retained and excluded from 1.8.5 results. See corpus/source-audit-2026-11-14-ai-ide-unavailable.md."
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "ai-ide-ethicks-x-smaran-1347205999",
@@ -53893,7 +53917,9 @@
         "selectionMode": "popular",
         "assistantConfigPath": "AGENTS.md",
         "githubRepositoryId": 1347257888
-      }
+      },
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "ai-ide-yoavne26-hub-bgu-companion-chrome-extension-1164031568",
@@ -55342,7 +55368,9 @@
         "selectionMode": "popular",
         "assistantConfigPath": "CLAUDE.md",
         "githubRepositoryId": 1236962486
-      }
+      },
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "ai-ide-milbia-is-goat-burning-580513645",
@@ -56501,8 +56529,8 @@
         "assistantConfigPath": "CLAUDE.md",
         "githubRepositoryId": 999207456
       },
-      "scanStatus": "not-scanned",
-      "scanNote": "The pinned source was unavailable during the 2026-11-14 refresh; no verified copy of this exact commit was found. The earlier report is retained and excluded from 1.8.5 results. See corpus/source-audit-2026-11-14-ai-ide-unavailable.md."
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "ai-ide-geowa4-claude-plugins-1141500765",
@@ -56545,8 +56573,8 @@
         "assistantConfigPath": "AGENTS.md",
         "githubRepositoryId": 1333052940
       },
-      "scanStatus": "not-scanned",
-      "scanNote": "The pinned source was unavailable during the 2026-11-14 refresh; no verified copy of this exact commit was found. The earlier report is retained and excluded from 1.8.5 results. See corpus/source-audit-2026-11-14-ai-ide-unavailable.md."
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "ai-ide-h4x0r-eisenboard-1062717209",
@@ -56928,8 +56956,8 @@
         "assistantConfigPath": "GEMINI.md",
         "githubRepositoryId": 1137809893
       },
-      "scanStatus": "not-scanned",
-      "scanNote": "The pinned source was unavailable during the 2026-11-14 refresh; no verified copy of this exact commit was found. The earlier report is retained and excluded from 1.8.5 results. See corpus/source-audit-2026-11-14-ai-ide-unavailable.md."
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "ai-ide-kelthon-roobra-api-1276380473",
@@ -56951,8 +56979,8 @@
         "assistantConfigPath": "AGENTS.md",
         "githubRepositoryId": 1276380473
       },
-      "scanStatus": "not-scanned",
-      "scanNote": "The pinned source was unavailable during the 2026-11-14 refresh; no verified copy of this exact commit was found. The earlier report is retained and excluded from 1.8.5 results. See corpus/source-audit-2026-11-14-ai-ide-unavailable.md."
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "ai-ide-kingofknights-minidb-1209060008",
@@ -57247,8 +57275,8 @@
         "assistantConfigPath": "GEMINI.md",
         "githubRepositoryId": 1289369557
       },
-      "scanStatus": "not-scanned",
-      "scanNote": "The pinned source was unavailable during the 2026-11-14 refresh; no verified copy of this exact commit was found. The earlier report is retained and excluded from 1.8.5 results. See corpus/source-audit-2026-11-14-ai-ide-unavailable.md."
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "ai-ide-marciohideaki-second-brain-starter-1217435548",
@@ -59801,7 +59829,9 @@
       "commit": "edbf3ae1e576dacc42480cf3c7e9801528db4104",
       "scanSubpath": null,
       "isStressCase": false,
-      "notes": "Randomly sampled scientific-software cohort scientific-software-random-500; subcategory=earth-climate; canonical GitHub ID=132811849; observed stars=5 at 2026-10-12T01:32:14.354Z; pinned implementation=octant/io.py."
+      "notes": "Randomly sampled scientific-software cohort scientific-software-random-500; subcategory=earth-climate; canonical GitHub ID=132811849; observed stars=5 at 2026-10-12T01:32:14.354Z; pinned implementation=octant/io.py.",
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "glotzerlab-freud",
@@ -59999,7 +60029,9 @@
       "commit": "9445b8bc86d9435682dadc44ca9fea3bc0efcb80",
       "scanSubpath": null,
       "isStressCase": false,
-      "notes": "Randomly sampled scientific-software cohort scientific-software-random-500; subcategory=earth-climate; canonical GitHub ID=1274325013; observed stars=7 at 2026-10-12T01:32:14.354Z; pinned implementation=hexdump.rs."
+      "notes": "Randomly sampled scientific-software cohort scientific-software-random-500; subcategory=earth-climate; canonical GitHub ID=1274325013; observed stars=7 at 2026-10-12T01:32:14.354Z; pinned implementation=hexdump.rs.",
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "mlin-genomicsqlite",
@@ -60008,7 +60040,9 @@
       "commit": "eb9bd7b227cab21bbe8950b1b5232c8cc6b1afd3",
       "scanSubpath": null,
       "isStressCase": false,
-      "notes": "Randomly sampled scientific-software cohort scientific-software-random-500; subcategory=computational-biology; canonical GitHub ID=266919025; observed stars=171 at 2026-10-12T01:32:14.354Z; pinned implementation=src/uint.c."
+      "notes": "Randomly sampled scientific-software cohort scientific-software-random-500; subcategory=computational-biology; canonical GitHub ID=266919025; observed stars=171 at 2026-10-12T01:32:14.354Z; pinned implementation=src/uint.c.",
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "kcieslik-eq-insar",
@@ -60764,7 +60798,9 @@
       "commit": "ce79f1283b2eaee639d2d50ccc92f17c9cda17b9",
       "scanSubpath": null,
       "isStressCase": false,
-      "notes": "Randomly sampled scientific-software cohort scientific-software-random-500; subcategory=computational-biology; canonical GitHub ID=24727800; observed stars=1343 at 2026-10-12T01:32:14.354Z; pinned implementation=src/vg.cpp."
+      "notes": "Randomly sampled scientific-software cohort scientific-software-random-500; subcategory=computational-biology; canonical GitHub ID=24727800; observed stars=1343 at 2026-10-12T01:32:14.354Z; pinned implementation=src/vg.cpp.",
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "rformassspectrometry-mscoreutils",
@@ -61214,7 +61250,9 @@
       "commit": "6216cc1c046c9a01deffa1e05c72558afb6e28f7",
       "scanSubpath": null,
       "isStressCase": false,
-      "notes": "Randomly sampled scientific-software cohort scientific-software-random-500; subcategory=computational-biology; canonical GitHub ID=145544979; observed stars=21 at 2026-10-12T01:32:14.354Z; pinned implementation=docs.sh."
+      "notes": "Randomly sampled scientific-software cohort scientific-software-random-500; subcategory=computational-biology; canonical GitHub ID=145544979; observed stars=21 at 2026-10-12T01:32:14.354Z; pinned implementation=docs.sh.",
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "brentp-hts-nim",
@@ -62474,7 +62512,9 @@
       "commit": "d78a551e9baead24d006d0714eecb445e1c19722",
       "scanSubpath": null,
       "isStressCase": false,
-      "notes": "Randomly sampled scientific-software cohort scientific-software-random-500; subcategory=earth-climate; canonical GitHub ID=155774475; observed stars=3 at 2026-10-12T01:32:14.354Z; pinned implementation=Trunk/Matlab/G.m."
+      "notes": "Randomly sampled scientific-software cohort scientific-software-random-500; subcategory=earth-climate; canonical GitHub ID=155774475; observed stars=3 at 2026-10-12T01:32:14.354Z; pinned implementation=Trunk/Matlab/G.m.",
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "sofa-framework-sofa",
@@ -63446,7 +63486,9 @@
       "commit": "2abebf4028f89251dbf06ccb6c92570598869a77",
       "scanSubpath": null,
       "isStressCase": false,
-      "notes": "Popular agriculture software cohort agriculture-software-popularity-500; canonical GitHub ID=210179111; observed stars=46 at 2026-10-13T04:28:50.677Z; pinned implementation=src/api/api.py. Selection popularity is not a Harness Score input. See corpus/selection-2026-10-13-agriculture-software-popularity-500.json."
+      "notes": "Popular agriculture software cohort agriculture-software-popularity-500; canonical GitHub ID=210179111; observed stars=46 at 2026-10-13T04:28:50.677Z; pinned implementation=src/api/api.py. Selection popularity is not a Harness Score input. See corpus/selection-2026-10-13-agriculture-software-popularity-500.json.",
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "ahmadjeddi-plant-disease-classification",
@@ -64166,7 +64208,9 @@
       "commit": "3ed1930207d59d72de49fd8877880fe4d30592c2",
       "scanSubpath": null,
       "isStressCase": false,
-      "notes": "Popular agriculture software cohort agriculture-software-popularity-500; canonical GitHub ID=67548392; observed stars=19 at 2026-10-13T04:28:50.677Z; pinned implementation=webpack.mix.js. Selection popularity is not a Harness Score input. See corpus/selection-2026-10-13-agriculture-software-popularity-500.json."
+      "notes": "Popular agriculture software cohort agriculture-software-popularity-500; canonical GitHub ID=67548392; observed stars=19 at 2026-10-13T04:28:50.677Z; pinned implementation=webpack.mix.js. Selection popularity is not a Harness Score input. See corpus/selection-2026-10-13-agriculture-software-popularity-500.json.",
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "ptcryan-hydrawiser",
@@ -65471,7 +65515,9 @@
       "commit": "08cf5efd03f1294cef92018e700b9f24915cc000",
       "scanSubpath": null,
       "isStressCase": false,
-      "notes": "Popular agriculture software cohort agriculture-software-popularity-500; canonical GitHub ID=794871894; observed stars=7 at 2026-10-13T04:28:50.677Z; pinned implementation=app.py. Selection popularity is not a Harness Score input. See corpus/selection-2026-10-13-agriculture-software-popularity-500.json."
+      "notes": "Popular agriculture software cohort agriculture-software-popularity-500; canonical GitHub ID=794871894; observed stars=7 at 2026-10-13T04:28:50.677Z; pinned implementation=app.py. Selection popularity is not a Harness Score input. See corpus/selection-2026-10-13-agriculture-software-popularity-500.json.",
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "kimkt0408-p-agbot",
@@ -65544,8 +65590,8 @@
       "scanSubpath": null,
       "isStressCase": false,
       "notes": "Popular agriculture software cohort agriculture-software-popularity-500; canonical GitHub ID=1349919133; observed stars=7 at 2026-10-13T04:28:50.677Z; pinned implementation=jiofarm/cli.py. Selection popularity is not a Harness Score input. See corpus/selection-2026-10-13-agriculture-software-popularity-500.json.",
-      "scanStatus": "not-scanned",
-      "scanNote": "The pinned source was unavailable during the 2026-11-14 refresh; no verified copy of this exact commit was found. The earlier report is retained and excluded from 1.8.5 results. See corpus/source-audit-2026-11-14-jiofarm.md."
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "wittiden-belagrooptimization",
@@ -66472,7 +66518,9 @@
       "commit": "802f2daafcd11131f89395bd9858f7d65e1f5bca",
       "scanSubpath": null,
       "isStressCase": false,
-      "notes": "Popular agriculture software cohort agriculture-software-popularity-500; canonical GitHub ID=331450344; observed stars=3 at 2026-10-13T04:28:50.677Z; pinned implementation=server/wsgi.py. Selection popularity is not a Harness Score input. See corpus/selection-2026-10-13-agriculture-software-popularity-500.json."
+      "notes": "Popular agriculture software cohort agriculture-software-popularity-500; canonical GitHub ID=331450344; observed stars=3 at 2026-10-13T04:28:50.677Z; pinned implementation=server/wsgi.py. Selection popularity is not a Harness Score input. See corpus/selection-2026-10-13-agriculture-software-popularity-500.json.",
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "caseywebb-firefly",
@@ -68767,7 +68815,9 @@
         "popularityRank": 80,
         "focusCategory": "database-data-platforms",
         "selectionMode": "popular"
-      }
+      },
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "dev-infra-sqlalchemy-sqlalchemy",
@@ -69595,7 +69645,9 @@
         "popularityRank": 126,
         "focusCategory": "database-data-platforms",
         "selectionMode": "popular"
-      }
+      },
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "dev-infra-crynta-terax-ai",
@@ -71557,7 +71609,9 @@
         "popularityRank": 235,
         "focusCategory": "developer-experience",
         "selectionMode": "popular"
-      }
+      },
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "dev-infra-dbeaver-cloudbeaver",
@@ -73825,7 +73879,9 @@
         "popularityRank": 361,
         "focusCategory": "software-delivery-testing-build",
         "selectionMode": "popular"
-      }
+      },
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "dev-infra-slick-slick",
@@ -74437,7 +74493,9 @@
         "popularityRank": 395,
         "focusCategory": "software-delivery-testing-build",
         "selectionMode": "popular"
-      }
+      },
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "dev-infra-cosmos72-gomacro",
@@ -76309,7 +76367,9 @@
         "popularityRank": 499,
         "focusCategory": "database-data-platforms",
         "selectionMode": "popular"
-      }
+      },
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "dev-infra-dirac-run-dirac",
@@ -78289,7 +78349,9 @@
         "popularityRank": 609,
         "focusCategory": "database-data-platforms",
         "selectionMode": "popular"
-      }
+      },
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "dev-infra-apache-ofbiz-framework",
@@ -78685,7 +78747,9 @@
         "popularityRank": 631,
         "focusCategory": "software-delivery-testing-build",
         "selectionMode": "popular"
-      }
+      },
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "dev-infra-metabrainz-listenbrainz-server",
@@ -81331,7 +81395,9 @@
         "popularityRank": 778,
         "focusCategory": "code-quality",
         "selectionMode": "popular"
-      }
+      },
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "dev-infra-muety-mininote",
@@ -81673,7 +81739,9 @@
         "popularityRank": 797,
         "focusCategory": "code-quality",
         "selectionMode": "popular"
-      }
+      },
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "dev-infra-azrtydxb-procoder",
@@ -82537,7 +82605,9 @@
         "popularityRank": 29,
         "focusCategory": "geospatial",
         "selectionMode": "popular"
-      }
+      },
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "geospatial-chrieke-prettymapp",
@@ -83239,7 +83309,9 @@
         "popularityRank": 68,
         "focusCategory": "geospatial",
         "selectionMode": "popular"
-      }
+      },
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "geospatial-osgeo-grass",
@@ -86119,7 +86191,9 @@
         "popularityRank": 228,
         "focusCategory": "geospatial",
         "selectionMode": "popular"
-      }
+      },
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "geospatial-alex3165-react-leaflet-draw",
@@ -88207,7 +88281,9 @@
         "popularityRank": 344,
         "focusCategory": "geospatial",
         "selectionMode": "popular"
-      }
+      },
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "geospatial-nathan-gs-ha-map-card",
@@ -90871,7 +90947,9 @@
         "popularityRank": 492,
         "focusCategory": "geospatial",
         "selectionMode": "popular"
-      }
+      },
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "geospatial-ateliercartographie-khartis",
@@ -90997,7 +91075,9 @@
         "popularityRank": 499,
         "focusCategory": "geospatial",
         "selectionMode": "popular"
-      }
+      },
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "geospatial-jaakla-openmapstack-skills",
@@ -92779,7 +92859,9 @@
         "popularityRank": 598,
         "focusCategory": "geospatial",
         "selectionMode": "popular"
-      }
+      },
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "geospatial-w8r-wms-capabilities",
@@ -95569,7 +95651,9 @@
         "popularityRank": 753,
         "focusCategory": "geospatial",
         "selectionMode": "popular"
-      }
+      },
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "geospatial-opengeos-qgis-terminal-plugin",
@@ -97027,7 +97111,9 @@
         "popularityRank": 834,
         "focusCategory": "geospatial",
         "selectionMode": "popular"
-      }
+      },
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "geospatial-marklit-osm-split",
@@ -98377,7 +98463,9 @@
         "popularityRank": 909,
         "focusCategory": "geospatial",
         "selectionMode": "popular"
-      }
+      },
+      "scanStatus": "failed",
+      "scanNote": "2026-11-14 harness-score@1.9.0 refresh: no report could be produced after clean-cache retries on Windows and Linux; inspect pinned-source and runner logs for the specific failure."
     },
     {
       "name": "geospatial-xingzhefe-plain",
@@ -100018,5 +100106,5 @@
       }
     }
   ],
-  "runId": "scanner-refresh-1-8-5-recovery-1"
+  "runId": "scanner-refresh-1-9-0-final-linux-ccxt"
 }

@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.5"
+    "version": "1.9.0"
   },
-  "root": "D:\\code\\harness-maturity-analysis-1-8-5\\.cache\\repos\\ai-ide-xenitv1-codex-anywhere-proxy-1251608713",
+  "root": "D:\\code\\harness-maturity-analysis-1-9-0-refresh\\.cache\\repos\\ai-ide-xenitv1-codex-anywhere-proxy-1251608713",
   "truncated": false,
   "verdicts": {
     "maturity": {
