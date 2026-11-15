@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.5"
+    "version": "1.9.0"
   },
-  "root": "/home/fernando_paladini/harness-refresh-185/recovered-batch/dev-infra-ubicloud-ubicloud",
+  "root": "/mnt/d/code/harness-maturity-analysis-1-9-0-refresh/.cache/repos/dev-infra-ubicloud-ubicloud",
   "truncated": false,
   "verdicts": {
     "maturity": {

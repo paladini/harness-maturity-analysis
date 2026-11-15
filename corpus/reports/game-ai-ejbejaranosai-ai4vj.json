@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.5"
+    "version": "1.9.0"
   },
-  "root": "/home/fernando_paladini/harness-refresh-185/game-ai-ejbejaranosai-ai4vj",
+  "root": "/mnt/d/code/harness-maturity-analysis-1-9-0-refresh/.cache/repos/game-ai-ejbejaranosai-ai4vj",
   "truncated": false,
   "verdicts": {
     "maturity": {

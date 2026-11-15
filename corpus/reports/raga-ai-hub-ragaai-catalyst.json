@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.8.5"
+    "version": "1.9.0"
   },
-  "root": "/home/fernando_paladini/harness-refresh-185/recovered-batch/raga-ai-hub-ragaai-catalyst",
+  "root": "/mnt/d/code/harness-maturity-analysis-1-9-0-refresh/.cache/repos/raga-ai-hub-ragaai-catalyst",
   "truncated": false,
   "verdicts": {
     "maturity": {
