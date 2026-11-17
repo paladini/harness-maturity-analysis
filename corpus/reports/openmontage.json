@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.9.0"
+    "version": "1.10.0"
   },
-  "root": "D:\\code\\harness-maturity-analysis-1-9-0-refresh\\.cache\\repos\\openmontage",
+  "root": "D:\\code\\harness-maturity-analysis-1-10-0-refresh\\.cache\\repos\\openmontage",
   "truncated": false,
   "verdicts": {
     "maturity": {
@@ -27,8 +27,14 @@
   "detectedHarnesses": [
     "antigravity",
     "claude-code",
+    "cline",
     "codex",
-    "cursor"
+    "copilot",
+    "cursor",
+    "devin",
+    "opencode",
+    "windsurf",
+    "zed"
   ],
   "level": {
     "index": 3,
@@ -103,7 +109,7 @@
       "earned": 4,
       "passed": true,
       "evidence": "Found AGENTS.md at repository root.",
-      "remediation": "Create an AGENTS.md at the repository root describing what the project is, how to build/test it, and the conventions agents must follow.",
+      "remediation": "Create an AGENTS.md or AGENT.md at the repository root describing what the project is, how to build/test it, and the conventions agents must follow.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ctx-01",
       "severity": "error",
       "applicable": true
@@ -128,8 +134,8 @@
       "points": 4,
       "earned": 4,
       "passed": true,
-      "evidence": "Found 7 rule(s) (codex, cursor): .agents/skills/flux-best-practices/AGENTS.md, .agents/skills/vercel-composition-patterns/AGENTS.md, .agents/skills/vercel-react-best-practices/AGENTS.md, …",
-      "remediation": "Add at least one scoped rule file for your AI tool (e.g. .cursor/rules/*.mdc, .windsurf/rules/*.md, .clinerules/*.md, .claude/rules/*.md) or a nested AGENTS.md/CLAUDE.md in a subdirectory, stating the project non-negotiables.",
+      "evidence": "Found 9 rule(s) (codex, cursor, copilot, windsurf): .agents/skills/flux-best-practices/AGENTS.md, .agents/skills/vercel-composition-patterns/AGENTS.md, .agents/skills/vercel-react-best-practices/AGENTS.md, …",
+      "remediation": "Add at least one rule file for your AI tool (e.g. .cursor/rules/*.mdc, .windsurf/rules/*.md, .cline/rules/*.md, .devin/rules/*.md, .github/instructions/*.instructions.md, or .rules) or a nested AGENTS.md/CLAUDE.md in a subdirectory, stating the project non-negotiables.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ctx-03",
       "severity": "error",
       "applicable": true
@@ -141,7 +147,7 @@
       "points": 3,
       "earned": 3,
       "passed": true,
-      "evidence": "All 7 rule(s) declare usable frontmatter.",
+      "evidence": "All 9 rule(s) declare usable frontmatter.",
       "remediation": "Give every rule activation metadata in frontmatter (description, globs/trigger/paths/applyTo, or alwaysApply) so the agent knows when to load it.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ctx-04",
       "severity": "error",
@@ -154,7 +160,7 @@
       "points": 2,
       "earned": 2,
       "passed": true,
-      "evidence": "7 rule(s): 7 path-scoped, 0 always-on.",
+      "evidence": "9 rule(s): 7 path-scoped, 0 always-on.",
       "remediation": "Scope rules to paths (globs, trigger glob, paths, applyTo) instead of making everything always-on — blanket rules consume context on every request.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ctx-05",
       "severity": "error",
@@ -207,7 +213,7 @@
       "earned": 4,
       "passed": true,
       "evidence": "Found 139 skill(s) (codex, claude-code): .agents/skills/3d-asset-generation/SKILL.md, .agents/skills/acestep/SKILL.md, .agents/skills/agents/SKILL.md, …",
-      "remediation": "Create a SKILL.md under your tool skills directory (.cursor/skills/, .claude/skills/, .devin/skills/, or .agents/skills/) packaging a procedural workflow the agent should follow on demand.",
+      "remediation": "Create a SKILL.md under your tool skills directory (.cursor/skills/, .claude/skills/, .cline/skills/, .devin/skills/, .opencode/skills/, .github/skills/, or .agents/skills/) packaging a procedural workflow the agent should follow on demand.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#skl-01",
       "severity": "error",
       "applicable": true
@@ -232,8 +238,8 @@
       "points": 3,
       "earned": 3,
       "passed": true,
-      "evidence": "Found 6 command/workflow(s) (claude-code, cursor): .claude/commands/animated-drawing.md, .claude/commands/backlot.md, .claude/commands/ink-art.md, …",
-      "remediation": "Add explicit workflow/command entry points (.cursor/commands/, .windsurf/workflows/, .claude/commands/, .continue/prompts/, …) for workflows you trigger intentionally.",
+      "evidence": "Found 9 command/workflow(s) (claude-code, cursor, copilot): .claude/commands/animated-drawing.md, .claude/commands/backlot.md, .claude/commands/ink-art.md, …",
+      "remediation": "Add explicit workflow/command entry points (.cursor/commands/, .windsurf/workflows/, .claude/commands/, .continue/prompts/, .github/prompts/, .opencode/commands/, .devin/workflows/, …) for workflows you trigger intentionally.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#skl-03",
       "severity": "error",
       "applicable": true
@@ -284,8 +290,8 @@
       "points": 4,
       "earned": 0,
       "passed": false,
-      "evidence": "No .cursor/hooks.json, .claude/settings.json hooks key, plugin hooks/hooks.json, .devin/hooks.v1.json, or .devin/config.json hooks key found.",
-      "remediation": "Create a hooks configuration (.cursor/hooks.json, .claude/settings.json hooks key, .devin/hooks.v1.json event map, or .devin/config.json hooks key) — hooks are the harness layer that can observe and control the agent loop deterministically.",
+      "evidence": "No .cursor/hooks.json, .claude/settings.json hooks key, .github/hooks/*.json, .codex/hooks.json, plugin hooks/hooks.json, or Devin hooks config found.",
+      "remediation": "Create a hooks configuration (.cursor/hooks.json, .claude/settings.json hooks key, .github/hooks/*.json, .codex/hooks.json, or Devin .devin/hooks.v1.json) — hooks are the harness layer that can observe and control the agent loop deterministically.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#hks-01",
       "severity": "error",
       "applicable": true
@@ -311,7 +317,7 @@
       "earned": 0,
       "passed": false,
       "evidence": "No parseable hooks configuration.",
-      "remediation": "Register a gate hook (Cursor: beforeShellExecution / beforeMCPExecution / preToolUse / beforeReadFile; Claude Code or Devin: PreToolUse / PermissionRequest) that guards destructive operations.",
+      "remediation": "Register a gate hook (Cursor: beforeShellExecution / beforeMCPExecution / preToolUse / beforeReadFile; Claude Code, Codex, Devin, or Copilot: PreToolUse / PermissionRequest / preToolUse) that guards destructive operations.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#hks-03",
       "severity": "error",
       "applicable": true
@@ -324,7 +330,7 @@
       "earned": 0,
       "passed": false,
       "evidence": "No parseable hooks configuration.",
-      "remediation": "Register a feedback hook (Cursor: afterFileEdit / postToolUse / stop; Claude Code: PostToolUse; Devin: PostToolUse / Stop) — e.g. auto-format edited files or run a quick lint.",
+      "remediation": "Register a feedback hook (Cursor: afterFileEdit / postToolUse / stop; Claude Code/Codex: PostToolUse; Devin: PostToolUse / Stop; Copilot: postToolUse / agentStop) — e.g. auto-format edited files or run a quick lint.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#hks-04",
       "severity": "error",
       "applicable": true
@@ -506,7 +512,7 @@
       "earned": 4,
       "passed": true,
       "evidence": "No MCP config in repository (nothing to leak).",
-      "remediation": "Never inline API keys in MCP config (.cursor/mcp.json, .mcp.json, .agents/mcp_config.json) — use ${VAR} interpolation and document required variables in .env.example.",
+      "remediation": "Never inline API keys in MCP config (.cursor/mcp.json, .mcp.json, .agents/mcp_config.json, .continue/mcpServers/, .vscode/mcp.json, opencode.json, or Devin MCP config) — use environment interpolation and document required variables in .env.example.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#hyg-04",
       "severity": "error",
       "applicable": true
@@ -531,7 +537,7 @@
       "points": 2,
       "earned": 2,
       "passed": true,
-      "evidence": "Scanned 155 harness file(s); no credential signatures.",
+      "evidence": "Scanned 160 harness file(s); no credential signatures.",
       "remediation": "Remove any API keys or tokens from AGENTS.md, rules, and hooks configuration — harness files are loaded into model context on every session.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#hyg-06",
       "severity": "error",
@@ -638,7 +644,7 @@
         "earned": 4,
         "passed": true,
         "evidence": "Found AGENTS.md at repository root.",
-        "remediation": "Create an AGENTS.md at the repository root describing what the project is, how to build/test it, and the conventions agents must follow.",
+        "remediation": "Create an AGENTS.md or AGENT.md at the repository root describing what the project is, how to build/test it, and the conventions agents must follow.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ctx-01",
         "severity": "error",
         "applicable": true
@@ -663,8 +669,8 @@
         "points": 4,
         "earned": 4,
         "passed": true,
-        "evidence": "Found 7 rule(s) (codex, cursor): .agents/skills/flux-best-practices/AGENTS.md, .agents/skills/vercel-composition-patterns/AGENTS.md, .agents/skills/vercel-react-best-practices/AGENTS.md, …",
-        "remediation": "Add at least one scoped rule file for your AI tool (e.g. .cursor/rules/*.mdc, .windsurf/rules/*.md, .clinerules/*.md, .claude/rules/*.md) or a nested AGENTS.md/CLAUDE.md in a subdirectory, stating the project non-negotiables.",
+        "evidence": "Found 9 rule(s) (codex, cursor, copilot, windsurf): .agents/skills/flux-best-practices/AGENTS.md, .agents/skills/vercel-composition-patterns/AGENTS.md, .agents/skills/vercel-react-best-practices/AGENTS.md, …",
+        "remediation": "Add at least one rule file for your AI tool (e.g. .cursor/rules/*.mdc, .windsurf/rules/*.md, .cline/rules/*.md, .devin/rules/*.md, .github/instructions/*.instructions.md, or .rules) or a nested AGENTS.md/CLAUDE.md in a subdirectory, stating the project non-negotiables.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ctx-03",
         "severity": "error",
         "applicable": true
@@ -676,7 +682,7 @@
         "points": 3,
         "earned": 3,
         "passed": true,
-        "evidence": "All 7 rule(s) declare usable frontmatter.",
+        "evidence": "All 9 rule(s) declare usable frontmatter.",
         "remediation": "Give every rule activation metadata in frontmatter (description, globs/trigger/paths/applyTo, or alwaysApply) so the agent knows when to load it.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ctx-04",
         "severity": "error",
@@ -689,7 +695,7 @@
         "points": 2,
         "earned": 2,
         "passed": true,
-        "evidence": "7 rule(s): 7 path-scoped, 0 always-on.",
+        "evidence": "9 rule(s): 7 path-scoped, 0 always-on.",
         "remediation": "Scope rules to paths (globs, trigger glob, paths, applyTo) instead of making everything always-on — blanket rules consume context on every request.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ctx-05",
         "severity": "error",
@@ -742,7 +748,7 @@
         "earned": 4,
         "passed": true,
         "evidence": "Found 139 skill(s) (codex, claude-code): .agents/skills/3d-asset-generation/SKILL.md, .agents/skills/acestep/SKILL.md, .agents/skills/agents/SKILL.md, …",
-        "remediation": "Create a SKILL.md under your tool skills directory (.cursor/skills/, .claude/skills/, .devin/skills/, or .agents/skills/) packaging a procedural workflow the agent should follow on demand.",
+        "remediation": "Create a SKILL.md under your tool skills directory (.cursor/skills/, .claude/skills/, .cline/skills/, .devin/skills/, .opencode/skills/, .github/skills/, or .agents/skills/) packaging a procedural workflow the agent should follow on demand.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#skl-01",
         "severity": "error",
         "applicable": true
@@ -767,8 +773,8 @@
         "points": 3,
         "earned": 3,
         "passed": true,
-        "evidence": "Found 6 command/workflow(s) (claude-code, cursor): .claude/commands/animated-drawing.md, .claude/commands/backlot.md, .claude/commands/ink-art.md, …",
-        "remediation": "Add explicit workflow/command entry points (.cursor/commands/, .windsurf/workflows/, .claude/commands/, .continue/prompts/, …) for workflows you trigger intentionally.",
+        "evidence": "Found 9 command/workflow(s) (claude-code, cursor, copilot): .claude/commands/animated-drawing.md, .claude/commands/backlot.md, .claude/commands/ink-art.md, …",
+        "remediation": "Add explicit workflow/command entry points (.cursor/commands/, .windsurf/workflows/, .claude/commands/, .continue/prompts/, .github/prompts/, .opencode/commands/, .devin/workflows/, …) for workflows you trigger intentionally.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#skl-03",
         "severity": "error",
         "applicable": true
@@ -819,8 +825,8 @@
         "points": 4,
         "earned": 0,
         "passed": false,
-        "evidence": "No .cursor/hooks.json, .claude/settings.json hooks key, plugin hooks/hooks.json, .devin/hooks.v1.json, or .devin/config.json hooks key found.",
-        "remediation": "Create a hooks configuration (.cursor/hooks.json, .claude/settings.json hooks key, .devin/hooks.v1.json event map, or .devin/config.json hooks key) — hooks are the harness layer that can observe and control the agent loop deterministically.",
+        "evidence": "No .cursor/hooks.json, .claude/settings.json hooks key, .github/hooks/*.json, .codex/hooks.json, plugin hooks/hooks.json, or Devin hooks config found.",
+        "remediation": "Create a hooks configuration (.cursor/hooks.json, .claude/settings.json hooks key, .github/hooks/*.json, .codex/hooks.json, or Devin .devin/hooks.v1.json) — hooks are the harness layer that can observe and control the agent loop deterministically.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#hks-01",
         "severity": "error",
         "applicable": true
@@ -846,7 +852,7 @@
         "earned": 0,
         "passed": false,
         "evidence": "No parseable hooks configuration.",
-        "remediation": "Register a gate hook (Cursor: beforeShellExecution / beforeMCPExecution / preToolUse / beforeReadFile; Claude Code or Devin: PreToolUse / PermissionRequest) that guards destructive operations.",
+        "remediation": "Register a gate hook (Cursor: beforeShellExecution / beforeMCPExecution / preToolUse / beforeReadFile; Claude Code, Codex, Devin, or Copilot: PreToolUse / PermissionRequest / preToolUse) that guards destructive operations.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#hks-03",
         "severity": "error",
         "applicable": true
@@ -859,7 +865,7 @@
         "earned": 0,
         "passed": false,
         "evidence": "No parseable hooks configuration.",
-        "remediation": "Register a feedback hook (Cursor: afterFileEdit / postToolUse / stop; Claude Code: PostToolUse; Devin: PostToolUse / Stop) — e.g. auto-format edited files or run a quick lint.",
+        "remediation": "Register a feedback hook (Cursor: afterFileEdit / postToolUse / stop; Claude Code/Codex: PostToolUse; Devin: PostToolUse / Stop; Copilot: postToolUse / agentStop) — e.g. auto-format edited files or run a quick lint.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#hks-04",
         "severity": "error",
         "applicable": true
@@ -1041,7 +1047,7 @@
         "earned": 4,
         "passed": true,
         "evidence": "No MCP config in repository (nothing to leak).",
-        "remediation": "Never inline API keys in MCP config (.cursor/mcp.json, .mcp.json, .agents/mcp_config.json) — use ${VAR} interpolation and document required variables in .env.example.",
+        "remediation": "Never inline API keys in MCP config (.cursor/mcp.json, .mcp.json, .agents/mcp_config.json, .continue/mcpServers/, .vscode/mcp.json, opencode.json, or Devin MCP config) — use environment interpolation and document required variables in .env.example.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#hyg-04",
         "severity": "error",
         "applicable": true
@@ -1066,7 +1072,7 @@
         "points": 2,
         "earned": 2,
         "passed": true,
-        "evidence": "Scanned 155 harness file(s); no credential signatures.",
+        "evidence": "Scanned 160 harness file(s); no credential signatures.",
         "remediation": "Remove any API keys or tokens from AGENTS.md, rules, and hooks configuration — harness files are loaded into model context on every session.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#hyg-06",
         "severity": "error",
@@ -1102,8 +1108,14 @@
     "detectedHarnesses": [
       "antigravity",
       "claude-code",
+      "cline",
       "codex",
-      "cursor"
+      "copilot",
+      "cursor",
+      "devin",
+      "opencode",
+      "windsurf",
+      "zed"
     ]
   },
   "preset": {
