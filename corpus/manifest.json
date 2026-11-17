@@ -1,8 +1,8 @@
 {
   "$comment": "Each entry pins a repository to an exact commit for reproducible scanning. runDate and toolVersion identify the current historical run. toolVersion is the npm spec passed to `npx --yes <toolVersion>`. scanSubpath scans only part of a monorepo when set. checkoutExcludes omits platform-incompatible, non-harness data from checkout. isStressCase marks entries chosen because the scanner is expected to score them poorly or surprisingly — see METHODOLOGY.md. Never edit an existing entry's commit in place: add a new entry or a dated note instead.",
   "schemaVersion": 2,
-  "runDate": "2026-11-14",
-  "toolVersion": "harness-score@1.9.0",
+  "runDate": "2026-11-17",
+  "toolVersion": "harness-score@1.10.0",
   "entries": [
     {
       "name": "harness-score",
@@ -3849,7 +3849,7 @@
       "isStressCase": false,
       "notes": "Phase 1F AI popularity rank 208; observed GitHub stars 17350. Purpose: Vibe Coding 从入门到精通教程｜AI 结对编程工作流｜Prompt、Skill、Workflow、上下文管理、codex实战指南",
       "scanStatus": "failed",
-      "scanNote": "Pinned commit could not be retrieved after Windows and WSL recovery attempts."
+      "scanNote": "GitHub API returned 404 for the pinned repository URL; no public source was available for a Linux retry."
     },
     {
       "name": "opencodex",
@@ -4364,7 +4364,7 @@
       "isStressCase": false,
       "notes": "Phase 1F AI popularity rank 265; observed GitHub stars 13734. Purpose: Automation foundation model for tiny devices: 2-bit, 8-29 MB, tool calls, ASR, structured extraction and embeddings on phones, wearables, smart homes, robots, cars and microcontrollers.",
       "scanStatus": "failed",
-      "scanNote": "Pinned commit could not be retrieved after Windows and WSL recovery attempts."
+      "scanNote": "The repository is available, but GitHub rejected the pinned SHA as not our ref during the Linux retry."
     },
     {
       "name": "omi",
@@ -11476,7 +11476,7 @@
         "archived": false
       },
       "scanStatus": "failed",
-      "scanNote": "Pinned commit could not be retrieved after Windows and WSL recovery attempts."
+      "scanNote": "GitHub API returned 404 for the pinned repository URL; no public source was available for a Linux retry."
     },
     {
       "name": "game-ai-arman-aminian-risk-game-ai-agent",
@@ -13638,7 +13638,7 @@
         "archived": false
       },
       "scanStatus": "failed",
-      "scanNote": "Pinned commit could not be retrieved after Windows and WSL recovery attempts."
+      "scanNote": "GitHub API returned 404 for the pinned repository URL; no public source was available for a Linux retry."
     },
     {
       "name": "game-ai-hiper2d-mafia-gpt",
@@ -15530,7 +15530,7 @@
         "archived": false
       },
       "scanStatus": "failed",
-      "scanNote": "Pinned commit could not be retrieved after Windows and WSL recovery attempts."
+      "scanNote": "GitHub API returned 404 for the pinned repository URL; no public source was available for a Linux retry."
     },
     {
       "name": "game-ai-llsourcell-ai-for-video-games-demo",
@@ -15748,7 +15748,7 @@
         "archived": false
       },
       "scanStatus": "failed",
-      "scanNote": "Pinned commit could not be retrieved after Windows and WSL recovery attempts."
+      "scanNote": "GitHub API returned 404 for the pinned repository URL; no public source was available for a Linux retry."
     },
     {
       "name": "game-ai-vl4dt-godot-skills",
@@ -43436,7 +43436,7 @@
         "categorySearchRank": 149
       },
       "scanStatus": "failed",
-      "scanNote": "Pinned commit could not be retrieved after Windows and WSL recovery attempts."
+      "scanNote": "GitHub API returned 404 for the pinned repository URL; no public source was available for a Linux retry."
     },
     {
       "name": "unicomai-wanwu",
@@ -53443,7 +53443,7 @@
         "githubRepositoryId": 967787402
       },
       "scanStatus": "failed",
-      "scanNote": "Pinned commit could not be retrieved after Windows and WSL recovery attempts."
+      "scanNote": "GitHub API returned 404 for the pinned repository URL; no public source was available for a Linux retry."
     },
     {
       "name": "ai-ide-ethicks-x-smaran-1347205999",
@@ -53907,7 +53907,7 @@
         "githubRepositoryId": 1347257888
       },
       "scanStatus": "failed",
-      "scanNote": "Pinned commit could not be retrieved after Windows and WSL recovery attempts."
+      "scanNote": "GitHub API returned 404 for the pinned repository URL; no public source was available for a Linux retry."
     },
     {
       "name": "ai-ide-yoavne26-hub-bgu-companion-chrome-extension-1164031568",
@@ -55358,7 +55358,7 @@
         "githubRepositoryId": 1236962486
       },
       "scanStatus": "failed",
-      "scanNote": "Pinned commit could not be retrieved after Windows and WSL recovery attempts."
+      "scanNote": "GitHub API returned 404 for the pinned repository URL; no public source was available for a Linux retry."
     },
     {
       "name": "ai-ide-milbia-is-goat-burning-580513645",
@@ -56518,7 +56518,7 @@
         "githubRepositoryId": 999207456
       },
       "scanStatus": "failed",
-      "scanNote": "Pinned commit could not be retrieved after Windows and WSL recovery attempts."
+      "scanNote": "GitHub API returned 404 for the pinned repository URL; no public source was available for a Linux retry."
     },
     {
       "name": "ai-ide-geowa4-claude-plugins-1141500765",
@@ -56562,7 +56562,7 @@
         "githubRepositoryId": 1333052940
       },
       "scanStatus": "failed",
-      "scanNote": "Pinned commit could not be retrieved after Windows and WSL recovery attempts."
+      "scanNote": "GitHub API returned 404 for the pinned repository URL; no public source was available for a Linux retry."
     },
     {
       "name": "ai-ide-h4x0r-eisenboard-1062717209",
@@ -56945,7 +56945,7 @@
         "githubRepositoryId": 1137809893
       },
       "scanStatus": "failed",
-      "scanNote": "Pinned commit could not be retrieved after Windows and WSL recovery attempts."
+      "scanNote": "GitHub API returned 404 for the pinned repository URL; no public source was available for a Linux retry."
     },
     {
       "name": "ai-ide-kelthon-roobra-api-1276380473",
@@ -56968,7 +56968,7 @@
         "githubRepositoryId": 1276380473
       },
       "scanStatus": "failed",
-      "scanNote": "Pinned commit could not be retrieved after Windows and WSL recovery attempts."
+      "scanNote": "GitHub API returned 404 for the pinned repository URL; no public source was available for a Linux retry."
     },
     {
       "name": "ai-ide-kingofknights-minidb-1209060008",
@@ -57094,7 +57094,9 @@
         "selectionMode": "random",
         "assistantConfigPath": "GEMINI.md",
         "githubRepositoryId": 1082913989
-      }
+      },
+      "scanStatus": "failed",
+      "scanNote": "GitHub API returned 404 for the pinned repository URL; no public source was available for a Linux retry."
     },
     {
       "name": "ai-ide-kshishtovsky-fluint-1313797996",
@@ -57264,7 +57266,7 @@
         "githubRepositoryId": 1289369557
       },
       "scanStatus": "failed",
-      "scanNote": "Pinned commit could not be retrieved after Windows and WSL recovery attempts."
+      "scanNote": "GitHub API returned 404 for the pinned repository URL; no public source was available for a Linux retry."
     },
     {
       "name": "ai-ide-marciohideaki-second-brain-starter-1217435548",
@@ -65561,7 +65563,7 @@
       "isStressCase": false,
       "notes": "Popular agriculture software cohort agriculture-software-popularity-500; canonical GitHub ID=1349919133; observed stars=7 at 2026-10-13T04:28:50.677Z; pinned implementation=jiofarm/cli.py. Selection popularity is not a Harness Score input. See corpus/selection-2026-10-13-agriculture-software-popularity-500.json.",
       "scanStatus": "failed",
-      "scanNote": "Pinned commit could not be retrieved after Windows and WSL recovery attempts."
+      "scanNote": "GitHub API returned 404 for the pinned repository URL; no public source was available for a Linux retry."
     },
     {
       "name": "wittiden-belagrooptimization",
@@ -81691,7 +81693,7 @@
         "selectionMode": "popular"
       },
       "scanStatus": "failed",
-      "scanNote": "Pinned commit could not be retrieved after Windows and WSL recovery attempts."
+      "scanNote": "GitHub API returned 404 for the pinned repository URL; no public source was available for a Linux retry."
     },
     {
       "name": "dev-infra-azrtydxb-procoder",
@@ -100036,5 +100038,5 @@
       }
     }
   ],
-  "runId": "scanner-refresh-1-9-0-ext4-recovery-final"
+  "runId": "scanner-refresh-1-10-0"
 }

@@ -1,9 +1,9 @@
 {
   "tool": {
     "name": "harness-score",
-    "version": "1.9.0"
+    "version": "1.10.0"
   },
-  "root": "D:\\code\\harness-maturity-analysis-1-9-0-refresh\\.cache\\repos\\dev-infra-kodustech-kodus-ai",
+  "root": "D:\\code\\harness-maturity-analysis-1-10-0-refresh\\.cache\\repos\\dev-infra-kodustech-kodus-ai",
   "truncated": false,
   "verdicts": {
     "maturity": {
@@ -26,8 +26,12 @@
   "gate": "maturity",
   "detectedHarnesses": [
     "claude-code",
+    "cline",
     "codex",
-    "cursor"
+    "copilot",
+    "cursor",
+    "devin",
+    "opencode"
   ],
   "level": {
     "index": 3,
@@ -38,9 +42,9 @@
     "capped": false
   },
   "score": {
-    "earned": 84,
+    "earned": 92,
     "max": 103,
-    "percent": 82
+    "percent": 89
   },
   "dimensions": [
     {
@@ -62,9 +66,9 @@
     {
       "id": "hooks",
       "title": "Hooks & Guardrails",
-      "earned": 0,
+      "earned": 8,
       "max": 14,
-      "percent": 0,
+      "percent": 57,
       "applicable": true
     },
     {
@@ -101,7 +105,7 @@
       "earned": 4,
       "passed": true,
       "evidence": "Found AGENTS.md at repository root.",
-      "remediation": "Create an AGENTS.md at the repository root describing what the project is, how to build/test it, and the conventions agents must follow.",
+      "remediation": "Create an AGENTS.md or AGENT.md at the repository root describing what the project is, how to build/test it, and the conventions agents must follow.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ctx-01",
       "severity": "error",
       "applicable": true
@@ -127,7 +131,7 @@
       "earned": 4,
       "passed": true,
       "evidence": "Found 7 rule(s) (cursor, codex): .cursor/rules/run.mdc, apps/api/AGENTS.md, apps/web/AGENTS.md, …",
-      "remediation": "Add at least one scoped rule file for your AI tool (e.g. .cursor/rules/*.mdc, .windsurf/rules/*.md, .clinerules/*.md, .claude/rules/*.md) or a nested AGENTS.md/CLAUDE.md in a subdirectory, stating the project non-negotiables.",
+      "remediation": "Add at least one rule file for your AI tool (e.g. .cursor/rules/*.mdc, .windsurf/rules/*.md, .cline/rules/*.md, .devin/rules/*.md, .github/instructions/*.instructions.md, or .rules) or a nested AGENTS.md/CLAUDE.md in a subdirectory, stating the project non-negotiables.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ctx-03",
       "severity": "error",
       "applicable": true
@@ -205,7 +209,7 @@
       "earned": 4,
       "passed": true,
       "evidence": "Found 2 skill(s) (claude-code): .claude/skills/kodus-sso-e2e/SKILL.md, .claude/skills/perf-debug/SKILL.md",
-      "remediation": "Create a SKILL.md under your tool skills directory (.cursor/skills/, .claude/skills/, .devin/skills/, or .agents/skills/) packaging a procedural workflow the agent should follow on demand.",
+      "remediation": "Create a SKILL.md under your tool skills directory (.cursor/skills/, .claude/skills/, .cline/skills/, .devin/skills/, .opencode/skills/, .github/skills/, or .agents/skills/) packaging a procedural workflow the agent should follow on demand.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#skl-01",
       "severity": "error",
       "applicable": true
@@ -231,7 +235,7 @@
       "earned": 3,
       "passed": true,
       "evidence": "Found 1 command/workflow(s) (claude-code): .claude/commands/benchmark.md",
-      "remediation": "Add explicit workflow/command entry points (.cursor/commands/, .windsurf/workflows/, .claude/commands/, .continue/prompts/, …) for workflows you trigger intentionally.",
+      "remediation": "Add explicit workflow/command entry points (.cursor/commands/, .windsurf/workflows/, .claude/commands/, .continue/prompts/, .github/prompts/, .opencode/commands/, .devin/workflows/, …) for workflows you trigger intentionally.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#skl-03",
       "severity": "error",
       "applicable": true
@@ -280,18 +284,18 @@
       "dimension": "hooks",
       "title": "Hooks configuration present and valid JSON",
       "points": 4,
-      "earned": 0,
-      "passed": false,
-      "evidence": "docs/.claude/settings.json: hooks must be an object.",
-      "remediation": "Create a hooks configuration (.cursor/hooks.json, .claude/settings.json hooks key, .devin/hooks.v1.json event map, or .devin/config.json hooks key) — hooks are the harness layer that can observe and control the agent loop deterministically.",
+      "earned": 4,
+      "passed": true,
+      "evidence": ".github/hooks/impeccable.json contains a parseable hooks configuration.",
+      "remediation": "Create a hooks configuration (.cursor/hooks.json, .claude/settings.json hooks key, .github/hooks/*.json, .codex/hooks.json, or Devin .devin/hooks.v1.json) — hooks are the harness layer that can observe and control the agent loop deterministically.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#hks-01",
       "severity": "error",
       "applicable": true,
       "warnings": [
         {
-          "code": "invalid-hook-config",
+          "code": "ignored-hook-config",
           "source": "docs/.claude/settings.json",
-          "message": "No valid hook configuration was available: hooks must be an object."
+          "message": "Invalid or empty hook configuration was ignored in favor of .github/hooks/impeccable.json."
         }
       ]
     },
@@ -300,9 +304,9 @@
       "dimension": "hooks",
       "title": "Hook events and handlers are structurally valid",
       "points": 2,
-      "earned": 0,
-      "passed": false,
-      "evidence": "docs/.claude/settings.json has no registered events.",
+      "earned": 2,
+      "passed": true,
+      "evidence": ".github/hooks/impeccable.json: events: postToolUse.",
       "remediation": "Declare at least one structurally valid hook event and every metadata field required by your tool; unrecognized future events are reported as warnings.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#hks-02",
       "severity": "error",
@@ -316,8 +320,8 @@
       "points": 4,
       "earned": 0,
       "passed": false,
-      "evidence": "No gate hooks registered in docs/.claude/settings.json.",
-      "remediation": "Register a gate hook (Cursor: beforeShellExecution / beforeMCPExecution / preToolUse / beforeReadFile; Claude Code or Devin: PreToolUse / PermissionRequest) that guards destructive operations.",
+      "evidence": "No gate hooks registered in .github/hooks/impeccable.json.",
+      "remediation": "Register a gate hook (Cursor: beforeShellExecution / beforeMCPExecution / preToolUse / beforeReadFile; Claude Code, Codex, Devin, or Copilot: PreToolUse / PermissionRequest / preToolUse) that guards destructive operations.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#hks-03",
       "severity": "error",
       "applicable": true
@@ -327,10 +331,10 @@
       "dimension": "hooks",
       "title": "Feedback hook observes agent output",
       "points": 2,
-      "earned": 0,
-      "passed": false,
-      "evidence": "No feedback hooks registered in docs/.claude/settings.json.",
-      "remediation": "Register a feedback hook (Cursor: afterFileEdit / postToolUse / stop; Claude Code: PostToolUse; Devin: PostToolUse / Stop) — e.g. auto-format edited files or run a quick lint.",
+      "earned": 2,
+      "passed": true,
+      "evidence": "Feedback hook(s) registered on: postToolUse.",
+      "remediation": "Register a feedback hook (Cursor: afterFileEdit / postToolUse / stop; Claude Code/Codex: PostToolUse; Devin: PostToolUse / Stop; Copilot: postToolUse / agentStop) — e.g. auto-format edited files or run a quick lint.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#hks-04",
       "severity": "error",
       "applicable": true
@@ -342,7 +346,7 @@
       "points": 2,
       "earned": 0,
       "passed": false,
-      "evidence": "No valid hook handlers declared.",
+      "evidence": "Hook command path(s) reference missing files: $(git rev-parse --show-toplevel)/.github/skills/impeccable/scripts/hook.mjs | 2>/dev/null | $(git rev-parse --show-toplevel)/.github/skills/impeccable/scripts/hook.mjs",
       "remediation": "Commit the scripts referenced by your hooks config — a hook pointing at a missing script fails open on every machine but yours.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#hks-05",
       "severity": "error",
@@ -512,7 +516,7 @@
       "earned": 4,
       "passed": true,
       "evidence": "No MCP config in repository (nothing to leak).",
-      "remediation": "Never inline API keys in MCP config (.cursor/mcp.json, .mcp.json, .agents/mcp_config.json) — use ${VAR} interpolation and document required variables in .env.example.",
+      "remediation": "Never inline API keys in MCP config (.cursor/mcp.json, .mcp.json, .agents/mcp_config.json, .continue/mcpServers/, .vscode/mcp.json, opencode.json, or Devin MCP config) — use environment interpolation and document required variables in .env.example.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#hyg-04",
       "severity": "error",
       "applicable": true
@@ -537,7 +541,7 @@
       "points": 2,
       "earned": 2,
       "passed": true,
-      "evidence": "Scanned 13 harness file(s); no credential signatures.",
+      "evidence": "Scanned 14 harness file(s); no credential signatures.",
       "remediation": "Remove any API keys or tokens from AGENTS.md, rules, and hooks configuration — harness files are loaded into model context on every session.",
       "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#hyg-06",
       "severity": "error",
@@ -580,9 +584,9 @@
       "capped": false
     },
     "score": {
-      "earned": 84,
+      "earned": 92,
       "max": 103,
-      "percent": 82
+      "percent": 89
     },
     "dimensions": [
       {
@@ -604,9 +608,9 @@
       {
         "id": "hooks",
         "title": "Hooks & Guardrails",
-        "earned": 0,
+        "earned": 8,
         "max": 14,
-        "percent": 0,
+        "percent": 57,
         "applicable": true
       },
       {
@@ -643,7 +647,7 @@
         "earned": 4,
         "passed": true,
         "evidence": "Found AGENTS.md at repository root.",
-        "remediation": "Create an AGENTS.md at the repository root describing what the project is, how to build/test it, and the conventions agents must follow.",
+        "remediation": "Create an AGENTS.md or AGENT.md at the repository root describing what the project is, how to build/test it, and the conventions agents must follow.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ctx-01",
         "severity": "error",
         "applicable": true
@@ -669,7 +673,7 @@
         "earned": 4,
         "passed": true,
         "evidence": "Found 7 rule(s) (cursor, codex): .cursor/rules/run.mdc, apps/api/AGENTS.md, apps/web/AGENTS.md, …",
-        "remediation": "Add at least one scoped rule file for your AI tool (e.g. .cursor/rules/*.mdc, .windsurf/rules/*.md, .clinerules/*.md, .claude/rules/*.md) or a nested AGENTS.md/CLAUDE.md in a subdirectory, stating the project non-negotiables.",
+        "remediation": "Add at least one rule file for your AI tool (e.g. .cursor/rules/*.mdc, .windsurf/rules/*.md, .cline/rules/*.md, .devin/rules/*.md, .github/instructions/*.instructions.md, or .rules) or a nested AGENTS.md/CLAUDE.md in a subdirectory, stating the project non-negotiables.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#ctx-03",
         "severity": "error",
         "applicable": true
@@ -747,7 +751,7 @@
         "earned": 4,
         "passed": true,
         "evidence": "Found 2 skill(s) (claude-code): .claude/skills/kodus-sso-e2e/SKILL.md, .claude/skills/perf-debug/SKILL.md",
-        "remediation": "Create a SKILL.md under your tool skills directory (.cursor/skills/, .claude/skills/, .devin/skills/, or .agents/skills/) packaging a procedural workflow the agent should follow on demand.",
+        "remediation": "Create a SKILL.md under your tool skills directory (.cursor/skills/, .claude/skills/, .cline/skills/, .devin/skills/, .opencode/skills/, .github/skills/, or .agents/skills/) packaging a procedural workflow the agent should follow on demand.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#skl-01",
         "severity": "error",
         "applicable": true
@@ -773,7 +777,7 @@
         "earned": 3,
         "passed": true,
         "evidence": "Found 1 command/workflow(s) (claude-code): .claude/commands/benchmark.md",
-        "remediation": "Add explicit workflow/command entry points (.cursor/commands/, .windsurf/workflows/, .claude/commands/, .continue/prompts/, …) for workflows you trigger intentionally.",
+        "remediation": "Add explicit workflow/command entry points (.cursor/commands/, .windsurf/workflows/, .claude/commands/, .continue/prompts/, .github/prompts/, .opencode/commands/, .devin/workflows/, …) for workflows you trigger intentionally.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#skl-03",
         "severity": "error",
         "applicable": true
@@ -822,18 +826,18 @@
         "dimension": "hooks",
         "title": "Hooks configuration present and valid JSON",
         "points": 4,
-        "earned": 0,
-        "passed": false,
-        "evidence": "docs/.claude/settings.json: hooks must be an object.",
-        "remediation": "Create a hooks configuration (.cursor/hooks.json, .claude/settings.json hooks key, .devin/hooks.v1.json event map, or .devin/config.json hooks key) — hooks are the harness layer that can observe and control the agent loop deterministically.",
+        "earned": 4,
+        "passed": true,
+        "evidence": ".github/hooks/impeccable.json contains a parseable hooks configuration.",
+        "remediation": "Create a hooks configuration (.cursor/hooks.json, .claude/settings.json hooks key, .github/hooks/*.json, .codex/hooks.json, or Devin .devin/hooks.v1.json) — hooks are the harness layer that can observe and control the agent loop deterministically.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#hks-01",
         "severity": "error",
         "applicable": true,
         "warnings": [
           {
-            "code": "invalid-hook-config",
+            "code": "ignored-hook-config",
             "source": "docs/.claude/settings.json",
-            "message": "No valid hook configuration was available: hooks must be an object."
+            "message": "Invalid or empty hook configuration was ignored in favor of .github/hooks/impeccable.json."
           }
         ]
       },
@@ -842,9 +846,9 @@
         "dimension": "hooks",
         "title": "Hook events and handlers are structurally valid",
         "points": 2,
-        "earned": 0,
-        "passed": false,
-        "evidence": "docs/.claude/settings.json has no registered events.",
+        "earned": 2,
+        "passed": true,
+        "evidence": ".github/hooks/impeccable.json: events: postToolUse.",
         "remediation": "Declare at least one structurally valid hook event and every metadata field required by your tool; unrecognized future events are reported as warnings.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#hks-02",
         "severity": "error",
@@ -858,8 +862,8 @@
         "points": 4,
         "earned": 0,
         "passed": false,
-        "evidence": "No gate hooks registered in docs/.claude/settings.json.",
-        "remediation": "Register a gate hook (Cursor: beforeShellExecution / beforeMCPExecution / preToolUse / beforeReadFile; Claude Code or Devin: PreToolUse / PermissionRequest) that guards destructive operations.",
+        "evidence": "No gate hooks registered in .github/hooks/impeccable.json.",
+        "remediation": "Register a gate hook (Cursor: beforeShellExecution / beforeMCPExecution / preToolUse / beforeReadFile; Claude Code, Codex, Devin, or Copilot: PreToolUse / PermissionRequest / preToolUse) that guards destructive operations.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#hks-03",
         "severity": "error",
         "applicable": true
@@ -869,10 +873,10 @@
         "dimension": "hooks",
         "title": "Feedback hook observes agent output",
         "points": 2,
-        "earned": 0,
-        "passed": false,
-        "evidence": "No feedback hooks registered in docs/.claude/settings.json.",
-        "remediation": "Register a feedback hook (Cursor: afterFileEdit / postToolUse / stop; Claude Code: PostToolUse; Devin: PostToolUse / Stop) — e.g. auto-format edited files or run a quick lint.",
+        "earned": 2,
+        "passed": true,
+        "evidence": "Feedback hook(s) registered on: postToolUse.",
+        "remediation": "Register a feedback hook (Cursor: afterFileEdit / postToolUse / stop; Claude Code/Codex: PostToolUse; Devin: PostToolUse / Stop; Copilot: postToolUse / agentStop) — e.g. auto-format edited files or run a quick lint.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#hks-04",
         "severity": "error",
         "applicable": true
@@ -884,7 +888,7 @@
         "points": 2,
         "earned": 0,
         "passed": false,
-        "evidence": "No valid hook handlers declared.",
+        "evidence": "Hook command path(s) reference missing files: $(git rev-parse --show-toplevel)/.github/skills/impeccable/scripts/hook.mjs | 2>/dev/null | $(git rev-parse --show-toplevel)/.github/skills/impeccable/scripts/hook.mjs",
         "remediation": "Commit the scripts referenced by your hooks config — a hook pointing at a missing script fails open on every machine but yours.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#hks-05",
         "severity": "error",
@@ -1054,7 +1058,7 @@
         "earned": 4,
         "passed": true,
         "evidence": "No MCP config in repository (nothing to leak).",
-        "remediation": "Never inline API keys in MCP config (.cursor/mcp.json, .mcp.json, .agents/mcp_config.json) — use ${VAR} interpolation and document required variables in .env.example.",
+        "remediation": "Never inline API keys in MCP config (.cursor/mcp.json, .mcp.json, .agents/mcp_config.json, .continue/mcpServers/, .vscode/mcp.json, opencode.json, or Devin MCP config) — use environment interpolation and document required variables in .env.example.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#hyg-04",
         "severity": "error",
         "applicable": true
@@ -1079,7 +1083,7 @@
         "points": 2,
         "earned": 2,
         "passed": true,
-        "evidence": "Scanned 13 harness file(s); no credential signatures.",
+        "evidence": "Scanned 14 harness file(s); no credential signatures.",
         "remediation": "Remove any API keys or tokens from AGENTS.md, rules, and hooks configuration — harness files are loaded into model context on every session.",
         "docsUrl": "https://paladini.github.io/harness-score/guide/measure-and-improve#hyg-06",
         "severity": "error",
@@ -1114,8 +1118,12 @@
     ],
     "detectedHarnesses": [
       "claude-code",
+      "cline",
       "codex",
-      "cursor"
+      "copilot",
+      "cursor",
+      "devin",
+      "opencode"
     ]
   },
   "preset": {
